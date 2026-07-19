@@ -1,0 +1,1839 @@
+Clase del Diplomado de Física Moderna-20260619_190543-Grabación de la reunión
+June 19, 2026, 11:05PM
+3h 19m 58s
+
+Julio Eduardo Oliva Zapata started transcription
+
+Julio Eduardo Oliva Zapata   0:04
+Próximo voy a subir el PDF que falta del de la clase pasada, cierto en el formato oficial del las diapositivas del diplomado. Voy a hacer lo mismo con este, con esta clase que bueno, no la he podido pasar todavía.
+La clase anterior no he tenido tiempo para pasarle al PPT oficial.
+Pero aquí el lunes lo hago y voy a subir también un.
+unas líneas generales respecto del informe de 5 páginas que tendrán que escribir, considerando una de las 6 clases de este primer curso del diplomado. Entonces, la idea es que ustedes elaboren respecto de las ideas que se discutieron en la clase que elijan.
+Y que hablen acerca del contexto, un poco del contexto histórico, un poco cerca de los problemas físicos que ayudan a de los sistemas físicos que se pueden entender con el material.
+Discutido en cada una de las clases y que traten de ir un poco un poquito más allá, digamos.
+Considerando el material que hay en la red o algunos materiales sugeridos de lectura que he mencionado a medida que hemos ido avanzando.
+Y.
+Bien, super Pablo, excelente, no hay problema, no te has perdido de mucho. Entonces el lunes subiré, subiré esto estos documentos y tendrán un mes. Un mes es un tiempo razonable porque, bueno, todos ustedes son adultos, estamos todos trabajando.
+Y claro, yo creo que un mes es un tiempo razonable para para consolidar el un material. Algunos de ustedes ya me han enviado sus avances, pero he decidido no mirarlo hasta terminar esta clase porque tal vez pueden cambiar de opinión y podrían decidir.
+Discutir acerca de esta clase, no eso.
+Bien, esta es la última clase del primer curso del diplomado, entonces de Física Moderna y vamos a hablar acerca de Física Microscópica. o K, entonces déjenme decir clase número 6.
+
+ANDRES EDGARDO BLUHM BRANDT   2:19
+Profe.
+
+Julio Eduardo Oliva Zapata   2:26
+Clase 6.
+
+ANDRES EDGARDO BLUHM BRANDT   2:28
+Profe, perdón.
+
+Julio Eduardo Oliva Zapata   2:29
+Y hay una, hay una pregunta, adelante.
+
+ANDRES EDGARDO BLUHM BRANDT   2:31
+Antes de empezar, dijiste que ya hay gente que ha enviado avance del trabajo.
+
+Julio Eduardo Oliva Zapata   2:37
+Sí, hay gente que decidió, por ejemplo, hablar acerca de elaborar respecto de la segunda clase y bueno, con un formato que cada persona ha definido. Hay libertad en eso, me han enviado antes y eso, pero no he enviado retroalimentación porque quiero hacer eso después de tener de que hayan visto la última clase.
+Pues si cambian de bien.
+
+ANDRES EDGARDO BLUHM BRANDT   2:59
+Ah, perfecto, yeah.
+
+Julio Eduardo Oliva Zapata   3:00
+Yes.
+Perfecto, entonces.
+En la última clase discutimos la noción de entropía desde el punto de vista termodinámico, cierto desde el punto de vista termodinámico. Entonces la idea es que en un proceso cuasi estático.
+En un proceso cuasi estático.
+Si yo le entrego calor al sistema, un poquito de calor y dividido por la temperatura que tenía el sistema durante en ese proceso, digamos, en un proceso cuasi estático, esto se puede describir como el cambio en una variable de estado del sistema. Esa es la entropía.
+Entonces le entrego calor al sistema dividido por la temperatura que tenía el sistema. Si esa cantidad de calor es pequeña, esta temperatura estará bien definida. Bien, y eso a pesar de que DQ.
+No es el cambio en el calor, sino que es una cantidad pequeña de calor que yo le estoy entregando al sistema. Al dividir por la temperatura del sistema, obtengo el cambio en una variable de estado del sistema. Bien, el cambio en una en una cantidad termodinámica. bien.
+Y esa es la entropía Esa es la entropía desde el punto de vista termodinámico bien y hablé también de que esta entropía no no no dice relación con la noción de desorden cierto entonces hoy vamos a hablar de una entropía desde el punto de vista microscópico
+Entropía de Wolfman y ahí sí habrá una noción de desorden involucrado bien.
+Y.
+Les conté que bajo cierto procedimiento, usando consistentemente las leyes de la termodinámica y la ley de los gases ideales.
+Butter.
+Un gas ideal.
+La entropía.
+Se puede escribir como una función de la temperatura, el volumen y el número de partículas, y tiene la siguiente forma: 3/2 del número de partículas por la constante de Boltzmann.
+Por el logaritmo natural de la temperatura.
+Más el número de partículas por la constante de Boltzmann por el logaritmo natural del volumen, más una constante. Bien, esta constante es arbitraria.
+Aquí trae bien, es un número.
+Y eso tiene sentido porque observen que esta ecuación que está acá.
+Solo nos habla acerca del cambio en la entropía.
+Esta es la ecuación que define la entropía en el en la termodinámica, pero solo nos habla acerca del cambio en la entropía. Entonces, es natural que al calcularla para un sistema específico quede una constante libre dando vueltas. Es como si yo te digo, mira cuál es.
+La derivada de una función es de una función del tiempo es t. ¿Cuál es la función? La función general es t cuadrado partido por 2 más una constante de integración arbitraria.
+Entonces, en eso lo que hay aquí en este proceso es un proceso de integración desde el punto de vista matemático y los procesos de integración no definidos con límites llevan a constantes de integración, a constantes que quedan arbitrarias en el proceso.
+Yeah.
+Y discutimos que lo que se llama la paradoja de Gibbs, que esta.
+noción de esta esta entropía que aparece acá tiene un problema que lo voy a repetir ahora con cuidado y que devela un poco acerca de la estructura de la naturaleza microscópica de los de los componentes de las propiedades cuánticas al final de los componentes con estas propiedades cuánticas ustedes se van a familiarizar en profundidad
+Familiarizar en profundidad, no sé, eso me oximorónico, pero bueno, en el primer curso se van a familiarizar y en el segundo curso irán a mayor profundidad con las ideas cuánticas que están detrás de la noción de partícula indistinguible. ¿Cierto?
+Y gifs en una genialidad, se adelanta un par de décadas a la.
+Al desarrollo de la teoría de partículas indistinguibles desde el punto de vista de la mecánica cuántica.
+Entonces esto es para un gas ideal, ustedes pueden buscar después.
+Por ejemplo, una linda tarea es buscar.
+¿Cómo se modifica esta expresión?
+Para el gas, un gas real o un gas de van der Waals.
+¿Los parámetros A y B se acuerdan que caracterizan?
+¿Qué tanto volumen tienen las partículas? Porque ahora en el gas real ya no son puntos. ¿Y cómo interactúan estas partículas? Porque ya no son libres. Esos parámetros A yb de la ley de los gases reales aparecen en la entropía.
+El gas real, bien, y hay una forma de entender, de entender también por qué aparecen en el lugar que aparecen. Entonces, le recomiendo que después miren un poco al respecto. Entonces, deje deme 1 segundo.
+Claro.
+Lo escribí como si fuera.
+Van de murallas, pero es van del vals.
+Hay algo raro.
+Perfecto, y esta entropía, esta expresión para la entropía es lo último que discutimos en la clase pasada, esta expresión.
+Para la entropía.
+Lleva.
+A la paradoja de Gibbs.
+Entonces déjenme describir la paradoja de aquí es nuevamente porque la vimos hacia el final de la clase pasada ya.
+Era como las 10:00 de la noche, bien, recordemos que es la paradoja de Gibson.
+Entonces supongan ustedes que tienen.
+un sistema voy a hacer la versión más simple, una versión un poquito más simplificada pero que captura la paradoja versión un poco más simplificada del sistema que consideramos el otro día pero supongan ustedes que tienen un sistema aislado del resto del universo eso es una idealización obviamente
+Ustedes podrían decir, bueno, lo puedo aislar de las interacciones electromagnéticas si lo pongo en una caja de Faraday, bien, pero no hay caja de Faraday para el campo gravitacional. Bien, uno no puede.
+Aislar el campo de la habitación.
+Entonces.
+Esta noción de tener un sistema aislado del resto del universo.
+Por más que yo trate de mejorar la forma en la que lo estoy aislando, no voy a poder aislarlo desde el punto de vista del campo gravitacional. Las estrellas lejanas en algún de alguna forma, en un campo muy débil de todas formas, pero con una fuerza muy pequeña, afectarán la dinámica de estas partículas. Así que es una idealización lo de.
+Tener un sistema aislado bien, pero supongamos que tenemos un sistema aislado que está compuesto por exactamente el mismo gas ideal a ambos, a ambos lados de esta pared que puse aquí, pongo una pared.
+Que después voy a sacar.
+Y de este lado, supongamos que el sistema tiene volumen.
+Ve.
+Que tiene hay un número de partículas n.
+Está a temperatura T, está a presión P.
+Bien, y hay un tipo de gas ideal de este lado y el mismo tipo del gas ideal al otro lado, y asumamos que aquí también hay volumen V, número de partículas N, temperatura ty presión P.
+El mismo gas ideal ambos.
+Perfecto, entonces la entropía del sistema.
+Va a ser la entropía. Estos 2 sistemas no están interactuando bien, entonces la entropía del sistema completo, que es la unión de estos 2 sistemas y déjenme llamarlo la entropía inicial.
+Va a ser igual a la entropía del gas ideal de este lado.
+Más la entropía del gas ideal que está a este lado.
+Pero nosotros tenemos una expresión para la entropía del gas ideal, que es esta expresión que está acá.
+Entonces la vamos a usar 2 veces.
+Solo 2 veces.
+Yeah.
+Y lo voy a pegar de manera explícita 2 veces.
+Entonces esta va a ser la entropía del primer sistema.
+Más que voy a poner acá la entropía del sistema que está a la derecha.
+Puedo poner el más acá, también repetir el más aquí.
+Entonces, observen que estos números yo los sumo y me da.
+eh 3n este tipo se suma con s 3n la constante Boltzmann por el logaritmo natural de la temperatura más dos veces la constante Boltzmann bien
+Más 2 veces la constante Boltzmann.
+Y.
+Claro, por.
+Por el.
+El volumen, bien.
+Y déjenme hacer algo, esta constante C es una constante de referencia, es arbitraria y déjenme setearla a cero, la vamos a elegir como cero.
+Entonces acá tenemos un cero, acá tenemos un cero porque es una constante arbitraria.
+Déjenme elegirla como cero.
+
+SEBASTIAN IGNACIO MUÑOZ AGUIRRE   13:52
+En la parte de la derecha la suma le faltó.
+
+Julio Eduardo Oliva Zapata   13:55
+Yeah.
+Me faltó el n en efecto, entonces más 2 veces n por el logaritmo del volumen. Bien, entonces esta va a ser nuestra entropía inicial, esta va a ser la entropía inicial del sistema. Vamos a llegar a una paradoja. Entonces, en ese instante, cuando uno llega a una paradoja, se puede preguntar.
+¿Se puede preguntar si fue sensato hacer esta constante igual a cero?
+Sigamos, tengámoslo igual a cero y veamos qué pasa Cristiana, adelante.
+
+CRISTIAN ALFREDO OYARZUN SUAREZ   14:29
+Y por eso consulta en el lado de la temperatura.
+¿Logaritmo tiene miedo, hay un calor específico a volumen constante o?
+
+Julio Eduardo Oliva Zapata   14:41
+Ah bueno sí sí sí este este 3 medios Observa que bien este 3 medios que está acá claro huele a calor específico cierto a volumen constante bien pero para definir el calor específico acá necesito necesito
+Considerar este proceso, cierto, la capacidad calorífica va a ser cierto la cantidad de calor.
+A volumen constante que le voy a transferir a un sistema y que va a producir un cambio en la temperatura de T. Bien, entonces acá, como estoy trabajando con la entropía, también la entropía está relacionada con el de Q y claro, debido a que.
+Como tú intuyes, cuando uno encuentra, cuando uno encuentra esta expresión para la entropía.
+Uno de los ingredientes que usa es la capacidad calorífica del gas ideal, el 3 medios NT, el o sea, el 3 medios N constante de bolsa.
+Para encontrar esta expresión, uno usa el hecho de que la capacidad calorífica del gas ideal es 3 medios del número de partículas por la constante de bolsa. Así que está bien tu intuición.
+
+CRISTIAN ALFREDO OYARZUN SUAREZ   15:57
+Gracias.
+
+Julio Eduardo Oliva Zapata   15:58
+Okay.
+Bueno, conté la derivación, pero la derivación no es tan no es tan complicada, hay que manipular unas derivadas parciales, lo que consideremos el resultado. Después les voy a mostrar una forma, sí les voy a mostrar una forma concreta de calcular esta entropía, pero desde la física microscópica. Ahí sí no nos saltaremos casi ningún detalle.
+Bien, esa es la entropía inicial. ¿Habrá sido correcto setear la constante cero? No lo sabemos todavía.
+Entonces déjenme dibujar de nuevo el sistema inicial, observen el sistema inicial, cierto, son estos 2 gases idénticos.
+Aislados.
+Del resto del universo, aislados entre ellos también, porque no pueden transferirse energía.
+Ambos al mismo volumen, ambos a la misma temperatura, la misma presión y con el mismo número de partículas para simplificar.
+Y vamos a hacer lo siguiente, vamos a remover la barrera que los divida.
+Yeah.
+Remover la barrera.
+Yeah.
+Entonces observen que si removemos la barrera, el sistema completo ahora está aislado.
+Debido a que era el mismo gas ideal a ambos lados.
+Debido a que era el mismo gas ideal a ambos lados.
+Lo que vamos a tener ahora acá es un volumen igual a 2 veces el volumen inicial.
+Un número de partículas igual a 2 veces el número de partículas que teníamos antes.
+Pero del mismo gas, es el mismo gas.
+Yo creo que.
+Estos sistemas ya estaban a la misma temperatura.
+Antes de que yo removiera la barrera y estaban a la misma temperatura, entonces remover la barrera no debería tener ningún efecto físico porque al remover la barrera no hay transferencia de energía entre estos 2 sistemas porque van a estar a la misma temperatura, así que el sistema compuesto va a estar a temperatura.
+Te.
+Bien y dado que estaban a la misma presión, no va a haber un flujo de masa en ninguna de las 2:00 direcciones, así que el sistema compuesto va a seguir estando a presión p.
+Pero ahora pensemos en la entropía de este sistema.
+Es un gas ideal, así que podremos aplicar la fórmula. Hay una pregunta antes, María.
+
+MARIA ISABEL LELAS CORTES   18:39
+Me confirma si se escucha.
+
+Julio Eduardo Oliva Zapata   18:40
+Sí, se escucha bien.
+
+MARIA ISABEL LELAS CORTES   18:42
+Ya estamos asumiendo también que en el momento de remoción de la barrera hay como una idealización también de quitarla físicamente hablando, en el sentido de que al desplazar ese objeto sólido a través de ese gas, tampoco consideramos que cerca de la barrera esas partículas van a ser como pseudo remolinitos a lo mejor alguna especie de.
+
+Julio Eduardo Oliva Zapata   18:58
+Sí.
+Perfecto, perfecto.
+
+MARIA ISABEL LELAS CORTES   19:04
+De movimiento, no se asume también esa idealización.
+
+Julio Eduardo Oliva Zapata   19:05
+Sí.
+Claro, vamos a asumir que la barrera la vamos a remover lo suficientemente lento como para que esos efectos no sean relevantes.
+Eso, si uno mueve la barrera, los la formación de remolinos aparece cuando los fluidos están en regímenes turbulentos. Bien, y para activar el régimen turbulento hay que hacer que el fluido se mueva rápido bien o mover la barrera rápido.
+Bien, entonces si la modo lo suficientemente lento, no va a haber formación de remolino.
+Pero por otro lado, uno diría, oye, pero los sistemas de estos tendrán una viscosidad, así que estarán al remover la barrera, habrá una viscosidad y el fluido querrá quedarse pegado a la barrera. Bueno, pero si lo hago lo suficientemente lento, el efecto de esa viscosidad no me va a sacar del estado en el que en el que estoy.
+Pero hay una realización ahí, mira.
+adelante.
+
+LUIS ALBERTO INZUNZA OSSES   20:08
+Buenas tardes, profesor, estuve pensando sí en este en esta paradoja, cierto.
+
+Julio Eduardo Oliva Zapata   20:09
+Buenas tardes.
+
+LUIS ALBERTO INZUNZA OSSES   20:17
+Bueno, yo soy ingeniero, tengo otra perspectiva de ver las cosas. Entiendo que hay una idealización aquí, pero nosotros hablamos en un comienzo de que se usted habló del concepto de rapidez. Las partículas cuando yo le aplico una temperatura, inevitablemente se están moviendo.
+Ellas se están moviendo y puedo tener la temperatura constante y la presión no va a variar, pero resulta de que si yo tengo una pared, la partícula están chocando con esa pared y yo saco la pared. Inevitablemente esa partícula se puede desplazar por la ecuación que usted nos mostró antes de que esa partícula se va para otro lado.
+¿De dónde se saca la analogía de que no va a pasar nada en un estado con el otro? Porque la pared realmente, bueno, físicamente la pared, si esto se pudiera realizar físicamente, se demostraría que no se mantiene igual, porque el hecho de removerla solamente ya genera un cambio.
+
+Julio Eduardo Oliva Zapata   20:55
+B.
+Excelente.
+Perfecto, perfecto.
+
+LUIS ALBERTO INZUNZA OSSES   21:14
+O no.
+
+Julio Eduardo Oliva Zapata   21:16
+Claro, el muy bien, mira.
+Para poder evitar esa disyuntiva que tú planteas, es que uno pone el sistema a ambos lados exactamente a la misma presión, dado que los 2 gases están exactamente a la misma presión.
+No hay un efecto neto de transferencia de materia de un lado al otro. Entonces, dado que estaban a la misma presión respecto de choques y movimientos de exploración del resto del volumen, no hay un efecto neto.
+Si estuvieran a distinta presión, uno esperaría así que en la materia pudiera moverse desde el sector de mayor presión o el sector de menor presión, pero si están exactamente a la misma presión, remover la barrera no va a tener un efecto en términos de de movimiento de masas.
+Porque están a la misma presión.
+And.
+Bien, buenas preguntas, entonces.
+Dado que el sistema final es.
+Un sistema de el mismo gas ideal, pero ahora con número de partículas 2 n, volumen 2 b, temperatura ty presión p. Bien, apliquemos la fórmula para.
+La entropía de este gas ideal final.
+Bien, entonces, pero ahora observen que el gas tiene 2 n partículas.
+La temperatura es la misma temperatura T porque ambos gases estaban a la misma temperatura.
+El gas tiene 2 n partículas y está encerrado en un volumen 2 v.
+Estoy asumiendo que la constante es cero.
+Entonces la entropía final.
+Menos la entropía inicial.
+En este En este caso, o sea, es que.
+Voy a tomar el lápiz rojo acá y miren este.
+Ese factor que está ahí.
+Se va si los restos se va con este factor que está acá la dependencia en la temperatura se va.
+Después, aquí voy a usar una propiedad del logaritmo bien.
+Que decía que el logaritmo del producto es la suma de los logaritmos, entonces logaritmo natural de 2 más logaritmo natural de B.
+Pero este factor de logaritmo natural de B por el 2 n más constante de Boltzmann o por constante Boltz se va con ese factor que está ahí. Déjenme ponerlo otra forma.
+Esos 2 factores se van entre ellos cuando resto las entropía.
+Entonces, por un lado, yo espero que.
+Dado que los sistemas estaban a la misma, estaban en equilibrio térmico y estaban en equilibrio, en equilibrio volumétrico porque estaban a la misma presión. bien.
+Sin estarse comunicando, bien, pero los puse en esa en ese estado desde el comienzo. Yo espero que al remover la barrera no pase absolutamente nada.
+Pero.
+La entropía cambia cuando hago este, cuando tomo este mecánico, hago este esto de remover la barrera entonces.
+Aparece un 2 constante de Boltzmann por logaritmo natural de 2.
+El término que va con log de 2, ese no se va con.
+No se anula, no se cancela en la resta con nada que haya estado arriba.
+
+GALO MAURICIO EIDELSTEIN SILBER   25:36
+¿Puedes volver a la ecuación de arriba, Julio?
+
+Julio Eduardo Oliva Zapata   25:37
+Hey.
+No.
+
+GALO MAURICIO EIDELSTEIN SILBER   25:40
+But...
+
+Julio Eduardo Oliva Zapata   25:51
+Me escribí el un paso extra de los logaritmos acá abajo, disculpa, voy.
+O sea, esto es 3 medios.
+O digamos, 3 por n por la constante de Olson, por el logaritmo de la temperatura, más la 2 n.
+Por la constante de Olzmann, por el logaritmo del volumen más 2 n por la constante de Olzmann, por el logaritmo natural de 2.
+Ahí sí, entonces ahora hago sum out y indicamos quién se cancela con quién en la resta. Este término se cancela con el que tiene el slash y el que tiene el X se cancela con el que tiene el X arriba.
+Bien, entonces la diferencia de entropía hay un cambio en la entropía. Yo espero que no haya ningún efecto físico, pero resulta un cambio en la entropía.
+Es 2n constante de Boltzmann por el logaritmo natural de 2. Bien, entonces el hecho de que haya un cambio en la entropía, que el Delta S sea no nulo en este experimento pensado, siendo que yo espero que no haya ningún efecto físico en el remover de manera adiabática, de manera cuasi estática, perdón.
+De manera cuasi estática, el la barrera, esa tensión que hay entre esas 2 ideas es la paradoja de X.
+Y resolveremos la paradoja de gifs.
+Resolveremos.
+La paradoja de Gibbs.
+Esto es la paradoja.
+Espero que no pase nada, pero resulta que hay un salto en la entropía.
+Está parados a ellos.
+Resolveremos la paradoja de Gibbs.
+This day.
+Digo considerando.
+La hipótesis.
+They.
+Indistinguibilidad, esto lo voy a explicar con detalle.
+De las partículas.
+En un gas.
+Pero no vamos a usar el argumento histórico de Gibbs, sino que vamos a, pero desde el haremos el punto de vista microscopio, desde va a quedar claro cuando cuando lo explique. Lo que quiero decir aquí es que no voy a usar el argumento, no vamos a hacer el argumento histórico de Gibbs.
+Bien, porque quiero ir a la física microscópica. Ahí en la física microscópica voy a explicar qué significa la hipótesis de indistinguibilidad. Bien, y después vamos a volver a la física macroscópica, bien, pero desde el punto de vista.
+Microscópico.
+Yeah.
+y mostraremos que.
+En realidad, la entropía de un gas y de.
+Debe ser pensada, o bueno, si la escribimos, no debe ser pensada como si la escribimos como función de la temperatura, el volumen y el número de partículas es igual a.
+El número de partículas por la constante de Boltzmann por el logaritmo natural del volumen.
+Más la suma es conmutativa, pero déjenme escribirlo así, es más sugerente. La constante, por el volumen estoy tomando nota de mis apuntes por el logaritmo natural de la temperatura.
+Más 3 medios, no más el número de partículas por la constante de Boltzmann por el logaritmo natural del volumen.
+Esta es la expresión que teníamos arriba.
+Pero.
+Hi.
+Otros 2 términos que son el número de partículas por la constante de Boltzmann.
+Hay menos, perdón, tú el número por el logaritmo natural del número de partículas.
+Y hay dos términos más, más tres medios el número de partículas por la constante de Boltzmann por el logaritmo natural de aquí hay un número microscópico 2 pi la masa de los constituyentes, la constante de Boltzmann dividido por la constante de Planck al cuadrado.
+Más.
+El número de partículas por la constante Holzmann por 5 medios. Esto es lo que vamos a tratar de demostrar. Esta es la entropía de verdad del gas ideal cuando uno viene de la física microscópica.
+Observen que estos 2 términos son los que se obtienen desde el punto de vista termodinámico.
+Que no es física microscópica, las leyes de la termodinámica hablan acerca de los sistemas termodinámicos que tiene un número grande de partículas.
+Pero cuando conectamos con ese mundo macroscópico a partir de la física microscópica que sabe acerca de la mecánica cuántica, esta aquí es la constante de Planck, es la constante que sabe acerca de la mecánica cuántica. Lo voy a argumentar cuando venimos desde la física microscópica hacia la física macroscópica.
+Aparecen estos 3 términos extra.
+Que ojo, que como hay un logaritmo, en realidad se pueden condensar en uno solo, se pueden condensar en uno solo. O sea, déjenme decir que los términos azules, cierto, los términos azules se podrían escribir como en un solo logaritmo, porque esto sería logaritmo de.
+Déjenme dejar afuera la constante de Boltzmann bien.
+sería logaritmo de uno sobre n a la n aplicando propiedades de los logaritmos Déjenme dejar un n afuera porque si no queda muy feo logaritmo natural Este es un lindo ejercicio de logaritmos uno sobre n porque este menos que está acá lo paso ahí arriba
+Después queda.
+2 PI la masa, la constante de la constante de bolso van dividido por la constante blanca al cuadrado elevado a 3 medios.
+Eso, bueno, el 5 medios, el 5 medios no lo puedo mantener en el logaritmo. Igual se puede, pero hay que hacer una pirueta poco natural. Estas 2 cosas son iguales.
+Un ejercicio de logaritmo.
+Eso, entonces la pregunta ahora natural es de dónde salen estos términos y o k si esta es la.
+Expresión para la entropía.
+Pregunta esta situación para la entropía lleva igual a la paradoja de Gibbs y déjenme decirles que no.
+Esta expresión para la entropía tiene un nombre de las personas que lo calcularon, se llama la fórmula.
+Fórmula de.
+Sakur Tetroz, tus señores.
+Petros, bien.
+Y esta evita.
+La paradoja de Gibbs.
+Es decir, si yo considero el experimento pensado anterior, en donde tengo 2 gases en idénticas condiciones separados por una pared que después remuevo bien.
+¿Y me pregunto cuál es el cambio en la entropía en ese proceso? Me doy cuenta que no hay el cambio en la entropía nulo en ese proceso.
+Entonces esta es la entropía de verdad del gas idea. Observen que la entropía.
+La entropía es un objeto cuántico.
+Porque aparece la constante de Planck, si quiero saber el valor de la entropía.
+Tengo que saber acerca de la mecánica cuántica.
+Entonces, esta cantidad que aparece de manera tan inocente como.
+La división entre la cantidad de calor que yo le entrego a un sistema pequeña dividido por la temperatura que lleva el cambio en una variable de estado que llamamos la entropía. Esta cantidad tan inocente en realidad sabe.
+Acerca de la física microscópica.
+Se va cerca de la mecánica.
+Mhm.
+Entonces vamos a elaborar respecto de esta de estas ideas, dale, adelante.
+
+SEBASTIAN IGNACIO MUÑOZ AGUIRRE   34:40
+Profe.
+Disculpe, es que cuando como estaba ahí con la constante de Planck, me estaba acordando que había una H con una barra y la estaba buscando y me sale que H barra es la constante de Planck dividido en 2 PI.
+
+Julio Eduardo Oliva Zapata   34:51
+Hola.
+Okay.
+Eso esto se puede escribir también como en términos de H barra, que se llama la constante de plank reducida.
+
+SEBASTIAN IGNACIO MUÑOZ AGUIRRE   35:00
+Claro, porque como tenemos h cuadrado y necesitaríamos PI, o sea, otro PI y otro 2. Entonces podría quedar como h barra por si no me sí creo que debería quedar con la multitud.
+
+Julio Eduardo Oliva Zapata   35:05
+Plan.
+Yeah.
+Si quieres 161616 PI cuadrado sobre H.
+
+SEBASTIAN IGNACIO MUÑOZ AGUIRRE   35:15
+Claro, eso mismo.
+
+Julio Eduardo Oliva Zapata   35:17
+Es súper, entonces se puede escribir así también.
+Eso algo importante que yo creo que es súper importante. Lo van a requetecontra enfatizar en el curso en los cursos de mecánica cuántica es que la constante de Planck en unidades del sistema internacional.
+Es un número extremadamente chico, es del orden de 10 a la menos 34 y tiene unidades de yaul por segundo bien.
+Es un número muy chico y eso hace que sea difícil.
+Sea difícil hacer patentes los efectos cuánticos, bien.
+Ahora.
+En la superconductividad, en la condensación de José Einstein, en la super fluidez, ahí uno tiene manifestaciones cuánticas de efectos cuánticos en sistemas macroscópicos, pero.
+Pero bueno, cuando cuando uno consigue la primera vez que se aproxima a sistemas cuánticos, se da cuenta de que los efectos cuánticos son muy chiquititos, bien.
+Salvo en esto, en estos, en estos casos que les mencioné, es un número pequeño.
+Entonces, quiero contarles de dónde sale esta expresión de Sakur Tetrov. Bien, en el camino vamos a entender la vamos a entender.
+Vamos a entender.
+1 segundo, vamos a entender el comportamiento de una capacidad calorífica en algunos sistemas que se llaman sales paramagnéticas. Vean alguna cosa que se puede medir.
+Y bueno, pero deme 1 segundo, primero, María Teresa, ¿pudiste conectarte allá o?
+Sí, ahí está, ahí lo doy, ahí súper.
+Christian Island.
+
+CRISTIAN ALFREDO OYARZUN SUAREZ   37:25
+Consulta, entonces, si yo hago el desarrollo de nuevo del experimento de Gibbs, quiere decir que estos 3 nuevos términos van a ser ese logaritmo de 2 negativo con esas constantes, así de bueno, wow, o sea.
+
+Julio Eduardo Oliva Zapata   37:38
+Sí, sí, sí, sí. Y la clave está en que esta expresión para la entropía sí es extensiva, es decir, y tiene esta propiedad, mira, que si yo man dejo fija la temperatura, pero triplico el volumen y triplico el número de partículas, esta entropía se triplica.
+Si cuadruplico el volumen y cuadruplico el número de partículas, esta entropía se cuadruplica. La propiedad extensividad de la entropía nos salva de la paradoja y gibbs, pero va a requerir una hipótesis acerca de si uno puede o no distinguir dos constituyentes fundamentales del gas.
+Yeah.
+Entonces voy a partir con vamos a tratar de derivar esta expresión desde el punto de vista de la física microscópica y vamos a partir primero con sistemas simplificados que no son, que no son gases ideales. Bien, y vamos a partir con algo que va a ser casi un juego. Entonces llamémosle a esta parte.
+Hacia.
+La física microscópica.
+Bien, digamos, la física estadística, o sea, llamar la física estadística.
+O la mecánica estadística es lo mismo.
+Estadística.
+¿Estos son los qué es la mecánica estadística? Son los cimientos.
+Microscópicos.
+K, explícan.
+Las leyes de la termodinámica.
+Como hemos discutido, la termodinámica es un marco conceptual cierto que permite hacer predicciones acerca de las relaciones entre distintas variables termodinámicas y que permite hacer tecnología con eso.
+Pero ese marco conceptual.
+Tiene, se explica bien un por sí solo, es un marco conceptual cerrado y uno lo puede usar bien, pero tiene su se se explica debido a la física microscópica en el contexto de la física estadística. bien.
+Preguntas naturales, entonces, como discutimos probablemente en la primera clase, si recuerdo bien.
+¿Será que la física estadística también es un marco conceptual efectivo y ahí hay algo más fundamental? ¿Será que hay una cadena infinita de marcos conceptuales que se derivan uno después del otro, en donde hay una jerarquía? No sabemos la respuesta a eso. La pregunta es extremadamente interesante, pero la respuesta a eso está más allá de.
+De lo que la física puede decir, la existencia de esta potencial cae en infinita de.
+De marcos conceptuales, dalo, adelante.
+
+GALO MAURICIO EIDELSTEIN SILBER   40:43
+Disculpa que vuelva un poquito para atrás. Teníamos 2 expresiones de la entropía, una para la termodinámica y otra para la física estadística.
+
+Julio Eduardo Oliva Zapata   40:52
+Perfect.
+
+GALO MAURICIO EIDELSTEIN SILBER   40:52
+¿En cuál de las 2:00 se requiere que sean indistinguibles o distinguibles las partículas?
+
+Julio Eduardo Oliva Zapata   40:59
+En la segunda, En la segunda es consecuencia de suponer que las partículas son indistinguibles.
+Esta que está aquí la vamos a derivar asumiendo que las partículas son indistinguibles.
+
+GALO MAURICIO EIDELSTEIN SILBER   41:17
+¿En qué parte se usa eso?
+
+Julio Eduardo Oliva Zapata   41:17
+Yes.
+No le he contado, no le he contado que allá vamos.
+
+GALO MAURICIO EIDELSTEIN SILBER   41:21
+Aya.
+
+Julio Eduardo Oliva Zapata   41:26
+Desde el punto de vista matemático es una tontera, lo vamos a ver dividir por un uno sobre n factorial, ok, pero hay que hay que argumentarlo.
+O sea, hay algunas ideas previas que hay que hay que dejar asentadas, que son la noción de.
+Macro estado.
+Versus micro estado.
+Microestado a este microestado, déjeme ponerle un subtítulo, microestado compatible.
+Con el macro estado.
+Vamos a definir esas esas ideas con un ejemplo.
+Entonces, supongan ustedes, por ejemplo.
+Supongan ustedes que tienen 3 flechas.
+Supongamos.
+Esto va a parecer completamente desconectado a lo que estamos haciendo, va a parecer un juego, pero sirve para.
+Sirve para predecir una capacidad calorífica que se mide, así que no es tan inocente y sirve también este ejemplo para fijar las ideas de microestado compatible y de macroestado. Entonces supongamos que tenemos 3 flechas.
+¿Qué tenemos?
+Thrift letter primero.
+¿Qué pueden?
+Apuntar.
+Hacia arriba.
+O Asia.
+And.
+¿Y preguntémonos, cuáles son?
+¿Cuáles son?
+Las configuraciones posibles.
+Both.
+Es fácil darse cuenta de que tienen que ser 8.
+Porque tengo 3 flechas.
+Somos 3 flechas.
+Tenemos 3 flechas bien y esta puede apuntar hacia arriba o hacia abajo. Ahí hay 2 libertades, pero independiente de hacia dónde apunte esta flecha, esta segunda va a poder apuntar hacia arriba o hacia abajo. Ahí hay 2 libertades más, entonces hay 2 * 2 bien y la tercera, independiente de dónde hacia dónde estén apuntando estas flechas.
+La tercera va a poder apuntar hacia arriba o hacia abajo, así que ahí hay otras 2 libertades. Bien, o sea, por cada una de las opciones de este tipo, hay 2 opciones de este tipo y hay 2 opciones de esta otra flecha. Bien, entonces 2 2 2.
+Y eso es 8.
+Capciosamente este 8.
+Right.
+8 capciosamente escribamoslo como 2 a la 3:00 bien configuraciones posibles posibles.
+Yeah.
+Y dado.
+Dado que son 8, dibujémosle.
+Entonces puede ser hacia arriba, hacia arriba, hacia arriba. Bien, vamos a asumir que estas flechas no interactúan entre ellas. Bien, pasan cosas súper interesantes cuando estas flechas pueden interactuar entre ellas, es decir, cuando cuando la dirección en la que una de ellas apunta depende de hacia dónde apunta la que está al lado. Bien, pero asumamos que son libres, que no saben.
+Asumiendo que son independientes, bien es suficiente para introducir las nociones que queremos introducir. Bien, entonces hay hacia arriba, hacia arriba, hacia abajo.
+Hacia arriba, hacia abajo, hacia abajo, hacia arriba, hacia abajo, hacia arriba. Esos son cuatro y las otras cuatro son las inversiones de estas. Entonces hay hacia abajo, hacia abajo, hacia abajo, hacia arriba, perdón, estoy invirtiendo hacia abajo.
+Hacia abajo, hacia arriba.
+Hacia abajo, hacia arriba, hacia arriba, y hacia abajo, hacia arriba, hacia abajo. 12345678. Ahí están las 8. Esas son todas las configuraciones. Esto mismo se puede hacer.
+Con letra A B, entonces en cada uno de estos lugares hay 3 lugares. Puedo poner una letra A, una letra B. Eso es equivalente a poner una flecha hacia arriba o hacia abajo. Bien, entonces en algunos libros esto lo van a ver con letra A B.
+Okay.
+Super.
+Entonces ahora preguntémonos lo siguiente, vamos a estar interesados en la siguiente cantidad.
+En cada uno de estos casos, en cada tengo un sistema bien y que tiene estas 3 flechitas que estarán apuntando en alguna dirección.
+Y en cada una de estas 3 de estas 8 configuraciones me voy a preguntar ¿Cuál es la resta entre el número de flechitas hacia arriba menos el número de flechitas hacia abajo? ¿Cuál es esta resta?
+O sea, observen que aquí hay 3 flechitas hacia arriba y cero hacia abajo, así que esta resta es 3.
+No.
+En la segunda hay 2 flechitas hacia arriba y una hacia abajo. Entonces tengo uno, después aquí hay uno hacia arriba y 2 hacia abajo. Entonces tengo menos 1, después acá uno, después acá menos 3, después acá menos 1, aquí es uno y acá es menos 1.
+Yes.
+A esta cantidad.
+Déjenme llamarle S, en realidad hay que llamarle 2S, pero es suficiente. Definí esta cantidad física S, que es el número de flechitas hacia arriba, menos el número de flechitas hacia abajo.
+Okay.
+Entonces, ahora me voy a hacer la siguiente pregunta.
+¿Cuántas configuraciones hay?
+Para los distintos valores de ese.
+Entonces este tipo, este G que está acá.
+Es el número de configuraciones.
+But...
+Un valor.
+Aldo.
+De la variable s, que es s, el número de flechitas hacia arriba menos el número de flechitas hacia abajo.
+Ok, entonces ese puede ser 3.
+¿Cuántas configuraciones hay con s igual a 3? Hay una sola.
+Entonces hagamos así, es igual a 3 es 3, voy a cambiar el color.
+¿Cuántas configuraciones hay con s igual a uno? Perdón, me equivoqué, me equivoqué. ¿Cuántas configuraciones hay con s igual a uno?
+No sé, está esta.
+Ahí está.
+Está este problema de combinatoria.
+Lo mejor es hacer un ejemplo por tratar de generalizar.
+¿Cuántas configuraciones hay con s igual a menos uno?
+Es decir, con 2 no me importa cuál cuáles flechitas, bien, no me importa saber que haya 2 hacia abajo y una hacia arriba. Eso es igual, hay 3, o sea, una.
+23.
+¿Y finalmente, cuántas configuraciones hay con s igual a menos 3?
+Hay una sola, que es esa que está ahí, una sola bien.
+Perfecto.
+Entonces.
+Y.
+Introduzco la siguiente.
+La siguiente.
+Here.
+En este ejemplo.
+Videos.
+¿Que el macro estado?
+Está.
+Determinado.
+Or?
+Um.
+Por el valor.
+DS.
+Y.
+Los microestados compatibles.
+Siran.
+Aquellos.
+Y.
+Con.
+Tal valor de ese.
+Yeah.
+Entonces, por ejemplo.
+For ejemplo.
+Para el macro estado, estas palabras definen lo que es el macro estado para el macro estado con s igual a uno.
+I.
+3 microestados compatibles.
+Para.
+El macro estado.
+Con s igual a 3.
+Hay un micro estado compatible.
+Si s vale 3, bien la física microscópica puede ser de una forma solamente todas las flechitas apuntando hacia arriba, mientras que si s vale uno, la física microscópica puede estar en 3 configuraciones distintas, si es que definimos s como la variable que determina el macro estado.
+Okay.
+Y.
+Sin embargo.
+¿Podríamos?
+Haber definido.
+El macro estado.
+De otra forma, solo especificando.
+El número de partículas.
+El número de flechas, el número de flechas.
+Okay.
+En este caso.
+Si definiéramos el macro estado, es otra forma de definir el macro estado, si definiéramos el macro estado.
+Diciendo solo hablando solo acerca del número de flechas, en este caso habría.
+En este caso con n igual a 3.
+Habría ocho.
+Microestados compatibles.
+Yeah.
+Claro, porque si tengo 3 partículas y no me preocupo del valor de ese, sino que me preocupo solo del número de del número de configuraciones microscópicas que hay.
+Tenemos 8 configuraciones compatibles, bien, entonces, dependiendo de cuál sea la variable que yo use para definir el macro estado.
+Puede tener un conteo, una degeneración, un número de microestados distintos.
+Va a depender de qué de qué variable usemos.
+Para definir el macro estado.
+Entonces, consideremos esta segunda, esta segunda definición, okey.
+Consideremos.
+Esta segunda.
+Definición.
+No me ha costado.
+Y preguntémonos lo siguiente, voy a tirar la pregunta, preguntemos lo siguiente.
+¿Cuál es la probabilidad?
+The.
+¿Que ese sea uno? Bien, pregunta, adelante, María.
+
+MARIA ISABEL LELAS CORTES   55:35
+¿Sobre los resincito, eso de las variables involucradas sería en este ejemplo, el sentido de la flecha, no?
+
+Julio Eduardo Oliva Zapata   55:45
+Yeah.
+
+MARIA ISABEL LELAS CORTES   55:47
+Por religión.
+
+Julio Eduardo Oliva Zapata   55:47
+El número, el número, el número de flechas lo estamos en la segunda versión, el número de el número de flechas lo estamos usando como la definición del macro estado y nos preguntamos.
+
+MARIA ISABEL LELAS CORTES   55:52
+Mhm.
+
+Julio Eduardo Oliva Zapata   56:01
+¿Si tengo 3 flechas, de cuántas formas se pueden ordenar ellas? Se pueden ordenar de 8 formas distintas, así que hay 8 microestados.
+
+MARIA ISABEL LELAS CORTES   56:05
+Yeah.
+Mhm.
+Mhm.
+Pero yo cuando estaba haciendo la explicación sobre las variables.
+
+Julio Eduardo Oliva Zapata   56:14
+Mhm.
+
+MARIA ISABEL LELAS CORTES   56:17
+Hay que pensando que si esas variables podrían ser esto de sentido hacia el que está apuntando a la flecha o no, o ya estaríamos hablando de otra cosa.
+
+Julio Eduardo Oliva Zapata   56:25
+Bien, sí, lo que pasa es que estamos asumiendo que estas variables pueden apuntar en 2 direcciones, solamente hacia arriba o hacia abajo, bien, y eso.
+
+MARIA ISABEL LELAS CORTES   56:32
+No, yeah.
+Entonces la variable sería el sentido nomás, no es la arriba y abajo. Ya okay, gracias.
+
+Julio Eduardo Oliva Zapata   56:36
+La área le ha sentido suerte, eso.
+Pero lo no, perdón, la el sentido es la variable, pero ese sentido está en correspondencia uno a uno con las 2 opciones arriba a abajo.
+
+MARIA ISABEL LELAS CORTES   56:51
+sí.
+
+Julio Eduardo Oliva Zapata   56:51
+Eso es lo mismo.
+
+MARIA ISABEL LELAS CORTES   56:53
+Vale.
+
+Julio Eduardo Oliva Zapata   56:54
+Sube.
+Gracias, buena pregunta, entonces.
+Ahora, en la segunda forma, como lo estamos contando.
+Yeah.
+Queremos decir, mira, la variable que está fija es el número de partículas, 3 bien.
+Y s, la variable s, no sé cuánto vale, bien, no sé cuánto vale.
+Y hay 8.
+Microestados compatibles.
+Okay.
+¿Cuál es la probabilidad de que ese sea uno? Sí, porque ese ¿qué valores puede tomar? Puede tomar el valor 1 − 13 − 3 eso.
+Hay una pregunta, María, todavía.
+Porque mano arriba.
+
+MARIA ISABEL LELAS CORTES   57:43
+La saqué a mí, o sea, se ve ahí, pero yo aquí la saqué.
+
+Julio Eduardo Oliva Zapata   57:46
+¿Qué tal?
+Perfecto, bien, Luis, adelante.
+
+LUIS ALBERTO INZUNZA OSSES   57:53
+Quizá voy a ser una locura, pero.
+Como nos estamos introduciendo a la física de partículas ya microscópicas, por ahí leí que la bueno lo que estaba estudiando de la posición del spin y podría se dice que el ángulo puede ser 120° y si multiplico por 3 1 360 y en el fondo es como 3 posibles estados que tenga una partícula definida en el espacio.
+¿Vamos apuntando para ese camino o es otra cosa?
+
+Julio Eduardo Oliva Zapata   58:21
+Sí, pero en este caso estamos considerando, si uno quisiera pensar a estas flechas como partículas, estaríamos pensando en partículas de espino, un medio como el electrón, los neutrinos, los quarks. Los neutrinos son una buena, una buena, un buen ejemplo porque interactúan débilmente. Entonces las flechitas no se hablan entre ellas.
+Bien, eso claro, pero con 2. con 2. con 2 opciones solamente.
+
+LUIS ALBERTO INZUNZA OSSES   58:43
+perfecto, gracias.
+
+Julio Eduardo Oliva Zapata   58:48
+Eso.
+¿Ya entonces preguntémonos cuál es la probabilidad de que ese sea uno?
+You got?
+
+GALO MAURICIO EIDELSTEIN SILBER   58:57
+1/4.
+
+Julio Eduardo Oliva Zapata   59:00
+No, porque excelente, porque hay una.
+Hay algo que yo no les he dicho y que no tenemos cómo saber, ya hay que incluir una hipótesis.
+qué tanto más probable es esta configuración en particular versus esta configuración o esta configuración versus esta configuración en particular, no estoy hablando del valor de ese, estoy hablando qué tanto más probable es esta configuración respecto de esta o esta configuración respecto de
+No sabemos cuál es la distribución de probabilidades sobre cada una de las configuraciones.
+Entonces, supongamos que el sistema está en alguna de estas configuraciones. Yo cierro los ojos, quiero meter la mano al sistema y mirar y tener una probabilidad de que es la probabilidad de que las flechas estén en alguna configuración dada.
+No sabemos.
+Son 8 configuraciones, pero no sabemos cuál es la distribución de probabilidad entre ellas.
+Si aceptamos que hay algo que hay que establecer de manera explícita, si aceptamos que la dirección en la que apuntan estas flechas es aleatoria.
+¿Cuál es la probabilidad de que las flechas apunten así o así o así o así o así o así o así?
+Eso no hay cómo saberlo. Entonces tenemos ignorancia respecto de esa distribución de probabilidad. Bien, entonces a Boltzmann se le ocurrió lo siguiente, Boltzmann dijo, bueno.
+Asumamos, asumamos.
+¿Que las 8 configuraciones?
+Microscópicas.
+¿Compatibles con qué? Con el hecho de que haya 3 flechas compatibles.
+Déjenme agregar esto porque lo vamos a usar para este sistema.
+Aislado, que es lo único que existe en el universo. ¿Se dan cuenta? Estamos estudiando este sistema olvidándonos de que existe el resto del universo, así que de manera efectiva lo que estamos haciendo es considerar este sistema como un sistema aislado.
+O sea, sumamos que las 8 configuraciones microscópicas compatibles para este sistema aislado.
+Yenen.
+La misma probabilidad.
+Entonces, ya que.
+Ignoramos.
+¿En cuál?
+De las 8:00.
+Configuraciones compatibles.
+¿Está el sistema?
+Yeah.
+Asumamos.
+K.
+Su probabilidad, que la probabilidad de cada una de ellas es la probabilidad.
+Ellas es la misma.
+Bien, a esto llamamos hipótesis.
+The Boltzmann.
+Esto se le ocurrió a Boltzmann.
+¿Y una pregunta natural es de dónde sale esto? Entonces, con la hipótesis, uno en principio no tiene derecho a hacerse esa pregunta.
+Es una hipótesis, la vamos a asumir, trataremos de derivar conclusiones medibles experimentalmente que se deducen a partir de esta hipótesis y si esas esos objetos, esas predicciones medibles se condicen con lo que se ve en el experimento, entonces
+Eso dará sustento a esta hipótesis. No la va a demostrar, pero da sustento a que la hipótesis. Es una buena hipótesis. Bien, adelante, Cristian.
+
+CRISTIAN ALFREDO OYARZUN SUAREZ   1:03:38
+Profe, veo que repite bastante la palabra compatibles y parece ser importante y no veo a qué se requiere el concepto y cómo parece que el caso no compatible, por ejemplo.
+
+Julio Eduardo Oliva Zapata   1:03:43
+But...
+Correcto.
+Correcto, bien, va a ser acá en la segunda forma de contar, de definir microestados compatibles.
+Como quedaron todos los microestados como compatibles, porque lo único que le pedí.
+Al sistema microscópico es que hubiera 3 flechas, independiente de hacia dónde apuntan. Entonces es como obvio que, claro, parece innecesario hablar tanto de la compatibilidad. Si hoy son todos compatibles. Bien, lo que va a pasar después es que vamos a tener sistemas aislados que van a estar caracterizados por cierta energía y esa energía.
+va a ser la que va a determinar el macroestado y después el microestado va a estar dado por todas las configuraciones posibles de las partículas que componen el gas, por ejemplo, pero que tengan esa energía.
+Entonces ahí va a quedar un poco más claro. Entonces hay otras habrá otras configuraciones que no tendrán esa energía, otras configuraciones de las partículas que componen el gas que no tendrán la energía que yo estoy prescribiendo para definir el macro estado.
+Ahí quedará claro cuáles configuraciones no son compatibles.
+Bien.
+En ese caso, será más patente el por qué, insisto, es la palabra compatible.
+Pero nos queremos preguntar esto, ¿cuál es la probabilidad de que ese valga uno?
+No tengo idea en principio porque no sé cuál es la distribución de probabilidad sobre los 8 estados. No sé qué tanto más probable es pillar a todas las partículas hacia arriba o todas las partículas hacia abajo o 2 hacia arriba y uno hacia abajo. Bien, pero vamos a asumir que.
+Todas esas configuraciones son igualmente probables.
+Es decir, una configuración en particular, una configuración en particular.
+Tiene probabilidad uno sobre 8.
+La probabilidad de cada una de ellas es uno sobre 8.
+¿Porque hay 8 configuraciones, entonces?
+Por ejemplo, la probabilidad de esta configuración.
+Es 1 sobre 8 la probabilidad de esta configuración.
+Es uno sobre 8 y así vamos a asumir que todas tienen la misma probabilidad de realizarse.
+A veces uno sin intenciones políticas, obviamente es la frase que voy a decir, pero la hipótesis de Boltzmann se puede resumir así que hay en la ignorancia decidimos la democracia. Bien, ignoramos cuál es la distribución de probabilidad sobre todos los microestados compatibles.
+Así que los vamos a tratar democráticamente, vamos a decir que todos ellos tienen exactamente la misma probabilidad.
+Como les decía, ¿de dónde salió esta hipótesis? Pues de la cabeza de y esta hipótesis será una buena hipótesis desde el punto de vista de la física si lleva a predicciones que concuerdan con el experimento.
+Seguimos hablando de esta de esta hipótesis, así que se la historia ha mostrado que es una buena hipótesis.
+Okey, entonces, pero nosotros no queremos saber, observa que la pregunta que está acá en azul no es cuál es la probabilidad de una de estas configuraciones.
+¿Sino que cuál es la probabilidad de que la de que la variable s tome el valor uno?
+Ok, cuántas variables, cuántas configuraciones, todos pesan igual. Cuántas configuraciones, todos pesan igual, pero cuántas configuraciones hay con valor de s igual a uno, hay tres.
+Hay 3 configuraciones con valor de s igual a 1.
+Pero si estas pesan todas igual.
+Entonces la probabilidad no de una de estas configuraciones porque estas pesan todas igual, sino que la probabilidad de que ese valga uno.
+Es una probabilidad distinta, se dan cuenta la probabilidad de que ese valga uno.
+Como consecuencia de la hipótesis de Boltzmann.
+Es 3 sobre 8.
+la probabilidad es una hipótesis distinta sobre otra variable aleatoria, la probabilidad de que ese valga -1 es 3 sobre 8 porque hay tres de esas y pesan todas igual la probabilidad de que ese valga 3 es 1 sobre 8 la probabilidad de que ese valga -3
+Yes.
+Uno sobre 8 y ahí está bien la suma de estas probabilidades da 8 sobre 8, que es uno, está bien las probabilidades también normalizadas ya.
+Se dan cuenta que son probabilidades distintas, estas son probabilidades sobre.
+Probabilidades.
+So re.
+Variables aleatorias distintas.
+Distintos.
+Arriba es sobre una configuración microscópica en particular, esas pesan todas igual abajo.
+La sobre valores específicos de ese.
+Perfecto, entonces algo que se puede mostrar, entonces déjenme decir usando.
+Usando.
+Una herramienta matemática que se llama la fórmula de Stirling.
+La fórmula.
+De Stirling, que ahora se las cuento porque les va a servir también después que dice lo siguiente.
+Supongo que usted tiene un número x y quiere calcular el logaritmo de este número factorial bien.
+De este número factorial, recordemos que x factorial, por ejemplo, 5 factorial, recuerdo 5 factorial es 5 cuatro.
+por 3 por 2 por 1 bien 7 factorial será 7 por 5 no perdón perdón por 6 por 5 esta es definición del factorial por 3 por 2 por 1 bien
+Los factoriales son números grandes, crecen súper rápido los factoriales. Bien, después ustedes pueden jugar en su calculadora favorita de ver cómo va creciendo el factorial. La cosa crece súper rápido y si lo tomo el logaritmo, bien, hay una aproximación que te dice, mira, tú puedes calcular el logaritmo X factorial sin nunca calcular el factorial.
+tienes que hacer lo siguien.
+Tiene que multiplicar a x.
+Hay que multiplicarlo por el logaritmo de x, esto es cuando x es grande.
+X grande, bien.
+Ya esto.
+Hay que restarle X.
+Pero está ley.
+Yay.
+Un fallo de esta aproximación.
+Es tan grande como el logaritmo natural de x.
+Esto significa el fallo en la aproximación.
+Yes.
+Entonces.
+Después podemos hacerlo con matemáticas, sigamos adelante con el argumento, pero porque esto esto no.
+Les voy a dar el resultado final, pero esta es una aproximación.
+Una buena aproximación usando esta aproximación se puede mostrar lo siguiente.
+Es posible.
+Mostrar.
+¿Que cuando?
+Hay.
+Un número.
+Grande.
+De flechas.
+Entonces, N grande.
+La.
+Función.
+La probabilidad.
+La probabilidad.
+Sí.
+Un valor dado de ese.
+En la siguiente forma.
+Es una gaussiana bien.
+Cuando hay, observen que cuando teníamos 3 partículas.
+el valor más grande que podía tomar ese era 3 porque son todas hacia arriba y ese es el número de partículas hacia arriba menos el número de partículas hacia abajo si apuntan todas hacia arriba ese vale 3 si apuntan todas hacia abajo ese vale menos 3 bien entonces el valor más grande que puede tomar ese es n si hay n partículas Porque si tengo cuatro partículas
+variable número de flechitas hacia abajo menos número de flechitas hacia arriba menos número de flechitas hacia abajo el valor más grande que puede tomar esa resta es cuatro porque son todas hacia arriba y el valor más chico que puede tomar es menos cuatro que son todas hacia abajo con cinco partículas lo mismo y después habrá distribuciones entre medio
+Menos.
+y esta es una Gaussiana, no me quedó tan bien, pero muy bien, el ancho de esta Gaussiana se puede calcular y se puede calcular y crece como la raíz del número del número de flechitas, o sea, mientras más flechitas hayan, esta Gaussiana va a ser más ancha, pero va a ser... ¿qué tanto más ancha va a crecer como raíz cuadrada del número de...
+De flechita bien, eso se puede demostrar. Después le puedo pasar un video donde lo hago con detalle bien de una clase de física estadística.
+Yeah.
+Pero mira lo que pasa acá. que.
+Cuando.
+Yeah.
+Cuando n crece, pensemos en lo siguiente, ahora si n crece, estas flechas se mueven hacia allá y estas flechas se mueve hacia acá.
+Como n.
+No.
+Estas flechas se mueven como n porque va de menos n hasta n se mueven como n, pero el ancho de la gaussiana se mueve como raíz de n.
+Crece como raíz de n, entonces el rango crece como n, mientras que el ancho de la Gaussiana crece como raíz de n a medida que voy aumentando n. Entonces, si bien la Gaussiana se hace más ancha.
+En un sentido relativo respecto de qué tan grande es el rango posible de valores de s.
+Se hace más localizada, se dan cuenta esta parte no es fácil.
+el rango posible de valores de s va entre menos n y n entonces a medida que n crece ese Rango crece como n el ancho de la gaussiana igual crece pero el ancho de la gaussiana crece como raíz de n
+Y cuando n es muy grande.
+Raíz de n.
+Es más chico que ny a medida que n es cada vez más grande, la diferencia estaba siendo cada vez más grande. Entonces, si bien el ancho de la gaxina crece y el rango de posibles valores del exceso de spin se llama esto adelantando.
+A lo que mencionaba Luis.
+En un sentido relativo, esta gaussiana se hace más localizada.
+En un sentido relativo, si bien.
+Si bien.
+Tanto el rango.
+De posibles valores de s.
+De ese.
+Como el ancho de la gaussiana.
+Listen.
+En un sentido relativo.
+Te diría.
+La Gaussiana se está aplanando en un sentido relativo.
+Relativo a qué, el ancho respecto del rango, no en un sentido relativo.
+La gaussiana.
+Se Se tiende a localizar.
+A localizar.
+N.
+Su promedio.
+Cuando n crece.
+Yeah.
+Entonces pensemos qué era este PDS, esta es la probabilidad. Acá la dibujé como una distribución continua. Hay que tomar el límite continuo, pero pensemos todavía que ese es una variable discreta con cuatro partículas será cuatro.
+Y.
+2.
+Cero menos 2 − 4 con cuatro partículas. Traten ustedes después de dibujar las 16 configuraciones, repetir este ejemplo, repetir este ejemplo, pero con cuatro, con cuatro flechas, con cuatro flechas.
+Cuando hay muchísimas flechas, lo que pasa es que al final la Gaussiana se empieza a localizar cerca del promedio, del valor promedio de la variable S. Bien, pues si esta S es una variable aleatoria y está distribuida Gaussiana, justo el centro de la Gaussiana es el promedio.
+¿Entonces, a medida que viene aumenta?
+La probabilidad debido a que la gaussiana se localiza, la probabilidad de encontrar.
+Al sistema en una configuración cerca del promedio.
+Si la gauciana está localizada.
+Será.
+Excesivamente mayor a la probabilidad de encontrar a una parte al sistema en un comportamiento más lejano al promedio, al comportamiento promedio para la variable s.
+Déjenme hacer más dramática la el dibujo de la localización.
+Ok.
+Bien, entonces supongo que esta es la probabilidad de encontrar el valor s.
+En la resta de número de flechitas hacia arriba, menos número de flechitas hacia abajo. Esto es con muchas flechas, pene grande. Entonces observen que la probabilidad de que las flechitas estén en alguna configuración que se parezca a la configuración promedio, esa probabilidad es mucho mayor que la probabilidad.
+De alguna configuración que se aleja del comportamiento promedio, a pesar de que.
+A pesar de que.
+Cada Cada una de las configuraciones microscópicas tenga exactamente la misma probabilidad.
+No dejen mirar acá arriba.
+Cada una de las configuraciones que está a la izquierda tiene la misma probabilidad.
+Son todas iguales. Bien, acá hay otra frase, otra frase parafraseando a la granja.
+Las micro, las los microestados son todos iguales, bien, pero hay unos más iguales que otros, entre ellos bien.
+Observen que hay con n igual a 3 ya se alcanza a ver, observen que la probabilidad de encontrar a s.
+En es igual a uno, es 3 veces mayor que la probabilidad de encontrar.
+Un s igual a 3.
+3 veces mayor, acá es 3 veces mayor, igual con ese menos uno entonces.
+Si bien cada una de estas microconfiguraciones, estos microestados compatibles con el hecho de que haya tres partículas, cada uno de ellos es igualmente probable, estos tipos son todos iguales, respecto de la variable s hay algunos más iguales que otros, bien, porque si s está cerca del valor promedio,
+Es 3 veces más probable.
+O 6 veces más probable si considero estas 2, si considero es igual a uno o es igual a menos 1, es 6 veces más probable encontrar al sistema a un salto del cero en el valor s que encontrar al sistema con un valor s que está alejado a 3 del cero. Bien, el promedio de la variable s.
+Es cero.
+Promedio la variable es cero.
+Yeah.
+Y si quiero preguntarme, observe de esta forma está buena decirlo. Si me pregunto cuál es la probabilidad de encontrar a la variable s a un salto de uno de su valor promedio que está en cero.
+Yes.
+6 de 8.
+6 de 8.
+Versus.
+Y.
+Versus la respuesta a la siguiente pregunta, ¿cuál es la probabilidad de encontrar a la variable s a 3 saltos del valor promedio, ya sea hacia la izquierda o hacia la derecha?
+Bien, esos son 2 de 8.
+2 de 8, que es 25% versus 75%.
+Se da cuenta que.
+Respecto de la variable s aparece un orden.
+Aparece un orden en el sentido de que es mucho más probable encontrar.
+Y.
+Claro, acá estamos hablando de 25 y 75%, pero cuando n es grande, cuando hay muchas partículas, estos números son categóricamente distintos, bien porque la Gaussiana se localiza alrededor del punto del punto promedio.
+Bien, entonces ahora.
+Este es un sistema súper simple, cierto, pero consideremos ahora un sistema más complicado. Mira, tengo una habitación llena de un gas bien.
+Llena de un gas y este gas tiene cierta especificación de su macro estado, el número de partículas, cuánta energía tiene si quieres bien.
+y el gas entonces voy a vamos a asumir lo siguiente, vamos a asumir que todas las configuraciones posibles del gas en esta sala, en esta habitación, tienen exactamente la misma probabilidad, cada una de ellas tiene exactamente la misma probabilidad, es decir, la probabilidad de que si nos olvidamos de la gravitación y la formación de agujeros ******.
+La probabilidad de que.
+Todo Todos los átomos del gas estén en una esquina en esta sala y yo me esté asfixiando la probabilidad de esa de una configuración tal en particular.
+Es la misma es la misma probabilidad que la probabilidad.
+De que el gas esté distribuido de manera homogénea en una configuración especial, en una configuración particular bien.
+Pero distribuido de manera homogénea en esta sala.
+Entonces.
+Si todas las configuraciones microscópicas del gas son igualmente probables, es decir, es igualmente probable encontrar el gas de una forma en una esquinita que encontrarlo de una forma en particular, distribuido homogéneamente en la sala. Si esas 2 configuraciones son igualmente probables, ¿por qué es que no nos asfixiamos?
+¿Por qué es que no?
+No observamos la configuración, si es igualmente probable de que todo el gas esté en la esquinita, porque observamos que el gas se distribuye homogéneamente en la sala.
+Eso es porque de las configuraciones en las que el gas está confinado en una esquinita, hay muchas menos.
+de todas esas configuraciones de esas hay muchas menos que aquellas que corresponden al comportamiento promedio en donde el gas se distribuye homogéneamente en la sala si no me pregunto por una configuración en particular del gas sino que me pregunto Cuál es la probabilidad de que el gas se distribuya homogéneamente independiente
+TD.
+De cuál sea la posición en particular de cada una de las partículas.
+De esas configuraciones en las que el gas está distribuido homogéneamente en la sala, hay muchísimas más configuraciones que aquellas que corresponden al gas en una esquinita, si bien una configuración en particular.
+Tiene exactamente la misma probabilidad que otra configuración en particular del gas homogénea, homogéneamente distribuido. Hay muchas más de las otras, se dan cuenta, son todas iguales, pero hay unas más iguales que las otras, más iguales entre ellas. Hay más de las que se parecen al comportamiento promedio.
+Entonces, la.
+Hipótesis de Boltzmann.
+La hipótesis de Boltzmann nos sirve para explicar por qué.
+Si bien todas las configuraciones.
+son Igualmente probables ya no observamos eh No si pueden realizarse pero no observamos que todas las partículas del gas se vayan en una esquinita bien
+Entonces explicamos la idea de manera más o menos precisa con las flechas, pero ahora si uno exporta estas ideas al comportamiento de un gas.
+Dejémoslo establecido para un gas.
+Para un gas.
+Es una configuración en una en una habitación.
+Habitación.
+Bien.
+Un gas con n partículas, esta configuración en particular.
+La probabilidad de esta configuración en particular es igual a la probabilidad.
+Cuando dibujo alrededor es porque quiero decir que el sistema está aislado. La probabilidad de esta configuración en particular es la misma probabilidad de esta configuración en particular, una configuración dada.
+De particular.
+Esas 2 probabilidades son iguales.
+Porque son 2 configuraciones posibles para n partículas con cierta energía que ocupen una parte del volumen disponible, pero resulta que de estas, pero.
+I.
+Pero de.
+Las configuraciones.
+No, déjeme escribirlo de otra forma, pero hay.
+Muchísimas, este muchísimas no le hace justicia, aguantan más o k muchísimas.
+No tengo un súper latido.
+Suficiente, pero cuando uno calcula los números son números absurdamente grandes, con 10 a la 23 partículas es el número de configuraciones que hay.
+en un volumen, por ejemplo, un metro cúbico, en donde las partículas se parecen más a esta distribución que a esta distribución. Son números absurdamente grandes, del tipo 10 a la 10 a la 23, o sea, son números gigantescos. Pero hay muchísimas más configuraciones.
+¿Que se parecen?
+A la segunda.
+Versus.
+Okay, yes.
+Parecidas a la primera.
+Yeah.
+Hay una frase acá que se usa, se usa siempre.
+Las separaciones, observar.
+Desviaciones.
+Estoy parafraseando desviaciones del comportamiento promedio.
+Desviaciones pequeñas.
+Del comportamiento promedio.
+No les estoy contando de por qué el comportamiento promedio es el donde el gas está distribuido en la habitación de manera homogénea, pero.
+Créamelo entonces observar desviaciones pequeñas del comportamiento.
+Promedio.
+Es raro.
+Mientras que.
+Observar.
+Desviaciones.
+Grandes.
+Respecto.
+El comportamiento promedio.
+Es casi imposible.
+¿Se encuentra entonces? Todas las configuraciones microscópicas compatibles tienen la misma probabilidad. Lo vamos a asumir como la hipótesis de Boltzmann.
+And.
+Pero.
+Yeah.
+Todas, pero hay muchas de ellas.
+Hay muchísimas más de ellas que se parecen al comportamiento promedio de variables físicas, bien al comportamiento promedio de la variable s, entonces vuelvo arriba.
+Repetir esto.
+Porque es difícil esta idea, bien, no es fácil esta idea.
+Cada una de las configuraciones que están a la izquierda tiene exactamente la misma probabilidad.
+Porque no tenemos cómo asignar una distribución de probabilidad sobre ellas porque no sabemos nada más respecto al sistema. Cada una de estas configuraciones tiene la misma probabilidad.
+Pero respecto de la variable s.
+A un salto de una unidad respecto del comportamiento promedio de s.
+Es Hay un 75% de probabilidades de encontrarse en esas configuraciones versus un 25% de encontrarnos a un salto de 3.
+En la variable s respecto al comportamiento promedio, y esto es con n igual a 3 con n más grande. Esto de estas gaussianas de verdad se se hacen extremadamente localizadas.
+Y exportando estas ideas a un sistema más complicado.
+Vemos que podemos entender el por qué.
+El gas en una habitación tenemos una explicación para de por qué observamos el gas en la habitación distribuido. Sí, ojo que la probabilidad de encontrar una configuración en particular, cierto, es la misma.
+Pero hay muchas más que se parecen al promedio. Son todas iguales, pero hay unas más iguales que otras. Luis, adelante.
+
+LUIS ALBERTO INZUNZA OSSES   1:32:44
+Sí, siguiendo la analogía, entonces de cómo hemos ido viendo esto, usted introdujo esta este concepto, cierto, esta idea, esta hipócresis, diciendo que se se explicaba desde adentro, desde la desde los micros, cierto del.
+De lo microscópico, el comportamiento de la entropía. Entonces yo hago una comparación y digo cuando estábamos viendo la rapidez y después dijimos que la temperatura era el promedio de la energía cinética. Y ahora podríamos decir que la entropía, o sea, la entropía promedio.
+
+Julio Eduardo Oliva Zapata   1:33:19
+Yes.
+
+LUIS ALBERTO INZUNZA OSSES   1:33:23
+Se comporta igual como una gaussiana dentro de un estado o en un en una en un sistema cerrado. La entropía sería también el promedio porque lo estamos viendo desde una variable estadística o no, o me estoy yendo para otro lado.
+
+Julio Eduardo Oliva Zapata   1:33:38
+Yeah.
+La entropía la vamos a definir ahora desde el punto de vista microscópico a la Boltzmann y va a ser el número de el logaritmo natural del número de microestados compatible. Esa es la definición de la entropía de Boltzmann bien y después y vamos a tener que tratar de argumentar de que esa entropía microscópica.
+Se condice con la entropía termodinámica.
+Eso, pero la entropía no va a ser una variable aleatoria.
+Lo que es una variable aleatoria es en cuál microestado compatible está el sistema. Eso es una variable aleatoria, pero el número de microestados compatibles no va a ser una variable aleatoria.
+Eso pregúntame después de nuevo, después de introducir la noción de entropía de Boltzmann, a ver si tal vez lo que cuente ahora va a ayudar a dilucidar y a la pregunta y si y si no reformúlala y pregúntame de nuevo. Eso ya lo adelante.
+
+LUIS ALBERTO INZUNZA OSSES   1:34:41
+Gracias.
+
+GALO MAURICIO EIDELSTEIN SILBER   1:34:42
+Sí, mira, tengo, o sea, como un modelo ideal, entiendo, digamos, la hipótesis de que todos estos estados tengan la misma probabilidad.
+Y de hecho, el estado de la izquierda es un caso particular del.
+De todos los estados, digamos, un caso particular de la derecha, por así decirlo. Ahora, eso teóricamente, pero en la práctica.
+
+Julio Eduardo Oliva Zapata   1:34:59
+That.
+
+GALO MAURICIO EIDELSTEIN SILBER   1:35:07
+Yo tengo la idea de que si tengo este recipiente aislado, digamos, con un gas.
+Tal como está escrito acá.
+La probabilidad de que las n partículas se agrupen en un rincón.
+En la realidad es cero, o sea, en razón de que se van a agrupar en un rincón, da la impresión de que aunque esté 1000000 de años, siempre va a estar homogénea y se mezcla.
+
+Julio Eduardo Oliva Zapata   1:35:33
+Bueno, claro, súper. La probabilidad de que es eso ocurra de que las partículas se vayan en un rincón, no es cero, pero es absurdamente chica.
+Sí, y por ejemplo, uno de acá.
+
+GALO MAURICIO EIDELSTEIN SILBER   1:35:48
+¿Pero por qué no es cero?
+
+Julio Eduardo Oliva Zapata   1:35:50
+es distinta bueno por qué es distinta de cero porque de este gas estamos asumiendo que solo conocemos su número de partículas que solo conocemos el número de partículas y el y su energía solo conocemos su número de partículas y su energía entonces una configuración posible si yo te digo
+Mira, este gas tiene en principio todo este volumen posible para explorar, pero solo te digo cuánta energía tiene y cuántas partículas tiene. Una configuración posible perfectamente es la de la izquierda, con todas las partículas en una esquinita, pero con la misma energía.
+Esa es un, dado que es una configuración posible, tiene una probabilidad no nula de ocurrir.
+
+GALO MAURICIO EIDELSTEIN SILBER   1:36:35
+Sí, pero eso es teóricamente, pero la realidad es posible.
+
+Julio Eduardo Oliva Zapata   1:36:42
+O K, déjame decir cuánto tiempo habría que porque uno puede esperar. ¿Cuánto tiempo uno puede estimar? ¿Cuánto tiempo hay que esperar?
+Para tener alguna chance de observar una configuración como esa.
+Esos Ese tiempo se llama tiempo de recurrencia de Poincaré. Bueno, Poincaré se le se le ocurrió esto o pudo elaborar respecto a esto y cuando uno calcula el tiempo.
+Que uno tendría que esperar para tener una chance no nula o una chance razonable de observar todas las partículas en una esquinita. El tiempo que te da es más grande que la edad del universo, los tiempos de que la que la edad del universo que conocemos según el modelo actual, o sea, son más de 14000 800000000 de años.
+Bien.
+
+GALO MAURICIO EIDELSTEIN SILBER   1:37:29
+Eso prueba que es imposible, eso prueba que no es posible ya.
+
+Julio Eduardo Oliva Zapata   1:37:29
+Los tiempos de recurrencia, ajá, no prueba que es imposible, no pruebe.
+Pero no es imposible. Si los tiempos de recurrencia son absolutamente grandes, hay un juego que se hace acá también que es este el.
+El.
+Somos que tú tienes un perfume bien y lo destapas y el perfume empieza a explorar el universo.
+Se diluye.
+tú puedes calcular un tiempo de recurrencia que te va a decir cuánto tiempo tendrás que esperar para tener una probabilidad no despreciable de que todas las moléculas del de que todas las moléculas del gas de que todas las moléculas del perfume vuelvan a estar dentro del
+De la botella bien y te dan tiempo grandes, pero no son infinitos, no da infinito.
+Eso había una pregunta, había más, María, adelante.
+
+MARIA ISABEL LELAS CORTES   1:38:34
+A propósito de esa situación, estaba pensando que quizás una forma de, no sé si simplificar, pero estoy intentando entenderlo. Tengo la misma duda que el compañero de tener. Sería algo así como, no sé si es válido, pero imaginarse una mesa de billar.
+
+Julio Eduardo Oliva Zapata   1:38:48
+No.
+
+MARIA ISABEL LELAS CORTES   1:38:56
+Ideal, pero analizando el plano, nada más no el volumen, entendiendo que las bolas van a moverse sobre la mesa y no van a salir para arriba ni para abajo. Eliminar el roce y darle el golpe a una. Inicialmente pueden estar distribuidas de cualquier manera. Esos golpes van a empezar a suceder contra los muros, entre bolas, pero
+
+Julio Eduardo Oliva Zapata   1:39:01
+K.
+Mhm.
+
+MARIA ISABEL LELAS CORTES   1:39:19
+También podría suceder que de repente, en lugar de que estén todas dispersas sobre la mesa, empiecen a juntarse en una esquina de la mesa y después, de nuevo, nuevamente se distribuyen por el resto y otro tiempo más adelante vuelven a juntarse en otra esquina, quizás o en alguna zona intermedia dentro de la superficie de la mesa.
+
+Julio Eduardo Oliva Zapata   1:39:30
+Yeah.
+
+MARIA ISABEL LELAS CORTES   1:39:40
+Y llevándolo a lo real, claro, efectivamente, a lo mejor, con los millones de partículas que podemos encontrar en el aire en un volumen X, es mucho más temoroso llegar a ese minuto. Pero si uno lo simplifica a un nivel un poco más concreto, a lo mejor, con esas bolas sería más o menos una analogía que pudiéramos ocupar.
+
+Julio Eduardo Oliva Zapata   1:39:54
+Yeah.
+Buenísimo, buenísimo. Sí, está muy bueno ese ejemplo. Está muy bueno ese ejemplo porque uno se puede imaginar la mesa de billar con bueno, hartas, pongamos no sé 50 pelotitas dando vueltas y uno se puede imaginar haciendo así, mira.
+Es decir, mirando el sistema de manera aleatoria después de cierto en cierto intervalo de tiempo. Entonces la lo que estamos tratando de argumentar en ese ejemplo sería lo que tú estás diciendo. O sea, si yo abro los ojos en un instante aleatorio.
+Bien, va a ser mucho más probable ver las bolas de billar esparcidas sobre la mesa que verlas todas en una esquinita bien.
+Pero la hay una, pero en algún momento el sistema pasa, el sistema que está evolucionando, las pelotas están chocando, asumamos que no hay disipación. En algún momento el sistema pasa por la configuración donde todas las pelotas están en una esquina, eso, pero resulta que yo tendría que repetir el experimento de mirar.
+Muchísimas veces para poder tener una probabilidad razonable de observar esa configuración en donde todas las pelotitas están en una esquina, pero es una configuración posible. Está súper bueno ese ejemplo.
+Claro, con el ejemplo del gas, la parte emocional, cierto, juega un rol también porque uno no se quiere asfixiar, pero con las pelotitas de billar es muy bueno ese ejemplo, súper.
+Yeah.
+Ahora también ustedes me podrían decir, oye, pero las pelotitas de billar, yo puedo escribir la segunda ley de Newton para cada partícula y resolverla y seguirla. Pero argumentamos hace un par de clases que si uno tiene muchísimas bolas de billar.
+Si bien en principio se pueden resolver las segundas leyes de Newton, bien, hay un momento en el que no es práctico bien y uno pasa a decir, ok, la posición de las partículas va a ser aleatoria. Bien, y voy a tratar de describir de manera macroscópica, de manera macroscópica ese sistema sin saber exactamente dónde.
+A cada una de ellas porque tal vez ni siquiera me interesa.
+Súper, esos tiempos se llaman tiempos de recurrencia de Poincaré. Lo dejo anotado ahí y escucharán.
+Escucharando 22 tipos de historias en este contexto, una es esta de que cuánto tiempo le toma el perfume volver a estar completamente contenido dentro de la dentro de la.
+De Del frasco, cierto de perfume, bien, y que cuando uno calcula ese tiempo con las leyes de la mecánica estadística y la probabilidad te dan tiempos larguísimos para un para un perfume de 100 ml o k te dan tiempos larguísimos, más largos que la.
+Um.
+Actual del universo, pero.
+No son infinitos, son larguísimos, pero no infinitos bien y escucharán también en este contexto la historia de monos tipeando random.
+Que son capaces de escribir una novela. Le es exactamente la misma. Entonces, si uno tiene monos tipeando en una máquina, bueno.
+Esta analogía es antigua, entonces la oficial es con una máquina de escribir mono tipeando en una máquina de escribir de manera aleatoria.
+Uno podría decir de ahí no va a salir nada, ok, pero.
+Si espero suficiente tiempo y ese tiempo se puede calcular, pero dan tiempos de verdad larguísimo, puedo.
+Puedo estimar cuánto tiempo hay que esperar para que salga de manera continua toda una novela dada en Shakespeare, en el caso de la analogía en particular.
+Adelante, María.
+
+MARIA ISABEL LELAS CORTES   1:44:00
+Para entender un poco mejor esto del tiempo de recurrencia, vendría siendo como ese esa demora temporal para llegar a encontrar.
+Como la configuración menos probable, una cosa así.
+Porque al fin y al cabo, escribir las novelas como.
+
+Julio Eduardo Oliva Zapata   1:44:15
+No, claro, esta que no hay que decir menos probable porque esa configuración es igual de probable que todas las otras, es para observar una configuración.
+
+MARIA ISABEL LELAS CORTES   1:44:21
+¿Entonces, cómo puede quedar?
+
+Julio Eduardo Oliva Zapata   1:44:25
+Redondel.
+
+MARIA ISABEL LELAS CORTES   1:44:26
+Sí, que para entender bien el concepto, porque en mi mente, claro, se entiende teóricamente que son todas igual de probables, pero el hecho de que esa probabilidad mínima es, o sea, no mínima de nuevo, que haya una de esas probabilidades que sea como más extraña o quizás menos lógica, no sé cómo sería ahí la descripción correcta, pero.
+
+Julio Eduardo Oliva Zapata   1:44:28
+Mhm.
+Yes.
+
+MARIA ISABEL LELAS CORTES   1:44:47
+¿Cómo quedaría bien definido el tiempo de recurrencia al final?
+
+Julio Eduardo Oliva Zapata   1:44:47
+Y.
+Súper, claro, súper. Es para observar una configuración que se aleja del promedio, que se aleja del comportamiento promedio. Eso es el tiempo que habría que esperar para observar una configuración que se aleja del comportamiento promedio. Entonces, por ejemplo,
+
+MARIA ISABEL LELAS CORTES   1:45:05
+¿Y esa sería la baja de la curva, no?
+
+Julio Eduardo Oliva Zapata   1:45:09
+Eso correcto.
+
+MARIA ISABEL LELAS CORTES   1:45:10
+Ya.
+
+Julio Eduardo Oliva Zapata   1:45:11
+Sí, y el entonces en este caso sería, por ejemplo, en el caso que tú proponías de la mesa de billar y un observador mirando, por ejemplo, cada una vez por segundo, bien cerrando los ojos y mirando después un después de 1 segundo, ¿cuántas de esas veces tendría que abrir los ojos el?
+El observador para poder.
+Observar.
+La una configuración que se aleje del comportamiento promedio.
+Y cuando son muchas partículas es muchísimo tiempo.
+Bien, entonces déjenme dejar algunos conceptos acá. Ustedes pueden investigar porque este estas ideas son tan lindas que está lleno de videos de divulgación de este tiempo.
+De recurrencia de Puencaret.
+De Poincaret.
+Y.
+Perfume tiempo.
+Que le toma.
+A un perfume.
+Volver al frasco, volver.
+A la botella.
+Tiempo.
+¿Qué le toma?
+A un conjunto.
+De n monos.
+Escribir.
+Hey.
+Tipeando, tecleando, digamos.
+Tecleando.
+De manera.
+Aleatoria.
+Escribir.
+Una novela dada.
+Todos esos números se pueden calcular usualmente.
+Todos estos tiempos.
+Resultan ser.
+Cuando se calculan, por calcularlo, resultan ser mayores.
+A la edad.
+Actual.
+Del universo.
+Que aproximadamente.
+Bueno, yo 15000.
+15000, más o menos, 15000 millones.
+De años.
+Yeah.
+Según pero según quién según.
+El modelo cosmológico actual.
+El modelo comológico actual muestra que indica que al menos el universo tiene 14000 80000 millones de años. Adelante, Galo.
+
+GALO MAURICIO EIDELSTEIN SILBER   1:48:30
+Sí, oye, mira, disculpa que vuelva un poquito para atrás. Yo creo que estos 3 casos que tú, estos 3 ejemplos son distintos.
+
+Julio Eduardo Oliva Zapata   1:48:33
+Yeah.
+
+GALO MAURICIO EIDELSTEIN SILBER   1:48:39
+Por ejemplo, el caso de los monos.
+Efectivamente, no hay ninguna razón para pensar de que existe una probabilidad de que un mono escribe una novela.
+No hay una razón, es un tema de tiempo nomás, pero en el caso físico de que todas las partículas de estos 2 recintos se acumulen en un recinto, se acumulen en una esquina, yo no veo una razón física que es que pueda producir eso. No sé si me explico.
+
+Julio Eduardo Oliva Zapata   1:48:51
+Mhm.
+That.
+Correcto.
+
+GALO MAURICIO EIDELSTEIN SILBER   1:49:11
+Si están a una temperatura, se están moviendo estas moléculas, por ejemplo, en razón de que es distinto que haya, por ejemplo, un imán en una esquina ya muy débil y que finalmente, pero si no hay una razón física, ¿por qué se van a juntar en una esquina?
+
+Julio Eduardo Oliva Zapata   1:49:15
+Mhm.
+
+GALO MAURICIO EIDELSTEIN SILBER   1:49:26
+Esa es mi duda, que no matemáticamente sí está bien el cálculo, pero físicamente no veo ninguna razón por lo cual estas moléculas que están moviéndose aleatoriamente se se se vayan todos a la misma esquina.
+
+Julio Eduardo Oliva Zapata   1:49:27
+Te entiendo, te entiendo.
+Sí.
+Okay.
+Mhm.
+Súper, bien, mira, una de las razones es que estamos asumiendo que del sistema solo sabemos su energía y el número de partículas, pero esa explicación ya la dije antes, entonces ya yo creo que eso estaba convencido. Bien, dónde? ¿Por qué resulta ser? Déjame dar un ingrediente nuevo. ¿Por qué resulta ser extremadamente útil?
+Esta forma de pensar la evolución de los sistemas físicos. y.
+Y el hecho de que parezca haber una de estas ideas, naturalmente emerge algo que se llama la dirección de la flecha del tiempo y es la siguiente, mira.
+Toda la física, cierto, olvidémonos que es la mecánica cuántica, toda la física.
+Está dictada por la segunda ley de Newton para cada una de estas partículas. Serán 10 a la 23 segundas leyes de Newton, pero son segundas leyes de Newton que se pueden escribir bien.
+Perfecto.
+Supón ahora que tú partes, das una condición inicial con todas las partículas en una esquina.
+Con todas las partículas las pones en una esquina.
+Les da cierta energía, hay cierto número de partículas y las sueltas.
+Las partículas van a empezar a explorar el sistema.
+Empezar a explorar el sistema, pero la segunda ley de Newton es reversible en el tiempo bien.
+Sí, una condición inicial en la que todas las partículas estaban en una esquina.
+Dada esa condición inicial, según la segunda ley de Newton, dada esa condición inicial, pueden explorar después toda la toda la habitación.
+Dado que la segunda ley de Newton describe una dinámica que es reversible en el tiempo.
+No hay ninguna razón de por qué.
+todas las partículas distribuidas en este espacio no puedan irse a una esquina. La segunda ley de Newton es completamente reversible, entonces dada
+Dada la las moléculas distribuidas en la habitación, si yo les doy cierta velocidad.
+Precisa y cierta.
+Y cierta posición precisa, la segunda ley de Newton es compatible con que todas las partículas se vayan en una esquina.
+pero eso no lo observamos si tú tienes razón o sea eso yo estoy acá no observo que las partículas se vayan en una esquina Entonces dónde está dónde está la explicación bueno la explicación está en lo que estamos discutiendo que hay muchísimas más configuraciones que se parecen a estas en donde el sistema parece estar pegado en estas configuraciones en donde el gas se distribuye de manera homogénea
+Bien.
+Pero la segunda ley de Newton.
+Debido a que la segunda ley de Newton no prohíbe que todas las partículas se vayan en una esquina.
+Tengo que encontrar una explicación de por qué no observo eso.
+Y el marco conceptual que estamos construyendo ahora nos permite explicar de por qué uno no observa eso, uno lo podría observar si esperará suficiente tiempo.
+Pero debido a que hay muchísimas más configuraciones que se parecen a esta.
+Parece ser que el sistema estuviera pegado cierto en estas configuraciones típicas. Hay configuraciones típicas y configuraciones poco típicas, configuraciones que se parecen al comportamiento promedio respecto de las horas. Entonces hay un elemento que no les había dicho antes, pero que es crucial. es que.
+Las leyes de la física son reversibles en el tiempo.
+Y.
+Todas las leyes de la física, incluso el modelo estándar, es reversible en el tiempo, si es que uno además hace un par de cosas, conjuga la carga y conjuga la paridad, pero digamos las leyes de la física son reversibles en el tiempo. Entonces, si todas las partículas pueden partir de la esquina,
+Pueden partir de esquina y explorar el volumen.
+Perfectamente puede ocurrir que todas estas partículas que están en el volumen.
+¿Se vayan a la esquina, pero por qué no observo eso? Porque hay muchas más de estas que las otras.
+Eso sumó a la aportó o confundió más o te hizo dudar más de mi explicación.
+
+GALO MAURICIO EIDELSTEIN SILBER   1:54:04
+No.
+No está bien, me voy a quedar con eso.
+
+Julio Eduardo Oliva Zapata   1:54:11
+Sí, era era un elemento importante porque ustedes habrán escuchado esto de que cuando claro, uno bueno, esto lo hemos vivido 2, uno tiene un huevo sobre la mesa, el huevo se cae, cierto, choca en el piso, se quiebra bien, pero la y eso se produce debido a la a la.
+Al A las leyes de la física, las leyes de la física rigen ese proceso.
+Pero las leyes de la física también permiten debido a que son reversibles en el tiempo, también permiten que un huevo que está quebrado sobre el piso.
+Vuelva sobre la mesa, vuelva a estar sobre la mesa.
+Pero eso no lo observamos bien, porque hay muchas más configuraciones que se parecen a la última y vamos a ver que habrá un aumento de la entropía en ese proceso. El sistema está aislado y un aumento de la entropía.
+
+GALO MAURICIO EIDELSTEIN SILBER   1:55:02
+Uy, eso se parece.
+
+Julio Eduardo Oliva Zapata   1:55:02
+Uno podría en principio darle o no.
+
+GALO MAURICIO EIDELSTEIN SILBER   1:55:05
+Si no se parece al caso de estas partículas que atraviesan una barrera potencial que es superior a su energía.
+Que el efecto túnel.
+
+Julio Eduardo Oliva Zapata   1:55:11
+Bueno, bien, claro, no, pero ese no es necesaria la física estadística para entender el efecto túnel. Claro, estas ideas de acá las que estamos discutiendo acá requieren un número grande de partículas. Bien, el efecto túnel lo van a discutir en la mecánica cuántica y con una partícula basta. Bien, entonces la razón es distinta.
+No.
+
+GALO MAURICIO EIDELSTEIN SILBER   1:55:33
+Two.
+
+Julio Eduardo Oliva Zapata   1:55:33
+Porque la mecánica, sí, o sea.
+En la mecánica clásica de una partícula.
+O en la mecánica clásica, incluso de muchas partículas, no hay efecto túnel.
+Entonces es la mecánica cuántica la que juega un rol y con una partícula basta.
+Yep.
+Entonces les propongo que hagamos una pequeña pausa, unos 10, 15 minutos.
+Yeah.
+Estamos cerca, estamos cerca de llegar al gas ideal y terminaremos con eso.
+La entropía del García.
+Si el tiempo fuese infinito, entonces podríamos decir sí, claro, si el tiempo fuese infinito, entonces podríamos decir que es imposible, pero cuando uno calcula estos tiempos dan tiempos grandes, pero no infinitos.
+Entonces volvamos a las 21:15.
+según este reloj que está acá abajo a la derecha. No, no está, bueno, a las 21:15 en 15 minutos. Gracias.
+Voy a prepararme un té y después voy.
+Yeah.
+Retomamos entonces.
+Yeah.
+Lo tomamos entonces, voy a comenzar con una definición de la entropía de Bolswan, definición.
+Entropía.
+The Boltzmann.
+Yeah.
+Entonces.
+G va a ser el número.
+De micro estados.
+Compatibles.
+Con la especificación.
+De variables macroscópicas.
+Ahora vamos a hacer 2 ejemplos de variables macroscópicas.
+¿Se escucha bien, verdad?
+
+PAULINA ANDREA ACEVEDO MEZA   2:11:23
+Sí se escucha bien.
+
+ANDRES EDGARDO BLUHM BRANDT   2:11:24
+Be.
+
+Julio Eduardo Oliva Zapata   2:11:24
+Gracias, entonces vamos a tomar este objeto.
+
+LUIS ALBERTO INZUNZA OSSES   2:11:26
+Sí, bien.
+
+Julio Eduardo Oliva Zapata   2:11:29
+Esta Este número.
+Vamos a tomar su logaritmo natural.
+Vamos a multiplicar por la constante Boltzmann.
+Y a esto lo vamos a llamar la entropía.
+Está hacer la entropía de bolsa.
+¿Van a escuchar tal vez las frases de que esta es la forma en la que uno define la entropía?
+En el ensamble no vamos a tener tiempo para elaborar respecto a esto, pero el ensamble.
+Microcanónico.
+Pero por si en algún momento escuchan la palabra entropía en el ensamble microcanónico, es esta entropía.
+La teoría de Boltzmann, esta expresión que se le ocurrió a que le introdujo Boltzmann es tan importante que está en la tumba de Boltzmann. OK, vamos a ver una foto, o sea, si ustedes buscan fotos de la tumba de Boltzmann, está escrita arriba.
+La lápida.
+O K, entonces bien, una definición, el número de microestados compatibles. Ya estudiamos un caso sencillo en donde había podíamos definir el número de microestados compatibles.
+Multiplicaremos por la constante de Boltzmann y tomamos el logaritmo natural. Tenemos esta expresión, pero la pregunta clave, obviamente, es qué tiene.
+Que ver.
+Esta entropía.
+Con la de la termodinámica.
+No.
+Entonces trataré de argumentar que esta entropía, cuando hay muchísimas partículas, hay energía grande y el volumen es relativamente grande en algún sentido que precisaremos.
+Es la entropía de la termodinámica.
+En ese límite, en ese régimen, en el régimen termodinámico.
+Entonces calculemos la entropía de.
+Para un sistema sencillo, un sistema físico sencillo, bien primero y después para un sistema físico más complicado como es el gas ideal.
+Ejemplo uno, ejemplo uno.
+¿Considera usted un sistema de 2 niveles? Entonces tengo que.
+Comentarles algo respecto de mecánica cuántica, que esto lo habrán escuchado, pero en mecánica cuántica lo van a justificar bien.
+En un sistema clásico, en un sistema clásico, cuando uno se olvida de la cuando no hay mecánica cuántica, la energía que puede tener un sistema puede ser cualquier número. Bien, un sistema puede alojar cualquier cantidad de energía. Bien, es mecánica cuántica. la.
+La mecánica cuántica nos enseña y nos permite describir fenómenos que de otra forma sería imposible describir. Nos enseña que la energía que puede estar albergada en los sistemas, los sistemas que están confinados en un volumen, por ejemplo, esa energía está discretizada. Yo no le puedo pasar al sistema una cantidad arbitraria de energía.
+El sistema absorbe lo que se llaman cuantos de energía.
+Entonces, lo y eso es debido a que cada sistema que está confinado en una región del espacio tiene niveles de energía en donde uno puede depositar la energía, en donde uno puede depositar esta energía. Bien, lo esto pasa en esto pasa en.
+En átomos, cierto, las energías, hay niveles de energía posibles para los electrones que están en los átomos, bien.
+La energía no puede ser arbitraria bien en un átomo. Bueno, hay distintos niveles de energía. En las moléculas también tienen distintas formas de vibrar y esas formas de vibrar pueden alojar cantidades discretas de energía. bien.
+Y eso explica esta forma de escribir estos sistemas desde la mecánica cuántica. Explica espectros que observamos de emisión de ondas electromagnéticas por estos por estos sistemas. Bien, eso cuando la energía.
+Cuando la energía es muy grande, la distancia entre los niveles de energía no se nota, es cada vez más pequeña, eso es lo que ocurre usualmente. Por eso es que nosotros en el día a día, debido a que nos movemos con energías que son
+Y en escalas de tiempo con energía y en escalas de tiempo, tal que el producto de esas 2 cantidades es grande comparado con la constante de Planck. Nosotros no vemos los efectos de la mecánica cuántica en el día a día, pero si hacemos experimentos microscópicos, es necesaria la mecánica cuántica para poder describirlo de cosas que vemos en el laboratorio.
+No.
+Entonces dado que los sistemas pueden tienen niveles de energía discretizados donde la energía no puede tomar cualquier valor sino que puede tomar un valor u otro u otro y así bien consideremos un sistema sencillo en donde el sistema puede tener dos niveles de energía solamente
+Bien, esto es lo que se llama un sistema de 2 niveles y en el curso de mecánica cuántica, el curso más avanzado de mecánica cuántica, este sistema lo van a lo van a lo van a estudiar en gran profundidad. Bien, nosotros vamos a estudiar la mecánica estadística de este sistema, pero ustedes van a estudiar la física cuántica del sistema que voy a escribir ahora con.
+Con ultra profundidad, porque el sistema es sencillo, pero se puede, se puede entender mucha física a partir de.
+Entonces consideremos un sistema.
+Un sistema.
+¿Qué puede?
+Mhm.
+Alojar.
+Partículas.
+En solo.
+2 posibles.
+Niveles de energía.
+Esto es un lo que se llama el sistema de 2 niveles.
+De los niveles.
+¿Supongo va a ser una representación pictórica?
+Vamos a poder alojar partículas en este nivel de energía y asumamos que ese nivel de energía tiene energía cero o k.
+en el curso de mecánica cuántica van a discutir de por qué hacer esto no es una buena idea. Pero para la física estadística que nosotros vamos a derivar de este sistema da lo mismo, la energía, lo que se llama la energía del vacío va a dar lo mismo, así que no va a tener consecuencias físicas en el límite termodinámico, esa es la forma precisa de decirlo.
+Asumamos que este nivel de energía tiene energía cero y que después hay un nivel de energía acá arriba que lo voy a llamar que tiene energía e uno y a esta energía déjenme llamarla épsilon.
+Y asumamos que este es un sistema físico y puede alojar partículas bien.
+Entonces, como si fuera un átomo con 2 niveles solamente y puedo tirar electrones ahí arriba, pero mejor pongamos partículas que no sean electrones para poder poner cuantas partículas uno quiera.
+que no se satisfaga el principio de exclusión de Pauli, que lo discutirán con detalle. Entonces tengo este sistema con dos niveles y vamos a alojar partículas en este sistema. ¿Cuántas partículas digamos que tenemos n partículas?
+Bien, n partículas y digamos que habrá n cero partículas.
+En el nivel fundamental, aprovecho de introducir esta noción que será útil en los cursos que vienen en el nivel fundamental.
+Esto a veces abusamos de del lenguaje y decimos ground state.
+Downstate, que es la palabra en inglés para este para este.
+Para este concepto, entonces hay un total de n partículas, pero voy a decir n cero de esas partículas están acá abajo.
+What?
+Estas cuentas hay en escena muy bien.
+Y déjame asumir que n epsilon o n uno.
+¿Hay en un partículas?
+In.
+L.
+Con decir en el primer, como si hubiera más, pero.
+En el primer estado, en el primer nivel excitado.
+Nivel excitado.
+Es decir, acá arriba hay en cuántas de estas hay en un partículas ya.
+Evidentemente.
+Si yo sumo el número de partículas que hay en el nivel fundamental.
+Con el número de partículas que hay en el primer estado excitado, esto tiene que ser el número total de partículas, las que no están abajo, están arriba.
+Entonces ahora me hago la siguiente pregunta.
+¿De cuántas formas posibles, déjeme decir algo más, perdón, cuánta energía tiene este sistema con esta distribución de partículas?
+Observen que.
+Este sistema, claro, este sistema.
+¿Tendrá?
+Además.
+O sea, si hubiera una partícula en este nivel, tendría energía épsilon el sistema.
+Este epsilon no es.
+No es necesariamente chico.
+Si hubiera 2 partículas en este nivel, el sistema completo tendrá energía 2 épsilon, porque las que están acá abajo no contribuyen a la energía. Si esta este nivel tiene energía cero.
+Si hubiera 3 partículas acá arriba, el sistema tendrá 3 épsilon de energía, entonces.
+Tendrá.
+La energía total del sistema va a ser igual al número de partículas en el primer estado excitado, que en este caso es el único estado excitado porque es un sistema de 2 niveles.
+Multiplicada por la energía del estado excitado, épsino, esta es la energía total que hay en el sistema.
+Ya el sistema tendrá.
+Esta energía.
+Tendrá.
+Déjeme decirlo así de presupuesto energético.
+Que esta energía después sirve para hacer algo de presupuesto energético.
+Okay.
+Yeah.
+Entonces.
+Ahora me voy a hacer una pregunta de combinatoria.
+Sí, conocemos.
+N uno.
+Es decir.
+Conocemos la energía que tiene el sistema.
+¿De cuántas formas?
+¿Es posible?
+Lograr al valor de.
+Al Valor.
+TN uno.
+No.
+Tal valor de n uno.
+Este problema un problema de combinatorias parecido a algún problema de combinatorias que todos habremos sufrido en un momento en la vida de distribuir pelotitas en cajas bien.
+Yeah.
+Entonces.
+Dibujo de nuevo acá abajo. Vamos a pensar que estas partículas se pueden distinguir. Este ejemplo acá tiene sentido solo si las partículas se pueden distinguir bien, pero no vamos a tener ninguna tensión con una paradoja de girce en este caso.
+Entonces acá abajo voy a poner cuantas n cero.
+Y allá arriba.
+Vamos a poner cuántas n uno de estas y la pregunta es de cuántas formas posibles puedo hacer esto entonces tengo por ejemplo.
+A partículas.
+Que las quiero poner en una caja. Tengo 2 familias de partículas, ambas suman ny a de ellas las quiero poner en una caja y b de ellas las quiero poner en la otra caja. ¿Entonces, de cuántas formas posibles puedo hacer eso?
+Ese número, déjenme escribirlo como G, va a ser el número de formas posibles en las que yo pueda lograr esta configuración bien.
+Es igual a lo siguiente, entonces déjenme escribir el resultado y después argumentamos por qué es n factorial dividido por.
+N cero factorial dividido por n uno factorial, esto es el factor.
+Déjenme escribir de nuevo, n factorial dividido por.
+Ehm.
+Recuerden que n cero, ¿cuántas partículas hay abajo? Bueno, todas menos las que haya en n uno.
+N uno factorial bien, no estoy explicando esta parte de aquí sí la expliqué bien.
+¿Cuántas partículas hay abajo? Bueno, todas las que hay disponibles, menos las que están arriba.
+Y esto es un factor binomial, un factor combinatorial binomial de Newton, cierto n sobre n uno, así se escribe, se lee n.
+Sobre.
+N uno o n combinado con n.
+¿Entonces acá la idea es la siguiente, cómo se entiende este esta?
+Es súper útil si uno está perdido con la combinatoria, hacer ejemplos con números chicos.
+Entonces, la idea acá es la siguiente: tengo n partículas, bien tengo n partículas.
+Entonces de ellas puedo elegir, tomo una.
+Come on.
+después me quedan n-1, entonces tomo otra, después de las siguientes puedo elegir n-2, después de las que me quedaron puedo elegir n-3, de las que me quedaron puedo elegir n-4 y así, y eso te da n factorial.
+Pero ojo, que acá las quiero dividir en 2 en 2 grupos, bien, entonces tengo que.
+Al dividirlas, tengo que al separarlas, tengo que dividir por el número de maneras en las que las de abajo pueden estar.
+Pueden haber sido elegidas con el número de maneras en las que las de arriba pueden haber sido elegidas.
+Elegir es n factorial, pero si arriba tengo n1 y solo me importa, no me importa cuáles quedaron arriba, sino que me importa cuántas quedaron arriba, no cuáles, sino cuántas quedaron arriba, hay que dividir por el número de formas en las que yo puedo elegir esas n1 y eso es n1 factorial, y si no me importa cuántas
+¿Cuáles quedaron abajo, sino solo cuántas quedaron abajo? Tengo que dividir por el número por de formas en las que yo puedo elegir esas n cero, porque si no estoy sobre contando y eso es n cero factorial. Entonces esta explicación de este número muestra que lo mejor para la combinatoria es que lo piense uno mismo.
+Bien, entonces no voy a seguir elaborando respecto respecto a esto, pero les recomiendo fuertemente que jueguen con números chicos. bien.
+Números, entonces tengo.
+No sé, con calcetines y 2 cajones, cierto, uno tiene 10 calcetines que los quiere distribuir en 2 cajones. Los calcetines tienen todos colores distintos. ¿Entonces, de cuántas formas puedo poner 3 en un cajón y 7 en el otro?
+La respuesta de eso sería.
+10 factorial dividido por 3 factorial y en el denominador también 7 factorial. Ese es el número de formas en las que se puede hacer eso.
+Bien, este es el número de configuraciones y observen que uno puede reescribir esta expresión, podemos reescribir G en términos de.
+Ahora, en términos.
+De nyb.
+De ny de E de la energía total del sistema.
+Adelante de María.
+
+MARIA ISABEL LELAS CORTES   2:28:59
+Profe, no sé si lo explico, que me da concentro un ratito que se puso a temblar acá. En esta distribución, en esta configuración, la ubicación de las partículas entre estos 2 niveles contempla la posibilidad de que un nivel quede vacío.
+
+Julio Eduardo Oliva Zapata   2:29:05
+Oh.
+
+MARIA ISABEL LELAS CORTES   2:29:17
+O tiene que haber al menos 1 en un nivel.
+
+Julio Eduardo Oliva Zapata   2:29:18
+Sí, correcto, no contempla esa posibilidad porque cero factorial es uno.
+
+MARIA ISABEL LELAS CORTES   2:29:24
+ya.
+
+Julio Eduardo Oliva Zapata   2:29:24
+La definición de cero factorial, entonces uno nunca va a estar dividiendo por cero. Eso déjame recordar súper.
+
+MARIA ISABEL LELAS CORTES   2:29:28
+Vale, boca.
+Gracias.
+
+Julio Eduardo Oliva Zapata   2:29:31
+Cero factoriales uno.
+Yes.
+Me quedo con una corchera.
+Entonces.
+Observen que G lo podemos escribir en términos de la energía porque hay un n factorial arriba dividido por.
+N.
+Voy a usar esta expresión.
+Menos n uno, pero n uno es n uno es toda la energía dividido por la energía del nivel. Entonces esto es.
+Menos toda la energía disponible dividido por la energía del nivel factorial.
+Por n uno abajo de nuevo, toda la energía dividido por la energía del nivel factorial.
+Okay.
+Entonces se dan cuenta que esta función de degeneración este este número de microestados Perdón quedó explícito como función de la energía y del número de partículas Bien tengo un sistema dado o sea épsilon está dado lo conozco la energía del nivel y esta función de que cuenta el número de microestados compatibles
+Se puede escribir en términos de la energía y el número de partículas. Entonces yo te paso el sistema que tiene 2 niveles, te digo cuánto vale ese esa la energía del nivel excitado y después te digo, mira, quiero distribuir en ese sistema n partículas, pero quiero que el sistema completo tenga energía e. ¿De cuántas formas se puede hacer eso?
+Preste número de formas.
+Para este sistema.
+Por este sistema, un sistema de 2 niveles.
+Así de simple, explica un comportamiento anómalo que hay en a temperatura baja en unas cosas que se llaman sales paramagnéticas, como tal vez les alcanzo a contar.
+Pues.
+Acá tenemos entonces una un número de microestados que depende de la energía del número de partículas. Se dan cuenta de los microestados que teníamos antes en el ejemplo anterior dependía el ejemplo simple anterior que vimos con 3 flechitas, cuatro flechitas dependían solo del número de partículas. Ahora logramos concebir un sistema físico sencillo en donde el número.
+De micro estados.
+Depende.
+de la energía del sistema, de la energía disponible. Entonces esto se va pareciendo un poco más a un gas. Pero ojo que estas partículas solo se pueden ubicar arriba o abajo. No estoy asumiendo que se pueden mover en algún volumen, sino que la única libertad que tienen es situarse en el excitado o en el nivel fundamental. Esa es su única libertad.
+Porque claro, ustedes me podrían decir acá, oye, ¿dónde quedó el volumen? Yo espero también que el número de configuraciones para un gas va a pasar eso. El número de configuraciones va a depender del volumen bien, pero.
+Pero el.
+Acá estamos asumiendo que la única libertad que tienen estas partículas es situarse en el nivel excitado o en el nivel fundamental, así que el volumen no juega. Estas partículas no se pueden mover, pueden estar. La única libertad que tienen es eso.
+Okay, entonces podremos definir la entropía de, calcular la entropía de Boltzmann, voy inmediato con la pregunta que va a ser la constante de Boltzmann por el logaritmo natural de este número que está acá.
+N factorial dividido por n menos la energía total, el presupuesto energético del sistema dividido por la energía del nivel excitado respecto del ground. Te queda eso bien, dalo adelante.
+Oh.
+
+GALO MAURICIO EIDELSTEIN SILBER   2:33:20
+Oye, cuando el nivel fundamental también está excitado, siempre a la misma fórmula, sumando la energía, etcétera.
+
+Julio Eduardo Oliva Zapata   2:33:28
+Sí, correcto. Si el nivel fundamental tuviera una energía no nula, que es lo que pasa de verdad en los sistemas que están confinados, bien, hay una energía de punto cero como discutirán en los cursos de mecánica cuántica. Bien, la combinatoria es igual, la combinatoria es igual.
+Pero el Pero la energía disponible va a ser un poco distinta, porque la energía total en ese caso, cierto, en el caso que menciona Galo, la energía total, entonces si.
+Si el fundamental, el modo, el fundamental, digámoslo fundamental, tiene.
+Una energía no nula.
+el presupuesto energético total será el número de partículas que hay en el fundamental por la energía del fundamental más el número de partículas que hay en el estado excitado por la energía del excitado Entonces al final igual uno puede reescribir todo en términos del presupuesto energético total y del número de partículas además de estos
+Estos 2 datos que son propios del sistema.
+Un sistema cuántico.
+O K, tuviera, deberías.
+Entonces.
+bien Tenemos una entropía se dan cuenta que depende de la energía y depende del número de partículas una entropía que depende de la energía del número de partículas
+¿Maravilloso, qué podemos hacer con esta con esta cantidad?
+Déjeme, me voy a saltar una parte y me voy a adelantar un poco.
+pero este es el tipo de cuentas que que uno que uno hace entonces uno tiene acceso a la física microscópica del sistema y trata de calcular este número de microestados compatibles dada una energía y un número de partículas bien algo que no sabemos cómo hacer en general en los agujeros ****** es
+saber cómo calcular microscópicamente G, el número de configuraciones microscópicas. No sabemos cómo hacer eso, sabemos que los agujeros ****** tienen entropía y sabemos cuánto vale esa entropía en el régimen en el que uno se olvida de las primeras correcciones cuánticas y sabemos cómo integrar también las primeras correcciones cuánticas, ya las segundas no.
+Porque la teoría de la relatividad general.
+Yeah.
+No sé, no es una teoría renormalizable. Bien, entonces no sabemos cómo hacerla hablar con la mecánica cuántica bien sin ir al contexto de teoría de cuerdas, pero sí sabemos que los agujeros ****** tienen una entropía. Bien, sabemos calcular esa entropía, pero no sabemos cómo calcular.
+La realidad microscópica que da origen a esa entropía. Ese es un problema abierto de la física gravitacional. En algunos contextos sí sabemos cómo contar microestado. En algunos contextos, en teoría de cuerdas, en algunos contextos, en modelos idealizados, en dimensiones más bajas.
+pero en general si ustedes nos pasan a los gravitólogos un agujero ***** astrofísico el agujero ***** de m87 estrellas calculamos la entropía que es un número gigantesco la entropía del agujero ***** de m87 estrellas un número gigantesco y si nos preguntan Okay esa entropía
+Hazla aparecer como una entropía de Boltzmann.
+De constante logaritmo natural del número de microestados, cuenta ese número de microestados, dónde está, cuál es ese número de microestados, de dónde sale? ¿Cuál es la realidad microscópica que da origen a esta entropía? No sabemos es un problema abierto.
+Han habido avances recientes en los últimos 5 o 6 años respecto a esto, pero no hay consenso todavía de cómo cuál es la realidad microscópica en general de este de este un agujero ***** astrofísico.
+Bien, súper, entonces déjenme estas partículas, como les decía, no pueden, no pueden moverse, son la única libertad que tienen es de pararse en el nivel excitado o en el nivel fundamental, pero en general para un gas, entonces vamos al gas en general.
+Para un gas.
+El número de microestados compatibles, un gas que tiene n partículas, presupuesto energético e.
+Bien, un gas con n partículas, presupuesto energético ey volumen V, el número de configuraciones compatibles con esa especificación macroscópica será una función de esas variables.
+Yeah.
+Este es el número, yo te digo, mira, tengo este gas que está constituido por, bueno, ciertos elementos fundamentales cuya existencia inferimos debido al.
+Movimiento browniano, tengo este gas y te digo, este gas tiene energía E, hay n partículas y están en un volumen B. ¿De cuántas formas distintas ese presupuesto energético puede ser distribuido en esas n partículas que ocupan el volumen B sin cambiar el presupuesto energético? ¿De cuántas formas se puede distribuir esa energía? Bien.
+Ese número es G, es la es este número de microestados compatible.
+Claro, las partículas en el gas se pueden mover, así que el número de configuraciones compatibles dependerá del volumen.
+Entonces, la entropía, en este caso calculada como la constante de Boltzmann por el logaritmo natural del número de microestados.
+Será una función de la energía del número de partículas y del volumen. Sí, pero si este tipo de acá depende de la energía, el número de partículas y del volumen, su logaritmo constante Boltzmann también dependerá de la energía, el número de partículas y el volumen.
+Okay.
+Entonces acá voy a usar algo de matemática un poquito avanzada, pero que tiene una explicación, una explicación geométrica súper sencilla, bien.
+Sí, yo cambio un poquito la energía.
+Bien.
+Debido a que la entropía depende de la energía.
+La entropía cambiará un poco.
+¿Cuál es el factor de proporcionalidad? Hay un número ahí, que es el factor, este factor de proporcionalidad. Ese factor de proporcionalidad te dice, por ejemplo, si es justo una derivada bien, porque, por ejemplo, si la entropía.
+Como función de la energía fuera así.
+Un cambio pequeño en la energía tendría un cambio grande en la entropía. Bien, entonces la pendiente de esta recta se dice.
+One.
+Todo cambio en la entropía produce un cambio en la energía y la pendiente está dada por una derivada, pero esta es una función de varias variables. Entonces hay que enfatizar que quiero moverme en la dirección de la energía, no más, quiero moverme acá. Entonces el concepto matemático que captura esta idea
+Es la derivada parcial que se escribe con ese símbolo, que es como una D caligráfica, no es caligráfico, una D la derivada parcial.
+Esto es, si usted aprendió a derivar en cálculo uno, derive acá normalmente nomás y pero ponga nyb fijos bien.
+Y si no se acuerdo cómo va a ayudar, no importa porque matemáticas sabe hacerlo.
+Pero ojo, que la entropía también puede cambiar.
+Si cambiamos el número de partículos o si cambiamos el volumen, evidentemente, si acá estoy diciendo que la entropía depende del volumen.
+Entonces, la entropía, si cambio el volumen, va a cambiar la entropía, pero podría ser que la entropía como función del volumen no fuera una función tan dramática.
+Es decir, entonces un pequeño cambio en la en el volumen produciría un pequeño cambio en la entropía.
+pero esta pendiente igual está caracterizada por una derivada pero es la derivada en otra dirección cuando me muevo el volumen Entonces eso se captura con la derivada parcial de la entropía respecto del volumen bueno manteniendo Qué cosa fija el número de partículas y la energía se dan cuenta Estos factores que están aquí son factores de ponderación que corresponden
+Son dependientes.
+de la curva s cuando me muevo en la dirección que en la que me quiero mover. Entonces la interpretación geométrica es sencilla.
+Y también estamos diciendo que si cambiamos el número de partículas.
+La entropía también va a cambiar, así que habrá una derivada parcial de s respecto de n y esta es la pendiente de nuevo.
+Yeah.
+Es la pendiente, manteniendo qué cosa constante, manteniendo la energía y el volumen constante.
+Esta idea es súper, súper importante, la idea geométrica, piensen, piensenla bien porque estos símbolos, claro, parecen sofisticados, cierto, y en términos del desarrollo de la humanidad son sofisticados.
+Del conocimiento humano son objetos sofisticados, pero desde el punto de vista geométrico su interpretación es sencilla.
+Entonces ahora vamos a hacer un poco de trampa, estamos en la física microscópica bien y vamos a hacer la siguiente definición definición.
+Voy a definir.
+¿La temperatura estadística será esta la temperatura que mide el termómetro? No lo sé, vamos a ver si es cierto.
+En la derivada de la entropía respecto uno sobre la temperatura, lo voy a definir como la derivada de la entropía respecto del número de partículas. Voy a definir la presión como esto es definición o k definiciones, enfaticemos definición acá.
+Yeah.
+Vamos a definir.
+No.
+Esto como la temperatura que está definida arriba por la derivada de la entropía respecto del volumen con ny energía fijo. Bien, voy a poner otra definición acá.
+Definición, voy a definir lo que se llama el potencial químico como menos, si lo veo así, el cambio en la entropía, si yo cambio el número de partículas manteniendo fija la energía y el volumen.
+Bien, esto multiplicado por T, estas son definiciones.
+Y acá, evidentemente, hay una tensión, cierto, porque la palabra temperatura, la palabra presión, la palabra potencial químico en física son palabras reservadas, son palabras que ya tenían una definición.
+Entonces yo no puedo libremente.
+Redefinirlas a no ser.
+Que el efecto esta temperatura, esta presión y este potencial químico correspondan en el límite termodinámico a los objetos que definimos en la termodinámica. Y es cierto eso, por eso este esquema es consistente con el otro, así que va a estar bien, pero tenemos que convencernos de eso, pero en este.es definición.
+En.
+Ajá.
+Yeah, OK.
+Entonces, ahora nuestro objetivo es calcular.
+¿Qué?
+They.
+Energía.
+El número de partículas y el volumen para el gas.
+Yeah, yeah.
+¿Y si tenemos que?
+Vamos a tener la entropía y si tenemos la entropía calculamos esta derivada de alguna manera y nos dará uno sobre la temperatura. Calcularemos esta derivada y nos dará la presión. Calcularemos esta derivada ponderado por menos la temperatura y nos dará el potencial químico.
+Eso, bien.
+Bien, entonces esta es la gran pregunta.
+¿Cómo calculamos g de e nb para el gas ideal?
+Solo voy a contar cómo.
+Entonces, déjenme decirles.
+En los cursos de mecánica cuántica.
+Practica.
+Mostrarán.
+¿Que un gas?
+De n partículas.
+Solo.
+De n partículas en un volumen V.
+En un volumen, la cuenta es más fácil en el volumen cúbico. V se puede hacer en otros volúmenes también, pero el cálculo matemático es más complicado en un volumen V.
+Yeah.
+Con constituyentes.
+De masa M, los cursos de mecánica cuántica mostrarán.
+Que un gas de n partículas en volumen en un volumen cúbico B con constituyentes de masa M.
+Solo.
+Puede tener.
+Una.
+De las siguientes energías, las energías del gas ideal están cuantizadas.
+Las siguientes energías.
+Yeah.
+o escribir las energías posibles de un gas ideal.
+Yeah.
+Las energías posibles son estas.
+I cuadrado h barra cuadrado partido por 2 veces el volumen a la 2/3.
+What?
+N uno cuadrado más, ahora tengo que decirles quiénes son estos genes.
+Más imagínense haciendo esto hasta un numerito n que voy a llamar el 3 nésimo al cuadrado.
+Estas son las energías posibles del gas ideal.
+Con n uno.
+Cualquier número.
+Con n uno, ustedes pueden elegir el n uno como el número que quieran, pero en este conjunto más menos 1, más menos 2.
+Mentira.
+1234 y así.
+N 2 lo pueden elegir como el número que quieran.
+Pero en este conjunto, 3, cuatro y así, ¿cuántos numeritos de estos hay? Si hay n partículas, hay 3 n de estos numeritos, es decir, por ejemplo, con 2 partículas tendríamos 6 de estos, 6 de estos numeritos.
+El 3 nésimo n lo pueden elegir como cualquier número, pero en este conjunto.
+El cero no juega y los negativos no juegan tampoco bien en mecánica cuántica van a entender por qué el cero no juega y por qué los negativos no juegan.
+Déjeme decirle algo, ustedes ya han escuchado un caso como este. Esto puede parecer nuevo. La fórmula es sencilla, se dan cuenta que no involucra operaciones complicadas, multiplicación al cuadrado. Bien, pero esto puede ser nuevo para ustedes, pero hay un caso que ustedes seguro han escuchado.
+Yeah.
+Recordar que.
+Recordar.
+¿Que en un átomo de hidrógeno?
+De hidrógeno.
+El electrón.
+Solo puede tener pasa lo mismo, las energías están cuantizadas, puede tener.
+Una de las siguientes energías.
+Una de las siguientes energías.
+Las energías del átomo de hidrógeno.
+Cuando Cuando el electrón está dando vuelta alrededor del protón, si no está ionizado.
+Van como uno dividido por un numerito al cuadrado. Aquí arriba hay una escala de energía.
+¿Que si uno?
+Mide la energía en es un número chico, pero hay otra forma de medir la energía de otras unidades que son los electronvolt en menos 13.6 electronvolt.
+Y n puede ser cualquier número en el siguiente conjunto, uno y así.
+Entonces, por ejemplo, está el protón, está el primer orbital.
+El primer orbital.
+El primer orbital tiene energía menos 13.6 electronvolt.
+El siguiente orbital.
+Tiene energía menos 13.6 electronvolt.
+dividido por cuatro, porque hay un 2 al cuadrado acá abajo, se dan cuenta? Después hay otro orbital.
+Que tiene energía menos 13.6 electrón volt.
+Yeah.
+Menos 13, 6 electronvolt dividido por 9.
+Dividido por 9 bien y así yo no puedo demostrar que mientras más energía se dan cuenta que estas energías son negativas. Entonces, o sea, estas energías son negativas. Entonces, si divido por un número grande, cada vez estoy más cerca de cero bien.
+Esta energía que está acá está más cerca de cero, esta es más negativa, esta es más negativa. Entonces estas energías son cada vez más grandes a medida que me voy alejando de la energía del estado fundamental. Acá se ve explícitamente que el estado fundamental tiene una energía.
+Y.
+Entonces, un electrón cuando transita, por ejemplo, de este estado, de este nivel a este nivel, cuando cae está en un estado excitado y por emisión espontánea cae a este nivel, emite.
+Luz con cierto color bien preciso que se ve en los espectros. Bien, por ejemplo, cuando el sistema va desde el tercer del segundo nivel excitado, el tercer nivel al segundo, eso genera luz de cierto color.
+Estos niveles que aterrizan en el segundo, estas transiciones, cierto, en donde el electrón está excitado en algún estado y cae al segundo nivel, no el primero, el segundo nivel.
+Genera unas líneas en el espectro, emite luz, luz que se puede ver bien, eso se llama y dan origen a líneas en los espectros. Esas líneas aterrizando en el segundo, creo que son las líneas de Palmer bien de los espectros atómicos.
+Las energías están cuantizadas bien y la relación de cuantización es esta para el átomo de hidrógeno.
+Para n partículas en una caja de volumen V.
+La relación de cuantización es esta. Bien, uno dice que este es el espectro de n partículas en una caja, este es el espectro como adelantándose a la idea de que si acopla este sistema un campo electromagnético pueden haber transiciones y eso va a generar un espectro. Uno abusa del lenguaje y dice espectro. Este es el espectro del átomo de hidrógeno.
+En el curso de mecánica cuántica entenderán esto.
+¿Entonces ahora ustedes se pueden preguntar?
+Lo siguiente, mira, supongan que.
+Tienen un presupuesto energético, entonces vuelvo.
+¿Supongo que tienen un presupuesto energético?
+¿Y se se hacen esta pregunta, miren, de cuánta fijo la energía? Bien, y me voy a preguntar de cuántas formas posibles.
+¿Podemos elegir?
+Los 3 n.
+Números naturales, digamos, sino el cero, naturales. Bien, Z, déjenme escribirlo así, Z mayor que cero, la forma correcta de escribirlo bien, pero es 123, cuatro, así que infinito.
+Help you.
+Tal que.
+La energía.
+¿Y el volumen?
+Women.
+Un valor dado.
+Un valor dado bien, tengo un presupuesto energético, entonces básicamente me estoy preguntando esto, mira, quiero saber de cuántas formas puedo elegir estos numeritos.
+Yeah.
+tal que el resultado de la suma de estos números enteros que tengo que elegir entre en el conjunto 1, 2, 3, 4 y 5 quiero elegir esos números tal que el resultado sea 2m por el volumen a la dos tercios un volumen que prescribimos dijimos el volumen es tanto la energía es tanto
+Y cuadrado, h barra cuadrado. Bien, ¿de cuántas formas puedo elegir estos números? Tal que el lado derecho esté fijo.
+No.
+Entonces, el problema se transforma en un problema matemático de una ecuación de contar soluciones.
+De una ecuación en los enteros, esas se llaman ecuaciones diofánticas o diofantina. No me acuerdo bien las ecuaciones que tienen soluciones en los enteros.
+Y geométricamente la idea es simple, mira, ustedes probablemente se acuerdan de que x cuadrado más y cuadrado, entonces recuerdo.
+De acuerdo.
+Si yo dibujo todos los puntos que en el plano tienen x cuadrado más y cuadrado igual a cuatro.
+y los dibujos en el plano bien Estos son todos los puntos que están arriba de una circunferencia de radio dos cierto este es X este es Y todos estos puntos este tipo dos tipo aquí tendrá algún valor este tipo igual es dos perdón
+Y por acá igual es este es menos 2, este es menos 2 y así todos estos puntos corresponden a los puntos sobre una circunferencia de radio 2.
+Bien.
+Pero en el siste, en el problema físico que nosotros tenemos.
+Tenemos algo parecido a esto, cierto, pero primero que todo, xei pueden tomar valores en los positivos.
+Solamente bien y más encima tienen que ser números enteros, o sea, x puede ser uno, y puede ser uno, x puede ser uno, perdón, y puede ser uno, x puede ser 2, y puede ser uno, x puede ser 3 y así.
+Si x es uno y puede ser 2, si x es uno y puede ser 3 y lo mismo acá, entonces uno tiene una grilla discreta.
+De números bien y dentro de esa grilla discreta quiero buscar.
+Aquellos tales que cuando los elevo estos 2 al cuadrado y los sumo, me dé un número que está dado, está fijo, que está dado con la energía y el volumen del sistema. Entonces puedo decir, mira, este problema es equivalente a dibujar una circunferencia bien.
+Y contar.
+¿Cuántas?
+¿Cuántos puntos en la red discreta?
+Intercepta la circunferencia.
+Ahí hay uno, ahí hay 2 y este, bueno, más o menos, ahí hay 2.
+Pero estoy en dos dimensiones no más, observen que acá el problema es complicado porque hay, tengo que hacer esto en tres n dimensiones, no lo puedo dibujar, bien, pero el problema geométrico es el mismo, habrá un habrá un hiperoctante porque estos tipos son todos positivos, bien, entonces si fueran tres por ejemplo,
+Tengo que concentrarme en un octante bien y ahí si voy en 2 dimensiones un cuadrante.
+En 3 dimensiones, un octante y después en más dimensiones no lo puedo dibujar, no me lo puedo imaginar tampoco, pero la generalización sigue. Será un hiper octante, un hiper cuadrante, se llama bien y hay puntos y después quiero saber cuántos.
+dibujo una esfera de cierto radio un cascarón de un pedacito de esfera y me pregunto y qué tamaño tiene ese cascarón depende de la energía bien depende de la energía y me pregunto cuántos puntos de la grilla discreta caen justo sobre la sobre la sobre la esfera
+Este semiectante que dibujé.
+Entonces voy a voy a saltarme varias varias cosas que agregaré en el en el apunte. Bien, acá hay un montón de ideas geométricas súper lindas de cómo se resuelve este problema. Bien, de cómo se resuelve este problema de conteo. bien.
+Este problema de conteo que no me lo puedo imaginar, pero hay técnicas para resolverlo. Entonces el punto es el siguiente en el límite termodinámico.
+Termodinámico.
+¿Qué es el límite termodinámico N grande?
+La energía grande.
+El volumen grande, todas las variables extensivas grandes.
+El volumen grande.
+Yeah.
+¿Podemos calcular?
+O podemos obtener este número de veces que el.
+El cascarón esférico intercepta a puntos.
+En la grilla discreta.
+Bien.
+Tal que entonces ese número se puede calcular y ahora déjenme darle el resultado final, tal que cuando tomamos ese número.
+Y lo ponemos.
+En la fórmula de Boltzmann da origen a una entropía.
+Origen a una entropía.
+Que es la siguiente como función de la energía, el número de partículas y el volumen.
+Y esto lo voy a copiar acá. N por la constante de Boltzmann, por el logaritmo natural del volumen sobre el número de partículas por h cubo, h es la constante de Planck, h barra es la constante de Planck dividida por dos pi. ¿Cómo se coló la constante de Planck? La constante de Planck se coló.
+Porque el radio de la esfera depende de la constante de plag.
+Así que se cuela esta forma de entender el problema, sabe de la mecánica cuántica.
+Me ponen un paréntesis grande acá, más cuatro m pi por la energía dividido por 3 n a la 3 medios.
+Más 5 medios por el número de partículas por la constante de bolsa.
+Ojo que en la expresión anterior que discutimos para la entropía del gas ideal al comienzo de la clase de la entropía era función de la temperatura. Acá, naturalmente, la entropía nos aparece como función de la energía del presupuesto energético que tiene el sistema.
+Y ustedes podrían decir o k, pero esta expresión que me dice conectemos con conectemos con.
+Con Charles y con Boyle y con los tópicos que discutimos en la primera clase.
+Definimos, cierto, definimos.
+La presión sobre la temperatura.
+Como la derivada de la entropía respecto del volumen, manteniendo todo lo demás fijo.
+manteniendo todo lo demás, entonces puede calcular esta derivada bien, voy a calcular esta derivada.
+Entonces observen que voy a calcular la derivada respecto del volumen, sorry esto es un poquito más avanzado, pero calculemos la derivada porque es fácil, mira.
+Usamos propiedades de los logaritmos.
+Y nos queda que esto es lo mismo que n por la constante de Boltzmann por 3 medios.
+No, mentira, mentira, n casi no me sale la ley de los gases ideales, está entrando en pánico por el logaritmo natural del volumen más.
+Cosas.
+¿Qué?
+No dependen del volumen.
+Cosas que no dependen del volumen.
+¿Cierto? Porque, o sea, regla de los logaritmos, entonces logaritmo de B por algo, eso es logaritmo de B, más logaritmo de todo lo que sobró.
+Entonces te queda esto y la derivada respecto de B ataca solo este término.
+Y bueno, ustedes pueden buscar cierto, la derivada del logaritmo es uno sobre como la derivada x cuadrado es 2 x, la derivada x cubo es 3 x, la derivada del logaritmo es uno sobre lo que está dentro del logaritmo. Entonces esto te da n por la constante de Boltzmann por la derivada del logaritmo de B y eso es uno sobre B.
+Mira que esto esto es una maravilla, esto es implica que entonces.
+Por lo tanto, observen todo ese volumen, lo paso al lado derecho. Vemos P por V igual a N por la constante de Boltzmann por ty el público enloquece. Declaramos victoria y somos felices bien.
+La ley de los gases ideales como consecuencia de.
+Un problema de mecánica cuántica es muy linda esta parte, problema de mecánica cuántica.
+Acá hay varias cosas que no estoy contando, pero cómo se resuelve este problema geométrico, pero al final hay un problema geométrico.
+Derivamos la ley de los gases ideales a partir de la física microscópica del sistema en el límite de termodinámico.
+y podemos saber algo más mira algo que algo que ya intuíamos en realidad y lo habíamos discutido en su momento podemos saber cuánta energía tiene el gas ideal. Bueno ¿cómo fue que definimos la temperatura? uno sobre la temperatura es la derivada de la entropía respecto de la energía
+Yo necesito derivar respecto de la energía manteniendo nyv fijos.
+La derivada, bueno, habrá que hacer una derivada de la energía, entonces voy a tratar de rescatar la energía camino.
+Esto nos va a quedar n por la constante de bolsa, por logaritmo de algo que no depende de la energía, por la energía 3 medios.
+O sea, en 3 medios cada adelante y voy a escribir el integrando tu Z, perdón, n por la constante de Boltzmann, por 3 medios, por logaritmo de la energía.
+Cierto logaritmo de la energía.
+Más cosas que no dependen de la energía.
+Que no dependen de la energía.
+Yeah.
+Entonces, de nuevo hacemos la derivada del logaritmo, uno sobre.
+N constante Boltzmann, 3 medios, uno sobre la energía.
+Y observe lo que obtuvimos acá. La energía total de un gas ideal, viniendo desde la física microscópica, cuando la quiero escribir en términos de la temperatura, es lo que esperamos. 3/2 del número de partículas de la constante Bolskmann por la temperatura.
+Está bien.
+Y de acá podríamos saber cuánto vale la capacidad calorífica.
+En este contexto, lo natural es decir, mira cómo cambia la energía del gas si yo cambio la temperatura y nos da un número que medimos.
+bien como consecuencia de haber tratado el gas ideal como un conjunto de partículas libres en mecánica cuántica y de haber tratado de contar Mira si yo te paso tanta energía tanto volumen y tanto número de partículas de Cuántas formas posibles ese presupuesto energético se puede distribuir
+que en el problema cuántico se reduce a un problema, a un problema matemático de encontrar soluciones, de encontrar soluciones a esta ecuación. Yo te doy un número acá y te pido, encuentra números enteros tales que al cuadrado te den esto.
+Pero después, en el régimen, cuando es grande y B es grande, resolver estos problemas sin tomar esos límites es más difícil, pero cuando es grande y B es grande, resolver este problema se hace, se hace más simple.
+Observen cómo logramos conectar la física microscópica a la que ustedes se se expondrán en su versión cuántica en los cursos que vienen con la termodinámica. Logramos derivar la ley de los gases ideales. Se encuentra la ley de los gases ideales parte con los esfuerzos experimentales de Charles. .
+Y.
+Boe, cierto, todo lo que describimos al comienzo del curso, bien como una ley experimental de carácter experimental, pero resulta ser una consecuencia de la mecánica cuántica de un gas de partículas que no interactúan entre ellas, bien y que la única, el único presupuesto energético que tienen es su movimiento.
+Esas son las energías que están ahí acá. Entonces uno podría decir, oye, tal vez de esta forma puedo derivar la ley de Van der Waals. También se puede. Versiones perturbativas de la ley de Van der Waals se se pueden derivar.
+Perturbativas en el sentido de que en el régimen de gas diluido tengo la ley de los gases ideales y después, cuando considero una primera desviación, encuentro la las correcciones bien la corrección.
+Porque en un gas en donde las partículas interactúan, las energías posibles del gas ya no van a ser estas.
+Las energías posibles del gas no van a ser estas, van a ser una corrección de estas bien, pero bueno, será una corrección.
+Y después me hago el mismo, me hago la misma pregunta, tengo una energía total. ¿De cuántas formas uno dice de cuántas formas puedo organizar los números cuánticos? Los n uno, n 2, n 3 n se llaman números cuánticos. ¿De cuántas formas puedo organizar los números cuánticos para que el presupuesto energético total sea?
+Acá hay un punto que es probable que ustedes no estén tan felices porque no tuve mucho tiempo para.
+Para discutir lo que son estas definiciones que están aquí, bien, porque ustedes podrían decir, claro, definiste uno sobre t en este punto.
+Como la derivada de la entropía respecto de la energía.
+La definiste así para que te saliera la ley de los gases ideales. Definiste la presión de esta manera para que te saliera la ley de los gases ideales.
+¿Entonces, cómo uno sabe que esta temperatura es una buena definición para temperatura, además de los gases y de implicar la ley de los gases ideales? ¿Cómo uno sabe que esta presión es una buena definición para la presión? Bien.
+Resulta que esta definición para la temperatura hace que si yo tomo 2 gases.
+Y lo junto, 2 gases que están a distintas temperaturas, bien y lo junto.
+La búsqueda de la configuración más típica haga que la energía se transfiera desde el cuerpo, desde el sistema de mayor temperatura al sistema de menor temperatura gracias a esta definición de la temperatura.
+Entonces, si yo aquí hubiese definido la temperatura de otra manera, no podría lograr este efecto que veo de que los sistemas.
+Cuando los pongo en contacto térmico y estaban a distintas temperaturas, transfieren energía desde el sistema de mayor temperatura al de menor temperatura. Por eso ahí hay un uno sobre ty no hay una t, hay un uno sobre t.
+Esta presión hace lo mismo, así que si tengo 2 sistemas con distinta presión y los pongo en contacto en donde puedan compartir volumen, intercambiar volumen, el sistema con mayor presión.
+Se va a expandir hasta que la presión del otro suba y encuentre la condición de equilibrio. Y esa en la búsqueda de lo que va a ser la configuración más típica, como hablamos de configuraciones de las configuraciones más típicas que en el caso de un gas corresponden al gas homogéneamente distribuido en el volumen. Bien.
+Entonces, bueno, del potencial químico no hablé mucho, tal vez más adelante van a discutir acerca de él, pero que es el costo energético que tiene cambiar el número de partículas. Y déjenme cerrar con un punto, yo les prometí que la en física estadística, la primera ley de la termodinámica era una identidad y de acá se ve.
+La casa de porque.
+La entropía es igual a uno sobre la temperatura por de menos p sobre la temperatura por la definición de la presión que incluimos por de B.
+Menos mu sobre la temperatura por dny si de aquí ustedes despejan el cambio en la energía, esto va a ser t por ds.
+perdón aquí era más entonces menos p por db más mu por dn Y esta es la primera ley de la termodinámica para procesos cuasi estáticos se dan cuenta que cada una identidad no nos informa nada porque obvio que sí va a satisfacer esta forma de la primera ley porque nosotros definimos la temperatura la presión
+Y el potencial químico para que esta ley fuera satisfecha, entonces es una identidad.
+¿Pero entonces la pregunta es, pero entonces, por qué definiste uno sobre tema? ¿Estás haciendo trampa? Bien, no, bueno, esta temperatura se comporta como tiene que comportarse la temperatura y es la temperatura del gas ideal. Bien, esta presión es la temperatura responsable, cierto, a la Clausius es la temperatura responsable del contenido energético del gas ideal.
+Es la temperatura de Clausius, esta presión.
+Es la presión de los gases ideales.
+Eso bueno, ahora entonces se lo se los todos muchos de estos argumentos, cierto, no seguía el camino histórico porque en la mayoría de la de los desarrollos de la física, cierto, el camino histórico, si bien tiene un valor gigantesco, no.
+No es la forma más clara de contar las ideas. El desarrollo está lleno de retrocesos, rebotes, malas interpretaciones, malas interpretaciones que parcialmente funcionan. Entonces, esta es la forma moderna en la que entendemos lo que se llama el ensamble microcanónico.
+Em.
+Pero que deriva.
+Propiedades de los gases.
+Desde la física microscópica, déjenme cerrar, repetir esta esto que les comentaba. Uno de los problemas importantes de la física del campo gravitacional y el cómo el campo gravitacional se habla, debe hablarse con la mecánica cuántica porque son los marcos conceptuales que existen en la naturaleza. Así que la naturaleza no puede, no puede tener.
+Esa contradicción de no hacer que la gravedad se hable con la mecánica cuántica, dado que existen esos 2 marcos conceptuales, existen en la naturaleza estos 2 conjuntos de ideas y la naturaleza es única. Estas 2 cosas tienen que hablarse de alguna manera. El que nosotros no sepamos cómo se hablan no quiere decir que no existan bien y sabemos que los agujeros ****** tienen una entropía, pero no sabemos calcular.
+En general.
+El número de configuraciones compatibles que dan origen a centropía, el número de microestados, los microestados, eso es un problema grande de las cosas que hacemos en investigación. en.
+Yeah.
+Eso son las ideas que han vuelto y que gatillan la investigación que hacemos desde el punto de vista teórico, obviamente.
+Eso sería óptimo poder hacer experimentos controlados con agujeros ****** en cuanto si uno pudiera hacer experimentos controlados con agujeros ******, se podría desarrollar mucho más rápido todo bien.
+Pero claro, la naturaleza no nos permite hacer eso, así que estamos condenados a usar los datos experimentales y la consistencia, la autoconsistencia matemática y la consistencia interna entre las teorías de una teoría y la consistencia entre teorías.
+A eso nos dedicamos algunos de nosotros. Entonces quiero dejar la clase hasta acá. Bueno, darle las gracias por su paciencia, su tiempo. De aquí al lunes subo las los 2 slides que faltan y un listado de una guía para escribir el.
+La monografía, eso les quedan cosas súper lindas de lo que viene ahora es maravilloso, en los en los cursos que vienen y quienes van a estar a cargo de esos cursos son expertos en sus temas, así que seguro lo van a pasar bien. Eso lo dejamos hasta acá. Entonces ha sido un gusto, tal vez nos vemos más adelante.
+
+GALO MAURICIO EIDELSTEIN SILBER   3:16:43
+Chao, gracias. Muchas gracias.
+
+Julio Eduardo Oliva Zapata   3:16:44
+Gracias, profe. Muchas gracias a usted. Gracias por sus preguntas. Chao, chao.
+
+SEBASTIAN IGNACIO MUÑOZ AGUIRRE   3:16:45
+Gracias, profesor por su disposición.
+
+LUIS ALBERTO INZUNZA OSSES   3:16:45
+Gracias, profesor, muchas gracias, gracias.
+
+MARIA ISABEL LELAS CORTES   3:16:47
+Adiós.
+
+PABLO ENRIQUE VICENCIO ESPINOZA   3:16:49
+Gracias, profesor, que esté bien.
+
+FERNANDO ALONSO VEGA OSORIO   3:16:50
+Hello, profe gracias.
+
+Julio Eduardo Oliva Zapata   3:16:52
+Muy bien.
+
+MANUEL ALBERTO TABILO GAHONA   3:16:52
+Gracias, profesor, hasta luego, hasta luego.
+
+Leonardo Antonio Hernández Pozo   3:16:57
+A ver su prefiero.
+
+Julio Eduardo Oliva Zapata stopped transcription

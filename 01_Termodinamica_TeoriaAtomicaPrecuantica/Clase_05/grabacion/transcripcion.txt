@@ -1,0 +1,1701 @@
+Clase del Diplomado de Física Moderna-20260612_190658-Grabación de la reunión
+June 12, 2026, 11:07PM
+3h 9m 45s
+
+Julio Eduardo Oliva Zapata started transcription
+
+Sebastián Paz Saavedra   0:03
+Otro bueno, también el Quantum Horizon Matters.
+De lo sé, pero bueno, los que tienen vacaciones de invierno ahí en esas fechas les causa perfecto, perdón.
+
+Julio Eduardo Oliva Zapata   0:11
+Sí.
+Sí, hay hartas actividades en esta en esta época, porque es la época en la que tenemos, se terminan los el semestre se termina, cierto, y hay más tiempo para viajar y juntarse. Hay una conferencia importante en La Plata, igual que voy a ir y después hay otra importante. en.
+
+Sebastián Paz Saavedra   0:15
+Mi caso.
+
+Julio Eduardo Oliva Zapata   0:34
+En Viña del Mar, en la Universidad Adolfo Ibáñez.
+Va a estar muy buena, también viene harta gente, bien importante en el área de gravitación y holografía y te abría de acuerdo.
+Eso y hoy tengo preparada la aplicación de la primera ley de la termodinámica a agujeros ****** en un momento, como un pequeño ejercicio, se los voy a contar ahora, , pero para poder contarles eso necesito hablar acerca de la entropía, que no hemos introducido la entropía, todavía lo vamos a hacer primero.
+Desde el punto de vista termodinámico.
+Y después lo vamos a hacer desde vamos a definir la entropía desde el punto de vista microscópico, nos vamos a dar cuenta que.
+En lo que se llama el régimen termodinámico, ambas coinciden. Hay distintas definiciones de entropía que tienen hay entropía generalizadas que tienen distintos usos. Bien, pero la primera histórica que se introdujo en la física es la entropía en la termodinámica. Y esa es la primera que vamos a ver hoy. bien.
+Que no es claro el cómo esta entropía que la entropía termodinámica se relaciona con el grado de desorden. Cierto, uno escucha por ahí esa interpretación de la entropía que ni el desorden de un sistema. Bueno, desde el punto de vista de la termodinámica.
+Yo creo que en realidad no hay cómo sustentar esa afirmación bien desde el punto de vista de la física estadística, de la física microscópica. Bien, uno sí puede sustentar esa afirmación, tiene una forma de definirla bien, una forma de entender de por qué.
+La entropía mide en algún sentido el grado de desorden del sistema y lo vamos a ver hoy.
+Eso, entonces voy a hacer el formato de la clase, va a ser igual al formato de la cuarta clase, ¿cierto? Voy a escribir acá porque me di cuenta que es súper fácil una vez que me di cuenta básicamente que ChatGPT me entiende la letra. Entonces, por ejemplo, pude preparar muy rápidamente.
+De los slides de la clase número cuatro que ya compartí con ustedes a partir de los apuntes que tomé yo en la clase, de lo que anoté en el tablet. Bien, entonces lo voy a repetir esta esta vez. Igual como escribir toma un tiempo, este proceso no es tan, no es tan, no es tan rápido. La información no pasa tan rápido tampoco.
+Bien, si estuviéramos presencial, evidentemente yo preferiría hacer una clase en la pizarra. Cierto que es el estilo que más me gusta en términos de la rapidez y el nivel de detalle que uno puede alcanzar, o sea, el ritmo de transmisión de información. Bien, así que vamos, vamos a.
+A imitar eso bien, entonces vamos a comenzar. Esta es la clase número 5.
+The.
+¿Del primer curso del diplomado, cierto?
+E.
+Bueno, la clase pasada, cierto, introdujimos.
+Varias nociones termodinámicas, la capacidad calorífica, introdujimos la noción de superficie de estados, introdujimos la noción de equilibrio termodinámico, cierto, hablamos también acerca de la de la compresibilidad.
+Que tiene que tener cierto signo, porque si no los sistemas son inestables. Si tienen compresibilidad negativa, son inestables bajo perturbaciones que deformen un poquito el volumen del sistema. Si la compresibilidad es negativa, la compresibilidad te dice cómo cambia la presión si tú cambias el volumen.
+Esa es la idea de la comprensibilidad y uno esperaría que para sistemas que lograran un equilibrio estable.
+Al disminuir el volumen, aumentarse la presión bien, porque el sistema va a pelear en contra de la reducción del volumen y va a tratar de volver al volumen que tenía originalmente, si es que la presión sube cuando yo lo compro.
+Eso hablamos, entonces miramos distintas superficies de fase.
+Cuando me dio un gustito cuando estaba preparando la los slides de la.
+De la clase, cierto, agregué varias imágenes del libro de Sears de termodinámica con superficies de fase que están bien dibujadas. Esas después, claro, uno las puede dibujar también en el en matemáticas. Bien, pero el libro, este que es un libro antiguo de termodinámica, logra capturar súper bien la.
+La idea y dibuja el la superficie de fase del gas ideal, la superficie de fase de del gas de Van der Waals. También dibuja la superficie de fase del agua y explica un poco que cuál es la.
+¿La ¿Cuáles son las propiedades con las que se presentaría un sistema ante nosotros si estuviera en distintos lugares de la superficie de fase bien?
+Es una forma muy.
+útil y muy útil de encapsular toda esta información.
+Bien, y cerramos cierto la clase pasada con la primera ley de la termodinámica, que habla acerca de un balance energético, introdujimos la noción de calor.
+Introdujimos la noción de trabajo, introdujimos también la noción de energía interna y esas 3 nociones energéticas se hablan.
+Se hablan a través de la primera ley de la termodinámica, cierto que, en resumen, nos dice que la primera ley.
+Déjeme decirle la primera ley no más en este contexto, bien nos dice que el cambio, un pequeño cambio es la energía interna del sistema.
+Puede deberse a la absorción de calor en un proceso.
+O puede deberse una disminución en la energía interna, puede deberse una disminución a que el sistema realiza trabajo bien y nos quedamos con trabajo mecánico por ahora.
+Y las barritas, cierto, le informaban al interlocutor que estas cantidades son cantidades pequeñas, no son cambios de cantidades que se definen en cada instante, sino que son cantidades pequeñas.
+A diferencia del D sin barrita del DU, que también es una cantidad pequeña, pero corresponde a un cambio pequeño en que en la energía interna del sistema.
+El sistema puede.
+Subir su energía, este cambio puede ser positivo si es que absorbe calor y este cambio puede ser negativo si el sistema realiza trabajo. Bien, y dijimos que el trabajo mecánico.
+El trabajo mecánico.
+Es un el trabajo que.
+Ejerce, ejecuta un sistema.
+¿En una expansión o en una compresión, en un caso en el que cambia su volumen, se encuentra?
+Y demostramos, cierto, argumentamos con un pistón que el factor de proporcionalidad es la presión.
+Be borde.
+Bien, entonces esta es la primera ley de la termodinámica.
+Y ustedes habrán escuchado que hay bueno, son cuatro las leyes de la termodinámica, la ley cero, bien que la mencionamos también, pero no la mencioné, no la estructuré de manera formal, sino que dije la ley cero nos ayudó a definir en realidad la noción de equilibrio termodinámico. bien.
+Este.
+Bien, entonces, ¿y cómo?
+Y bueno, después hablamos de varias cosas más y cierto, después en un momento introduje las la primera ley. Entonces hay 2 leyes más de la termodinámica.
+La segunda, que es la que vamos a discutir hoy.
+Que tiene una formulación en tiene 2 formulaciones en palabras bien y tiene consecuencias matemáticas, pero las formulaciones de la segunda ley de la termodinámica son formulaciones que se relatan en prosa y esa prosa obviamente tiene un significado físico.
+Que se captura con ciertas ecuaciones matemáticas.
+A veces uno abusa del lenguaje y dice que estas ecuaciones matemáticas son la definición de la segunda ley, pero la verdad es que no son una consecuencia de lo que hay en las frases que voy a escribir ahora. Bien, hay 1/3 ley de la termodinámica que no vamos a discutir porque lo mejor es discutirlo en el contexto de la mecánica cuántica, la tercera ley de la termodinámica.
+Tal vez ustedes habrán escuchado formulaciones de la tercera ley de la termodinámica, pero que son imprecisas. O sea, en realidad lo que quiero decir que para hacerlas precisas hay que hacer un relato mucho más largo. Bien, una forma imprecisa de referirse a la tercera ley de la termodinámica es que a temperatura cero.
+La entropía es cero bien.
+¿Y eso?
+Sabemos que es falso. Si lo digo así, es una afirmación que es falsa. Hay ciertos sistemas en los que una familia grande de sistemas en donde a temperatura cero la entropía es cero. Bien, pero cuando definamos la entropía.
+Nos vamos a dar cuenta, les voy a poder contar que hay sistemas que se llaman spin glasses, que son como vidrios de spin, bien que cuando yo les bajo la temperatura todavía queda un desorden. Todavía hay un desorden cuando le bajo la temperatura al sistema y esos sistemas se realizan en la naturaleza.
+Yeah.
+Sabemos también que los agujeros, les voy a dar un ejemplo de del área de investigación que en la que yo trabajo. Sabemos que los agujeros ****** existen, cierto.
+Tenemos suficiente evidencia en los últimos 10 años por ondas gravitacionales, cierto, generadas por procesos de fusión de agujeros ******.
+Y.
+Por la imagen de agujeros ****** supermasivos en el centro de nuestra galaxia y el centro de y en el centro de M 87.
+Y esos agujeros ****** están rotando y les voy a contar en un momento que esos agujeros ****** son objetos termales, tienen una entropía.
+Ya.
+Y resulta que cuando yo le bajo la temperatura a esos agujeros ****** y llevo la temperatura a cero, esos agujeros ****** cuando están rotando siguen teniendo una entropía.
+Eso, entonces la afirmación de que a temperatura cero la entropía cero no es cierto. Con el ejemplo que les voy a contar de los spin glasses se van a convencer. Existen sistemas en donde hay una cosa que se llaman frustraciones, en donde hay como spines, flechitas que están localizadas en puntos del.
+Espacio y que no quieren alinearse. Bien, se llaman los sistemas antiferromagnéticos que tienden cuando les bajo la temperatura, tienden a antialinearse en lugar de alinearse todos en alguna dirección.
+Y ahí, en esos sistemas que se realizan en la naturaleza, fácil ver que.
+Yo puedo bajar todo lo que quiera la temperatura, pero igual va a haber un desorden.
+Solo eso se puede contar de manera precisa y estas ideas incipientes.
+están en la base del Premio Nobel que se ganó un físico italiano de apellido Parisi por complejidad hace, no me acuerdo si fue de 3 años probablemente, el Premio Nobel de Parisi. Eso, entonces, bueno, vamos con la segunda ley.
+Algo que sí es importante, que yo creo que tiene que quedar en el espíritu, es que la primera ley es la conservación de la energía.
+Entonces vamos por la secundaria.
+Segunda play.
+De la termodinámica.
+Y hay 2 formulaciones, voy a escribir las 2, OK, voy a escribir las 2 formulaciones, la formulación de Clausius.
+En la siguiente, y esto hay que lo tengo que escribir textual, porque acá si uno mete las patas con una palabra, puede decir otra cosa, entonces no existe.
+Un proceso.
+Huyo único, esto es súper importante.
+Cuyo único efecto.
+Sea transferir.
+Hello!
+Desde.
+Un sistema.
+A temperatura.
+Menu.
+Un sistema, digamos, de temperatura menor.
+Hacia uno.
+De temperatura.
+Mayor.
+Esto no está hablando Clausius en esta ley. de.
+Un proceso que no hay forma de que ocurra espontáneamente.
+Esta formulación de la primera ley captura la idea siguiente de que cuando nosotros entramos al océano bien.
+Y nos baja la temperatura después de un rato.
+Estando en el agua de la playa, cierto, somos nosotros los que estamos calentando el océano en lugar de el océano, que el océano nos esté enfriando a nosotros. Bien, la energía en un proceso espontáneo, bien como es la transferencia de calor que ocurre entre.
+Nuestro cuerpo y el océano ocurre desde el cuerpo con mayor temperatura hacia el cuerpo con menor temperatura, y eso ocurre de manera espontánea. Al revés, no ocurre de manera espontánea. Se puede implementar, en efecto, se puede implementar, los refrigeradores lo hacemos.
+Ya.
+Se puede implementar, pero a costa de hacer algo más. Por eso dice, por eso es importante y subrayo aquí el cuyo único efecto sea. O sea, si estoy dispuesto a introducir en el proceso algún otro efecto que no sea la transferencia de calor, si estamos dispuestos a eso, en efecto podremos.
+Transferir calor, transferir energía desde un sistema de temperatura menor.
+A un sistema de temperatura mayor.
+Esta es la formulación de Clausius y no tiene una demostración en este contexto, se dan cuenta porque es una ley en la termodinámica. Esto es una ley, entonces no tiene una demostración. Es un conjunto, digamos, de un conjunto grande de evidencia experimental, lleva a proponer.
+Esta afirmación como una ley, las leyes de la termodinámica.
+No tienen una demostración en el contexto de la termodinámica, por eso son leyes. Si tuvieran una demostración las leyes de la termodinámica, uno iría a la capa anterior de conocimiento, diría, bueno, las leyes de la termodinámica, si son un teorema, si se deducen de otra cosa, en realidad lo más fundamental es esta otra cosa, pero en el contexto de la termodinámica, eso no pasa.
+Esa es la formulación de clausius.
+¿Y la formulación de Kelvin?
+De la segunda ley es la siguiente, no existe.
+Existe un proceso.
+
+Sebastián Paz Saavedra   17:42
+Okay.
+
+Julio Eduardo Oliva Zapata   17:46
+Huyo.
+Único de nuevo efecto.
+Sea extraer.
+Hello!
+There.
+Voy a aprovechar de introducir una un concepto de un reservorio.
+Esto también se llama baño térmico, baño térmico es equivalente a reservorio.
+Ahora voy con la pregunta.
+Y convertirlo.
+Completamente en trabajo.
+No.
+Hay una pregunta adelante.
+Sebastián.
+
+Sebastián Paz Saavedra   18:44
+Sí, perdón, hay una, hay un científico que en ingeniería se se admira bastante, que es Carnot por los ciclos de Carnot, Certo y los y las máquinas térmicas, pero me parece que él propuso.
+
+Julio Eduardo Oliva Zapata   18:57
+No.
+Okay.
+
+Sebastián Paz Saavedra   19:04
+Lo un acercamiento a la segunda ley antes de esto, no, porque me parece que ahí también existé, no existía el concepto de entropía cuando usted existe ahí en lo correcto antes de Clasius.
+
+Julio Eduardo Oliva Zapata   19:14
+Okay, puede ser, puede ser, ahora lo reviso, pero observa que acá tampoco estoy hablando de entropía, todavía no hemos introducido la entropía. Claro, Carnot diseña y piensa en, concibe una máquina que en principio tiene la mayor
+Eficiencia posible, pero que no demuestra que no puede ser 100% efectiva y que más encima la eficiencia de la máquina que diseña Carnot, de la máquina térmica que diseña Carnot.
+No, la eficiencia no depende del material con el que implemento la máquina. Bien, entonces el ciclo de Carnot está dado por un proceso por cuatro procesos, bien que son una.
+Una expansión isotérmica, una expansión isotérmica en donde el sistema mantiene su temperatura y absorbe calor de una fuente de temperatura alta, de un reservorio de temperatura alta.
+Después hay una expansión adiabática bien en donde el sistema se expande y se enfría.
+Adiabático significa que no hay transferencia de calor al sistema en ese proceso de expansión. El sistema está como aislado, expandiéndose en ese proceso se enfría bien.
+Y después el camino de vuelta, uno vuelve por una isoterma bien, y después hay una contracción isotermal y después una contracción.
+Adiabática. Bien, entonces, si uno estudia la eficiencia de ese proceso, pensada como la cantidad de trabajo que yo puedo extraer de una máquina que está viviendo ese proceso, bien y quiero extraer esa cantidad de trabajo para mover algo, me doy cuenta que la cantidad de trabajo y.
+Comparo la cantidad de trabajo que extraje con la cantidad de calor que le me la cantidad de energía en forma de calor que le metí al sistema en la expansión, menos la cantidad de energía que el sistema liberó en la contracción isotermal.
+Me doy cuenta que esas 2 cantidades no pueden ser iguales. Bien, entonces, desde el punto de vista moderno, digamos, porque no sé cuál es el orden histórico, ahora lo reviso bien, pero desde el punto de vista moderno es.
+El.
+El ciclo de terreno implementa.
+En un ejemplo, con una máquina bien precisa, con un proceso termodinámico bien preciso, en donde el sistema parte de un estado y vuelve al mismo estado, implementan un proceso termodinámico bien preciso, lo que está en la segunda ley formulada a la Kelvin.
+A la Kelvin dice, no existe un proceso cuyo único efecto sea extraer calor de un reservorio. Ahora les cuento que es un reservorio o daño térmico y convertirlo completamente en trabajos.
+Eso.
+Reservorio, bueno, reservorio o baño térmico significa lo siguiente. La idea es súper simple. Bien, eso es con palabras muy sofisticadas, pero para algo que es muy simple. El mar es un reservorio para nosotros en el sentido siguiente, nosotros si pusiéramos, por ejemplo, en el mar, una.
+O lo que pasa cuando entramos nosotros al mar y le transferimos nuestra.
+Energía al mar porque estamos nosotros a mayor temperatura, no le vamos a cambiar la temperatura al mar. En principio yo dije, estamos calentando el mar, el mar, cierto, pero son hay tantas partículas en el mar. Bien, son tanto, uno uno dice, son tantos los grados de libertad que hay en un reservorio. El reservorio es un sistema que tiene muchísimos grados de libertad. bien.
+Que si yo le paso un poco de energía, no le voy a cambiar su temperatura.
+Es una idealización, se dan cuenta porque es tensa la idea, porque.
+Estoy pensando en un sistema al que le paso calor y no le cambio la temperatura.
+Pero argumentamos en la clase pasada que justo hay una cantidad física que caracteriza a cada sistema.
+Que te mide esa propiedad de si tú le pasas tanta energía en forma de calor a un sistema, ¿cómo cambia su temperatura? Esa cantidad es la capacidad calorífica, la capacidad calorífica y depende de si realizo el proceso de tal o cual forma, pero acá les estoy pidiendo que ustedes conciban un sistema.
+En donde por más que le pasen calor al sistema, no le van a cambiar la temperatura.
+Eso es cierto en una aproximación, eso, pero el ejemplo del mar y una persona metida en el mar tratando de calentar el mar es un buen ejemplo porque tú, en efecto, le estás pasando energía al mar, pero no le estás cambiando la temperatura porque el mar tiene muchísimos grados de libertad.
+No.
+Eso, adelante Luis.
+
+LUIS ALBERTO INZUNZA OSSES   24:22
+Sí, profesor, buenas tardes, a ver cómo yo lo estoy entendiendo porque.
+Textualmente dice, no existe un proceso cuyo único efecto sea extraer calor, o sea, en el contexto de una persona con el mar, nosotros le estamos entregando calor, cierto, energía al reservorio. Entonces pienso, por ejemplo, en el magma contenido en el en la Tierra, cierto y.
+
+Julio Eduardo Oliva Zapata   24:39
+Mhm.
+Claro.
+Mhm.
+
+LUIS ALBERTO INZUNZA OSSES   24:49
+Ese reservorio de masa incandescente que hay sale a través de un volcán.
+
+Julio Eduardo Oliva Zapata   24:53
+Mhm.
+Mhm.
+
+LUIS ALBERTO INZUNZA OSSES   24:56
+Bueno, ese proceso térmico, cierto, se disipa después porque, como bien lo dijo usted, le entrega al estar en mayor temperatura, tiende a igualarse con el con el ambiente por la ley del equilibrio de la termodinámica, pero en este caso lo que hacemos es proporcionarle calor al sistema.
+Tema o extraer el calor del sistema.
+
+Julio Eduardo Oliva Zapata   25:17
+No.
+Bueno, súper, súper. La frase de Kelvin solo tiene sentido si uno la lea entera, porque tú hiciste una pausa cuando dijiste extraer calor. Entonces a un sistema yo le puedo ceder calor bien o puedo extraer calor de ese sistema.
+Pero si quiero con esa energía, si quiero extraer calor de un sistema y con esa energía mover una máquina.
+No todos los yawl de calor que yo extraiga del sistema los voy a poder transformar en el movimiento de una máquina, en una máquina que realice trabajo.
+Entonces, esa es la idea para poder realizar trabajo, trabajo positivo, digamos que para poder mover un pistón, necesito energía de alguna parte. Entonces tengo este reservorio, este baño térmico al cual le saco energía y con esa energía trato de mover una máquina. Yo que voy a poder, pero no voy a poder transformar.
+Toda la energía en calor que le saqué al sistema, eso no lo voy a poder transformar en trabajo, bien en energía útil para mover una turbina, por ejemplo.
+Eso, y acá entonces uno podría decir, mira, le sacaste energía al a este reservorio, a este baño térmico, le bajó la temperatura al baño térmico. Lo que estaba discutiendo ahora es que el baño térmico, el reservorio es una idealización en donde al un sistema yo le saco energía y no le cambio la temperatura.
+Eso y al reservorio tal vez de ahí viene la confusión. Al reservorio también ocurre que yo le puedo pasar energía, pero no le cambio la temperatura.
+Su galo, adelante.
+Está silenciado.
+Sigue silenciado gano.
+Excellent.
+Super ahí está la información de del orden cronológico de las vías de Carnot, Clausius. y.
+Y Kelvin, bien, y es extremadamente útil esto que dijeron que dicen acá y este orden cronológico, porque.
+Captura una idea que yo les comentaba el otro día, que estaba la teoría del calórico, en donde al transferirse, al transferirse calor de un cuerpo a otro, la teoría del el marco conceptual del calórico decía que había un fluido que se traspasaba de un cuerpo a otro, y yo les enfaticé también que ese marco conceptual, si bien sabemos que no es correcto.
+
+GALO MAURICIO EIDELSTEIN SILBER   27:51
+Ahora estoy.
+
+Julio Eduardo Oliva Zapata   28:07
+está lo suficientemente cerca de la realidad como para poder construir tecnología sobre él. Entonces, claro, Carnot acá, según envían en el chat, claro, pensó su máquina, su máquina térmica pensando en la eficiencia, cierto, de un proceso termodinámico.
+Pero antes de que estas ideas se se formalizaran.
+Claro, ahora sí, perdón.
+
+GALO MAURICIO EIDELSTEIN SILBER   28:33
+Sí, ahora sí, mira un ejemplo bien raro que voy a te voy a poner, suponte tú que el objetivo que yo tengo es extraer energía de un sistema de un reservorio.
+Y mover una un pistón, una máquina, pero además, simultáneamente quiero calentar el ambiente.
+
+Julio Eduardo Oliva Zapata   28:46
+No.
+
+GALO MAURICIO EIDELSTEIN SILBER   28:52
+¿Donde se produce este proceso? Ahora, porque estamos, digamos, es correcto suponer que el que esta energía que no se ocupó para mover la máquina.
+
+Julio Eduardo Oliva Zapata   28:56
+Mhm.
+
+GALO MAURICIO EIDELSTEIN SILBER   29:03
+Se transforma en calor también.
+
+Julio Eduardo Oliva Zapata   29:06
+Claro, ese es calor que se va al ambiente. Sí, lo único que prohíbe la formulación de Kelvin es que va a haber una parte que no vas a poder usar como para realizar trabajo, pero sí es calor.
+
+GALO MAURICIO EIDELSTEIN SILBER   29:06
+Pook it, pook it.
+Yep.
+No, pero sí es que es que en este caso sí lo estoy usando. En este caso sí lo estoy usando porque mi objetivo era mover la máquina y calentar el ambiente como calefacción.
+
+Julio Eduardo Oliva Zapata   29:21
+Mhm.
+Mhm.
+Mhm.
+
+GALO MAURICIO EIDELSTEIN SILBER   29:26
+Entonces estoy ocupando toda la energía.
+
+Julio Eduardo Oliva Zapata   29:31
+Yeah.
+
+GALO MAURICIO EIDELSTEIN SILBER   29:32
+En un En un trabajo útil.
+
+Julio Eduardo Oliva Zapata   29:34
+Así que.
+Correcto, correcto. Sí, eso es correcto porque hay conservación de la energía, o sea, si esa energía está ahí, pero esta formulación de en esta formulación de trabajo, este trabajo es trabajo mecánico del tipo p por db, una expansión.
+
+GALO MAURICIO EIDELSTEIN SILBER   29:56
+Two.
+
+Julio Eduardo Oliva Zapata   29:57
+Bien.
+Claro, o sea, tiene una utilidad, tiene una utilidad que es calentar el ambiente.
+Eso, y ahí uno podría decir, oye, pero ese calor igual es movimiento del gas que está, del gas que está alrededor, pero para poder hacer movimiento de las partículas que componen el gas que está en la habitación. Eso es cierto, pero las partículas en promedio no se van a mover en ninguna dirección.
+O sea, en total no se van a en promedio no se van a mover en ninguna dirección. Entonces no es un trabajo efectivo que me sirva el movimiento de las partículas en la.
+En acá, digamos, en el link no me va a servir como para mover una máquina. Entonces, eso es lo que trata de capturar la formulación de Kelvin.
+Yeah.
+Claro, porque a veces esto se cuenta de una forma como si no fuera útil el calentar la habitación con el frío que hace, sí.
+Bien, entonces observen que estas 2 formulaciones hablan acerca de conceptos distintos, ¿no? La de arriba habla acerca de transferir calor de un sistema de menor a mayor temperatura y la imposibilidad de hacer eso de manera única, sin que haya algún otro efecto, mientras que la formulación de Kelvin.
+Introduce la noción de baño térmico y habla cerca de trabajo. Se dan cuenta que conceptualmente son cosas distintas, bien, pero uno puede demostrar, uno puede demostrar que es posible demostrar.
+Demostrar.
+Que ambas formulaciones son equivalentes.
+escribir así directo, son equivalentes.
+Yeah.
+Es decir, que la formulación de Clausius.
+Es equivalente a la formulación de Kelvin y con un poco más de tiempo se lo hubiera contado, pero necesitamos seguir avanzando. Y este es un el cómo se demuestra esta equivalencia. Es un lindo ejemplo del uso del contra recíproco en lógica, en las tablas de verdad que a uno le contaban en el Liceo.
+Cierto, y uno pensaba, oye, ¿dónde voy a usar esta estas ideas? ¿No? Bueno, acá este es un una instancia en el en la que uno puede usar esas ideas, porque la forma de demostrarlo es que.
+Tú muestras que si niegas.
+La formulación de Clausius, entonces.
+Se niega, perdón, la formación de Kelvin, entonces como consecuencia Clausius.
+Es falso y después demuestras que si Clausius es falso, entonces Kelvin.
+Es falso, bien, y las tablas de verdad que nos nos enseñaron en el liceo nos dicen que si usted tiene 2 afirmaciones que están relacionadas de esta manera, que sus negaciones están relacionadas de esta manera, entonces esto solo puede ocurrir si en realidad las 2 afirmaciones son equivalentes.
+Yes.
+Entonces son equivalentes estas 2 afirmaciones.
+Y ahora hay un camino que toma unos 20 minutos más o menos, no lo vamos a saltar, que es: Ok, estas son palabras, cierto, muy bien, son palabras, entiendo lo que quieren decir estas palabras, pero hay una consecuencia matemática de estas palabras.
+Yeah.
+Entonces consecuencia.
+No voy a decir consecuencia matemática, porque en realidad es una consecuencia física que la expresamos a través de una ecuación matemática. consecuencia de.
+La segunda ley, ya sea en la formulación de Clausius o de Kelvin, porque son equivalentes.
+Es lo que se llama el teorema.
+Es una consecuencia, entonces el teorema de Clausius.
+¿Y qué dice lo siguiente? Voy a anotar la fórmula, la ecuación que.
+Lo voy a anotar en 2 ecuaciones bien y que puede asustar un poco, pero ahora les cuento qué significa esto.
+Si usted suma.
+La cantidad de calor.
+Que absorbe un cuerpo en un proceso.
+Cíclico.
+Y divide por la temperatura en cada instante en el que el cuerpo está absorbiendo o cediendo calor.
+Esto es cero.
+Cuando.
+El proceso.
+Yes.
+O asia estático.
+Fue así, estático.
+O reversible.
+Yeah.
+Es decir, que cuando el proceso se realiza en cada instante.
+En una En una configuración de equilibrio.
+Y si usted hace esa misma suma, pero en un proceso genérico.
+Que no es casi estático.
+Esta suma es siempre menor a cero.
+Cuando.
+El proceso.
+No es cuasi están.
+Bien, entonces acá este símbolo de integral cerrada, probablemente ustedes pueden estar diciendo, no quiero volver a cálculo 3, cálculo vectorial bien, pero no es necesario ir a cálculo vectorial porque tenemos que podemos interpretar de manera sencilla qué significa este símbolo. bien.
+¿Pues qué significa?
+Yeah.
+¿Qué significa tu operación?
+Vera C.
+En este caso, el implementar esta operación tiene un significado super preciso.
+Entonces.
+Voy a ir primero al caso cuasi estático, entonces recordemos, hay una superficie de fase, ¿cierto?
+En la superficie de fase.
+Tengo condiciones de equilibrio.
+Y yo puedo conseguir un proceso que haga lo siguiente.
+Estoy moviendo arriba de la superficie de fase bien.
+Déjenme poner nombre a los ejes, por ejemplo, BBT.
+Entonces, ¿qué estoy haciendo acá? Estamos cambiando a medida que me voy moviendo a lo largo de este camino.
+Estoy cambiando la presión, la temperatura y el volumen del cuerpo, pero ajustando esas 3 variables siempre de tal manera que el sistema está en equilibrio. Por ejemplo, si pienso en el la superficie de los de fase de los gases ideales no tiene esta forma, pero si pienso en la superficie de los gases ideales.
+Voy a decir, mira, voy a mover la presión, voy a mover el volumen.
+Y voy a mover la temperatura.
+Voy a asumir que el número de partículas que hay en el gas está fijo y voy a cambiar estas cantidades que están acá, pero las voy a cambiar de tal forma de que esta ecuación sea válida siempre. O sea, si subo un poco la temperatura, de alguna forma tendré que subir el producto de la presión por el volumen. Si hago que disminuya la temperatura, debo disminuir de alguna manera el producto de la presión por el volumen.
+Eso significa quedarse arriba de la superficie de fase.
+Eso significa quedarse arriba de la superficie de fase. Entonces, si me dan un momento porque me está llamando la secretaria del diplomado, entonces tal vez es algo que tiene que ver con el diplomado, por eso voy a contestar.
+1 segundo.
+Bien, perdón, continuamos. No tenía que ver con el diploma.
+Y.
+Bien, entonces esto es un proceso y observen que estoy partiendo de un estado y estoy volviendo al mismo estado. Esto es un ciclo termodinámico. Bien, esto entonces esta imagen representa un ciclo.
+Termodinámico.
+Ciclo, uno lo usa para procesos que vuelven al mismo estado. Bien, es un ciclo termodinámico y déjenme enfatizar que es cuasi estático, bien estático.
+En estos casos también es reversible.
+Es reversible siempre en todo instante, el sistema estuvo en equilibrio, no le hice nada rápido, nada abrupto al sistema.
+Hay una pregunta adelante, Cristian.
+
+CRISTIAN ALFREDO OYARZUN SUAREZ   39:59
+Profe, consulta en esa gráfica, ¿dónde está la cantidad pequeña de calor?
+De Q.
+
+Julio Eduardo Oliva Zapata   40:06
+Ahora, ahora, ahora.
+
+CRISTIAN ALFREDO OYARZUN SUAREZ   40:08
+Ya.
+
+Julio Eduardo Oliva Zapata   40:10
+María, adelante.
+
+MARIA ISABEL LELAS CORTES   40:12
+¿Se escucha?
+
+Julio Eduardo Oliva Zapata   40:14
+Sí.
+
+MARIA ISABEL LELAS CORTES   40:15
+Sí, ya tenía una duda porque me puse a pensar ahí con eso de la situación cíclica, independientemente de cuán amplio sobre la superficie de fases se encuentra este ciclo. Mientras esté en él, puede seguir siendo cuasi estático, no mientras se haga lo suficientemente lento.
+
+Julio Eduardo Oliva Zapata   40:32
+Eso.
+sí, correcto.
+
+MARIA ISABEL LELAS CORTES   40:36
+Sí.
+
+Julio Eduardo Oliva Zapata   40:36
+Eso sí, mientras eso podría ocurrir algo violento, podría ocurrirse pasar por arriba una transición de fase o k, pero asumamos que el sistema se mantiene siempre arriba de la misma fase, ya en la misma fase.
+Bien, entonces.
+Vamos a asumir lo siguiente, que en cada voy a dibujar este ciclo, lo voy a dibujar desde arriba.
+Déjenme dibujarlo así y déjenme darle una orientación en el sistema aparte de acá y entonces vamos a el sistema en cada instante está cambiando su volumen, su temperatura y su y su presión. Entonces vamos a dividir este camino en pedacitos pequeños.
+Lo más pequeño posible, pero lo suficiente como para que se vea en la gráfica. Ustedes después idealizan el paso al infinitésimo bien.
+Y vamos a decir, mira, en este, en este, en este paso de aquí, en este primer paso de acá, el sistema absorbió cierta cantidad de calor.
+Entonces, déjenme decir que en ese paso el sistema absorbió cierta cantidad de calor. Déjenme decir que acá, mira, en este paso el sistema absorbió cierta cantidad de calor bien y tenía una temperatura. Entonces, déjenme decir que en este intervalo, si es lo suficientemente chico, la temperatura estará bien caracterizada. bien.
+Y el sistema absorbe calor y su temperatura cambia.
+Déjenme decir que acá igual el sistema tenía una temperatura y absorbió cierta cantidad de calor. Esta temperatura de acá será distinta a esta temperatura de acá. Entonces déjenme decir que esta es la cantidad de calor uno, esta es la cantidad de calor 2, tendrá una temperatura uno, tendrá una temperatura 2 acá.
+Bien, entonces me imagino que el sistema, a medida que va recorriendo el ciclo, también tal vez en algún momento cede calor, sale energía en forma de calor del sistema. Déjenme decir que esa, por ejemplo, es la cantidad yésima de calor.
+¿Y qué temperatura tenía el sistema en este intervalo? Tenía temperatura la 100 temperatura.
+Y así.
+Entonces divido todo el ciclo en transformaciones pequeñas, bien en transformaciones pequeñas y después hago lo hago lo siguiente, voy a decir.
+Mira, voy a sumar de q uno dividido por t uno más de q 2 dividido por t 2 más.
+La 10 cantidad de calor que el cuerpo absorbió más hasta que termine de recorrer el ciclo.
+Entonces esto lo puedo reescribir cierto matemáticamente con la fórmula para la suma es la suma sobre todos los posibles valores de i bien de la cantidad de calor o digamos todos los posibles valores de j de la cantidad de calor absorbida en el paso j en el j décimo paso
+Dividido por la temperatura que tenía.
+El cuerpo en ese instante.
+Eso esto que está acá significa, haga esta suma que la podemos, la podemos intentar.
+Y ahora sí, me imagino que hay.
+Si divido el camino en infinitos pasos.
+Infinitos pasos que tienen que ser de tamaño infinitamente pequeño, eso se llaman pasos infinitesimales.
+Animales acá ustedes me podrían decir, oye, ya vaya a sumar, vas a sumar infinitos términos, la suma te va a dar infinito, pero no, si esto no me va a dar infinito, si es que estos tipos son infinitesimalmente pequeños.
+Ese paso.
+Es la integral, es esta integral cerrada, bien, pero el qué hay que hacer en el proceso es esto.
+De Q partido por T, ahí está.
+Eso es integral cerrado, eso significa esa integral cerrado.
+Bien, ahora cuando uno está calculando a mano, digamos, usa esta integral cerrada, cierto, hay técnicas para tratar con este objeto, pero si uno quiere programar estas cosas en el computador, por ejemplo, si está interesado en saber cuánto vale la integral de Q partido por T, en un proceso dado en donde hay datos,
+Lo que se implementa en el computador es la versión que está a la izquierda con la suma.
+Así que esto, si bien es como una definición inocente, digamos de la integral, sigue teniendo aplicaciones prácticas si uno tiene un set finito de datos. bien.
+¿Qué es lo que ocurre siempre? Nunca hay infinitos datos.
+Eso significa se integra. Bien, entonces divida el camino en pequeños trocitos, pregúntese cuánta cuánto calor absorbió o se dio el sistema en ese proceso y multiplique divida por la temperatura que tiene que tenía el sistema. Bien, entonces el teorema de Clausius me dice que el teorema que enuncia arriba me dice que si estoy arriba de la superficie de fase, esto es cero.
+Si estamos arriba de la superficie de fases, bien.
+O en la superficie de fase, en la superficie de fase.
+
+SEBASTIAN IGNACIO MUÑOZ AGUIRRE   46:08
+No sé.
+
+Julio Eduardo Oliva Zapata   46:09
+O sea, see that.
+
+SEBASTIAN IGNACIO MUÑOZ AGUIRRE   46:10
+¿Disculpe que lo moleste, pero esa barrita que está en el de qué significaba?
+
+Julio Eduardo Oliva Zapata   46:11
+Hello!
+Oh.
+Súper, era una forma de comunicarle al interlocutor que hay 2 tipos de cantidades chicas.
+Hay 2 tipos de cantidades chicas, una cantidad chica que es como du, que significa.
+El cambio en la o DB, digamos DB, por ejemplo, ¿qué significa este DB? Significa el cambio en el volumen.
+Pero cuando ese cambio es muy pequeño, pero tiene sentido hablar de cambio en el volumen, porque si yo tomo un sistema y hago que se expanda, tiene sentido hablar de el volumen antes y el volumen después.
+Eso, entonces esto sin barrita es el cambio en el volumen.
+Cambio en el volumen.
+Con barrita.
+Ejemplo de barrita W.
+Se lee de otra forma, no se lee cambio en el trabajo, se lee y las palabras que uno usa acá captura la idea. Bien, se se lee cantidad pequeña de trabajo.
+De trabajo.
+Entonces, por ejemplo, el sistema realiza un trabajo y no tiene sentido decir el trabajo antes, después menos el trabajo antes. Bien, lo que tiene sentido decir es la cantidad pequeña de trabajo.
+Lo mismo pasa con el calor, esta es una cantidad pequeña de calor, no es el calor antes.
+Menos el calor, el calor después, menos el calor antes, porque eso no tiene sentido, porque el calor es energía en transferencia, bien energía que se transfiere. Entonces solo tiene sentido en un proceso, no tiene sentido ni antes ni después, solo en el proceso.
+
+SEBASTIAN IGNACIO MUÑOZ AGUIRRE   47:57
+Ya profe, muchas gracias.
+
+Julio Eduardo Oliva Zapata   47:58
+Eso entonces es una forma de comunicarle a la persona, ojo que sabemos la diferencia entre esta.
+Eso sí, como dice Karina, uno es un cambio, el otro es una cantidad.
+Javier Adam.
+
+JAVIER EDUARDO WOLF MIRANDA   48:09
+Sí, el la T debajo.
+
+Julio Eduardo Oliva Zapata   48:10
+Oh.
+No.
+
+JAVIER EDUARDO WOLF MIRANDA   48:15
+No decidiera estar tomada el de abarcar el culo y el té juntos.
+porque es como que porque lo estás dividiendo todo soporte y como lo haces para integrarlo algo pasa ahí medio extraño porque si no te queda como que fuera estuvieras dividiendo por el promedio las temperaturas una cosa rara
+
+Julio Eduardo Oliva Zapata   48:20
+Claro.
+Sí, sí.
+No, claro, este té que está acá abajo significa es el té.
+Es este el J Simote, o sea, acá en la suma está más o menos claro que significa aquí el.
+que hay algo que no les estoy contando, que hay que parametrizar el camino de alguna manera. Y cuando uno parametriza el camino de alguna manera, uno dice mira voy a recorrer la curva con tal parámetro, uno puede saber cuánto vale la temperatura en tal valor del parámetro. Entonces es mejor pensarlo acá. Esta es una forma de escribir el paso al infinitésimo.
+Eso, María, adelante.
+
+MARIA ISABEL LELAS CORTES   49:16
+Profe, volviendo al asunto de la de barrita y de sin barrita, la esta pequeña cantidad de calor es varia para la entrega de calor al sistema, como para la.
+
+Julio Eduardo Oliva Zapata   49:21
+Mhm.
+
+MARIA ISABEL LELAS CORTES   49:29
+Quitarle en corona al sistema ya.
+
+Julio Eduardo Oliva Zapata   49:29
+Sí.
+Correcto, ¿por qué no les he dicho cuál es el signo de Q? Bien.
+
+MARIA ISABEL LELAS CORTES   49:34
+Yeah.
+Y cuando menos sería quitar.
+
+Julio Eduardo Oliva Zapata   49:38
+Claro, eso si de Q en el caso cuando de Q es negativo, es que el sistema está cediendo calor. Esa es la convención que estamos usando. Ojo que hay libros que usan la convención opuesta.
+
+MARIA ISABEL LELAS CORTES   49:46
+Mhm.
+Gracias.
+
+Julio Eduardo Oliva Zapata   49:51
+Dejémoslo, dejémoslo escrito de Q.
+Positivo.
+Significa.
+¿Que el sistema?
+Absorb a color.
+De Q negativo.
+Significa.
+¿Que el sistema?
+Sede calor.
+Entrega, entrega calor, por lo tanto, su energía interna va a bajar.
+Revisando si absorbe, estaba bien escrito adelante, Sebastián.
+
+Sebastián Paz Saavedra   50:39
+Profe, esa forma en integral que escribió por dijo la forma sumatoria era la que más se utilizaba, por lo general porque no tenía una cantidad discreta o puntual de.
+
+Julio Eduardo Oliva Zapata   50:49
+Yeah.
+
+Sebastián Paz Saavedra   50:51
+Cierto, pero por ejemplo, si uno estudia, uno está estudiando un medio continuo como un fluido o un plasma, a eso se utilizaría más la forma integral o no.
+
+Julio Eduardo Oliva Zapata   50:51
+sí.
+Correcto, sí, para todas las manipulaciones teóricas, uno usa la integral cerrada, sí.
+
+Sebastián Paz Saavedra   51:04
+Pero tendríamos.
+claro ahí va otra pregunta en ese caso tendríamos que encontrar una manera eh entre el diferencial Ah quiero decir ahora de cantidad pequeña de calor por el tiempo y con una especie de diferencial de sustancia o no habría que encontrar alguna porque si no lo hacemos así igual estaría interpretando como
+
+Julio Eduardo Oliva Zapata   51:08
+Yeah.
+Is it?
+Sí.
+Okay.
+Y.
+
+Sebastián Paz Saavedra   51:25
+Como el calor, como pequeñas partes.
+
+Julio Eduardo Oliva Zapata   51:27
+Mhm.
+
+Sebastián Paz Saavedra   51:28
+No como todo.
+
+Julio Eduardo Oliva Zapata   51:31
+Sí, claro, para poder la entropía, cuando ahora voy a hablar de la entropía en un momento, la entropía va a ayudar a resolver el cómo lidiar con esta integral, cómo hacer esta suma en el continuo.
+
+Sebastián Paz Saavedra   51:43
+Nia.
+
+Julio Eduardo Oliva Zapata   51:46
+Cristian, adelante.
+
+CRISTIAN ALFREDO OYARZUN SUAREZ   51:48
+Asumo que lo que usted dice que se ocupa más la forma de sumatoria de la práctica es porque en realidad no tenemos una solución analítica y ocupamos un método numérico aproximado, puede ser algo así, ¿no?
+
+Julio Eduardo Oliva Zapata   52:01
+Sí, en la realidad uno, claro, tiene acceso a datos. Por ejemplo, si uno quisiera manipular integrales como esta en el caso del gas ideal, eso se puede hacer. No hay para qué hacerlo en el computador, , pero si se está tratando, se está trabajando con sistemas.
+Que están, son datos experimentales. Sí, uno tiene que basta entender la suma, eso es lo que quiero.
+Igual para hacer la integral, cuando en el caso teórico es cierto, para hacer la integral uno.
+Hay técnicas para hacer esas integrales.
+Va a ser esa suma en el continuo.
+Muy bien.
+Esa es nuestra convención. Bien, entonces eso significa, observen que esta expresión entonces nos dice que sí o sí.
+Esta expresión que está acá me dice que sí o sí.
+En este ciclo.
+El cuerpo no solo puede, si tiene, si va a volver al mismo estado, se dan cuenta de un ciclo.
+No puede ser que todos los de Q sean positivos. Asumamos que la temperatura es positiva, está bien desde el punto de vista de la interpretación de la temperatura como el movimiento de las partículas, la temperatura es positiva porque es proporcional a la energía cinética del promedio de las energías cinéticas.
+El promedio de la energía cinética y la energía cinética es positiva porque es un medio de la masa por la velocidad al cuadrado, eso es todo positivo. Así que bien, asumamos que la temperatura es positiva. Estoy haciendo este paréntesis porque en un rato más les voy a decir que hay situaciones en las que uno puede tener temperatura negativa, bien, pero que no esa temperatura no corre.
+Pon a movimiento de partículas.
+Bien, entonces asumamos por ahora que la temperatura es positiva, pero si la suma tiene que dar cero, no puede ser que todos los de Q sean positivos. ¿Se dan cuenta? Si todos los de Q son positivos, la suma de números positivos no me puede dar cero. Entonces si el sistema va a volver.
+Ánimo estado.
+Los de Q no todos no tienen que no pueden tener todos el mismo signo.
+Ya.
+O K, pero esto nos dice algo más de inmediato. En el caso del proceso del proceso cuasi estático, podemos decir algo más.
+Hey.
+Una forma.
+Y.
+Déjeme decirle un pequeño recuerdo.
+De integrales, bien.
+Y.
+La.
+Hay 2 operaciones en el cálculo diferencial, cierto que son estructurales, que son la derivada y la integración, bien, y una es el inverso de la otra bien.
+Entonces, por ejemplo, si yo.
+Tengo una función y la derivo, esto es al margen.
+Si yo tengo una función.
+Y la derivo.
+Bien.
+Pero después se me ocurre esto, integrarlo.
+Desde un tiempo uno hasta un tiempo 2, esto es lo mismo que la función.
+En el tiempo 2 menos la función en el tiempo uno. Bien, uno dice que esta estas 2 operaciones, el de derivar la función y después integrarla bien son operaciones inversas. Bien, una anula la otra, bien, pero observen que el resultado.
+Que queda al lado derecho, es la función en el tiempo 2 menos la función en el tiempo uno.
+La función en el tiempo 2 menos la función en el tiempo uno o ky miren qué pasaría si el tiempo 2 fuera igual al tiempo uno, quedaría la función en el tiempo 2 menos la función en el tiempo 2, eso sería cero.
+Sería cero y justo en ese caso, entonces observen que aquí.
+Hay un objeto que ya es una derivada de algo.
+Entonces, quédense con esta con esta idea intuitiva, así no es necesario entender el detalle de lo que dije ahora, pero es quedémonos con esta idea intuitiva para poder argumentar la existencia de la entropía.
+Tengo una integral, OK, una integral como la de arriba, está bien, que es.
+La integral de Q partido por t y me da cero.
+Es una integral, es una suma en un ciclo cerrado. Entonces yo puedo decir, mira, voy a agarrar un punto arriba del ciclo y lo voy a considerar como el punto inicial. Bien, este lo considero como el punto inicial. Bien, y si estoy integrando en un ciclo cerrado, el punto inicial es igual al punto final.
+El punto inicial es igual al punto final.
+Voy a voy a revertir la lógica en esta parte bien.
+Mi eso.
+Bueno, si el punto inicial, si tengo una integral y el punto inicial es igual al punto final bien y el resultado me da cero.
+Es porque lo que estaba dentro de la integral.
+Vera.
+La derivada de algo.
+So yeah.
+Entonces.
+Esta ecuación que está acá.
+Que es válida en procesos cuasi-estáticos.
+Implica.
+¿Qué para?
+O.
+Que bueno, implica que en este caso.
+Implica que para.
+Procesos.
+Cuasi estáticos infinitesimales.
+De Q partido por T.
+Tiene que ser el cambio en alguna cantidad.
+El cambio en alguna cantidad.
+Entonces observen que acá hay algo que es súper no trivial. Yo hemos insistido mucho en que esto que está aquí es una cantidad pequeña, no es un cambio en nada.
+Ya es una cantidad pequeña, pero resulta que la divido por t.
+Y esta combinación sí es cuando estoy en un proceso cuasi estático. Esta combinación sí es el cambio en alguna. Este es el cambio en una variable. Bien, esta variable que está acá es la entropía.
+No.
+Esto es el cambio, esta ecuación define la entropía termodinámica.
+Digámoslo con pala.
+Esta ecuación.
+Define.
+Es la definición de la entropía termodinámica.
+La definición, bueno, define la entropía.
+Thermodinámica.
+Yeah.
+Eso y ahora entonces déjenme decir lo siguiente.
+Ahora hay algo que es fácil de entender, entonces si yo tengo mira una suma cerrada.
+Bien, así a lo largo de un proceso de una cantidad.
+¿Que es el cambio en algo? Esto va a ser ese al final del proceso, menos ese al inicio del proceso. Bien, y esto es cero, si es que el si es que es un ciclo bien, porque el.
+La configuración inicial en un ciclo.
+Son iguales en un ciclo.
+La configuración inicial y la configuración final son iguales bien.
+Entonces, cada vez que ustedes vean alguna sumatoria.
+En un proceso cíclico.
+De una cantidad, déjenme decirle gato que es cero en un ciclo.
+Yeah.
+Es porque en realidad esta cantidad se puede escribir como el cambio.
+De otra variable.
+No, no.
+Y eso es súper nutrivial, es súper nutrivial, el que.
+el que exista esta esta relación de Q es una cantidad infinitesimal de calor t es la temperatura pero la división entre estas dos cosas se puede interpretar como un cambio cuando el proceso es o así estático se puede interpretar como el cambio de una cantidad
+Y eso implementa directo el hecho de que esta integral sea cero, porque te queda s al final, menos s al inicio, de la misma forma en que acá, debido a que lo que está adentro es una, es un cambio.
+Te queda la función al final, menos la función al inicio, si inicio igual final, entonces esto es cero.
+Entonces, uno podría decir, mira, la solución más general de esta ecuación, piénselo así.
+Piensen en esto.
+Como una ecuación para este objeto.
+Piensen en esta ecuación como una ecuación para este objeto.
+¿Qué objeto tengo que poner yo ahí?
+Tal que esta suma continua sea cero.
+Pero el objeto más general que puedo poner ahí o la solución de esta ecuación es el cambio.
+Bien, el cambio en una variable física nueva que se llama la entropía termodinámica.
+Esta es la forma en la que aparece la entropía la entropía termodinámica en la construcción a posteriori, obviamente.
+Sí.
+El argumento es parecido a la.
+A la.
+Al argumento que tal vez habrán escuchado de la energía en la energía potencial, uno lo.
+Cuando uno tiene hay unas fuerzas que se llaman conservativas, cierto, las fuerzas conservativas tienen la propiedad de que si yo me pregunto cuánto trabajo.
+Realiza la fuerza sobre mi sistema, tengo un sistema sobre el cual está actuando una fuerza. Bien, cuánto trabajo.
+Realiza la fuerza sobre el sistema cuando el sistema va y vuelve a la misma condición, cuando la fuerza es conservativa, ese trabajo es cero, el trabajo neto es cero. Las fuerzas conservativas en un ciclo producen trabajo neto cero.
+Bien, y entonces en esos casos uno dice, mira, la fuerza en realidad es la derivada de otra cosa y esa otra cosa es la energía potencial. El campo gravitacional tiene una energía potencial.
+El campo eléctrico tiene una energía potencial bien.
+La fuerza de fricción no satisface esa apropiado, la fuerza de fricción, cierto, si yo me pregunto, por ejemplo, tengo la mesa y desplazo.
+Mi celular sobre la mesa y vuelvo al mismo punto, la fuerza de fricción, por más que yo vuelva al mismo punto, la fuerza de fricción habrá efectuado sobre el cuerpo una cantidad no nula de trabajo. La fuerza de fricción no es conservativa.
+Eso entonces la lógica para seguir avanzando y responder sus preguntas si lo estuvieran es la siguiente.
+La formulación de Clausius y la formulación de Kelvin son equivalentes e implican el teorema de Clausius. El teorema de Clausius es esta.
+Son estas 2 afirmaciones.
+O K de la hemos estado analizando la primera afirmación del teorema de Clausius. La primera afirmación del teorema de Clausius es esta: sé cómo se implementa en su versión discretizada.
+Sabemos cómo se implementa en su versión discretizada será esta suma. Pásale un poco de calor, mide eso en Yaul divide por la temperatura que tenía el sistema en ese instante. Sácalo un poco de calor, mide eso en Yaul divide por la temperatura que tenía el sistema en ese instante y haz eso muchísimas veces a lo largo del ciclo y suma esos números.
+y el hecho de que esta suma sea cero en suma o integral cerrada es lo mismo, implica que para procesos cuasi-estáticos que es cuando esta expresión es válida,
+la cantidad pequeña de calor dividido por la temperatura se puede escribir como el cambio en una variable termodinámica, en una variable de estado, estas se llaman variables de estado, están definidas en cada instante sobre la superficie de fase. Por ejemplo, ahora voy a escribir la entropía, esta entropía la voy a escribir para
+El para gas ideal de inmediato. Déjenme decirles lo siguiente, qué quiero decir con variables fases. Por ejemplo, si el sistema está aquí, yo les digo cuanta entropía tiene. Si el sistema está acá, les digo cuanta entropía tiene. Si el sistema está acá, les digo cuanta entropía tiene.
+Me voy a saltar unos slides para fijar ideas.
+Para fijar ideas y escribir. la.
+la ecuación de estado, perdón, la entropía del gas ideal, déjenme escribir la entropía del gas ideal, que la tengo aquí en alguna parte, porque tengo la deducción acá.
+En verdad.
+Work.
+acá está
+Yeah.
+La entropía entonces por esta variable misteriosa que apareció como por un teorema matemático, se dan cuenta.
+Matemático que te dice: OK, si la integral es cerrada es cero es porque existe, porque el integrando es un diferencial. Esa es la forma técnica de decirlo.
+Y pero déjenme así les para.
+El gas ideal.
+La entropía.
+Termodinámica.
+Yes.
+Déjenme escribirla en términos de.
+La temperatura y el volumen es la capacidad calorífica a volumen constante del gas ideal por el logaritmo natural.
+De la temperatura dividido por una temperatura cero.
+Más el número de partículas por la constante de Boltzmann por el logaritmo natural, una operación está la calculadora del volumen dividido por un volumen de referencia donde.
+B cero y b cero.
+Son una.
+Son un volumen, son una temperatura, perdón.
+Temperatura y volumen.
+De referencia.
+Yeah.
+Jugando con la primera ley, uno puede demostrar esto. Esta es la entropía del gas ideal. Entonces, si ustedes me dicen.
+Me dan este volumen de referencia y esta temperatura de referencia, okey, y después.
+Si me dan esos 2 números, yo les puedo decir, mira, si el gas ideal tiene tal temperatura y tal volumen y tal número de partículas, entonces tendrá tal entropía. Y recordemos que CB para el gas ideal es 3 medios del número de partículas por la constante de Boltzmann.
+Entonces, ahora voy con la pregunta: hasta este punto, la entropía no habla acerca de desorden de nada. Matemáticamente aparece como un como la.
+Bueno, como ese diferencial bien.
+Pero vamos a ver que es una cantidad extremadamente importante porque esta entropía nos permite conectar después la física microscópica con la física macroscópica. Esta variable va a ser la que nos va a permitir conectar estos dos mundos.
+Tuyo perfectamente les podría haber dicho lo siguiente, podría haber dicho, mira, hay otra cantidad termodinámica que se llama, que se llama, me buscaron una Z.
+Se llama Z, que es función de la temperatura y el volumen, y es igual a la temperatura a la quinta por el coseno del volumen dividido por un volumen de referencia.
+Podría haber dicho eso, mira, hay una cantidad física que es esta que se construye con la temperatura y el volumen.
+Y bueno, entonces esta expresión por ahora es parecida porque no hemos explicado cuáles son las consecuencias físicas, cuál es el significado que tiene la entropía bien, que es para dónde vamos a ir ahora, pero es una función de las variables del espacio de fase entonces.
+Vuelvo, si ustedes me dicen en qué punto están sobre la superficie de estado, sobre la superficie de fase, yo les puedo decir cuánta entropía tiene el sistema. Distintos sistemas tienen distintas entropía. La entropía del gas de Van der Waals se puede calcular también y es una pequeña deformación de lo que escribí ahora. Entran los parámetros A y B.
+Em.
+eso hay varias preguntas entonces Luis primero adelante
+
+LUIS ALBERTO INZUNZA OSSES   1:10:28
+¿Ahí sí me escucha, cierto?
+
+Julio Eduardo Oliva Zapata   1:10:30
+Sí.
+
+LUIS ALBERTO INZUNZA OSSES   1:10:32
+Sí.
+Sí, está buena la imagen esa, porque en el todo parte de esto, cierto, tenemos una superficie de fase y hablamos de que tenemos un ciclo definidos en la superficie, cierto, y se puede terminar la entropía. Usted dijo, podemos determinar la entropía en cualquiera de los puntos porque hay una entropía determinada de acuerdo.
+
+Julio Eduardo Oliva Zapata   1:10:47
+Yep.
+
+LUIS ALBERTO INZUNZA OSSES   1:10:55
+Al gas, cierto, en el caso de Van Der Waal o de otro tipo, pero me queda la duda porque sería porque hablamos que también en los puntos de fase tenemos una compresibilidad positiva, pues cuando vimos el otro día la representación.
+
+Julio Eduardo Oliva Zapata   1:10:58
+No.
+Ajá.
+Sí.
+
+LUIS ALBERTO INZUNZA OSSES   1:11:15
+De Maxwell, cierto, la línea que el trazado horizontal, la configuración de igualación de área en esa zona del valle y el pico del de la isoterma. Yo tengo un desorden porque tengo, se me eleva la temperatura, la presión, se van para allá, para acá. y.
+
+Julio Eduardo Oliva Zapata   1:11:17
+Okay.
+Mhm.
+Pepe.
+
+LUIS ALBERTO INZUNZA OSSES   1:11:36
+¿Cómo podría definir matemáticamente el circuito cerrado y hacerlo cero si en esos momentos tengo puntos que son fuera del valor representativo, digamos?
+O se puede aplicar a toda la superficie.
+
+Julio Eduardo Oliva Zapata   1:11:52
+Claro, el la parte de que está entre medio de la gráfica en Van der Waals, cierto, entre la fase cuando existe esta curvita, cierto queda temperatura lo suficientemente baja y estoy entre la fase de líquida y la fase gaseosa, cierto, esa parte de entre medio.
+Tablet bien y.
+Pero son condiciones de equilibrio, pero inestable.
+Presiones de equilibrio, pero inestable. La entropía las logra capturar. Mira, hay una propiedad superinteresante de justo ayer alguien la enfatizaba en una defensa de grado. Bien, si yo escribo la entropía como función de la energía interna y del volumen.
+El lugar de la temperatura.
+Esa función tiene que tiene que ser convexa, tiene que ser, se lo puede imaginar como una superficie en 3 dimensiones, porque hacia allá me muevo con la temperatura, perdón, hacia allá me muevo con la energía interna, hacia acá me muevo con el volumen, la entropía tendrá algún mono, bien tendrá algún mono esa curva para que.
+El equilibrio sea estable, esa curva tiene que ser convexa, tiene que ser hacia arriba.
+A diferencia de y eso ocurre solo.
+La curva esta se la entropía como función de la energía interna y el volumen se da vuelta cuando lo evalúo en la fase inestable. o K, entonces la entropía igual logra capturar esa inestabilidad.
+Eso, Sebastián, adelante.
+
+LUIS ALBERTO INZUNZA OSSES   1:13:26
+Okey, gracias.
+
+Sebastián Paz Saavedra   1:13:28
+Sí, puede volver a la ecuación de la entropía en función de la temperatura de la y el volumen. Quería hacer una pregunta justamente de ahí, ya ahí usted puso abajo donde la temperatura sub cero y volumen sub cero son una temperatura y volumen de referencia. Eso es cuando, por ejemplo, uno estaba en la un laboratorio de física y decían que era una temperatura.
+
+Julio Eduardo Oliva Zapata   1:13:33
+What?
+Thank you.
+
+Sebastián Paz Saavedra   1:13:48
+Experimental y la otra teórica, una cosa así o es un convenio. Básicamente, digamos, esto está de libro cuando uno toma un libro de termodinámica, se iba a las páginas finales y aparecía todo esto como pauteado por algún físico experimental de quién sabe cuándo escribió esos valores o es un convenio básicamente.
+
+Julio Eduardo Oliva Zapata   1:13:56
+What?
+Okay, okay.
+Ajá, ajá. Bueno, excelente, excelente. Bien, le estaba pasando un golazo, pero me di cuenta que no fui lo suficientemente hábil. Pasa lo siguiente, que esta expresión para la entropía.
+Cuando uno la resuelve, cuando uno la obtiene bien, es mediante un proceso de integración de una ecuación diferencial. Bien, y es esos procesos de integración, tal como las integrales indefinidas, tienen constantes de integración que son arbitrarias, que no tengo cómo voy a terminar.
+¿Entonces esta entropía que está acá?
+Proviene de manipular una ecuación que cuando la resuelvo me dice, mire, su entropía es tanto más una constante que.
+Tiene que determinar los experimentalmente.
+Entonces desde el punto de vista de la termodinámica y esa constante aditiva, esa constante aditiva es la misma, no depende de la temperatura ni del volumen, es una constante. Entonces lo que está bien definido desde el punto de vista de la termodinámica es el cambio en la entropía, no la entropía en un estado, sino el cambio en la entropía, porque cuando yo resto.
+T entropías en 2 estados distintos, si se me ocurre restarla, la constante es arbitraria que no tenía como fijarse, va bien.
+Esa constante aditiva se puede refrasear en términos de este t cero y este de cero. Bien, y acá lo que estoy haciendo es elegir una referencia porque ocurre algo, el logaritmo de uno vale cero, el logaritmo de uno vale cero. Bien, entonces.
+Este t cero y este b cero son una escala de referencia que yo elegí, bien, pero no es que esté tabulada en alguna parte, las puedo elegir como quiera. En realidad, tal que justo en ese valor de la temperatura y ese valor del volumen, la entropía sea cero. Es como elegir la constante de integración.
+
+Sebastián Paz Saavedra   1:16:01
+Ya básicamente, entonces a la pregunta, perdón, disculpe, básicamente la pregunta que le hacía vendría siendo un convenio, como quien dice el nivel de referencia del partimos en cero, una cosa así.
+
+Julio Eduardo Oliva Zapata   1:16:01
+Porque el.
+Okay.
+Claro.
+Eso es. Desde el punto de vista microscópico, nos vamos a dar cuenta que esas constantes están fijas. Okay, la constante de integración está fija, porque es muy probable que hoy día le alcance a contar que esta entropía, esta fórmula para la entropía tiene un problema.
+Algo que se llama la paradoja de Gibbs, les voy a contar eso y la física microscópica resuelve la paradoja de Gibbs.
+Y.
+So.
+Bien, entonces para que la entropía no sea misteriosa, ahí les presento, hay misterios, cierto, entre cero y cero como estábamos discutiendo, pero.
+Para que no sea tan misteriosa, les presento la entropía del gas ideal, el gas de Van der Waals, igual tiene su entropía y se puede, se puede, se pueden calcular usando las leyes de la termodinámica. Bien, esta ecuación no es que uno la mida, sino que esta uno lo calcula a partir de las leyes de la termodinámica.
+Muy bien.
+Yeah.
+Pero hay un caso del que no ha hablado, ¿qué pasa cuando el teorema de Clausius?
+Hace referencia a un proceso que no es cuasi estático.
+Porque todo esto que está acá era cuasi estático, cuasi estático, es decir, lo suficientemente lento como para no romper nada y que el sistema esté siempre en equilibrio. Pero observen que el teorema de Clausius tiene una primera parte que habla acerca de procesos cuasi estáticos, pero después te dice mira esta otra parte.
+Esta otra parte, entonces, ¿qué consecuencias físicas tiene esto? Vamos a hablar acerca de las consecuencias físicas de esta ecuación, la segunda.
+Déjeme escribirlo para que quede.
+Consecuencias físicas.
+NN.
+La segunda parte del teorema de Clausius.
+Que nos dice que si a usted se le ocurre hacer esta suma de los de Q partido por T, pero el proceso no es cuasi estático, esto va a dar cero para procesos no cuasi estáticos.
+No, cuasi está bien.
+Era un ciclo cerrado.
+Voy a argumentar lo siguiente, vamos a demostrar lo siguiente.
+Ahora voy con la pregunta, vamos a demostrar lo siguiente: demostraremos que.
+En un sistema aislado, esta va a ser la consecuencia física en un sistema.
+Aislado.
+En el sentido termal, en donde no hay transferencia de calor.
+La entropía.
+No puede.
+Disminuir.
+Ustedes habrán escuchado la frase de la entropía siempre aumenta, el desorden siempre aumenta. Bueno, eso es bajo condiciones de borde bien precisa. Uno puede bajarle la entropía a un sistema.
+Pero si el sistema está aislado, la entropía de ese sistema no puede disminuir y eso es lo que vamos a demostrar ahora. Entonces adelante, Cristian.
+
+CRISTIAN ALFREDO OYARZUN SUAREZ   1:19:58
+Para un proceso irreversible de Q barra dividido por t, ¿sigue siendo de s o ya no es de s, ya no tiene sentido?
+
+Julio Eduardo Oliva Zapata   1:20:07
+Ya no es de ese, claro, ya no es de ese, eso es en ese caso no es de ese porque si no si fuera de ese esta integral sería cero y en este caso es menor que cero bien.
+
+CRISTIAN ALFREDO OYARZUN SUAREZ   1:20:09
+Ya.
+Claro, debería, por ejemplo, en forma diferencial de ese menor que cero y tampoco tiene.
+
+Julio Eduardo Oliva Zapata   1:20:21
+Claro, claro, eso.
+
+CRISTIAN ALFREDO OYARZUN SUAREZ   1:20:23
+Ya, perfecto, gracias.
+
+Julio Eduardo Oliva Zapata   1:20:25
+Mira, y acá hay una pregunta que yo me toca enseñar esto en física estadística, en o como recontarlo en realidad, porque se cuenta en termodinámica, pero hay una pregunta que como cada 3 años me hacen.
+Si el proceso no es cuasi estático, ¿qué es esta temperatura?
+Se dan cuenta porque para definir la temperatura un sistema tengo que estar arriba de la superficie de fase.
+Si no estoy arriba de la superficie de fase, la temperatura del sistema no está definida. Por ejemplo, si no estoy arriba de la superficie de fase, el sistema todavía puede estar reacomodando la energía entre sus componentes porque lo calenté muy fuerte por acá y está reacomodando esa energía para poder termalizar y llegar a una temperatura bien definida.
+Entonces, si no estoy arriba de la superficie de fase, si no estoy en el equilibrio, ¿qué es la temperatura? Entonces, ¿qué es esta temperatura que aparece en el denominador acá cuando me refiero a un proceso no cuasi estático?
+Bien, esa temperatura es la temperatura del reservorio que le está pasando energía al sistema de manera rápida, tal que el sistema vive este proceso termodinámico. Bien, alguien le tiene que estar pasando al sistema que está viviendo este proceso no cuasi estático, este
+Este proceso no cuasi estático, este proceso abrupto, alguien le tiene que estar pasando esta energía bien.
+Y la temperatura que aparece ahí en el proceso de aguas estático es la temperatura de este de esta fuente de calor infinita, idealizada. Bien, y esa sí está fija. Bien, adelante Fernando.
+
+FERNANDO ALONSO VEGA OSORIO   1:22:04
+Profe, a lo mejor no es parte de la clase, pero ¿qué pasa? ¿El universo se considera abierto o cerrado? ¿Y qué pasa con el la entropía en ese caso? ¿Puede aumentar?
+
+Julio Eduardo Oliva Zapata   1:22:21
+Sube, sube, sí, el universo.
+Observable al que nosotros tenemos acceso, no es sabemos que no es un sistema cerrado, bien el universo que se nos presenta y al que tenemos acceso debido a la a que la luz.
+Aquí nada puede viajar más rápido que la luz en el vacío bien.
+Debido a ese a ese hecho y debido al hecho de que el universo se expande, pero el universo sí se puede expandir más rápido. La tasa de expansión del universo sí puede ser mayor a la velocidad de la luz en el vacío. Eso hace que el universo que nosotros observamos, al que tenemos acceso para hacer experimentos.
+No sea un sistema cerrado.
+Entonces, en ese caso, si el sistema no es cerrado, no es aislado, no hay algo que te diga, no hay una restricción sobre la entropía, no hay una restricción sobre la entropía. Entonces hay un parche observable, bien, pero que interactúa con. Hay una cosa que se llama el horizonte cosmológico y hay.
+Excitaciones físicas que salen del horizonte cosmológico.
+Eso es debido al estado de expansión del universo que tenemos que tenemos ahora, entonces aplicar las leyes de.
+De la termodinámica al universo como un todo se puede, pero hay que estar conscientes de que no es no es un sistema cerrado.
+Y hay algo ahí que es un poco tenso, ¿no? Y que a lo físico nos dice, bueno, estamos, es lo que es lo que hay, digamos, que es un poco deprimente, es decir, mira, yo quiero describir, quiero describir todo el universo, bien, pero tengo acceso a una parte del universo.
+Y.
+¿Cómo puedo saber?
+Esto pasa en algunos setups. Este ejemplo es bueno. Hay teorías físicas que predicen la existencia de multiversos, es decir, de otros universos, pero esos otros universos, la teoría física lo predice, pero esos otros universos están desconectados causalmente de nosotros, no hay cómo interactuar con ellos.
+Entonces tengo una teoría que no es que se me haya ocurrido en la mañana describir bien, sino que es una teoría que está basada en los principios de la física y después construyo sobre eso. Y esta teoría, este marco conceptual, como que predice su propia su propia muerte en el sentido de que te dice
+Mira, hay un multiverso, hay otros universos, bien, pero no los vas a poder, no los vas a poder ver.
+Entonces ahí uno podría decir, mira, eso no es física. Bien, porque si no puedo medir, no es física. Es verdad, si no puedo medir, no es física. Pero el marco conceptual que dio origen a esta predicción sí está basado en fundamentos sólidos de o elabora sobre fundamentos sólidos, o sea.
+No es que para.
+Predecir la existencia de multiverso tenga que violar la conservación de la energía. Bien, no es que haya que hacer algo así de brutal. Bien, o sea, el marco conceptual que predice la existencia de otros universos desconectados causalmente en el nuestro son teorías basadas en.
+Que no violan nada de lo que conocemos.
+Eso.
+Andrés.
+
+FERNANDO ALONSO VEGA OSORIO   1:25:54
+That's it. That's it.
+
+ANDRES EDGARDO BLUHM BRANDT   1:25:57
+Una consulta, mencionaste que la tasa de expansión del universo puede andar más rápido.
+
+Julio Eduardo Oliva Zapata   1:26:05
+Sí, eso, mira.
+Pasó en el proceso de inflación. al.
+Hay, déjame decirlo así, hay una observación, eso lo puedo dibujar.
+Vamos a este comentario al margen que es súper entretenido, entonces comentario y tal vez se se va a comentar en el último curso de gravitación. Bien, ocurre lo siguiente, supongo que esta es la esfera celeste, bien en la esfera celeste y pongámonos nosotros aquí al centro. Bien, el universo es homogéneo y isotrópico, es decir, cualquier punto del centro.
+Está bien, no es que no es que estemos siendo geocéntricos por hacer esto, se puede elegir el centro de manera arbitraria.
+Y pasa lo siguiente, mira, tú se observa esto, tú miras, esta es una versión simplificada, tú miras en esta dirección y ves que de esta dirección del cielo viene cierta radiación.
+Radiación que está en el rango de las microondas.
+Y de este sector del cielo.
+Viene radiación más o menos con el mismo color.
+Pero observa que estos 2 puntos del cielo que son.
+Son lugares, no estoy dibujando, estoy dibujando lugares bien, están extremadamente separados.
+Aproximadamente semana.
+Y si uno calcula un promedio de la temperatura del mapa de temperatura de la radiación de fondo cósmica, que uno la ve en todas las direcciones, bien la temperatura.
+El promedio es 2,7 Kelvin.
+Bien, yo no podría decir, ok, ese es el promedio, pero la temperatura varía mucho en una, en una dirección y otra. No varía tanto las fluctuaciones en la temperatura.
+Bien, si pienso en la temperatura como una variable aleatoria, bien tiene un promedio, son 2,7 Kelvin. ¿Pero qué tanto los datos se alejan del promedio? Las fluctuaciones de temperatura dividido por la temperatura son del orden de 10 a la menos 5, entonces 1 dividido por 123.
+Cuatro o 5 bien, estas son las fluctuaciones en la temperatura.
+Eso quiere decir que de alguna forma.
+Estos 2 puntos en el espacio que yo los veo súper lejos, pero súper, súper lejos, de alguna forma tienen que haber estado comunicados.
+Como haber sido parte del mismo fluido del fluido de un fluido a la misma temperatura.
+Porque si no sería una coincidencia muy grande. o K, puede ser una coincidencia, pero hay más evidencia. Hay más hechos experimentales que apuntan hacia la validez del modelo inflacionario.
+Pero entonces, si tú miras en una dirección allá y miras en otra dirección acá y ves que hay 2 personas que se parecen mucho, uno dice, bueno, deben haber tenido un ancestro común bien.
+Es eso, las fluctuaciones son extremadamente chicas en la temperatura.
+Y uno dice, bueno, yo sé que el universo se está expandiendo.
+Si he hecho la película para atrás, el universo si se está expandiendo es porque antes era más chico. Bien, entonces está bien estos 2 puntos de acá.
+Estos 2 puntos de acá están estuvieron en contacto causal en algún momento porque el universo era más chico.
+Pero si uno corre ese argumento con el modelo antes de introducir lo que se llama el fenómeno de la inflación.
+Yeah.
+Te queda que el universo no tuvo suficiente. Estos 2 puntos están muy lejos como para haber estado relacionados causalmente en algún momento, sin inflación. Bien, entonces lo que hace la inflación es decir.
+Mira, en realidad.
+El.
+Acá no sabemos qué pasó, en realidad.
+Todos los puntos que estaban como en esta región estaban relacionados causalmente y eran parte del mismo fluido, así que tenían la misma temperatura. Y después ocurrió un proceso en donde el universo, que es como el radio, el tamaño del universo es el radio de esta circunferencia, en donde el universo se expandió de manera acelerada, pero.
+Acelera, eso se llama aceleración temprana, inflación.
+De esa forma puedo explicar 2 cosas, puedo explicar el tamaño.
+Cómo es que estas 2 regiones que están tan lejos pueden estar a la misma temperatura y eso pasa en todas las direcciones.
+Pasan todas las direcciones.
+Eso y este proceso, por ejemplo, si uno calcula la tasa a la que ocurre este el proceso de inflación y con eso calcula una velocidad, bien, esa velocidad es más rápida que la velocidad de la luz. Entonces el universo mismo, según entendemos.
+Se puede expandir más rápido que la velocidad de la luz en el vacío, pero después las cosas que se mueven arriba del espacio tiempo.
+Bien, estas personas que se mueven arriba del espacio tiempo no se pueden mover más rápido que la velocidad de la luz en el vacío. O sea, esta persona que se va a alejar en alguna dirección, por ejemplo, se se va a mover. Asumamos que tiene un movimiento propio, entonces se va a mover hacia allá. Después de 1 segundo habrá llegado por aquí, pero un rayo de luz habrá llegado mucho más.
+Eso se llama aceleración temprana.
+Y permite explicar la inflación, cierto, permite explicar ahora la inflación también predice.
+Predice la existencia de ciertas señales que no se han observado todavía en el fondo de radiación cósmica, una a lo que se llama los modos B. En algún momento hubo su deber sido como hace.
+13 años más o menos que.
+El análisis de ciertos datos del fondo de radiación cósmica indicaba que estos modos B estaban presentes bien y estos modos B eran un una prueba de la inflación, o sea, la inflación no nada es una prueba en física, pero.
+La inflación predice la existencia de cierta señal bien o de cierto patrón en el en la radiación de fondo conspira, pero bueno, resultó ser espuria esa presencia de los modos B y resultó ser producto.
+De que teníamos una mala estimación de el contenido de gas que había en el universo, en el espacio intergalaxtic. Pero bueno, para volver a la pregunta. Si nada prohíbe que el universo mismo se expanda más rápido que la velocidad de la luz.
+Las ecuaciones de Einstein, eso no lo probió.
+Y no hay que tener materia exótica.
+Entonces se puede hacer con materia sensata, con energía positiva, narra.
+Bien.
+Eso entonces demostraremos que un en un sistema aislado. la.
+La entropía no puede disminuir, esto igual quedó al margen.
+Entonces vamos a demostrar eso bien, la y hagamos la demostración, no es sencilla, hay que pensarlo un poco.
+Pero tampoco infinitamente difícil.
+Y entonces uno concibe el siguiente proceso.
+Pues supongo que están, esta es su superficie de fase bien y tienen lgp, lgb y el eje de la temperatura bien.
+Y.
+Consideren 2.
+Condiciones de equilibrio, o sea, si el sistema está aquí, voy a llamarle a este estado el estado B.
+Estado by si el sistema está acá va a ser el estado A, entonces A Yb corresponden.
+Corresponden.
+A configuraciones de equilibrio.
+¿Qué quiere decir eso? Que la presión, el volumen, la temperatura y el número de partículas se relacionan como es dictado por la ecuación de estado.
+Configuraciones de equilibrio.
+Y consideremos el siguiente proceso cerrado, el siguiente ciclo.
+Vamos a venir de B hasta A.
+Por un proceso cuasi estático.
+Entonces este proceso debe hasta.
+Es cuasi estático.
+Es decir, lento.
+Lento comparado con que con la escala de termalización del sistema.
+Cuasi estático bien y ahora me voy a devolver a B, bien, pero me voy a devolver a B por un proceso no cuasi estático.
+E.
+Les comenté en la sesión pasada que no tiene sentido dibujar esto, pero uno abusa el lenguaje acá y dibuja. OK, ¿por qué no tiene sentido?
+Dibujar esta línea no tiene sentido porque.
+Decir, por ejemplo, que el sistema está aquí es decir que tiene cierta temperatura, volumen y presión bien definida, y eso está bien definido solo si estoy arriba de la superficie de fase.
+Ya, pero lo que quiero señalar con este con este proceso desde A hasta B es que voy a volver al estado B, por ejemplo, que el sistema tenga tal presión, tal volumen y tal temperatura, pero voy a volver de una manera abrupta.
+Entonces vuelvo desde hasta ver este proceso no cuasi estático.
+No.
+O así estático.
+Okey.
+Entonces.
+En esta sección, esta aquí en el proceso cuasi estático, si yo divido.
+Este proceso y me imagino que el sistema está absorbiendo calor en cada uno de estos pasos. En este proceso cuasi estático tenemos que de Q.
+La cantidad de calor absorbido debido por la temperatura.
+Es igual al cambio en la entropía, porque eso pasa arriba de procesos cuasi estático.
+Déjeme dibujar el proceso no cuasi estático con rojo.
+Digamos este proceso.
+No cuasi estático, el proceso abrupto.
+Realizo una expansión en el sistema y no le doy tiempo al sistema de que se dé cuenta hasta que ya está disponible el otro volumen en la caja y el sistema se tiene que acomodar.
+A estar en un volumen distinto.
+Entonces al proceso no cuasi estático déjeme llamarle P al proceso cuasi estático le voy a llamar R de reversible este es R este es P bien.
+Entonces observen que dibujé un ciclo, dibujé un ciclo termodinámico que una tiene una parte cuasi estática y la otra parte abrupta, pero igual vuelvo.
+Igual es un ciclo termodinámico porque vuelvo a ver, vuelvo al mismo estado del que partí.
+Entonces, digamos, la unión.
+La unión.
+De R, déjeme escribirlo así, unido con P.
+Yes.
+Un ciclo termodinámico.
+Sí, porque parto y termino en B, termodinámico.
+Yeah.
+Pues partimos.
+Y terminamos.
+Embed.
+Es un ciclo termobinario, este es de unión.
+Bien.
+Entonces, el qué me dice el teorema de Clausius, el teorema de Clausius.
+De Clausius.
+Makes it.
+Mira, en un proceso, en un proceso genérico.
+Un proceso genérico.
+Ya sea cuasi estático o no cuasi estático.
+Me dijo.
+Si yo sumo.
+A lo largo de todo el proceso que ahora el proceso, ¿cuál es el proceso? Es R unido con P.
+Si yo sumo la cantidad de calor dividido por la temperatura, eso tiene que ser menor igual a cero.
+¿Dónde?
+Igual a cero solamente.
+Solamente si todo el proceso es cuasi estático, todo el proceso es cuasi estático, estoy uniendo las 2 afirmaciones del teorema de clausius.
+Si todo el proceso es cuasi estadio, es lento.
+Pues bien, pero en general va a ser menor o igual a cero y la igualdad se va a lograr solo si el proceso completo es cuasi estático. Adelante Sebastián.
+
+Sebastián Paz Saavedra   1:40:17
+¿Qué tipo de ejemplo o de ciclos termodinámicos en la naturaleza podría ser de la evaporación y la condensación o no?
+Que tiene un ciclo de rápido y otro más lento, porque cuando se va condensando es más lento el proceso.
+
+Julio Eduardo Oliva Zapata   1:40:25
+Hello.
+Súper.
+Sí.
+Sí, lo que pasa es que ahí hay un cambio de estado. Entonces, mira, el ejemplo típico de proceso no cuasi estático es lo que se llama la expansión libre, que uno lo puede concebir esto. Mira, supongo que tú tienes un gas que está metido en un volumen.
+y pones una puerta acá y tienes el gas aquí y acá hay vacío, hay vacío del que se puede hacer con el barómetro de Torricelli.
+Y ahora supongo que tú remueves la remueves la pared.
+Y deja que el gas se expanda.
+Ya se empieza a expandir bien.
+Debido a que en esta parte de acá.
+La presión no va a estar bien definida porque el gas se está expandiendo y está explorando el vacío. Acá todavía no hay presión bien definida. Bien, este proceso es un ejemplo típico sencillo de un proceso no cuasi estático. No es No es necesario que sea abrupto en este caso, pero el sistema se tiene que reacomodar.
+ocupar todo el espacio posible y recién ahí va a termalizar tendrá para el gas ideal y para mucho muchas sustancias ocurre que al final la temperatura al inicio igual a la temperatura al final por más que ocupen eh
+Vamos, voy a discutir eso o k, pero el sistema, el gas se expande. Esta se llama expansión libre. este.
+Este proceso.
+Se llama.
+Expansión libre de Yaul, a veces expansión libre.
+Y es no cuasi estático.
+Tiene sentido mientras el gas no ocupe todo el volumen disponible.
+No habrá un volumen del gas. ¿Qué volumen ocupa el gas en un instante? Si el tipo se está expandiendo, está tratando y más encima, como se expande en el vacío, no tiene que empujar un pistón, nada. O sea, no hay trabajo que tenga que efectuar este gas para expandirse, está expandiéndose en el vacío. Eso Christian, adelante.
+
+CRISTIAN ALFREDO OYARZUN SUAREZ   1:42:48
+Por eso mire, hay algo como que me cuesta asimilar y normalmente o lo que yo he visto antes era los teoremas en cálculo en matemáticas que son demostrados con axiomas y otras cosas, pero ver acá en física que se hable de teoremas quiere decir que igual son demostrables.
+No sé, eso como que me no me padre.
+
+Julio Eduardo Oliva Zapata   1:43:10
+Sí, bien, claro, sí, hay 2 cosas que puedo decir. Hay una que algo que es cierto y hay que ser honesto, el nivel de rigurosidad de lo físico respecto de lo que es un teorema es un poco distinto. Bien, , pero lo que estamos discutiendo ahora es.
+Es física que ya lleva más de 100 años con nosotros y más de 200 años bien, en donde y que eso le ha dado tiempo a los matemáticos de formalizar estas ideas y tener una demostración de verdad de lo que es de lo que de esto que yo estoy relatando como un teorema.
+Bien, algo que se hace mucho en matemáticas, cierto, pero que si uno no está acostumbrado al a esta forma de plantear las ideas, es un poco viscoso, es que se establecen de manera muy clara cuáles son las hipótesis. Bien, los físicos muchas veces relatamos las hipótesis en prosa.
+En lugar de decirlas de manera precisa.
+Pero los puntos claves de la demostración del teorema, ahí estoy, estoy tratando de ser cuidados en los puntos clave, tal vez no en toda la formulación, pero sí en los puntos clave.
+El teorema que les comenté acerca de la existencia de una superficie de fase, eso sí es un teorema bien y está bien demostrado, tiene su hipótesis clara. Esto, el teorema de Clausius igual es un teorema que se deduce a partir de la segunda ley de la termodinámica.
+Y está demostrado cómo te cómo te abre.
+Es una buena pregunta.
+Y.
+Bien, entonces observen que el teorema de Clausius que estamos usando el teorema de Clausius. Bueno, no lo demostré, se dan cuenta, pero qué me dice el teorema de Clausius que para un proceso genérico va a pasar esto. Si usted suma qué significa este símbolo tan raro, imagínese un ciclo termodinámico, ya sea.
+Cuasi estático o no cuasi estático y si usted suma los de Q partido por t de alguna forma se consigue una definición para t. Eso en general va a ser menor igual que cero Sebastián adelante.
+
+Sebastián Paz Saavedra   1:45:21
+Me gustó mucho la pregunta del compañero que hizo recién, pero digamos con la diferencia con lo que puede encontrar entre la física y la matemática, a pesar que están muy relacionadas en muchos aspectos. Se podría decir que la física, por ejemplo, se confirma la naturaleza, la que finalmente confirma si la las leyes son correctas o no, y la matemáticas son como.
+
+Julio Eduardo Oliva Zapata   1:45:25
+Yeah.
+
+Sebastián Paz Saavedra   1:45:42
+Creo que entiendo yo como la axiomas, que es un constructo matemático que igual nacen del pensamiento. En el caso de la física, a pesar que tenga sentido matemático, la naturaleza tiene que confirmar si eso es cierto o no. Está como por ahí.
+
+Julio Eduardo Oliva Zapata   1:45:45
+Y.
+Mhm.
+No.
+Done.
+Sí, claro, la forma en la que trabajamos es bien distinta, y eso yo hago física teórica, pero me gusta harto la matemática, pero la forma en la que pensábamos qué problema nos interesa, cuál es el nivel de rigurosidad con el que uno se siente satisfecho con una idea, uno dice ya, ok, si esto está bien, te creo. Sí, más o menos lo entiendo, cuadra, portable y cuál evidencia, listo, sigamos. Bien, eso es un matemático, no lo haría.
+Bien, , pero tampoco, claro, lo que pasa es que los artículos de matemáticas se escriben con un nivel de rigurosidad extremadamente alto, , pero cuando tú discutes con los matemáticos, igual usan la intuición, la intuición, intuición basada en cálculos previos. Bien, eso.
+El problema que puede tener para un físico, preocuparse mucho de la estructura de que toda la estructura matemática esté bien, es que puede llegar no muy lejos.
+Y en la matemática, pero y en la matemática eso también pasa. O sea, el tal vez han escuchado que hubo un grupo de matemáticos en el siglo pasado, en los 40, un poco antes de matemáticos, que era el grupo de los bourba aquí que decidió escribir bien libros de todo. o K.
+Pero creo que partieron por las cuatro pilares de la matemática que son el álgebra, la aritmética, la geometría y la topología.
+Y.
+También la aritmética del análisis. Bueno, son cuatro lo que los matemáticos consideran pilares y estos tipos dijeron, ok, sentémonos un grupo de matemáticos franceses y escribamos estos libros y tomémonos todo el tiempo que sea necesario. Y no nos preocupemos de que nuestros nombres estén en los libros y firmaron los libros como Burbaki.
+Un señor Burba aquí, entonces resultó que el señor Burba aquí escribió un montón de libros.
+La historia es preciosa. Yo aquí espero que esto no se filtre porque los amigos matemáticos que tengo me van a matar, pero la historia es súper linda. Estos tipos entonces se juntan, escriben estos libros y se dan cuenta después de que en realidad les faltaba nivel de rigurosidad. Entonces ya vamos a edición 2 de los libros.
+No hay que mejorar el nivel de rigurosidad. Edición 3 no nos faltó escribir, un tiene que venir un libro antes de teoría de conjuntos. No tiene que venir un libro antes de lógica.
+Y resulta que claro, si tú puedes emprender ese camino, crees como objetivo de vida, está bien, pero.
+Yeah.
+Sí, no sé, a los físicos usualmente eso no nos no nos parece tan atractivo esa forma de aproximarnos a entender la naturaleza. Bien, a los matemáticos, sí, por eso lo hacen algunos.
+Eso, entonces adelante, Cristian.
+
+CRISTIAN ALFREDO OYARZUN SUAREZ   1:48:48
+Podría comentar respecto al mismo tema, entiendo que por ahí, por el 1915, Gilbert y Einstein casi llegan a o llegaron a la misma solución, pero uno es puramente matemático y el otro es físico, creo que va por ahí el tema de interpretar o entender.
+
+Julio Eduardo Oliva Zapata   1:49:03
+Sí.
+Claro, pasa eso igual, claro, Einstein escribió la las primeras ecuaciones de Einstein que escribió para el campo gravitacional eran válidas solo en vacío. Es decir, que si uno hubiese tratado de con esas ecuaciones entender cómo era la geometría del espacio tiempo al interior del sol, no le hubiera salido bien, pero para describir el movimiento de.
+Orbitando alrededor del sol, eso sí servía en viernes esas ecuaciones y bueno, y Gilbert se dio cuenta de que en realidad las ecuaciones matemáticamente no eran consistentes y se dio cuenta de cómo escribirla bien.
+Eso, el otro día me salió un video, no debe ser verdad. Estaba una conversación ficticia entre Einstein y Hilbert. y.
+A Ester le decía, mira que bueno, corregiste mis ecuaciones, dale, oye, entendamos esto juntos y claro, Gilbert le dice, no, si no te necesito, gracias, tuviste el primer paso ahora.
+Tal vez pensando en que conversar con un físico matemático, debido a que tenemos intereses distintos, nos enfocamos en cosas distintas.
+Eso ahora, igual la matemática con el tiempo he encontrado.
+O sea, ideas matemáticas que fueron concebidas por la mera necesidad intelectual de explorar el espacio de las ideas, lograr, logran encontrar cierto, han logrado encontrar en muchos casos aplicaciones en la física. Ahora también otra cosa que pasa que es interesante es que en la física los experimentos no demuestran nada.
+Bien, los experimentos te dan evidencia acerca de que una teoría es correcta, pero un experimento no demuestra la teoría. Una teoría física no se puede demostrar.
+Y.
+Es un conjunto de ideas cierto que te permiten predecir lo que va a ocurrir, pero no se pueden demostrar porque tú no puedes descartar que en el futuro alguien haga un experimento nuevo que.
+Vaya en contra de las predicciones de tu teoría.
+Entonces, desde el punto de vista epistemológico, las teorías en física no se demuestran por medio experimento. Uno gana evidencia acerca de la validez de la teoría física, , pero claro, a veces es tanta la evidencia experimental que uno dice este marco conceptual de verdad tiene que estar capturando algo acerca de la realidad. Bien, es abrumadora a veces la evidencia.
+Es tanta la evidencia que uno hizo que esto, esto sí, algo de verdad debe tener.
+O K, déjeme terminar con el con lo que quiero demostrar para que hagamos una pausa.
+Entonces, el teorema de Clausius.
+Cierto nos dice esto, entonces voy a aplicar el teorema de Clausius a este recorrido, que es R unido con P.
+Entonces, esta suma cierto a lo largo de R unido con P.
+¿En de Q sobre t bien que tiene la puedo escribir así?
+Dado que es una suma.
+La voy a escribir primero como la patita que va desde B hasta A, pero por R.
+Desde y ahora en el dibujo le explico cómo estamos dividiendo este dominio de integración o K por R de de q sobre t bien.
+Más.
+La patita que va desde A hasta B.
+Pero por p de Q partido por t, entonces acá lo que estamos haciendo es esto.
+Estamos haciendo, estoy considerando este ciclo completo bien y yo les dije que esta integral significa divida usted por pedacitos cada parte del camino.
+Calcule la cantidad de calor que el sistema absorbió, se dio dividida por la temperatura y sume bien y después hágalo en este camino.
+Se dan cuenta que la suma, la suma completa, la suma completa tiene que ser la suma a lo largo de R más la suma a lo largo de P.
+Por eso la suma en la Unión.
+La suma en la Unión es la suma de la región R más la suma por P.
+Bien, pero.
+Por R, déjenme decir, voy a seguir acá por R, voy desde B hasta A, voy desde B hasta A bien.
+Pues desde B hasta, pero algo que pasa en las integrales es que si yo voy al revés me sale un menos. Entonces déjenme poner ese resultado desde A hasta B. Observen que di vuelta los límites de integración.
+Por r bien de q sobre t. Si no lo habían escuchado esto nunca, no importa, pero créanme si uno toma una suma que va desde aquí hasta aquí, que es un integral y después uno dice cómo se compara esa suma con esta suma recorriendo la dirección hacia allá, te sale un menos y ahora sumo.
+La integral desde a hasta b por p.
+De Q sobre t bien.
+Pero por R cuando voy por R.
+¿Voy por R, cierto?
+En esta patita cuando voy por R.
+Esto es lo mismo que debido a que por R el camino es cuasi estático, este de Q partido por t es de Sy si es de S, esto es lo mismo que la entropía en el estado B menos la entropía en el estado A.
+Más.
+La integral desde A hasta B por P.
+De Q sobre T.
+Yeah.
+Okay.
+Y ahora estamos bien, esto tiene que ser menor o igual a cero.
+Igual cuando el proceso es reversible.
+Menor igual a cero.
+Pero déjenme asumir ahora, llegamos a esta expresión.
+Pero.
+Sí, el sistema.
+Está aislado.
+Esto, en este, en este contexto aislado significa no hay transferencia de calor.
+Vegalo.
+No hay transferencia de calor, por lo tanto.
+Por más que yo esté realizando un proceso.
+No cuasi estático.
+Esta suma de los calores en cada parte del paso vale cero, esta suma vale cero.
+Sí, pues si el sistema está aislado.
+¿Y ahora ustedes me podrían preguntar, oye, cómo implemento un proceso cuasi estático, no cuasi estático sin transferencia de calor? Porque algunos procesos cuasi estáticos de los que les hablé es, mira, calienta rápido el gas por un lado, caliéntalo rápido, transfieren una cantidad grande de energía en un tiempo corto tal que el gas le toma un tiempo.
+Termalizar bien, que no puedas asumir que en todo el proceso de termalización, en todo, en todo ese camino, siempre estuvo a una temperatura bien definida. Bueno, uno puede hacer eso, implementar procesos no cuasi estáticos, incluso si el sistema está aislado, por ejemplo, la expansión libre, la expansión libre.
+Es un proceso no cuasi estático.
+En donde el sistema puede estar completamente aislado.
+Y entonces aquí llegamos.
+Hemos hecho la siguiente demostración, mira, hemos hecho la demostración de que menos.
+SB, la entropía en B menos la entropía en A, bien.
+Esto es menor.
+Igual a cero.
+Por lo tanto.
+No tanto.
+Acá pasa algo con las desigualdades, no sé si se acuerdan de eso cuando uno tiene.
+desigualdades así, esto es lo mismo, esto implica que la entropía B menos la entropía en A es mayor o igual a cero y esta es la diferencia de entropía tiene que ser mayor o igual a cero. Entonces ahora vamos a hablar de la física de esto pero déjenme darles un ejemplo aquí de por qué de por qué esto es cierto miren
+Una expresión como esta sería, por ejemplo, con números menos 5 es menor que cero. Sí, menos 5 es menor que cero. En efecto, bueno, pero 5 es mayor que cero.
+5 es mayor que cero. Entonces, si le cambio el signo al lado izquierdo tengo que dar vuelta la desigualdad. Lo mismo pasa bueno, si es mayor igual o menor igual.
+Acá, como lo hice con 5, es evidente que era menor que.
+Entonces este menos que está acá molestando, lo paso para el otro lado si quieren y tengo que dar vuelta el signo de la desigualdad y acá está.
+Hemos llegado a esta expresión, bien expresión que es famosa.
+Es famosa.
+Entrobía.
+De un sistema aislado.
+No puede disminuir.
+El sistema aislado no puedes.
+Entonces, la frase esta de que la entropía siempre aumenta en realidad una exageración de lo que dice esta ecuación. Dice que la entropía de un sistema aislado no puede disminuir, eso si el sistema está aislado.
+Si el sistema está a temperatura constante, no puede estar aislado y ahí la entropía sí puede disminuir bien.
+Eso adelante, Galo.
+
+GALO MAURICIO EIDELSTEIN SILBER   1:58:57
+Sí, sabes que me me perdí en el en una parte, porque si el sistema está aislado, o sea, si no hay transferencia de calor, este este integral de a B de Q partido por t es cero, me perdí ahí.
+
+Julio Eduardo Oliva Zapata   1:58:57
+Oh.
+Yeah.
+Y.
+Súper, súper es porque observa que si el sistema está aislado, recordemos qué significa este objeto, significa.
+divida el camino en en segmentos pequeños y calcule la cantidad de calor que entra o la cantidad de calor que sale en cada parte del segmento de en cada uno de los segmentos y después súmele bien pero si el sistema está aislado no hay transferencia de calor
+Hacia el sistema ni desde el sistema al exterior. Entonces, debido a que la si el sistema está aislado, estos calores transferidos son cero, esta suma es cero.
+Bien, había una Karina, creo que estaba, Carlos, adelante.
+
+GALO MAURICIO EIDELSTEIN SILBER   1:59:53
+Y.
+no está bien, gracias.
+
+Julio Eduardo Oliva Zapata   1:59:58
+Sí.
+Bien, no, pero bajaros la mano. Ah, dale, adelante.
+
+KARINA PAZ FREDES REYES   2:00:03
+Sí, bajé la mano porque en realidad, con lo que explicó recién, aclaré.
+
+Julio Eduardo Oliva Zapata   2:00:10
+Bueno, sube.
+Bien, entonces déjenme enfatizar algo que.
+Para.
+Para.
+Sistemas.
+No aislados.
+La entropía.
+Sí, puede disminuir.
+La entropía sí puede disminuir.
+Para sistemas no aislados, aislados, bien, por ejemplo.
+Por ejemplo.
+Para un sistema.
+A temperatura constante.
+Que vive un proceso termodinámico.
+Entonces, por ejemplo, supongo que ustedes tienen un gas y lo expanden, un gas ideal lo expanden. Bien, está viviendo un sistema, un proceso termodinámico, ese gas lo estoy expandiendo, pero quiero que se mantenga a temperatura fija. Bien, en general, si yo tomo un gas.
+Ideal y lo expando se enfriar.
+Se enfría.
+Entonces, si quiero que se mantenga a temperatura constante durante la expansión, pues tengo que transferirle calor al sistema. Bien, entonces, en una expansión a temperatura constante del gas ideal, uno ve que en una expansión coasi estática, bien lenta, la única forma.
+De Al expandir el gas, mantener la temperatura fija es transferirle calor. Bien, entonces ese sistema no va a estar aislado térmicamente, pero va a estar temperatura constante.
+Entonces, por ejemplo, para un sistema de temperatura constante que vive un proceso termodinámico.
+Transfiriéndole energía.
+Transfiriéndole transfi.
+Yendo.
+Considiéndole.
+Hello!
+¿Podremos mantenerlo de esta forma?
+De esta forma, ya.
+Y con esto cierro, y si bien.
+La entropía.
+¿Podrá?
+Variar.
+Creo que no voy a entrar hasta variar de manera arbitraria en el proceso.
+La hago esta filmación, la energía libre.
+En un apellido esta energía libre se llama la energía ahora les digo que no de Helmholtz.
+No podrá aumentar.
+Alguien me preguntó hace un par de clases, creo, acerca de potenciales termodinámicos que deben ser extremados en la condición de equilibrio. La energía libre de Helmholtz es un ejemplo de eso. La energía libre de Helmholtz es la es la siguiente expresión: f igual a consígase la energía interna y resten el producto de la temperatura por la entropía.
+Y esto se puede demostrar, uno puede demostrar que si tengo un sistema.
+A temperatura.
+Fija.
+Yeah.
+Y lo y vive un proceso termodinámico, ya sea cuasi estático o no cuasi estático, la energía libre de Helmholtz.
+No podrá aumentar.
+a diferencia de lo que pasa, son condiciones de borde distintas. En el caso anterior, la energía del sistema estaba fija porque el sistema estaba aislado. En términos de calor, no hay transferencia de calor y ahí la entropía no puede disminuir. Si el sistema lo tengo a temperatura fija,
+La energía libre de Helmholtz no puede aumentar.
+Y déjenme decir si.
+Sí, el sistema.
+Está a presión.
+Y temperatura fija.
+La son otra, es otra condición de aborte, es la energía, perdón, la entalpía libre.
+Se llama así esta cantidad en talpía libre.
+También se llama energía libre de Gibbs, o K, pero digamos la entaltía libre, la entaltía libre no puede.
+Aumentar. Entonces, déjenme decirles quién es la entalpía libre. La entalpía libre es la energía interna más P por V menos la temperatura por la entropía. Bien, esto es la entalpía libre. Entonces, esta cantidad, el cambio en esta cantidad no puedes, si el sistema está a presión de temperatura constante, el cambio en esta cantidad no puede ser positivo.
+Distintas condiciones de borde le permiten al sistema hacer distintas cosas de manera espontánea.
+Yeah.
+Eso, entonces la lógica fue la siguiente, el teorema de Clausius.
+Perdón, la segunda, la segunda ley de la termodinámica implica el teorema de Clausius y el teorema de Clausius implica que la entropía de un sistema aislado no puede disminuir.
+Hay anécdotas hecho.
+No.
+Déjenme contarles algo, no sé si escucharon Caso 63, una serie como de radio teatro de estuvo en Spotify, medio de estuvo de moda hace un par de años y bueno, un tipo que viaja en el tiempo y la afirmación la hace bien, la hace bien porque en un momento hablan acerca de.
+Eso, esa serie chilena súper buena, se las recomiendo fuerte, sean entretenidos para escucharlo en el auto o en otro momento y en un momento habla acerca del aumento de la entropía y lo dicen de manera correcta, estaban súper bien asesorados. Sí, es súper buena la idea y lo dicen bien, dicen.
+Porque uno no puede uno no puede decir la entropía siempre aumenta, ya porque la entropía puede disminuir. Si estoy a temperatura fija, puedo disminuir la entropía. La frase correcta es la entropía de un sistema cerrado no puede, no puede disminuir eso. Entonces les propongo que hagamos una pausa.
+15 minutos, volvemos a las 21:30.
+Y.
+Y les cuento algo acerca de la primera ley de la termodinámica para agujeros ******, además.
+Entonces, 21 a 30 estoy de vuelta, pausa.
+Bien.
+Yeah.
+¿Comenzamos entonces?
+Volvemos.
+Se escucha bien.
+
+KARINA PAZ FREDES REYES   2:23:38
+Sí, se escucha bien.
+
+PAULINA ANDREA ACEVEDO MEZA   2:23:38
+Sí, se escucha.
+
+Julio Eduardo Oliva Zapata   2:23:39
+What?
+
+MANUEL ALBERTO TABILO GAHONA   2:23:39
+Say bro, store bien.
+
+FERNANDO ALONSO VEGA OSORIO   2:23:40
+Sí, bueno.
+
+Julio Eduardo Oliva Zapata   2:23:41
+Excelente, gracias.
+
+FERNANDO ALONSO VEGA OSORIO   2:23:42
+Aquí estamos.
+
+Julio Eduardo Oliva Zapata   2:23:44
+Entonces quiero.
+Hacer una aplicación extremadamente rebuscada para lo que uno haría en un curso de termodinámica de la primera ley. Bien, , pero que es interesante a este nivel debido a los intereses que tienen ustedes y a la forma en la que está estructurado. el.
+El diploma.
+Entonces, déjenme contarles algo acerca de algunos aspectos. de.
+De agujeros ******.
+Acerca de agujeros ******.
+Entonces, los agujeros ****** son.
+Regiones del espacio tiempo de las que uno no puede escapar.
+Debido a que tendría que viajar más rápido que la luz. Entonces, en la imagen esta que uno tiene de que la cada cuerpo celeste tiene una velocidad de escape que es igual a la raíz cuadrada de 2 veces la constante de Newton por la masa partido por el radio del cuerpo.
+Cuando lo pienso como esférico, si esa velocidad de escape puede ser mayor que la de la luz, y en ese caso voy a tener un agujero *****. Esa idea captura, esa imagen mental captura más o menos bien lo que es un agujero *****, salvo que da la impresión de que uno.
+debe estar parado sobre un cuerpo celeste, como un planeta muy, muy compacto, ultra compacto y la verdad es que el agujero ***** es una región del espacio-tiempo, no es que haya un borde, pero de todas formas ocupan una región del espacio.
+Entonces.
+Déjenme decirle que hay los agujeros ****** son objetos, objetos celestes bastante simples, si es que uno saca el disco de agresión, cierto, se realizan en la naturaleza con discos de agresión muchos de ellos, pero si uno, pero esa es otra materia, eso no es el agujero ***** mismo.
+Y si uno remueve todo lo que es accesorio, le queda un objeto que es muy simple, según indica la teoría, el marco conceptual con el que describimos el campo gravitacional. Estos objetos están descritos por muy pocos parámetros. A diferencia de los planetas, por ejemplo, los planetas son cuerpos celestes que requieren.
+Muchísima información para ser descrito. Bien, si hay una montaña por acá, una montaña por acá, el planeta va a ser distinto, a diferencia de del de los agujeros ******. Entonces, el agujero ***** más simple, los agujeros ****** más simples, los podemos imaginar que no están rotando.
+Más simples que son una idealización, los que observamos en la naturaleza están rotando.
+Los agujeros ****** más simples no rotan bien, pero las ideas termodinámicas que les voy a contar ahora asociadas a agujeros ****** se se expresan de manera mucho más simple en este caso.
+Entonces, ustedes pueden imaginarse por ahora un agujero ***** como una esferita cierto de radio RH bien, R sub H es el radio del horizonte.
+Carlos es el radio.
+Del horizonte.
+La superficie, el horizonte tiene una superficie que si lo pienso como una esfera de radio RH, el área cierto de la esfera es cuatro pi.
+RH cuadrado.
+Ese es el área de del de lo que se llama el del agujero ***** del horizonte de eventos bien.
+Ehm.
+Y este los agujeros ****** tienen un contenido energético, tienen una masa, bien, y esa masa en el caso más simple.
+Es se relaciona con el tamaño del agujero *****.
+Y acá abajo hay un factor 2 y está G, que es la constante de gravitación universal.
+Constante de gravitación universal, la constante de Newton.
+O constante de newtonio, constante.
+De Newton, bien que es un número chico, cierto en unidades del sistema internacional, la constante de Newton es del orden de 6, la G es igual al 6 P, déjame poner G Newton es igual a es del orden de 6 por 10 a la menos 11.
+Newton.
+Metro cuadrado partido por kilogramos cuadrado.
+Es un número cada 6,02.
+6,02.
+Por 10 a la menos 11 Newton metro cuadrado partido, es un número súper chico. Por eso que si bien la silla que tengo acá al lado ejerce sobre mí una atracción gravitacional y yo ejerzo sobre la silla una atracción gravitacional, debido a que es tan chica la atracción gravitacional, la silla no se mueve.
+Está también está la otra idea que todo, toda la masa de la Tierra ejerce sobre este celular una fuerza gravitacional que yo soy capaz de levantar, que yo soy capaz de balancear con mi brazo. Bien, eso a uno le da cuenta de lo débil que es la interacción gravitacional, o sea, le gano.
+A todo un planeta o K debido a fuerza de carácter electromagnético, que es la que me permite tensar el presionar el celular y que no se caiga.
+Ok, estas son propiedades de agujeros ******.
+y resulta que hay otra propiedad del agujero ***** que en este caso es trivialmente igual en todas partes, déjenme llamar la T adelantándome al resultado, que es 1 sobre 4 PI el radio del horizonte.
+Entonces.
+A fines de los a comienzos de los 70.
+La gente estudiando las ecuaciones de Einstein aplicadas a agujeros ******.
+Bardeen, Carter Hawking, Beckenstein, se dieron cuenta de que.
+Si yo, por ejemplo.
+Tomo un agujero ***** y lo trato de deformar un poco.
+Y lo dejo solo bien.
+El área de ese agujero ***** solo puede aumentar bien o mantenerse constante dependiendo de la deformación que haya hecho, pero no puede disminuir bien.
+Entonces, hay un teorema que se demuestra como teorema de verdad de la de con rigor matemático usando las ecuaciones de Einstein, cierto que te dice que el área de un agujero ***** no puede disminuir, y eso es parecido a lo que pasa con la entropía.
+Okay.
+Después.
+En relatividad especial, cierto, ustedes habrán escuchado la frase de que la masa y la energía son equivalentes. La masa es equivalente a la energía, un cuerpo que tiene cierta masa M, por más que esté quieto, tiene energía, que esté quieto libre, así sin que esté, sin que tenga energía potencial.
+Un cuerpo quieto que no está en presencia de una energía potencial. Igual tiene una energía en relatividad especial, que es la masa por la velocidad de la luz al cuadrado. Bien, asumamos que la velocidad de la luz vale uno para simplificar las ecuaciones.
+Ok, entonces.
+Yo puedo decir.
+Lo siguiente, mira esta entropy, este esta área que está acá.
+¿Tiene pinta de entropía? Ok, entonces pregunta, ¿será una entropía del agujero *****?
+Ya que satisface esta propiedad de que agujeros ****** aislados, para agujeros ****** aislados, su área no puede disminuir. Es lo mismo que pasa con la entropía. Este M de acá es el contenido energético, entonces será.
+La energía interna.
+Entonces, en este punto uno dice, mira, el problema que hay es que un agujero ***** solo no puede ser un objeto termodinámico. No lo puedo asociar a una entropía porque en realidad cualquier cosa que explore el agujero *****, por ejemplo, si pienso, si trato de pensar el agujero ***** como una estufa y trato de ver qué temperatura tiene.
+Debido a que el agujero ***** es *****, nada va a salir del agujero *****, así que no habrá radiación en principio, cierto, hasta el 73 no habrá radiación en principio saliendo del agujero *****.
+El Hawking mostró que.
+Si uno considera los efectos de la mecánica cuántica.
+Cerca de el horizonte de eventos de un agujero *****, es posible mostrar que en realidad el agujero ***** sí.
+Emite radiación y Hawking calcula la temperatura del agujero ***** y le da esta temperatura t bien.
+Entonces déjenme mostrarles ahora que se satisface la primera ley de la termodinámica con estas cantidades.
+Em.
+¿Entonces, qué nos diría la primera, la primera ley de la termodinámica en un proceso cuasi estático? Mira, ahora vamos a juntar 2 cosas, primera ley de la termodinámica.
+Termodinámica.
+me dice lo siguiente, nos dice el cambio en la energía interna y asumamos que no hay trabajo, que no hay una expansión. Okay, déjenme asumir que no hay trabajo es igual a la temperatura por el perdón es igual a la cantidad de calor absorbida asumamos que no hay trabajo efectivo
+Ciao, chao.
+Y ahora aquí voy a subir.
+Voy a asumir proceso cuasi estático.
+Entonces, DQ es igual a t por DS. Bien, entonces miren la forma que toma la primera ley para un proceso cuasi estático donde no hay trabajo. Esta es la forma.
+De la primera ley.
+Para un proceso.
+Cuasi estático.
+Y.
+Sin trabajo.
+Yeah.
+Mira, esta ecuación nos dice lo siguiente: bajo esas condiciones, si el proceso es cuasi estático y no hay trabajo. y.
+¿Tú llevas al sistema?
+Estoy sobre la superficie de fase.
+Y tú llevas al sistema desde un estado a otro que está muy cerca.
+Y este estado de acá tiene.
+Energía U y entropía Sy este estado de acá tiene energía U más un poquito.
+Y ese más un poquito.
+Entonces, estos poquitos se tienen que relacionar de la siguiente forma.
+Se tiene que relacionar de esa manera.
+Sea el contenido de la primera.
+Entonces mostremos que, en efecto, esta forma de asignarle cantidades termodinámicas.
+A un agujero ***** es consistente con la primera ley de la termodinámica.
+Entonces mira, vamos a corregir un poco las expresiones, vamos a decir lo siguiente, vamos a decir.
+Y la masa o k la masa es la energía interna o ky la masa entonces el igual al radio del agujero *****, perdón, RH dividido por 2 veces la constante de Newton.
+La entropía va a ser proporcional al área, pero va a estar dividida por 4 veces la constante de Newton.
+Entonces va a ser igual a cuál es el área. El área es cuatro pi, el radio del horizonte al cuadrado dividido por 4 veces la constante de Newton. Entonces te queda pi por el radio del horizonte al cuadrado.
+Y la temperatura es uno sobre cuatro PI por el radio del horizonte.
+Bien, entonces con estas cantidades, acá estoy diciendo lo siguiente: el área argumenté que hay un teorema que te dice que el área de un agujero ***** aislado nunca puede disminuir. Entonces vamos a decir que el agujero ***** tiene una entropía que es proporcional al área ye introduje este factor de proporcionalidad. bien.
+La idea de relacionar el área de un agujero ***** con su entropía se le ocurrió a Jacob Beckenstein.
+Años antes del artículo de Hawking de radiación de que de verdad uno a un agujero ***** le podía asignar una temperatura.
+Pero era como una curiosidad en ese instante.
+Hawking, cuando cuando calcula de forma precisa la temperatura un agujero *****.
+Te dice, no mira la entropía en realidad ha partido por 4 veces la constante de Newton.
+Beckenstein escribió entropía proporcional al área. Bien, entonces Hawking Beckenstein escribió el área partido por la constante de Newton, pero este factor cuatro es consecuencia del artículo Hawking del 73.
+Entonces revisemos si en efecto estas cantidades satisfacen la primera ley. Bien, entonces vamos a hacer esto, mira, comparemos.
+Comparemos.
+2 agujeros ******.
+******.
+Con radios.
+Muy cercanos.
+Entonces, mire, voy a decir, tengo este agujero ***** que tiene la radio.
+Que tiene un radio.
+RH.
+Y tengo otro agujero ***** que tiene un radio un poquito más grande. Este radio lo voy a llamar RH más un poquito, ese poquito déjenme llamarlo de RH bien.
+Es un radio un poquito más grande.
+Entonces o K, este agujero ***** de acá ya lo habíamos visto, tiene una entropía que tiene una masa, cierto que es RH.
+dividido por 2 veces la constante de Newton, tiene una entropía que es pi por el radio del horizonte al cuadrado dividido por la constante de Newton.
+Y tiene una temperatura que es uno sobre cuatro pi veces el radio del horizonte. Sí, eso fue lo que dijimos acá arriba.
+Ahora déjenme escribir esas mismas cantidades, pero para este agujero *****.
+Yeah.
+Bien para este agujero *****.
+La masa será.
+La masa de este agujero ***** 2 será igual a la masa antigua, más una masa muy cercana.
+Una masa muy cercana.
+Cierto, porque la diferencia en radios es muy chiquitita, por lo tanto, la diferencia en masas será muy chiquitita. bien.
+¿Entonces va a ser el radio del agujero *****?
+Nuevo dividido por 2 veces la constante de Newton.
+Y esto es el radio del agujero ***** dividido por 2 veces la constante de Newton, más este de RH dividido por 2 veces la constante de Newton.
+Pero observen que RH dividido por 2 veces la constante de Newton es la masa original.
+Entonces de acá.
+Vemos que DM.
+Es igual a DR. ¿Cómo es el cambio? ¿Cuánto cambia la masa de un agujero ***** si yo cambio un poquito su radio, su tamaño?
+El radio del horizonte, tenemos esta expresión.
+Y ahora me pregunto lo mismo que en la entropía.
+La entropía del agujero ***** nuevo será la entropía del agujero ***** antiguo más un poquito.
+¿Y cómo calculamos la entropía de un agujero *****? Dividimos PI sobre G.
+Y tomamos el radio del agujero ***** y lo elevamos al cuadrado, pero este es el radio nuevo.
+Aquadra.
+Muy bien.
+Vamos a usar el teorema del binomio.
+Entonces es el primero al cuadrado más 2 veces el primero por el segundo.
+Más el segundo al cuadrado.
+Yeah.
+Pero ojo, que si DR es un radio muy chiquitito.
+Bien, porque estoy diciendo que el primer agujero ***** tiene radio Rhy el segundo tiene radio Rh más un poquito, que a ese poquito lo estoy llamando DRh. Bien, esto es cero porque es como un número chico al cuadrado, déjenme decir épsilon cuadrado.
+Entonces esto nos da PI sobre G del radio del horizonte al cuadrado más 2.
+PI sobre grhdrh.
+Pero observen que esta cantidad que está acá es la entropía del agujero ***** original, así que ese se va con ese.
+Por lo tanto, el cambio en la entropía, si yo cambio el radio del agujero ***** en DH, este G genioton, G RH de RH.
+Observen que el cambio en la entropía del agujero *****.
+Si yo cambio el radio del agujero ***** en DRH, es RH por DRH. Aquí acabamos de calcular en realidad una derivada, pero como a la antigua.
+Como cuando uno calculaba derivadas con el límite.
+Entonces ahora comparemos, mira qué pasa si yo hago DM.
+DM, bueno, DM es DR, aquí está DRH dividido por 2 g.
+Bien versus la temperatura por el cambio en la entropía, o k la temperatura era uno sobre cuatro PI el radio del horizonte por el cambio en la entropía.
+El cambio de la entropía es 2 pi sobre grh drh.
+Y observen que entonces acá hay un montón de simplificaciones y el resultado es.
+RH.
+sobre 2G de RH.
+No, el RH se va, perdón, este RH aquí se fue con ese tuco.
+Yeah.
+DRH.
+Sobre ocio.
+Entonces mira lo que acabamos de mostrar, que si yo tomo un agujero ***** y le cambio el radio un poquito, habrá un cambio en la masa, pero ese cambio en la masa es exactamente igual al cambio en la temperatura, perdón, a la temperatura por el cambio en la entropía, se dan cuenta que estos 2 números son iguales.
+Estos 2 números son iguales, entonces esta asignación de variables termodinámicas a un agujero ***** como masa masa lo.
+Masa, entropía y temperatura. Y decir que la masa es la energía interna, es una de las verificaciones de que es correcta esta manera de describir la termodinámica de un agujero *****.
+Ahora.
+Si uno calcula para agujeros ****** astrofísicos, ¿cuál es el valor de esta temperatura? Es extremadamente chico, muy chico.
+Es mucho más chico que 2,7 Kelvin bien, entonces un agujero *****.
+Astrofísico, si lo considero, si me olvido del disco de acreción y lo considero como un objeto termodinámico debido a.
+A lo que nos enseñó Hawking.
+Es un objeto que tiene una temperatura que mientras más grande es el agujero *****.
+Más chile la temperatura.
+Y.
+Y si lo considero como un objeto termodinámico, tiene una temperatura muy baja.
+Menor a 2,7 2,7 Kelvin y el universo en el vacío, debido a la radiación de fondo cósmica, está a 2,7 Kelvin.
+Entonces, mira, ahí pasa algo interesante, un agujero *****.
+Está absorbiendo energía del fondo de radiación cósmica, del fondo de radiación.
+Ya.
+Eso, entonces acá hay una aplicación extremadamente rebuscada de termodinámica, pero que me parece interesante contar en este contexto.
+Porque.
+Porque bueno, no es lo que uno contaría un curso de termodinámica.
+Esta aplicación y volverán probablemente a estas ideas en el curso de relatividad y cosmología.
+Uno de los grandes problemas que tenemos en la física teórica en la actualidad es tratar de explicar el origen microscópico de esta de la entropía de los agujeros ******. En algunos casos sabemos cuáles son los grados de libertad microscópicos que dan origen a esta a esta entropía.
+Pero no hay una respuesta satisfactoria en general.
+Y déjeme terminar la clase con lo que se llama la paradoja, la paradoja de Gibbs.
+La paradoja de Gibbs, porque en la próxima clase, que es la última, vamos a hablar acerca de elementos de física microscópica, de elementos de física estadística.
+Pero lo que les voy a contar, lo que les he contado ahora todavía sigue estando en el contexto de la en el contexto de la termodinámica.
+Entonces déjeme contarle la paradoja de Gibbs y seamos dramáticos, digamos.
+La expresión.
+¿Qué tenemos?
+Para la entropía.
+Del.
+Gas ideal.
+Déjeme decir así tiene un problema.
+El problema es el siguiente predice.
+Un aumento de entropía.
+Cuando no.
+Debería saberlo.
+Esto se llama la paradoja de Gibbs.
+Y este análisis que les voy a contar ahora es extremadamente inocente desde el punto de vista de la termodinámica.
+Pero a Giff se le ocurrió una genialidad para resolver la tensión que voy a relatar ahora con la que vamos a terminar la clase. A Giff se le ocurrió una genialidad.
+¿Que resulta?
+Estar en el corazón de la mecánica cuántica.
+y que explica cuál es la estructura de la tabla periódica, elementos, explica ese elemento esencial para explicar lo que se le ocurrió a Gibbs sin saberlo, porque no había mecánica cuántica todavía, que es la noción de partícula idéntica. Entonces les voy a contar la paradoja de Gibbs.
+Y en la próxima sesión les cuento cómo Gears relaja esta paradoja, cómo la resuelve bien y cómo eso abre.
+Nos permite dar un vistazo a la naturaleza en su régimen cuántico. Bien, Gibbs propone una solución a esta paradoja de manera puramente clásica, puramente clásica.
+Pero tiene consecuencias estructurales en la física, lo que se le ocurrió a Kirs, la noción de partícula idéntica, la noción de que básicamente si yo tengo 2 electrones, cierro los ojos y alguien me los cambia y abro los ojos, no voy a ver ninguna diferencia.
+Esa es la noción de particularidad.
+Y que no había no había por qué pensarlo en ese momento.
+Y.
+Su.
+Entonces asumamos por cierta, yo les comenté que se podía calcular bien, pero asumamos por cierta.
+Nos sumamos como cierta.
+La expresión.
+Para extenso esto porque le acabo de decir que hay un problema o k, pero asumamos como cierta la expresión para la entropía.
+Del gas ideal.
+Siguiente, entonces voy a voy a escribirlo de otra forma. La entropía como función de la temperatura y el volumen. Lo voy a escribir así: la capacidad calorífica a volumen constante, el logaritmo natural de la temperatura.
+De la temperatura no voy a poner la temperatura de referencia, ahora se la voy a pasar una constante de integración más el número de partículas por la constante de Boltzmann por el logaritmo natural del volumen.
+Yeah.
+Más una constante integración, más una constante que voy a llamar cachirula. Esta es una constante constante que no depende ni de T ni debe.
+No depende.
+De T ni DB, no sé si esto me lo va a entender. ChatGPT cuando le pida que escriba un látex con esta con estas expresiones bien.
+Okay, esta es la expresión para la entropía. Es exactamente igual a la que a la que yo había escrito antes al comienzo de la clase, y B cero y T cero la temperatura de referencia y el volumen de referencia están metidos en esta constante integración que llamé, llamémosla alfa, llamémosla alfa.
+Ok y consideremos el siguiente experimento.
+Consideremos una situación antes.
+Y una situación después y comparemos las entropías.
+Y pensamos primero en qué esperaríamos después.
+Yeah.
+Entonces.
+Supongan ustedes que tienen el mismo gas ideal.
+Encerrado en una caja.
+Que está dividida en 2 partes iguales.
+De volumen.
+En 2 partes iguales de volumen V uno y de volumen V 2 con V uno igual AV 2 OK.
+Y supongo que hay un gas ideal de este lado, gas ideal.
+Y desde otro lado está el mismo gas ideal.
+El mismo gas y ver.
+Y pensemos en esta en esta.
+En este experimento, entonces.
+Vamos a remover.
+Pero déjenme decir que de este lado hay n un partículas y de este lado hay n 2 partículas bien.
+Y ahora déjenme remover el la barrera bien, entonces acá hay un solo gas ideal.
+Con volumen v uno más v 2 y con número de partículas n uno más n 2.
+Y asumamos que.
+N uno igual a n 2 okey.
+Vamos a asumir eso, o sea que acá hay tantas partículas como hay de este lado, acá hay tanto volumen como hay de este lado bien y después yo remuevo la barrera.
+Entonces, en total habrá.
+Un volumen que es el volumen uno más el volumen 2 y un número de partículas que es igual al número de partículas uno más el número de partículas 2.
+Bien, entonces ahora.
+Comparemos las entropías en estos 2 casos.
+Comparemos las entropía y algo que no les he dicho, pero la entropía.
+Es.
+Es aditiva, es fácil verlo de la siguiente por la es una variable extensiva o ky es fácil verlo de la siguiente del siguiente análisis, la entropía.
+Entropía.
+Es una variable.
+Extensiva.
+Depende.
+Depende del tamaño del tamaño de la muestra, del tamaño de la muestra.
+No much.
+¿Cómo lo podemos ver? Eso bien, lo podemos ver de aquí, mira, de la primera ley, la primera ley.
+Para procesos.
+Cuasi estáticos.
+Considerando trabajo.
+Es la siguiente: es el cambio en la energía interna, es la temperatura por el cambio en la entropía, menos la presión por el cambio en el volumen.
+Y de acá se ve la, por ejemplo, si yo tengo un sistema y lo mantengo a temperatura y a presión fija, pero duplico su tamaño.
+Si duplico su tamaño.
+Este volumen va a cambiar en un factor 2 bien y tendrá más energía también al sistema. Bien, duplico su tamaño, entonces este de U cambiará por un factor 2 también.
+Pero si mantuve fija la temperatura y la presión, la entropía deberá cambiar por un factor 2.
+Decimos que la entropía es una variable extensiva, igual que el número de partículas, igual que el volumen.
+Mientras que la temperatura y la presión son variables intensivas, no dependen del tamaño de la muestra.
+La temperatura y la presión son intensivas.
+No dependen del tamaño de la muestra.
+Yeah.
+O K, entonces miremos este ejemplo, o sea, esta situación física bien.
+Si son exactamente el mismo gas ideal que tengo a los 2 lados de la pared.
+Yo esperaría que al remover la pared no pasara absolutamente nada.
+Porque es el mismo gas ideal que está a la misma temperatura a los 2 lados.
+es el mismo número de partículas a ambos lados, es el mismo volumen. Entonces uno esperaría que al remover la... debido a que este sistema ya está en su condición de equilibrio en algún sentido, al momento de remover la pared yo no debería observar ningún efecto físico.
+Entonces, digamos eso, dado que opuesto que.
+Puesto que.
+El.
+K.
+Tenemos.
+El mismo gas ideal, digamos la misma temperatura, incluso gas ideal.
+A la misma temperatura.
+A ambos lados de la pared, lados.
+De la pared.
+Esperamos.
+¿Quieres remover la pared?
+No tenga.
+Un efecto.
+Sobre el sistema.
+Yeah.
+Porque imagínenselo, son.
+Tengo 2 gases que son completamente idénticos, están a la misma temperatura, están a la misma presión, ocupan los mismos volúmenes, tienen el mismo número de partículas.
+Entonces, al momento de remover la pared, no debería pasar nada. Si estos 2 gases ya eran el mismo gas y ya estaba a la misma temperatura, ya estaban a la misma temperatura, así que no hay transferencia de energía, ya estaban a la misma presión, no hay transferencia de volumen. Bien, el sistema ya estaba en el equilibrio.
+Y entonces acá uno puede mostrar y los invito a tratar de hacer esta este.
+este cálculo pero les voy a dar la respuesta final ya es tarde
+Si usted calcula el cambio, pero.
+El cambio.
+En la entropía.
+Es más nulo.
+Si usted calcula la entropía después.
+La situación después, cuando el sistema tiene volumen V uno más V 2 y tiene.
+Número de partículas n uno más n 2 y a eso le resta la entropía antes, que es la entropía del sistema uno que tiene volumen uno, número de partículas uno.
+Y asume que están a la misma temperatura y que tiene más la entropía del sistema 2, porque las entropías se suman volumen 2, número de partículas 2. Bien, esta es la entropía antes, entropía antes. Si usted calcula esta resta.
+Llamémosla el cambio en la entropía.
+Bajo las condiciones que dije arriba, traten de hacer este cálculo porque es simple, es reemplazar, pero hay que hay que jugar un poquito.
+es igual a 2 veces el número de partículas uno, que es igual al número de partículas 2 si quieren. O déjenme decir, el número total de partículas por la constante de Boltzmann por el logaritmo natural de 2.
+Por el nogaritmo natural 2.
+Hay que usar unas propiedades de los logaritmos, el logaritmo del producto es la suma de los logaritmos.
+Y este n que está acá es n uno más n 2. Quién es este n el número total de partículas que hay en el sistema que es n uno más n 2 bien.
+Hay un cambio en la entropía.
+En cambio en la entropía del sistema y justo aparece este log 2 que este log 2 es una cantidad súper importante.
+And.
+En conteos de entropía.
+Yeah.
+La entropía en un qubit.
+No hablarán de eso más adelante en los cursos de cuántica.
+Entonces acá hay algo tenso, se dan cuenta que.
+El.
+Yo espero que en este proceso en donde tengo 2 gases que son exactamente idénticos al remover la tapa debido a que eran idénticos, el remover la división no haga nada.
+En realidad, según esta expresión que está acá independiente.
+Alfa es una constante, no es independiente del valor de alfa, ahí está la clave, pero alfa es una constante en términos de TIB.
+Yeah.
+Uno esperaría que de esta expresión.
+Se Se reprodujera esta expectativa de que al remover la división no ocurriera nada, pero ocurre un aumento en la entropía.
+Que es el número de partículas esencialmente por log de 2 ya.
+Eso y esto esta es la paradoja de Gibbs, la paradoja de Gibbs. Uno espera que en este proceso no ocurra nada, pero resulta que aumenta la entropía. ¿Qué pasó?
+Entonces, Gifs resuelve la paradoja, asumiendo que las partículas que asumiendo lo siguiente.
+De este lado de la caja tengo una partícula y de este otro lado de la caja tengo otra partícula del mismo gas.
+El mismo gas y dice, mira, en realidad, si estas 2 partículas son realmente idénticas.
+¿No debería sumar a la entropía el intercambiarlas? Hay como una libertad. Esta forma de medir la entropía que estamos escribiendo ahora considera también una libertad que hay en intercambiar las partículas, pero si son idénticas, no tiene sentido intercambiarlas porque las intercambio y veo exactamente lo mismo.
+Bien.
+Entonces, si uno considera esa.
+Esa restricción de decir que las 2 partículas estén así o asá, o sea, que estén en el volumen uno, volumen 2, o está en volumen 2 y está en volumen uno. En realidad no hace nada, si en realidad es el mismo, en el mismo estado físico. Bien, eso remueve la paradoja de ellos y cuando uno implementa.
+Esa idea de indistinguibilidad entre las partículas.
+Yeah.
+E implementa eso en el cálculo de la entropía, remueve la esta tensión y el cambio en la entropía en ese caso sería cero. Bien, pero de alguna forma a esta entropía que está acá arriba, a la entropía del gas ideal, hay que decirle eso, hay que esta entropía, así como está escrita, no tiene implementado.
+No tiene implementada la indistinguibilidad de las partículas.
+Entonces, Gibbs en una genialidad propone esta idea, pero que resulta tener consecuencias en la mecánica cuántica que son estructurales, tanto en términos de la construcción de la teoría como en términos de las consecuencias experimentales que tiene el
+Asumir la indistinguibilidad de las partículas.
+Eso entonces, ahora creo que estamos en condiciones como para en la próxima clase hablar acerca de la noción de entropía que emerge desde la física estadística y cómo esa noción de entropía se habla con esta noción de entropía. Adelante, Galo.
+
+GALO MAURICIO EIDELSTEIN SILBER   3:05:36
+Sí, o sea, no entiendo por qué.
+El hecho de que sean indistinguibles las partículas implica que aumente la entropía, no me quedo claro eso.
+
+Julio Eduardo Oliva Zapata   3:05:49
+No, cuando son indistinguibles, si uno implementa la indistinguibilidad.
+
+GALO MAURICIO EIDELSTEIN SILBER   3:05:51
+Sí.
+
+Julio Eduardo Oliva Zapata   3:05:55
+El aumento en la entropía te queda cero al implementar la indistinguibilidad.
+
+GALO MAURICIO EIDELSTEIN SILBER   3:05:57
+¿Sí, pero por qué sí?
+¿De acuerdo, pero por qué? Sí, yo me expresé mal. ¿Por qué qué acero, digamos, en ese caso?
+
+Julio Eduardo Oliva Zapata   3:06:01
+Mhm.
+Eso es sí.
+
+GALO MAURICIO EIDELSTEIN SILBER   3:06:10
+Second.
+Sí, que tiene que ver en la indistinguibilidad con.
+
+Julio Eduardo Oliva Zapata   3:06:15
+Ah, bueno, claro, entiendo, entiendo, entiendo. Claro, lo que pasa, sí, está muy bien la pregunta, porque hay algo que no les he dicho, que es lo siguiente, que de alguna forma la entropía, en realidad es una forma precisa, la entropía mide, pero esto es fácil verlo cuando cuando en la próxima semana, cuando vengamos desde el mundo microscópico, bien.
+La entropía va a medir.
+Las libertades que tiene una partícula.
+de estar, por ejemplo, de este lado de la caja o de este lado de la caja. La entropía va a medir esas libertades, va a medir lo que se llama el número de microestados. Entonces, si yo tengo dos partículas y si la entropía mide esa libertad. Si yo tengo dos partículas y esta partícula la tengo acá y esta partícula la tengo acá y a esta le pongo un número uno y a esta le pongo un dos.
+Bien, esta es una configuración posible que contribuye a la entropía.
+Mientras que.
+Esta configuración de acá en donde la partícula 2 está de este lado y la 1 está de este lado, esta configuración es posible y también contribuye a la entropía. Y si las partículas tienen etiquetas, son 2 configuraciones distintas.
+No.
+Yeah.
+Es decir, si las partículas tuvieran etiquetas y fueran distinguibles, serían 2 configuraciones distintas y uno llegaría a la paradoja X.
+Pero si las partículas no tienen etiqueta.
+No tiene sentido decir que estas 2 configuraciones son distintas, son la misma configuración, entonces no hay que contarlas 2 veces, hay que dividir por 2, hay que dividir por n factorial en realidad donde n es el número de partículas.
+Entonces hay un argumento, un elemento que no les había dicho. Por eso la pregunta está muy bien, que es que la entropía mide libertades microscópicas posibles.
+Estas 2 configuraciones corresponden a 2 libertades distintas.
+Pero si las partículas son idénticas, en realidad son la misma configuración.
+
+GALO MAURICIO EIDELSTEIN SILBER   3:08:26
+Correcto.
+
+Julio Eduardo Oliva Zapata   3:08:27
+eso sube
+Karina, adelante.
+
+KARINA PAZ FREDES REYES   3:08:36
+No es relacionado con el tema de la de lo que estamos hablando ahora, profe, pero es con lo que dijo de la evaluación, que íbamos una monografía y todo eso. Entonces quería saber si iba a subir como algún formato, fechas, etcétera.
+
+Julio Eduardo Oliva Zapata   3:08:48
+P.
+Y.
+Deja, voy a subir un claro que quiero.
+Hacer la última clase primero para que tomen la decisión de cuál clase.
+Relatar escrito, cierto, déjeme subir, deme hasta el viernes, les voy a dar un.
+Un favor, voy a escribir yo una, déjenme escribir yo una y se la muestro y les digo más o menos lo que espero. Bien, voy a escribir una agenda, dale. Gracias, Karin.
+
+KARINA PAZ FREDES REYES   3:09:18
+O K, Grecia.
+Yeah, gracias.
+
+Julio Eduardo Oliva Zapata   3:09:23
+Déjeme dar el no, ya es muy tarde, después la próxima semana retomamos desde el punto de vista microscópico.
+Es la termodinámica, bien, que esté muy bien, lo dejamos hasta acá, ha sido un gusto, como siempre.
+
+PABLO ENRIQUE VICENCIO ESPINOZA   3:09:39
+Muchas gracias, profesor. Chao, chao, chao, profesor.
+
+Julio Eduardo Oliva Zapata stopped transcription

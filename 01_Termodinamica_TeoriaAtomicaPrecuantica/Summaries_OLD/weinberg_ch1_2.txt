@@ -1,0 +1,2208 @@
+--- PAGE 0 ---
+
+--- PAGE 1 ---
+Foundations of Modern Physics
+In addition to his ground-breaking research, Nobel Laureate Steven Weinberg
+is known for a series of highly praised texts on various aspects of physics, com-
+bining exceptional physical insight with a gift for clear exposition. Describingthe foundations of modern physics in their historical context and with some
+new derivations, Weinberg introduces topics ranging from early applications
+of atomic theory through thermodynamics, statistical mechanics, transport
+theory, special relativity, quantum mechanics, nuclear physics, and quantum
+ﬁeld theory. This volume provides the basis for advanced undergraduate and
+graduate physics courses as well as being a handy introduction to aspects of
+modern physics for working scientists.
+steven weinberg is a member of the Physics and Astronomy Departments
+at the University of Texas at Austin. He has been honored with numerous
+awards, including the Nobel Prize in Physics, the National Medal of Science,
+the Heinemann Prize in Mathematical Physics, and most recently a Special
+Breakthrough Prize in Fundamental Physics. He is a member of the US National
+Academy of Sciences, the UK’s Royal Society, and other academies in the US
+and internationally. The American Philosophical Society awarded him the
+Benjamin Franklin medal, with a citation that said he is “considered by many
+to be the preeminent theoretical physicist alive in the world today.” He has
+written several highly regarded books, including Gravitation and Cosmology ,
+the three-volume work The Quantum Theory of Fields, Cosmology, Lectures on
+Quantum Mechanics ,a n d Lectures on Astrophysics.
+--- PAGE 2 ---
+
+--- PAGE 3 ---
+Foundations of Modern Physics
+Steven Weinberg
+University of Texas, Austin
+
+--- PAGE 4 ---
+University Printing House, Cambridge CB2 8BS, United Kingdom
+One Liberty Plaza, 20th Floor, New York, NY 10006, USA
+477 Williamstown Road, Port Melbourne, VIC 3207, Australia
+314–321, 3rd Floor, Plot 3, Splendor Forum, Jasola District Centre, New Delhi – 110025, India
+79 Anson Road, #06–04/06, Singapore 079906
+Cambridge University Press is part of the University of Cambridge.
+It furthers the University’s mission by disseminating knowledge in the pursuit of
+education, learning, and research at the highest international levels of excellence.
+www.cambridge.org
+Information on this title: www.cambridge.org/9781108841764
+DOI: 10.1017/9781108894845
+© Steven Weinberg 2021
+This publication is in copyright. Subject to statutory exception
+and to the provisions of relevant collective licensing agreements,
+no reproduction of any part may take place without the written
+permission of Cambridge University Press.
+First published 2021
+Printed in the United Kingdom by TJ Books Limited, Padstow Cornwall
+A catalogue record for this publication is available from the British Library.
+Library of Congress Cataloging-in-Publication Data
+Names: Weinberg, Steven, 1933– author.
+Title: Foundations of modern physics / Steven Weinberg, The University of Texas at Austin.
+Description: New York : Cambridge University Press, 2021. |Includes
+bibliographical references and indexes.
+Identiﬁers: LCCN 2020055431 (print) |LCCN 2020055432 (ebook) |
+ISBN 9781108841764 (hardback) |ISBN 9781108894845 (epub)
+Subjects: LCSH: Physics.
+Classiﬁcation: LCC QC21.3 .W345 2021 (print) |LCC QC21.3 (ebook) |
+DDC 530–dc23
+LC record available at https://lccn.loc.gov/2020055431
+LC ebook record available at https://lccn.loc.gov/2020055432
+ISBN 978-1-108-84176-4 Hardback
+Cambridge University Press has no responsibility for the persistence or accuracy
+of URLs for external or third-party internet websites referred to in this publication
+and does not guarantee that any content on such websites is, or will remain,
+accurate or appropriate.
+--- PAGE 5 ---
+For Louise, Elizabeth, and Gabrielle
+--- PAGE 6 ---
+
+--- PAGE 7 ---
+Contents
+PREFACE page xiii
+1 EARLY ATOMIC THEORY 1
+1.1 Gas Properties 2
+Air pressure /squareBoyle’s law /squareTemperature Scales /squareCharles’ law
+/squareExplanation of gas laws /squareIdeal gas law
+1.2 Chemistry 6
+Elements /squareLaw of combining weights /squareDalton’s atomic weights /squareLaw of
+combining volumes /squareAvogadro’s principle /squareThe gas constant /squareAvogadro’s
+number
+1.3 Electrolysis 10
+Early electricity /squareEarly magnetism /squareElectromagnetism /squareDiscovery of
+electrolysis /squareFaraday’s theory /squareThe faraday
+1.4 The Electron 14
+Cathode rays /squareThomson’s experiments /squareElectrons as atomic constituents
+2 THERMODYNAMICS AND KINETIC THEORY 16
+2.1 Heat and Energy 16
+Caloric /squareHeat as energy /squareKinetic energy /squareSpeciﬁc heat /squareEnergy density
+and pressure /squareAdiabatic changes
+vii
+--- PAGE 8 ---
+viii Contents
+2.2 Absolute Temperature 21
+Carnot cycles /squareTheorems on efﬁciency /squareAbsolute temperature deﬁned
+/squareRelation to gas thermometers
+2.3 Entropy 27
+Deﬁnition of entropy /squareIndependence of path /squareIncrease of entropy
+/squareThermodynamic relations /squareEntropy of ideal gases /squareNeutral matter
+/squareRadiation energy /squareLaws of thermodynamics
+2.4 Kinetic Theory and Statistical Mechanics 33
+Maxwell–Boltzmann distribution /squareGeneralH-theorem /squareTime reversal
+/squareCanonical and grand-canonical distributions /squareConnection with thermodynamics
+/squareCompound systems /squareProbability distribution in gases /squareEquipartition of
+energy /squareEntropy as disorder
+2.5 Transport Phenomena 42
+Conservation laws /squareGalilean relativity /squareNavier–Stokes equation /squareViscosity
+/squareMean free path /squareDiffusion
+2.6 The Atomic Scale 53
+Nineteenth century estimates /squareElectronic charge /squareBrownian motion
+/squareConsistency of constants /squareAppendix: Einstein’s diffusion constant rederived
+3 EARLY QUANTUM THEORY 61
+3.1 Black Body Radiation 61
+Absorption and energy density /squareDegrees of freedom of electromagnetic ﬁelds
+/squareRayleigh–Jeans distribution /squarePlanck distribution /squareMeasurement of
+Boltzmann constant /squareRadiation energy constant
+3.2 Photons 67
+Quantization of radiation energy /squareDerivation of Planck distribution
+/squarePhotoelectric effect /squareParticles of light
+3.3 The Nuclear Atom 71
+Radioactivity /squareAlpha and beta rays /squareDiscovery of the nucleus /squareNuclear mass
+/squareNuclear size /squareScattering pattern /squareNuclear charge
+3.4 Atomic Energy Levels 77
+Spectral lines /squareElectron orbits /squareCombination principle /squareBohr’s quantization
+condition /squareCorrespondence principle /squareComparison with observed one-electron
+atomic spectra /squareReduced mass /squareAtomic number /squareOutstanding questions
+--- PAGE 9 ---
+Contents ix
+3.5 Emission and Absorption of Radiation 84
+EinsteinAandBcoefﬁcients /squareEquilibrium with black body radiation /squareRelations
+among coefﬁcients /squareLasers/squareSuppressed absorption
+4 RELATIVITY 88
+4.1 Early Relativity 88
+Motion of the Earth /squareRelativity of motion /squareSpeed of light
+/squareMichelson–Morley experiment /squareLorentz–Fitzgerald contraction
+4.2 Einsteinian Relativity 94
+Postulate of invariance of electrodynamics /squareLorentz transformations /squareSpace
+inversion, time reversal /squareThe Galilean limit /squareMaximum speed /squareBoosts in
+general directions /squareSpecial and general relativity
+4.3 Clocks, Rulers, Light Waves 103
+Clocks and time dilation /squareRulers and length contraction /squareTransformation of
+frequency and wave number
+4.4 Mass, Energy, Momentum, Force 106
+Einstein’s thought experiment /squareFormulas for energy and momentum /squareE=mc2
+/squareForce in relativistic dynamics
+4.5 Photons as Particles 111
+Photon momentum /squareCompton scattering /squareOther massless particles
+4.6 Maxwell’s Equations 114
+The inhomogeneous and homogeneous equations /squareDensity and current of electric
+charge/squareRelativistic formulation of inhomogeneous Maxwell equations /squareIndices
+upstairs and downstairs /squareRelativistic formulation of homogeneous Maxwell
+equations /squareElectric and magnetic forces
+4.7 Causality 121
+Causes precede effects /squareInvariance of temporal order /squareMaximum signal speed
+/squareLight cone
+5 QUANTUM MECHANICS 124
+5.1 De Broglie Waves 125
+Free-particle wave functions /squareGroup velocity /squareApplication to hydrogen
+/squareDavisson–Germer experiment /squareElectron microscopes /squareAppendix: Derivation
+of the Bragg formula
+--- PAGE 10 ---
+x Contents
+5.2 The Schrödinger Equation 129
+Wave equation for particle in potential /squareBoundary conditions /squareSpherical
+symmetry /squareRadial and angular wave functions /squareAngular multiplicity
+/squareSpherical harmonics /squareHydrogenic energy levels /squareDegeneracy
+5.3 General Principles of Quantum Mechanics 138
+States and wave functions /squareObservables and operators /squareHamiltonian
+/squareAdjoints /squareExpectation values /squareProbabilities /squareContinuum limit
+/squareMomentum space /squareCommutation relations /squareUncertainty principle /squareTime
+dependent wave functions /squareConservation laws /squareHeisenberg and
+Schrödinger pictures
+5.4 Spin and Orbital Angular Momentum 151
+Doubling of sodium D-line /squareT h ei d e ao fs p i n /squareGeneral action of rotations on
+wave functions /squareTotal angular momentum operator /squareCommutation relations
+/squareSpin and orbital angular momentum /squareMultiplets /squareAdding angular momenta
+/squareAtomic ﬁne structure and space inversion /squareHyperﬁne structure /squareAppendix:
+Clebsch–Gordan Coefﬁcients
+5.5 Bosons and Fermions 165
+Identical particles /squareSymmetric and antisymmetric wave functions /squareBosons and
+fermions in statistical mechanics /squareHartree approximation /squareSlater determinant
+/squarePauli exclusion principle /squarePeriodic table of elements /squareDiatomic molecules:
+para and ortho /squareAstrophysical cooling
+5.6 Scattering 175
+Scattering wave function /squareRepresentations of the delta function /squareCalculation of
+the Green’s function /squareScattering amplitude /squareProbabilistic interpretation
+/squareCross section /squareBorn approximation /squareScattering by shielded Coulomb
+potential /squareAppendix: General transition rates
+5.7 Canonical Formalism 190
+Hamiltonian formalism /squareCanonical commutation relations /squareLagrangian
+formalism /squareAction principle /squareConnection of formalisms /squareNoether’s theorem:
+symmetries and conservation laws /squareSpace translation and momentum
+5.8 Charged Particles in Electromagnetic Fields 195
+Vector and scalar potential /squareCharged particle Hamiltonian /squareEquations of motion
+/squareGauge transformations /squareMagnetic interactions /squareSpin coupling
+5.9 Perturbation Theory 199
+Perturbative expansion /squareFirst-order perturbation theory /squareDealing with
+degeneracy /squareThe Zeeman effect /squareSecond-order perturbation theory
+--- PAGE 11 ---
+Contents xi
+5.10 Beyond Wave Mechanics 206
+State vectors /squareLinear operators /squareFirst postulate: values of observables
+/squareSecond postulate: expectation values /squareProbabilities /squareContinuum limit
+/squareWave functions as vector components
+6 NUCLEAR PHYSICS 210
+6.1 Protons and Neutrons 210
+Discovery of the proton /squareInteger atomic weights /squareNuclei as protons and
+electrons? /squareTrouble with diatomic nitrogen /squareDiscovery of the neutron
+/squareNuclear radius and binding energy /squareLiquid drop model /squareStable valley and
+decay modes
+6.2 Isotopic Spin Symmetry 216
+Neutron–proton and proton–proton forces /squareIsotopic spin rotations /squareIsotopic spin
+multiplets /squareQuark model /squarePions/squareAppendix: The three–three resonance
+6.3 Shell Structure 224
+Harmonic oscillator approximation /squareRaising and lowering operators
+/squareDegenerate multiplets /squareMagic numbers /squareSpin–orbit coupling
+6.4 Alpha Decay 229
+Coulomb barrier /squareBarrier suppression factors /squareSemi-classical estimate of alpha
+decay rate /squareLevel splitting /squareGeiger–Nuttall law /squareRadium alpha decay
+/squareAppendix: Quantum theory of barrier penetration rates
+6.5 Beta Decay 243
+Electron energy distribution /squareNeutrinos proposed /squareFermi theory
+/squareGamow–Teller modiﬁcation /squareSelection rules /squareStrength of weak interactions
+/squareNeutrinos discovered /squareViolation of left–right and matter–antimatter symmetries
+/squareNeutrino helicities /squareVarieties of neutrino
+7 QUANTUM FIELD THEORY 251
+7.1 Canonical Formalism for Fields 252
+Action, Lagrangian, Lagrangian density /squareFunctional derivatives
+/squareEuler–Lagrange ﬁeld equations /squareCommutation relations /squareEnergy and
+momentum of ﬁelds
+7.2 Free Real Scalar Field 255
+Lagrangian density /squareField equation /squareCreation and annihilation operators
+/squareEnergy and momentum /squareVacuum state /squareMultiparticle states
+--- PAGE 12 ---
+xii Contents
+7.3 Interactions 261
+Time-ordered perturbation theory /squareRequirements for Lorentz invariance
+/squareExample: Scattering of neutral spinless particles /squareFeynman diagram
+/squareCalculation of the propagator /squareYukawa potential
+7.4 Antiparticles, Spin, Statistics 270
+Antiparticles needed /squareComplex scalar ﬁeld /squareGeneral ﬁelds /squareLorentz
+transformation /squareSpin–statistics connection /squareAppendix: Dirac ﬁelds
+7.5 Quantum Theory of Electromagnetism 280
+Lagrangian density for electrodynamics /squareFour-vector potential /squareGauge
+transformations /squareCoulomb gauge /squareCommutation relations /squareFree ﬁelds
+/squarePhoton momentum and helicity /squareRadiative decay rates /squareSelection rules
+/squareGauge invariance and charge conservation /squareLocal phase invariance /squareStandard
+model
+ASSORTED PROBLEMS 296
+BIBLIOGRAPHY 301
+AUTHOR INDEX 303
+SUBJECT INDEX 307
+--- PAGE 13 ---
+Preface
+This book grew out of the notes for a course I gave for undergraduate physics
+students at the University of Texas. In this book I think I go farther forward
+than is usual in undergraduate courses, giving readers a taste of nuclear physicsand quantum ﬁeld theory. I also go farther back than is usual, starting with the
+struggle in the nineteenth century to establish the existence and properties of
+atoms, including the development of thermodynamics that both aided in this
+struggle and offered an alternative program.
+I fear that some readers may want to skim through this early part and hurry
+on to what they regard as the good stuff, quantum mechanics and relativity. That
+would be a pity. In my experience physics students who aim at a career in atomicor nuclear or elementary particle physics often manage to get through their
+formal education without ever becoming familiar with entropy, or equipartition,
+or viscosity, or diffusion. That was true in my own case. This book, or a course
+based on it, may provide some students with their last chance to learn about
+these and other matters needed to understand the macroscopic world.
+Readers may ﬁnd this book unusual also in its strong emphasis on history.
+I make a point of saying a little about the welter of theoretical guesswork and ill-
+understood experiments out of which modern physics emerged in the twentieth
+century. This, it seems to me, is a help in understanding what otherwise mayseem an arbitrary set of postulates for relativity and quantum mechanics. It is
+also a matter of personal taste. Research in physics seems to me to lose some of
+its excitement if we do not see it as part of a great historical progression. Some
+valuable historical works are listed in a bibliography, along with collections of
+original articles that I have found most helpful.
+But this is not a work of history. Historians aim at uncovering how the scien-
+tists of the past thought about their own problems – for instance, how Einstein
+in 1905 thought about the measurement of space and time separations in de-
+veloping the special theory of relativity. For this aim of historical writing it isnecessary to go deeply into personal accounts, institutional development, and
+xiii
+--- PAGE 14 ---
+xiv Preface
+false starts, and to put aside our knowledge of subsequent progress. I try to
+be accurate in describing the state of physics in past times, but the aim of this
+book in discussing the problems of the past is different: it is to make clear how
+physicists think about these things today.
+This book is intended chieﬂy for physics students who are well into their time
+as undergraduates, and for working scientists who want a brief introduction to
+some area of modern physics. I have therefore not hesitated to use calculus and
+matrix algebra, though not in advanced versions. As required by the subject
+matter, the mathematical level here slopes upwards through the book. Where
+possible I have chosen concrete rather than abstract formulations of physicaltheories. For instance, in Chapter 5 , on quantum mechanics, I mostly represent
+physical states as wave functions, only coming at the end of the chapter to theirrepresentation as vectors in Hilbert space. In some sections detailed material
+that can be skipped without losing the thread of the theory is put into appendices.
+Two of these appendices present what in my unbiased opinion are improved
+derivations of important results: the appendix to Section 2.6 gives a revised
+version of Einstein’s derivation of his formula for the diffusion constant inBrownian motion, and the appendix to Section 6.4 presents a revision of Fermi’s
+calculation of the rate of alpha decay.
+In my experience, with some judicious pruning, the material of the book up
+to about the middle of Chapter 5 can be covered in a one-term undergraduate
+course. But I think that to go over the whole book would take a full two-termacademic year.
+This book treats such a broad range of topics that it is impossible to go very
+far into any of them. Certainly its treatment of quantum mechanics, statistical
+mechanics, transport theory, nuclear physics, and quantum ﬁeld theory is no
+substitute for graduate-level courses on these topics, any one of which would
+occupy at least a whole year. This book presents what I think, in an idealworld, the ambitious physics student would already know when he or she enters
+graduate school. At least, it is what I wish that I had known when I entered
+graduate school.
+In any case, I hope that the student or reader may be sufﬁciently interested in
+what I do discuss that they will want to go into these topics in greater detail in
+more specialized books or courses, and that they will ﬁnd in this book a good
+preparation for such further studies.
+I am grateful to many students and colleagues for pointing out errors in
+the lecture notes on which this book is based and for the expert and friendlyassistance I have received from Simon Capelin and Vince Higgs, the editors at
+Cambridge University Press who guided the publication of this book.
+STEVEN WEINBERG
+--- PAGE 15 ---
+1
+Early Atomic Theory
+It is an old idea that matter consists of atoms, tiny indivisible particles moving
+in empty space. This theory can be traced to Democritus, working in the Greek
+city of Abdera, on the north shore of the Aegean sea. In the late 400s BC
+Democritus proclaimed that “atoms and void alone exist in reality.” He offered
+neither evidence for this hypothesis nor calculations on which to base predic-
+tions that could conﬁrm it. Nevertheless, this idea was tremendously inﬂuential,
+if only as an example of how it might be possible to account for natural phe-nomena without invoking the gods. Atoms were brought into the materialistic
+philosophy of Epicurus of Samos, who a little after 300 BC founded one of
+the four great schools of Athens, the Garden. In turn, the idea of atoms and
+the philosophy of Epicurus were invoked in the poem On the Nature of Things
+by the Roman Lucretius. After this poem was rediscovered in 1417 it inﬂu-enced Machiavelli, More, Shakespeare, Montaigne, and Newton, among others.
+Newton in his Opticks speculated that the properties of matter arise from the
+clustering of atoms into larger particles, which themselves cluster into largerparticles, and so on. As we will see, Newton made a stab at an atomic theory ofair pressure, but without signiﬁcant success.
+The serious scientiﬁc application of the atomic theory began in the eighteenth
+century, with calculations of the properties of gases, which had been studied
+experimentally since the century before. This is the topic with which we begin
+this chapter. Applications to chemistry and electrolysis followed in the nine-
+teenth century and will be considered in subsequent sections. The ﬁnal section
+of this chapter describes how the nature of atoms began to be clariﬁed with the
+discovery of the electron. In the following chapter we will see how it became
+possible to estimate the atoms’ masses and sizes.
+1
+1Further historical details about some of these matters can be found in Weinberg, The Discovery of
+Subatomic Particles, listed in the bibliography.
+1
+--- PAGE 16 ---
+2 1 Early Atomic Theory
+1.1 Gas Properties
+Experimental Relations
+The upsurge of enthusiasm for experiment in the seventeenth century was
+largely concentrated on the properties of air. The execution and reports of these
+experiments did not depend on hypotheses regarding atoms, but we need to
+recall them here because their results provided the background for later theories
+of gas properties that did rely on assumptions about atoms.
+It had been thought by Aristotle and his followers that the suction observed
+in pumps and bellows arises from nature’s abhorrence of a vacuum. This notion
+was challenged in the 1640s by the invention of the barometer by the Florentine
+polymath Evangelista Torricelli (1608–1647). If nature abhors a vacuum, thenwhen a long glass tube with one end closed is ﬁlled with mercury and set
+upright with the closed end on top, why does the mercury ﬂow out of the bottom
+until the column is only 760 mm high, with empty space appearing above the
+mercury? Is there a limit to how much nature abhors a vacuum? Torricelli
+argued that the mercury is held up instead by the pressure of the air acting
+on the open end of the glass tube (or on the surface of a bath of mercury in
+which the open end of the tube is immersed), which is just sufﬁcient to support
+a column of mercury 760 mm high. If so, then it should be possible to measure
+variations in air pressure using a column of mercury in a vertical glass tube, adevice that we know as a barometer. Such measurements were made from 1648
+to 1651 by Blaise Pascal (1623–1662), who found that the height of mercury
+in a barometer is decreased by moving to the top of a mountain, where less air
+extends above the barometer.
+The quantitative properties of air pressure soon began to be studied
+experimentally, before there was any correct theoretical understanding of gas
+properties. In 1662, in the second edition of his book New Experiments Physico-
+Mechanical Concerning the Spring of the Air and its Effects, the Anglo-Irisharistocrat Robert Boyle (1627–1691) described experiments relating the pres-sure (the “spring of the air”) and volume of a ﬁxed mass of air. He studied a
+sample of air enclosed at the end of a glass tube by a column of mercury in
+the tube. The air was compressed at constant temperature by pushing on the
+mercury’s surface, revealing what came to be known as Boyle’s law , that for
+constant temperature the volume of a gas of ﬁxed mass and composition isinversely proportional to the pressure, now deﬁned by Boyle as the force per
+area exerted on the gas.
+Temperature Scales
+A word must be said about the phrase “at constant temperature.” Boyle lived
+before the establishment of our modern Fahrenheit and Celsius scales, whose
+--- PAGE 17 ---
+1.1 Gas Properties 3
+forerunners go back respectively to 1724 and 1742. But, although in Boyle’s
+time no meaningful numerical value could be given to the temperature of any
+given body, it was nevertheless possible to speak with precision of two bodies
+being at the same temperature: they are at the same temperature if when put in
+contact neither body is felt to grow appreciably hotter or colder. Boyle’s glasstube could be kept at constant temperature by immersing it in a large bath, say of
+water from melting ice. Later the Fahrenheit temperature scale was established
+by deﬁning the temperature of melting ice as 32
+◦F and the temperature of
+boiling water at mean atmospheric pressure as 212◦F, and deﬁning a 1◦F
+increase of temperature by etching 212 −32 equal divisions between 32 and
+212 on the glass tube of a mercury thermometer. Likewise, in the Celsius scale,
+the temperatures of melting ice and boiling water are 0◦C and 100◦C, and
+1◦C is the temperature difference required to increase the volume of mercury
+in a thermometer by 1% of the volume change in heating from melting ice
+to boiling water. As we will see in the next chapter, there is a more sophis-
+ticated universal deﬁnition of temperature, to which scales based on mercury
+thermometers provide only a good approximation.
+After the temperature scale was established it became possible to carry out a
+quantitative study of the relation between volume and temperature, with pres-sure and mass kept ﬁxed by enclosing the air in a vessel with ﬂexible walls,
+which expand or contract to keep the pressure inside equal to the air pressure
+outside. This relation was announced in an 1802 lecture by Joseph Louis Gay-
+Lussac (1775–1850), who attributed it to unpublished work in the 1780s by
+Jacques Charles (1746–1823). The relation, subsequently known as Charles’
+Law, is that at constant pressure and mass the volume of gas is proportionalto
+T−T0,w h e r e Tis the temperature measured for instance with a mercury
+thermometer and T0is a constant whose numerical value naturally depends
+on the units used for temperature: T0=− 459.67◦F=− 273.15◦C. Thus
+T0is absolute zero, the minimum possible temperature, at which the gas vol-
+ume vanishes. Using Celsius units for temperature differences, the absolutetemperatureT≡
+T−T0is known today as the temperature in degrees Kelvin,
+denoted K.
+Theoretical Explanations
+In Proposition 23 of his great book, the Principia , Isaac Newton (1643–1727)
+made an attempt to account for Boyle’s law by considering air to consist ofparticles repelling each other at a distance. Using little more than dimensional
+analysis, he showed that the pressure pof a ﬁxed mass of air is inversely
+proportional to the volume Vif the repulsive force between particles separated
+by a distancerfalls off as 1/r . But as he pointed out, if the repulsive force goes
+as 1/r
+2,t h e np ∝V−4/3. He did not claim to offer any reason why the repulsive
+force should go as 1/r and, as we shall see, it is not forces that go as 1/r but
+--- PAGE 18 ---
+4 1 Early Atomic Theory
+rather forces of very short range that act only in collisions that mostly account
+for the properties of gases.
+It was the Swiss mathematical physicist Daniel Bernoulli (1700–1782) who
+made the ﬁrst attempt to understand the properties of gases theoretically, on the
+assumption that a gas consists of many tiny particles moving freely except in
+very brief collisions. In 1738, in the chapter, “On the Properties and Motions of
+Elastic Fluids, Especially Air” of his book Hydrodynamics , he argued that in a
+gas (then called an “elastic ﬂuid”) with nparticles per unit volume moving with
+a velocityvthat is the same (because of collisions) in all directions, the pressure
+is proportional to nand tov2, because the number of particles that hit any given
+area of the wall in a given time is proportional to the number in any givenvolume, to the rate at which they hit the wall, which is proportional to v,a n dt o
+the force that each particle exerts on the wall, which is also proportional to v.
+For a ﬁxed mass of gas nis inversely proportional to the volume V,s opVis
+proportional to v
+2. If (as Bernoulli thought) v2depends only on the temperature,
+this explains Boyle’s law. If v2is proportional to the absolute temperature, it
+also gives Charles’ law.
+Bernoulli did not give much in the way of mathematical details, and did not
+try to say to what else the pressure might be proportional besides nv2, a matter
+crucial for the history of chemistry. These details were provided by RudolfClausius (1822–1888) in 1857, in an article entitled “The Nature of the Motion
+which We Call Heat.” Below is a more-or-less faithful description of Clausius’
+derivation, in a somewhat different notation.
+Suppose a particle hits the wall of a vessel and remains in contact with it for a
+small timet, during which it exerts a force with component Falong the inward
+normal to the wall. Its momentum in the direction of the inward normal to thewall will decrease by an amount Ft, so if the component of the velocity of the
+particle before it strikes the wall is v
+⊥>0, and it bounces back elastically with
+normal velocity component −v⊥, the change in the inward normal component
+of momentum is −2mv ⊥,w h e r emis the particle mass, so
+F=2mv⊥/t.
+Now, suppose that this goes on with many particles hitting the wall over a time
+intervalT/greatermucht, all particles with the same velocity vector v. The number Nof
+particles that will hit an area Aof the wall in this time is the number of particles
+in a cylinder with base Aand heightv⊥T,o r
+N=nAv⊥T,
+wherenis the number density, the number of particles per volume. Each of
+these particles is in contact with the wall for a fraction t/T of the timeT,s ot h e
+total force exerted on the wall is
+FN(t/T) =2mv⊥/t×nAv⊥T×(t/T) =2nmv2
+⊥A.
+--- PAGE 19 ---
+1.1 Gas Properties 5
+We see that all dependence on the times tandTcancels. The pressure pis
+deﬁned as the force per area, so this gives the relation
+p=2nmv2
+⊥. (1.1.1)
+This is for the unphysical case in which every particle has the same value of v⊥,
+positive in the sense that the particles are assumed to be going toward the wall.
+In the real world, different particles will be moving with different speeds in
+different directions, and Eq. (1.1.1) should be replaced with
+p=2nm×1
+2/angbracketleftv2
+⊥/angbracketright=nm/angbracketleftv2
+⊥/angbracketright, (1.1.2)
+the brackets indicating an average over all gas particles, with the factor 1/2
+inserted in the ﬁrst expression because only 50% of these particles will be going
+toward any given wall area.
+To express /angbracketleftv2
+⊥/angbracketrightin terms of the root mean square velocity, Clausius assumed
+without proof that “on the average each direction [of the particle velocities]is equally represented.” In this case, the average square of each component of
+velocity equals /angbracketleftv
+2
+⊥/angbracketright, and the average of the squared velocity vector is then
+/angbracketleftv2/angbracketright=/angbracketleftv2
+1/angbracketright+/angbracketleftv2
+2/angbracketright+/angbracketleftv2
+3/angbracketright=3/angbracketleftv2
+⊥/angbracketright
+and therefore Eq. (1.1.2) reads
+p=nm/angbracketleftv2/angbracketright/3 . (1.1.3)
+This is essentially the result p∝n/angbracketleftv2/angbracketrightof Bernoulli, except that, with the
+factorm/3,Eq. (1.1.3) is now an equality, not just a statement of proportion-
+ality. For a ﬁxed mass Mof gas occupying a volume V, the number density
+isn=M/mV , so Clausius could use Boyle’s law (which he called Mariotte’s
+law), which states that pVis constant for ﬁxed temperature, to conclude that
+for a given gas /angbracketleftv2/angbracketrightdepends only on the temperature. Further, as Clausius
+remarked, Eq. (1.1.3) together with Charles’ law (which Clausius called the
+law of Gay-Lussac) indicates that /angbracketleftv2/angbracketrightis proportional to the absolute temper-
+atureT. If we like, we can adopt a modern notation and write the constant of
+proportionality as 3 k/m ,s ot h a t
+m/angbracketleftv2/angbracketright/3=kT, (1.1.4)
+and therefore Eq. (1.1.3) reads
+p=nkT , (1.1.5)
+wherekis a constant, in the sense of being independent of p,n,a n dT .B u t
+the choice of notation does not tell us whether kvaries from one type of gas
+to another or whether it depends on the molecular mass m. Clausius could not
+answer this question, and did not offer any theoretical justiﬁcation for Boyle’s
+--- PAGE 20 ---
+6 1 Early Atomic Theory
+law or Charles’ law. Clausius deserves to be called the founder of thermo-
+dynamics, discussed in Sections 2.2 and 2.3, but these are not questions that
+can be answered by thermodynamics alone. As we will see in the followingsection, experiments in the chemistry of gases indicated that kis the same for
+all gases, a universal constant now known as Boltzmann’s constant, but thetheoretical explanation for this and for Boyle’s law and Charles’ law had to
+wait for the development of kinetic theory and statistical mechanics, the subject
+ofSection 2.4.
+As indicated by the title of his article, “The Nature of the Motion which We
+Call Heat,” Clausius was concerned to show that, at least in gases, the phe-nomenon of heat is explained by the motion of the particles of which gases are
+composed. He defended this view by using his theory to calculate the speciﬁc
+heat of gases, a topic to be considered in the next chapter.
+1.2 Chemistry
+Elements
+The idea that all matter is composed of a limited number of elements goes back
+to the earliest speculations about the nature of matter. At ﬁrst, in the century
+before Socrates, it was supposed that there is just one element: water (Thales) or
+air (Anaximenes) or ﬁre (Heraclitus) or earth (perhaps Xenophanes). The idea of
+four elements was proposed around 450 BC by Empedocles of Acragas (modern
+Agrigento). In On Nature he identiﬁed the elements as “ﬁre and water and earth
+and the endless height of air.” Classical Chinese sources list ﬁve elements: water,ﬁre, earth, wood, and metal.
+Like the theory of atoms, these early proposals of elements did not come
+accompanied with any evidence that these really are elements, or any suggestionhow such evidence might be gained. Plato in Timaeus even doubled down and
+stated that the difference between one element and another arises from theshapes of the atoms of which the elements are composed: earth atoms are tiny
+cubes, while the atoms of ﬁre, air, and water are other regular polyhedra –
+solids bounded respectively by 4, 8, or 20 identical regular polygons, with every
+edge and every vertex of each solid the same as every other edge or vertex of
+that solid.
+By the end of the middle ages this list of elements had come to seem implau-
+sible. It is difﬁcult to identify any particular sample of dirt as the element earth,and ﬁre seems more like a process than a substance. Alchemists narrowed the
+list of elements to just three: mercury, sulfur, and salt.
+Modern chemistry began around the end of the eighteenth century, with
+careful experiments by Joseph Priestley (1733–1804), Henry Cavendish (1743–
+1810), Antoine Lavoisier (1743–1794), and others. By 1787 Lavoisier had
+--- PAGE 21 ---
+1.2 Chemistry 7
+worked out a list of 55 elements. In place of air there were several gases:
+hydrogen, oxygen, and nitrogen; air was identiﬁed as a mixture of nitrogen and
+oxygen. There were other non-metals on the list of elements: sulfur, carbon,
+and phosphorus, and a number of common metals: iron, copper, tin, lead, silver,
+gold, mercury. Lavoisier also listed as elements some chemicals that we now
+know are tightly bound compounds: lime, soda, and potash. And the list also
+included heat and light, which of course are not substances at all.
+Law of Combining Weights
+Chemistry was ﬁrst used to provide quantitative information about atoms byJohn Dalton (1766–1844), the son of a poor weaver. His laboratory notebooks
+from 1802 to 1804 describe careful measurements of the weights of elements
+combining in compounds. He discovered that these weights are always in ﬁxed
+ratios. For instance, he found that when hydrogen burns in oxygen, 1 gram of
+hydrogen combines with 5.5 grams of oxygen, giving 6.5 grams of water, with
+nothing left over. Under the assumption that one particle of water consists ofone atom of hydrogen and one atom of oxygen, one oxygen atom must weigh
+5.5 times as much as one hydrogen atom.
+As we will see, water was soon discovered to be H
+2O: two atoms of
+hydrogen to each atom of oxygen. If Dalton had known this, he would have
+concluded that an oxygen atom weighs 5.5 times as much as two hydrogen
+atoms, i.e., 11 times the weight of one hydrogen atom. Of course, more accuratemeasurements later revealed that 1 gram of hydrogen combines with about 8
+grams of oxygen, so one oxygen atom weighs eight times the weight of two
+hydrogen atoms, or 16 times as much as one hydrogen atom. Atomic weightssoon became deﬁned as the weights of atoms relative to the weight of one
+hydrogen atom, so the atomic weight of oxygen is 16. (This is only approximate.
+Today the atomic weight of the atoms of the most common isotope of carbon
+is deﬁned to be precisely 12; with this deﬁnition, the atomic weights of the
+most common isotopes of hydrogen and oxygen are measured to be 1.007825
+and 15.99491.)
+The following table compares Dalton’s assumed formulas for a few common
+compounds with the correct formulas:
+Compound Dalton formula True formula
+Water HO H2O
+Carbon dioxide CO 2 CO 2
+Ammonia NH NH 3
+Sulfuric acid SO 2 H2SO4
+--- PAGE 22 ---
+8 1 Early Atomic Theory
+Here is a list of the approximate true atomic weights for a few elements,
+the weights deduced by Dalton, and (in the column marked with an asterisk) the
+weights Dalton would have calculated if he had known the true chemical
+formulas.
+Element True Dalton Dalton*
+H1 1 1
+C1 2 4 . 3 8 . 6
+N 14 4.2 12.6
+O1 6 5 . 5 1 1S 32 14.4 57.6
+To make progress in measuring atomic weights, it was evidently necessary
+to ﬁnd some way of working out the correct formulas for various chemical
+compounds. This was provided by the study of chemical reactions in gases.
+Law of Combining Volumes
+On December 31, 1808, Gay-Lussac read a paper to the Societe Philomathique
+in Paris, in which he announced his observation that gases at the same tem-
+perature and pressure always combine in deﬁnite proportions of volumes.F o r
+instance, two liters of hydrogen combine with one liter of oxygen to give watervapor, with no hydrogen or oxygen left over. Likewise, one liter of nitrogen
+combines with three liters of hydrogen to give ammonia gas, with nothing left
+over. And so on.
+The correct interpretation of this experimental result was given in 1811 by
+Count Amadeo Avogadro (1776–1856) in Turin. Avogadro’s principle statesthat equal volumes of gases at the same temperature and pressure always con-
+tain equal numbers of the gas particles, which Avogadro called “molecules,”
+particles that may consist of single atoms or of several atoms of the same or
+different elements joined together. The observation that water vapor is formed
+from a volume of oxygen combined with a volume of hydrogen twice as large
+shows, according to Avogadro’s principle, that molecules of water are formed
+from twice as many molecules of hydrogen as molecules of oxygen, which isnot what Dalton had assumed.
+There was a further surprise in the data. Two liters of hydrogen combined
+with one liter of oxygen give not one but twoliters of water vapor. This is not
+what one would expect if oxygen and hydrogen molecules consist of singleatoms and water molecules consist of two atoms of hydrogen and one atom
+of oxygen. In that case two liters of hydrogen plus one liter of oxygen would
+produce oneliter of water vapor. Avogadro could conclude that if, as seemed
+--- PAGE 23 ---
+1.2 Chemistry 9
+plausible, molecules of water contain two atoms of hydrogen and one atom of
+oxygen, the molecules of oxygen and hydrogen must each contain two atoms.
+That is, taking water molecules as H 2O, the reaction for producing molecules
+of water is
+2H2+O2→2H2O.
+The use of Avogadro’s principle rapidly provided the correct formulas for gases
+such as CO 2,N H 3, NO, and so on. Knowing these formulas and measuring
+theweights of gases participating in various reactions, it was possible to cor-
+rect Dalton’s atomic weights and calculate more reliable values for the atomicweights of the atoms in gas molecules, relative to any one of them. Taking the
+atomic weight of hydrogen as unity, this gave atomic weights close to 12 for
+carbon, 14 for nitrogen, 16 for oxygen, 32 for sulfur, and so on. Then, knowing
+these atomic weights, it became possible to ﬁnd atomic weights for many other
+elements, not just those commonly found in gases, by measuring the weights of
+elements combining in various chemical reactions.
+The Gas Constant
+As we saw in the previous section, in 1857 Clausius had shown that in a gasconsisting ofnparticles of mass mper volume with mean square velocity /angbracketleftv
+2/angbracketright,
+the pressure is p=nm/angbracketleftv2/angbracketright/3. Using Charles’ law, he concluded that /angbracketleftv2/angbracketrightis
+proportional to absolute temperature. Writing this relation as m/angbracketleftv2/angbracketright/3=kT
+withksome constant gives Eq. (1.1.5),p=nkT. But this in itself does not
+tell us howkvaries from one gas to another. This is answered by Avogadro’s
+principle. With Nparticles in a volume V, the number density is n=N/V ,s o
+Eq. (1.1.5) can be written
+pV=NkT . (1.2.1)
+If as stated by Avogadro the number of molecules in a gas with a given pressure,
+volume, and temperature is the same for any gas, then k=pV/NT must be the
+same for any gas. Clausius did not draw this conclusion, perhaps because therewas then no known theoretical basis for Avogadro’s principle. The universalityof the constant k, and hence Avogadro’s principle, were explained later by
+kinetic theory, to be covered in the next chapter. The constant kcame to be
+called Boltzmann’s constant, after Ludwig Boltzmann, who as we shall see was
+one of the chief founders of kinetic theory.
+Themolecular weight μof any compound is deﬁned as the sum of the atomic
+weights of the atoms in a single molecule. The actual mass mof a molecule
+is its molecular weight times the mass m
+1of a hypothetical atom with atomic
+weight unity:
+m=μm 1. (1.2.2)
+--- PAGE 24 ---
+10 1 Early Atomic Theory
+In the modern system of atomic weights, with the atomic weight of the most
+common isotope of carbon deﬁned as precisely 12, m1=1.660539 ×10−24g,
+which of course was not known in Avogadro’s time. A mass Mcontains
+N=M/m =M/m 1μmolecules, so the ideal gas law (1.2.1) can be written
+pV=MkT/m 1μ=(M/μ)RT (1.2.3)
+whereRis the gas constant
+R=k/m 1. (1.2.4)
+Physicists in the early nineteenth century could use Eq. (1.2.3) to measureR,
+and they found a value close to the modern value R=8.314 J/K. This would
+have allowed a determination of m1and hence of the masses of all atoms of
+known atomic weight if kwere known, but kdid not become known until the
+developments described in Section 2.6.
+Avogadro’s Number
+Incidentally, a mole of any element or compound of molecular weight μis
+deﬁned asμgrams, so in Eq. (1.2.3) the ratioM/μ expressed in grams equals
+the number of moles of gas. Since N=M/m 1μ, one mole contains a number of
+molecules equal to 1 /m1withm1given in grams. This is known as Avogadro’s
+number. But of course Avogadro did not know Avogadro’s number. It is now
+known to be 6.02214 ×1023molecules per mole, corresponding to unit molec-
+ular weightm1=1.66054 ×10−24grams. The measurement of Avogadro’s
+number was widely recognized in the late nineteenth century as one of the greatchallenges facing physics.
+1.3 Electrolysis
+Early Electricity
+Electricity was known in the ancient world, as what we now call static
+electricity. Amber rubbed with fur was seen to attract or repel small bits of light
+material. Plato in Timaeus mentions “marvels concerning the attraction of
+amber.” (This is where the word electricity comes from; the Greek word foramber is “elektron.”)
+Electricity began to be studied scientiﬁcally in the eighteenth century. Two
+kinds of electricity were distinguished: resinous electricity is left on an amberrod when rubbed with fur, while vitreous electricity is left on a glass rod when
+rubbed with silk. Unlike charges were found to attract each other, while like
+charges repel each other. Benjamin Franklin (1706–1790) gave our modern
+terms positive and negative to vitreous and resinous electricity, respectively.
+--- PAGE 25 ---
+1.3 Electrolysis 11
+In 1785 Charles-Augustin de Coulomb (1736–1806) reported that the force
+Fbetween two bodies carrying charges q1andq2separated by a distance ris
+F=keq1q2
+r2(1.3.1)
+wherekeis a universal constant. For like and unlike charges the product q1q2
+is positive or negative, respectively, indicating a repulsive or attractive force.
+Coulomb had no way of actually measuring these charges, but he could reduce
+the charge on a body by a factor 2 by touching it to an uncharged body of the
+same material and size, and observe that this reduces the force between it and
+any other charged body by the same factor 2. The introduction of our modernunits of electric charge had to wait until the quantitative study of magnetism.
+Early Magnetism
+Magnetism too was known in the ancient world, as what we now call per-manent magnetism. The Greeks knew of naturally occurring lodestones that
+could attract or repel small bits of iron. Plato’s Timaeus refers to lodestones as
+“Heraclean stones.” (Our word magnet comes from the city Magnesia in AsiaMinor, near where lodestones were commonly found.)
+Very early the Chinese also discovered the lodestone and used it as a magnetic
+compass (a “south-seeking stone”) for purposes of geomancy and navigation.
+Each lodestone has a south-seeking pole at one end, attracted to a point near theSouth Pole of the Earth, and a north-seeking pole at the other end, attracted to a
+point near the Earth’s North Pole. Magnetism was ﬁrst studied scientiﬁcally by
+William Gilbert (1544–1603), court physician to Elizabeth I. It was observed
+that the south-seeking poles of different lodestones repel each other, and like-
+wise for the north-seeking poles, while the south-seeking pole of one lodestone
+attracts the north-seeking pole of another lodestone. Gilbert concluded that one
+pole of a lodestone is pulled toward the north and the other toward the south
+because the Earth itself is a magnet, with what in a lodestone would be its
+south-seeking and north-seeking poles respectively near the Earth’s North Poleand South Pole.
+Electromagnetism
+It began to be possible to explore the relations between electricity and mag-netism quantitatively with the invention in 1809 of electric batteries by Count
+Alessandro V olta (1745–1827). These were stacks of disks of two different
+metals separated by cardboard disks soaked in salt water. Such batteries drive
+steady currents of electricity through wires attached to the ends of the stacks,
+with positive and negative terminals identiﬁed respectively as the ends of the
+stacks from which and towards which electric current ﬂows.
+--- PAGE 26 ---
+12 1 Early Atomic Theory
+In July 1820 Hans Christian Oersted (1777–1851) in Copenhagen noticed that
+turning on an electric current deﬂected a nearby compass needle, and concluded
+that electric currents exert force on magnets. Conversely, he found also that
+magnets exert force on wires carrying electric currents.
+These discoveries were carried further in Paris a few months later by Andrè-
+Marie Ampère (1775–1836), who found that wires carrying electric current
+exert force on each other. For two parallel wires of length Lcarrying electric
+currents (charge per second) I1andI2, and separated by a distance r/lessmuchL,t h e
+force is
+F=kmI1I2L
+r, (1.3.2)
+wherekmis another universal constant. The force is repulsive if the currents
+are in the same direction; attractive if in opposite directions. One ampere is
+deﬁned so that F=10−7×L/r newtons ifI1=I2=1 ampere. (That
+is,km≡10−7N/ampere2.) The electromagnetic unit of electric charge, the
+coulomb, is deﬁned as the electric charge carried in one second by a current
+of one ampere. A modern ammeter measures electric currents by observing the
+magnetic force produced by current ﬂowing through a wire loop.
+The connection between electricity and magnetism was strengthened in 1831
+by Michael Faraday (1791–1867), at the Royal Institution in London. He dis-covered that changing magnetic ﬁelds generate electric forces that can drive
+currents in conducting wires. This is the principle underlying the generation of
+electric currents today. Electricity began soon after to have important practical
+applications, with the invention in 1831 of the electric telegraph by the Ameri-
+can painter Samuel F. B. Morse (1791–1872).
+Finally, in the 1870s, the great Scottish physicist James Clerk Maxwell
+(1831–1879) showed that the consistency of the equation for the generationof magnetic ﬁelds by electric currents required that magnetic ﬁelds are also
+generated by changing electric ﬁelds. In particular, while oscillating magnetic
+ﬁelds produce oscillating electric ﬁelds, also oscillating electric ﬁelds produce
+oscillating magnetic ﬁelds, so a self-sustaining oscillation in both electric and
+magnetic ﬁelds can propagate in apparently empty space. Maxwell calculated
+the speed of its propagation and found it to equal√
+2ke/km,2numerically about
+equal to the measured speed of light, suggesting strongly that light is such a
+self-sustaining oscillation in electric and magnetic ﬁelds. We will see more of
+Maxwell’s equations in subsequent chapters, especially in Chapters 4 and5.
+2This quantity is independent of the units used for electric charge as long as the currents appearing in
+Eq. (1.3.2) are deﬁned as the rates of ﬂow of charge in the same units as used in Eq. (1.3.1) . It is obviously
+also independent of the units used for force, as long as the same force units are used in Eqs. (1.3.1) and
+(1.3.2).
+--- PAGE 27 ---
+1.3 Electrolysis 13
+Discovery of Electrolysis
+Electrolysis was discovered in 1800 by the chemist William Nicholson (1753–
+1815) and the surgeon Anthony Carlisle (1768–1840). They found that bubbles
+of hydrogen and oxygen would be produced where wires attached respectively
+to the negative and positive terminals of a V olta-style battery were inserted in
+water. Sir Humphrey Davy (1778–1829), Faraday’s boss at the Royal Institution,
+carried out extensive experiments on the electrolysis of molten salts, ﬁnding
+for instance that, in the electrolysis of molten table salt, sodium, a previously
+unknown metal, was produced at the wire attached to the negative terminal of
+the battery and a greenish gas, chlorine, was produced at the wire attached
+to the other, positive, terminal. Davy’s electrolysis experiments added severalmetals aside from sodium to Lavoisier’s list of elements, including aluminum,
+potassium, calcium, and magnesium.
+A theory of electrolysis was worked out by Faraday. In modern terms, a
+small fraction (1.8 ×10
+−9at room temperature) of water molecules are nor-
+mally dissociated into positive hydrogen ions (H+), which are attracted to the
+wire attached to the negative terminal of a battery, and negative hydroxyl ions
+(OH−), which are attracted to the wire attached to the positive terminal. At the
+wire attached to the negative terminal, two H+ions combine with two units of
+negative charge from the battery to form a neutral H 2molecule. At the wire
+attached to the positive terminal, four OH−ions give one O 2molecule plus
+two H 2O molecules plus four units of negative charge, which ﬂow through the
+battery to the negative terminal.3
+Likewise, a small fraction of molten table salt (NaCl) molecules are normally
+dissociated into Na+ions and Cl−ions. At the wire attached to the negative
+terminal of a battery, one Na+ion plus one unit of negative charge gives one
+atom of metallic sodium (Na); at the wire attached to the positive terminal, two
+Cl−ions give one chlorine (Cl 2) molecule and two units of negative charge,
+which ﬂow through the battery to the negative terminal.
+In Faraday’s theory, it takes one unit of electric charge to convert a singly
+charged ion such as H+or Cl−to a neutral atom or molecule, so since molecules
+of molecular weight μhave massμm 1, it takesM/m 1μunits of electric charge
+to convert a mass Mof singly charged ions to a mass Mof neutral atoms
+or molecules of molecular weight μ. Experiment showed that it takes about
+96 500 coulombs (e.g., one ampere for about 96 500 seconds) to convert μ
+grams (that is, one mole) of singly charged ions to neutral atoms or molecules.(This is called a faraday; the modern value is 96 486.3 coulombs/mole.) Hence
+3We now know that it is negative charge, i.e., electrons, that ﬂows through a battery. As far as Faraday knew,
+it was equally possible that positive charges ﬂow through a battery, in which case at the wire attached to thenegative terminal two H
++ions would give an H 2molecule plus two units of positive charge, which would
+ﬂow though the battery to the wire attached to the positive terminal, where four OH−ions plus four units
+of positive charge would give an O 2molecule and two H 2O molecules.
+--- PAGE 28 ---
+14 1 Early Atomic Theory
+Faraday knew that e/m 1/similarequal96 500 coulombs/gram, where eis the unit of
+electric charge, which was called an “electrine” in 1874 by the Irish physi-
+cist George Johnstone Stoney (1826–1911). Having measured the faraday, if
+physicists knew the value of ethen they would know m1, but they didn’t have
+this information until later. Also, no one then knew that eis the charge of an
+actual particle.
+1.4 The Electron
+As sometimes happens, in 1858 a new path in fundamental physics was openedwith the invention of a practical device, in this case an improved air pump. In his
+pump the Bonn craftsman Heinrich Johann Geissler (1814–1879) used a column
+of mercury as a piston, in this way greatly reducing the leakage of air through
+the piston that had troubled all previous air pumps. With his pump Geissler was
+able to reduce the pressure in a closed glass tube to about a ten-thousandth ofthe typical air pressure on the Earth’s surface.
+With such a near vacuum in a glass tube, electric currents could travel without
+wires through the tube. It was discovered that an electric current would ﬂow
+from a cathode, a metal plate attached to the negative terminal of a powerful
+electric battery, ﬂy through a hole in an anode, another metal plate attached to
+the positive pole of the battery, and light up a spot on the far wall of the tube.
+Adding small amounts of various gases to the interior of the tube caused these
+cathode rays to light up, with orange or pink or blue-green light emitted along
+the path of the ray, when neon, helium, or mercury vapor was added. UsingGeissler’s pumps, Julius Plücker (1801–1868) in 1858–1859 found that cathode
+rays could be deﬂected by magnetic ﬁelds, thus moving the spot of light where
+the ray hits the glass at the tube end.
+In 1897 Joseph John Thomson (1856–1940), the successor to Maxwell as
+Cavendish Professor at Cambridge, began a series of measurements of the
+deﬂection of cathode rays. In his experiments, after the ray particles pass
+through the anode they feel an electric or magnetic force Fexerted at a right
+angle to their direction of motion for a distance dalong the ray. They then drift
+in a force-free region for a distance D/greatermuchduntil they hit the end of the tube. If
+a ray particle has velocity valong the direction of the ray, it feels the electric
+or magnetic force for a time d/v and then drifts for a longer time D/v. A force
+Fnormal to the ray gives ray particles of mass ma component of velocity
+perpendicular to the ray that is equal to the acceleration F/m times the time
+d/v, so by the time they hit the end of the tube they have been displaced by an
+amount
+displacement =(F/m) ×(d/v) ×(D/v) =FdD
+mv2.
+--- PAGE 29 ---
+1.4 The Electron 15
+The forces exerted on a charge eby an electric ﬁeld Eor a magnetic ﬁeld Bat
+right angles to the ray are
+Felec=eE,Fmag=evB
+so
+electric displacement =eEdD
+mv2,
+magnetic displacement =eBdD
+mv.
+Thomson wanted to measure e/m. He knewD,d,E,a n dB, but notv.H e
+could eliminate vfrom these equations if he could measure both the electric and
+magnetic displacements, but the electric displacement was difﬁcult to measure.
+A strong electric ﬁeld tends to ionize any residual air in the tube, with positive
+and negative ions pulled to the negatively and positively charged plates thatproduce the electric ﬁelds, neutralizing their charges. Finally Thomson suc-
+ceeded in measuring the electric as well as the magnetic deﬂection by using
+a cathode ray tube with very low air pressure. (Both the electric and magnetic
+displacements were only a few inches.) This gave results for the ratio of charge
+to mass ranging from 6 ×10
+7to 108coulombs per gram.
+Thomson compared this with the result that Faraday had found in measure-
+ments of electrolysis, that e/m 1≈105coulombs per gram, where eis the
+electric charge of a singly ionized atom or molecule (such as a sodium ion inthe electrolysis of NaCl) and m
+1is the mass of a hypothetical atom of atomic
+weight unity, close to the mass of the hydrogen atom. He reasoned that if the
+particles in his cathode rays are the same as those transferred in electrolysis,
+then their charge must be the same as e, so their mass must be about 10−3m1.
+Thomson concluded that since the cathode ray particles are so much lighter thanions or atoms, they must be the basic constituents of ions and atoms.
+Thomson had still not measured eorm. He had not even shown that cathode
+rays are streams of particles; they might be streams of electrically charged ﬂuid,
+with any volume of ﬂuid having a ratio of charge to mass equal to his measured
+e/m. Nevertheless, in the following decade it became widely accepted that
+Thomson had indeed discovered a particle present in atoms, and the particle
+came to be called the electron.
+--- PAGE 30 ---
+2
+Thermodynamics and Kinetic Theory
+The successful uses of atomic theory described in the previous chapter did not
+settle the existence of atoms in all scientists’ minds. This was in part because
+of the appearance in the ﬁrst half of the nineteenth century of an attractive
+competitor, the physical theory of thermodynamics. As we shall see in the ﬁrst
+three sections of this chapter, with thermodynamics one may derive powerful
+results of great generality without ever committing oneself to the existence of
+atoms or molecules. But thermodynamics could not do everything. Section 2.4
+will describe the advent of kinetic theory, which is based on the assumption that
+matter consists of very large numbers of particles, and its generalization to sta-
+tistical mechanics. From these thermodynamics could be derived, and together
+with the atomic hypothesis it yielded results far more powerful than could be
+obtained from thermodynamics alone. Even so, it was not until the appearance
+of direct evidence for the graininess of matter, described in Section 2.5,t h a t
+the existence of atoms became almost universally accepted.
+2.1 Heat and Energy
+The ﬁrst step in the development of thermodynamics was the recognition thatheat is a form of energy. Though so familiar to us today, this was far from
+obvious to the physicists and chemists of the early nineteenth century. Until the1840s heat was widely regarded as a ﬂuid, named caloric by Lavoisier. Caloric
+theory was used to calculate the speed of sound by Pierre-Simon Laplace(1749–1827) in 1816, the conduction of heat by Joseph Fourier (1768–1830) in
+1807 and 1822, and the efﬁciency of steam engines by Sadi Carnot (1796–1832)
+in 1824, whose work as we will see in the next section became a foundation
+of thermodynamics. Adding to the confusion, other scientists considered heat
+as some sort of wave. This reﬂected uncertainty regarding the nature of what
+is now called infrared radiation, discovered by William Herschel (1738–1822)
+in 1800.
+16
+--- PAGE 31 ---
+2.1 Heat and Energy 17
+Heat as Energy
+In 1798 Benjamin Thompson (1753–1814), an American expatriate in Eng-
+land, offered evidence against the idea that heat is a ﬂuid. (Thompson is also
+known as Count Rumford, a title he was given when he later served as military
+adviser in Austria.) It was well known that boring a cannon produces heat,
+which might be supposed to be due to the liberation of caloric from the iron,
+but Rumford observed that if the heat is carried away by immersing the cannon
+in running water while it is being bored there is no limit to the heat that can be
+produced.
+The ﬁrst measurement of the energy in heat was provided in the mid-1840s
+by James Prescott Joule (1818–1889). In his apparatus a falling weight turnedpaddles in a tank of water, heating the water. The gravitational force on a mass m
+kilograms ismtimes the acceleration of gravity, 9.8 meters/sec
+2or 9.8 newtons
+per kilogram. Work is force times distance, so dropping one kilogram a distance
+of one meter gave it an energy equal to 9.8 newton meters, now also known as
+9.8 joules. Joule found that the paddles driven by this dropping weight would
+raise the temperature of 100 grams of water by 0.023◦C, so the paddles pro-
+duced heat equal to 0.023 ×100 calories, the calorie being deﬁned as the heat
+required to raise the temperature of one gram of water by one degree Celsius.
+Hence Joule could conclude that 9.8 joules is equivalent to 2.3 calories, so onecalorie is equivalent to 9.8 /2.3=4.3 joules. The modern value is 4.184 joules.
+In 1847 the Prussian physician and physicist Hermann von Helmholtz
+(1821–1894) put forward the idea of the universal conservation of energy,
+whether in the form of kinetic or potential or chemical energy or heat. But
+what sort of energy is heat? For some nineteenth century physicists the question
+was irrelevant. They developed the science of heat known as thermodynamics,
+which did not depend on any detailed model of heat energy. But there was one
+context in which the nature of heat energy seemed evident. In his great 1857
+paper, The Nature of the Motion which We Call Heat , Clausius found that at
+least part of the heat energy of gases is the kinetic energy of their molecules.
+Kinetic Energy
+The concept of kinetic energy was long familiar. If a steady force Fis exerted
+on a particle of mass m, it produces an acceleration F/m , so after a time tthe
+velocity of the body is v=Ft/m . The distance traveled in this time is ttimes
+the average velocity v/2, and the work done on the particle is the force times
+this distance:
+F×t×Ft/2m=F
+2t2/2m=mv2/2.
+Instead of this work going into heating a tub of water, as in the experiment of
+Joule, it goes into giving the particle an energy mv2/2.
+--- PAGE 32 ---
+18 2 Thermodynamics and Kinetic Theory
+This energy has the special property of being conserved when bodies come
+into contact in collisions. Consider a collision between two rigid balls A and B
+with initial vector velocities vAandvB. For the moment suppose that the time
+intervaltover which this force acts is sufﬁciently brief that the forces acting on
+the balls do not change appreciably during this time. The force that A exerts on
+B is equal and opposite to the force Fthat B exerts on A, so Newton’s second
+law tells us that the ﬁnal velocities of A and B are v/prime
+A=vA+Ft/mAand
+v/prime
+B=vB−Ft/mB. Hence, as Newton showed, momentum is conserved:
+mAv/prime
+A+mBv/primeB=mAvA+mBvB. (2.1.1)
+Neglecting changes in acceleration during the brief time t, the vector displace-
+ments traveled by A and B equal ttimes the average velocities, [v A+v/primeA]/2
+and [vB+v/primeB]/2, respectively. If the balls remain in contact during this time
+interval, then these displacements must be the same, so
+vA+v/prime
+A=vB+v/primeB. (2.1.2)
+To derive a second conservation law, rewrite Eq. (2.1.2) asv/primeB−v/primeA=vA−vB
+and square this, giving
+v/prime2
+B−2v/primeB·v/primeA+v/prime2A=v2B−2vB·vA+v2A.
+Multiply this with mAmBand add the square of Eq. (2.1.1), so that the scalar
+products cancel. Dividing by 2(m A+mB), the result is another conservation law,
+mA
+2v/prime2A+mB
+2v/prime2B=mA
+2v2A+mB
+2v2B. (2.1.3)
+Equations (2.1.1) and (2.1.3) have been derived here only for the case in
+which the particles are in contact only for a brief time interval during which
+the force acting between the bodies is constant, but this is not an essentialrequirement for we can break up any time interval into a large number of brief
+intervals in each of which the change in the force is negligible, Then, since
+m
+AvA+mBvBandmAv2
+A/2+mBv2B/2 do not change in each interval, they do
+not change at all, as long as the bodies exert forces on each other only when they
+are in contact.
+In 1669 Christiaan Huygens (1629–1695) reported in Journal des Sçavans
+that he had conﬁrmed the conservation of the total of mv2/2, probably by
+observing collisions of pendulum bobs, for which initial and ﬁnal velocitiescould be precisely determined. Newton in the Principia called the conserved
+quantitymvthequantity of motion , while Huygens gave the name vis viva
+(“living force”) to the conserved quantity mv
+2/2. These two quantities have
+since become known as momentum andkinetic energy.
+On the other hand, it was essential in deriving the conservation of kinetic
+energy that we assumed that particles interact only when in contact. This is
+generally a good approximation in gases, but it is not valid in the presence of
+--- PAGE 33 ---
+2.1 Heat and Energy 19
+long range forces, such as electromagnetic or gravitational forces. In such cases
+kinetic energy is notconserved – it is only the sum of kinetic energy plus some
+sort of potential energy that does not change.
+Speciﬁc Heat
+The total kinetic energy of Nmolecules of gas of mass mand mean square
+velocity /angbracketleftv2/angbracketrightisNm/angbracketleftv2/angbracketright/2. Clausius had found the relation ( 1.1.4) between
+mean square velocity and absolute temperature, according to which m/angbracketleftv2/angbracketright/2=
+3kT/ 2, wherekis some constant (later identiﬁed as a universal constant of
+nature), so the total kinetic energy is 3 NkT/ 2. A massMof gas of molecu-
+lar weightμcontainsN=M/μm 1molecules, so the total kinetic energy is
+3MRT/ 2μ,w h e r eR=k/m 1is the gas constant ( 1.2.4). Clausius concluded
+that to raise the temperature of a mass Mof gas of molecular weight μby
+an amountdTat constant volume, so that the gas does no work on its con-
+tainer, requires an energy dE=3MRdT/ 2μ. The ratio dE/MdT is known as
+the speciﬁc heat, so Clausius found that the speciﬁc heat of a gas at constantvolume is
+C
+v=3R/2μ. (2.1.4)
+This result must be distinguished from the value for a different sort of speciﬁc
+heat, measured at constant pressure, such as when the gas is in a container with
+an expandable wall, for which the volume Vcan change to keep the pressure p
+equal to the pressure of the surrounding air or other medium. When pressurepushes a surface of area Aa small distance dL, the work done is the force pA
+timesdL, which equals pdV wheredV=AdL is the change in volume.
+According to the ideal gas law ( 1.2.3),pV=RTM/μ , so if the temperature
+is increased by an amount dT, then at constant pressure the gas does work
+pdV=RMdT/μ , and this temperature increase therefore requires an energy
+3MRdT/ 2μ+MRdT/μ =5MRdT/ 3. In other words, the speciﬁc heat at
+constant pressure is
+C
+p=5R/2μ. (2.1.5)
+This result is often expressed in terms of the ratio of speciﬁc heats,
+γ≡Cp/Cv. (2.1.6)
+So Clausius found that if all the heat of a gas is contained in the kinetic energy
+of its molecules then γ=5/3.
+This did not agree with measurements of the speciﬁc heats of common
+diatomic gases, such as oxygen or hydrogen, which Clausius cited as giving
+γ=1.421. Later, it was found that γdoes indeed equal 5/3 for a monatomic
+gas like mercury vapor, but this left the question, in what form is the energy inordinary gases that are not monatomic?
+--- PAGE 34 ---
+20 2 Thermodynamics and Kinetic Theory
+To deal with this issue, Clausius suggested that the internal energy of a gas is
+larger than the kinetic energy of the molecules, say by a factor 1 +f, withf
+some positive number. Then instead of Eq. (2.1.4) we have
+Cv=(1+f)×3R/2μ, (2.1.7)
+and in place of Eq. (2.1.5),
+Cp=(1+f)3R/2μ+R/μ . (2.1.8)
+The speciﬁc heat ratio is then
+γ=1+2
+3(1+f). (2.1.9)
+This is often expressed (especially in astrophysics) as a formula for the internal
+energy density Ein terms of the pressure and γ:
+E=3RTM( 1+f)/2μV=3(1+f)p/ 2=p/(γ−1). (2.1.10)
+The observation that γ/similarequal1.4 for diatomic gases like O 2and H 2indicated
+that the internal energy of these gases is larger than the kinetic energy of itsmolecules by a factor 1 +f/similarequal5/3. Measurements gave values of γfor more
+complicated molecules like H
+2Oo rC O 2even closer to unity, indicating that
+fis even larger for these molecules. The reason for these values for fandγ
+did not become clear until the formulation of the equipartition of energy, to bediscussed in Section 2.4.
+Adiabatic Changes
+It often happens that work is done adiabatically, that is, without the transfer ofheat. In this case the conservation of energy tells us that the work done by an
+expanding ﬂuid must be balanced by a decrease in its internal energy
+EV:
+0=pdV+d(EV)=(p+E)dV+VdE. (2.1.11)
+For an ideal gas, the internal energy per unit volume Eis given by Eq. (2.1.10),
+so this tells us that
+0=γpdV +Vdp
+and so, in an adiabatic process,
+p∝V−γ∝ργ, (2.1.12)
+or, since for a ﬁxed mass p∝T/V ,
+T∝V1−γ∝ργ−1. (2.1.13)
+This is in contrast with an isothermal process, for which Tis constant and
+p∝V−1.
+--- PAGE 35 ---
+2.2 Absolute Temperature 21
+Equation (2.1.12) has an immediate consequence for the speed of sound. At
+audible frequencies the conduction of heat is typically too slow to be effective,
+so the expansion and compression of a ﬂuid carrying a sound wave is adiabatic.
+It is a standard result of hydrodynamics, proved by Newton, that the speed of
+sound is
+cs=/radicalBigg
+∂p
+∂ρ.
+Newton thought that pwould be proportional to ρin a sound wave, which would
+givecs=√p/ρ, but in fact at audible frequencies the pressure is given by the
+adiabatic relation (2.1.12), and csis larger than Newton’s value by a factor√γ.
+2.2 Absolute Temperature
+We have been casually discussing temperature, but what precisely do we meanby this? It is not hard to give a precise meaning to a statement that one body has a
+higher temperature than another, by a generalization of common experience thatis sometimes known as the second law of thermodynamics (the ﬁrst law being
+the conservation of energy). Observation of heat ﬂow shows that if heat can ﬂow
+spontaneously from a body A to a body B, then it cannot ﬂow spontaneously
+from B to A. We can say then that the temperature t
+Aof A is higher than
+the temperature tBof B. Likewise, we say that two bodies are at the same
+temperature if heat cannot ﬂow from either one to the other spontaneously,
+without work being done on these bodies. Temperature deﬁned in this way is
+observed to be transitive : If heat can ﬂow spontaneously from a body A to a
+body B, and from B to a body C, then it can ﬂow spontaneously from A to C.
+This is a property shared with real numbers – if a number ais larger than number
+b,a n di fbis larger thanc,t h e na is larger thanc– and is a necessary condition
+for temperatures to be represented by real numbers.
+But this does not give a precise meaning to any particular numerical value of
+temperature, or even to numerical ratios of temperatures. If, for some deﬁnition
+of temperature t, a comparison of values of ttells us the direction of heat ﬂow
+then the same would be true of any monotonic function T(t). Conventionally
+temperatures are deﬁned by thermometers. With a column of some liquid such
+as mercury or alcohol in a glass tube, we mark off the heights of the columnwhen the tube is placed in freezing or boiling water, and for a Celsius tem-
+perature scale etch on the tube marks that divide the distance from freezing to
+boiling to a hundred equal parts. The trouble is that different liquids expand
+differently with increasing temperature, and the temperatures measured in this
+way with a mercury or alcohol thermometer will not be precisely equal. We can
+try instead to give signiﬁcance to numerical values of temperature by using a
+--- PAGE 36 ---
+22 2 Thermodynamics and Kinetic Theory
+gas thermometer, relying on the ideal gas law pV=MRT/μ , but this law
+is approximate, holding precisely only for molecules of negligible size that
+interact only in contact in collisions. How can we give precise meaning to
+numerical values of temperature without relying on approximate relations?
+Surprisingly, as shown by Rudolf Clausius in his 1850 paper1“On the Mov-
+ing Force of Heat,” it is possible by ﬁnd a deﬁnition of temperature Twith
+absolute signiﬁcance by the study of thermodynamic engines known as Carnotcycles.
+Sadi Carnot (1796–1832) was a French military engineer, the son of Lazare
+Carnot, organizer of military victory in the French Revolution, and uncle ofa later president of the Third Republic. In 1824 Carnot in Reﬂections on the
+Motive Power of Fire set out to study the efﬁciency of steam engines, explaining
+that “Already the steam engine works our mines, impels our ships, excavates
+our ports and our rivers, forges iron, fashions wood, grinds grains, spins and
+weaves our clothes, transports our heaviest burdens, etc.” (A few years later he
+might also have mentioned the beginning of steam-propelled locomotives, with
+the opening of the Liverpool–Manchester railroad in 1830.) Carnot invented an
+idealized engine, known as a Carnot cycle, which as we shall see is maximally
+efﬁcient and provides a natural deﬁnition of absolute temperature.
+In the Carnot cycle, a working ﬂuid (such as steam in a cylinder ﬁtted with a
+piston) goes through four frictionless steps:
+1. Isothermal: The working ﬂuid does work on its environment, for instance
+by pushing a piston against external pressure, but keeping a constant tem-perature by absorbing heat Q
+2from a hot reservoir at temperature t2.( W e
+will continue to use lower case tto indicate temperature deﬁned in any
+way that indicates the direction of heat ﬂow, without specifying any physical
+signiﬁcance to its particular numerical values.)
+2. Adiabatic: The working ﬂuid, perfectly insulated from its environment and
+with no internal friction, does more work, with its temperature dropping tothe temperature t
+1of a cold reservoir but with no heat ﬂowing in or out.
+3. Isothermal: Work is done on the ﬂuid, for instance by pushing in the piston,
+with its temperature kept constant by its giving up heat Q1to the cold
+reservoir.
+4. Adiabatic: With the working ﬂuid again completely insulated from its envi-
+ronment, work is done on it, bringing its volume back down to its originalvalue and its temperature back up to the temperature t
+2of the hot reservoir.
+1This paper is reprinted in Brush, The Kinetic Theory of Gases – An Anthology of Classic Papers with
+Historical Commentary , listed in the bibliography.
+--- PAGE 37 ---
+2.2 Absolute Temperature 23
+CB1
+2
+34p
+DA
+V
+Figure 2.1 A Carnot cycle (not drawn to scale).
+A graph of the pressure versus the volume of the working ﬂuid in this cycle is
+a closed curve, with the net work Wdone on the environment equal to/contintegraltext
+pdV –
+that is, to the area enclosed by the curve. (See Figure 2.1.) As long as steps 2
+and 4 are truly adiabatic, the conservation of energy tells us that this work is
+W=Q2−Q1 (2.2.1)
+and the efﬁciency of this cycle is
+W/Q 2=Q2−Q1
+Q2<1 . (2.2.2)
+(We call this the efﬁciency, having in mind that, as for a steam engine, we have
+to pay for the heat Q2taken up at the higher temperature t2, while the heat Q1
+given up at the lower temperature t1is wasted.)
+Any Carnot cycle is reversible, because any frictionless adiabatic or isother-
+mal process follows the same track, depending only on its endpoints, whicheverdirection the process takes. But not all thermodynamic cycles, which take a
+working ﬂuid through a series of steps back to the original temperature andvolume, are reversible even though of course they all conserve energy. For
+reversibility it is not enough that all steps be either isothermal or adiabatic –
+there also should be no friction, which if present would provide an internal
+source of heat that is not available to do work.
+--- PAGE 38 ---
+24 2 Thermodynamics and Kinetic Theory
+The importance of Carnot cycles in thermodynamics rests on the following
+theorem:
+I. The efﬁciency of the Carnot cycle C described above is at least as great as
+that for any general thermodynamical cycle C/prime, not necessarily reversible, which
+begins with the working ﬂuid absorbing a heat Q/prime
+2from a reservoir at the same
+high temperature t2, then emitting heat at the same lower temperature t1,a n d
+then returning to its original temperature and volume, in the process doing net
+workW/prime.T h a ti s ,
+W/Q 2≥W/prime/Q/prime
+2. (2.2.3)
+II. All Carnot cycles that take heat from a reservoir at the same temperature t2,
+using it to do work, and giving up waste heat to a reservoir at the same lower
+temperaturet1, have the same efﬁciency, which depends only on t2andt1.
+Proof:2Like any positive real number, the ratio of the work done in the Carnot
+cycle C and in a general cycle C/primecan be approximated to an arbitrary accuracy
+by a ratio of positive real integers NandN/prime:
+W/W/prime=N/prime/N. (2.2.4)
+Since any Carnot cycle by deﬁnition is reversible, the cycle C has an inverseC
+−1. This is a refrigeration cycle, following the same steps as for C but in the
+opposite order, so that by doing work Won the ﬂuid an amount of heat Q1is
+taken from the reservoir at temperature t1and heatQ2>Q 1is delivered to
+the reservoir at temperature t2>t 1. Suppose we perform a compound cycle
+C∗, consisting of Nrepetitions of C−1andN/primerepetitions of C/prime. According to
+Eq. (2.2.4), the net work done by the working ﬂuid is
+W∗=N/primeW/prime−NW=0.
+Also, the net heat taken from the hot reservoir at temperature t2is
+Q∗
+2=N/primeQ/prime2−NQ 2.
+Now, since no work is done in the compound cycle, according to the fundamen-
+tal property of temperature t, it is not possible for positive-deﬁnite net heat to
+be transferred toa reservoir at temperature t2from a lower temperature t1,s ot h e
+net heatQ∗
+2taken from the hot reservoir in the cycle C∗must be positive-deﬁnite
+or zero. Hence, using Eq. (2.2.4),
+0≤Q∗
+2
+NW=N/primeQ/prime2−NQ 2
+NW=/parenleftbiggQ/prime2
+W/prime−Q2
+W/parenrightbigg
+,
+2This treatment and that of the following section is based on that given by Fermi, Thermodynamics, listed
+in the bibliography.
+--- PAGE 39 ---
+2.2 Absolute Temperature 25
+and therefore
+W
+Q2≥W/prime
+Q/prime
+2(2.2.5)
+as was to be proved in the ﬁrst part of the theorem.
+As to the second part of the theorem, note that if C/primeis also a Carnot cycle
+then, by the same reasoning,
+W/prime
+Q/prime2≥W
+Q2,
+so the efﬁciencies are equal:
+W
+Q2=W/prime
+Q/prime
+2. (2.2.6)
+This has now been proved for any pair of Carnot cycles, operating between the
+same temperatures t2andt1, whatever the values of the heat taken from the
+reservoir at temperature t2and given up to the reservoir at temperature t1,s o
+the common efﬁciency can only depend on t2andt1, as was to be proved.
+We shall write this relation in terms of the inefﬁciency:
+1−W
+Q2=Q1
+Q2≡F(t 1,t2) (2.2.7)
+withFthe same function for all Carnot cycles. We next prove that the function
+F(t 1,t2)takes the form
+F(t 1,t2)=T(t 1)/T(t 2) (2.2.8)
+for some function T(t) . For this purpose we consider a compound cycle consist-
+ing of a Carnot cycle operating between the temperatures t2andt0≤t2followed
+by a Carnot cycle operating between the temperatures t0andt1≤t0, with all the
+waste heat that is given to the reservoir at temperature t0in the ﬁrst cycle taken
+up from this reservoir in the second cycle. Since (Q0/Q2)(Q 1/Q0)=Q1/Q2,
+the inefﬁciency (2.2.7) of the compound cycle is the product of the inefﬁciencies
+of the individual cycles, so
+F(t 1,t2)=F(t 1,t0)F(t 0,t2). (2.2.9)
+From Eq. (2.2.7) it is evident that F(t 2,t0)F(t 0,t2)=1, so Eq. (2.2.9) may be
+written
+F(t 1,t2)=F(t 1,t0)
+F(t 2,t0). (2.2.10)
+This holds for any t0witht2≥t0≥t1, so we can deﬁne T(t)≡F(t,t0)with
+an arbitrary choice of t0in this range, and then Eq. (2.2.10) is the desired result
+(2.2.8).
+--- PAGE 40 ---
+26 2 Thermodynamics and Kinetic Theory
+Now, efﬁciencies are never greater than 100%, so the ratio F(t 1,t2)=
+T(t 1)/T(t 2)inEq. (2.2.7) must be positive, and so T(t) has the same sign
+for all temperatures. Since only the ratios of the Ts appear in the efﬁciency,
+we are free to choose this sign to be positive, so that T(t)≥0 for allt.
+Also, inefﬁciencies are never greater than 100%, so Eq. (2.2.8) shows that
+T(t 1)≤T(t 2)for anyt1andt2witht1≤t2.T h a ti s ,T(t) is a monotonically
+increasing function of tand can therefore be used to judge the direction of
+spontaneous heat ﬂow as well as titself.
+We can therefore deﬁne the absolute temperature Tby just using T(t) as
+the temperature in place of t.That is, using Eqs. (2.2.7) and (2.2.8), we deﬁne
+absolute temperature Tby the statement that a Carnot cycle running between
+any two temperatures T2andT1has
+Q1
+Q2=T1
+T2. (2.2.11)
+A Carnot cycle running between an upper temperature T2and a lower tempera-
+tureT1has an efﬁciency
+W
+Q2=Q2−Q1
+Q2=T2−T1
+T2. (2.2.12)
+Of course, this only deﬁnes Tup to a constant factor, leaving us free to use
+what units we like for temperature. But we are not free to shift T(t) by adding
+a constant term. Indeed, since in this Carnot cycle heat ﬂows from a reservoir at
+temperatureT2to one at temperature T1,w em u s th a v e T2>T 1, and therefore in
+order for the efﬁciency ( 2.2.11) to be a positive quantity, the lower temperature
+must haveT1>0. Because any heat reservoir must have Tpositive-deﬁnite, we
+see thatTis the absolute temperature, in the same sense as was found for gases
+by Charles.
+The temperature deﬁned by Carnot cycles is identical (up to a choice of
+units) to the temperature given by a gas thermometer, which for the momentwe will callT
+g, in the approximation that the gas is ideal. To see this, let us
+label the states of the gas as A at the start of the isothermal expansion 1 (andat the end of the adiabatic compression 4); as B at the start of the adiabaticexpansion 2 (and the end of the isothermal expansion 1); as C at the start of
+the isothermal compression 3 (and the end of the adiabatic expansion 2); and
+as D at the start of the adiabatic compression 4 (and the end of the isothermal
+compression 3). Since the expansion from A to B is isothermal, during this
+phase the internal energy of the gas, which is given by Eqs. (1.2.3) and (2.1.10)
+as
+EV=RTM/(γ −1)μ, does not change, and so the heat drawn from the hot
+reservoir is the work done:
+Q2=/integraldisplayB
+ApdV=MRTg
+2
+μ/integraldisplayB
+AdV
+V=MRTg
+2
+μln/parenleftbiggVB
+VA/parenrightbigg
+.
+--- PAGE 41 ---
+2.3 Entropy 27
+Likewise, the heat given up to the cold reservoir in the isothermal compression
+from C to D is
+Q1=MRTg
+1
+μln/parenleftbiggVC
+VD/parenrightbigg
+.
+Further, since the expansion from B to C and the contraction from D to A are
+adiabatic, Eq. (2.1.13) givesV∝(Tg)−1/(γ−1), and so during these parts of the
+cycle
+VC/VB=VD/VA=/parenleftBigg
+Tg
+2
+Tg
+1/parenrightBigg1/(γ−1)
+,
+and therefore VB/VA=VC/VD, and the logarithmic factors in Q2andQ1are
+equal. The efﬁciency is then
+Q2−Q1
+Q2=Tg
+2−Tg
+1
+Tg
+2
+in agreement with Eq. (2.2.12) ifT=Tg, up to a possible constant factor.
+2.3 Entropy
+In macroscopic classical thermodynamics we characterize the state of a systemby a set of variables that can be speciﬁed independently. For instance, for a ﬂuid
+of ﬁxed mass and chemical composition, in a vessel with adjustable volume
+(say, with a movable piston) the state is speciﬁed by giving the values of any
+two of the thermodynamic variables – pressure, volume, temperature, energy,etc. – the remaining variables being determined in equilibrium or in adiabatic
+variations by these two values and some equation of state, such as the ideal
+gas law ( 1.2.3). Many of the consequences of macroscopic classical thermody-
+namics can be deduced from the existence of another thermodynamic variable,known as the entropy, introduced in 1854 by Rudolf Clausius, that like other
+thermodynamic variables depends only on the state of the system, although itsdeﬁnition seems to indicate that it also depends on the way that the system is
+prepared.
+Suppose a system is prepared in a given state 1 by starting with it in a standard
+state (labeled 0 below) and then taken to 1 on a path Pthrough the space
+of independent variables used to deﬁne thermodynamic states, in which by a
+series of small reversible changes at varying absolute temperatures Tit picks up
+small net amounts dQof heat energy from the environment. (The heat energy
+incrementdQis taken as positive if the system takes heat from the environment
+and negative if it gives up heat.) Then the entropy of this state is deﬁned by
+--- PAGE 42 ---
+28 2 Thermodynamics and Kinetic Theory
+S1=S0+/integraldisplay
+PdQ
+T, (2.3.1)
+where the integral is taken over any reversible path from state 0 to state 1, and S0
+is whatever entropy we choose to ascribe to the standard state 0. The remarkable
+thing is that the integral here is independent of the particular reversible path
+chosen, so that this really deﬁnes the entropy S1up to a common constant
+termS0as a function of the state of the system, not of how it is prepared,
+provided that Tis the absolute temperature deﬁned, as in the previous section,
+by the efﬁciency of Carnot cycles. Furthermore, with the entropy deﬁned in this
+way, for any path P/primefrom state 0 to state 1 that may or may not be reversible,
+we have/integraldisplay
+P/primedQ
+T≤S1−S0. (2.3.2)
+Proof: The ﬁrst step in proving these results is to prove the following lemma:for an arbitrary cycle, reversible or irreversible, that takes a system /Sigma1from any
+state back to the same state, taking in and giving up heat at various temperatures,we have/contintegraldisplaydQ
+T≤0 . (2.3.3)
+After establishing this lemma, the rest of the proof will be straightforward.
+To prove this lemma we can approximate the cycle by a sequence of brief
+isothermal steps, in each of which the system /Sigma1takes in heat (if dQis positive)
+or gives heat up (if dQis negative) at a momentary temperature T. We can
+imagine that, at each step, the heat taken in or given up is given up or taken
+in by another system, which undergoes a Carnot cycle between the momentary
+temperatureTand a ﬁxed temperature T0. In this Carnot cycle, the ratio of the
+heatdQgiven up by the Carnot cycle to /Sigma1and the heatdQ 0taken by the Carnot
+cycle from the reservoir at temperature T0is given by Eq. (2.2.11):
+dQ
+dQ 0=T
+T0,
+or in other words
+dQ 0=T0/parenleftbiggdQ
+T/parenrightbigg
+.
+Hence in the complete cycle the Carnot cycles take in a total net heat T0/contintegraltext
+dQ/T
+from the reservoir at temperature T0. Since the system /Sigma1and each of the Carnot
+cycles return to their original states, if this heat taken in at temperature T0were
+positive-deﬁnite then it would have to go into work, which is impossible since
+work cannot be done by taking heat from a reservoir at a ﬁxed temperature with
+no changes elsewhere. (If it could, then this work by producing friction could
+--- PAGE 43 ---
+2.3 Entropy 29
+be used to transfer some heat to any body, even one at a temperature higher
+thanT0.) So we conclude that the integral/contintegraltext
+dQ/T is at most zero, as was to be
+shown.
+The rest is easy. Note that if two paths PandP/primeare both reversible paths
+that go from state 0 to state 1, then PP/prime−1is a closed cycle, where P/prime−1is path
+P/primetaken in reverse, from state 1 to state 0. It follows then from the inequality
+(2.3.3)t h a t
+0≥/contintegraldisplay
+PP/prime−1dQ
+T=/integraldisplay
+PdQ
+T−/integraldisplay
+P/primedQ
+T.
+ButP/primeP−1is also a closed cycle, so
+0≥/contintegraldisplay
+P/primeP−1dQ
+T=/integraldisplay
+P/primedQ
+T−/integraldisplay
+PdQ
+T.
+These two results are consistent only if for reversible paths both cyclic integralsvanish, in which case
+/integraldisplay
+P/primedQ
+T=/integraldisplay
+PdQ
+T. (2.3.4)
+We can therefore deﬁne the entropy up to an additive constant as in Eq. (2.3.1),
+wherePis any reversible path.
+Finally, ifP/primeis a general path from state 0 to state 1, reversible or irreversible,
+whilePis a reversible path from state 0 to state 1, then P/primeP−1(but not neces-
+sarilyPP/prime−1!) is a closed cycle, so the inequality (2.3.3)g i v e s
+0≥/contintegraldisplay
+P/primeP−1dQ
+T=/integraldisplay
+P/primedQ
+T−/integraldisplay
+PdQ
+T,
+and therefore, using Eq. (2.3.1),
+/integraldisplay
+P/primedQ
+T≤S1−S0
+as was to be shown.
+In the special case of a completely isolated system /Sigma1, no heat can be taken
+into/Sigma1or given up by /Sigma1, so the integrand in the integral on the left-hand side of
+Eq. (2.3.2) must vanish and therefore S1≥S0.In isolated systems the entropy
+can only increase. On the other hand, if an isolated system is undergoing only
+reversible changes, then according to Eq. (2.3.1) the entropy is constant.
+There is another deﬁnition of entropy, used in information theory as well as
+in physics. If a system can be in any one of a number of states characterized
+by a continuous (generally multidimensional) parameter α, with a probability
+P(α)dα of being in states with this parameter in a narrow range dαaroundα,
+then the entropy is
+--- PAGE 44 ---
+30 2 Thermodynamics and Kinetic Theory
+S=−k/integraldisplay
+P(α)lnP(α)dα , (2.3.5)
+wherekis the universal constant, known as Boltzmann’s constant, appearing
+inEq. (1.2.1). As we shall see in the next section, according to kinetic the-
+ory, with a suitable choice of S0the thermodynamic entropy ( 2.3.1) equals the
+information-theoretic entropy ( 2.3.5).
+The mere fact that the entropy Sdeﬁned by ( 2.3.1) depends only on the ther-
+modynamic state has far-reaching consequences. Consider a ﬁxed mass of ﬂuid
+in a vessel with variable volume. The independent thermodynamic variables
+here can be taken as the volume Vand the temperature T, with pressure p,
+internal energy E, and entropy Sall functions of VandT. The work done by
+the ﬂuid pressure pin increasing the ﬂuid volume by a small amount dVis
+pdV , so the heat required to change the temperature by an inﬁnitesimal amount
+dTand the volume by an inﬁnitesimal amount dVis
+dQ=dE+pdV ,
+so according to Eq. (2.3.1), the change in the entropy is given by
+TdS=dE+pdV . (2.3.6)
+In other words
+∂S(V ,T)
+∂T=1
+T∂E(V ,T)
+∂T(2.3.7)
+∂S(V ,T)
+∂V=1
+T∂E(V ,T)
+∂V+p(V ,T)
+T. (2.3.8)
+To squeeze information about pressure and internal energy from these formulas,
+we use the fact that partial derivatives commute. From Eq. (2.3.7) we have
+∂
+∂V/parenleftbigg∂S(V ,T)
+∂T/parenrightbigg
+=1
+T∂2E(V ,T)
+∂T∂V
+while, from Eq. (2.3.8),
+∂
+∂T/parenleftbigg∂S(V ,T)
+∂V/parenrightbigg
+=1
+T∂2E(V ,T)
+∂T∂V−1
+T2∂E(V ,T)
+∂V+∂(p(V ,T)/T)
+∂T.
+Setting these equal gives a relation between the derivatives of Eandp:
+0=−1
+T2∂E(V ,T)
+∂V+∂/parenleftbig
+p(V ,T)/T/parenrightbig
+∂T. (2.3.9)
+This is for a ﬁxed mass. Since E(V ,T)is an extensive variable, it must be
+proportional to this mass but does not otherwise have to depend on volume.In fact, it is frequently a good approximation to suppose that, apart from its
+proportionality to mass, E(V ,T)is independent of volume. This is the case if
+--- PAGE 45 ---
+2.3 Entropy 31
+the ﬂuid consists of inﬁnitesimal particles that interact only in contact in colli-
+sions; since there is nothing with the dimensions of length that can enter in the
+calculation of the energy, E(V ,T)cannot here depend on volume. In this case
+Eq. (2.3.9) yields Charles’ law, that for ﬁxed volume Vthe pressurep(V ,T)is
+proportional to T. This shows again that the absolute temperature Tin the ideal
+gas law ( 1.2.3) is the same up to a constant factor as the temperature Tdeﬁned
+by the efﬁciency (2.2.11) of Carnot cycles.
+Although this result was obtained without having a formula for the entropy,
+for some purposes it is useful actually to know what the entropy is. In a homo-
+geneous medium, the entropy Sof any massMof matter may conveniently be
+written asS=Ms,w h e r esis the entropy per unit mass, a function of temper-
+ature and various densities known as the speciﬁc entropy. Dividing Eq. (2.3.6)
+byM,w eh a v et h e n
+Tds=d(E/ρ)+pd(1/ρ) , (2.3.10)
+where as before E≡E/V is the internal energy density and ρ≡M/V is the
+mass density. We consider an ideal gas, for which T=pμ/Rρ while Eandp
+are related by Eq. (2.1.10): E=p/(γ−1).T h e nEq. (2.3.10) gives
+pμ
+Rρds=1
+γ−1/parenleftbiggdp
+ρ+γpd/parenleftbigg1
+ρ/parenrightbigg/parenrightbigg
+=ργ−1
+γ−1d/parenleftbiggp
+ργ/parenrightbigg
+,
+so
+ds=R/μ
+γ−1ργ
+pd/parenleftbiggp
+ργ/parenrightbigg
+.
+The solution is
+s=R/μ
+γ−1ln/parenleftbiggp
+ργ/parenrightbigg
++constant . (2.3.11)
+We see that the result of Section 2.2 thatp∝ργfor adiabatic processes is just
+the statement that sis constant in these processes, which of course it must be
+since in an adiabatic process the heat input dQvanishes.
+In many stars there are regions in which convection effectively mixes matter
+from various depths. Since heat conduction is usually ineffective in stars, littleheat ﬂows into or out of a bit of matter as it rises or falls, and so it keeps the
+same speciﬁc entropy. These regions therefore have a uniform speciﬁc entropy,
+and therefore a uniform value for the ratio p/ρ
+γ. For instance, this is the case in
+the Sun for distances from the center greater than about 65% of the Sun’s radiusout to a thin surface layer.
+Neutral Matter
+We have been mostly concerned with matter in which in each mass there is a
+non-vanishing conserved quantity, the number of particles. There is a different
+--- PAGE 46 ---
+32 2 Thermodynamics and Kinetic Theory
+context, with no similar conserved numbers, in which thermodynamics yields
+more detailed information about pressure and energy. In the early universe, at
+temperatures above about 1010K, there is so much energy in radiation and
+electron–antielectron pairs that the contribution to the energy of the excess ofmatter over antimatter may be neglected. Here there is no number density on
+which the pressure and energy density
+E≡E/V can signiﬁcantly depend,
+so hereE(V ,T)=VE(T) andp(V ,T)=p(T) ; thus here Eq. (2.3.9) is an
+ordinary differential equation for p(T) :
+0=−E(T)
+T2+d
+dT/parenleftbiggp(T)
+T/parenrightbigg
+or, in other words,
+p/prime(T)=E(T)+p(T)
+T. (2.3.12)
+Thermodynamics alone does not ﬁx any relation between E(T)andp(T) ,b u t
+given such a relation this result gives both as functions of temperature. Forinstance, as an example of the power of thermodynamics, it was known in the
+nineteenth century as a consequence of Maxwell’s theory of electromagnetism
+that the pressure of electromagnetic radiation is one-third of its energy density.
+Settingp=
+E/3i nEq. (2.3.12) gives E/prime(T)=4E(T),s o
+E(T)=3p(T) =aT4, (2.3.13)
+whereais a constant, known as the radiation energy constant. But, as we shall
+see in Section 3.1, it was not possible to understand the value of auntil the
+advent of quantum mechanics in the early twentieth century.
+The Laws of Thermodynamics
+It is common to summarize the content of classical thermodynamics in three
+laws. As already mentioned, the ﬁrst law is just the conservation of energy,
+discussed in the context of heat energy in Section 2.1, and the second, usually
+attributed to Clausius, on which the discussion of thermodynamic efﬁciency inSection 2.2 is based, can be stated as the principle that without doing work it is
+not possible to transfer heat from a cold reservoir to one at higher temperature.We have seen that this leads to the existence of a quantity, the entropy, which
+depends only on the thermodynamic state and satisﬁes Eq. (2.3.1) when
+reversible changes are made in this state. This can instead be taken as the
+second law of thermodynamics.
+There are several formulations of the third law, some given by Walther Nernst
+(1864–1941) in 1906–1912. The most fruitful, it seems, is that it is possible
+to assign a common value to the entropy (conventionally taken as zero) for
+all systems at absolute zero temperature, so that at absolute zero the integral
+--- PAGE 47 ---
+2.4 Kinetic Theory and Statistical Mechanics 33
+inEq. (2.3.1) must converge. This has the consequence, in particular, that the
+speciﬁc heatdQ/dT must vanish for T→0. This seems to contradict the
+results of Section 2.1 for ideal gases, which give a temperature-independent
+speciﬁc heat whether for ﬁxed volume or ﬁxed pressure. The contradiction is
+avoided in practice because no substance remains close to an ideal gas as the
+temperature approaches absolute zero. We will see when we come to quantum
+mechanics that if an otherwise free particle is conﬁned in any ﬁxed volume, then
+it cannot have precisely zero momentum, as required for a classical ideal gas at
+absolute zero temperature. On the other hand, solids can exist at absolute zero
+temperature, and in that limit their speciﬁc heats do approach zero.
+2.4 Kinetic Theory and Statistical Mechanics
+We saw in the previous chapter how by the mid nineteenth century the ideal gaslaw had been established through the work especially of Bernoulli and Clausius.
+But, though derived by considering the motions of individual gas molecules, in
+its conclusions it dealt only with bulk gas properties such as pressure, tem-perature, mass density, and energy density. For many purposes, including the
+calculation of chemical or transport processes, it was necessary to go further
+and work out the detailed probability distribution of the motion of individual
+gas particles. This was done in the kinetic theory of James Clerk Maxwell and
+Ludwig Boltzmann (1844–1906). Kinetic theory was later generalized to the
+formalism known as statistical mechanics, especially by the American theorist
+Josiah Willard Gibbs (1839–1906). As it turned out, these methods went a
+long way toward not only establishing a correspondence with thermodynamics
+but also explaining the principles of thermodynamics on the assumption thatmacroscopic matter is composed of very many particles, and thereby helping to
+establish the reality of atoms.
+The Maxwell–Boltzmann Distribution
+Maxwell in 1860 considered the form of the probability distribution function
+P(v
+x,vy,vz)for thex,y,a n dzcomponents of the velocity of any molecule in a
+gas in equilibrium.3The probability distribution function is deﬁned so that the
+probability that these components are respectively between vxandvx+dvx,
+betweenvyandvy+dvy, and between vzandvz+dvz, is of the form
+P(vx,vy,vz)dvxdvydvz.
+3J. C. Maxwell, Phil. Mag. 19, 19; 20, 21 (1860). This article is included in Brush, The Kinetic Theory of
+Gases – An Anthology of Classic Papers with Historical Commentary , listed in the bibliography.
+--- PAGE 48 ---
+34 2 Thermodynamics and Kinetic Theory
+He assumed (without offering a real justiﬁcation) that the probability that any
+component of velocity of a particle is in a particular range is not correlated with
+the other components of the velocity. Then P(vx,vy,vz)must be proportional
+to a function of vxalone, with a coefﬁcient that depends only on vyandvz,a n d
+likewise forvyandvz,s oP(vx,vy,vz)must take the form of a product:
+P(vx,vy,vz)=f(vx)g(vy)h(vz).
+Rotational symmetry requires further that Pcan depend only on the magnitude
+of the velocity, not on its direction, and hence only on v2
+x+v2
+y+v2
+z. The only
+function ofv2
+x+v2
+y+v2
+zthat takes the form f(vx)g(vy)h(vz)is proportional to
+an exponential:
+P(vx,vy,vz)∝exp/parenleftbig
+−C(v2
+x+v2
+y+v2
+z)/parenrightbig
+.
+The constantCmust be positive in order that Pshould not blow up for large
+velocity, which would make it impossible to set the total probability equal to
+unity, as it must be. Taking Cto be positive, and setting the total probability
+(the integral of Pover all velocities) for each particle equal to one, gives the
+factor of proportionality:
+P(vx,vy,vz)=/parenleftbiggC
+π/parenrightbigg3/2
+exp/parenleftbig
+−C(v2
+x+v2
+y+v2
+z)/parenrightbig
+.
+We can use this to calculate the mean square velocity components:
+v2x=v2y=v2z=1
+2C.
+Clausius had introduced an absolute temperature Tby settingmv2
+⊥=kT,
+wherekis a constant to be determined experimentally and v⊥is the component
+of the velocity in a direction normal to the container wall, which for an isotropic
+velocity distribution can be taken as any direction, so the constant Cmust be
+given byC=m/2kT and the Maxwell distribution takes the form
+P(vx,vy,vz)=/parenleftBigm
+2πkT/parenrightBig3/2
+exp/parenleftbig
+−m(v2
+x+v2
+y+v2
+z)/2kT/parenrightbig
+. (2.4.1)
+As we saw at the end of Section 2.2, the requirement that in an ideal gas mv⊥2=
+kT, which led here to C=m/2kT, also ensures that, up to an arbitrary constant
+factor,Tis the absolute temperature deﬁned by the efﬁciency of Carnot cycles.
+The formula for the probability distribution Pwas derived in 1868 in a more
+convincing way by Boltzmann.4He deﬁned a quantity
+4L. Boltzmann, Sitz. Ber. Akad. Wiss. (Vienna), part II, 66, 875 (1872). A translation into English of this
+article is included in Brush, The Kinetic Theory of Gases – An Anthology of Classic Papers with Historical
+Commentary , listed in the bibliography.
+--- PAGE 49 ---
+2.4 Kinetic Theory and Statistical Mechanics 35
+H≡lnP=/integraldisplay+∞
+−∞dvx/integraldisplay+∞
+−∞dvy/integraldisplay+∞
+−∞dvzP(v)lnP(v),
+and showed that collisions of gas particles always lead to a decrease in Huntil
+a minimum is reached, at which P(v)is the Maxwell–Boltzmann distribution
+function. A generalization of this H-theorem was given in 1901 by Gibbs.5The
+generalization and proof are given below, along with the application to gases.
+The GeneralH-Theorem
+Consider a large system with many degrees of freedom, such as a gas with many
+molecules (but not necessarily a gas). The states of the system are parameterized
+by many variables, which we summarize with a symbol α. (For instance, for a
+monatomic gas αstands for the set of positions x1,x2, etc. and momenta p1,p2,
+etc. of atoms 1, 2, ...For a gas of multi-atom molecules, αwould also include
+the orientations and their rates of change for each molecule.) We denote an
+inﬁnitesimal range of these parameters by dα. (For instance, for a monatomic
+gasdαstands for the product d3x1d3p1d3x2d3p2..., known as the phase space
+volume.) We deﬁne P(α)so that the probability that the parameters of the
+system are in an inﬁnitesimal range dαaroundαisP(α)dα , with Pnormalized
+so that/integraltext
+dαP(α)=1. Deﬁne
+H≡lnP=/integraldisplay
+P(α)dα lnP(α). (2.4.2)
+Gibbs showed that Halways decreases until it reaches a minimum value, at
+which P(α)is proportional to the exponential of a linear combination of con-
+served quantities, such as the total energy.
+Proof: Deﬁne a differential rate /Gamma1(α→β)such that the rate at which a system
+in stateαmakes a transition to a state within a range dβaround stateβis
+/Gamma1(α→β)dβ. The probability P(α)dα can either increase because the system
+in a rangedβof states around βmakes a transition to the range dαof states
+aroundα, or decrease because the system in the range of states dαaroundα
+makes a transition to some other state in a range dβaroundβ,s o
+dP(α)dα
+dt=/integraldisplay
+dβ[P(β)/Gamma1(β →α)dα−P(α)dα/Gamma1(α →β)],
+or, cancelling the differentials dα,
+dP(α)
+dt=/integraldisplay
+dβ[P(β)/Gamma1(β →α)−P(α)/Gamma1(α →β)]. (2.4.3)
+5J. W. Gibbs, Elementary Principles of Statistical Mechanics, Developed with Especial Reference to The
+Rational Foundation of Thermodynamics (Scribner, New York, 1902).
+--- PAGE 50 ---
+36 2 Thermodynamics and Kinetic Theory
+(Note that this makes/integraltext
+dαP(α)time-independent, as it must be. Cancelling dα
+is justiﬁed because phase space volumes such as dαdo not change with time,)
+Now use(d/dt)y lny=(lny+1)(dy/dt), which gives here
+dH
+dt=/integraldisplay/integraldisplay
+dαdβ/parenleftbig
+lnP(α)+1/parenrightbig
+[P(β)/Gamma1(β →α)−P(α)/Gamma1(α →β)].
+Interchangeαandβin the second double integral arising from the second term
+in square brackets:
+dH
+dt=/integraldisplay/integraldisplay
+dαdβ P(β)ln/parenleftbiggP(α)
+P(β)/parenrightbigg
+/Gamma1(β→α). (2.4.4)
+Now use the inequality that yln(x/y) ≤x−yfor any positive numbers x
+andy. (To prove this, note that yln(x/y) −x+yvanishes forx=y, while its
+derivative with respect to xis−(x−y)/x, so it monotonically approaches zero
+from below for x<y and then decreases monotonically for x>y .) From this
+inequality, we have
+dH
+dt≤/integraldisplay/integraldisplay
+dαdβ [P(α)−P(β)]/Gamma1(β→α). (2.4.5)
+Again interchange αandβ, now in the ﬁrst double integral:
+dH
+dt≤/integraldisplay/integraldisplay
+dαdβ P(β)[/Gamma1(α→β)−/Gamma1(β→α)]. (2.4.6)
+In the original proof it was assumed that the laws of physics are invariant under
+reversal of the direction of time’s ﬂow, and therefore /Gamma1(β→α)=/Gamma1(α→β),
+so that Eq. (2.4.6) says thatHdecreases with time, in accord with the
+H-theorem. In studies of the decay of neutral K-mesons in 1964–1970 it was
+found that time-reversal invariance is not exact.6Fortunately, the H-theorem
+survives, because on very general grounds in quantum mechanics it can beshown without using time-reversal invariance that
+7
+/integraldisplay
+dα[/Gamma1(α→β)−/Gamma1(β→α)]=0 . (2.4.7)
+With Eq. (2.4.6), this is enough to require that dH/dt ≤0, as was to be shown.
+Let us pause for a moment to reﬂect how remarkable is this result. The
+decrease ofHwith time indicates a fundamental difference between past
+and future, even though this result would hold even if the underlying micro-
+scopic laws of physics were entirely symmetric under the direction of time’s
+ﬂow, and indeed as we have seen it was ﬁrst derived under the assumption of
+6K. R. Shubert et al. , Phys. Lett. 13, 138 (1964). This had been strongly suggested by an earlier experiment
+of J. H. Christensen, J. W. Cronin, V . L. Fitch, and R. Turlay, Phys. Rev. Lett. 13, 138 (1964).
+7For a very general proof, with references to earlier work by others, see S. Weinberg, The Quantum Theory
+of Fields , V ol. I, pp. 150–151 (Cambridge University Press, Cambridge, UK, 1995, 2005).
+--- PAGE 51 ---
+2.4 Kinetic Theory and Statistical Mechanics 37
+time-reversal invariance. This distinction between past and future is obvious in
+everyday life: A glass tumbler that falls on the ﬂoor will shatter, giving up its
+kinetic energy to heat in the ﬂoor, but glass fragments lying on the ﬂoor will
+not draw energy from the ﬂoor and leap up to reassemble as a tumbler. But
+from where does this distinction come? It is the introduction of the concept
+of probability into physics that creates an asymmetry between past and future.
+We can try rewriting the fundamental equation (2.4.3) for the rate of change of
+probability by replacing twith−t,
+dP(α)
+−dt=/integraldisplay
+dβ[P(β)[−/Gamma1(β →α)]−P(α)[−/Gamma1(α →β)]] ,
+but then we would have to replace the rates /Gamma1with−/Gamma1, which makes no sense
+because these rates have to be positive. It is the condition that /Gamma1≥0 together
+with Eq. (2.4.3) that ﬁxes the direction of time’s ﬂow. We see this also in the
+derivation of Eq. (2.4.5), which follows from Eq. (2.4.4) only if we assume that
+/Gamma1(β→α)is positive.
+Canonical and Grand Canonical Ensembles
+Let’s now return to the H-theorem. The decrease in Hwill stop when Hreaches
+a minimum value, at which it is stationary for any physically possible inﬁnites-
+imal change in P(α). For an arbitrary inﬁnitesimal change δP(α),w eh a v e
+δH=/integraldisplay
+δP(α)dα [lnP(α)+1] .
+Now,δP(α)is not entirely arbitrary but is constrained by the condition that
+variations in Pcannot change either the total probability/integraltext
+P(α)dα =1o r
+the mean value of any conserved quantity such as the total energy E(α) .I n
+order thatδHshould vanish for anyvariation in P(α)that preserves/integraltext
+dαP(α)
+and the mean values of all conserved quantities, it is necessary and sufﬁcientthat ln
+P(α)should be a linear combination of a constant and any conserved
+quantities. For instance, if the total energy E(α) is the only conserved quantity
+(as it is for radiation) then if we denote the coefﬁcient of E(α) in this linear
+combination as −1//Theta1 we have
+P(α)=exp/bracketleftbigg
+C−E(α)
+/Theta1/bracketrightbigg
+,
+with the constant factor eCﬁxed by the requirement that/integraltext
+P(α)dα =1. We
+will show below that, with this probability distribution, the quantity −H has
+the deﬁning property ( 2.3.1) of entropy provided that /Theta1is proportional to the
+absolute temperature T,/Theta1=kT, so the canonical ensemble is usually written
+P(α)=exp/bracketleftbigg
+C−E(α)
+kT/bracketrightbigg
+. (2.4.8)
+--- PAGE 52 ---
+38 2 Thermodynamics and Kinetic Theory
+The value of kexpresses how we convert units of temperature into units of
+energy, and since it is just a matter of our system of units it cannot depend on
+what sort of system is described by this distribution.
+More generally, there may be some other conserved quantities Ni.F o r
+instance, in a gas consisting of molecules of different types, even if these
+molecules are undergoing chemical reactions, under ordinary conditions the
+numbers Niof atoms of type ido not change. In such cases, ln P(α)will in
+general contain a term proportional to each conserved quantity Ni(α), with a
+coefﬁcient that we will denote as μi/kT,w h e r eμi(or sometimes μi/kT)i sa
+quantity known as the chemical potential. The probability density is then
+P(α)=exp/bracketleftbigg
+C−[E(α) −/summationtext
+iμiNi(α)]
+kT/bracketrightbigg
+. (2.4.9)
+A multi-particle system with probabilities distributed in this way is said to
+form a grand canonical ensemble. For instance, in a gas of H 2,O2,a n dH 2O
+molecules there are two chemical potentials, for hydrogen and oxygen atoms,so in equilibrium at a given temperature we can derive one set of ratios among
+the three molecular densities without knowing anything about the values of
+the chemical potentials, but we need to know these potentials to derive all the
+densities.
+Connection with Thermodynamics
+Aside from a constant factor, His the entropy, as deﬁned by Clausius in thermo-
+dynamics. To see this, suppose we slowly add heat dQto our system, preserving
+the equilibrium form ( 2.4.8)o r( 2.4.9) of the distribution
+Pand the values of all
+conserved quantities other than the energy, but shifting the average total energy
+EbyδQ.T h e n
+δH=/integraldisplay
+dαδP(α)[ln(P(α))+1]
+=−1
+kT/integraldisplay
+dαδP(α)E(α) =−1
+kTδE=−δQ
+kT
+which is the deﬁning equation dS=dQ/T of the entropy if (apart from an
+arbitrary constant term) we deﬁne
+S=−kH=−k/integraldisplay
+dαP(α) lnP(α), (2.4.10)
+thus justifying Eq. (2.3.4). The decrease in Himplies the increase in entropy,
+thus justifying one consequence of the second law of thermodynamics. This was
+shocking to some physicists of the nineteenth century, who regarded thermody-
+namics as an independent theory, just as fundamental as Newtonian mechanics.
+--- PAGE 53 ---
+2.4 Kinetic Theory and Statistical Mechanics 39
+Compound Systems
+Equation (2.4.10) makes it easy to justify a fundamental property of the entropy,
+that it is extensive. Suppose a system can be regarded as composed of two parts,
+whose states are described by parameters α1andα2, and that the probabilities in
+these two parts are uncorrelated, so that the probability P(α1,α2)dα 1dα2that
+the system is in a state with parameters in the inﬁnitesimal ranges dα1anddα2
+aroundα1andα2is a product of probabilities for the separate parts:
+P(α1,α2)dα 1dα2=P1(α1)dα 1×P2(α2)dα 2, (2.4.11)
+with/integraldisplay
+dα1P1(α1)=/integraldisplay
+dα2P2(α2)=1.
+Then Eq. (2.4.10) gives
+S=−k/integraldisplay
+dα1dα2P1(α1)P2(α2)/bracketleftbig
+lnP1(α1)+lnP2(α2)/bracketrightbig
+=S1+S2,
+(2.4.12)
+whereS1andS2are the entropies of the two parts of the system:
+S1=−k/integraldisplay
+dα1P1(α1)lnP1(α1),S2=−k/integraldisplay
+dα2P2(α2)lnP2(α2).
+More generally, the difference S−S1−S2is a measure of the degree to which
+probabilities in the two subsystems are correlated, and is known as the entan-
+glement entropy.
+Gases
+In a gasE(α) is the sum of the energies Eaof the individual particles. The prob-
+ability distribution (2.4.9) is then equal to a product of probability distributions
+for the individual particles:
+P(α)=/productdisplay
+ap(Ea,Nia) (2.4.13)
+wherep(Ea,Nia)are the probability distribution functions for the individual
+particle properties:
+p(Ea,Nia)∝exp/parenleftBigg
+−/parenleftBigg
+Ea+/summationdisplay
+iNiaμi/parenrightBigg
+/kT/parenrightBigg
+, (2.4.14)
+in whichNiais the number of atoms of type iin theath molecule. The con-
+stant of proportionality must be chosen to make the individual total probabil-
+ities equal to unity. If all the molecules have the same chemical formula, so
+--- PAGE 54 ---
+40 2 Thermodynamics and Kinetic Theory
+thatNia=Niis the same for all molecules, then we can absorb the factor
+exp(−/summationtext
+iNiμi/kT) into the constant of proportionality, and simply write
+P(α)=/productdisplay
+ap(Ea)wherep(Ea)∝exp(−Ea/kT) . (2.4.15)
+In particular, the distribution of the momentum paarises from the kinetic energy
+term p2
+a/2mainEa,a n dEq. (2.4.15) yields the Maxwell distribution ( 2.4.1)b u t ,
+as we have now seen, derived by Boltzmann in a more convincing way.
+Equipartition
+One of the most useful results of statistical mechanics is the equipartition of
+energy in cases where the total energy E(α) can be written as the sum of
+individual energies proportional to squares of independent quantities ξn:
+E(ξ 1,ξ2,...)=/summationdisplay
+ncnξ2
+n. (2.4.16)
+For instance, for a gas of Nmonatomic atoms of mass m, the index nruns
+over 3Nvalues; theξnare the three components of each atom’s momentum
+andcn=1/2m. Molecules that are not monatomic can rotate as well as move.
+Herenruns over 6N values, with the ξnincluding the three components of each
+atom’s momentum and the three components of its angular momentum. For an
+angular momentum J, the rotational energy is
+J2
+1
+2I1+J2
+2
+2I2+J2
+3
+2I3,
+where theIicharacterize the moments of inertia of the molecule. Here the
+extraξnvariables are the components of angular momentum, with the cnthe
+corresponding values of 1/2I . But for a gas of diatomic molecules there is
+essentially no energy in rotations around the line separating the atoms, so here
+theξninclude only the components of each molecule’s angular momentum J⊥
+in the two directions normal to this line, and nruns over 5N values. For an
+ensemble of simple harmonic oscillators the ξninclude both the displacement
+from rest of each oscillator and the displacement’s rate of change. As we shallsee in Section 3.1, the energy of a radiation ﬁeld can also be expressed as
+inEq. (2.4.16), with the ξ
+nthe Fourier transforms of each component of the
+electric and magnetic ﬁelds.
+Whatever the nature of the ξn, because of the factorization of the expo-
+nential the probability of ﬁnding any one ξnin a rangedξntakes the form
+Anexp(−En/kT)dξn, withEn=cnξ2
+nand with proportionality constant An
+ﬁxed by the condition that the total probability for each ξnis unity, so that
+An/integraltext
+exp(−En/kT)dξn=1. Thus the mean value of Enis
+--- PAGE 55 ---
+2.4 Kinetic Theory and Statistical Mechanics 41
+En≡/integraltext∞
+−∞dξncnξ2
+nexp(−cnξ2
+n/kT)/integraltext∞
+−∞dξnexp(−cnξ2n/kT)=/integraltext∞
+0d√EnEnexp(−En/kT)/integraltext∞
+0d√Enexp(−En/kT)
+=/integraltext∞
+0dEnE1/2
+nexp(−En/kT)
+/integraltext∞
+0dEnE−1/2
+n exp(−En/kT)=(kT)3/2/Gamma1(3/2)
+(kT)1/2/Gamma1(1/2)=kT/2 . (2.4.17)
+It is a fortunate aspect of kinetic theory that these mean energies do not depend
+on the coefﬁcients cn, or indeed on much else about the physical system aside
+from the distribution of the total energy among individual quadratic degrees offreedom.
+In any gas the kinetic energy of the nth particle is m
+np2
+n/2. The average of
+each of the three terms in this kinetic energy is kT/2, so the average kinetic
+energy of each particle is 3kT/ 2.Equation (1.1.4) givesmv2/3=kT,w h e r e
+thiskis the constant kin the gas constant (1.2.4), so we see that this kis the
+same as the constant kin the general probability distribution (2.4.8)o r( 2.4.9)
+of statistical mechanics.
+For a generic polyatomic molecule the mean rotational energy associated
+with the three degrees of freedom Jiis 3kT/ 2, but, as already mentioned,
+for a diatomic molecule meaningful rotation is only possible around the two
+axes perpendicular to the linear molecule, so the mean rotational energy is only
+2kT/ 2. That is, if we write the mean translational plus rotational energy per
+molecule as 3kT/ 2×(1+f),a si nSection 2.1,t h e nf =0 for monatomic
+molecules,f=2/3 for diatomic molecules, while f=1 for other molecules.
+Equation (2.1.9) gives the speciﬁc heat ratio as γ=1+2/3(1+f),s oγ =5/3
+for monatomic gases, γ=7/5 for diatomic molecules (which explains why
+experiments on gases like O 2and H 2gave results near γ=1.4 in Clausius’
+time), andγ=4/3 for other molecules.
+Of course, molecules can also vibrate as well as rotate and move, and energy
+can also go into exciting the clouds of electrons that hold them together. Forreasons that only became clear with the advent of quantum mechanics, these
+degrees of freedom can only be excited at temperatures much higher than iscommon in our environment.
+Entropy as Disorder
+The entropy can be regarded as a measure of the disorder of a system. Tosee this, it is easiest to approximate the parameters of a system as taking a
+discrete set of values α
+νinstead of a continuum of values α. We can connect
+the continuum and discrete descriptions by dividing the continuum into tinyrangesα
+ν≤α≤αν+δα(for simplicity treating αhere as if it were one-
+dimensional) and approximating P(α)as a constant Pν/δα in each interval, so
+that the probability that αis in this interval is
+--- PAGE 56 ---
+42 2 Thermodynamics and Kinetic Theory
+/integraldisplayαν+δα
+ανdαP(α)=δα/parenleftbiggPν
+δα/parenrightbigg
+=Pν. (2.4.18)
+Then the entropy (2.4.10)i s
+S=−k/summationdisplay
+νδα/parenleftbiggPν
+δα/parenrightbigg
+ln/parenleftbiggPν
+δα/parenrightbigg
+=/Sigma1−k/summationdisplay
+νPνlnPν (2.4.19)
+where/Sigma1is a constant,
+/Sigma1=klnδα. (2.4.20)
+Since there was an arbitrary constant in Eq. (2.4.10), we can absorb /Sigma1into the
+deﬁnition of that constant, and deﬁne the entropy simply as
+S=−k/summationdisplay
+νPνlnPν. (2.4.21)
+Since 0 ≤Pν≤1, each lnPνis negative and Sis positive. The entropy reaches
+its minimum value, zero, in the completely ordered state in which just a single
+Pνequals one and all others vanish. In disordered systems with non-vanishing
+probabilities for different states Sis positive-deﬁnite. In the completely disor-
+dered state with all Pνequal, the entropy reaches its maximum possible value,
+equal toktimes the logarithm of the number 1/P νof intervals.
+2.5 Transport Phenomena
+So far, we have been concerned with systems in which thermodynamic variables
+such as temperature, pressure, density, etc. are constant in time and space, or
+vary very slowly. But many of the most interesting physical phenomena are
+associated with the transport of such quantities over time from one place to
+another in inhomogeneous media. As we shall see in the following section, the
+study of such transport phenomena gave physicists their ﬁrst reliable values for
+the masses of individual atoms and molecules.
+Conservation Laws
+In many cases we have to deal with conserved quantities, such as the number of
+molecules or the total electric charge. By a quantity being conserved is meant
+that the net rate of increase of the quantity (negative if a decrease) in any volume
+plus the net rate at which this quantity ﬂows out of the volume (negative if
+ﬂowing in) vanishes. The current Jof this quantity is deﬁned so that the net rate
+of outward ﬂow is/integraltext
+AdA·JwhereAis the surface surrounding the volume V,
+anddAis an element of area of this surface, taken as a vector pointing outward
+--- PAGE 57 ---
+2.5 Transport Phenomena 43
+from the surface. Hence if this quantity has a density Nand a current J,t h e n
+the conservation condition is
+∂
+∂t/integraldisplay
+Vd3xN+/integraldisplay
+AdA·J=0 . (2.5.1)
+Using Gauss’s theorem, we can write the second term in Eq. (2.5.1) as an
+integral over the volume of the divergence of the current, so Eq. (2.5.1) is
+equivalent to
+/integraldisplay
+Vd3x/bracketleftbigg∂
+∂tN+∇·J/bracketrightbigg
+=0,
+and, since this must be true for any volume, the integrand must vanish:
+∂
+∂tN+∇·J=0 . (2.5.2)
+For instance, if matter is carried from one place to another only by a bulk motion
+with velocity v, then the mass density ρsatisﬁes an equation of the form ( 2.5.2),
+with the mass current given by ρv:
+∂
+∂tρ+∇·(ρv)=0 . (2.5.3)
+Momentum Flow
+Such conservation laws are ubiquitous in physics. We will be concerned nowwith a particular set of conserved quantities in ﬂuids, the components of mo-
+mentum. The density of the ith component (with i=1, 2, 3) of momentum is
+ρv
+i,w h e r eρ is the mass density and viis theith component of the bulk velocity.
+Their conservation provides the fundamental dynamical equation for ﬂuids. The
+conservation equation here takes the general form
+∂
+∂t(ρvi)+/summationdisplay
+j∂
+∂xjTji=0 , (2.5.4)
+whereTjiis thejth component of the current of the ith component of momen-
+tum, and the sums here and below run over the directions 1, 2, 3.8
+By analogy with the case of the mass current ρv, we might think that the jth
+componentTjiof the current of the ith component of momentum is ρvi×vj.
+This would be the case if momentum like mass were carried from place to placeonly by the bulk motion of the ﬂuid. But of course ﬂuid elements exert forceson one another, both pressure and viscous forces, with a consequent transfer of
+8Tjiis the purely spatial part of a larger array, a tensor with time as well as space components that serves in
+the general theory of relativity as the source of the gravitational ﬁeld.
+--- PAGE 58 ---
+44 2 Thermodynamics and Kinetic Theory
+momentum. So, to keep an open mind, let us write the jth component of the
+current of the ith component of momentum as
+Tji=ρvjvi+τji, (2.5.5)
+withτjia correction term arising from forces acting within the ﬂuid. Accord-
+ing to Eq. (2.5.4) ,t h ei -component of the internal force per unit volume is
+−(∂/∂xj)τji.
+So what isτji? An answer was ﬁrst given in 1822 by Claude-Louis Navier
+(1785–1836), of the Corps des Ponts et Chaussées, and later in his own formu-
+lation by Sir George Stokes (1819–1903). Rather than trying to reproduce their
+reasoning, we give a treatment below that has a more modern ﬂavor, relying
+largely on principles of invariance.
+First, we can learn a little about the momentum current Tjkby imposing
+the condition that angular momentum should satisfy a conservation condition.The density of the ith component of angular momentum is ρ(x×v)
+i,s of o r
+instance the rate of change of its i=3 component is
+∂
+∂t/parenleftbig
+ρ(x×v)3/parenrightbig
+=∂
+∂t/parenleftbig
+ρ(x 1v2−x2v1)/parenrightbig
+=−x1/summationdisplay
+j∂Tj2
+∂xj+x2/summationdisplay
+j∂Tj1
+∂xj
+=−/summationdisplay
+j∂
+∂xj/parenleftbig
+x1Tj2−x2Tj1/parenrightbig
++T12−T21.
+In order for this to take the form of a conservation law we must have T12=T21,
+and, since there is nothing special about the 1- and 2- directions, Tjimust be
+entirely symmetric,
+Tij=Tji, (2.5.6)
+and then of course the same is also true of the term τjiinEq. (2.5.5):
+τij=τji. (2.5.7)
+Next, we assume that there are no preferred directions in the environment of
+the ﬂuid, so that τjiis a spatial tensor – that is, it transforms under rotations
+in such a way that/summationtext
+ijaiajτjiis invariant under rotations for any vector a,
+such as v. In the absence of external ﬁelds, the tensor τjimust be constructed
+from rotationally invariant quantities like ρandTand vectors like v, together
+with their space and time derivatives, but no other vectors that would reﬂect apreferred direction in the environment.
+One obvious such tensor is δ
+jitimes any function fof rotationally invariant
+quantities, where δjiis the diagonal matrix with all ones on the main diagonal.
+Here/summationtext
+ijaiajδjifis the rotational invariant a2f. We can separate a term of
+this form inτjiby deﬁning a quantity
+--- PAGE 59 ---
+2.5 Transport Phenomena 45
+p≡1
+3/summationdisplay
+iτii, (2.5.8)
+and writingτjias
+τji=pδji+/Delta1τji, (2.5.9)
+where/Delta1τjiis both symmetric and traceless:
+/Delta1τij=/Delta1τji,/summationdisplay
+i/Delta1τii=0 . (2.5.10)
+The termpδjiinTjigives a force per unit volume −∇pinEq. (2.5.4),s op
+can be identiﬁed as the ﬂuid’s pressure. Of course, there is an inﬁnite number of
+ways of constructing the symmetric traceless tensor /Delta1τjifrom the velocity and
+rotational invariants and their derivatives. One simple example is [v ivj+vjvi−
+2δijv2/3]f ,w h e r efis any function of the rotational invariants. Fortunately,
+we can eliminate many of these possibilities (including this one) by using the
+principle of Galilean relativity.
+Galilean Relativity
+The principle of Galilean relativity9requires that the laws governing ﬂuids
+should be the same for an observer Owho uses space coordinates xand for
+an observer O/primemoving at any constant velocity −uwith respect to O,a n dw h o
+therefore uses coordinates related to those of Oby
+x/prime=x+ut. (2.5.11)
+Aside from this change of coordinates, the moving observer sees a mass density
+ρ/primethat is the same as ρ:
+ρ/prime(x/prime,t)=ρ(x,t). (2.5.12)
+But, for the observer O/prime, his own velocity −uis subtracted from the velocity
+seen by observer O:
+v/prime(x/prime,t)=v(x,t)+u. (2.5.13)
+To check whether the equation (2.5.3) of mass conservation is left invariant by
+Galilean transformations, take the partial derivative of Eq. (2.5.12) with respect
+to time, holding x(but not x/prime!) ﬁxed:
+∂ρ/prime(x/prime,t)
+∂t+/summationdisplay
+i∂ρ/prime(x/prime,t)
+∂x/prime
+iui=∂ρ(x,t)
+∂t.
+9In the twentieth century this came to be called Galilean relativity to distinguish it from the Einstein special
+principle of relativity. Both principles state that the laws of nature are unaffected by the uniform motion ofan observer; as we will see in Chapter 4 , it is only the details of the transformation to a moving frame of
+reference that distinguishes Einsteinian from Galilean relativity.
