@@ -132,8 +132,8 @@ Esta tabla es la fuente de verdad del estado de avance del módulo. Debe actuali
 | Clase | Docente | Fecha | Transcripción | PDF Diapositivas | Estado | Última actualización |
 |---|---|---|---|---|---|---|
 | Clase 01 | Pablo Solano | 03 jul 2026 | ✅ | ✅ | ✅ Completo | 18 jul 2026 |
-| Clase 02 | Paulraj Manidurai | 10 jul 2026 | ✅ | ✅ | ✅ Completo | 22 jul 2026 |
-| Clase 03 | Paulraj Manidurai | 17 jul 2026 | ✅ | ✅ (2 PDFs) | ✅ Completo | 22 jul 2026 |
+| Clase 02 | Paulraj Manidurai | 10 jul 2026 | ✅ | ✅ | ✅ Completo | 23 jul 2026 |
+| Clase 03 | Paulraj Manidurai | 17 jul 2026 | ✅ | ✅ (2 PDFs) | ✅ Completo | 23 jul 2026 |
 
 **Claves de estado:**
 - `✅ Completo` — Todas las fuentes disponibles fueron trianguladas. Documento final.
