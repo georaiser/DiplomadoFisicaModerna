@@ -1,0 +1,376 @@
+%%html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTOP Modelo Avanzado - Dinámica de Red y Escape</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        body {
+            background-color: #0b0c10;
+            color: #c5c6c7;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 22px;
+            color: #66fcf1;
+            text-shadow: 0 0 10px rgba(102,252,241,0.3);
+            margin-bottom: 2px;
+            text-align: center;
+        }
+        .subtitle {
+            font-size: 11px;
+            color: #45f3ff;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        .controls-panel {
+            background-color: #0b0c10;
+            border: 1px solid #45f3ff;
+            box-shadow: 0 0 15px rgba(69,243,255,0.1);
+            border-radius: 6px;
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .control-group {
+            flex: 1;
+            min-width: 220px;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-size: 11px;
+            color: #66fcf1;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+        input[type="range"] {
+            -webkit-appearance: none;
+            background: #0b0c10;
+            height: 6px;
+            border-radius: 3px;
+            outline: none;
+            border: 1px solid #45f3ff;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 14px;
+            height: 14px;
+            border-radius: 0px;
+            background: #45f3ff;
+            cursor: pointer;
+            box-shadow: 0 0 8px #45f3ff;
+        }
+        .dashboard {
+            display: flex;
+            width: 93%;
+            max-width: 1240px;
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+        .canvas-container {
+            flex: 1;
+            background-color: #0b0c10;
+            border: 1px solid #1f2833;
+            border-radius: 4px;
+            height: 420px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .canvas-title {
+            position: absolute;
+            top: 12px;
+            font-size: 11px;
+            color: #66fcf1;
+            letter-spacing: 1px;
+            background: #0b0c10;
+            padding: 0 8px;
+            z-index: 10;
+        }
+        .console-box {
+            width: 90%;
+            max-width: 1200px;
+            background-color: #0b0c10;
+            border: 1px solid #45f3ff;
+            font-size: 12px;
+            padding: 15px;
+            line-height: 1.5;
+            color: #1afc1a;
+            box-shadow: inset 0 0 10px rgba(26,252,26,0.1);
+        }
+        .console-line {
+            display: flex;
+            justify-content: space-between;
+            padding: 3px 0;
+        }
+        .phase-banner {
+            padding: 4px 10px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 3px;
+            flex: 1;
+        }
+        .phase-on { background-color: rgba(0, 255, 204, 0.05); color: #00ffcc; border: 1px solid #00ffcc; }
+        .phase-off { background-color: rgba(255, 0, 51, 0.05); color: #ff0033; border: 1px solid #ff0033; }
+    </style>
+</head>
+<body>
+
+    <h1>SISTEMA PTOP DINÁMICO: DOS FASES DE ACTIVACIÓN EN VACÍO</h1>
+    <div class="subtitle">LABORATORIO VIRTUAL DE ANÁLISIS DE FRONTERA DE ENERGÍA</div>
+
+    <div class="controls-panel">
+        <div class="control-group">
+            <label id="lbl_lambda">LONGITUD DE ONDA (λ): 181 nm</label>
+            <input type="range" id="slider_lambda" min="150" max="1500" value="181">
+        </div>
+        <div class="control-group">
+            <label id="lbl_intensidad">INTENSIDAD LUMÍNICA (I₀): 48 W/m²</label>
+            <input type="range" id="slider_intensidad" min="0" max="1000" value="48">
+        </div>
+        <div class="control-group">
+            <label id="lbl_voltaje">POTENCIAL DE ATRACCIÓN (Vₐ): 0 V</label>
+            <input type="range" id="slider_voltaje" min="-5" max="50" value="0">
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <div class="canvas-container" id="threeContainer">
+            <div class="canvas-title">// DINÁMICA CUÁNTICA EN RED CRISTALINA (3D)</div>
+        </div>
+        <div class="canvas-container">
+            <div class="canvas-title">// ANÁLISIS DE CONDUCCIÓN INTERNA Y ESCAPE (GAUGE)</div>
+            <canvas id="gaugeCanvas" width="340" height="280"></canvas>
+        </div>
+    </div>
+
+    <div class="console-box" id="consoleOutput"></div>
+
+    <script>
+        const container = document.getElementById('threeContainer');
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x050608);
+        
+        const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 100);
+        camera.position.set(0, 2.5, 5);
+        camera.lookAt(0, 0, 0);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        container.appendChild(renderer.domElement);
+
+        const topLight = new THREE.DirectionalLight(0x66fcf1, 1.5);
+        topLight.position.set(0, 5, 2);
+        scene.add(topLight);
+        scene.add(new THREE.AmbientLight(0x222222));
+
+        const redGroup = new THREE.Group();
+        const atomGeo = new THREE.SphereGeometry(0.06, 16, 16);
+        const atomMat = new THREE.MeshStandardMaterial({ color: 0x4f5d73, metalness: 0.8, roughness: 0.2 });
+        
+        const filas = 4, columnas = 4, capas = 3;
+        const nodosAtomos = [];
+        for(let x=0; x<filas; x++) {
+            for(let y=0; y<columnas; y++) {
+                for(let z=0; z<capas; z++) {
+                    const atomo = new THREE.Mesh(atomGeo, atomMat);
+                    atomo.position.set(x*0.4 - 1.6, y*0.4 - 0.6, z*0.4 - 0.4);
+                    redGroup.add(atomo);
+                    nodosAtomos.push(atomo.position.clone());
+                }
+            }
+        }
+        scene.add(redGroup);
+
+        const anodoGeo = new THREE.BoxGeometry(0.1, 1.8, 1.4);
+        const anodoMat = new THREE.MeshStandardMaterial({ color: 0x1f2833, transparent: true, opacity: 0.7 });
+        const anodo = new THREE.Mesh(anodoGeo, anodoMat);
+        anodo.position.set(1.8, 0, 0);
+        scene.add(anodo);
+
+        const eInternosCount = 40;
+        const geoInternos = new THREE.BufferGeometry();
+        const posInternos = new Float32Array(eInternosCount * 3);
+        const velInternos = [];
+        for(let i=0; i<eInternosCount; i++) {
+            const nodoAleatorio = nodosAtomos[Math.floor(Math.random() * nodosAtomos.length)];
+            posInternos[i*3] = nodoAleatorio.x;
+            posInternos[i*3+1] = nodoAleatorio.y;
+            posInternos[i*3+2] = nodoAleatorio.z;
+            velInternos.push({ x: (Math.random()-0.5)*0.03, y: (Math.random()-0.5)*0.03, z: (Math.random()-0.5)*0.03 });
+        }
+        geoInternos.setAttribute('position', new THREE.BufferAttribute(posInternos, 3));
+        const matInternos = new THREE.PointsMaterial({ color: 0xffea00, size: 0.06 });
+        const partInternas = new THREE.Points(geoInternos, matInternos);
+        scene.add(partInternas);
+
+        const eEyectadosCount = 50;
+        const geoEyectados = new THREE.BufferGeometry();
+        const posEyectados = new Float32Array(eEyectadosCount * 3);
+        for(let i=0; i<eEyectadosCount*3; i++) { posEyectados[i] = 999; }
+        geoEyectados.setAttribute('position', new THREE.BufferAttribute(posEyectados, 3));
+        const matEyectados = new THREE.PointsMaterial({ color: 0x00fff2, size: 0.08 });
+        const partEyectadas = new THREE.Points(geoEyectados, matEyectados);
+        scene.add(partEyectadas);
+
+        const s_lambda = document.getElementById('slider_lambda');
+        const s_intensidad = document.getElementById('slider_intensidad');
+        const s_voltaje = document.getElementById('slider_voltaje');
+        const gaugeCanvas = document.getElementById('gaugeCanvas');
+        const ctxGauge = gaugeCanvas.getContext('2d');
+
+        function actualizarSimulacion() {
+            const lambda = parseFloat(s_lambda.value);
+            const I0 = parseFloat(s_intensidad.value);
+            const Va = parseFloat(s_voltaje.value);
+
+            document.getElementById('lbl_lambda').innerText = `LONGITUD DE ONDA (λ): ${lambda} nm`;
+            document.getElementById('lbl_intensidad').innerText = `INTENSIDAD LUMÍNICA (I₀): ${I0} W/m²`;
+            document.getElementById('lbl_voltaje').innerText = `POTENCIAL DE ATRACCIÓN (Vₐ): ${Va} V`;
+
+            const c = 299792458;
+            const h_ev = 4.135667e-15;
+            const Fi = 4 / Math.PI;
+
+            const energiaFoton = (h_ev * c) / (lambda * 1e-9);
+            const Bandgap = 1.12; 
+            const W_silicio = 4.63;
+
+            const f1_interna_activa = energiaFoton > Bandgap;
+            const f2_escape_activo = energiaFoton > W_silicio;
+
+            const posIntArr = partInternas.geometry.attributes.position.array;
+            for(let i=0; i<eInternosCount; i++) {
+                if(f1_interna_activa && I0 > 0) {
+                    posIntArr[i*3] += velInternos[i].x;
+                    posIntArr[i*3+1] += velInternos[i].y;
+                    posIntArr[i*3+2] += velInternos[i].z;
+
+                    if(posIntArr[i*3] < -1.8 || posIntArr[i*3] > -0.2) velInternos[i].x *= -1;
+                    if(posIntArr[i*3+1] < -0.8 || posIntArr[i*3+1] > 0.8) velInternos[i].y *= -1;
+                    if(posIntArr[i*3+2] < -0.6 || posIntArr[i*3+2] > 0.6) velInternos[i].z *= -1;
+                } else {
+                    const nodo = nodosAtomos[i % nodosAtomos.length];
+                    posIntArr[i*3] = nodo.x;
+                    posIntArr[i*3+1] = nodo.y;
+                    posIntArr[i*3+2] = nodo.z;
+                }
+            }
+            partInternas.geometry.attributes.position.needsUpdate = true;
+
+            const posEyeArr = partEyectadas.geometry.attributes.position.array;
+            for(let i=0; i<eEyectadosCount; i++) {
+                if(f2_escape_activo && I0 > 0) {
+                    if(posEyeArr[i*3] > 1.8 || posEyeArr[i*3] === 999 || posEyeArr[i*3] < -0.2) {
+                        posEyeArr[i*3] = -0.2; 
+                        posEyeArr[i*3+1] = (Math.random() - 0.5) * 1.2;
+                        posEyeArr[i*3+2] = (Math.random() - 0.5) * 1.0;
+                    } else {
+                        const aceleracionX = (Va > 0) ? (Va * 0.0004) : (Va * 0.002);
+                        const vBase = 0.02 + (energiaFoton - W_silicio) * 0.01; 
+                        posEyeArr[i*3] += vBase + aceleracionX; 
+                    }
+                } else {
+                    posEyeArr[i*3] = 999;
+                }
+            }
+            partEyectadas.geometry.attributes.position.needsUpdate = true;
+
+            if (f2_escape_activo && Va > 0) {
+                anodo.material.color.setHex(0x00fff2);
+            } else if(f2_escape_activo && Va <= 0) {
+                anodo.material.color.setHex(0xff0033);
+            } else {
+                anodo.material.color.setHex(0x1f2833);
+            }
+
+            let EficienciaCuantica = 0;
+            if(f2_escape_activo) {
+                const factorCapturaVoltaje = Va > 0 ? Math.min(1.0 + (Va / 50), 1.4) : Math.max(0, 1.0 + (Va / 5));
+                EficienciaCuantica = ((energiaFoton / W_silicio) * 16.2 * Fi) * factorCapturaVoltaje;
+                EficienciaCuantica = Math.min(EficienciaCuantica, 65.0);
+            }
+            const CorrienteFinal = f2_escape_activo ? (EficienciaCuantica / 100.0) * I0 * 0.378 : 0.0;
+
+            ctxGauge.clearRect(0, 0, gaugeCanvas.width, gaugeCanvas.height);
+            
+            ctxGauge.beginPath();
+            ctxGauge.arc(170, 140, 95, Math.PI, 0, false);
+            ctxGauge.lineWidth = 6;
+            ctxGauge.strokeStyle = f1_interna_activa ? '#ffea00' : '#222';
+            ctxGauge.stroke();
+
+            ctxGauge.beginPath();
+            ctxGauge.arc(170, 140, 80, Math.PI, 0, false);
+            ctxGauge.lineWidth = 14;
+            ctxGauge.strokeStyle = '#111';
+            ctxGauge.stroke();
+
+            if (EficienciaCuantica > 0) {
+                ctxGauge.beginPath();
+                const angEf = Math.PI + (Math.PI * (EficienciaCuantica / 100));
+                ctxGauge.arc(170, 140, 80, Math.PI, angEf, false);
+                ctxGauge.lineWidth = 14;
+                ctxGauge.strokeStyle = '#00fff2';
+                ctxGauge.stroke();
+            }
+
+            const angFinal = Math.PI + (Math.PI * (EficienciaCuantica / 100));
+            ctxGauge.beginPath();
+            ctxGauge.moveTo(170, 140);
+            ctxGauge.lineTo(170 + 75 * Math.cos(angFinal), 140 + 75 * Math.sin(angFinal));
+            ctxGauge.lineWidth = 2;
+            ctxGauge.strokeStyle = '#fff';
+            ctxGauge.stroke();
+
+            ctxGauge.fillStyle = '#00fff2';
+            ctxGauge.font = 'bold 24px monospace';
+            ctxGauge.textAlign = 'center';
+            ctxGauge.fillText(`${EficienciaCuantica.toFixed(1)}%`, 170, 185);
+            ctxGauge.fillStyle = '#66fcf1';
+            ctxGauge.font = '10px monospace';
+            ctxGauge.fillText("RENDIMIENTO DE EXTRACCIÓN TOTAL", 170, 210);
+
+            document.getElementById('consoleOutput').innerHTML = `
+                <div class="console-line"><span style="color:#66fcf1; font-weight:bold;">SISTEMA AVANZADO PTOP | OPERADOR DE FASE Fi: ${Fi.toFixed(5)}</span></div>
+                <div class="console-line"><span>Energía de Entrada del Fotón: ${energiaFoton.toFixed(4)} eV</span><span>Frecuencia Óptica: ${((c/(lambda*1e-9))/1e12).toFixed(1)} THz</span></div>
+                <div class="console-line"><span>Barrera Interna (Bandgap Si): ${Bandgap.toFixed(2)} eV</span><span>Barrera Externa (Función Trabajo): ${W_silicio.toFixed(2)} eV</span></div>
+                <div class="console-line"><span>Campo Eléctrico en Brecha de Vacío: ${(Va / 0.02).toFixed(0)} V/m</span><span>Corriente Colectada en Ánodo: ${CorrienteFinal.toFixed(3)} µA</span></div>
+                <br>
+                <div style="display:flex; gap:10px; justify-content:space-between;">
+                    <div class="phase-banner ${f1_interna_activa ? 'phase-on' : 'phase-off'}">FASE 1: CONDUCCIÓN INTERNA (A SALTO HUECO) -> ${f1_interna_activa ? 'ACTIVA' : 'BLOQUEADA'}</div>
+                    <div class="phase-banner ${f2_escape_activo ? 'phase-on' : 'phase-off'}">FASE 2: ESCAPE EXTERNALIZADO AL VACÍO -> ${f2_escape_activo ? 'ACTIVA' : 'BLOQUEADA'}</div>
+                </div>
+            `;
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            redGroup.rotation.y = Math.sin(Date.now() * 0.0005) * 0.15;
+            actualizarSimulacion();
+            renderer.render(scene, camera);
+        }
+
+        s_lambda.addEventListener('input', actualizarSimulacion);
+        s_intensidad.addEventListener('input', actualizarSimulacion);
+        s_voltaje.addEventListener('input', actualizarSimulacion);
+
+        actualizarSimulacion();
+        animate();
+    </script>
+</body>
+</html>

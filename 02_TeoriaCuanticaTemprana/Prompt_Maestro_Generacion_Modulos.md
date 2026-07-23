@@ -87,7 +87,6 @@ Todos los archivos se crean y guardan en el subdirectorio `Summaries` del direct
 - `Formulario_ModuloX.md`: Documento estrictamente matemático. Lista todas las ecuaciones importantes del módulo agrupadas por tema, con descripción breve de cada variable y unidades SI.
 
 ### 3. Documentos Finales / Evaluativos
-- `Paper_ModuloX.md`: Artículo de revisión académica con estructura formal (Abstract, Introducción, Desarrollo, Conclusiones, Referencias). Mínimo 15 referencias.
 - `Monografia_Final_ModuloX.md`: Trabajo final de 5 a 10 páginas con introducción, desarrollo lógico, deducción matemática completa y conclusiones.
 
 ---
@@ -133,8 +132,8 @@ Esta tabla es la fuente de verdad del estado de avance del módulo. Debe actuali
 | Clase | Docente | Fecha | Transcripción | PDF Diapositivas | Estado | Última actualización |
 |---|---|---|---|---|---|---|
 | Clase 01 | Pablo Solano | 03 jul 2026 | ✅ | ✅ | ✅ Completo | 18 jul 2026 |
-| Clase 02 | Paulraj Manidurai | 10 jul 2026 | ✅ | ❌ Faltante | ⚠ Parcial | 18 jul 2026 |
-| Clase 03 | Paulraj Manidurai | 17 jul 2026 | ✅ | ❌ Faltante | ⚠ Parcial | 18 jul 2026 |
+| Clase 02 | Paulraj Manidurai | 10 jul 2026 | ✅ | ✅ | ✅ Completo | 22 jul 2026 |
+| Clase 03 | Paulraj Manidurai | 17 jul 2026 | ✅ | ✅ (2 PDFs) | ✅ Completo | 22 jul 2026 |
 
 **Claves de estado:**
 - `✅ Completo` — Todas las fuentes disponibles fueron trianguladas. Documento final.
