@@ -413,8 +413,10 @@
   <h2 class="section-title fi">Espectro del Cuerpo Negro <span class="chip chip-cyan" style="vertical-align:middle;font-size:0.65rem">&#128337; 0:20 – 1:20</span></h2>
   <p class="section-sub fi fi2">
     Un cuerpo negro absorbe toda la radiaci&oacute;n incidente y emite un espectro continuo que depende
-    &uacute;nicamente de su temperatura. Arrastra el control para ver c&oacute;mo cambia la curva, el m&aacute;ximo
-    de emisi&oacute;n y la clasificaci&oacute;n estelar.
+    &uacute;nicamente de su temperatura. Arrastra el control para ver c&oacute;mo cambia la curva:
+    el pico se desplaza seg&uacute;n la <strong style="color:var(--green)">Ley de Wien</strong>
+    y la <strong style="color:var(--cyan)">altura de la curva crece como \(T^5\)</strong>
+    (escala absoluta referenciada al Sol, 5&thinsp;778&nbsp;K).
   </p>
 
   <div class="spectrum-grid">
@@ -1096,7 +1098,7 @@ function drawSpectrum() {
 
   clearCanvas(specX, SW, SH);
   drawGrid(specX, SW, SH, SP);
-  drawAxes(specX, SW, SH, SP, 'Longitud de onda λ (nm)', 'Intensidad (u. rel.)');
+  drawAxes(specX, SW, SH, SP, 'Longitud de onda λ (nm)', 'u(λ,T)');
 
   const lMin = 100e-9, lMax = 3000e-9, N = 800;
   const lams = Array.from({ length: N }, (_, i) => lMin + (lMax - lMin) * i / (N - 1));
@@ -1106,9 +1108,35 @@ function drawSpectrum() {
   if (!peak) return;
 
   const xs = l => SP.l + (l - lMin) / (lMax - lMin) * (SW - SP.l - SP.r);
-  // Escala: Planck al 100%, R-J/Wien clampeados al mismo eje
-  const yScale = peak * 2.5;
+  // Escala absoluta fija: referenciada al pico @ T_max = 12 000 K
+  // La altura de la curva es proporcional a la intensidad real (pico ∝ T^5).
+  const PEAK_MAX = planckL(2.898e-3 / 10000, 10000); // pico @ 10 000 K
+  const PEAK_SOL = planckL(2.898e-3 / 5778,  5778);  // pico solar (anotación)
+  const yScale   = PEAK_MAX * 1.1;                    // 10 000 K llena ~91 % del canvas
   const ys = v => SH - SP.b - Math.min(Math.max(v, 0), yScale) / yScale * (SH - SP.t - SP.b);
+
+  /* ── Marcas del eje Y con valores absolutos ── */
+  {
+    // Ticks en valores redondos: 0, 10, 20, 30, 40 (× 10⁶ W·m⁻³)
+    [0, 10, 20, 30, 40].forEach(val => {
+      const vt = val * 1e6, yt = ys(vt);
+      if (yt < SP.t || yt > SH - SP.b) return;
+      specX.strokeStyle = 'rgba(68,85,102,0.65)'; specX.lineWidth = 1;
+      specX.beginPath(); specX.moveTo(SP.l - 5, yt); specX.lineTo(SP.l, yt); specX.stroke();
+      specX.fillStyle = '#8899AA'; specX.font = '10px Inter'; specX.textAlign = 'right';
+      specX.fillText(val === 0 ? '0' : val.toString(), SP.l - 8, yt + 4);
+    });
+    // Unidades del eje Y
+    specX.fillStyle = '#445566'; specX.font = '9px Inter'; specX.textAlign = 'right';
+    specX.fillText('×10⁶ W·m⁻³', SP.l - 8, SP.t + 10);
+    // Línea de referencia solar (T☉) — marca dónde está el Sol en la escala
+    const ySOL = ys(PEAK_SOL);
+    specX.strokeStyle = 'rgba(255,224,102,0.2)'; specX.lineWidth = 1; specX.setLineDash([3, 4]);
+    specX.beginPath(); specX.moveTo(SP.l, ySOL); specX.lineTo(SW - SP.r, ySOL); specX.stroke();
+    specX.setLineDash([]);
+    specX.fillStyle = 'rgba(255,224,102,0.5)'; specX.font = 'bold 9px Inter'; specX.textAlign = 'left';
+    specX.fillText('T☉', SP.l + 3, ySOL - 3);
+  }
 
   /* Banda del espectro visible */
   const vg = specX.createLinearGradient(xs(380e-9), 0, xs(700e-9), 0);
@@ -1153,7 +1181,7 @@ function drawSpectrum() {
     specX.beginPath(); specX.strokeStyle='#FF6B35'; specX.lineWidth=2.2; specX.setLineDash([7,4]);
     let first = true;
     lams.forEach((l) => {
-      const raw = rjL(l,T) / peak * peak;
+      const raw = rjL(l,T);   // unidades absolutas, misma escala que Planck
       const x   = xs(l);
       const y   = ys(raw);  // ys ya clampea al yScale
       if (first) { specX.moveTo(x,y); first=false; } else { specX.lineTo(x,y); }
@@ -1181,7 +1209,7 @@ function drawSpectrum() {
     specX.stroke();
 
     /* Marcador lambda_max */
-    const lmax=lams[pm], xm=xs(lmax), ym=ys(peak);
+    const lmax=lams[pm], xm=xs(lmax), ym=Math.max(ys(peak), SP.t+10); // clamp para no salir del canvas
     specX.beginPath(); specX.strokeStyle='#FFE066'; specX.lineWidth=1.2; specX.setLineDash([4,3]);
     specX.moveTo(xm, ym+4); specX.lineTo(xm, SH-SP.b); specX.stroke(); specX.setLineDash([]);
     specX.beginPath(); specX.arc(xm, ym, 4, 0, 2*Math.PI);
@@ -1209,6 +1237,23 @@ function drawSpectrum() {
     specX.fillText(item.lbl, SP.l+34, ly+9);
     ly += 20;
   });
+
+  /* ── Anotación: intensidad relativa al Sol ── */
+  {
+    const relI   = peak / PEAK_SOL;
+    const relTxt = relI < 0.001 ? (relI * 100).toFixed(3) + ' % Sol' :
+                   relI < 0.1   ? (relI * 100).toFixed(2) + ' % Sol' :
+                   relI < 1     ? (relI * 100).toFixed(1) + ' % Sol' :
+                                  relI.toFixed(2) + '× Sol';
+    specX.fillStyle='#FFE066'; specX.font='bold 11px Inter'; specX.textAlign='right';
+    specX.fillText('Pico: ' + relTxt, SW - SP.r - 6, SP.t + 16);
+
+    // Indicador de desbordamiento (T >> T_max_escala)
+    if (showP && peak > yScale * 0.80) {
+      specX.fillStyle='rgba(0,200,255,0.80)'; specX.font='bold 10px Inter'; specX.textAlign='right';
+      specX.fillText('▲ T máx. de escala — 10 000 K', SW - SP.r - 6, SP.t + 30);
+    }
+  }
 
   /* Etiquetas eje X */
   specX.fillStyle='#8899AA'; specX.font='11px Inter'; specX.textAlign='center';

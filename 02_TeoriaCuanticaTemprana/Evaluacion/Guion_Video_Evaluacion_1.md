@@ -28,19 +28,19 @@
 
 ## Tópico 1 — El Cuerpo Negro (0:20 – 1:20) — Sección "Espectro del Cuerpo Negro"
 
-**Indicación visual:** Mostrar la App en la sección "Espectro del Cuerpo Negro". Mover el slider de temperatura en vivo.
+**Indicación visual:** Mostrar la App en la sección "Espectro del Cuerpo Negro". Mover el slider de temperatura en vivo. **La gráfica usa escala absoluta referenciada al Sol (5 778 K).**
 
 > "Un cuerpo negro es un objeto idealizado que absorbe el cien por ciento de la radiación que incide sobre él —no refleja nada, no transmite nada— y emite radiación electromagnética únicamente en función de su temperatura. Es el emisor y absorbedor perfecto."
 
 > "Este concepto no es solo teórico. Si calentamos una pieza de hierro a unos 600 grados Celsius, comienza a brillar en rojo."
 
-**Mover el slider de T a ~900 K → mostrar cómo el pico está en infrarrojo.**
+**Mover el slider de T a ~1500 K → mostrar curva baja y desplazada al IR.**
 
-> "Y si pudiéramos calentarla a la temperatura de la superficie del Sol —5778 kelvin— emitiría su máximo en el rango visible."
+> "A 1500 kelvin, la curva es baja —la mayor parte de la emisión está en el infrarrojo— y la potencia total es una fracción muy pequeña de la solar. La escala vertical es absoluta: la altura de la curva refleja la intensidad real."
 
-**Mover el slider a 5778 K → señalar el pico en ~501 nm, la banda visible iluminada en la gráfica.**
+**Subir el slider lentamente a 5778 K → señalar que la curva CRECE en altura Y se desplaza hacia la izquierda.**
 
-> "Observen los valores calculados en tiempo real aquí a la izquierda: la longitud de onda del pico según la ley de Wien..."
+> "Observen dos cosas al mismo tiempo: el pico se desplaza hacia longitudes de onda más cortas —la Ley de Wien— y la curva crece enormemente en altura. A 5778 kelvin —la temperatura de la superficie del Sol— el pico está en 501 nanómetros, justo en el visible, y la potencia es de 63 megavatios por metro cuadrado."
 
 $$\lambda_{\max} \cdot T = 2.898 \times 10^{-3} \;\text{m·K}$$
 
@@ -50,11 +50,16 @@ $$R = \sigma T^4$$
 
 > "...que nos asegura que la energía total emitida es finita y crece con la cuarta potencia de la temperatura."
 
-**Activar/desactivar los toggles de Rayleigh-Jeans y Wien para mostrar las tres curvas superpuestas.**
+**Subir el slider a ~10 000 K → mostrar que la curva desborda hacia arriba (aviso en pantalla).**
+
+> "Si seguimos subiendo la temperatura —digamos a una estrella tipo A, 10 000 kelvin— la curva se dispara fuera de la escala de la gráfica. El aviso 'pico fuera de escala' nos indica que la intensidad es ahora más de 17 veces la del Sol. También observen: el pico se ha desplazado al ultravioleta. Por eso las estrellas calientes son azul-blancas."
+
+**Bajar de nuevo a 5778 K. Activar/desactivar los toggles de Rayleigh-Jeans y Wien.**
 
 > "Noten cómo la curva naranja —Rayleigh-Jeans— coincide con Planck a longitudes de onda largas, pero diverge hacia la izquierda. Esa divergencia es precisamente el problema que vamos a ver ahora."
 
 *(Scroll a Sección 2: Catástrofe UV)*
+
 
 ---
 
