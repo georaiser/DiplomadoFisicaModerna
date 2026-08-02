@@ -16,24 +16,11 @@
 
 ---
 
-## 🔄 Registro de cambios (respecto a la versión anterior del guión)
-
-> Esta versión del guión fue revisada contra la App HTML ya actualizada. Cambios relevantes:
-
-- **Corregido:** el guión mencionaba un "aviso 'pico fuera de escala'" a 10 000 K que ya no existe en la App. Ahora la escala del gráfico está calibrada exactamente hasta 10 000 K (llena ~91% del canvas), y en su lugar hay una anotación "Pico: ×Sol" en la esquina superior derecha.
-- **Corregido:** el número "más de 17 veces la del Sol" era impreciso. El valor correcto, verificado contra la fórmula de la App, es **~15.5×** (ver Tópico 1).
-- **Añadido:** referencia a las tres tarjetas explicativas (Planck / Wien / Rayleigh-Jeans) que ahora aparecen debajo del gráfico del espectro, fuera de la grilla principal.
-- **Añadido:** nota opcional (bonus) explicando por qué "Pico" (∝\(T^5\)) y "R" (∝\(T^4\)) dan números distintos frente al Sol — la App ahora lo aclara con una fórmula bajo el gráfico.
-- **Enriquecido:** breve analogía física de qué es un "modo" (onda estacionaria en una cavidad) en el Tópico 2, Paso 1, tomada de las notas de `modos.docx`.
-- **Verificado sin cambios:** todas las demás fórmulas, valores por defecto (501.6 nm, 63.2 MW/m², etc.), atajos de teclado (`P`, `B`, `↑↓`) y la línea de tiempo histórica — coinciden exactamente con la App actual.
-
----
-
 ## Introducción (0:00 – 0:20) — Sección Hero de la App
 
-**Indicación de cámara:** Encuadre medio, fondo limpio. Contacto visual directo. La App debe estar abierta en el Hero.
+**Indicación de cámara:** Encuadre medio, fondo limpio. Contacto visual directo. La App debe estar abierta en el Hero (portada inicial, antes de hacer scroll).
 
-> "A finales del siglo XIX, la física clásica parecía completa. Las ecuaciones de Maxwell explicaban la luz, la termodinámica de Boltzmann explicaba el calor, y la mecánica de Newton explicaba el movimiento. Sin embargo, un problema aparentemente simple —¿cómo emite luz un objeto caliente?— reveló una contradicción tan grave que destruyó los fundamentos de esa física. Hoy vamos a ver ese problema, por qué la solución clásica fue catastrófica, y cómo Max Planck propuso en 1900 una idea que nadie esperaba: que la energía no puede tomar cualquier valor."
+> "A finales del siglo XIX, la física clásica parecía completa. Las ecuaciones de Maxwell (1865) explicaban la luz —como ondas oscilantes de campo eléctrico y magnético que se propagan incluso en el vacío—; la termodinámica estadística de Boltzmann (décadas de 1870-1880) explicaba el calor —como el movimiento promedio de billones de partículas microscópicas—; y la mecánica de Newton (1687) explicaba el movimiento de los cuerpos, desde una manzana cayendo hasta las órbitas de los planetas. Sin embargo, un problema aparentemente simple —¿cómo emite luz un objeto caliente?— reveló una contradicción tan grave que destruyó los fundamentos de esa física. Hoy vamos a ver ese problema, por qué la solución clásica fue catastrófica, y cómo Max Planck propuso en 1900 una idea que nadie esperaba: que la energía no puede tomar cualquier valor."
 
 *(Click en "▶ Iniciar exploración" en la App → scroll a Sección 1)*
 
