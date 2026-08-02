@@ -511,10 +511,6 @@
       <span class="canvas-badge" id="canvas-label" style="top:auto;bottom:10px;left:12px;right:auto">T = 5 778 K</span>
       <button onclick="toggleFullCanvas('spectrumCanvas')" style="position:absolute;bottom:10px;right:12px;padding:3px 9px;border-radius:5px;border:1px solid var(--border);background:rgba(13,27,42,0.8);color:var(--gray);font-size:0.7rem;cursor:pointer" title="Pantalla completa">&#x26F6;</button>
     </div>
-    <div class="formula-box" style="margin:0.6rem 0 0 0;padding:0.5rem 0.7rem;font-size:0.72rem">
-      <div style="font-size:0.66rem;color:var(--gray2);margin-bottom:3px">"Peak" (gr&aacute;fico) &mdash; altura m&aacute;xima de \(u(\lambda,T)\)</div>
-      \(u(\lambda_{\max},T)\propto T^5\)
-    </div>
   </div>
 
   <!-- Explicación breve de las tres curvas -->
@@ -1343,7 +1339,7 @@ function drawSpectrum() {
                    relI < 0.1   ? (relI * 100).toFixed(2) + ' % Sol' :
                    relI < 1     ? (relI * 100).toFixed(1) + ' % Sol' :
                                   relI.toFixed(2) + '× Sol';
-    const ann = 'Peak: ' + relTxt;
+    const ann = 'Peak:  u(λ_max, T) ∝ T^5  :  ' + relTxt;
 
     specX.font = 'bold 11px Inter';
     const tw = specX.measureText(ann).width;
