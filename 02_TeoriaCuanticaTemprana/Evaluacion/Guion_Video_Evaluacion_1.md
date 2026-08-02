@@ -12,7 +12,20 @@
 | **Enfoque** | Física conceptual y demostración interactiva |
 | **App interactiva (principal)** | `Evaluacion_1_App.html` — abrir en navegador, grabar pantalla |
 | **Presentación (respaldo)** | `Evaluacion_1_Presentacion.pptx` |
-| **Última actualización** | 30 jul 2026 |
+| **Última actualización** | 02 ago 2026 |
+
+---
+
+## 🔄 Registro de cambios (respecto a la versión anterior del guión)
+
+> Esta versión del guión fue revisada contra la App HTML ya actualizada. Cambios relevantes:
+
+- **Corregido:** el guión mencionaba un "aviso 'pico fuera de escala'" a 10 000 K que ya no existe en la App. Ahora la escala del gráfico está calibrada exactamente hasta 10 000 K (llena ~91% del canvas), y en su lugar hay una anotación "Pico: ×Sol" en la esquina superior derecha.
+- **Corregido:** el número "más de 17 veces la del Sol" era impreciso. El valor correcto, verificado contra la fórmula de la App, es **~15.5×** (ver Tópico 1).
+- **Añadido:** referencia a las tres tarjetas explicativas (Planck / Wien / Rayleigh-Jeans) que ahora aparecen debajo del gráfico del espectro, fuera de la grilla principal.
+- **Añadido:** nota opcional (bonus) explicando por qué "Pico" (∝\(T^5\)) y "R" (∝\(T^4\)) dan números distintos frente al Sol — la App ahora lo aclara con una fórmula bajo el gráfico.
+- **Enriquecido:** breve analogía física de qué es un "modo" (onda estacionaria en una cavidad) en el Tópico 2, Paso 1, tomada de las notas de `modos.docx`.
+- **Verificado sin cambios:** todas las demás fórmulas, valores por defecto (501.6 nm, 63.2 MW/m², etc.), atajos de teclado (`P`, `B`, `↑↓`) y la línea de tiempo histórica — coinciden exactamente con la App actual.
 
 ---
 
@@ -50,11 +63,14 @@ $$R = \sigma T^4$$
 
 > "...que nos asegura que la energía total emitida es finita y crece con la cuarta potencia de la temperatura."
 
-**Subir el slider a ~10 000 K → mostrar que la curva desborda hacia arriba (aviso en pantalla).**
+**Subir el slider a ~10 000 K → señalar la anotación "Pico: ×Sol" en la esquina superior del gráfico.**
 
-> "Si seguimos subiendo la temperatura —digamos a una estrella tipo A, 10 000 kelvin— la curva se dispara fuera de la escala de la gráfica. El aviso 'pico fuera de escala' nos indica que la intensidad es ahora más de 17 veces la del Sol. También observen: el pico se ha desplazado al ultravioleta. Por eso las estrellas calientes son azul-blancas."
+> "Si seguimos subiendo la temperatura —digamos a una estrella tipo A, 10 000 kelvin— la curva casi llena la escala del gráfico, que está calibrada exactamente hasta ese punto. La anotación de la esquina muestra que el pico es ahora cerca de 15.5 veces el del Sol. El pico también se ha desplazado al ultravioleta —por eso las estrellas calientes son azul-blancas."
 
-**Bajar de nuevo a 5778 K. Activar/desactivar los toggles de Rayleigh-Jeans y Wien.**
+> [!TIP]
+> **Detalle opcional (solo si sobra tiempo):** la card de la izquierda muestra que la *potencia total* a 10 000 K es "solo" ~9 veces la del Sol —un número distinto al ~15.5× del pico. La razón: el **pico** de la curva escala como \(T^5\) (ley de Wien), pero la **potencia total** —el área bajo toda la curva, Stefan-Boltzmann— escala como \(T^4\). La App lo aclara con una fórmula justo bajo el gráfico.
+
+**Bajar de nuevo a 5778 K. Activar/desactivar los toggles de Rayleigh-Jeans y Wien. (Opcional: señalar brevemente las tres tarjetas debajo del gráfico que resumen cuándo es válida cada curva.)**
 
 > "Noten cómo la curva naranja —Rayleigh-Jeans— coincide con Planck a longitudes de onda largas, pero diverge hacia la izquierda. Esa divergencia es precisamente el problema que vamos a ver ahora."
 
@@ -71,7 +87,7 @@ $$R = \sigma T^4$$
 
 **Click en Paso 1 →**
 
-> "Primero, contamos los modos de oscilación dentro de una cavidad. El número de modos electromagnéticos crece como nu al cuadrado:"
+> "Primero, contamos los modos de oscilación dentro de una cavidad. Piensen en la cavidad como una caja cerrada: solo ciertas ondas estacionarias —definidas por números enteros en cada dirección— encajan exactamente entre sus paredes, igual que una cuerda de guitarra solo vibra en ciertas notas permitidas. El número de esos modos electromagnéticos crece como nu al cuadrado:"
 
 $$dN = \frac{8\pi\nu^2 L^3}{c^3}\,d\nu$$
 
@@ -225,7 +241,7 @@ $$u(\nu,T) = \frac{8\pi h\nu^3}{c^3} \cdot \frac{1}{e^{h\nu / k_B T} - 1}$$
 | Sección App | Tiempo | Qué hacer en pantalla |
 |---|---|---|
 | **Hero** | 0:00 – 0:20 | Mostrar título. Click en "▶ Iniciar exploración". |
-| **Espectro del Cuerpo Negro** | 0:20 – 1:20 | Mover slider T (900K → 5778K → 10000K). Activar/desactivar toggles Planck/RJ/Wien. Señalar valores calculados. |
+| **Espectro del Cuerpo Negro** | 0:20 – 1:20 | Mover slider T (900K → 5778K → 10000K). Activar/desactivar toggles Planck/RJ/Wien. Señalar la card "Valores calculados en tiempo real" (incluye las leyes de Wien y Stefan-Boltzmann) y la anotación "Pico: ×Sol" en la esquina del gráfico. Opcional: señalar las 3 tarjetas explicativas bajo el gráfico. |
 | **Catástrofe UV** | 1:20 – 2:35 | Click en pasos 1→2→3→4. Animar divergencia con botón ▶. |
 | **⭐ La Solución de Planck** | 2:35 – 4:05 | Señalar diagrama Clásico vs Cuántico. Leer tabla comparativa. Mover sliders T y ν para mostrar régimen clásico → congelación UV. |
 | **Línea de Tiempo** | 4:05 – 4:40 | Scroll por la timeline (7 hitos). Señalar las 6 tarjetas de impacto tecnológico y la cadena de descubrimientos. Cita final. |
@@ -242,6 +258,7 @@ $$u(\nu,T) = \frac{8\pi h\nu^3}{c^3} \cdot \frac{1}{e^{h\nu / k_B T} - 1}$$
 - [ ] Ley de Stefan-Boltzmann: $R = \sigma T^4$
 - [ ] Ejemplo concreto (hierro rojo / Sol a 5778 K)
 - [ ] Demostración interactiva moviendo el slider de T
+- [ ] *(Opcional/bonus)* Distinguir el pico de la curva (∝\(T^5\)) de la potencia total (∝\(T^4\))
 
 #### Tópico 2 — Catástrofe Ultravioleta
 - [ ] Conteo de modos: crece como $\nu^2$
