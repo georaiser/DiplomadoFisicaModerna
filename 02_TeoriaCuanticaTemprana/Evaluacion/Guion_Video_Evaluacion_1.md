@@ -16,7 +16,22 @@
 
 ---
 
+## 🔄 Registro de cambios (respecto a la versión anterior del guión)
+
+> Esta versión del guión fue revisada contra la App HTML ya actualizada. Cambios relevantes:
+
+- **Corregido:** el guión mencionaba un "aviso 'pico fuera de escala'" a 10 000 K que ya no existe en la App. Ahora la escala del gráfico está calibrada exactamente hasta 10 000 K (llena ~91% del canvas), y en su lugar hay una anotación "Pico: ×Sol" en la esquina superior derecha.
+- **Corregido:** el número "más de 17 veces la del Sol" era impreciso. El valor correcto, verificado contra la fórmula de la App, es **~15.5×** (ver Tópico 1).
+- **Añadido:** referencia a las tres tarjetas explicativas (Planck / Wien / Rayleigh-Jeans) que ahora aparecen debajo del gráfico del espectro, fuera de la grilla principal.
+- **Añadido:** nota opcional (bonus) explicando por qué "Pico" (∝\(T^5\)) y "R" (∝\(T^4\)) dan números distintos frente al Sol — la App ahora lo aclara con una fórmula bajo el gráfico.
+- **Enriquecido:** breve analogía física de qué es un "modo" (onda estacionaria en una cavidad) en el Tópico 2, Paso 1, tomada de las notas de `modos.docx`.
+- **Verificado sin cambios:** todas las demás fórmulas, valores por defecto (501.6 nm, 63.2 MW/m², etc.), atajos de teclado (`P`, `B`, `↑↓`) y la línea de tiempo histórica — coinciden exactamente con la App actual.
+
+---
+
 ## Introducción (0:00 – 0:20) — Sección Hero de la App
+
+*(La sección "Hero" es la portada al cargar la página: título, subtítulo y el botón "▶ Iniciar exploración" — no requiere scroll.)*
 
 **Indicación de cámara:** Encuadre medio, fondo limpio. Contacto visual directo. La App debe estar abierta en el Hero (portada inicial, antes de hacer scroll).
 
@@ -32,11 +47,11 @@
 
 > "Un cuerpo negro es un objeto idealizado que absorbe el cien por ciento de la radiación que incide sobre él —no refleja nada, no transmite nada— y emite radiación electromagnética únicamente en función de su temperatura. Es el emisor y absorbedor perfecto."
 
-> "Este concepto no es solo teórico. Si calentamos una pieza de hierro a unos 600 grados Celsius, comienza a brillar en rojo."
+> "Este concepto no es solo teórico: existe una temperatura, cerca de los 525 grados Celsius, a partir de la cual prácticamente cualquier sólido opaco empieza a brillar con un rojo tenue —sin importar de qué material esté hecho. Es la primera señal visible de que la luz emitida depende únicamente de la temperatura, tal como predice el modelo de cuerpo negro."
 
 **Mover el slider de T a ~1500 K → mostrar curva baja y desplazada al IR.**
 
-> "A 1500 kelvin, la curva es baja —la mayor parte de la emisión está en el infrarrojo— y la potencia total es una fracción muy pequeña de la solar. La escala vertical es absoluta: la altura de la curva refleja la intensidad real."
+> "A 1500 kelvin, la curva es baja —el pico está en 1930 nanómetros, en el infrarrojo— y la potencia total es de apenas 0.3 megavatios por metro cuadrado, una fracción muy pequeña de la solar. La escala vertical es absoluta: la altura de la curva refleja la intensidad real."
 
 **Subir el slider lentamente a 5778 K → señalar que la curva CRECE en altura Y se desplaza hacia la izquierda.**
 
@@ -96,7 +111,7 @@ $$u(\nu,T) = \frac{8\pi\nu^2}{c^3}\,k_B T$$
 
 > "Y aquí está la catástrofe: como nu-cuadrado crece sin límite, esta función se dispara hacia el infinito. La energía total sería infinita."
 
-> "Quiero enfatizar algo: esto NO fue un error de cálculo. Es una consecuencia inevitable de dos pilares de la física clásica: la termodinámica de Boltzmann, que asigna energía constante a cada modo, y el electromagnetismo de Maxwell, que permite infinitos modos. Ambas teorías correctas por separado, pero juntas producen un resultado imposible."
+> "Quiero enfatizar algo: esto no fue un error de cálculo. Fue la consecuencia inevitable de combinar dos postulados de la física clásica: el teorema de equipartición, que asigna una energía media de $k_BT$ a cada modo, y el electromagnetismo de Maxwell, que predice un número de modos cada vez mayor a medida que aumenta la frecuencia. Juntos conducen a una energía total infinita, un resultado incompatible con la realidad."
 
 > "En 1911, Paul Ehrenfest bautizó este fracaso como la 'catástrofe ultravioleta'. No era una anomalía menor — era una crisis fundamental."
 
@@ -115,11 +130,11 @@ $$u(\nu,T) = \frac{8\pi\nu^2}{c^3}\,k_B T$$
 
 **Señalar la imagen del diagrama Clásico vs. Cuántico →**
 
-> "Antes de entrar en las fórmulas, veamos visualmente la diferencia fundamental entre el modelo clásico y la hipótesis de Planck."
+> "Antes de entrar en las fórmulas, veamos primero la idea principal. Podemos imaginar que cada forma en que la radiación vibra dentro de la cavidad se comporta como un pequeño resorte (oscilador). Cada una vibra con una frecuencia determinada y tiene una cierta energía. La diferencia entre la física clásica y la propuesta de Planck está en cómo esa energía puede tomar sus valores."
 
-> "A la izquierda, el modelo clásico: la energía del oscilador es continua, puede tomar cualquier valor. Es una rampa lisa, sin restricciones."
+> "A la izquierda, el modelo clásico: la energía puede tomar cualquier valor. Es continua, como una rampa sin interrupciones."
 
-> "A la derecha, Planck: la energía solo puede estar en peldaños discretos. Cero, h-nu, dos-h-nu, tres-h-nu, y así sucesivamente. Las zonas entre peldaños son estados prohibidos — no existen."
+> "A la derecha, la propuesta de Planck: la energía solo puede tomar valores discretos. Cero, $h\nu$, $2h\nu$, $3h\nu$, y así sucesivamente. Entre un nivel y el siguiente no existen valores permitidos."
 
 **Señalar la tabla comparativa →**
 

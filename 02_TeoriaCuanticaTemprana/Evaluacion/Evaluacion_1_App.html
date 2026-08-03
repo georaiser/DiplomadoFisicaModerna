@@ -494,11 +494,11 @@
 
         <div style="margin-top:0.7rem;padding-top:0.7rem;border-top:1px solid var(--border)">
           <div class="card-title" style="margin-bottom:0.5rem;font-size:0.76rem">Leyes</div>
-          <p style="font-size:0.74rem;color:var(--gray);margin-bottom:0.3rem">Stefan-Boltzmann</p>
+          <p style="font-size:0.74rem;color:var(--gray);margin-bottom:0.3rem">Stefan-Boltzmann (potencia total irradiada)</p>
           <div class="formula-box" style="margin:0;padding:0.5rem 0.8rem;font-size:0.86rem">\(R=\sigma\,T^4\)</div>
+          <p style="font-size:0.68rem;color:var(--gray2);margin-top:0.4rem">\(\sigma = 5.67\times10^{-8}\;\text{W}\cdot\text{m}^{-2}\cdot\text{K}^{-4}\)</p>
           <p style="font-size:0.74rem;color:var(--gray);margin-top:0.55rem;margin-bottom:0.3rem">Desplazamiento de Wien</p>
           <div class="formula-box" style="margin:0;padding:0.5rem 0.8rem;font-size:0.86rem">\(\lambda_{\max}T=2898\,\mu\text{m\,K}\)</div>
-          <p style="font-size:0.68rem;color:var(--gray2);margin-top:0.4rem">\(\sigma = 5.67\times10^{-8}\;\text{W}\cdot\text{m}^{-2}\cdot\text{K}^{-4}\)</p>
         </div>
       </div>
 
@@ -517,21 +517,21 @@
   <div class="three-col fi fi3" style="margin-top:1.5rem">
     <div class="card" style="border-color:rgba(0,200,255,0.3)">
       <div class="card-title" style="color:var(--cyan)">&#9679; Ley de Planck</div>
-      <div class="formula-box cyan" style="font-size:0.86rem">\(\displaystyle u(\lambda,T)=\frac{8\pi hc}{\lambda^5}\cdot\frac{1}{e^{hc/\lambda k_{\!B}T}-1}\)</div>
+      <div class="formula-box cyan" style="font-size:0.96rem">\(\displaystyle u(\lambda,T)=\frac{8\pi hc}{\lambda^5}\cdot\frac{1}{e^{hc/\lambda k_{\!B}T}-1}\)</div>
       <p style="font-size:0.78rem;color:var(--gray);margin-top:0.5rem;line-height:1.6">
         Soluci&oacute;n exacta, v&aacute;lida en <strong style="color:var(--cyan)">todo</strong> el espectro. La cuantizaci&oacute;n \(h\nu\) hace que la curva se doble y baje a cero en el UV, evitando la divergencia.
       </p>
     </div>
     <div class="card" style="border-color:rgba(192,132,252,0.3)">
       <div class="card-title" style="color:var(--purple)">&#9679; Aproximaci&oacute;n de Wien</div>
-      <div class="formula-box" style="font-size:0.86rem;background:rgba(192,132,252,0.06);border-color:rgba(192,132,252,0.2);color:var(--purple)">\(\displaystyle u(\lambda,T)\approx\frac{8\pi hc}{\lambda^5}\,e^{-hc/\lambda k_{\!B}T}\)</div>
+      <div class="formula-box" style="font-size:0.96rem;background:rgba(192,132,252,0.06);border-color:rgba(192,132,252,0.2);color:var(--purple)">\(\displaystyle u(\lambda,T)\approx\frac{8\pi hc}{\lambda^5}\,e^{-hc/\lambda k_{\!B}T}\)</div>
       <p style="font-size:0.78rem;color:var(--gray);margin-top:0.5rem;line-height:1.6">
         V&aacute;lida cuando \(hc/\lambda k_{\!B}T\gg1\) (longitudes de onda cortas, cerca y a la izquierda del peak). Se separa de Planck hacia el infrarrojo.
       </p>
     </div>
     <div class="card" style="border-color:rgba(255,107,53,0.3)">
       <div class="card-title" style="color:var(--orange)">&#9679; Rayleigh-Jeans</div>
-      <div class="formula-box" style="font-size:0.86rem;background:rgba(255,107,53,0.06);border-color:rgba(255,107,53,0.2);color:var(--orange)">\(\displaystyle u(\lambda,T)=\frac{8\pi k_{\!B}T}{\lambda^4}\)</div>
+      <div class="formula-box" style="font-size:0.96rem;background:rgba(255,107,53,0.06);border-color:rgba(255,107,53,0.2);color:var(--orange)">\(\displaystyle u(\lambda,T)=\frac{8\pi k_{\!B}T}{\lambda^4}\)</div>
       <p style="font-size:0.78rem;color:var(--gray);margin-top:0.5rem;line-height:1.6">
         L&iacute;mite cl&aacute;sico, s&oacute;lo v&aacute;lido a longitudes de onda largas (IR). Al no cuantizar la energ&iacute;a, diverge cuando \(\lambda\to0\): la <strong style="color:var(--orange)">cat&aacute;strofe ultravioleta</strong>.
       </p>
@@ -589,7 +589,8 @@
         <div class="step-num">4</div>
         <div class="step-body">
           <h4>La cat&aacute;strofe</h4>
-          <p>Modos \(\propto\nu^2\) &times; energ&iacute;a constante por modo = integral divergente. No es un error algebraico &mdash; es una consecuencia <em>inevitable</em> de asignar energ&iacute;a continua a infinitos modos:</p>
+          <p>Modos \(\propto\nu^2\) &times; \(k_{\!B}T\) -> integral divergente. </p>
+          <p>Al combinar una energía constante por modo con un número de modos que crece como \(\nu^2\), la energía total aumenta sin límite. La integral diverge, prediciendo una energía infinita, en contradicción con los experimentos.</p>
           <div class="step-eq">\(\displaystyle\int_0^{\infty} u\,d\nu \;\longrightarrow\; \infty\)</div>
         </div>
       </div>
@@ -646,7 +647,7 @@
           <tr>
             <td style="padding:9px 14px;border-bottom:1px solid var(--border);color:var(--gray)">Energ&iacute;a media \(\bar{E}\)</td>
             <td style="padding:9px 14px;border-bottom:1px solid var(--border);text-align:center;color:var(--orange)">\(k_{B}T\) — constante para toda \(\nu\)</td>
-            <td style="padding:9px 14px;border-bottom:1px solid var(--border);text-align:center;color:var(--cyan)">\(\displaystyle\frac{h\nu}{e^{h\nu/k_{\!B}T}-1}\) — cae a 0 en UV</td>
+            <td style="padding:9px 14px;border-bottom:1px solid var(--border);text-align:center;color:var(--cyan)">\(\displaystyle\frac{h\nu}{e^{h\nu/k_{\!B}T}-1}\) —> cae a 0 en UV</td>
           </tr>
           <tr>
             <td style="padding:9px 14px;border-bottom:1px solid var(--border);color:var(--gray)">Modos UV (\(h\nu \gg k_BT\))</td>
@@ -679,9 +680,9 @@
       <div style="padding:0.9rem 1.1rem;background:rgba(123,255,196,0.06);border:1px solid rgba(123,255,196,0.2);border-radius:10px">
         <p style="font-size:0.8rem;font-weight:700;color:var(--green);margin-bottom:0.4rem">&#10003; La solución de Planck</p>
         <p style="font-size:0.79rem;color:var(--gray);line-height:1.65">
-          El "precio de entrada" mínimo \(h\nu\) para excitar un modo UV supera la energía térmica
-          \(k_BT\) disponible. Sin suficiente energía para subir al primer peldaño, ese modo no
-          contribuye — la catástrofe desaparece naturalmente.
+          Los modos de alta frecuencia requieren un cuanto mínimo de energía \(h\nu\). 
+          Si la energía térmica disponible \(k_BT\) no basta para alcanzarlo, esos modos apenas se excitan 
+          y su contribución a la radiación es prácticamente nula. Así desaparece la catástrofe ultravioleta.
         </p>
       </div>
     </div>
@@ -1144,7 +1145,7 @@ function drawSpectrum() {
 
   clearCanvas(specX, SW, SH);
   drawGrid(specX, SW, SH, SP);
-  drawAxes(specX, SW, SH, SP, 'Longitud de onda λ (nm)', 'u(λ,T)');
+  drawAxes(specX, SW, SH, SP, 'Longitud de onda λ (nm)', 'u(λ,T) (referenciada al Sol, 5778 K)');
 
   const lMin = 100e-9, lMax = 2000e-9, N = 600;
   const lams = Array.from({ length: N }, (_, i) => lMin + (lMax - lMin) * i / (N - 1));
