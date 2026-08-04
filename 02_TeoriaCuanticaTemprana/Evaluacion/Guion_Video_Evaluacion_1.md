@@ -155,7 +155,7 @@ $$h = 6.626 \times 10^{-34} \;\text{J·s}$$
 $$\bar{E} = \frac{h\nu}{e^{h\nu / k_B T} - 1}$$
 
 > [!NOTE]
-> **Material de referencia (no leer en voz alta).** Solo consultar si un estudiante pregunta de dónde proviene la distribución de Planck.
+> **Material de referencia distribución de Planck.**
 >
 > **1. Factor de Boltzmann**
 >
