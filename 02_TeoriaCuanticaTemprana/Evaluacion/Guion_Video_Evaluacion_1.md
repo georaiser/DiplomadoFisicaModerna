@@ -154,6 +154,39 @@ $$h = 6.626 \times 10^{-34} \;\text{J·s}$$
 
 $$\bar{E} = \frac{h\nu}{e^{h\nu / k_B T} - 1}$$
 
+> [!NOTE]
+> **Material de referencia (no leer en voz alta).** Solo consultar si un estudiante pregunta de dónde proviene la distribución de Planck.
+>
+> **1. Factor de Boltzmann**
+>
+> El oscilador intercambia energía con las paredes de la cavidad, que actúan como un gran reservorio térmico. Aplicando el postulado fundamental de la mecánica estadística y la definición de temperatura se obtiene:
+>
+> \(P_n\propto e^{-E_n/k_{\!B}T}\).
+>
+> **2. Normalización**
+>
+> Para que las probabilidades sumen 1, se introduce la función de partición:
+>
+> \(Z=\sum_{n=0}^{\infty}e^{-nh\nu/k_{\!B}T}\).
+>
+> Definiendo \(x=e^{-h\nu/k_{\!B}T}\):
+>
+> \(Z=\frac{1}{1-x}\), \(P_n=(1-x)x^n\).
+>
+> La población relativa de cada nivel es:
+>
+> \(\dfrac{P_n}{P_0}=e^{-nh\nu/k_{\!B}T}\).
+>
+> **3. Energía media**
+>
+> La energía media resulta:
+>
+> \(\bar{E}=\dfrac{h\nu\,x}{1-x}\), donde \(x=e^{-h\nu/k_{\!B}T}\).
+>
+> Al sustituir \(x\), se obtiene la expresión de Planck para la energía media del oscilador. Es una consecuencia directa de aplicar la distribución de Boltzmann a niveles de energía discretos.
+>
+> *La derivación completa está disponible en la App, en la sección **📚 Derivación formal — nivel académico**, debajo de la tarjeta **La Hipótesis de Planck**.*
+
 ### Parte C — Demostración Interactiva (3:35 – 4:05)
 
 **Mover los sliders de T y ν en la App →**
@@ -162,11 +195,11 @@ $$\bar{E} = \frac{h\nu}{e^{h\nu / k_B T} - 1}$$
 
 **Slider ν bajo (2–3 ×10¹³ Hz) → mostrar que muchos niveles están excitados →**
 
-> "Cuando h-nu es mucho menor que k-B-T, observen: muchos niveles están ocupados, el mensaje dice 'Régimen clásico'. La energía media se aproxima a k-B-T. Aquí la física clásica funciona bien."
+> "Veamos qué significan estos niveles encendidos. Cada uno tiene una probabilidad de ocupación dada por la distribución de Boltzmann: comparado con el nivel base, la población del nivel n cae como e elevado a menos n por h-nu sobre k-B-T. Cuando h-nu es mucho menor que k-B-T, ese exponente crece lento, así que muchos niveles conservan una población apreciable — por eso ven varios niveles encendidos, y el mensaje dice 'Régimen clásico'. La energía media se aproxima a k-B-T. Aquí la física clásica funciona bien."
 
 **Subir slider ν a 10–12 ×10¹³ Hz → mostrar niveles congelados →**
 
-> "Pero cuando subo la frecuencia al ultravioleta — ahora h-nu es mucho mayor que k-B-T. Miren: los niveles superiores están apagados. Solo queda n igual a cero. Es como un 'precio de entrada mínimo' que la temperatura no puede pagar. El modo queda congelado."
+> "Pero cuando subo la frecuencia al ultravioleta — ahora h-nu es mucho mayor que k-B-T. Ese mismo exponente crece muy rápido, así que ya desde n igual a uno la población relativa es minúscula. Miren: los niveles superiores están apagados. Solo queda n igual a cero. Es como un 'precio de entrada mínimo' que la temperatura no puede pagar. El modo queda congelado."
 
 > "Y la ley de distribución completa de Planck, que ajusta perfectamente todo el espectro, es:"
 
@@ -194,25 +227,27 @@ $$u(\nu,T) = \frac{8\pi h\nu^3}{c^3} \cdot \frac{1}{e^{h\nu / k_B T} - 1}$$
 | 1913 | Bohr: modelo atómico cuantizado |
 | 1925–26 | Heisenberg y Schrödinger: mecánica cuántica completa |
 
-> "El impacto de esta revolución es gigantesco. En la App podemos ver seis grandes familias tecnológicas que nacieron de la cuantización."
+> "El impacto de esta idea es enorme. Veamos seis ejemplos concretos de tecnología que existe gracias a la cuantización de la energía."
 
 **Señalar cada tarjeta de impacto en la App →**
 
-> "Primero, los **semiconductores**: la banda prohibida de un material —los estados de energía prohibidos entre la banda de valencia y la de conducción— es consecuencia directa de la cuantización. El silicio tiene $E_{\text{gap}} \approx 1.1$ eV. Sin semiconductores no existirían computadoras, smartphones, ni LEDs."
+> "Primero, los **semiconductores**. Dentro de un material como el silicio, los electrones solo pueden ocupar ciertos niveles de energía permitidos, y hay una zona entre ellos donde ningún electrón puede estar: la banda prohibida. Esa restricción existe por la misma razón que descubrió Planck. Sin ella no habría transistores, ni procesadores, ni LED."
 
-> "Segundo, los **sensores CCD y CMOS** en Sentinel-2, Landsat y el JWST: funcionan por el efecto fotoeléctrico *interno* en semiconductores. Cada fotón de energía $E = h\nu \geq E_{\text{gap}}$ genera un par electrón-hueco que se convierte en señal eléctrica medible."
+> "Segundo, los **sensores de cámara**, como los de los satélites Sentinel-2 o el telescopio James Webb. Cada fotón trae una energía fija. Si esa energía alcanza para cruzar la banda prohibida del material, libera un electrón, y ese electrón se convierte en una señal eléctrica. Millones de esas señales forman una imagen digital."
 
-> "Tercero, los **láseres** — LASER significa *Light Amplification by Stimulated Emission of Radiation*. Einstein predijo en 1917 que un fotón puede estimular a un átomo excitado a emitir un segundo fotón idéntico: misma frecuencia, fase y dirección. Eso es luz cuántica coherente."
+> "Tercero, los **láseres**. Un átomo excitado puede recibir el 'empujón' de un fotón cercano y emitir un segundo fotón idéntico: misma frecuencia, misma dirección. Einstein predijo este efecto en 1917. Es lo que le da al láser su luz pura y coherente."
 
-> "Cuarto, la **Resonancia Magnética** (MRI/RMN): el espín nuclear de los protones de hidrógeno, con $s = \tfrac{1}{2}$, solo puede estar en dos estados bajo un campo magnético $B_0$ — paralelo o antiparalelo, separados por la energía de Larmor $\Delta E = \gamma\hbar B_0$. A 1.5 Tesla, esa frecuencia es de unos 64 MHz."
+> "Cuarto, la **resonancia magnética**. Los protones del cuerpo se comportan como pequeños imanes que solo pueden orientarse de dos formas dentro de un campo magnético, nunca de manera intermedia. Esa diferencia de energía, también cuantizada, es lo que el equipo detecta para formar la imagen médica."
 
-> "Quinto, la **Computación Cuántica**: un qubit puede estar en superposición de $|0\rangle$ y $|1\rangle$ simultáneamente. Dos qubits entrelazados comparten estado instantáneamente. Al medir, el sistema colapsa. Esto permite algoritmos exponencialmente más rápidos para problemas como la factorización y la simulación molecular."
+> "Quinto, la **computación cuántica**. Un bit normal vale 0 o 1. Un qubit puede estar en una combinación de ambos al mismo tiempo. Esa propiedad, propia de los sistemas cuánticos, permite explorar muchas soluciones a la vez."
 
-> "Y sexto, el **GPS y los Relojes Atómicos**: el segundo está definido exactamente como $9\,192\,631\,770$ transiciones cuánticas hiperfinas del átomo de cesio-133. Un error de 1 nanosegundo en sincronía produce un error de 30 centímetros en la posición GPS."
+> "Y sexto, el **GPS y los relojes atómicos**. Un electrón del átomo de cesio salta entre dos niveles de energía con una frecuencia exactamente fija. Contar esos saltos es hoy la forma más precisa de medir el tiempo, y de ahí depende la exactitud del GPS."
 
 **Señalar la cadena de descubrimientos →**
 
-> "Esta cadena de descubrimientos —de Planck 1900 a Einstein, Bohr, Schrödinger, Dirac, el transistor de 1947, el láser de 1960, el CCD de 1969, el GPS de 1978 y los qubits de hoy— toda nació con una idea que Planck llamó 'un acto de desesperación': que la energía se intercambia en paquetes discretos $E = nh\nu$. La catástrofe ultravioleta no fue una falla menor — fue la grieta por donde entró toda la física cuántica."
+> "Todo esto forma una cadena: Planck propone la energía en paquetes en 1900. Einstein aplica la idea a la luz en 1905. Bohr la usa para explicar el átomo en 1913. Schrödinger y Heisenberg completan la mecánica cuántica en 1925 y 1926. Y de ahí nacen, décadas después, el transistor, el láser, el sensor de cámara, el GPS y los qubits de hoy."
+
+> "Planck llamó a su propia hipótesis 'un acto de desesperación'. La catástrofe ultravioleta no fue un simple error de cálculo — fue la señal de que hacía falta una física nueva."
 
 > "Gracias por su atención."
 
