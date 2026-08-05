@@ -1642,8 +1642,10 @@
         <p style="font-size:0.7rem;color:var(--gray2);margin-top:0.6rem;line-height:1.55">
           &#9432; Los porcentajes son la poblaci&oacute;n relativa de Boltzmann de cada nivel <strong>respecto al nivel
             base</strong> (n=0 = 100%): \(P_n/P_0=e^{-nh\nu/k_{\!B}T}\). No suman 100% entre s&iacute; &mdash; cada uno
-          se compara solo contra n=0. Un nivel se &laquo;enciende&raquo; en el diagrama si esa poblaci&oacute;n relativa
-          supera el 4%.
+          se compara solo contra n=0. Un nivel se &laquo;enciende&raquo; en el diagrama cuando su poblaci&oacute;n relativa
+          supera \(1/e \approx 36.8\%\), la <strong>escala natural de la distribuci&oacute;n de Boltzmann</strong>:
+          el nivel est&aacute; t&eacute;rmicamente accesible si la energ&iacute;a para alcanzarlo (\(nh\nu\)) no supera
+          la energ&iacute;a t&eacute;rmica disponible (\(k_{\!B}T\)).
         </p>
 
         <details
@@ -1698,6 +1700,28 @@
                 (<strong>congelaci&oacute;n cu&aacute;ntica</strong>).
               </li>
             </ul>
+            <p style="margin-top:0.8rem">
+              <strong style="color:var(--white)">Criterio de accesibilidad t&eacute;rmica: \(1/e\)</strong>
+            </p>
+            <p>
+              En el diagrama, un nivel se muestra como &laquo;activo&raquo; cuando su poblaci&oacute;n relativa
+              supera \(1/e \approx 36.8\%\). Este no es un valor arbitrario: es la
+              <strong style="color:var(--cyan)">escala natural de decaimiento de la distribuci&oacute;n de
+              Boltzmann</strong>. La condici&oacute;n \(P_n/P_0 > 1/e\) equivale a:
+            </p>
+            <div style="text-align:center;margin:0.5rem 0;font-size:0.95rem;color:var(--cyan)">
+              \(e^{-nh\nu/k_{\!B}T} > e^{-1}\)
+              &emsp;\(\Longleftrightarrow\)&emsp;
+              \(nh\nu < k_{\!B}T\)
+            </div>
+            <p>
+              Es decir, el nivel \(n\) est&aacute; t&eacute;rmicamente accesible cuando la
+              energ&iacute;a necesaria para alcanzarlo (\(nh\nu\)) <strong>no supera la
+              energ&iacute;a t&eacute;rmica disponible</strong> (\(k_{\!B}T\)).
+              As&iacute;, el primer nivel excitado (\(n=1\)) se apaga exactamente cuando
+              \(h\nu = k_{\!B}T\) &mdash; el punto preciso donde la f&iacute;sica
+              cl&aacute;sica deja de ser v&aacute;lida y la cuantizaci&oacute;n domina.
+            </p>
             <p style="color:var(--gray2);font-size:0.78rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:0.6rem;margin-top:0.6rem">
               <strong>En resumen:</strong> la cuantizaci&oacute;n impone un costo m&iacute;nimo \(h\nu\)
               para excitar un modo. Cuando la temperatura no puede &laquo;pagar&raquo; ese costo
@@ -2574,7 +2598,7 @@
       for (let n = 8; n >= 0; n--) {
         const E = n * hn;
         const prob = Math.exp(-n * ratio);
-        const occ = prob > 0.04;
+        const occ = prob > Math.exp(-1);  // 1/e ≈ 0.3679 — escala natural de Boltzmann
 
         const row = document.createElement('div');
         row.className = 'level-row';
@@ -2610,14 +2634,14 @@
 
       /* Mensaje de estado */
       const msg = document.getElementById('excitation-msg');
-      if (ratio < 0.5) {
-        msg.innerHTML = '<strong>Régimen clásico:</strong> h\u03bd \u226a k\u0299T &mdash; muchos niveles excitados &mdash; \u0112 \u2248 k\u0299T';
+      if (ratio < 0.3) {
+        msg.innerHTML = '<strong>Régimen clásico:</strong> h\u03bd \u226a k\u0299T &mdash; muchos niveles térmicamente accesibles &mdash; \u0112 \u2248 k\u0299T';
         msg.style.cssText = 'text-align:center;margin-top:0.8rem;font-size:0.84rem;padding:0.6rem 1rem;border-radius:8px;background:rgba(0,200,255,0.08);color:#00C8FF;border:1px solid rgba(0,200,255,0.25);transition:all 0.3s';
-      } else if (ratio < 3.2) {
+      } else if (ratio < 1.0) {
         msg.innerHTML = '<strong>Transición:</strong> h\u03bd \u2248 k\u0299T &mdash; los niveles superiores pierden población &mdash; \u0112 se aparta de k\u0299T';
         msg.style.cssText = 'text-align:center;margin-top:0.8rem;font-size:0.84rem;padding:0.6rem 1rem;border-radius:8px;background:rgba(255,224,102,0.08);color:#FFE066;border:1px solid rgba(255,224,102,0.25);transition:all 0.3s';
       } else {
-        msg.innerHTML = '<strong>Congelación cuántica:</strong> h\u03bd \u226b k\u1D0BT &mdash; solo n=0 tiene población apreciable &mdash; \u0112 \u2192 0';
+        msg.innerHTML = '<strong>Congelación cuántica:</strong> h\u03bd > k\u0299T &mdash; n=1 cae bajo 1/e &mdash; el modo se congela &mdash; \u0112 \u2192 0';
         msg.style.cssText = 'text-align:center;margin-top:0.8rem;font-size:0.84rem;padding:0.6rem 1rem;border-radius:8px;background:rgba(255,107,53,0.08);color:#FF6B35;border:1px solid rgba(255,107,53,0.25);transition:all 0.3s';
       }
 

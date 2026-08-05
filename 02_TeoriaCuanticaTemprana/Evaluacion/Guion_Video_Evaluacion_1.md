@@ -195,6 +195,10 @@ $$\bar{E} = \frac{h\nu}{e^{h\nu / k_B T} - 1}$$
 >
 > - **Consecuencia fundamental:** La cuantización impone un costo mínimo \(h\nu\) para excitar cada modo. Los modos de alta frecuencia — precisamente aquellos cuya proliferación (\(\propto\nu^2\)) causaba la divergencia clásica — quedan congelados. Por ello, la integral de energía total converge y la catástrofe ultravioleta se elimina.
 >
+> **5. Criterio de accesibilidad térmica: \(1/e\)**
+>
+> En el diagrama interactivo, un nivel se muestra como «activo» cuando su población relativa supera \(1/e \approx 36.8\%\). Este umbral no es arbitrario: es la **escala natural de la distribución de Boltzmann**. La condición \(P_n/P_0 > 1/e\) equivale a \(nh\nu < k_BT\) — el nivel \(n\) es térmicamente accesible cuando la energía necesaria para alcanzarlo no supera la energía térmica disponible. El primer nivel excitado (\(n=1\)) se apaga exactamente cuando \(h\nu = k_BT\), que es el punto donde la cuantización domina sobre la física clásica.
+>
 > *La derivación completa está disponible en la App, en la sección **📚 Derivación formal — nivel académico**, debajo de la tarjeta **La Hipótesis de Planck**.*
 
 ### Parte C — Demostración Interactiva (3:35 – 4:05)
@@ -205,11 +209,11 @@ $$\bar{E} = \frac{h\nu}{e^{h\nu / k_B T} - 1}$$
 
 **Slider ν bajo (2–3 ×10¹³ Hz) → mostrar que muchos niveles están excitados →**
 
-> "Observemos qué representan estos niveles activos. Cada uno tiene una probabilidad de ocupación dada por la distribución de Boltzmann: comparado con el nivel base, la población del nivel n cae como e elevado a menos n por h-nu sobre k-B-T. Cuando h-nu es mucho menor que k-B-T, ese exponente crece lento, así que muchos niveles conservan una población apreciable — por eso ven varios niveles encendidos, y el mensaje dice 'Régimen clásico'. La energía media se aproxima a k-B-T. Aquí la física clásica funciona bien."
+> "Observemos qué representan estos niveles activos. En el diagrama, un nivel se enciende cuando su población relativa respecto al estado base supera un factor de uno sobre e — aproximadamente el 36.8 por ciento. Eso equivale a decir que la energía necesaria para alcanzar ese nivel no supera la energía térmica k-B-T. Cuando h-nu es mucho menor que k-B-T, muchos niveles cumplen esa condición — por eso ven varios niveles encendidos, y el mensaje dice 'Régimen clásico'. La energía media se aproxima a k-B-T. Aquí la física clásica funciona bien."
 
 **Subir slider ν a 10–12 ×10¹³ Hz → mostrar niveles congelados →**
 
-> "Pero cuando subo la frecuencia al ultravioleta — ahora h-nu es mucho mayor que k-B-T. Ese mismo exponente crece muy rápido, así que ya desde n igual a uno la población relativa es minúscula. Miren: los niveles superiores están apagados. Solo queda n igual a cero. Es como un 'precio de entrada mínimo' que la temperatura no puede pagar. El modo queda congelado."
+> "Pero cuando subo la frecuencia al ultravioleta — ahora h-nu supera a k-B-T. El primer nivel excitado ya no es térmicamente accesible: su población cae por debajo de uno sobre e y se apaga. Los niveles superiores, que necesitan aún más energía, están completamente despoblados. Solo queda n igual a cero. El modo queda congelado."
 
 > "Y la ley de distribución completa de Planck, que ajusta perfectamente todo el espectro, es:"
 
