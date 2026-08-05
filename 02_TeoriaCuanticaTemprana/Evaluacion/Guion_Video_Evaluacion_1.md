@@ -35,7 +35,7 @@
 
 **Indicación de cámara:** Encuadre medio, fondo limpio. Contacto visual directo. La App debe estar abierta en el Hero (portada inicial, antes de hacer scroll).
 
-> "A finales del siglo XIX, la física clásica parecía completa. Las ecuaciones de Maxwell (1865) explicaban la luz —como ondas oscilantes de campo eléctrico y magnético que se propagan incluso en el vacío—; la termodinámica estadística de Boltzmann (décadas de 1870-1880) explicaba el calor —como el movimiento promedio de billones de partículas microscópicas—; y la mecánica de Newton (1687) explicaba el movimiento de los cuerpos, desde una manzana cayendo hasta las órbitas de los planetas. Sin embargo, un problema aparentemente simple —¿cómo emite luz un objeto caliente?— reveló una contradicción tan grave que destruyó los fundamentos de esa física. Hoy vamos a ver ese problema, por qué la solución clásica fue catastrófica, y cómo Max Planck propuso en 1900 una idea que nadie esperaba: que la energía no puede tomar cualquier valor."
+> "A finales del siglo XIX, la física clásica parecía completa. Las ecuaciones de Maxwell (1865) explicaban la luz —como ondas oscilantes de campo eléctrico y magnético que se propagan incluso en el vacío—; la termodinámica estadística de Boltzmann (décadas de 1870-1880) explicaba el calor —como el movimiento promedio de billones de partículas microscópicas—; y la mecánica de Newton (1687) explicaba el movimiento de los cuerpos, desde una manzana cayendo hasta las órbitas de los planetas. Sin embargo, un problema aparentemente simple —¿cómo emite luz un objeto caliente?— reveló una contradicción tan profunda que puso en evidencia las limitaciones de esa física. Hoy vamos a ver ese problema, por qué la solución clásica fue catastrófica, y cómo Max Planck propuso en 1900 una idea que nadie esperaba: que la energía no puede tomar cualquier valor."
 
 *(Click en "▶ Iniciar exploración" en la App → scroll a Sección 1)*
 
@@ -47,7 +47,7 @@
 
 > "Un cuerpo negro es un objeto idealizado que absorbe el cien por ciento de la radiación que incide sobre él —no refleja nada, no transmite nada— y emite radiación electromagnética únicamente en función de su temperatura. Es el emisor y absorbedor perfecto."
 
-> "Este concepto no es solo teórico: existe una temperatura, cerca de los 525 grados Celsius, a partir de la cual prácticamente cualquier sólido opaco empieza a brillar con un rojo tenue —sin importar de qué material esté hecho. Es la primera señal visible de que la luz emitida depende únicamente de la temperatura, tal como predice el modelo de cuerpo negro."
+> "Este concepto no es solo teórico: existe una temperatura, cerca de los 525 grados Celsius, a partir de la cual la mayoría de los sólidos opacos comienzan a emitir una luminiscencia roja tenue, perceptible al ojo humano —sin importar de qué material esté hecho. Es la primera señal visible de que la luz emitida depende únicamente de la temperatura, tal como predice el modelo de cuerpo negro."
 
 **Mover el slider de T a ~1500 K → mostrar curva baja y desplazada al IR.**
 
@@ -55,7 +55,7 @@
 
 **Subir el slider lentamente a 5778 K → señalar que la curva CRECE en altura Y se desplaza hacia la izquierda.**
 
-> "Observen dos cosas al mismo tiempo: el pico se desplaza hacia longitudes de onda más cortas —la Ley de Wien— y la curva crece enormemente en altura. A 5778 kelvin —la temperatura de la superficie del Sol— el pico está en 501 nanómetros, justo en el visible, y la potencia es de 63 megavatios por metro cuadrado."
+> "Observen dos cosas al mismo tiempo: el pico se desplaza hacia longitudes de onda más cortas —la Ley de Wien— y la curva crece enormemente en altura. A 5778 kelvin —la temperatura de la superficie del Sol— el pico está en aproximadamente 502 nanómetros, justo en el visible, y la potencia es de 63.2 megavatios por metro cuadrado."
 
 $$\lambda_{\max} \cdot T = 2.898 \times 10^{-3} \;\text{m·K}$$
 
@@ -89,7 +89,7 @@ $$R = \sigma T^4$$
 
 **Click en Paso 1 →**
 
-> "Primero, contamos los modos de oscilación dentro de una cavidad. Piensen en la cavidad como una caja cerrada: solo ciertas ondas estacionarias —definidas por números enteros en cada dirección— encajan exactamente entre sus paredes, igual que una cuerda de guitarra solo vibra en ciertas notas permitidas. El número de esos modos electromagnéticos crece como nu al cuadrado:"
+> "Primero, contamos los modos de oscilación dentro de una cavidad. Consideren la cavidad como una caja cerrada: solo ciertas ondas estacionarias —definidas por números enteros en cada dirección— encajan exactamente entre sus paredes, igual que una cuerda de guitarra solo vibra en ciertas notas permitidas. El número de esos modos electromagnéticos crece como nu al cuadrado:"
 
 $$dN = \frac{8\pi\nu^2 L^3}{c^3}\,d\nu$$
 
@@ -113,7 +113,7 @@ $$u(\nu,T) = \frac{8\pi\nu^2}{c^3}\,k_B T$$
 
 > "Quiero enfatizar algo: esto no fue un error de cálculo. Fue la consecuencia inevitable de combinar dos postulados de la física clásica: el teorema de equipartición, que asigna una energía media de $k_BT$ a cada modo, y el electromagnetismo de Maxwell, que predice un número de modos cada vez mayor a medida que aumenta la frecuencia. Juntos conducen a una energía total infinita, un resultado incompatible con la realidad."
 
-> "En 1911, Paul Ehrenfest bautizó este fracaso como la 'catástrofe ultravioleta'. No era una anomalía menor — era una crisis fundamental."
+> "En 1911, Paul Ehrenfest bautizó este fracaso como la 'catástrofe ultravioleta'. No se trataba de una anomalía menor: era una crisis fundamental de la física clásica."
 
 *(Scroll a Sección 3: La Solución de Planck)*
 
@@ -195,7 +195,7 @@ $$\bar{E} = \frac{h\nu}{e^{h\nu / k_B T} - 1}$$
 
 **Slider ν bajo (2–3 ×10¹³ Hz) → mostrar que muchos niveles están excitados →**
 
-> "Veamos qué significan estos niveles encendidos. Cada uno tiene una probabilidad de ocupación dada por la distribución de Boltzmann: comparado con el nivel base, la población del nivel n cae como e elevado a menos n por h-nu sobre k-B-T. Cuando h-nu es mucho menor que k-B-T, ese exponente crece lento, así que muchos niveles conservan una población apreciable — por eso ven varios niveles encendidos, y el mensaje dice 'Régimen clásico'. La energía media se aproxima a k-B-T. Aquí la física clásica funciona bien."
+> "Observemos qué representan estos niveles activos. Cada uno tiene una probabilidad de ocupación dada por la distribución de Boltzmann: comparado con el nivel base, la población del nivel n cae como e elevado a menos n por h-nu sobre k-B-T. Cuando h-nu es mucho menor que k-B-T, ese exponente crece lento, así que muchos niveles conservan una población apreciable — por eso ven varios niveles encendidos, y el mensaje dice 'Régimen clásico'. La energía media se aproxima a k-B-T. Aquí la física clásica funciona bien."
 
 **Subir slider ν a 10–12 ×10¹³ Hz → mostrar niveles congelados →**
 
@@ -247,7 +247,7 @@ $$u(\nu,T) = \frac{8\pi h\nu^3}{c^3} \cdot \frac{1}{e^{h\nu / k_B T} - 1}$$
 
 > "Todo esto forma una cadena: Planck propone la energía en paquetes en 1900. Einstein aplica la idea a la luz en 1905. Bohr la usa para explicar el átomo en 1913. Schrödinger y Heisenberg completan la mecánica cuántica en 1925 y 1926. Y de ahí nacen, décadas después, el transistor, el láser, el sensor de cámara, el GPS y los qubits de hoy."
 
-> "Planck llamó a su propia hipótesis 'un acto de desesperación'. La catástrofe ultravioleta no fue un simple error de cálculo — fue la señal de que hacía falta una física nueva."
+> "Planck llamó a su propia hipótesis 'un acto de desesperación'. La catástrofe ultravioleta no fue un simple error de cálculo: fue la señal de que hacía falta una física nueva."
 
 > "Gracias por su atención."
 
