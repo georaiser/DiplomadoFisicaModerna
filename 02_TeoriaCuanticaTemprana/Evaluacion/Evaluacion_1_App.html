@@ -1592,7 +1592,7 @@
     </div>
 
     <div class="planck-grid">
-      <!-- Izquierda: sliders + niveles -->
+      <!-- Top-Left (Fila 1, Col 1): Sliders + Niveles interactivos -->
       <div class="card fi fi2">
         <div class="card-title">Niveles de Energ&iacute;a Cuantizados</div>
 
@@ -1647,138 +1647,108 @@
           el nivel est&aacute; t&eacute;rmicamente accesible si la energ&iacute;a para alcanzarlo (\(nh\nu\)) no supera
           la energ&iacute;a t&eacute;rmica disponible (\(k_{\!B}T\)).
         </p>
-
-        <details
-          style="margin-top:1rem;background:rgba(255,224,102,0.04);border:1px solid rgba(255,224,102,0.12);border-radius:10px;padding:0 1rem">
-          <summary
-            style="cursor:pointer;padding:0.8rem 0;font-size:0.88rem;font-weight:600;color:var(--yellow);list-style:none">
-            &#128218; &iquest;C&oacute;mo se calcula la energ&iacute;a media \(\bar{E}\) y por qu&eacute; cambia con
-            \(T\) y \(\nu\)?
-          </summary>
-          <div style="padding:0 0 1rem 0;font-size:0.82rem;line-height:1.7;color:var(--gray)">
-
-            <p style="margin-top:0.5rem">
-              Cada oscilador de frecuencia \(\nu\) solo puede tener energ&iacute;as
-              \(E_n = n\,h\nu\) con \(n = 0, 1, 2, \ldots\) La probabilidad de encontrarlo en el nivel \(n\)
-              sigue la <strong style="color:var(--white)">distribuci&oacute;n de Boltzmann</strong>:
-            </p>
-            <div style="text-align:center;margin:0.6rem 0;font-size:0.95rem;color:var(--cyan)">
-              \(\displaystyle P_n = \frac{e^{-n h\nu / k_{\!B}T}}{Z}\),
-              &emsp; donde &emsp;
-              \(\displaystyle Z = \sum_{n=0}^{\infty} e^{-n h\nu / k_{\!B}T} = \frac{1}{1 - e^{-h\nu/k_{\!B}T}}\)
-            </div>
-            <p>
-              La <strong style="color:var(--yellow)">energ&iacute;a media</strong> resulta de promediar
-              \(E_n\) ponderado por \(P_n\):
-            </p>
-            <div style="text-align:center;margin:0.6rem 0;font-size:1.05rem;color:var(--yellow)">
-              \(\displaystyle \bar{E} = \frac{h\nu}{e^{\,h\nu/k_{\!B}T} - 1}\)
-            </div>
-            <p>
-              Todo depende de la <strong style="color:var(--orange)">raz&oacute;n
-                \(h\nu\,/\,k_{\!B}T\)</strong>, que compara el tama&ntilde;o del cuanto
-              \(h\nu\) con la energ&iacute;a t&eacute;rmica disponible \(k_{\!B}T\):
-            </p>
-            <ul style="margin:0.5rem 0 0.5rem 1.2rem;padding:0">
-              <li style="margin-bottom:0.5rem">
-                <strong style="color:var(--orange)">Efecto de la temperatura \(T\):</strong>
-                Al aumentar \(T\), la energ&iacute;a t&eacute;rmica \(k_{\!B}T\) crece y el exponente
-                \(e^{-nh\nu/k_{\!B}T}\) decrece m&aacute;s lentamente. Los niveles superiores adquieren
-                mayor poblaci&oacute;n &mdash; m&aacute;s niveles se &laquo;encienden&raquo; y \(\bar{E}\) aumenta.
-                Al reducir \(T\), la energ&iacute;a t&eacute;rmica disminuye: el exponente cae r&aacute;pidamente y
-                los niveles altos quedan pr&aacute;cticamente despoblados.
-              </li>
-              <li style="margin-bottom:0.5rem">
-                <strong style="color:var(--green)">Efecto de la frecuencia \(\nu\):</strong>
-                La frecuencia determina la <em>separaci&oacute;n</em> entre niveles (\(\Delta E = h\nu\)).
-                A frecuencia baja, los pelda&ntilde;os son peque&ntilde;os respecto a \(k_{\!B}T\):
-                el oscilador sube f&aacute;cilmente varios niveles y \(\bar{E}\approx k_{\!B}T\)
-                (<strong>r&eacute;gimen cl&aacute;sico</strong>).
-                A frecuencia alta, cada pelda&ntilde;o es grande &mdash; el &laquo;precio de entrada&raquo; al
-                primer nivel excitado supera la energ&iacute;a t&eacute;rmica: el oscilador queda atrapado
-                en \(n=0\) y \(\bar{E}\to 0\)
-                (<strong>congelaci&oacute;n cu&aacute;ntica</strong>).
-              </li>
-            </ul>
-            <p style="margin-top:0.8rem">
-              <strong style="color:var(--white)">Criterio de accesibilidad t&eacute;rmica: \(1/e\)</strong>
-            </p>
-            <p>
-              En el diagrama, un nivel se muestra como &laquo;activo&raquo; cuando su poblaci&oacute;n relativa
-              supera \(1/e \approx 36.8\%\). Este no es un valor arbitrario: es la
-              <strong style="color:var(--cyan)">escala natural de decaimiento de la distribuci&oacute;n de
-              Boltzmann</strong>. La condici&oacute;n \(P_n/P_0 > 1/e\) equivale a:
-            </p>
-            <div style="text-align:center;margin:0.5rem 0;font-size:0.95rem;color:var(--cyan)">
-              \(e^{-nh\nu/k_{\!B}T} > e^{-1}\)
-              &emsp;\(\Longleftrightarrow\)&emsp;
-              \(nh\nu < k_{\!B}T\)
-            </div>
-            <p>
-              Es decir, el nivel \(n\) est&aacute; t&eacute;rmicamente accesible cuando la
-              energ&iacute;a necesaria para alcanzarlo (\(nh\nu\)) <strong>no supera la
-              energ&iacute;a t&eacute;rmica disponible</strong> (\(k_{\!B}T\)).
-              As&iacute;, el primer nivel excitado (\(n=1\)) se apaga exactamente cuando
-              \(h\nu = k_{\!B}T\) &mdash; el punto preciso donde la f&iacute;sica
-              cl&aacute;sica deja de ser v&aacute;lida y la cuantizaci&oacute;n domina.
-            </p>
-            <p style="color:var(--gray2);font-size:0.78rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:0.6rem;margin-top:0.6rem">
-              <strong>En resumen:</strong> la cuantizaci&oacute;n impone un costo m&iacute;nimo \(h\nu\)
-              para excitar un modo. Cuando la temperatura no puede &laquo;pagar&raquo; ese costo
-              (\(h\nu \gg k_{\!B}T\)), el modo se congela y deja de contribuir a la
-              energ&iacute;a total &mdash; eliminando la divergencia ultravioleta que la f&iacute;sica
-              cl&aacute;sica no pod&iacute;a resolver.
-            </p>
-          </div>
-        </details>
       </div>
 
-      <!-- Derecha: tabla + grafica -->
-      <div class="fi fi3" style="display:flex;flex-direction:column;gap:1rem">
-        <div class="card">
-          <div class="card-title">Comparaci&oacute;n: \(\bar{E}\) cl&aacute;sica vs. Planck</div>
-          <table class="cmp-table">
-            <thead>
-              <tr>
-                <th>R&eacute;gimen</th>
-                <th>Cl&aacute;sico (R-J)</th>
-                <th>Planck</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="color:var(--gray)">Baja \(\nu\) &nbsp;<small style="color:var(--gray2)">\((h\nu\ll
-                    k_{\!B}T)\)</small></td>
-                <td class="good">\(k_{\!B}T\) &nbsp;&#10003;</td>
-                <td class="good">\(\approx k_{\!B}T\) &nbsp;&#10003;</td>
-              </tr>
-              <tr>
-                <td style="color:var(--gray)">Alta \(\nu\) &nbsp;<small style="color:var(--gray2)">\((h\nu\gg
-                    k_{\!B}T)\)</small></td>
-                <td class="bad">\(k_{\!B}T \to \infty\) &nbsp;&#10007;</td>
-                <td class="good">\(\to 0\) &nbsp;&#10003;</td>
-              </tr>
-              <tr>
-                <td style="color:var(--gray)">F&oacute;rmula</td>
-                <td>\(k_{\!B}T\)</td>
-                <td style="color:var(--yellow)">\(\displaystyle\frac{h\nu}{e^{h\nu/k_{\!B}T}-1}\)</td>
-              </tr>
-            </tbody>
-          </table>
+      <!-- Top-Right (Fila 1, Col 2): ¿Cómo se calcula la energía media E y por qué cambia con T y ν? -->
+      <div class="card fi fi3">
+        <div class="card-title" style="color:var(--yellow)">
+          &#128218; &iquest;C&oacute;mo se calcula la energ&iacute;a media \(\bar{E}\) y por qu&eacute; cambia con \(T\) y \(\nu\)?
         </div>
-        <div class="card">
-          <div class="card-title">\(\bar{E}\,/\,k_{\!B}T\) vs. frecuencia</div>
-          <div class="canvas-wrapper" style="background:transparent;border:none">
-            <canvas id="planckEnergyCanvas" width="500" height="240" role="img"
-              aria-label="Energía media del oscilador vs frecuencia"></canvas>
+        <div style="font-size:0.82rem;line-height:1.65;color:var(--gray)">
+          <p style="margin-top:0.3rem">
+            Cada oscilador de frecuencia \(\nu\) solo puede tener energ&iacute;as
+            \(E_n = n\,h\nu\) con \(n = 0, 1, 2, \ldots\) La probabilidad de encontrarlo en el nivel \(n\)
+            sigue la <strong style="color:var(--white)">distribuci&oacute;n de Boltzmann</strong>:
+          </p>
+          <div style="text-align:center;margin:0.5rem 0;font-size:0.92rem;color:var(--cyan)">
+            \(\displaystyle P_n = \frac{e^{-n h\nu / k_{\!B}T}}{Z}\),
+            &emsp; donde &emsp;
+            \(\displaystyle Z = \sum_{n=0}^{\infty} e^{-n h\nu / k_{\!B}T} = \frac{1}{1 - e^{-h\nu/k_{\!B}T}}\)
           </div>
-          <p style="font-size:0.78rem;color:var(--gray);margin-top:0.5rem;line-height:1.6">
-            <span style="color:var(--orange)">&#9644; Cl&aacute;sico</span>: constante \(k_{\!B}T\) para toda \(\nu\).
-            &nbsp;<span style="color:var(--cyan)">&#9644; Planck</span>: cae exponencialmente cuando \(h\nu>k_{\!B}T\).
-            &nbsp;<span style="color:var(--white)">&#8739;</span> vertical = \(h\nu=k_{\!B}T\).
-            &nbsp;<span style="color:var(--yellow)">&#11044;</span> = slider.
+          <p>
+            La <strong style="color:var(--yellow)">energ&iacute;a media</strong> resulta de promediar
+            \(E_n\) ponderado por \(P_n\):
+          </p>
+          <div style="text-align:center;margin:0.5rem 0;font-size:1.02rem;color:var(--yellow)">
+            \(\displaystyle \bar{E} = \frac{h\nu}{e^{\,h\nu/k_{\!B}T} - 1}\)
+          </div>
+          <p>
+            Todo depende de la <strong style="color:var(--orange)">raz&oacute;n \(h\nu\,/\,k_{\!B}T\)</strong>, que compara el tama&ntilde;o del cuanto \(h\nu\) con la energ&iacute;a t&eacute;rmica disponible \(k_{\!B}T\):
+          </p>
+          <ul style="margin:0.4rem 0 0.4rem 1.2rem;padding:0">
+            <li style="margin-bottom:0.4rem">
+              <strong style="color:var(--orange)">Efecto de la temperatura \(T\):</strong>
+              Al aumentar \(T\), \(k_{\!B}T\) crece y \(e^{-nh\nu/k_{\!B}T}\) decrece m&aacute;s lentamente. Los niveles superiores adquieren mayor poblaci&oacute;n &mdash; m&aacute;s niveles se &laquo;encienden&raquo; y \(\bar{E}\) aumenta. Al reducir \(T\), los niveles altos quedan despoblados.
+            </li>
+            <li style="margin-bottom:0.4rem">
+              <strong style="color:var(--green)">Efecto de la frecuencia \(\nu\):</strong>
+              La frecuencia determina la <em>separaci&oacute;n</em> entre niveles (\(\Delta E = h\nu\)). A baja \(\nu\), pelda&ntilde;os peque&ntilde;os \(\Rightarrow \bar{E}\approx k_{\!B}T\) (<strong>r&eacute;gimen cl&aacute;sico</strong>). A alta \(\nu\), pelda&ntilde;o grande \(\Rightarrow\) el oscilador queda atrapado en \(n=0\) y \(\bar{E}\to 0\) (<strong>congelaci&oacute;n cu&aacute;ntica</strong>).
+            </li>
+          </ul>
+          <p style="margin-top:0.6rem">
+            <strong style="color:var(--white)">Criterio de accesibilidad t&eacute;rmica: \(1/e\)</strong>
+          </p>
+          <p style="font-size:0.8rem">
+            En el diagrama, un nivel est&aacute; &laquo;activo&raquo; cuando su poblaci&oacute;n relativa supera \(1/e \approx 36.8\%\) (<strong style="color:var(--cyan)">escala natural de Boltzmann</strong>):
+          </p>
+          <div style="text-align:center;margin:0.4rem 0;font-size:0.9rem;color:var(--cyan)">
+            \(e^{-nh\nu/k_{\!B}T} > e^{-1} \;\;\Longleftrightarrow\;\; nh\nu < k_{\!B}T\)
+          </div>
+          <p style="font-size:0.8rem">
+            Es decir, el nivel \(n\) es accesible cuando la energ&iacute;a para alcanzarlo (\(nh\nu\)) <strong>no supera la energ&iacute;a t&eacute;rmica disponible</strong> (\(k_{\!B}T\)). El nivel \(n=1\) se apaga exactamente cuando \(h\nu = k_{\!B}T\).
+          </p>
+          <p style="color:var(--gray2);font-size:0.75rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:0.5rem;margin-top:0.5rem">
+            <strong>En resumen:</strong> La cuantizaci&oacute;n impone un costo m&iacute;nimo \(h\nu\) para excitar un modo. Cuando \(h\nu \gg k_{\!B}T\), el modo se congela y deja de contribuir a la energ&iacute;a total &mdash; eliminando la cat&aacute;strofe ultravioleta.
           </p>
         </div>
+      </div>
+
+      <!-- Bottom-Left (Fila 2, Col 1): Gráfica E / kBT vs. Frecuencia -->
+      <div class="card fi fi2">
+        <div class="card-title">\(\bar{E}\,/\,k_{\!B}T\) vs. frecuencia</div>
+        <div class="canvas-wrapper" style="background:transparent;border:none">
+          <canvas id="planckEnergyCanvas" width="500" height="240" role="img"
+            aria-label="Energía media del oscilador vs frecuencia"></canvas>
+        </div>
+        <p style="font-size:0.78rem;color:var(--gray);margin-top:0.5rem;line-height:1.6">
+          <span style="color:var(--orange)">&#9644; Cl&aacute;sico</span>: constante \(k_{\!B}T\) para toda \(\nu\).
+          &nbsp;<span style="color:var(--cyan)">&#9644; Planck</span>: cae exponencialmente cuando \(h\nu>k_{\!B}T\).
+          &nbsp;<span style="color:var(--white)">&#8739;</span> vertical = \(h\nu=k_{\!B}T\).
+          &nbsp;<span style="color:var(--yellow)">&#11044;</span> = slider.
+        </p>
+      </div>
+
+      <!-- Bottom-Right (Fila 2, Col 2): Comparación clásica vs. Planck -->
+      <div class="card fi fi3">
+        <div class="card-title">Comparaci&oacute;n: \(\bar{E}\) cl&aacute;sica vs. Planck</div>
+        <table class="cmp-table">
+          <thead>
+            <tr>
+              <th>R&eacute;gimen</th>
+              <th>Cl&aacute;sico (R-J)</th>
+              <th>Planck</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="color:var(--gray)">Baja \(\nu\) &nbsp;<small style="color:var(--gray2)">\((h\nu\ll
+                  k_{\!B}T)\)</small></td>
+              <td class="good">\(k_{\!B}T\) &nbsp;&#10003;</td>
+              <td class="good">\(\approx k_{\!B}T\) &nbsp;&#10003;</td>
+            </tr>
+            <tr>
+              <td style="color:var(--gray)">Alta \(\nu\) &nbsp;<small style="color:var(--gray2)">\((h\nu\gg
+                  k_{\!B}T)\)</small></td>
+              <td class="bad">\(k_{\!B}T \to \infty\) &nbsp;&#10007;</td>
+              <td class="good">\(\to 0\) &nbsp;&#10003;</td>
+            </tr>
+            <tr>
+              <td style="color:var(--gray)">F&oacute;rmula</td>
+              <td>\(k_{\!B}T\)</td>
+              <td style="color:var(--yellow)">\(\displaystyle\frac{h\nu}{e^{h\nu/k_{\!B}T}-1}\)</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
