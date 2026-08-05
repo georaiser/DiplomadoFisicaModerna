@@ -1645,6 +1645,68 @@
           se compara solo contra n=0. Un nivel se &laquo;enciende&raquo; en el diagrama si esa poblaci&oacute;n relativa
           supera el 4%.
         </p>
+
+        <details
+          style="margin-top:1rem;background:rgba(255,224,102,0.04);border:1px solid rgba(255,224,102,0.12);border-radius:10px;padding:0 1rem">
+          <summary
+            style="cursor:pointer;padding:0.8rem 0;font-size:0.88rem;font-weight:600;color:var(--yellow);list-style:none">
+            &#128218; &iquest;C&oacute;mo se calcula la energ&iacute;a media \(\bar{E}\) y por qu&eacute; cambia con
+            \(T\) y \(\nu\)?
+          </summary>
+          <div style="padding:0 0 1rem 0;font-size:0.82rem;line-height:1.7;color:var(--gray)">
+
+            <p style="margin-top:0.5rem">
+              Cada oscilador de frecuencia \(\nu\) solo puede tener energ&iacute;as
+              \(E_n = n\,h\nu\) con \(n = 0, 1, 2, \ldots\) La probabilidad de encontrarlo en el nivel \(n\)
+              sigue la <strong style="color:var(--white)">distribuci&oacute;n de Boltzmann</strong>:
+            </p>
+            <div style="text-align:center;margin:0.6rem 0;font-size:0.95rem;color:var(--cyan)">
+              \(\displaystyle P_n = \frac{e^{-n h\nu / k_{\!B}T}}{Z}\),
+              &emsp; donde &emsp;
+              \(\displaystyle Z = \sum_{n=0}^{\infty} e^{-n h\nu / k_{\!B}T} = \frac{1}{1 - e^{-h\nu/k_{\!B}T}}\)
+            </div>
+            <p>
+              La <strong style="color:var(--yellow)">energ&iacute;a media</strong> resulta de promediar
+              \(E_n\) ponderado por \(P_n\):
+            </p>
+            <div style="text-align:center;margin:0.6rem 0;font-size:1.05rem;color:var(--yellow)">
+              \(\displaystyle \bar{E} = \frac{h\nu}{e^{\,h\nu/k_{\!B}T} - 1}\)
+            </div>
+            <p>
+              Todo depende de la <strong style="color:var(--orange)">raz&oacute;n
+                \(h\nu\,/\,k_{\!B}T\)</strong>, que compara el tama&ntilde;o del cuanto
+              \(h\nu\) con la energ&iacute;a t&eacute;rmica disponible \(k_{\!B}T\):
+            </p>
+            <ul style="margin:0.5rem 0 0.5rem 1.2rem;padding:0">
+              <li style="margin-bottom:0.5rem">
+                <strong style="color:var(--orange)">Efecto de la temperatura \(T\):</strong>
+                Al aumentar \(T\), la energ&iacute;a t&eacute;rmica \(k_{\!B}T\) crece y el exponente
+                \(e^{-nh\nu/k_{\!B}T}\) decrece m&aacute;s lentamente. Los niveles superiores adquieren
+                mayor poblaci&oacute;n &mdash; m&aacute;s niveles se &laquo;encienden&raquo; y \(\bar{E}\) aumenta.
+                Al reducir \(T\), la energ&iacute;a t&eacute;rmica disminuye: el exponente cae r&aacute;pidamente y
+                los niveles altos quedan pr&aacute;cticamente despoblados.
+              </li>
+              <li style="margin-bottom:0.5rem">
+                <strong style="color:var(--green)">Efecto de la frecuencia \(\nu\):</strong>
+                La frecuencia determina la <em>separaci&oacute;n</em> entre niveles (\(\Delta E = h\nu\)).
+                A frecuencia baja, los pelda&ntilde;os son peque&ntilde;os respecto a \(k_{\!B}T\):
+                el oscilador sube f&aacute;cilmente varios niveles y \(\bar{E}\approx k_{\!B}T\)
+                (<strong>r&eacute;gimen cl&aacute;sico</strong>).
+                A frecuencia alta, cada pelda&ntilde;o es grande &mdash; el &laquo;precio de entrada&raquo; al
+                primer nivel excitado supera la energ&iacute;a t&eacute;rmica: el oscilador queda atrapado
+                en \(n=0\) y \(\bar{E}\to 0\)
+                (<strong>congelaci&oacute;n cu&aacute;ntica</strong>).
+              </li>
+            </ul>
+            <p style="color:var(--gray2);font-size:0.78rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:0.6rem;margin-top:0.6rem">
+              <strong>En resumen:</strong> la cuantizaci&oacute;n impone un costo m&iacute;nimo \(h\nu\)
+              para excitar un modo. Cuando la temperatura no puede &laquo;pagar&raquo; ese costo
+              (\(h\nu \gg k_{\!B}T\)), el modo se congela y deja de contribuir a la
+              energ&iacute;a total &mdash; eliminando la divergencia ultravioleta que la f&iacute;sica
+              cl&aacute;sica no pod&iacute;a resolver.
+            </p>
+          </div>
+        </details>
       </div>
 
       <!-- Derecha: tabla + grafica -->

@@ -185,6 +185,16 @@ $$\bar{E} = \frac{h\nu}{e^{h\nu / k_B T} - 1}$$
 >
 > Al sustituir \(x\), se obtiene la expresión de Planck para la energía media del oscilador. Es una consecuencia directa de aplicar la distribución de Boltzmann a niveles de energía discretos.
 >
+> **4. Interpretación física: efecto de \(T\) y \(\nu\)**
+>
+> El comportamiento del oscilador depende enteramente de la razón \(h\nu/k_BT\), que compara el tamaño del cuanto de energía \(h\nu\) con la energía térmica disponible \(k_BT\):
+>
+> - **Efecto de la temperatura \(T\):** Al aumentar \(T\), la energía térmica \(k_BT\) crece. El exponente \(e^{-nh\nu/k_BT}\) decrece más lentamente con \(n\), de modo que los niveles superiores adquieren mayor población relativa — más niveles se «encienden» en el diagrama interactivo y \(\bar{E}\) aumenta. Al reducir \(T\), la energía térmica disminuye: el exponente cae rápidamente y los niveles altos quedan prácticamente despoblados.
+>
+> - **Efecto de la frecuencia \(\nu\):** La frecuencia fija la separación entre niveles consecutivos (\(\Delta E = h\nu\)). A frecuencia baja, los peldaños son pequeños respecto a \(k_BT\): el oscilador accede fácilmente a varios niveles y \(\bar{E}\approx k_BT\) (**régimen clásico**). A frecuencia alta, cada peldaño es grande — el «precio de entrada» al primer nivel excitado supera la energía térmica disponible: el oscilador queda atrapado en \(n=0\) y \(\bar{E}\to 0\) (**congelación cuántica**).
+>
+> - **Consecuencia fundamental:** La cuantización impone un costo mínimo \(h\nu\) para excitar cada modo. Los modos de alta frecuencia — precisamente aquellos cuya proliferación (\(\propto\nu^2\)) causaba la divergencia clásica — quedan congelados. Por ello, la integral de energía total converge y la catástrofe ultravioleta se elimina.
+>
 > *La derivación completa está disponible en la App, en la sección **📚 Derivación formal — nivel académico**, debajo de la tarjeta **La Hipótesis de Planck**.*
 
 ### Parte C — Demostración Interactiva (3:35 – 4:05)
