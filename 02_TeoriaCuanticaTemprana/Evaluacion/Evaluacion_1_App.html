@@ -2610,14 +2610,14 @@
 
       /* Mensaje de estado */
       const msg = document.getElementById('excitation-msg');
-      if (ratio < 0.3) {
+      if (ratio < 0.5) {
         msg.innerHTML = '<strong>Régimen clásico:</strong> h\u03bd \u226a k\u0299T &mdash; muchos niveles excitados &mdash; \u0112 \u2248 k\u0299T';
         msg.style.cssText = 'text-align:center;margin-top:0.8rem;font-size:0.84rem;padding:0.6rem 1rem;border-radius:8px;background:rgba(0,200,255,0.08);color:#00C8FF;border:1px solid rgba(0,200,255,0.25);transition:all 0.3s';
-      } else if (ratio < 1.5) {
-        msg.innerHTML = '<strong>Transición:</strong> h\u03bd \u2248 k\u0299T &mdash; \u0112 se aparta de k\u0299T &mdash; cuantización empieza a importar';
+      } else if (ratio < 3.2) {
+        msg.innerHTML = '<strong>Transición:</strong> h\u03bd \u2248 k\u0299T &mdash; los niveles superiores pierden población &mdash; \u0112 se aparta de k\u0299T';
         msg.style.cssText = 'text-align:center;margin-top:0.8rem;font-size:0.84rem;padding:0.6rem 1rem;border-radius:8px;background:rgba(255,224,102,0.08);color:#FFE066;border:1px solid rgba(255,224,102,0.25);transition:all 0.3s';
       } else {
-        msg.innerHTML = '<strong>Cuantización activa:</strong> h\u03bd \u226b k\u1D0BT &mdash; modos superiores congelados &mdash; \u0112 \u2192 0';
+        msg.innerHTML = '<strong>Congelación cuántica:</strong> h\u03bd \u226b k\u1D0BT &mdash; solo n=0 tiene población apreciable &mdash; \u0112 \u2192 0';
         msg.style.cssText = 'text-align:center;margin-top:0.8rem;font-size:0.84rem;padding:0.6rem 1rem;border-radius:8px;background:rgba(255,107,53,0.08);color:#FF6B35;border:1px solid rgba(255,107,53,0.25);transition:all 0.3s';
       }
 
