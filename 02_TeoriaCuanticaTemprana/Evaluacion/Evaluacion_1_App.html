@@ -1322,14 +1322,6 @@
             <span class="data-label">Clasificación estelar</span>
             <span class="data-value" id="color-result" style="color:var(--gray)">Sol (G)</span>
           </div>
-          <div style="margin-top:0.7rem;padding-top:0.7rem;border-top:1px solid var(--border)"></div>
-          <div class="formula-box" style="margin:0.6rem 0 0 0;padding:0.5rem 0.7rem;font-size:0.82rem">
-            Peak: \(u(\lambda_{\max},T)\propto T^5\)
-            <div style="font-size:0.7rem;margin-top:5px;color:var(--gray)">
-              \(u(\lambda_{\max},T)=\underbrace{\left[\dfrac{8\pi
-              hc}{b^5\left(e^{hc/bk_{\!B}}-1\right)}\right]}_{\text{constante}}\cdot T^5\)
-            </div>
-          </div>
           <div style="margin-top:0.7rem;padding-top:0.7rem;border-top:1px solid var(--border)">
             <div class="card-title" style="margin-bottom:0.5rem;font-size:0.76rem">Leyes</div>
             <p style="font-size:0.74rem;color:var(--gray);margin-bottom:0.3rem">Stefan-Boltzmann
@@ -1349,14 +1341,48 @@
         </div>
       </div>
 
-      <!-- Canvas espectro -->
-      <div class="canvas-wrapper fi fi3">
-        <canvas id="spectrumCanvas" width="900" height="600" role="img" aria-label="Espectro del cuerpo negro"></canvas>
-        <span class="canvas-badge" id="canvas-label" style="top:auto;bottom:10px;left:12px;right:auto">T = 5 778
-          K</span>
-        <button onclick="toggleFullCanvas('spectrumCanvas')"
-          style="position:absolute;bottom:10px;right:12px;padding:3px 9px;border-radius:5px;border:1px solid var(--border);background:rgba(13,27,42,0.8);color:var(--gray);font-size:0.7rem;cursor:pointer"
-          title="Pantalla completa">&#x26F6;</button>
+      <!-- Panel derecho: Card con Título + Canvas espectro -->
+      <div class="card fi fi3" style="padding:1.2rem">
+        <div class="card-title" style="color:var(--cyan);font-size:0.85rem;margin-bottom:0.8rem">
+          &#128202; Curvas de Radiaci&oacute;n del Cuerpo Negro: Planck vs. Rayleigh-Jeans vs. Wien
+        </div>
+        <div class="canvas-wrapper">
+          <canvas id="spectrumCanvas" width="900" height="600" role="img" aria-label="Espectro del cuerpo negro"></canvas>
+          <span class="canvas-badge" id="canvas-label" style="top:auto;bottom:10px;left:12px;right:auto">T = 5&thinsp;778
+            K</span>
+          <button onclick="toggleFullCanvas('spectrumCanvas')"
+            style="position:absolute;bottom:10px;right:12px;padding:3px 9px;border-radius:5px;border:1px solid var(--border);background:rgba(13,27,42,0.8);color:var(--gray);font-size:0.7rem;cursor:pointer"
+            title="Pantalla completa">&#x26F6;</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Explicación de la unicidad y escalamiento T^5 a todo lo ancho -->
+    <div class="card fi fi2" style="margin-top:1.5rem;background:rgba(0,200,255,0.03);border-color:rgba(0,200,255,0.18)">
+      <div class="card-title" style="color:var(--cyan);font-size:0.85rem">
+        &#128218; Fundamentos F&iacute;sicos: Unicidad y Escalamiento del Pico Espectral
+      </div>
+      <div style="font-size:0.82rem;line-height:1.65;color:var(--gray)">
+        <p style="margin-bottom:0.5rem">
+          <strong>1. Unicidad del pico (\(\lambda_{\max}\)):</strong> Para un cuerpo negro ideal, el espectro depende exclusivamente de la temperatura \(T\). La <strong style="color:var(--yellow)">Ley del Desplazamiento de Wien</strong> fija la longitud de onda del m&aacute;ximo de emisi&oacute;n de forma un&iacute;voca:
+        </p>
+        <div style="text-align:center;margin:0.3rem 0;font-size:0.9rem;color:var(--yellow)">
+          \(\lambda_{\max} \cdot T = b \approx 2.898 \times 10^6 \;\text{nm&middot;K}\)
+          &emsp;\(\Longleftrightarrow\)&emsp;
+          \(\lambda_{\max} = \frac{2.898 \times 10^6 \;\text{nm&middot;K}}{T}\)
+        </div>
+        <p style="margin-top:0.4rem;margin-bottom:0.6rem">
+          Para \(T = 9\,000\text{ K}\), la ley impone \(\lambda_{\max} \approx 322\text{ nm}\). <strong>No es posible trazar otra curva a esa misma temperatura con un pico distinto</strong> (salvo en cuerpos reales no ideales con emisividad \(\varepsilon(\lambda) < 1\)).
+        </p>
+        <p style="margin-bottom:0.5rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:0.5rem">
+          <strong>2. Escalamiento de la altura del pico (\(T^5\)):</strong> &iquest;De d&oacute;nde sale la proporcionalidad \(u(\lambda_{\max},T) \propto T^5\)? Es la <strong>combinaci&oacute;n directa de la Ley de Planck con la Ley de Wien</strong>. Sustituyendo \(\lambda_{\max} = b/T\) en Planck:
+        </p>
+        <div style="text-align:center;margin:0.4rem 0;font-size:0.88rem;color:var(--cyan)">
+          \(\displaystyle u(\lambda_{\max}, T) = \frac{8\pi h c}{(b/T)^5} \cdot \frac{1}{e^{\frac{hc}{b k_{\!B}}} - 1} = \underbrace{\left[ \frac{8\pi h c}{b^5 \left(e^{hc/b k_{\!B}} - 1\right)} \right]}_{\text{Constante}} \cdot T^5 \;\propto\; T^5\)
+        </div>
+        <p style="margin-top:0.4rem;font-size:0.76rem;color:var(--gray2)">
+          &#9432; <strong>Diferencia clave:</strong> La <em>altura del pico puntual</em> crece como \(\mathbf{T^5}\) (Planck + Wien), mientras que la <em>potencia total emitida</em> (&aacute;rea total bajo la curva) crece como \(\mathbf{T^4}\) (Stefan-Boltzmann, \(R = \sigma T^4\)).
+        </p>
       </div>
     </div>
 
