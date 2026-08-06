@@ -16,19 +16,6 @@
 
 ---
 
-## 🔄 Registro de cambios (respecto a la versión anterior del guión)
-
-> Esta versión del guión fue revisada contra la App HTML ya actualizada. Cambios relevantes:
-
-- **Corregido:** el guión mencionaba un "aviso 'pico fuera de escala'" a 10 000 K que ya no existe en la App. Ahora la escala del gráfico está calibrada exactamente hasta 10 000 K (llena ~91% del canvas), y en su lugar hay una anotación "Pico: ×Sol" en la esquina superior derecha.
-- **Corregido:** el número "más de 17 veces la del Sol" era impreciso. El valor correcto, verificado contra la fórmula de la App, es **~15.5×** (ver Tópico 1).
-- **Añadido:** referencia a las tres tarjetas explicativas (Planck / Wien / Rayleigh-Jeans) que ahora aparecen debajo del gráfico del espectro, fuera de la grilla principal.
-- **Añadido:** nota opcional (bonus) explicando por qué "Pico" (∝\(T^5\)) y "R" (∝\(T^4\)) dan números distintos frente al Sol — la App ahora lo aclara con una fórmula bajo el gráfico.
-- **Enriquecido:** breve analogía física de qué es un "modo" (onda estacionaria en una cavidad) en el Tópico 2, Paso 1, tomada de las notas de `modos.docx`.
-- **Verificado sin cambios:** todas las demás fórmulas, valores por defecto (501.6 nm, 63.2 MW/m², etc.), atajos de teclado (`P`, `B`, `↑↓`) y la línea de tiempo histórica — coinciden exactamente con la App actual.
-
----
-
 ## Introducción (0:00 – 0:20) — Sección Hero de la App
 
 *(La sección "Hero" es la portada al cargar la página: título, subtítulo y el botón "▶ Iniciar exploración" — no requiere scroll.)*
