@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Radiaci&oacute;n del Cuerpo Negro &mdash; Explorador Interactivo</title>
+  <title>Radiación del Cuerpo Negro &mdash; Explorador Interactivo</title>
   <meta name="description"
-    content="Explorador interactivo: espectro de radiaci&oacute;n del cuerpo negro, cat&aacute;strofe ultravioleta y cuantizaci&oacute;n de Planck. Con analog&iacute;as en Teledetecci&oacute;n y Geom&aacute;tica." />
+    content="Explorador interactivo: espectro de radiación del cuerpo negro, catástrofe ultravioleta y cuantización de Planck. Con analogías en Teledetección y Geomática." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -1193,10 +1193,10 @@
   </div>
 
   <nav>
-    <div class="nav-brand">&#9883; F&iacute;sica Cu&aacute;ntica</div>
+    <div class="nav-brand">&#9883; Física Cuántica</div>
     <ul class="nav-tabs">
       <li><a href="#cuerpo-negro" class="active" id="tab-1">Cuerpo Negro</a></li>
-      <li><a href="#catastrofe" id="tab-2">Cat&aacute;strofe UV</a></li>
+      <li><a href="#catastrofe" id="tab-2">Catástrofe UV</a></li>
       <li><a href="#planck" id="tab-3">Planck</a></li>
       <li><a href="#timeline" id="tab-4">Historia</a></li>
     </ul>
@@ -1204,16 +1204,12 @@
 
   <!-- ╔══════════ HERO ══════════╗ -->
   <header class="hero fi">
-    <div class="hero-tag">Evaluaci&oacute;n 1 &middot; Teor&iacute;a Cu&aacute;ntica Temprana</div>
-    <h1>Radiaci&oacute;n del Cuerpo Negro<br />y la Cuantizaci&oacute;n de Planck</h1>
-    <p>
-      Explorador interactivo: ajusta los controles para ver c&oacute;mo cambia el espectro,
-      c&oacute;mo diverge Rayleigh-Jeans y por qu&eacute; la cuantizaci&oacute;n resuelve la cat&aacute;strofe.
-    </p>
+    <div class="hero-tag">Evaluación 1 &middot; Teoría Cuántica Temprana</div>
+    <h1>Radiación del Cuerpo Negro<br />y la Cuantización de Planck</h1>
     <div class="hero-badges">
       <span class="badge badge-cyan">&#11044; Espectro de Planck</span>
-      <span class="badge badge-orange">&#11044; Cat&aacute;strofe Ultravioleta</span>
-      <span class="badge badge-green">&#11044; Cuantizaci&oacute;n \(E_n = nh\nu\)</span>
+      <span class="badge badge-orange">&#11044; Catástrofe Ultravioleta</span>
+      <span class="badge badge-green">&#11044; Cuantización \(E_n = nh\nu\)</span>
     </div>
     <div style="margin-top:1.8rem;display:flex;gap:0.8rem;justify-content:center;flex-wrap:wrap">
       <a href="#cuerpo-negro"
@@ -1228,16 +1224,50 @@
   </header>
   <hr class="divider" />
 
+  <section id="introduccion" class="section" style="padding: 2rem 2rem 0.5rem 2rem;">
+    <blockquote class="section-sub fi fi2"
+      style="max-width:none; margin-bottom:0; border-left:4px solid var(--cyan);background:rgba(0,200,255,0.06);">
+      <p style="font-size:0.9rem;color:var(--gray);line-height:1.7;margin-bottom:1rem">
+        A finales del siglo XIX, muchos físicos pensaban que la física clásica estaba prácticamente completa.
+      </p>
+      <ul style="color:var(--gray);line-height:1.8;margin:0 0 1rem 1.2rem">
+        <li>Las ecuaciones de Maxwell (1865) explicaban la naturaleza de la luz.</li>
+        <li>La mecánica estadística de Boltzmann (décadas de 1870–1880) explicaba el comportamiento térmico de la
+          materia.</li>
+        <li>La mecánica de Newton (1687) describía con gran precisión el movimiento de los cuerpos.</li>
+      </ul>
+      <p style="font-size:0.9rem;color:var(--gray);line-height:1.7;margin-bottom:1rem">
+        Sin embargo, un problema aparentemente sencillo reveló que esa descripción estaba incompleta:
+      </p>
+      <p style="font-size:1rem;color:var(--cyan);font-weight:700;text-align:left;margin:1rem 0">
+        ¿Cómo emite luz un objeto caliente?
+      </p>
+      <p style="font-size:0.9rem;color:var(--gray);line-height:1.7;margin-bottom:1rem">
+        Al intentar responder esa pregunta, la física clásica llegó a una predicción imposible: <br>
+        <strong>un cuerpo negro debería emitir una cantidad infinita de energía en las frecuencias más altas.</strong>
+        Este resultado se conoce como <strong style="color:var(--orange)">la catástrofe ultravioleta</strong>.
+      </p>
+      <p style="font-size:1rem;color:var(--cyan);font-weight:700;text-align:left;margin:1rem 0">
+        ¿Por qué la teoría clásica conducía a esa predicción?
+      </p>
+      <p style="font-size:0.9rem;color:var(--gray);line-height:1.7">
+        La respuesta llegó en 1900, cuando Max Planck propuso una idea completamente nueva: la energía no puede tomar
+        cualquier valor, sino que solo puede intercambiarse en cantidades discretas, llamadas <strong
+          style="color:var(--green)">cuantos</strong>.
+      </p>
+    </blockquote>
+  </section>
+
   <!-- ╔══════════ SECCION 1: CUERPO NEGRO ══════════╗ -->
-  <section id="cuerpo-negro" class="section">
-    <h2 class="section-title fi">Espectro del Cuerpo Negro <span class="chip chip-cyan"
+  <section id="cuerpo-negro" class="section" style="padding-top: 1.5rem;">
+    <h2 class="section-title fi">Radiación del Cuerpo Negro <span class="chip chip-cyan"
         style="vertical-align:middle;font-size:0.65rem">&#128337; 0:20 – 1:20</span></h2>
     <p class="section-sub fi fi2" style="max-width:none">
-      Un cuerpo negro absorbe toda la radiaci&oacute;n incidente y emite un espectro continuo que depende
-      &uacute;nicamente de su temperatura. <br>
-      El m&aacute;ximo se desplaza seg&uacute;n la <strong style="color:var(--green)">Ley de Wien</strong>
-      y la <strong style="color:var(--cyan)">altura crece como \(T^5\)</strong>
-      (escala absoluta, ref. 10&thinsp;000&nbsp;K).
+      "Todo cuerpo en equilibrio térmico a temperatura <strong>T</strong> emite radiación electromagnética."<br>
+      Un <strong> cuerpo negro ideal </strong> es aquel que absorbe el 100% de la radiación incidente.
+      —no refleja nada, no transmite nada—.
+      La radiación electromagnética emitida es únicamente función de su temperatura.
+
     </p>
 
     <div class="spectrum-grid">
@@ -1247,12 +1277,12 @@
           <div class="card-title">Temperatura</div>
           <div class="slider-row">
             <span class="slider-label-text">T</span>
-            <span class="slider-value-text" id="temp-val" style="color:var(--cyan)" aria-live="polite">5&thinsp;778
+            <span class="slider-value-text" id="temp-val" style="color:var(--cyan)" aria-live="polite">5778
               K</span>
           </div>
           <input type="range" id="temp-slider" min="1000" max="12000" value="5778" step="50"
             aria-label="Temperatura del cuerpo negro" />
-          <div class="slider-range-row"><span>1&thinsp;000 K</span><span>12&thinsp;000 K</span></div>
+          <div class="slider-range-row"><span>1000 K</span><span>12000 K</span></div>
 
           <div style="margin-top:1.2rem">
             <div class="card-title">Curvas visibles</div>
@@ -1270,7 +1300,7 @@
               <label class="toggle-item">
                 <input type="checkbox" id="show-wien" checked aria-label="Mostrar aproximación de Wien" />
                 <div class="toggle-box"></div>
-                <span class="toggle-label" style="color:var(--purple)">Aproximaci&oacute;n de Wien</span>
+                <span class="toggle-label" style="color:var(--purple)">Aproximación de Wien</span>
               </label>
             </div>
           </div>
@@ -1289,7 +1319,7 @@
             <span class="data-value" id="stefan-result" style="color:var(--yellow)">63.2 MW/m&sup2;</span>
           </div>
           <div class="data-row" style="border-bottom:none">
-            <span class="data-label">Clasificaci&oacute;n estelar</span>
+            <span class="data-label">Clasificación estelar</span>
             <span class="data-value" id="color-result" style="color:var(--gray)">Sol (G)</span>
           </div>
           <div style="margin-top:0.7rem;padding-top:0.7rem;border-top:1px solid var(--border)"></div>
@@ -1302,19 +1332,21 @@
           </div>
           <div style="margin-top:0.7rem;padding-top:0.7rem;border-top:1px solid var(--border)">
             <div class="card-title" style="margin-bottom:0.5rem;font-size:0.76rem">Leyes</div>
-            <p style="font-size:0.74rem;color:var(--gray);margin-bottom:0.3rem">Stefan-Boltzmann (potencia total
-              irradiada)</p>
-            <div class="formula-box" style="margin:0;padding:0.5rem 0.8rem;font-size:0.86rem">\(R=\sigma\,T^4\)</div>
+            <p style="font-size:0.74rem;color:var(--gray);margin-bottom:0.3rem">Stefan-Boltzmann
+              (potencia total emitida por unidad de área escala con \(T^4\)) </p>
             <p style="font-size:0.68rem;color:var(--gray2);margin-top:0.4rem">\(\sigma =
               5.67\times10^{-8}\;\text{W}\cdot\text{m}^{-2}\cdot\text{K}^{-4}\)</p>
+            <div class="formula-box" style="margin:0;padding:0.5rem 0.8rem;font-size:0.86rem">\(R=\sigma\,T^4\)</div>
             <p style="font-size:0.74rem;color:var(--gray);margin-top:0.55rem;margin-bottom:0.3rem">Desplazamiento de
-              Wien</p>
+              Wien
+            </p>
             <div class="formula-box" style="margin:0;padding:0.5rem 0.8rem;font-size:0.86rem">
-              \(\lambda_{\max}T=2898\,\mu\text{m\,K}\)</div>
-
+              \(\lambda_{\max}T=2898\,\mu\text{m K}\)</div>
+            <p style="font-size:0.74rem;color:var(--gray);margin-top:0.55rem;margin-bottom:0.3rem">
+              La longitud de onda del máximo de emisión es inversamente proporcional a T
+            </p>
           </div>
         </div>
-
       </div>
 
       <!-- Canvas espectro -->
@@ -1335,17 +1367,17 @@
         <div class="formula-box cyan" style="font-size:0.96rem">\(\displaystyle u(\lambda,T)=\frac{8\pi
           hc}{\lambda^5}\cdot\frac{1}{e^{hc/\lambda k_{\!B}T}-1}\)</div>
         <p style="font-size:0.78rem;color:var(--gray);margin-top:0.5rem;line-height:1.6">
-          Soluci&oacute;n exacta, v&aacute;lida en <strong style="color:var(--cyan)">todo</strong> el espectro. La
-          cuantizaci&oacute;n \(h\nu\) hace que la curva baje a cero en el UV, evitando la divergencia.
+          Solución exacta, válida en <strong style="color:var(--cyan)">todo</strong> el espectro. La
+          cuantización \(h\nu\) hace que la curva baje a cero en el UV, evitando la divergencia.
         </p>
       </div>
       <div class="card" style="border-color:rgba(192,132,252,0.3)">
-        <div class="card-title" style="color:var(--purple)">&#9679; Aproximaci&oacute;n de Wien</div>
+        <div class="card-title" style="color:var(--purple)">&#9679; Aproximación de Wien</div>
         <div class="formula-box"
           style="font-size:0.96rem;background:rgba(192,132,252,0.06);border-color:rgba(192,132,252,0.2);color:var(--purple)">
           \(\displaystyle u(\lambda,T)\approx\frac{8\pi hc}{\lambda^5}\,e^{-hc/\lambda k_{\!B}T}\)</div>
         <p style="font-size:0.78rem;color:var(--gray);margin-top:0.5rem;line-height:1.6">
-          V&aacute;lida cuando \(hc/\lambda k_{\!B}T\gg1\) (longitudes de onda cortas, cerca y a la izquierda del m&aacute;ximo).
+          Válida cuando \(hc/\lambda k_{\!B}T\gg1\) (longitudes de onda cortas, cerca y a la izquierda del máximo).
           Se separa de Planck hacia el infrarrojo.
         </p>
       </div>
@@ -1355,8 +1387,8 @@
           style="font-size:0.96rem;background:rgba(255,107,53,0.06);border-color:rgba(255,107,53,0.2);color:var(--orange)">
           \(\displaystyle u(\lambda,T)=\frac{8\pi k_{\!B}T}{\lambda^4}\)</div>
         <p style="font-size:0.78rem;color:var(--gray);margin-top:0.5rem;line-height:1.6">
-          L&iacute;mite cl&aacute;sico, s&oacute;lo v&aacute;lido a longitudes de onda largas (IR). Al no cuantizar la
-          energ&iacute;a, diverge cuando \(\lambda\to0\): la <strong style="color:var(--orange)">cat&aacute;strofe
+          Límite clásico, sólo válido a longitudes de onda largas (IR). Al no cuantizar la
+          energía, diverge cuando \(\lambda\to0\): la <strong style="color:var(--orange)">catástrofe
             ultravioleta</strong>.
         </p>
       </div>
@@ -1366,13 +1398,13 @@
 
   <!-- ╔══════════ SECCION 2: CATASTROFE UV ══════════╗ -->
   <section id="catastrofe" class="section">
-    <h2 class="section-title fi">La Cat&aacute;strofe Ultravioleta <span class="chip chip-orange"
+    <h2 class="section-title fi">La Catástrofe Ultravioleta <span class="chip chip-orange"
         style="vertical-align:middle;font-size:0.65rem">&#128337; 1:20 – 2:35</span></h2>
     <p class="section-sub fi fi2" style="max-width:none">
-      La f&iacute;sica cl&aacute;sica predice que la energ&iacute;a emitida por una cavidad diverge a frecuencias altas
-      &mdash; consecuencia inevitable de combinar la termodin&aacute;mica de Boltzmann con el electromagnetismo de
+      La física clásica predice que la energía emitida por una cavidad diverge a frecuencias altas
+      &mdash; consecuencia inevitable de combinar la termodinámica de Boltzmann con el electromagnetismo de
       Maxwell.
-      Paul Ehrenfest bautiz&oacute; el desastre como &laquo;cat&aacute;strofe ultravioleta&raquo; en 1911.
+      Paul Ehrenfest bautizó el desastre como &laquo;catástrofe ultravioleta&raquo; en 1911.
     </p>
     <div class="cat-grid">
       <div class="fi fi2">
@@ -1390,17 +1422,17 @@
         <div class="step active" data-step="1" onclick="setStep(1)">
           <div class="step-num">1</div>
           <div class="step-body">
-            <h4>Modos de oscilaci&oacute;n</h4>
-            <p>En una cavidad c&uacute;bica de arista \(L\), el n&uacute;mero de modos EM entre \(\nu\) y \(\nu+d\nu\)
-              crece cuadr&aacute;ticamente:</p>
+            <h4>Modos de oscilación</h4>
+            <p>En una cavidad cúbica de arista \(L\), el número de modos EM entre \(\nu\) y \(\nu+d\nu\)
+              crece cuadráticamente:</p>
             <div class="step-eq">\(\displaystyle dN = \frac{8\pi\nu^2 L^3}{c^3}\,d\nu\)</div>
           </div>
         </div>
         <div class="step" data-step="2" onclick="setStep(2)">
           <div class="step-num">2</div>
           <div class="step-body">
-            <h4>Teorema de equipartici&oacute;n</h4>
-            <p>El teorema de equipartici&oacute;n cl&aacute;sico asigna energ&iacute;a media \(k_{\!B}T\) a
+            <h4>Teorema de equipartición</h4>
+            <p>El teorema de equipartición clásico asigna energía media \(k_{\!B}T\) a
               <em>cada</em> modo, sin importar su frecuencia. No hay mecanismo para distinguir modos IR de modos UV:
             </p>
             <div class="step-eq">\(\bar{E}_{\text{clás.}} = k_{\!B}\,T\)</div>
@@ -1410,15 +1442,15 @@
           <div class="step-num">3</div>
           <div class="step-body">
             <h4>Ley de Rayleigh-Jeans</h4>
-            <p>Combinando los dos resultados anteriores, la densidad espectral de energ&iacute;a crece sin
-              l&iacute;mite:</p>
+            <p>Combinando los dos resultados anteriores, la densidad espectral de energía crece sin
+              límite:</p>
             <div class="step-eq">\(\displaystyle u(\nu,T)=\frac{8\pi\nu^2}{c^3}\,k_{\!B}T\)</div>
           </div>
         </div>
         <div class="step" data-step="4" onclick="setStep(4)">
           <div class="step-num">4</div>
           <div class="step-body">
-            <h4>La cat&aacute;strofe</h4>
+            <h4>La catástrofe</h4>
             <p>Modos \(\propto\nu^2\) &times; \(k_{\!B}T\) -> integral divergente. </p>
             <p>Al combinar una energía constante por modo con un número de modos que crece como \(\nu^2\) (frecuencia),
               la energía
@@ -1435,30 +1467,30 @@
   <!-- ╔══════════ SECCION 3: PLANCK ══════════╗ -->
   <section id="planck" class="section" style="border-left:4px solid var(--green);padding-left:2.5rem">
     <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:0.5rem">
-      <h2 class="section-title fi" style="margin-bottom:0">La Soluci&oacute;n de Planck (1900) <span
-          class="chip chip-green" style="vertical-align:middle;font-size:0.65rem">&#128337; 2:35 – 4:05</span></h2>
+      <h2 class="section-title fi" style="margin-bottom:0">La Solución de Planck (1900) <span class="chip chip-green"
+          style="vertical-align:middle;font-size:0.65rem">&#128337; 2:35 – 4:05</span></h2>
     </div>
     <p class="section-sub fi fi2" style="max-width:none">
-      Planck postul&oacute; que los osciladores de la cavidad solo pueden intercambiar energ&iacute;a en
-      m&uacute;ltiplos enteros de \(h\nu\). Este postulado &mdash; "un acto de desesperaci&oacute;n" seg&uacute;n
-      &eacute;l mismo &mdash; resuelve la cat&aacute;strofe y funda la F&iacute;sica Cu&aacute;ntica.
+      Planck postuló que los osciladores de la cavidad solo pueden intercambiar energía en
+      múltiplos enteros de \(h\nu\). Este postulado &mdash; "un acto de desesperación" según
+      &eacute;l mismo &mdash; resuelve la catástrofe y funda la Física Cuántica.
     </p>
 
     <!-- ── DIAGRAMA: Clásico vs. Cuántico ── -->
     <div class="card fi fi2"
       style="margin-bottom:1.8rem;border-color:rgba(123,255,196,0.4);background:rgba(123,255,196,0.025)">
-      <div class="card-title" style="color:var(--green);font-size:0.9rem">&#128202; Modelo Cl&aacute;sico vs.
-        Hip&oacute;tesis de Planck — Explicaci&oacute;n Visual</div>
+      <div class="card-title" style="color:var(--green);font-size:0.9rem">&#128202; Modelo Clásico vs.
+        Hipótesis de Planck — Explicación Visual</div>
 
       <!-- Diagrama: archivo externo en el mismo directorio -->
       <figure style="margin:0 0 1.4rem 0;border-radius:10px;overflow:hidden;border:1px solid rgba(123,255,196,0.2)">
-        <img
-          src="planck_quantization_diagram.jpg"
+        <img src="planck_quantization_diagram.jpg"
           alt="Diagrama comparativo: modelo clásico continuo vs niveles cuantizados de Planck E_n = nhν"
-          style="width:100%;display:block;border-radius:10px" loading="lazy" />
+          style="width:80%;max-height:350px;height:auto;display:block;margin:0 auto;border-radius:10px"
+          loading="lazy" />
         <figcaption
           style="padding:0.6rem 1rem;font-size:0.78rem;color:var(--gray2);background:rgba(0,0,0,0.25);text-align:center">
-          <strong style="color:var(--cyan)">Izquierda</strong>: modelo cl&aacute;sico — energ&iacute;a continua, sin
+          <strong style="color:var(--cyan)">Izquierda</strong>: modelo clásico — energía continua, sin
           restricciones.
           &nbsp;<strong style="color:var(--yellow)">Derecha</strong>: Planck (1900) — solo peldaños discretos \(E_n =
           nh\nu\).
@@ -1476,15 +1508,15 @@
                 Aspecto</th>
               <th
                 style="padding:10px 14px;text-align:center;border-bottom:2px solid var(--orange);color:var(--orange);font-size:0.75rem;text-transform:uppercase;letter-spacing:0.06em">
-                F&iacute;sica Cl&aacute;sica (Rayleigh-Jeans)</th>
+                Física Clásica (Rayleigh-Jeans)</th>
               <th
                 style="padding:10px 14px;text-align:center;border-bottom:2px solid var(--green);color:var(--green);font-size:0.75rem;text-transform:uppercase;letter-spacing:0.06em">
-                Hip&oacute;tesis de Planck (1900)</th>
+                Hipótesis de Planck (1900)</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style="padding:9px 14px;border-bottom:1px solid var(--border);color:var(--gray)">Energ&iacute;a del
+              <td style="padding:9px 14px;border-bottom:1px solid var(--border);color:var(--gray)">Energía del
                 oscilador</td>
               <td style="padding:9px 14px;border-bottom:1px solid var(--border);text-align:center;color:var(--orange)">
                 Continua: cualquier valor \(E \geq 0\)</td>
@@ -1493,7 +1525,7 @@
                 \(E_n = n\,h\nu\), &nbsp; \(n = 0,1,2,\ldots\)</td>
             </tr>
             <tr>
-              <td style="padding:9px 14px;border-bottom:1px solid var(--border);color:var(--gray)">Energ&iacute;a media
+              <td style="padding:9px 14px;border-bottom:1px solid var(--border);color:var(--gray)">Energía media
                 \(\bar{E}\)</td>
               <td style="padding:9px 14px;border-bottom:1px solid var(--border);text-align:center;color:var(--orange)">
                 \(k_{B}T\) — constante para toda \(\nu\)</td>
@@ -1555,12 +1587,12 @@
     <!-- Hipotesis explicada -->
     <div class="card fi fi2"
       style="margin-bottom:1.8rem;border-color:rgba(123,255,196,0.3);background:rgba(123,255,196,0.03)">
-      <div class="card-title" style="color:var(--green)">La Hip&oacute;tesis de Planck</div>
+      <div class="card-title" style="color:var(--green)">La Hipótesis de Planck</div>
       <div class="three-col">
         <div>
           <p style="font-size:0.82rem;color:var(--gray);line-height:1.65;margin-bottom:0.5rem">
             <strong style="color:var(--white)">Postulado (1900):</strong> los osciladores de la cavidad
-            solo intercambian energ&iacute;a en m&uacute;ltiplos enteros del cuanto \(h\nu\):
+            solo intercambian energía en múltiplos enteros del cuanto \(h\nu\):
           </p>
           <div class="formula-box">\(E_n = n\,h\nu \qquad n = 0,1,2,\ldots\)</div>
           <p style="font-size:0.78rem;color:var(--gray2);margin-top:0.4rem">\(h = 6.626\times10^{-34}\) J&middot;s
@@ -1568,20 +1600,20 @@
         </div>
         <div>
           <p style="font-size:0.82rem;color:var(--gray);line-height:1.65;margin-bottom:0.5rem">
-            <strong style="color:var(--white)">Energ&iacute;a media</strong> — aplicando la distribuci&oacute;n
+            <strong style="color:var(--white)">Energía media</strong> — aplicando la distribución
             de Boltzmann \(N_r = N_0\,e^{-rh\nu/k_{\!B}T}\) y sumando la serie geom&eacute;trica:
           </p>
           <div class="formula-box cyan">\(\displaystyle\bar{E} = \frac{h\nu}{e^{h\nu/k_{\!B}T}-1}\)</div>
-          <p style="font-size:0.78rem;color:var(--gray2);margin-top:0.4rem">L&iacute;mite cl&aacute;sico: si \(h\nu\ll
+          <p style="font-size:0.78rem;color:var(--gray2);margin-top:0.4rem">Límite clásico: si \(h\nu\ll
             k_{\!B}T\) &rarr; \(\bar{E}\approx k_{\!B}T\) &nbsp;&#10003;</p>
         </div>
         <div>
           <p style="font-size:0.82rem;color:var(--white);font-weight:600;margin-bottom:0.5rem">Por qu&eacute; elimina la
-            cat&aacute;strofe:</p>
+            catástrofe:</p>
           <ul style="font-size:0.8rem;color:var(--gray);line-height:1.9;padding-left:1rem">
             <li>\(h\nu\ll k_{\!B}T\) &rarr; \(\bar{E}\approx k_{\!B}T\) (R-J se recupera) &#10003;</li>
             <li>\(h\nu\gg k_{\!B}T\) &rarr; \(\bar{E}\to 0\) (modos UV bloqueados) &#10003;</li>
-            <li>Los modos UV quedan &laquo;congelados&raquo;: el sistema no puede comprar ni el cuanto m&aacute;s barato
+            <li>Los modos UV quedan &laquo;congelados&raquo;: el sistema no puede comprar ni el cuanto más barato
             </li>
             <li>El espectro completo: \(\displaystyle u(\nu,T)=\frac{8\pi
               h\nu^3}{c^3}\cdot\frac{1}{e^{h\nu/k_{\!B}T}-1}\)</li>
@@ -1593,15 +1625,15 @@
     <div class="planck-grid">
       <!-- Top-Left (Fila 1, Col 1): Niveles interactivos + Sliders al final -->
       <div class="card fi fi2">
-        <div class="card-title">Niveles de Energ&iacute;a Cuantizados</div>
+        <div class="card-title">Niveles de Energía Cuantizados</div>
         <p style="font-size:0.68rem;color:var(--gray);margin-top:0.4rem;line-height:1.6">
-          Cada oscilador de la cavidad solo puede ocupar niveles discretos \(E_n = nh\nu\). La poblaci&oacute;n relativa
-          de cada nivel sigue la distribuci&oacute;n de Boltzmann:
+          Cada oscilador de la cavidad solo puede ocupar niveles discretos \(E_n = nh\nu\). La población relativa
+          de cada nivel sigue la distribución de Boltzmann:
           \(P_n/P_0=e^{-nh\nu/k_{\!B}T}\). <br>
-          Ajusta la temperatura y la frecuencia para ver c&oacute;mo se excitan los
+          Ajusta la temperatura y la frecuencia para ver cómo se excitan los
           niveles.
 
-        <!-- Valores calculados -->
+          <!-- Valores calculados -->
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.5rem;margin-bottom:1rem">
           <div
             style="background:rgba(255,224,102,0.06);border:1px solid rgba(255,224,102,0.15);border-radius:8px;padding:0.5rem;text-align:center">
@@ -1627,12 +1659,12 @@
         <div style="margin-top:1.2rem;margin-bottom:0.8rem">
           <div class="slider-row">
             <span class="slider-label-text">Temperatura \(T\)</span>
-            <span class="slider-value-text" id="tp-val" style="color:var(--orange)" aria-live="polite">1&thinsp;000
+            <span class="slider-value-text" id="tp-val" style="color:var(--orange)" aria-live="polite">1000
               K</span>
           </div>
           <input type="range" id="temp-planck" min="300" max="6000" value="1000" step="100"
             aria-label="Temperatura para niveles de Planck" />
-          <div class="slider-range-row"><span>300 K</span><span>6&thinsp;000 K</span></div>
+          <div class="slider-range-row"><span>300 K</span><span>6000 K</span></div>
         </div>
 
         <div style="margin-bottom:0.8rem">
@@ -1647,25 +1679,25 @@
         </div>
 
         <p style="font-size:0.7rem;color:var(--gray2);margin-top:0.6rem;line-height:1.55">
-          &#9432; Los porcentajes son la poblaci&oacute;n relativa de Boltzmann de cada nivel <strong>respecto al nivel
-            base</strong> (n=0 = 100%): \(P_n/P_0=e^{-nh\nu/k_{\!B}T}\). No suman 100% entre s&iacute; &mdash; cada uno
-          se compara solo contra n=0. Un nivel se &laquo;enciende&raquo; en el diagrama cuando su poblaci&oacute;n relativa
-          supera \(1/e \approx 36.8\%\), la <strong>escala natural de la distribuci&oacute;n de Boltzmann</strong>:
-          el nivel est&aacute; t&eacute;rmicamente accesible si la energ&iacute;a para alcanzarlo (\(nh\nu\)) no supera
-          la energ&iacute;a t&eacute;rmica disponible (\(k_{\!B}T\)).
+          &#9432; Los porcentajes son la población relativa de Boltzmann de cada nivel <strong>respecto al nivel
+            base</strong> (n=0 = 100%): \(P_n/P_0=e^{-nh\nu/k_{\!B}T}\). No suman 100% entre sí &mdash; cada uno
+          se compara solo contra n=0. Un nivel se &laquo;enciende&raquo; en el diagrama cuando su población relativa
+          supera \(1/e \approx 36.8\%\), la <strong>escala natural de la distribución de Boltzmann</strong>:
+          el nivel está t&eacute;rmicamente accesible si la energía para alcanzarlo (\(nh\nu\)) no supera
+          la energía t&eacute;rmica disponible (\(k_{\!B}T\)).
         </p>
       </div>
 
       <!-- Top-Right (Fila 1, Col 2): ¿Cómo se calcula la energía media E y por qué cambia con T y ν? -->
       <div class="card fi fi3">
         <div class="card-title1" style="color:var(--yellow)">
-          &iquest;C&oacute;mo se calcula la energ&iacute;a media \(\bar{E}\) y por qu&eacute; cambia con \(T\) y \(\nu\) ?
+          &iquest;Cómo se calcula la energía media \(\bar{E}\) y por qu&eacute; cambia con \(T\) y \(\nu\) ?
         </div>
         <div style="font-size:0.82rem;line-height:1.65;color:var(--gray)">
           <p style="margin-top:0.3rem">
-            Cada oscilador de frecuencia \(\nu\) solo puede tener energ&iacute;as
+            Cada oscilador de frecuencia \(\nu\) solo puede tener energías
             \(E_n = n\,h\nu\) con \(n = 0, 1, 2, \ldots\) La probabilidad de encontrarlo en el nivel \(n\)
-            sigue la <strong style="color:var(--white)">distribuci&oacute;n de Boltzmann</strong>:
+            sigue la <strong style="color:var(--white)">distribución de Boltzmann</strong>:
           </p>
           <div style="text-align:center;margin:0.5rem 0;font-size:0.92rem;color:var(--cyan)">
             \(\displaystyle P_n = \frac{e^{-n h\nu / k_{\!B}T}}{Z}\),
@@ -1673,101 +1705,112 @@
             \(\displaystyle Z = \sum_{n=0}^{\infty} e^{-n h\nu / k_{\!B}T} = \frac{1}{1 - e^{-h\nu/k_{\!B}T}}\)
           </div>
           <p>
-            La <strong style="color:var(--yellow)">energ&iacute;a media</strong> resulta de promediar
+            La <strong style="color:var(--yellow)">energía media</strong> resulta de promediar
             \(E_n\) ponderado por \(P_n\):
           </p>
           <div style="text-align:center;margin:0.5rem 0;font-size:1.02rem;color:var(--yellow)">
             \(\displaystyle \bar{E} = \frac{h\nu}{e^{\,h\nu/k_{\!B}T} - 1}\)
           </div>
           <p>
-            Todo depende de la <strong style="color:var(--orange)">raz&oacute;n \(h\nu\,/\,k_{\!B}T\)</strong>, que compara el tama&ntilde;o del cuanto \(h\nu\) con la energ&iacute;a t&eacute;rmica disponible \(k_{\!B}T\):
+            Todo depende de la <strong style="color:var(--orange)">razón \(h\nu\,/\,k_{\!B}T\)</strong>, que compara el
+            tama&ntilde;o del cuanto \(h\nu\) con la energía t&eacute;rmica disponible \(k_{\!B}T\):
           </p>
           <ul style="margin:0.4rem 0 0.4rem 1.2rem;padding:0">
             <li style="margin-bottom:0.4rem">
               <strong style="color:var(--orange)">Efecto de la temperatura \(T\):</strong>
-              Al aumentar \(T\), \(k_{\!B}T\) crece y \(e^{-nh\nu/k_{\!B}T}\) decrece m&aacute;s lentamente. Los niveles superiores adquieren mayor poblaci&oacute;n &mdash; m&aacute;s niveles se &laquo;encienden&raquo; y \(\bar{E}\) aumenta. Al reducir \(T\), los niveles altos quedan despoblados.
+              Al aumentar \(T\), \(k_{\!B}T\) crece y \(e^{-nh\nu/k_{\!B}T}\) decrece más lentamente. Los niveles
+              superiores adquieren mayor población &mdash; más niveles se &laquo;encienden&raquo; y \(\bar{E}\) aumenta.
+              Al reducir \(T\), los niveles altos quedan despoblados.
             </li>
             <li style="margin-bottom:0.4rem">
               <strong style="color:var(--green)">Efecto de la frecuencia \(\nu\):</strong>
-              La frecuencia determina la <em>separaci&oacute;n</em> entre niveles (\(\Delta E = h\nu\)). A baja \(\nu\), pelda&ntilde;os peque&ntilde;os \(\Rightarrow \bar{E}\approx k_{\!B}T\) (<strong>r&eacute;gimen cl&aacute;sico</strong>). A alta \(\nu\), pelda&ntilde;o grande \(\Rightarrow\) el oscilador queda atrapado en \(n=0\) y \(\bar{E}\to 0\) (<strong>congelaci&oacute;n cu&aacute;ntica</strong>).
+              La frecuencia determina la <em>separación</em> entre niveles (\(\Delta E = h\nu\)). A baja \(\nu\),
+              pelda&ntilde;os peque&ntilde;os \(\Rightarrow \bar{E}\approx k_{\!B}T\) (<strong>r&eacute;gimen
+                clásico</strong>). A alta \(\nu\), pelda&ntilde;o grande \(\Rightarrow\) el oscilador queda atrapado en
+              \(n=0\) y \(\bar{E}\to 0\) (<strong>congelación cuántica</strong>).
             </li>
           </ul>
           <p style="margin-top:0.6rem">
             <strong style="color:var(--white)">Criterio de accesibilidad t&eacute;rmica: \(1/e\)</strong>
           </p>
           <p style="font-size:0.8rem">
-            En el diagrama, un nivel est&aacute; &laquo;activo&raquo; cuando su poblaci&oacute;n relativa supera \(1/e \approx 36.8\%\) (<strong style="color:var(--cyan)">escala natural de Boltzmann</strong>):
+            En el diagrama, un nivel está &laquo;activo&raquo; cuando su población relativa supera \(1/e \approx
+            36.8\%\) (<strong style="color:var(--cyan)">escala natural de Boltzmann</strong>):
           </p>
           <div style="text-align:center;margin:0.4rem 0;font-size:0.9rem;color:var(--cyan)">
-            \(e^{-nh\nu/k_{\!B}T} > e^{-1} \;\;\Longleftrightarrow\;\; nh\nu < k_{\!B}T\)
+            \(e^{-nh\nu/k_{\!B}T} > e^{-1} \;\;\Longleftrightarrow\;\; nh\nu < k_{\!B}T\) </div>
+              <p style="font-size:0.8rem">
+                Es decir, el nivel \(n\) es accesible cuando la energía para alcanzarlo (\(nh\nu\)) <strong>no
+                  supera la energía t&eacute;rmica disponible</strong> (\(k_{\!B}T\)). El nivel \(n=1\) se apaga
+                exactamente cuando \(h\nu = k_{\!B}T\).
+              </p>
+              <p
+                style="color:var(--gray2);font-size:0.75rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:0.5rem;margin-top:0.5rem">
+                <strong>En resumen:</strong> La cuantización impone un costo mínimo \(h\nu\) para excitar un
+                modo. Cuando \(h\nu \gg k_{\!B}T\), el modo se congela y deja de contribuir a la energía total
+                &mdash; eliminando la catástrofe ultravioleta.
+              </p>
           </div>
-          <p style="font-size:0.8rem">
-            Es decir, el nivel \(n\) es accesible cuando la energ&iacute;a para alcanzarlo (\(nh\nu\)) <strong>no supera la energ&iacute;a t&eacute;rmica disponible</strong> (\(k_{\!B}T\)). El nivel \(n=1\) se apaga exactamente cuando \(h\nu = k_{\!B}T\).
-          </p>
-          <p style="color:var(--gray2);font-size:0.75rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:0.5rem;margin-top:0.5rem">
-            <strong>En resumen:</strong> La cuantizaci&oacute;n impone un costo m&iacute;nimo \(h\nu\) para excitar un modo. Cuando \(h\nu \gg k_{\!B}T\), el modo se congela y deja de contribuir a la energ&iacute;a total &mdash; eliminando la cat&aacute;strofe ultravioleta.
+        </div>
+
+        <!-- Bottom-Left (Fila 2, Col 1): Gráfica E / kBT vs. Frecuencia -->
+        <div class="card fi fi2">
+          <div class="card-title">\(\bar{E}\,/\,k_{\!B}T\) vs. frecuencia</div>
+          <div class="canvas-wrapper" style="background:transparent;border:none">
+            <canvas id="planckEnergyCanvas" width="500" height="240" role="img"
+              aria-label="Energía media del oscilador vs frecuencia"></canvas>
+          </div>
+          <p style="font-size:0.78rem;color:var(--gray);margin-top:0.5rem;line-height:1.6">
+            <span style="color:var(--orange)">&#9644; Clásico</span>: constante \(k_{\!B}T\) para toda \(\nu\).
+            &nbsp;<span style="color:var(--cyan)">&#9644; Planck</span>: cae exponencialmente cuando \(h\nu>k_{\!B}T\).
+            &nbsp;<span style="color:var(--white)">&#8739;</span> vertical = \(h\nu=k_{\!B}T\).
+            &nbsp;<span style="color:var(--yellow)">&#11044;</span> = slider.
           </p>
         </div>
-      </div>
 
-      <!-- Bottom-Left (Fila 2, Col 1): Gráfica E / kBT vs. Frecuencia -->
-      <div class="card fi fi2">
-        <div class="card-title">\(\bar{E}\,/\,k_{\!B}T\) vs. frecuencia</div>
-        <div class="canvas-wrapper" style="background:transparent;border:none">
-          <canvas id="planckEnergyCanvas" width="500" height="240" role="img"
-            aria-label="Energía media del oscilador vs frecuencia"></canvas>
+        <!-- Bottom-Right (Fila 2, Col 2): Comparación clásica vs. Planck -->
+        <div class="card fi fi3">
+          <div class="card-title">Comparación: \(\bar{E}\) clásica vs. Planck</div>
+          <table class="cmp-table">
+            <thead>
+              <tr>
+                <th>R&eacute;gimen</th>
+                <th>Clásico (R-J)</th>
+                <th>Planck</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color:var(--gray)">Baja \(\nu\) &nbsp;<small style="color:var(--gray2)">\((h\nu\ll
+                    k_{\!B}T)\)</small></td>
+                <td class="good">\(k_{\!B}T\) &nbsp;&#10003;</td>
+                <td class="good">\(\approx k_{\!B}T\) &nbsp;&#10003;</td>
+              </tr>
+              <tr>
+                <td style="color:var(--gray)">Alta \(\nu\) &nbsp;<small style="color:var(--gray2)">\((h\nu\gg
+                    k_{\!B}T)\)</small></td>
+                <td class="bad">\(k_{\!B}T \to \infty\) &nbsp;&#10007;</td>
+                <td class="good">\(\to 0\) &nbsp;&#10003;</td>
+              </tr>
+              <tr>
+                <td style="color:var(--gray)">Fórmula</td>
+                <td>\(k_{\!B}T\)</td>
+                <td style="color:var(--yellow)">\(\displaystyle\frac{h\nu}{e^{h\nu/k_{\!B}T}-1}\)</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <p style="font-size:0.78rem;color:var(--gray);margin-top:0.5rem;line-height:1.6">
-          <span style="color:var(--orange)">&#9644; Cl&aacute;sico</span>: constante \(k_{\!B}T\) para toda \(\nu\).
-          &nbsp;<span style="color:var(--cyan)">&#9644; Planck</span>: cae exponencialmente cuando \(h\nu>k_{\!B}T\).
-          &nbsp;<span style="color:var(--white)">&#8739;</span> vertical = \(h\nu=k_{\!B}T\).
-          &nbsp;<span style="color:var(--yellow)">&#11044;</span> = slider.
-        </p>
       </div>
-
-      <!-- Bottom-Right (Fila 2, Col 2): Comparación clásica vs. Planck -->
-      <div class="card fi fi3">
-        <div class="card-title">Comparaci&oacute;n: \(\bar{E}\) cl&aacute;sica vs. Planck</div>
-        <table class="cmp-table">
-          <thead>
-            <tr>
-              <th>R&eacute;gimen</th>
-              <th>Cl&aacute;sico (R-J)</th>
-              <th>Planck</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="color:var(--gray)">Baja \(\nu\) &nbsp;<small style="color:var(--gray2)">\((h\nu\ll
-                  k_{\!B}T)\)</small></td>
-              <td class="good">\(k_{\!B}T\) &nbsp;&#10003;</td>
-              <td class="good">\(\approx k_{\!B}T\) &nbsp;&#10003;</td>
-            </tr>
-            <tr>
-              <td style="color:var(--gray)">Alta \(\nu\) &nbsp;<small style="color:var(--gray2)">\((h\nu\gg
-                  k_{\!B}T)\)</small></td>
-              <td class="bad">\(k_{\!B}T \to \infty\) &nbsp;&#10007;</td>
-              <td class="good">\(\to 0\) &nbsp;&#10003;</td>
-            </tr>
-            <tr>
-              <td style="color:var(--gray)">F&oacute;rmula</td>
-              <td>\(k_{\!B}T\)</td>
-              <td style="color:var(--yellow)">\(\displaystyle\frac{h\nu}{e^{h\nu/k_{\!B}T}-1}\)</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
 
   </section>
   <hr class="divider" />
 
   <!-- ╔══════════ SECCION 4: TIMELINE ══════════╗ -->
   <section id="timeline" class="section">
-    <h2 class="section-title fi">L&iacute;nea de Tiempo Hist&oacute;rica <span class="chip"
+    <h2 class="section-title fi">Línea de Tiempo Histórica <span class="chip"
         style="vertical-align:middle;font-size:0.65rem;color:var(--yellow);border-color:rgba(255,224,102,0.4);background:rgba(255,224,102,0.07)">&#128337;
         4:05 – 4:40</span></h2>
-    <p class="section-sub fi fi2">La cadena de descubrimientos que construy&oacute; la f&iacute;sica cu&aacute;ntica
+    <p class="section-sub fi fi2">La cadena de descubrimientos que construyó la física cuántica
       moderna.</p>
     <div class="timeline-wrap fi fi2">
       <div class="timeline-line"></div>
@@ -1777,8 +1820,8 @@
         <div class="t-card" style="margin-left:auto">
           <div class="t-year" style="color:var(--cyan)">1879</div>
           <div class="t-name">Josef Stefan &mdash; Ludwig Boltzmann</div>
-          <div class="t-desc">Stefan determina emp&iacute;ricamente que la potencia total emitida es proporcional a
-            \(T^4\). Boltzmann lo deriva termodin&aacute;micamente en 1884.</div>
+          <div class="t-desc">Stefan determina empíricamente que la potencia total emitida es proporcional a
+            \(T^4\). Boltzmann lo deriva termodinámicamente en 1884.</div>
           <div class="t-formula">\(R = \sigma\,T^4\)</div>
         </div>
       </div>
@@ -1788,8 +1831,8 @@
         <div class="t-card" style="margin-right:auto">
           <div class="t-year" style="color:var(--cyan)">1893</div>
           <div class="t-name">Wilhelm Wien</div>
-          <div class="t-desc">El m&aacute;ximo de emisi&oacute;n se desplaza inversamente con \(T\). Las estrellas
-            fr&iacute;as son rojas; las calientes, azul-blancas. El Sol (5&thinsp;778 K) tiene su m&aacute;ximo en 501
+          <div class="t-desc">El máximo de emisión se desplaza inversamente con \(T\). Las estrellas
+            frías son rojas; las calientes, azul-blancas. El Sol (5778 K) tiene su máximo en 501
             nm.</div>
           <div class="t-formula">\(\lambda_{\max}\cdot T = 2898\;\mu\text{m\,K}\)</div>
         </div>
@@ -1800,8 +1843,8 @@
         <div class="t-card" style="margin-left:auto">
           <div class="t-year" style="color:var(--orange)">1900&ndash;05</div>
           <div class="t-name">Lord Rayleigh &amp; James Jeans</div>
-          <div class="t-desc">Rayleigh publica la derivaci&oacute;n inicial en 1900; Jeans la corrige en 1905. Funciona
-            en el IR pero diverge en el UV. Paul Ehrenfest bautiz&oacute; la divergencia como &laquo;cat&aacute;strofe
+          <div class="t-desc">Rayleigh publica la derivación inicial en 1900; Jeans la corrige en 1905. Funciona
+            en el IR pero diverge en el UV. Paul Ehrenfest bautizó la divergencia como &laquo;catástrofe
             ultravioleta&raquo; en 1911.</div>
           <div class="t-formula">\(\displaystyle u(\nu,T)=\frac{8\pi\nu^2}{c^3}k_{\!B}T \xrightarrow{\nu\to\infty}
             \infty\)</div>
@@ -1815,9 +1858,9 @@
           style="margin-right:auto;border-color:rgba(123,255,196,0.4);background:rgba(123,255,196,0.04)">
           <div class="t-year" style="color:var(--green)">1900 &#9733;</div>
           <div class="t-name">Max Planck</div>
-          <div class="t-desc">Postula que los osciladores solo intercambian energ&iacute;a en m&uacute;ltiplos de
-            \(h\nu\). Reproduce perfectamente el espectro experimental. &laquo;Un acto de desesperaci&oacute;n&raquo;,
-            seg&uacute;n &eacute;l mismo.</div>
+          <div class="t-desc">Postula que los osciladores solo intercambian energía en múltiplos de
+            \(h\nu\). Reproduce perfectamente el espectro experimental. &laquo;Un acto de desesperación&raquo;,
+            según &eacute;l mismo.</div>
           <div class="t-formula">\(E_n = n\,h\nu\) &nbsp;&nbsp; \(h = 6.626\times10^{-34}\) J&middot;s</div>
         </div>
       </div>
@@ -1827,8 +1870,8 @@
         <div class="t-card" style="margin-left:auto">
           <div class="t-year" style="color:var(--yellow)">1905</div>
           <div class="t-name">Albert Einstein</div>
-          <div class="t-desc">Extiende la cuantizaci&oacute;n: la luz misma est&aacute; compuesta de cuantos (fotones).
-            Explica el efecto fotoel&eacute;ctrico: la energ&iacute;a cin&eacute;tica m&aacute;xima depende de la
+          <div class="t-desc">Extiende la cuantización: la luz misma está compuesta de cuantos (fotones).
+            Explica el efecto fotoel&eacute;ctrico: la energía cin&eacute;tica máxima depende de la
             frecuencia, no de la intensidad. Nobel 1921.</div>
           <div class="t-formula">\(E = h\nu\) &nbsp;|&nbsp; \(KE_{\max} = h\nu - W\)</div>
         </div>
@@ -1839,9 +1882,9 @@
         <div class="t-card" style="margin-right:auto">
           <div class="t-year" style="color:var(--cyan)">1913</div>
           <div class="t-name">Niels Bohr</div>
-          <div class="t-desc">Aplica la cuantizaci&oacute;n al &aacute;tomo de hidr&oacute;geno. Los electrones
-            s&oacute;lo ocupan &oacute;rbitas con momento angular \(L=n\hbar\). Explica los espectros de l&iacute;neas
-            de emisi&oacute;n/absorci&oacute;n.</div>
+          <div class="t-desc">Aplica la cuantización al átomo de hidrógeno. Los electrones
+            sólo ocupan órbitas con momento angular \(L=n\hbar\). Explica los espectros de líneas
+            de emisión/absorción.</div>
           <div class="t-formula">\(L = n\hbar\) &nbsp;|&nbsp; \(E_n = -13.6\text{ eV}/n^2\)</div>
         </div>
       </div>
@@ -1851,9 +1894,9 @@
         <div class="t-card" style="margin-left:auto">
           <div class="t-year" style="color:var(--purple)">1925&ndash;26</div>
           <div class="t-name">Heisenberg &amp; Schr&ouml;dinger</div>
-          <div class="t-desc">Formulan la mec&aacute;nica cu&aacute;ntica completa. No hay trayectorias; el
-            electr&oacute;n se describe por una funci&oacute;n de onda \(|\Psi|^2\). El principio de incertidumbre
-            establece el l&iacute;mite fundamental.</div>
+          <div class="t-desc">Formulan la mecánica cuántica completa. No hay trayectorias; el
+            electrón se describe por una función de onda \(|\Psi|^2\). El principio de incertidumbre
+            establece el límite fundamental.</div>
           <div class="t-formula">\(\hat{H}\Psi = E\Psi\) &nbsp;|&nbsp; \(\Delta x\,\Delta p \geq \hbar/2\)</div>
         </div>
       </div>
@@ -2092,7 +2135,7 @@
   </section>
 
   <footer id="main-footer">
-    <p>Evaluaci&oacute;n 1 &middot; Teor&iacute;a Cu&aacute;ntica Temprana &middot; Diplomado en F&iacute;sica Moderna
+    <p>Evaluación 1 &middot; Teoría Cuántica Temprana &middot; Diplomado en Física Moderna
     </p>
     <p style="margin-top:0.3rem">Docentes: Pablo Solano &amp; Paulraj Manidurai &middot; 2026</p>
     <p style="margin-top:0.3rem;font-size:0.72rem">Powered By https://github.com/georaiser</p>
@@ -2198,7 +2241,7 @@
 
       clearCanvas(specX, SW, SH);
       drawGrid(specX, SW, SH, SP);
-      drawAxes(specX, SW, SH, SP, 'Longitud de onda λ (nm)', 'u(λ,T) (referenciada al Sol, 5778 K)');
+      drawAxes(specX, SW, SH, SP, 'Longitud de onda λ (nm)', 'u(λ,T) (energia referenciada al Sol, 5778 K)');
 
       const lMin = 100e-9, lMax = 2000e-9, N = 600;
       const lams = Array.from({ length: N }, (_, i) => lMin + (lMax - lMin) * i / (N - 1));

@@ -22,7 +22,9 @@
 
 **Indicación de cámara:** Encuadre medio, fondo limpio. Contacto visual directo. La App debe estar abierta en el Hero (portada inicial, antes de hacer scroll).
 
-> "A finales del siglo XIX, la física clásica parecía completa. Las ecuaciones de Maxwell (1865) explicaban la luz —como ondas oscilantes de campo eléctrico y magnético que se propagan incluso en el vacío—; la termodinámica estadística de Boltzmann (décadas de 1870-1880) explicaba el calor —como el movimiento promedio de billones de partículas microscópicas—; y la mecánica de Newton (1687) explicaba el movimiento de los cuerpos, desde una manzana cayendo hasta las órbitas de los planetas. Sin embargo, un problema aparentemente simple —¿cómo emite luz un objeto caliente?— reveló una contradicción tan profunda que puso en evidencia las limitaciones de esa física. Hoy vamos a ver ese problema, por qué la solución clásica fue catastrófica, y cómo Max Planck propuso en 1900 una idea que nadie esperaba: que la energía no puede tomar cualquier valor."
+> "A finales del siglo XIX, la física clásica parecía completa. Las ecuaciones de Maxwell (1865) explicaban la luz; la termodinámica estadística de Boltzmann (décadas de 1870-1880) explicaba el calor; y la mecánica de Newton (1687) explicaba el movimiento de los cuerpos. Sin embargo, un problema aparentemente simple —¿cómo emite luz un objeto caliente?— puso en evidencia las limitaciones de esa física. 
+> Porqué la solución clásica fue catastrófica?
+> La solución que Max Planck propuso en 1900, una idea que nadie esperaba: que la energía no puede tomar cualquier valor."
 
 *(Click en "▶ Iniciar exploración" en la App → scroll a Sección 1)*
 
