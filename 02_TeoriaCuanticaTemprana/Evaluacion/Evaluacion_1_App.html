@@ -1320,6 +1320,17 @@
               </label>
             </div>
           </div>
+
+          <div style="margin-top:1rem">
+            <div class="card-title">Escala Vertical (Eje Y)</div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <label class="toggle-item">
+                <input type="checkbox" id="auto-yscale" aria-label="Escala Y adaptativa auto-fit T" />
+                <div class="toggle-box"></div>
+                <span class="toggle-label" style="color:var(--yellow)">Escala Adaptativa (Auto-fit T)</span>
+              </label>
+            </div>
+          </div>
         </div>
 
         <div class="card" style="border-color:rgba(0,200,255,0.2)">
@@ -1379,11 +1390,11 @@
     <div class="card fi fi2"
       style="margin-top:1.5rem;background:rgba(0,200,255,0.03);border-color:rgba(0,200,255,0.18)">
       <div class="card-title" style="color:var(--cyan);font-size:0.85rem">
-        &#128218; Fundamentos F&iacute;sicos: Unicidad y Escalamiento del Pico Espectral
+        &#128218; Fundamentos F&iacute;sicos: Unicidad y Escalamiento del M&aacute;ximo Espectral
       </div>
       <div style="font-size:0.82rem;line-height:1.65;color:var(--gray)">
         <p style="margin-bottom:0.5rem">
-          <strong>1. Unicidad del pico (\(\lambda_{\max}\)):</strong> Para un cuerpo negro ideal, el espectro depende
+          <strong>1. Unicidad del m&aacute;ximo (\(\lambda_{\max}\)):</strong> Para un cuerpo negro ideal, el espectro depende
           exclusivamente de la temperatura \(T\). La <strong style="color:var(--yellow)">Ley del Desplazamiento de
             Wien</strong> fija la longitud de onda del m&aacute;ximo de emisi&oacute;n de forma un&iacute;voca:
         </p>
@@ -1394,10 +1405,10 @@
         </div>
         <p style="margin-top:0.4rem;margin-bottom:0.6rem">
           Para \(T = 9\,000\text{ K}\), la ley impone \(\lambda_{\max} \approx 322\text{ nm}\). <strong>No es posible
-            trazar otra curva a esa misma temperatura con un pico distinto</strong> (salvo en cuerpos reales no ideales
+            trazar otra curva a esa misma temperatura con un m&aacute;ximo distinto</strong> (salvo en cuerpos reales no ideales
           con emisividad \(\varepsilon(\lambda) < 1\)). </p>
             <p style="margin-bottom:0.5rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:0.5rem">
-              <strong>2. Escalamiento de la altura del pico (\(T^5\)):</strong> &iquest;De d&oacute;nde sale la
+              <strong>2. Escalamiento de la altura del m&aacute;ximo (\(T^5\)):</strong> &iquest;De d&oacute;nde sale la
               proporcionalidad \(u(\lambda_{\max},T) \propto T^5\)? Es la <strong>combinaci&oacute;n directa de la Ley
                 de Planck con la Ley de Wien</strong>. Sustituyendo \(\lambda_{\max} = b/T\) en Planck:
             </p>
@@ -1407,7 +1418,7 @@
               \cdot T^5 \;\propto\; T^5\)
             </div>
             <p style="margin-top:0.4rem;font-size:0.76rem;color:var(--gray2)">
-              &#9432; <strong>Diferencia clave:</strong> La <em>altura del pico puntual</em> crece como \(\mathbf{T^5}\)
+              &#9432; <strong>Diferencia clave:</strong> La <em>altura del m&aacute;ximo puntual</em> crece como \(\mathbf{T^5}\)
               (Planck + Wien), mientras que la <em>potencia total emitida</em> (&aacute;rea total bajo la curva) crece
               como \(\mathbf{T^4}\) (Stefan-Boltzmann, \(R = \sigma T^4\)).
             </p>
@@ -2298,15 +2309,22 @@
     const specX = specC.getContext('2d');
     const SW = specC.width / (window.devicePixelRatio || 1), SH = specC.height / (window.devicePixelRatio || 1), SP = { l: 70, r: 20, t: 28, b: 45 };
 
+    function toSuperScript(num) {
+      const map = { '-': '⁻', '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴', '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹' };
+      return String(num).split('').map(c => map[c] || c).join('');
+    }
+
     function drawSpectrum() {
       const T = parseInt(document.getElementById('temp-slider').value);
       const showP = document.getElementById('show-planck').checked;
       const showR = document.getElementById('show-rj').checked;
       const showW = document.getElementById('show-wien').checked;
+      const autoYEl = document.getElementById('auto-yscale');
+      const autoY = autoYEl ? autoYEl.checked : false;
 
       clearCanvas(specX, SW, SH);
       drawGrid(specX, SW, SH, SP);
-      drawAxes(specX, SW, SH, SP, 'Longitud de onda λ (nm)', 'u(λ,T) (energia referenciada al Sol, 5778 K)');
+      drawAxes(specX, SW, SH, SP, 'Longitud de onda λ (nm)', autoY ? 'u(λ,T) (Escala Auto-fit T)' : 'u(λ,T) (referenciada a 10 000 K)');
 
       const lMin = 100e-9, lMax = 2000e-9, N = 600;
       const lams = Array.from({ length: N }, (_, i) => lMin + (lMax - lMin) * i / (N - 1));
@@ -2316,20 +2334,36 @@
       if (!peak) return;
 
       const xs = l => SP.l + (l - lMin) / (lMax - lMin) * (SW - SP.l - SP.r);
-      // Escala absoluta fija: referenciada al pico @ T_max = 10 000 K
-      // La altura de la curva es proporcional a la intensidad real (pico ∝ T^5).
-      const PEAK_MAX = planckL(2.898e-3 / 10000, 10000); // pico @ 10 000 K
-      const PEAK_SOL = planckL(2.898e-3 / 5778, 5778);  // pico solar (anotación)
-      const yScale = PEAK_MAX * 1.1;                    // 10 000 K llena ~91 % del canvas
+      const PEAK_MAX = planckL(2.898e-3 / 10000, 10000); // maximo @ 10 000 K
+      const PEAK_SOL = planckL(2.898e-3 / 5778, 5778);   // maximo solar
+      const yScale = autoY ? Math.max(peak * 1.15, 1e-10) : PEAK_MAX * 1.1;
       const ys = v => SH - SP.b - Math.min(Math.max(v, 0), yScale) / yScale * (SH - SP.t - SP.b);
 
-      /* ── Marcas del eje Y con valores absolutos ── */
+      /* ── Marcas del eje Y con valores adaptativos / absolutos en unidades claras ── */
       {
-        // Generar ticks adaptativos según yScale
-        const yMaxM = yScale / 1e6;   // en unidades de 10⁶
-        const step = yMaxM > 20 ? 5 : yMaxM > 8 ? 2 : 1;
-        for (let val = 0; val <= yMaxM + step; val += step) {
-          const vt = val * 1e6, yt = ys(vt);
+        let unitLabel = 'W\u00b7m\u207b\u00b3';
+        let unitDivisor = 1;
+        if (yScale >= 1e6) {
+          unitLabel = 'MW\u00b7m\u207b\u00b3';
+          unitDivisor = 1e6;
+        } else if (yScale >= 1e3) {
+          unitLabel = 'kW\u00b7m\u207b\u00b3';
+          unitDivisor = 1e3;
+        }
+
+        const yMaxScaled = yScale / unitDivisor;
+        const targetTicks = 4;
+        const rawStep = Math.max(yMaxScaled / targetTicks, 1e-10);
+        const stepExp = Math.floor(Math.log10(rawStep));
+        const stepFrac = rawStep / Math.pow(10, stepExp);
+        let niceFrac = 1;
+        if (stepFrac >= 7.5) niceFrac = 10;
+        else if (stepFrac >= 3.5) niceFrac = 5;
+        else if (stepFrac >= 1.5) niceFrac = 2;
+        const step = niceFrac * Math.pow(10, stepExp);
+
+        for (let val = 0; val <= yMaxScaled + step * 0.01; val += step) {
+          const vt = val * unitDivisor, yt = ys(vt);
           if (yt < SP.t + 5 || yt > SH - SP.b) continue;
           // Línea de grid sutil
           specX.strokeStyle = 'rgba(68,85,102,0.25)'; specX.lineWidth = 0.5;
@@ -2338,18 +2372,24 @@
           specX.strokeStyle = 'rgba(68,85,102,0.65)'; specX.lineWidth = 1;
           specX.beginPath(); specX.moveTo(SP.l - 5, yt); specX.lineTo(SP.l, yt); specX.stroke();
           specX.fillStyle = '#8899AA'; specX.font = '10px Inter'; specX.textAlign = 'right';
-          specX.fillText(val === 0 ? '0' : val.toString(), SP.l - 8, yt + 4);
+          const txtVal = Number.isInteger(val) ? val.toString() : val.toFixed(1);
+          specX.fillText(val === 0 ? '0' : txtVal, SP.l - 8, yt + 4);
         }
         // Unidades del eje Y
-        specX.fillStyle = '#667788'; specX.font = '9px Inter'; specX.textAlign = 'right';
-        specX.fillText('\u00d710\u2076 W\u00b7m\u207b\u00b3', SP.l - 8, SP.t + 10);
-        // Línea de referencia solar (T☉) — marca dónde está el Sol en la escala
-        const ySOL = ys(PEAK_SOL);
-        specX.strokeStyle = 'rgba(255,224,102,0.2)'; specX.lineWidth = 1; specX.setLineDash([3, 4]);
-        specX.beginPath(); specX.moveTo(SP.l, ySOL); specX.lineTo(SW - SP.r, ySOL); specX.stroke();
-        specX.setLineDash([]);
-        specX.fillStyle = 'rgba(255,224,102,0.5)'; specX.font = 'bold 9px Inter'; specX.textAlign = 'left';
-        specX.fillText('T☉', SP.l + 3, ySOL - 3);
+        specX.fillStyle = '#8899AA'; specX.font = 'bold 10px Inter'; specX.textAlign = 'right';
+        specX.fillText(unitLabel, SP.l - 8, SP.t + 10);
+
+        // Línea de referencia solar (T☉) — solo en escala absoluta fija
+        if (!autoY) {
+          const ySOL = ys(PEAK_SOL);
+          if (ySOL >= SP.t && ySOL <= SH - SP.b) {
+            specX.strokeStyle = 'rgba(255,224,102,0.2)'; specX.lineWidth = 1; specX.setLineDash([3, 4]);
+            specX.beginPath(); specX.moveTo(SP.l, ySOL); specX.lineTo(SW - SP.r, ySOL); specX.stroke();
+            specX.setLineDash([]);
+            specX.fillStyle = 'rgba(255,224,102,0.5)'; specX.font = 'bold 9px Inter'; specX.textAlign = 'left';
+            specX.fillText('T☉', SP.l + 3, ySOL - 3);
+          }
+        }
       }
 
       /* Banda del espectro visible */
@@ -2392,7 +2432,7 @@
           specX.lineTo(xs(lams[i]), ys(wienL(lams[i], T)));
         }
         specX.closePath();
-        // Gradiente horizontal: invisible cerca del pico, visible en el IR
+        // Gradiente horizontal: invisible cerca del maximo, visible en el IR
         const xPeak = xs(lams[pm]), xRight = xs(lams[lams.length - 1]);
         const gr = specX.createLinearGradient(xPeak, 0, xRight, 0);
         gr.addColorStop(0, 'rgba(192,132,252,0)');
@@ -2494,27 +2534,49 @@
         });
       }
 
-      /* ── Anotación: intensidad relativa al Sol — esquina superior-derecha del plot ── */
+      /* ── Anotación: Peak u_max y Potencia Total R — esquina superior-derecha ── */
       {
         const relI = peak / PEAK_SOL;
         const relTxt = relI < 0.001 ? (relI * 100).toFixed(3) + ' % Sol' :
           relI < 0.1 ? (relI * 100).toFixed(2) + ' % Sol' :
             relI < 1 ? (relI * 100).toFixed(1) + ' % Sol' :
               relI.toFixed(2) + '× Sol';
-        const ann = 'Peak:  ' + relTxt;
+
+        const R_val = SG * Math.pow(T, 4);
+        const RS_val = SG * Math.pow(5778, 4);
+        const relR = R_val / RS_val;
+        const relRTxt = relR < 0.01 ? (relR * 100).toFixed(2) + ' % Sol' : relR.toFixed(2) + '× Sol';
+
+        const peakFormatted = peak >= 1e6 ? (peak / 1e6).toFixed(2) + ' MW/m³' : (peak / 1e3).toFixed(1) + ' kW/m³';
+        const RFormatted = R_val >= 1e6 ? (R_val / 1e6).toFixed(1) + ' MW/m²' : (R_val / 1e3).toFixed(1) + ' kW/m²';
+
+        const line1 = 'Máximo (u_max): ' + peakFormatted + ' (' + relTxt + ')';
+        const line2 = 'Potencia (R = σT⁴): ' + RFormatted + ' (' + relRTxt + ')';
 
         specX.font = 'bold 11px Inter';
-        const tw = specX.measureText(ann).width;
-        specX.fillStyle = 'rgba(13,27,42,0.72)';
-        specX.fillRect(SW - SP.r - tw - 14, SP.t + 3, tw + 10, 20);
-        specX.fillStyle = '#FFE066'; specX.textAlign = 'right';
-        specX.fillText(ann, SW - SP.r - 9, SP.t + 17);
-        if (showP && peak > yScale * 0.80) {
-          specX.fillStyle = 'rgba(13,27,42,0.72)';
-          specX.fillRect(SW - SP.r - 178, SP.t + 25, 174, 18);
-          specX.fillStyle = 'rgba(0,200,255,0.95)'; specX.font = 'bold 10px Inter'; specX.textAlign = 'right';
-          specX.fillText('▲ T máx. — 10 000 K', SW - SP.r - 9, SP.t + 38);
+        const w1 = specX.measureText(line1).width;
+        const w2 = specX.measureText(line2).width;
+        const bw = Math.max(w1, w2) + 16;
+        const bh = 34;
+        const bx = SW - SP.r - bw - 6;
+        const by = SP.t + 4;
+
+        specX.fillStyle = 'rgba(13,27,42,0.85)';
+        specX.strokeStyle = 'rgba(0,200,255,0.25)';
+        specX.lineWidth = 1;
+        specX.beginPath();
+        if (specX.roundRect) {
+          specX.roundRect(bx, by, bw, bh, 5);
+        } else {
+          specX.rect(bx, by, bw, bh);
         }
+        specX.fill();
+        specX.stroke();
+
+        specX.fillStyle = '#7BFFC4'; specX.textAlign = 'left';
+        specX.fillText(line1, bx + 8, by + 14);
+        specX.fillStyle = '#00C8FF';
+        specX.fillText(line2, bx + 8, by + 33);
       }
 
       /* Etiquetas eje X */
@@ -2524,10 +2586,10 @@
         if (x >= SP.l && x <= SW - SP.r) specX.fillText(nm, x, SH - SP.b + 16);
       });
 
-      /* Panel lateral */
+      /* Panel lateral y badges */
       const lmx = 2.898e-3 / T;
       document.getElementById('temp-val').textContent = T.toLocaleString('es-CL') + ' K';
-      document.getElementById('canvas-label').textContent = 'T = ' + T.toLocaleString('es-CL') + ' K  |  λ_max = ' + (lmx * 1e9).toFixed(1) + ' nm';
+      document.getElementById('canvas-label').textContent = 'T = ' + T.toLocaleString('es-CL') + ' K  |  λ_max = ' + (lmx * 1e9).toFixed(1) + ' nm' + (autoY ? ' (Escala Auto-fit T)' : '');
       document.getElementById('wien-result').textContent = (lmx * 1e9).toFixed(1) + ' nm';
       const R = SG * Math.pow(T, 4), RS = SG * Math.pow(5778, 4);
       document.getElementById('stefan-result').textContent = (R / 1e6).toFixed(1) + ' MW/m²  (' + (R / RS).toFixed(2) + '× Sol)';
@@ -2537,7 +2599,7 @@
     }
 
     document.getElementById('temp-slider').addEventListener('input', drawSpectrum);
-    ['show-planck', 'show-rj', 'show-wien'].forEach(id =>
+    ['show-planck', 'show-rj', 'show-wien', 'auto-yscale'].forEach(id =>
       document.getElementById(id).addEventListener('change', drawSpectrum));
     drawSpectrum();
 

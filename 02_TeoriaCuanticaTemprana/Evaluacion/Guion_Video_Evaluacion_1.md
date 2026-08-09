@@ -34,9 +34,9 @@
 
 > "Este concepto no es solo teórico: cerca de los 525 grados Celsius, la mayoría de los sólidos opacos comienzan a emitir una luminiscencia roja tenue, perceptible al ojo humano —sin importar de qué material estén hechos. Es la primera señal visible de que la luz emitida depende únicamente de la temperatura."
 
-**Mover el slider de T a ~1 500 K → mostrar curva baja desplazada al IR.**
+**Mover el slider de T a 2 000 K → activar el toggle "Escala Adaptativa (Auto-fit T)" →**
 
-> "A 1 500 kelvin, la curva es baja —el máximo está en 1 930 nanómetros, en el infrarrojo— y la potencia total irradiada es de apenas 0.3 megavatios por metro cuadrado."
+> "A 2 000 kelvin, en la escala absoluta la curva parece una línea plana cerca del eje debido al crecimiento de $T^5$. Al activar el interruptor de 'Escala Adaptativa (Auto-fit T)', el eje vertical reajusta automáticamente su escala, permitiéndonos apreciar claramente la forma campana de la curva de Planck, con su máximo en 1 449 nanómetros en el infrarrojo cercano."
 
 **Subir el slider a 5 778 K (Temperatura del Sol) → señalar que la curva crece en altura y se desplaza a la izquierda.**
 
