@@ -1240,36 +1240,30 @@
         <li>La mecánica de Newton (1687) describía con gran precisión el movimiento de los cuerpos.</li>
       </ul>
 
-      <p style="font-size:0.9rem;color:var(--gray);line-height:1.7;margin-bottom:1rem">
-        Sin embargo, un problema aparentemente sencillo reveló una limitación de la física clásica:
+      <p style="font-size:0.95rem;color:var(--gray);line-height:1.7;margin-bottom:1rem">
+        Sin embargo, un problema aparentemente sencillo puso en evidencia las limitaciones fundamentales de la física clásica:
       </p>
 
-      <p style="font-size:1rem;color:var(--cyan);font-weight:700;text-align:left;margin:1rem 0">
-        ¿Cómo emite luz un objeto caliente?
+      <p style="font-size:1.05rem;color:var(--cyan);font-weight:700;text-align:left;margin:1.1rem 0 0.6rem 0">
+        ¿Cómo emite radiación un objeto caliente?
       </p>
 
       <p style="font-size:0.9rem;color:var(--gray);line-height:1.7;margin-bottom:1rem">
-        Al aplicar la física clásica, la radiación predicha aumentaba cada vez más con la frecuencia,
-        hasta alcanzar valores infinitos. Esta contradicción con los experimentos se conoce como
+        Al aplicar las leyes de Maxwell y Boltzmann, la física clásica predecía que la radiación debía crecer indefinidamente al aumentar la frecuencia, divergiendo hacia una energía total infinita. Esta contradicción con los experimentos se conoce como
         <strong style="color:var(--orange)">la catástrofe ultravioleta</strong>.
       </p>
 
-      <p style="font-size:1rem;color:var(--cyan);font-weight:700;text-align:left;margin:1rem 0">
-        ¿Por qué la teoría clásica conducía a esta predicción?
+      <p style="font-size:1.05rem;color:var(--cyan);font-weight:700;text-align:left;margin:1.1rem 0 0.6rem 0">
+        ¿Por qué la teoría clásica conducía a esta divergencia?
       </p>
 
       <p style="font-size:0.9rem;color:var(--gray);line-height:1.7;margin-bottom:1rem">
-        La física clásica suponía que los osciladores podían intercambiar energía de forma
-        continua. A cada oscilador le correspondía una frecuencia determinada y, según el teorema
-        de equipartición, una energía media <strong style="color:var(--yellow)">\(k_{\!B}T\)</strong>.
-        Como había cada vez más osciladores asociados a frecuencias altas, al sumar sus
-        contribuciones la energía total crecía sin límite.
+        La física clásica suponía que la energía era una magnitud continua que podía intercambiarse en cualquier cantidad. Según el <em>Teorema de Equipartición de la Energía</em>, a cada modo electromagnético dentro de la cavidad le correspondía una energía media constante de <strong style="color:var(--yellow)">\(\bar{E} = k_{\!B}T\)</strong>, independientemente de su frecuencia. Dado que la densidad de modos aumenta con el cuadrado de la frecuencia (\(dN \propto \nu^2\)), al sumar todo el espectro la energía total resultaba infinita.
       </p>
 
       <p style="font-size:0.9rem;color:var(--gray);line-height:1.7">
-        Planck resolvió este problema proponiendo que la energía de esos mismos osciladores no podía
-        variar continuamente, sino que solo podía tomar valores discretos:
-        <strong style="color:var(--green)">\(E_n=nh\nu\)</strong>.
+        En diciembre de 1900, Max Planck resolvió esta crisis proponiendo una hipótesis revolucionaria: la energía de los osciladores no varía de forma continua, sino que solo puede intercambiarse en paquetes discretos o cuantos de energía:
+        <strong style="color:var(--green)">\(E_n=nh\nu\)</strong> (con \(n = 0, 1, 2, \ldots\)). Esta restricción impone un costo mínimo para excitar los modos de alta frecuencia, "congelándolos" térmicamente y garantizando que la energía total sea finita.
       </p>
     </blockquote>
   </section>
@@ -1335,35 +1329,50 @@
 
         <div class="card" style="border-color:rgba(0,200,255,0.2)">
           <div class="card-title" style="color:var(--cyan)">Valores calculados en tiempo real</div>
-          <div class="data-row">
-            <span class="data-label" title="Longitud de onda de máxima emisión (Ley de Wien)">\(\lambda_{\max}\)
-              &nbsp;<small style="color:var(--gray2)">(Wien)</small></span>
-            <span class="data-value" id="wien-result" style="color:var(--green)">501.6 nm</span>
+
+          <!-- Desplazamiento de Wien -->
+          <div style="padding:0.2rem 0 0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+            <p style="font-size:0.74rem;color:var(--gray);margin-bottom:0.2rem">
+              Desplazamiento de Wien (\(\lambda_{\max}\) es inversamente proporcional a \(T\))
+            </p>
+            <div class="formula-box" style="margin:0.3rem 0;padding:0.4rem 0.7rem;font-size:0.82rem">\(\lambda_{\max} \cdot T = 2.898 \times 10^6 \;\text{nm}\cdot\text{K}\)</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.3rem">
+              <span style="font-size:0.74rem;color:var(--gray2)">\(\lambda_{\max}\) <small style="color:var(--gray2)">(Wien)</small>:</span>
+              <span class="data-value" id="wien-result" style="color:var(--green);font-weight:bold;font-size:0.86rem">501.6 nm</span>
+            </div>
           </div>
-          <div class="data-row">
-            <span class="data-label" title="Potencia total irradiada por unidad de área (Stefan-Boltzmann)">\(R = \sigma
-              T^4\) &nbsp;<small style="color:var(--gray2)">(S-B)</small></span>
-            <span class="data-value" id="stefan-result" style="color:var(--yellow)">63.2 MW/m&sup2;</span>
+
+          <!-- Máximo Espectral Puntual (u_max) -->
+          <div style="margin-top:0.5rem;padding:0.2rem 0 0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+            <p style="font-size:0.74rem;color:var(--gray);margin-bottom:0.2rem">
+              Máximo espectral (altura máxima escala con \(T^5\))
+            </p>
+            <div class="formula-box" style="margin:0.3rem 0;padding:0.4rem 0.7rem;font-size:0.82rem">\(u_{\max}(T) \propto T^5\)</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.3rem">
+              <span style="font-size:0.74rem;color:var(--gray2)">\(u_{\max}\)</span>
+              <span class="data-value" id="umax-result" style="color:var(--cyan);font-weight:bold;font-size:0.86rem">1.62 MW/m&sup3;</span>
+            </div>
           </div>
-          <div class="data-row" style="border-bottom:none">
+
+          <!-- Potencia total (Stefan-Boltzmann) -->
+          <div style="margin-top:0.5rem;padding:0.2rem 0 0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+            <p style="font-size:0.74rem;color:var(--gray);margin-bottom:0.2rem">
+              Stefan-Boltzmann (potencia total por unidad de área escala con \(T^4\))
+            </p>
+            <div class="formula-box" style="margin:0.3rem 0;padding:0.4rem 0.7rem;font-size:0.82rem">\(R=\sigma\,T^4\)</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.3rem">
+              <span style="font-size:0.74rem;color:var(--gray2)">\(R\) <small style="color:var(--gray2)">(S-B)</small>:</span>
+              <span class="data-value" id="stefan-result" style="color:var(--yellow);font-weight:bold;font-size:0.86rem">63.2 MW/m&sup2;</span>
+            </div>
+            <p style="font-size:0.68rem;color:var(--gray2);margin-top:0.25rem">
+              \(\sigma = 5.6703 \times 10^{-8} \;\text{W}\cdot\text{m}^{-2}\cdot\text{K}^{-4}\)
+            </p>
+          </div>
+
+          <!-- Clasificación estelar -->
+          <div class="data-row" style="margin-top:0.3rem;border-bottom:none">
             <span class="data-label">Clasificación estelar</span>
             <span class="data-value" id="color-result" style="color:var(--gray)">Sol (G)</span>
-          </div>
-          <div style="margin-top:0.7rem;padding-top:0.7rem;border-top:1px solid var(--border)">
-            <div class="card-title" style="margin-bottom:0.5rem;font-size:0.76rem">Leyes</div>
-            <p style="font-size:0.74rem;color:var(--gray);margin-bottom:0.3rem">Stefan-Boltzmann
-              (potencia total emitida por unidad de área escala con \(T^4\)) </p>
-            <p style="font-size:0.68rem;color:var(--gray2);margin-top:0.4rem">\(\sigma =
-              5.67\times10^{-8}\;\text{W}\cdot\text{m}^{-2}\cdot\text{K}^{-4}\)</p>
-            <div class="formula-box" style="margin:0;padding:0.5rem 0.8rem;font-size:0.86rem">\(R=\sigma\,T^4\)</div>
-            <p style="font-size:0.74rem;color:var(--gray);margin-top:0.55rem;margin-bottom:0.3rem">Desplazamiento de
-              Wien
-            </p>
-            <div class="formula-box" style="margin:0;padding:0.5rem 0.8rem;font-size:0.86rem">
-              \(\lambda_{\max}T=2898\,\mu\text{m K}\)</div>
-            <p style="font-size:0.74rem;color:var(--gray);margin-top:0.55rem;margin-bottom:0.3rem">
-              La longitud de onda del máximo de emisión es inversamente proporcional a T
-            </p>
           </div>
         </div>
       </div>
@@ -1389,39 +1398,28 @@
     <!-- Explicación de la unicidad y escalamiento T^5 a todo lo ancho -->
     <div class="card fi fi2"
       style="margin-top:1.5rem;background:rgba(0,200,255,0.03);border-color:rgba(0,200,255,0.18)">
-      <div class="card-title" style="color:var(--cyan);font-size:0.85rem">
+      <div class="card-title" style="color:var(--cyan);font-size:0.88rem;margin-bottom:0.7rem">
         &#128218; Fundamentos F&iacute;sicos: Unicidad y Escalamiento del M&aacute;ximo Espectral
       </div>
-      <div style="font-size:0.82rem;line-height:1.65;color:var(--gray)">
-        <p style="margin-bottom:0.5rem">
-          <strong>1. Unicidad del m&aacute;ximo (\(\lambda_{\max}\)):</strong> Para un cuerpo negro ideal, el espectro depende
-          exclusivamente de la temperatura \(T\). La <strong style="color:var(--yellow)">Ley del Desplazamiento de
-            Wien</strong> fija la longitud de onda del m&aacute;ximo de emisi&oacute;n de forma un&iacute;voca:
+      <div style="font-size:0.83rem;line-height:1.7;color:var(--gray)">
+        <p style="margin-bottom:0.4rem">
+          <strong>1. Unicidad del m&aacute;ximo (\(\lambda_{\max}\)):</strong> En un cuerpo negro ideal, la curva espectral queda determinada de forma &uacute;nica por su temperatura \(T\). La <strong style="color:var(--yellow)">Ley del Desplazamiento de Wien</strong> fija la longitud de onda del m&aacute;ximo de emisi&oacute;n:
         </p>
-        <div style="text-align:center;margin:0.3rem 0;font-size:0.9rem;color:var(--yellow)">
+        <div style="text-align:center;margin:0.4rem 0;font-size:0.92rem;color:var(--yellow)">
           \(\lambda_{\max} \cdot T = b \approx 2.898 \times 10^6 \;\text{nm&middot;K}\)
           &emsp;\(\Longleftrightarrow\)&emsp;
           \(\lambda_{\max} = \frac{2.898 \times 10^6 \;\text{nm&middot;K}}{T}\)
         </div>
-        <p style="margin-top:0.4rem;margin-bottom:0.6rem">
-          Para \(T = 9\,000\text{ K}\), la ley impone \(\lambda_{\max} \approx 322\text{ nm}\). <strong>No es posible
-            trazar otra curva a esa misma temperatura con un m&aacute;ximo distinto</strong> (salvo en cuerpos reales no ideales
-          con emisividad \(\varepsilon(\lambda) < 1\)). </p>
-            <p style="margin-bottom:0.5rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:0.5rem">
-              <strong>2. Escalamiento de la altura del m&aacute;ximo (\(T^5\)):</strong> &iquest;De d&oacute;nde sale la
-              proporcionalidad \(u(\lambda_{\max},T) \propto T^5\)? Es la <strong>combinaci&oacute;n directa de la Ley
-                de Planck con la Ley de Wien</strong>. Sustituyendo \(\lambda_{\max} = b/T\) en Planck:
-            </p>
-            <div style="text-align:center;margin:0.4rem 0;font-size:0.88rem;color:var(--cyan)">
-              \(\displaystyle u(\lambda_{\max}, T) = \frac{8\pi h c}{(b/T)^5} \cdot \frac{1}{e^{\frac{hc}{b k_{\!B}}} -
-              1} = \underbrace{\left[ \frac{8\pi h c}{b^5 \left(e^{hc/b k_{\!B}} - 1\right)} \right]}_{\text{Constante}}
-              \cdot T^5 \;\propto\; T^5\)
-            </div>
-            <p style="margin-top:0.4rem;font-size:0.76rem;color:var(--gray2)">
-              &#9432; <strong>Diferencia clave:</strong> La <em>altura del m&aacute;ximo puntual</em> crece como \(\mathbf{T^5}\)
-              (Planck + Wien), mientras que la <em>potencia total emitida</em> (&aacute;rea total bajo la curva) crece
-              como \(\mathbf{T^4}\) (Stefan-Boltzmann, \(R = \sigma T^4\)).
-            </p>
+
+        <p style="margin-bottom:0.4rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:0.6rem">
+          <strong>2. Escalamiento de la altura del m&aacute;ximo (\(T^5\)):</strong> Al sustituir la condición del m&aacute;ximo \(\lambda_{\max} = b/T\) dentro de la Ley de Planck, se obtiene la altura máxima espectral:
+        </p>
+        <div style="text-align:center;margin:0.4rem 0;font-size:0.9rem;color:var(--cyan)">
+          \(\displaystyle u(\lambda_{\max}, T) = \frac{8\pi h c}{(b/T)^5 \left(e^{\frac{hc}{b k_{\!B}}} - 1\right)} = \underbrace{\left[ \frac{8\pi h c}{b^5 \left(e^{\frac{hc}{b k_{\!B}}} - 1\right)} \right]}_{\text{Constante } C_1} \cdot T^5 \;\propto\; T^5\)
+        </div>
+        <p style="margin-top:0.4rem;font-size:0.78rem;color:var(--gray2)">
+          &#9432; <strong>Distinci&oacute;n fundamental:</strong> La <em>altura puntual del m&aacute;ximo</em> espectral crece como \(\mathbf{T^5}\) (combinación de Planck y Wien), mientras que la <em>potencia total irradiada</em> (el &aacute;rea total bajo la curva) escala como \(\mathbf{T^4}\) (Ley de Stefan-Boltzmann, \(R = \sigma T^4\)).
+        </p>
       </div>
     </div>
 
@@ -2503,13 +2501,14 @@
         specX.stroke();
 
         /* Marcador lambda_max */
-        const lmax = lams[pm], xm = xs(lmax), ym = Math.max(ys(peak), SP.t + 10); // clamp para no salir del canvas
+        const lmaxExact = 2.898e-3 / T;
+        const xm = xs(lmaxExact), ym = Math.max(ys(peak), SP.t + 10); // clamp para no salir del canvas
         specX.beginPath(); specX.strokeStyle = '#FFE066'; specX.lineWidth = 1.2; specX.setLineDash([4, 3]);
         specX.moveTo(xm, ym + 4); specX.lineTo(xm, SH - SP.b); specX.stroke(); specX.setLineDash([]);
         specX.beginPath(); specX.arc(xm, ym, 4, 0, 2 * Math.PI);
         specX.fillStyle = '#FFE066'; specX.fill();
         // Etiqueta: ajustar lado segun posicion
-        const label = 'λ_max = ' + (lmax * 1e9).toFixed(0) + ' nm';
+        const label = 'λ_max = ' + (lmaxExact * 1e9).toFixed(1) + ' nm';
         const lw = specX.measureText(label).width;
         const lx = (xm + lw + 8 > SW - SP.r) ? xm - lw - 6 : xm + 6;
         specX.fillStyle = '#FFE066'; specX.font = 'bold 10.5px Inter'; specX.textAlign = 'left';
@@ -2591,6 +2590,13 @@
       document.getElementById('temp-val').textContent = T.toLocaleString('es-CL') + ' K';
       document.getElementById('canvas-label').textContent = 'T = ' + T.toLocaleString('es-CL') + ' K  |  λ_max = ' + (lmx * 1e9).toFixed(1) + ' nm' + (autoY ? ' (Escala Auto-fit T)' : '');
       document.getElementById('wien-result').textContent = (lmx * 1e9).toFixed(1) + ' nm';
+
+      const relI = peak / PEAK_SOL;
+      const relTxt = relI < 0.001 ? (relI * 100).toFixed(3) + ' % Sol' : relI < 0.1 ? (relI * 100).toFixed(2) + ' % Sol' : relI < 1 ? (relI * 100).toFixed(1) + ' % Sol' : relI.toFixed(2) + '× Sol';
+      const peakFormatted = peak >= 1e6 ? (peak / 1e6).toFixed(2) + ' MW/m³' : (peak / 1e3).toFixed(1) + ' kW/m³';
+      const umaxEl = document.getElementById('umax-result');
+      if (umaxEl) umaxEl.textContent = peakFormatted + ' (' + relTxt + ')';
+
       const R = SG * Math.pow(T, 4), RS = SG * Math.pow(5778, 4);
       document.getElementById('stefan-result').textContent = (R / 1e6).toFixed(1) + ' MW/m²  (' + (R / RS).toFixed(2) + '× Sol)';
       const sc = starColor(T);
