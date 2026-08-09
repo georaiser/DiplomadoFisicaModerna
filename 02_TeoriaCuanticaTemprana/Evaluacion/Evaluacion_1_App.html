@@ -1227,33 +1227,49 @@
   <section id="introduccion" class="section" style="padding: 2rem 2rem 0.5rem 2rem;">
     <blockquote class="section-sub fi fi2"
       style="max-width:none; margin-bottom:0; border-left:4px solid var(--cyan);background:rgba(0,200,255,0.06);">
+
       <p style="font-size:0.9rem;color:var(--gray);line-height:1.7;margin-bottom:1rem">
-        A finales del siglo XIX, muchos físicos pensaban que la física clásica estaba prácticamente completa.
+        A finales del siglo XIX, muchos físicos consideraban que la física clásica estaba
+        prácticamente completa.
       </p>
+
       <ul style="color:var(--gray);line-height:1.8;margin:0 0 1rem 1.2rem">
-        <li>Las ecuaciones de Maxwell (1865) explicaban la naturaleza de la luz.</li>
-        <li>La mecánica estadística de Boltzmann (décadas de 1870–1880) explicaba el comportamiento térmico de la
-          materia.</li>
+        <li>Las ecuaciones de Maxwell (1865) describían el electromagnetismo y explicaban la naturaleza de la luz.</li>
+        <li>La mecánica estadística de Boltzmann (décadas de 1870–1880) permitía explicar el comportamiento térmico de
+          la materia.</li>
         <li>La mecánica de Newton (1687) describía con gran precisión el movimiento de los cuerpos.</li>
       </ul>
+
       <p style="font-size:0.9rem;color:var(--gray);line-height:1.7;margin-bottom:1rem">
-        Sin embargo, un problema aparentemente sencillo reveló que esa descripción estaba incompleta:
+        Sin embargo, un problema aparentemente sencillo reveló una limitación de la física clásica:
       </p>
+
       <p style="font-size:1rem;color:var(--cyan);font-weight:700;text-align:left;margin:1rem 0">
         ¿Cómo emite luz un objeto caliente?
       </p>
+
       <p style="font-size:0.9rem;color:var(--gray);line-height:1.7;margin-bottom:1rem">
-        Al intentar responder esa pregunta, la física clásica llegó a una predicción imposible: <br>
-        <strong>un cuerpo negro debería emitir una cantidad infinita de energía en las frecuencias más altas.</strong>
-        Este resultado se conoce como <strong style="color:var(--orange)">la catástrofe ultravioleta</strong>.
+        Al aplicar la física clásica, la radiación predicha aumentaba cada vez más con la frecuencia,
+        hasta alcanzar valores infinitos. Esta contradicción con los experimentos se conoce como
+        <strong style="color:var(--orange)">la catástrofe ultravioleta</strong>.
       </p>
+
       <p style="font-size:1rem;color:var(--cyan);font-weight:700;text-align:left;margin:1rem 0">
-        ¿Por qué la teoría clásica conducía a esa predicción?
+        ¿Por qué la teoría clásica conducía a esta predicción?
       </p>
+
+      <p style="font-size:0.9rem;color:var(--gray);line-height:1.7;margin-bottom:1rem">
+        La física clásica suponía que los osciladores podían intercambiar energía de forma
+        continua. A cada oscilador le correspondía una frecuencia determinada y, según el teorema
+        de equipartición, una energía media <strong style="color:var(--yellow)">\(k_{\!B}T\)</strong>.
+        Como había cada vez más osciladores asociados a frecuencias altas, al sumar sus
+        contribuciones la energía total crecía sin límite.
+      </p>
+
       <p style="font-size:0.9rem;color:var(--gray);line-height:1.7">
-        La respuesta llegó en 1900, cuando Max Planck propuso una idea completamente nueva: la energía no puede tomar
-        cualquier valor, sino que solo puede intercambiarse en cantidades discretas, llamadas <strong
-          style="color:var(--green)">cuantos</strong>.
+        Planck resolvió este problema proponiendo que la energía de esos mismos osciladores no podía
+        variar continuamente, sino que solo podía tomar valores discretos:
+        <strong style="color:var(--green)">\(E_n=nh\nu\)</strong>.
       </p>
     </blockquote>
   </section>
@@ -1347,8 +1363,10 @@
           &#128202; Curvas de Radiaci&oacute;n del Cuerpo Negro: Planck vs. Rayleigh-Jeans vs. Wien
         </div>
         <div class="canvas-wrapper">
-          <canvas id="spectrumCanvas" width="900" height="600" role="img" aria-label="Espectro del cuerpo negro"></canvas>
-          <span class="canvas-badge" id="canvas-label" style="top:auto;bottom:10px;left:12px;right:auto">T = 5&thinsp;778
+          <canvas id="spectrumCanvas" width="900" height="600" role="img"
+            aria-label="Espectro del cuerpo negro"></canvas>
+          <span class="canvas-badge" id="canvas-label" style="top:auto;bottom:10px;left:12px;right:auto">T =
+            5&thinsp;778
             K</span>
           <button onclick="toggleFullCanvas('spectrumCanvas')"
             style="position:absolute;bottom:10px;right:12px;padding:3px 9px;border-radius:5px;border:1px solid var(--border);background:rgba(13,27,42,0.8);color:var(--gray);font-size:0.7rem;cursor:pointer"
@@ -1358,13 +1376,16 @@
     </div>
 
     <!-- Explicación de la unicidad y escalamiento T^5 a todo lo ancho -->
-    <div class="card fi fi2" style="margin-top:1.5rem;background:rgba(0,200,255,0.03);border-color:rgba(0,200,255,0.18)">
+    <div class="card fi fi2"
+      style="margin-top:1.5rem;background:rgba(0,200,255,0.03);border-color:rgba(0,200,255,0.18)">
       <div class="card-title" style="color:var(--cyan);font-size:0.85rem">
         &#128218; Fundamentos F&iacute;sicos: Unicidad y Escalamiento del Pico Espectral
       </div>
       <div style="font-size:0.82rem;line-height:1.65;color:var(--gray)">
         <p style="margin-bottom:0.5rem">
-          <strong>1. Unicidad del pico (\(\lambda_{\max}\)):</strong> Para un cuerpo negro ideal, el espectro depende exclusivamente de la temperatura \(T\). La <strong style="color:var(--yellow)">Ley del Desplazamiento de Wien</strong> fija la longitud de onda del m&aacute;ximo de emisi&oacute;n de forma un&iacute;voca:
+          <strong>1. Unicidad del pico (\(\lambda_{\max}\)):</strong> Para un cuerpo negro ideal, el espectro depende
+          exclusivamente de la temperatura \(T\). La <strong style="color:var(--yellow)">Ley del Desplazamiento de
+            Wien</strong> fija la longitud de onda del m&aacute;ximo de emisi&oacute;n de forma un&iacute;voca:
         </p>
         <div style="text-align:center;margin:0.3rem 0;font-size:0.9rem;color:var(--yellow)">
           \(\lambda_{\max} \cdot T = b \approx 2.898 \times 10^6 \;\text{nm&middot;K}\)
@@ -1372,17 +1393,24 @@
           \(\lambda_{\max} = \frac{2.898 \times 10^6 \;\text{nm&middot;K}}{T}\)
         </div>
         <p style="margin-top:0.4rem;margin-bottom:0.6rem">
-          Para \(T = 9\,000\text{ K}\), la ley impone \(\lambda_{\max} \approx 322\text{ nm}\). <strong>No es posible trazar otra curva a esa misma temperatura con un pico distinto</strong> (salvo en cuerpos reales no ideales con emisividad \(\varepsilon(\lambda) < 1\)).
-        </p>
-        <p style="margin-bottom:0.5rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:0.5rem">
-          <strong>2. Escalamiento de la altura del pico (\(T^5\)):</strong> &iquest;De d&oacute;nde sale la proporcionalidad \(u(\lambda_{\max},T) \propto T^5\)? Es la <strong>combinaci&oacute;n directa de la Ley de Planck con la Ley de Wien</strong>. Sustituyendo \(\lambda_{\max} = b/T\) en Planck:
-        </p>
-        <div style="text-align:center;margin:0.4rem 0;font-size:0.88rem;color:var(--cyan)">
-          \(\displaystyle u(\lambda_{\max}, T) = \frac{8\pi h c}{(b/T)^5} \cdot \frac{1}{e^{\frac{hc}{b k_{\!B}}} - 1} = \underbrace{\left[ \frac{8\pi h c}{b^5 \left(e^{hc/b k_{\!B}} - 1\right)} \right]}_{\text{Constante}} \cdot T^5 \;\propto\; T^5\)
-        </div>
-        <p style="margin-top:0.4rem;font-size:0.76rem;color:var(--gray2)">
-          &#9432; <strong>Diferencia clave:</strong> La <em>altura del pico puntual</em> crece como \(\mathbf{T^5}\) (Planck + Wien), mientras que la <em>potencia total emitida</em> (&aacute;rea total bajo la curva) crece como \(\mathbf{T^4}\) (Stefan-Boltzmann, \(R = \sigma T^4\)).
-        </p>
+          Para \(T = 9\,000\text{ K}\), la ley impone \(\lambda_{\max} \approx 322\text{ nm}\). <strong>No es posible
+            trazar otra curva a esa misma temperatura con un pico distinto</strong> (salvo en cuerpos reales no ideales
+          con emisividad \(\varepsilon(\lambda) < 1\)). </p>
+            <p style="margin-bottom:0.5rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:0.5rem">
+              <strong>2. Escalamiento de la altura del pico (\(T^5\)):</strong> &iquest;De d&oacute;nde sale la
+              proporcionalidad \(u(\lambda_{\max},T) \propto T^5\)? Es la <strong>combinaci&oacute;n directa de la Ley
+                de Planck con la Ley de Wien</strong>. Sustituyendo \(\lambda_{\max} = b/T\) en Planck:
+            </p>
+            <div style="text-align:center;margin:0.4rem 0;font-size:0.88rem;color:var(--cyan)">
+              \(\displaystyle u(\lambda_{\max}, T) = \frac{8\pi h c}{(b/T)^5} \cdot \frac{1}{e^{\frac{hc}{b k_{\!B}}} -
+              1} = \underbrace{\left[ \frac{8\pi h c}{b^5 \left(e^{hc/b k_{\!B}} - 1\right)} \right]}_{\text{Constante}}
+              \cdot T^5 \;\propto\; T^5\)
+            </div>
+            <p style="margin-top:0.4rem;font-size:0.76rem;color:var(--gray2)">
+              &#9432; <strong>Diferencia clave:</strong> La <em>altura del pico puntual</em> crece como \(\mathbf{T^5}\)
+              (Planck + Wien), mientras que la <em>potencia total emitida</em> (&aacute;rea total bajo la curva) crece
+              como \(\mathbf{T^4}\) (Stefan-Boltzmann, \(R = \sigma T^4\)).
+            </p>
       </div>
     </div>
 
@@ -1447,19 +1475,24 @@
       <div class="steps fi fi3">
         <div class="step active" data-step="1" onclick="setStep(1)">
           <div class="step-num">1</div>
-          <div class="step-body">
-            <h4>Modos de oscilación</h4>
-            <p>En una cavidad cúbica de arista \(L\), el número de modos EM entre \(\nu\) y \(\nu+d\nu\)
-              crece cuadráticamente:</p>
-            <div class="step-eq">\(\displaystyle dN = \frac{8\pi\nu^2 L^3}{c^3}\,d\nu\)</div>
-          </div>
+<div class="step-body">
+  <h4>Modos de oscilación</h4>
+  <p>
+    En una cavidad de volumen \(V\), la radiación puede oscilar de distintas formas,
+    llamadas <strong>modos</strong>. Entre las frecuencias \(\nu\) y \(\nu+d\nu\), el número
+    de modos aumenta con el cuadrado de la frecuencia:
+  </p>
+  <div class="step-eq">
+    \(\displaystyle dN = \frac{8\pi V\nu^2}{c^3}\,d\nu\)
+  </div>
+</div>
         </div>
         <div class="step" data-step="2" onclick="setStep(2)">
           <div class="step-num">2</div>
           <div class="step-body">
             <h4>Teorema de equipartición</h4>
             <p>El teorema de equipartición clásico asigna energía media \(k_{\!B}T\) a
-              <em>cada</em> modo, sin importar su frecuencia. No hay mecanismo para distinguir modos IR de modos UV:
+              <em>cada</em> modo, sin importar su frecuencia.
             </p>
             <div class="step-eq">\(\bar{E}_{\text{clás.}} = k_{\!B}\,T\)</div>
           </div>
@@ -1475,15 +1508,21 @@
         </div>
         <div class="step" data-step="4" onclick="setStep(4)">
           <div class="step-num">4</div>
-          <div class="step-body">
-            <h4>La catástrofe</h4>
-            <p>Modos \(\propto\nu^2\) &times; \(k_{\!B}T\) -> integral divergente. </p>
-            <p>Al combinar una energía constante por modo con un número de modos que crece como \(\nu^2\) (frecuencia),
-              la energía
-              total aumenta sin límite. La integral diverge, prediciendo una energía infinita, en contradicción con los
-              experimentos.</p>
-            <div class="step-eq">\(\displaystyle\int_0^{\infty} u\,d\nu \;\longrightarrow\; \infty\)</div>
-          </div>
+<div class="step-body">
+  <h4>La catástrofe</h4>
+  <p>
+    Cada modo aporta una energía media \(k_{\!B}T\) y el número de modos
+    aumenta como \(\nu^2\); al sumar todos los modos, la energía total crece sin límite:
+  </p>
+  <div class="step-eq">
+    \(\displaystyle \int_0^{\infty} k_{\!B}T\,\frac{8\pi V\nu^2}{c^3}\,d\nu
+    \;\longrightarrow\; \infty\)
+  </div>
+  <p>
+    La integral diverge, prediciendo una energía infinita, en contradicción con los
+    resultados experimentales.
+  </p>
+</div>
         </div>
       </div>
     </div>
