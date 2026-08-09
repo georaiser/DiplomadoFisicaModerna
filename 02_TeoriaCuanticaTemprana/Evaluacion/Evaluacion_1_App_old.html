@@ -443,9 +443,9 @@
     /* ── SECTION 1: ESPECTRO ── */
     .spectrum-grid {
       display: grid;
-      grid-template-columns: 315px 1fr;
+      grid-template-columns: 280px 1fr;
       gap: 1.5rem;
-      align-items: stretch;
+      align-items: start;
     }
 
     @media(max-width: 800px) {
@@ -458,14 +458,6 @@
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      height: 100%;
-    }
-
-    .info-panel > .card {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     }
 
     .data-row {
@@ -1288,128 +1280,104 @@
 
     </p>
 
-    <!-- Control superior horizontal: Slider de Temperatura y Opciones -->
-    <div class="card fi fi2" style="margin-bottom:1.2rem;padding:0.9rem 1.4rem;border-color:rgba(0,200,255,0.2)">
-      <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.2rem">
-        <!-- Slider de Temperatura horizontal -->
-        <div style="flex:1 1 340px;min-width:280px">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.3rem">
-            <div style="display:flex;align-items:center;gap:0.4rem">
-              <span style="font-weight:700;color:var(--white);font-size:0.85rem">&#127777; Temperatura del Cuerpo Negro</span>
-              <button onclick="setSolarTemp()" style="padding:2px 8px;border-radius:4px;border:1px solid rgba(0,200,255,0.35);background:rgba(0,200,255,0.12);color:var(--cyan);font-size:0.72rem;cursor:pointer;font-weight:600" title="Restablecer a la temperatura del Sol (5 778 K)">&#9728;&#65039; Sol (5 778 K)</button>
-            </div>
-            <span style="font-size:1.05rem;font-weight:700;color:var(--cyan)" id="temp-val" aria-live="polite">5&thinsp;778 K</span>
-          </div>
-          <input type="range" id="temp-slider" min="1000" max="12000" value="5778" step="50" style="width:100%" aria-label="Temperatura del cuerpo negro" />
-          <div class="slider-range-row" style="margin-top:0.15rem"><span>1 000 K</span><span>12 000 K</span></div>
-        </div>
-
-        <!-- Interruptores de Curvas y Escala Y -->
-        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:1rem">
-          <div style="display:flex;align-items:center;gap:0.7rem">
-            <label class="toggle-item" style="margin:0">
-              <input type="checkbox" id="show-planck" checked aria-label="Mostrar curva de Planck" />
-              <div class="toggle-box"></div>
-              <span class="toggle-label" style="color:var(--green);font-size:0.8rem">Planck</span>
-            </label>
-            <label class="toggle-item" style="margin:0">
-              <input type="checkbox" id="show-rj" checked aria-label="Mostrar curva Rayleigh-Jeans" />
-              <div class="toggle-box"></div>
-              <span class="toggle-label" style="color:var(--orange);font-size:0.8rem">Rayleigh-Jeans</span>
-            </label>
-            <label class="toggle-item" style="margin:0">
-              <input type="checkbox" id="show-wien" checked aria-label="Mostrar aproximación de Wien" />
-              <div class="toggle-box"></div>
-              <span class="toggle-label" style="color:var(--purple);font-size:0.8rem">Wien</span>
-            </label>
-          </div>
-
-          <div style="border-left:1px solid rgba(255,255,255,0.12);padding-left:0.9rem">
-            <label class="toggle-item" style="margin:0">
-              <input type="checkbox" id="auto-yscale" checked aria-label="Escala Y adaptativa auto-fit T" />
-              <div class="toggle-box"></div>
-              <span class="toggle-label" style="color:var(--yellow);font-size:0.8rem">Auto-fit Y</span>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Rejilla Lado a Lado: Valores calculados (Izquierda) vs Gráfico (Derecha) -->
-    <div class="spectrum-grid" style="grid-template-columns: 315px 1fr">
-      <!-- Panel izquierdo: Valores calculados en tiempo real -->
+    <div class="spectrum-grid">
+      <!-- Panel izquierdo -->
       <div class="info-panel fi fi2">
-        <div class="card" style="border-color:rgba(123,255,196,0.25);padding:1rem">
-          <div class="card-title" style="color:var(--cyan);margin-bottom:0.7rem">Valores calculados en tiempo real</div>
+        <div class="card">
+          <div class="card-title">Temperatura</div>
+          <div class="slider-row">
+            <span class="slider-label-text">T</span>
+            <span class="slider-value-text" id="temp-val" style="color:var(--cyan)" aria-live="polite">5778
+              K</span>
+          </div>
+          <input type="range" id="temp-slider" min="1000" max="12000" value="5778" step="50"
+            aria-label="Temperatura del cuerpo negro" />
+          <div class="slider-range-row"><span>1000 K</span><span>12000 K</span></div>
 
-          <!-- 1. Ley de Planck (Soft Green) -->
+          <div style="margin-top:1.2rem">
+            <div class="card-title">Curvas visibles</div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <label class="toggle-item">
+                <input type="checkbox" id="show-planck" checked aria-label="Mostrar curva de Planck" />
+                <div class="toggle-box"></div>
+                <span class="toggle-label" style="color:var(--cyan)">Ley de Planck</span>
+              </label>
+              <label class="toggle-item">
+                <input type="checkbox" id="show-rj" checked aria-label="Mostrar curva Rayleigh-Jeans" />
+                <div class="toggle-box"></div>
+                <span class="toggle-label" style="color:var(--orange)">Rayleigh-Jeans</span>
+              </label>
+              <label class="toggle-item">
+                <input type="checkbox" id="show-wien" checked aria-label="Mostrar aproximación de Wien" />
+                <div class="toggle-box"></div>
+                <span class="toggle-label" style="color:var(--purple)">Aproximación de Wien</span>
+              </label>
+            </div>
+          </div>
+
+          <div style="margin-top:1rem">
+            <div class="card-title">Escala Vertical (Eje Y)</div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <label class="toggle-item">
+                <input type="checkbox" id="auto-yscale" aria-label="Escala Y adaptativa auto-fit T" />
+                <div class="toggle-box"></div>
+                <span class="toggle-label" style="color:var(--yellow)">Escala Adaptativa (Auto-fit T)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="border-color:rgba(0,200,255,0.2)">
+          <div class="card-title" style="color:var(--cyan)">Valores calculados en tiempo real</div>
+
+          <!-- Desplazamiento de Wien -->
           <div style="padding:0.2rem 0 0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-            <p style="font-size:0.74rem;color:var(--green);font-weight:700;margin-bottom:0.2rem">
-              ● Ley de Planck (Cuántica)
+            <p style="font-size:0.74rem;color:var(--gray);margin-bottom:0.2rem">
+              Desplazamiento de Wien (\(\lambda_{\max}\) es inversamente proporcional a \(T\))
             </p>
-            <div class="formula-box" style="margin:0.2rem 0;padding:0.35rem 0.6rem;font-size:0.76rem;border-color:rgba(123,255,196,0.3);background:rgba(123,255,196,0.05)">\(u(\lambda, T) = \frac{8\pi hc}{\lambda^5} \cdot \frac{1}{e^{hc/\lambda k_{\!B}T} - 1}\)</div>
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.25rem">
-              <span style="font-size:0.72rem;color:var(--gray)">\(u_{\text{Planck}}(\lambda_{\max})\):</span>
-              <span class="data-value" id="planck-result" style="color:var(--green);font-weight:bold;font-size:0.84rem">1.62 MW/m&sup3;</span>
+            <div class="formula-box" style="margin:0.3rem 0;padding:0.4rem 0.7rem;font-size:0.82rem">\(\lambda_{\max} \cdot T = 2.898 \times 10^6 \;\text{nm}\cdot\text{K}\)</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.3rem">
+              <span style="font-size:0.74rem;color:var(--gray2)">\(\lambda_{\max}\) <small style="color:var(--gray2)">(Wien)</small>:</span>
+              <span class="data-value" id="wien-result" style="color:var(--green);font-weight:bold;font-size:0.86rem">501.6 nm</span>
             </div>
           </div>
 
-          <!-- 2. Aproximación de Wien (Purple) -->
-          <div style="margin-top:0.4rem;padding:0.2rem 0 0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-            <p style="font-size:0.74rem;color:var(--purple);font-weight:700;margin-bottom:0.2rem">
-              ● Desplazamiento y Aprox. de Wien
+          <!-- Máximo Espectral Puntual (u_max) -->
+          <div style="margin-top:0.5rem;padding:0.2rem 0 0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+            <p style="font-size:0.74rem;color:var(--gray);margin-bottom:0.2rem">
+              Máximo espectral (altura máxima escala con \(T^5\))
             </p>
-            <div class="formula-box" style="margin:0.2rem 0;padding:0.35rem 0.6rem;font-size:0.8rem;border-color:rgba(192,132,252,0.3);background:rgba(192,132,252,0.05)">\(\lambda_{\max} \cdot T = 2.898 \times 10^6 \;\text{nm}\cdot\text{K}\)</div>
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.25rem">
-              <span style="font-size:0.72rem;color:var(--gray)">\(\lambda_{\max}\) de emisión:</span>
-              <span class="data-value" id="wien-result" style="color:var(--purple);font-weight:bold;font-size:0.84rem">501.6 nm</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.2rem">
-              <span style="font-size:0.70rem;color:var(--gray2)">Predicción Wien a \(\lambda_{\max}\):</span>
-              <span class="data-value" id="wien-peak-val" style="color:var(--purple);font-size:0.76rem">1.61 MW/m&sup3;</span>
+            <div class="formula-box" style="margin:0.3rem 0;padding:0.4rem 0.7rem;font-size:0.82rem">\(u_{\max}(T) \propto T^5\)</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.3rem">
+              <span style="font-size:0.74rem;color:var(--gray2)">\(u_{\max}\)</span>
+              <span class="data-value" id="umax-result" style="color:var(--cyan);font-weight:bold;font-size:0.86rem">1.62 MW/m&sup3;</span>
             </div>
           </div>
 
-          <!-- 3. Modelo Clásico de Rayleigh-Jeans (Orange) -->
-          <div style="margin-top:0.4rem;padding:0.2rem 0 0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-            <p style="font-size:0.74rem;color:var(--orange);font-weight:700;margin-bottom:0.2rem">
-              ● Rayleigh-Jeans (Clásico)
+          <!-- Potencia total (Stefan-Boltzmann) -->
+          <div style="margin-top:0.5rem;padding:0.2rem 0 0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+            <p style="font-size:0.74rem;color:var(--gray);margin-bottom:0.2rem">
+              Stefan-Boltzmann (potencia total por unidad de área escala con \(T^4\))
             </p>
-            <div class="formula-box" style="margin:0.2rem 0;padding:0.35rem 0.6rem;font-size:0.8rem;border-color:rgba(255,107,53,0.3);background:rgba(255,107,53,0.05)">\(u_{\text{RJ}}(\lambda, T) = \frac{8\pi k_{\!B} T}{\lambda^4}\)</div>
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.25rem">
-              <span style="font-size:0.72rem;color:var(--gray)">Predicción R-J a \(\lambda_{\max}\):</span>
-              <span class="data-value" id="rj-result" style="color:var(--orange);font-weight:bold;font-size:0.84rem">2.54 MW/m&sup3;</span>
+            <div class="formula-box" style="margin:0.3rem 0;padding:0.4rem 0.7rem;font-size:0.82rem">\(R=\sigma\,T^4\)</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.3rem">
+              <span style="font-size:0.74rem;color:var(--gray2)">\(R\) <small style="color:var(--gray2)">(S-B)</small>:</span>
+              <span class="data-value" id="stefan-result" style="color:var(--yellow);font-weight:bold;font-size:0.86rem">63.2 MW/m&sup2;</span>
             </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.2rem">
-              <span style="font-size:0.70rem;color:var(--gray2)">Divergencia R-J en UV (300 nm):</span>
-              <span class="data-value" id="rj-uv-result" style="color:var(--orange);font-size:0.76rem">19.8 MW/m&sup3;</span>
-            </div>
-          </div>
-
-          <!-- 4. Potencia Total Stefan-Boltzmann (Yellow/Gold) -->
-          <div style="margin-top:0.4rem;padding:0.2rem 0 0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-            <p style="font-size:0.74rem;color:var(--yellow);font-weight:700;margin-bottom:0.2rem">
-              ● Potencia Total Stefan-Boltzmann
-            </p>
-            <div class="formula-box" style="margin:0.2rem 0;padding:0.35rem 0.6rem;font-size:0.8rem;border-color:rgba(255,224,102,0.3);background:rgba(255,224,102,0.05)">\(R = \sigma T^4\)</div>
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.25rem">
-              <span style="font-size:0.72rem;color:var(--gray)">Potencia total \(R\):</span>
-              <span class="data-value" id="stefan-result" style="color:var(--yellow);font-weight:bold;font-size:0.84rem">63.2 MW/m&sup2;</span>
-            </div>
-            <p style="font-size:0.67rem;color:var(--gray2);margin-top:0.2rem">
+            <p style="font-size:0.68rem;color:var(--gray2);margin-top:0.25rem">
               \(\sigma = 5.6703 \times 10^{-8} \;\text{W}\cdot\text{m}^{-2}\cdot\text{K}^{-4}\)
             </p>
           </div>
 
-          <!-- 5. Clasificación estelar -->
+          <!-- Clasificación estelar -->
           <div class="data-row" style="margin-top:0.3rem;border-bottom:none">
-            <span class="data-label" style="font-size:0.74rem">Clasificación estelar</span>
-            <span class="data-value" id="color-result" style="color:var(--gray);font-size:0.80rem">Sol (G)</span>
+            <span class="data-label">Clasificación estelar</span>
+            <span class="data-value" id="color-result" style="color:var(--gray)">Sol (G)</span>
           </div>
         </div>
       </div>
 
-      <!-- Panel derecho: Gráfico Canvas Espectro -->
+      <!-- Panel derecho: Card con Título + Canvas espectro -->
       <div class="card fi fi3" style="padding:1.2rem">
         <div class="card-title" style="color:var(--cyan);font-size:0.85rem;margin-bottom:0.8rem">
           &#128202; Curvas de Radiaci&oacute;n del Cuerpo Negro: Planck vs. Rayleigh-Jeans vs. Wien
@@ -2394,7 +2362,7 @@
 
         for (let val = 0; val <= yMaxScaled + step * 0.01; val += step) {
           const vt = val * unitDivisor, yt = ys(vt);
-          if (yt < SP.t + 5 || yt > SH - SP.b + 3) continue;
+          if (yt < SP.t + 5 || yt > SH - SP.b) continue;
           // Línea de grid sutil
           specX.strokeStyle = 'rgba(68,85,102,0.25)'; specX.lineWidth = 0.5;
           specX.beginPath(); specX.moveTo(SP.l, yt); specX.lineTo(SW - SP.r, yt); specX.stroke();
@@ -2417,7 +2385,7 @@
             specX.beginPath(); specX.moveTo(SP.l, ySOL); specX.lineTo(SW - SP.r, ySOL); specX.stroke();
             specX.setLineDash([]);
             specX.fillStyle = 'rgba(255,224,102,0.5)'; specX.font = 'bold 9px Inter'; specX.textAlign = 'left';
-            specX.fillText('T☉', SP.l + 8, ySOL - 3);
+            specX.fillText('T☉', SP.l + 3, ySOL - 3);
           }
         }
       }
@@ -2439,8 +2407,8 @@
       /* 1. Relleno de Planck debajo de todo */
       if (showP) {
         const gf = specX.createLinearGradient(0, SP.t, 0, SH - SP.b);
-        gf.addColorStop(0, 'rgba(123,255,196,0.20)');
-        gf.addColorStop(1, 'rgba(123,255,196,0)');
+        gf.addColorStop(0, 'rgba(0,200,255,0.25)');
+        gf.addColorStop(1, 'rgba(0,200,255,0)');
         specX.beginPath();
         lams.forEach((l, i) => {
           const x = xs(l), y = ys(pv[i]);  // valor real
@@ -2525,7 +2493,7 @@
 
       /* 4. Trazo de Planck encima */
       if (showP) {
-        specX.beginPath(); specX.strokeStyle = '#7BFFC4'; specX.lineWidth = 3.0;
+        specX.beginPath(); specX.strokeStyle = '#00C8FF'; specX.lineWidth = 3.0;
         lams.forEach((l, i) => {
           const x = xs(l), y = ys(pv[i]);
           i === 0 ? specX.moveTo(x, y) : specX.lineTo(x, y);
@@ -2534,31 +2502,23 @@
 
         /* Marcador lambda_max */
         const lmaxExact = 2.898e-3 / T;
-        const xm = xs(lmaxExact);
-        const rawYm = ys(peak);
-        // Clamp ym para que punto y etiqueta sean SIEMPRE 100% visibles sobre el eje X incluso con Auto-fit Y desactivado
-        const ym = Math.min(Math.max(rawYm, SP.t + 10), SH - SP.b - 14);
-
-        specX.beginPath(); specX.strokeStyle = '#FFE066'; specX.lineWidth = 1.3; specX.setLineDash([4, 3]);
-        specX.moveTo(xm, ym); specX.lineTo(xm, SH - SP.b); specX.stroke(); specX.setLineDash([]);
-
-        specX.beginPath(); specX.arc(xm, ym, 4.5, 0, 2 * Math.PI);
+        const xm = xs(lmaxExact), ym = Math.max(ys(peak), SP.t + 10); // clamp para no salir del canvas
+        specX.beginPath(); specX.strokeStyle = '#FFE066'; specX.lineWidth = 1.2; specX.setLineDash([4, 3]);
+        specX.moveTo(xm, ym + 4); specX.lineTo(xm, SH - SP.b); specX.stroke(); specX.setLineDash([]);
+        specX.beginPath(); specX.arc(xm, ym, 4, 0, 2 * Math.PI);
         specX.fillStyle = '#FFE066'; specX.fill();
-        specX.strokeStyle = '#0D1B2A'; specX.lineWidth = 1; specX.stroke();
-
-        // Etiqueta: ajustar lado y posicion vertical segun altura
+        // Etiqueta: ajustar lado segun posicion
         const label = 'λ_max = ' + (lmaxExact * 1e9).toFixed(1) + ' nm';
         const lw = specX.measureText(label).width;
         const lx = (xm + lw + 8 > SW - SP.r) ? xm - lw - 6 : xm + 6;
-        const ly = ym <= SP.t + 20 ? ym + 14 : ym - 8;
         specX.fillStyle = '#FFE066'; specX.font = 'bold 10.5px Inter'; specX.textAlign = 'left';
-        specX.fillText(label, lx, ly);
+        specX.fillText(label, lx, ym - 8);
       }
 
       /* Leyenda — esquina sup-izq, debajo de "Visible" */
       {
         const items = [];
-        if (showP) items.push({ col: '#7BFFC4', lbl: 'Planck', dash: false });
+        if (showP) items.push({ col: '#00C8FF', lbl: 'Planck', dash: false });
         if (showR) items.push({ col: '#FF6B35', lbl: 'Rayleigh-Jeans', dash: true });
         if (showW) items.push({ col: '#C084FC', lbl: 'Wien (aprox.)', dash: true });
         let ly = SP.t + 24;
@@ -2589,19 +2549,19 @@
         const peakFormatted = peak >= 1e6 ? (peak / 1e6).toFixed(2) + ' MW/m³' : (peak / 1e3).toFixed(1) + ' kW/m³';
         const RFormatted = R_val >= 1e6 ? (R_val / 1e6).toFixed(1) + ' MW/m²' : (R_val / 1e3).toFixed(1) + ' kW/m²';
 
-        const line1 = 'u_max: ' + peakFormatted + ' (' + relTxt + ')';
-        const line2 = 'R = σT⁴: ' + RFormatted + ' (' + relRTxt + ')';
+        const line1 = 'Máximo (u_max): ' + peakFormatted + ' (' + relTxt + ')';
+        const line2 = 'Potencia (R = σT⁴): ' + RFormatted + ' (' + relRTxt + ')';
 
-        specX.font = 'bold 10px Inter';
+        specX.font = 'bold 11px Inter';
         const w1 = specX.measureText(line1).width;
         const w2 = specX.measureText(line2).width;
-        const bw = Math.max(w1, w2) + 20;
+        const bw = Math.max(w1, w2) + 16;
         const bh = 34;
-        const bx = SW - SP.r - bw - 100;
+        const bx = SW - SP.r - bw - 6;
         const by = SP.t + 4;
 
-        specX.fillStyle = 'rgba(13,27,42,0.88)';
-        specX.strokeStyle = 'rgba(123,255,196,0.25)';
+        specX.fillStyle = 'rgba(13,27,42,0.85)';
+        specX.strokeStyle = 'rgba(0,200,255,0.25)';
         specX.lineWidth = 1;
         specX.beginPath();
         if (specX.roundRect) {
@@ -2613,9 +2573,9 @@
         specX.stroke();
 
         specX.fillStyle = '#7BFFC4'; specX.textAlign = 'left';
-        specX.fillText(line1, bx + 10, by + 13);
-        specX.fillStyle = '#FFE066';
-        specX.fillText(line2, bx + 10, by + 28);
+        specX.fillText(line1, bx + 8, by + 14);
+        specX.fillStyle = '#00C8FF';
+        specX.fillText(line2, bx + 8, by + 33);
       }
 
       /* Etiquetas eje X */
@@ -2629,44 +2589,19 @@
       const lmx = 2.898e-3 / T;
       document.getElementById('temp-val').textContent = T.toLocaleString('es-CL') + ' K';
       document.getElementById('canvas-label').textContent = 'T = ' + T.toLocaleString('es-CL') + ' K  |  λ_max = ' + (lmx * 1e9).toFixed(1) + ' nm' + (autoY ? ' (Escala Auto-fit T)' : '');
+      document.getElementById('wien-result').textContent = (lmx * 1e9).toFixed(1) + ' nm';
 
       const relI = peak / PEAK_SOL;
       const relTxt = relI < 0.001 ? (relI * 100).toFixed(3) + ' % Sol' : relI < 0.1 ? (relI * 100).toFixed(2) + ' % Sol' : relI < 1 ? (relI * 100).toFixed(1) + ' % Sol' : relI.toFixed(2) + '× Sol';
-      const fmtUnit = v => v >= 1e6 ? (v / 1e6).toFixed(2) + ' MW/m³' : (v / 1e3).toFixed(1) + ' kW/m³';
+      const peakFormatted = peak >= 1e6 ? (peak / 1e6).toFixed(2) + ' MW/m³' : (peak / 1e3).toFixed(1) + ' kW/m³';
+      const umaxEl = document.getElementById('umax-result');
+      if (umaxEl) umaxEl.textContent = peakFormatted + ' (' + relTxt + ')';
 
-      // 1. Planck
-      const planckEl = document.getElementById('planck-result');
-      if (planckEl) planckEl.textContent = fmtUnit(peak) + ' (' + relTxt + ')';
-
-      // 2. Wien
-      document.getElementById('wien-result').textContent = (lmx * 1e9).toFixed(1) + ' nm';
-      const wienPeakEl = document.getElementById('wien-peak-val');
-      if (wienPeakEl) wienPeakEl.textContent = fmtUnit(wienL(lmx, T));
-
-      // 3. Rayleigh-Jeans
-      const rjPeakVal = rjL(lmx, T);
-      const rjUvVal = rjL(300e-9, T);
-      const rjEl = document.getElementById('rj-result');
-      if (rjEl) rjEl.textContent = fmtUnit(rjPeakVal);
-      const rjUvEl = document.getElementById('rj-uv-result');
-      if (rjUvEl) rjUvEl.textContent = fmtUnit(rjUvVal);
-
-      // 4. Stefan-Boltzmann
       const R = SG * Math.pow(T, 4), RS = SG * Math.pow(5778, 4);
       document.getElementById('stefan-result').textContent = (R / 1e6).toFixed(1) + ' MW/m²  (' + (R / RS).toFixed(2) + '× Sol)';
-
-      // 5. Clasificación Estelar
       const sc = starColor(T);
       document.getElementById('color-result').innerHTML = '<span style="color:' + sc.col + '">&#11044;</span> ' + sc.desc;
       specC.setAttribute('aria-label', 'Espectro del cuerpo negro a ' + T + ' K, lambda max ' + (lmx * 1e9).toFixed(0) + ' nm');
-    }
-
-    function setSolarTemp() {
-      const s = document.getElementById('temp-slider');
-      if (s) {
-        s.value = 5778;
-        drawSpectrum();
-      }
     }
 
     document.getElementById('temp-slider').addEventListener('input', drawSpectrum);
