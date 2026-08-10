@@ -425,7 +425,7 @@
     }
 
     #spectrumCanvas {
-      aspect-ratio: 900/600;
+      aspect-ratio: 900/490;
     }
 
     .canvas-badge {
@@ -445,7 +445,7 @@
       display: grid;
       grid-template-columns: 315px 1fr;
       gap: 1.5rem;
-      align-items: stretch;
+      align-items: start;
     }
 
     @media(max-width: 800px) {
@@ -458,14 +458,6 @@
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      height: 100%;
-    }
-
-    .info-panel > .card {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     }
 
     .data-row {
@@ -1415,13 +1407,13 @@
           &#128202; Curvas de Radiaci&oacute;n del Cuerpo Negro: Planck vs. Rayleigh-Jeans vs. Wien
         </div>
         <div class="canvas-wrapper">
-          <canvas id="spectrumCanvas" width="900" height="600" role="img"
+          <canvas id="spectrumCanvas" width="900" height="400" role="img"
             aria-label="Espectro del cuerpo negro"></canvas>
-          <span class="canvas-badge" id="canvas-label" style="top:auto;bottom:10px;left:12px;right:auto">T =
+          <span class="canvas-badge" id="canvas-label" style="top:8px;left:75px;bottom:auto;right:auto">T =
             5&thinsp;778
             K</span>
           <button onclick="toggleFullCanvas('spectrumCanvas')"
-            style="position:absolute;bottom:10px;right:12px;padding:3px 9px;border-radius:5px;border:1px solid var(--border);background:rgba(13,27,42,0.8);color:var(--gray);font-size:0.7rem;cursor:pointer"
+            style="position:absolute;top:8px;right:10px;padding:3px 9px;border-radius:5px;border:1px solid var(--border);background:rgba(13,27,42,0.8);color:var(--gray);font-size:0.7rem;cursor:pointer"
             title="Pantalla completa">&#x26F6;</button>
         </div>
       </div>
@@ -2312,9 +2304,9 @@
       ctx.beginPath();
       ctx.moveTo(p.l, p.t); ctx.lineTo(p.l, h - p.b); ctx.lineTo(w - p.r, h - p.b);
       ctx.stroke();
-      ctx.fillStyle = '#8899AA'; ctx.font = '12px Inter, sans-serif'; ctx.textAlign = 'center';
-      ctx.fillText(xl, p.l + (w - p.l - p.r) / 2, h - 4);
-      ctx.save(); ctx.translate(12, p.t + (h - p.t - p.b) / 2); ctx.rotate(-Math.PI / 2);
+      ctx.fillStyle = '#8899AA'; ctx.font = 'bold 11px Inter, sans-serif'; ctx.textAlign = 'center';
+      ctx.fillText(xl, p.l + (w - p.l - p.r) / 2, h - p.b + 36);
+      ctx.save(); ctx.translate(14, p.t + (h - p.t - p.b) / 2); ctx.rotate(-Math.PI / 2);
       ctx.fillText(yl, 0, 0); ctx.restore();
     }
 
@@ -2328,16 +2320,13 @@
       const w = cvs.width, h = cvs.height;
       cvs.width = Math.round(w * dpr);
       cvs.height = Math.round(h * dpr);
-      /* No fijamos cvs.style.width/height en px: el CSS (width:100%; height:auto)
-         ya deriva el tamaño visual correcto a partir de la relación de aspecto
-         intrínseca w:h, y así el canvas sigue siendo responsive en móvil. */
       cvs.getContext('2d').scale(dpr, dpr);
     }
 
     const specC = document.getElementById('spectrumCanvas');
     scaleCanvas(specC);
     const specX = specC.getContext('2d');
-    const SW = specC.width / (window.devicePixelRatio || 1), SH = specC.height / (window.devicePixelRatio || 1), SP = { l: 70, r: 20, t: 28, b: 45 };
+    const SW = specC.width / (window.devicePixelRatio || 1), SH = specC.height / (window.devicePixelRatio || 1), SP = { l: 70, r: 25, t: 28, b: 70 };
 
     function toSuperScript(num) {
       const map = { '-': '⁻', '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴', '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹' };
@@ -2618,11 +2607,15 @@
         specX.fillText(line2, bx + 10, by + 28);
       }
 
-      /* Etiquetas eje X */
-      specX.fillStyle = '#8899AA'; specX.font = '11px Inter'; specX.textAlign = 'center';
+      /* Ticks y etiquetas del eje X (Longitud de onda en nm) */
+      specX.fillStyle = '#8899AA'; specX.font = 'bold 10.5px Inter'; specX.textAlign = 'center';
       [200, 400, 600, 800, 1000, 1400, 1800].forEach(nm => {
         const x = xs(nm * 1e-9);
-        if (x >= SP.l && x <= SW - SP.r) specX.fillText(nm, x, SH - SP.b + 16);
+        if (x >= SP.l && x <= SW - SP.r) {
+          specX.strokeStyle = 'rgba(68,85,102,0.7)'; specX.lineWidth = 1;
+          specX.beginPath(); specX.moveTo(x, SH - SP.b); specX.lineTo(x, SH - SP.b + 4); specX.stroke();
+          specX.fillText(nm, x, SH - SP.b + 17);
+        }
       });
 
       /* Panel lateral y badges */
