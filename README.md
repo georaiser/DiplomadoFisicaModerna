@@ -86,12 +86,21 @@ D:\00_FisicaModerna\
 ├── Steven Weinberg - Foundations of Modern...pdf  # Texto guía de referencia avanzada
 ├── 01_Termodinamica_TeoriaAtomicaPrecuantica/     # Material, códigos y tareas del Módulo 1
 ├── 02_TeoriaCuanticaTemprana/                     # Material, códigos y tareas del Módulo 2
-│   └── bohr_espectroscopia/                       # App interactiva: Bohr → Espectroscopía Estelar
-│       ├── index.html                             # Simulador web interactivo (Canvas 2D + MathJax)
-│       ├── README.md                              # Documentación técnica de la aplicación
-│       ├── css/                                   # Hojas de estilo y diseño
-│       ├── js/                                    # Motor físico analítico (Bohr, Rydberg, Saha)
-│       └── python/                                # Scripts de verificación numérica independiente
+│   ├── bohr_espectroscopia/                       # App interactiva: Bohr → Espectroscopía Estelar
+│   │   ├── index.html                             # Simulador web interactivo (Canvas 2D + MathJax)
+│   │   ├── README.md                              # Documentación técnica de la aplicación
+│   │   ├── css/                                   # Hojas de estilo y diseño
+│   │   ├── js/                                    # Motor físico analítico (Bohr, Rydberg, Saha)
+│   │   └── python/                                # Scripts de verificación numérica independiente
+│   └── rutherford_rbs/                            # App interactiva: Rutherford → Espectrometría RBS y PIXE
+│       ├── index.html                             # Simulador interactivo SPA (Canvas RK4 + MathJax 3)
+│       ├── README.md                              # Documentación técnica completa del proyecto
+│       ├── Estudio_Fisico_RBS.md                  # Tratado teórico formal y deducciones analíticas
+│       ├── Resumen_Estudio_RBS.md                 # Resumen de estudio y guía rápida de conceptos
+│       ├── css/                                   # Hojas de estilo y diseño responsivo
+│       ├── js/                                    # Motor físico modular (RK4, cinemática, RBS, PIXE)
+│       ├── python/                                # Suite de verificación física numérica
+│       └── guion/                                 # Guiones de presentación audiovisual cronometrados
 ├── 03_RelatividadEspecial/                        # Material, códigos y tareas del Módulo 3
 └── WSL_Mamba.txt                                  # Configuración de entornos de cálculo (Python/WSL)
 ```
@@ -104,6 +113,14 @@ D:\00_FisicaModerna\
   * *Calculadora de saltos cuánticos de Bohr* con diagrama de eje roto (*broken-axis*), selector de carga nuclear $Z$ ($\text{H}, \text{He}^+, \text{Li}^{2+}, \text{Be}^{3+}$) y animación ondulatoria del fotón emitido.
   * *Espectrómetro comparativo multielemento* sincronizado con transiciones analíticas de Bohr y datos experimentales de laboratorio **NIST Atomic Spectra Database** ($\text{He}, \text{Na}, \text{Ca II}$).
   * *Identificador estelar y clasificador espectral Harvard ($OBAFGKM$)* con modulación analítica de temperatura de **Saha-Boltzmann** y espectros de absorción basados en **SDSS DR17**.
+
+* **Rutherford → Espectrometría RBS y PIXE (`/02_TeoriaCuanticaTemprana/rutherford_rbs`)**:
+  * *Dispersión de Rutherford vs. Modelo de Thomson (Panel A):* Integrador numérico Runge-Kutta 4 (RK4) en Canvas para calcular trayectorias hiperbólicas a partir del potencial de Coulomb ($V(r) = \frac{Z_1 Z_2 ke^2}{r}$), parámetro de impacto $b$ ($4.9\text{--}155.2\,\text{fm}$), energía $E_0$ y carga $Z_2$.
+  * *Cinemática de Choque Elástico y Factor $K$ (Panel B):* Conservación bidimensional de momento lineal y energía cinética, velocidad y energía de retroceso transferidas al blanco ($v_{\text{rec}}, E_{\text{rec}}$), y tarjetas diagnósticas para identificación unívoca de masa nuclear $M_2$ ($^{12}\text{C}$, $^{28}\text{Si}$, $^{56}\text{Fe}$, $^{108}\text{Ag}$, $^{197}\text{Au}$).
+  * *Espectrometría RBS y Estequiometría Standardless (Panel C):* Espectro multicanal sintético con ruido estocástico de Poisson, sección eficaz de Coulomb ($\sigma \propto Z_2^2$, donde el Oro produce $173.4\times$ más señal que el Carbono), y deducción de composiciones atómicas y fases reales ($\text{Fe}_3\text{C}$, $\text{Au}_2\text{Si}$, $\text{SiC}$, $\text{Ag}_3\text{Au}$) sin patrones de calibración externos.
+  * *Perfilado Multicapa en Profundidad (Panel D):* Heteroestructuras nanométricas ($0\text{--}200\,\text{nm}$), Factor de Parada $[S]$ ($\text{eV/\AA}$) para transformar la pérdida de energía continua $dE/dx$ en espesor físico, y triple desacoplamiento no destructivo (masa $M_2$, concentración $N_i$ y profundidad $x$).
+  * *Espectrometría Cuántica PIXE y Ley de Moseley (Panel E):* Ionización de capas internas (vacancia electrónica), saltos cuánticos discretos ($\Delta E = h\nu$), líneas espectrales ($K_\alpha, K_\beta, L_\alpha, L_\beta$), Ley de Moseley ($E_{K\alpha} \propto (Z-1)^2$), separación nítida de elementos pesados vecinos ($\text{Au}$, $\text{Hg}$, $\text{Pb}$), detección de trazas en PPM y aplicación a obras de arte del Museo del Louvre (AGLAE).
+  * *El Hilo Cuántico (Panel F):* Línea de tiempo conceptual (1900–1930) desde la catástrofe de Larmor hasta la cuantización de Bohr y la Coincidencia Cuántica de Gordon (1928), junto con un cuadro comparativo de técnicas IBA (**RBS**, **ERDA**, **NRA**, **PIXE**).
 
 ---
 
@@ -123,5 +140,10 @@ D:\00_FisicaModerna\
 1. **Weinberg, S. (2021).** *Foundations of Modern Physics*. Cambridge University Press.
 2. **Eisberg, R., & Resnick, R. (1985).** *Quantum Physics of Atoms, Molecules, Solids, Nuclei, and Particles*. John Wiley & Sons.
 3. **Tipler, P. A., & Llewellyn, R. A. (2012).** *Modern Physics*. W. H. Freeman and Company.
-4. **Bohr, N. (1913).** *On the Constitution of Atoms and Molecules*. Philosophical Magazine, 26(151), 1–25.
-5. **NIST Atomic Spectra Database (ASD):** [https://physics.nist.gov/asd](https://physics.nist.gov/asd).
+4. **Rutherford, E. (1911).** *The Scattering of $\alpha$ and $\beta$ Particles by Matter and the Structure of the Atom*. Philosophical Magazine, 21(125), 669–688.
+5. **Geiger, H., & Marsden, E. (1909).** *On a Diffuse Reflection of the $\alpha$-Particles*. Proceedings of the Royal Society of London. Series A, 82(557), 495–500.
+6. **Bohr, N. (1913).** *On the Constitution of Atoms and Molecules*. Philosophical Magazine, 26(151), 1–25.
+7. **Moseley, H. G. J. (1913).** *The High-Frequency Spectra of the Elements*. Philosophical Magazine, 26(156), 1024–1034.
+8. **Chu, W.-K., Mayer, J. W., & Nicolet, M.-A. (1978).** *Backscattering Spectrometry*. Academic Press.
+9. **Gordon, W. (1928).** *Über den Stoß zweier Punktladungen nach der Wellenmechanik*. Zeitschrift für Physik, 48(3–4), 180–191.
+10. **NIST Atomic Spectra Database (ASD):** [https://physics.nist.gov/asd](https://physics.nist.gov/asd).
