@@ -1,0 +1,38 @@
+/* ============================================================
+   panel-a.css — Calculadora de Bohr v3
+   ============================================================ */
+
+.panel-a-grid {
+  display: grid;
+  grid-template-columns: 48% 52%;
+  gap: 1.75rem;
+  align-items: start;
+}
+
+@media (max-width: 640px) {
+  .panel-a-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Columna del diagrama ─────────────────────────────────── */
+.diagram-col { display: flex; flex-direction: column; }
+
+.energy-diagram-wrap {
+  position: relative;
+  background: hsl(228, 30%, 4%);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+#energyCanvas {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+/* ── Panel derecho ─────────────────────────────────────── */
+.panel-a-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}

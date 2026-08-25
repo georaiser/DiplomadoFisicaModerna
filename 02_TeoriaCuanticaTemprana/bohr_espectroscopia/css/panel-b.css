@@ -1,0 +1,7 @@
+/* panel-b.css v2 — todo migrado a main.css */
+
+.panel-b-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.375rem;
+}
