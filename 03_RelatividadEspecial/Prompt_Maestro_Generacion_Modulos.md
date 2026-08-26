@@ -29,9 +29,9 @@ Clases del módulo:       4 clases (31 jul, 7 ago, 14 ago, 21 ago 2026)
 | Clase | Docente | Fecha | Transcripción | PDF Diapositivas | Estado |
 |---|---|---|---|---|---|
 | Clase 01 | Guillermo Rubilar | 31 jul 2026 | `grabacion/...-20260731....docx` | RE.pdf (módulo completo) | ✅ Completo |
-| Clase 02 | Guillermo Rubilar | 07 ago 2026 | `grabacion/...-20260807....docx` | RE.pdf (módulo completo) | ❌ No iniciado |
-| Clase 03 | Guillermo Rubilar | 14 ago 2026 | `grabacion/...-20260814....docx` | RE.pdf (módulo completo) | ❌ No iniciado |
-| Clase 04 | Guillermo Rubilar | 21 ago 2026 | `grabacion/...-20260821....docx` | RE.pdf (módulo completo) | ❌ No iniciado |
+| Clase 02 | Guillermo Rubilar | 07 ago 2026 | `grabacion/...-20260807....docx` | RE.pdf (módulo completo) | ✅ Completo |
+| Clase 03 | Guillermo Rubilar | 14 ago 2026 | `grabacion/...-20260814....docx` | RE.pdf (módulo completo) | ✅ Completo |
+| Clase 04 | Guillermo Rubilar | 21 ago 2026 | `grabacion/...-20260821....docx` | RE.pdf (módulo completo) | ✅ Completo |
 
 > **Nota para este módulo:** El PDF `RE.pdf` corresponde al módulo completo (no por clase individual).  
 > Usarlo como referencia transversal para todas las clases, y procesarlo de forma independiente  
@@ -283,25 +283,25 @@ Si en el análisis inicial de una clase no estaba disponible alguna fuente, segu
 | Clase | Docente | Fecha | Transcripción | PDF módulo | Estado extendido | Estado short | Última actualización |
 |---|---|---|---|---|---|---|---|
 | Clase 01 | Guillermo Rubilar | 31 jul 2026 | ✅ | ✅ | ✅ Completo | ✅ Completo | 26 ago 2026 |
-| Clase 02 | Guillermo Rubilar | 07 ago 2026 | ✅ | ✅ | ❌ No iniciado | ❌ No iniciado | — |
-| Clase 03 | Guillermo Rubilar | 14 ago 2026 | ✅ | ✅ | ❌ No iniciado | ❌ No iniciado | — |
-| Clase 04 | Guillermo Rubilar | 21 ago 2026 | ✅ | ✅ | ❌ No iniciado | ❌ No iniciado | — |
+| Clase 02 | Guillermo Rubilar | 07 ago 2026 | ✅ | ✅ | ✅ Completo | ✅ Completo | 26 ago 2026 |
+| Clase 03 | Guillermo Rubilar | 14 ago 2026 | ✅ | ✅ | ✅ Completo | ✅ Completo | 26 ago 2026 |
+| Clase 04 | Guillermo Rubilar | 21 ago 2026 | ✅ | ✅ | ✅ Completo | ✅ Completo | 26 ago 2026 |
 
 #### Archivo del PDF del Módulo
 
 | Archivo | Fuente | Estado extendido | Estado short | Última actualización |
 |---|---|---|---|---|
-| `Analisis_RE.md` | `RE.pdf` | ❌ No iniciado | ❌ No iniciado | — |
-| `Analisis_RE_short.md` | `RE.pdf` | ❌ No iniciado | ❌ No iniciado | — |
+| `Analisis_RE.md` | `RE.pdf` | ✅ Completo | ✅ Completo | 26 ago 2026 |
+| `Analisis_RE_short.md` | `RE.pdf` | ✅ Completo | ✅ Completo | 26 ago 2026 |
 
 #### Documentos Consolidados del Módulo
 
 | Documento | Estado extendido | Estado short | Última actualización |
 |---|---|---|---|
-| `Resumen_Modulo03` | ❌ No iniciado | ❌ No iniciado | — |
-| `Analisis_Modulo03` | ❌ No iniciado | ❌ No iniciado | — |
-| `Formulario_Modulo03` | ❌ No iniciado | ❌ No iniciado | — |
-| `Monografia_Final_Modulo03` | ❌ No iniciado | ❌ No iniciado | — |
+| `Resumen_Modulo03` | ✅ Completo | ✅ Completo | 26 ago 2026 |
+| `Analisis_Modulo03` | ✅ Completo | ✅ Completo | 26 ago 2026 |
+| `Formulario_Modulo03` | ✅ Completo | ✅ Completo | 26 ago 2026 |
+| `Monografia_Final_Modulo03` | ✅ Completo | ✅ Completo | 26 ago 2026 |
 
 **Claves de estado:**
 - `✅ Completo` — Todas las fuentes disponibles fueron trianguladas. Documento final.
