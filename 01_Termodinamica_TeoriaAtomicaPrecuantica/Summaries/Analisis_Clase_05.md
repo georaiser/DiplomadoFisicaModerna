@@ -1,426 +1,233 @@
-# Análisis de Clase 05 — Termodinámica y Teoría Atómica Pre-Cuántica
+# Análisis de Clase 05: La Segunda Ley de la Termodinámica, el Ciclo de Carnot, la Entropía de Clausius y los Potenciales Termodinámicos
+
+**Diplomado en Física Moderna — Módulo 01: Termodinámica y Teoría Atómica Precuántica**  
+**Docente:** Dr. Julio Eduardo Oliva Zapata  
+**Fecha de la sesión:** 12 de junio de 2026  
+**Duración:** 3 horas 09 minutos  
+**Fuentes trianguladas:**
+- Transcripción oficial de la clase grabada (`Clase_05/grabacion/Clase del Diplomado de Física Moderna.docx` y `transcripcion.txt`).
+- Apuntes manuscritos de pizarra digital: `Clase_05/Clase 5 notas a mano.pdf` (19 págs).
+- Texto guía central: Steven Weinberg, *Foundations of Modern Physics* (Cambridge University Press, 2021), Cap. 2: §2.2 *Absolute Temperature* (pp. 21–27) y §2.3 *Entropy* (pp. 27–33).
+- Fuentes primarias históricas: S. Carnot, *Réflexions sur la puissance motrice du feu* (1824); R. Clausius, *Über verschiedene für die Anwendung bequeme Formen der Hauptgleichungen der mechanischen Wärmetheorie*, Ann. Phys. 125, 353 (1865); W. Thomson (Lord Kelvin), *On an Absolute Thermometric Scale*, Phil. Mag. 33, 313 (1848); J. W. Gibbs, *On the Equilibrium of Heterogeneous Substances* (1876).
 
 ---
 
-## Encabezado
+## 1. La Asimetría Temporal de la Naturaleza y la Necesidad de la Segunda Ley
 
-| Campo | Detalle |
-|-------|---------|
-| **Módulo** | Termodinámica y Teoría Atómica Pre-Cuántica (Módulo 1) |
-| **Docente** | Prof. Julio Eduardo Oliva Zapata |
-| **Fecha** | 12 de junio de 2026 |
-| **Duración** | 3 h 9 min |
-| **Resultados de aprendizaje** | Segunda ley de la termodinámica (formulaciones de Clausius y Kelvin); teorema de Clausius; definición de entropía termodinámica; entropía estadística de Boltzmann; fórmula de Sackur–Tetrode; resolución de la paradoja de Gibbs; termodinámica de agujeros negros |
+*Fuente: Notas a mano Clase 5, diaps. 1–4; Transcripción 00:03–00:42; Weinberg, §2.2.*
 
----
+La Primera Ley de la Termodinámica ($dU = \delta Q - \delta W$) impone un balance contable estricto: la energía total del universo se conserva en toda transformación física. Sin embargo, la Primera Ley es completamente ciega frente a la dirección temporal de los fenómenos naturales: permitiría, por ejemplo, que un vaso de agua tibia se enfríe espontáneamente concentrando su calor para elevar un peso del suelo, o que los fragmentos de una taza rota sobre el piso salten coordinadamente para rearmarse.
 
-## Nota sobre las fuentes
+En la realidad empírica observamos una **irreversibilidad intrínseca**:
+- El calor fluye espontáneamente de cuerpos calientes a cuerpos fríos, jamás a la inversa.
+- El trabajo mecánico se disipa espontáneamente en calor por fricción; pero el calor no se convierte espontáneamente en trabajo mecánico útil sin dejar una huella en el entorno.
 
-> **Nota especial:** La Clase 05 no cuenta con diapositivas formales. El Prof. Oliva impartió la clase escribiendo directamente en tablet (notas a mano), compartidas posteriormente como `Clase 5 notas a mano.pdf`. La transcripción es la fuente primaria y dominante de contenido estructurado. Las referencias al material escrito se han reconocido en el texto cuando fue posible identificar los temas abordados.
+La Segunda Ley de la Termodinámica surge para formalizar esta asimetría y definir el sentido de la evolución espontánea de los sistemas macroscópicos.
 
----
-
-## Fuentes Utilizadas
-
-- **Transcripción de video:** `Clase_05/grabacion/Clase del Diplomado de Física Moderna.docx` (fuente principal, ~128 KB, procesada en su totalidad).  
-- **Notas a mano:** `Clase_05/Clase 5 notas a mano.pdf`.  
-- **Libro de referencia central:** Steven Weinberg, *Foundations of Modern Physics* (Cambridge University Press, 2021).  
-- **Bibliografía de apoyo:** Callen, *Thermodynamics* (Wiley, 1985); Reif, *Fundamentals of Statistical and Thermal Physics* (McGraw-Hill, 1965); Bekenstein (1973); Hawking (1975).
-
----
-
-## 1. Recapitulación de la Clase 04 y motivación
-
-*Fuente: Transcripción, minutos 0–15. Fuente complementaria: Weinberg, cap. 2.*
-
-El Prof. Oliva abrió la sesión recordando los pilares construidos en la Clase 04:
-
-1. **Variables termodinámicas de estado:** $P$, $V$, $T$, $N$, $U$, $C_V$, $C_P$, $\kappa_T$.
-2. **Superficie de fase / ecuación de estado:** en equilibrio, existe una relación funcional $f(P,V,T,N)=0$ que define una superficie en el espacio termodinámico.
-3. **Compresibilidad isotérmica:** $\kappa_T = -\frac{1}{V}(\partial V/\partial P)_T > 0$ para fases estables.
-4. **Primera ley de la termodinámica:** $dU = \delta Q - P\, dV$.
-5. **Calor y trabajo como diferenciales inexactos** (cantidades en transferencia, no variables de estado).
-
-El objetivo central de la Clase 05 es introducir la **entropía** —primero desde la perspectiva termodinámica macroscópica (mediante la segunda ley), y luego desde la perspectiva estadística microscópica (mediante el conteo de microestados). La conexión entre ambas definiciones constituye uno de los mayores logros intelectuales de la física del siglo XIX.
+```
+                  POSTULADOS CLÁSICOS DE LA SEGUNDA LEY
+                                     │
+         ┌───────────────────────────┴───────────────────────────┐
+         ▼                                                       ▼
+   Enunciado de Kelvin-Planck (1851)                     Enunciado de Clausius (1854)
+   "Es imposible un proceso cíclico cuyo                 "Es imposible un proceso cíclico cuyo
+    ÚNICO resultado sea absorber calor de                 ÚNICO resultado sea transferir calor
+    un foco y transformarlo en trabajo"                   de un foco frío a uno más caliente"
+         │                                                       │
+         └───────────────────────────┬───────────────────────────┘
+                                     ▼
+                      Equivalencia Lógica Estricta
+                      (La violación de uno implica la violación del otro)
+                                     │
+                                     ▼
+                      Teorema y Ciclo de Carnot (1824)
+                      Escala Absoluta de Kelvin: |Q_C|/Q_H = T_C/T_H
+```
 
 ---
 
-## 2. La segunda ley de la termodinámica: dos formulaciones
+## 2. El Ciclo de Carnot y la Escala de Temperatura Absoluta
 
-*Fuente: Transcripción, minutos 10–35. Fuente complementaria: Zemansky, cap. 7; Fermi, cap. 3.*
+*Fuente: Notas a mano Clase 5, diaps. 5–8; Transcripción 00:42–01:30; Weinberg, §2.2.*
 
-La segunda ley es una ley física: no se deduce de principios más fundamentales (dentro del marco de la termodinámica clásica), sino que se establece a partir de la acumulación de evidencia experimental. Tiene dos formulaciones históricas equivalentes.
+Sadi Carnot (1824) concibió una máquina térmica ideal operando en un ciclo completamente **reversible** (sin fricción, turbulencias ni gradientes térmicos finitos) entre dos focos térmicos a temperaturas $T_H$ (foco caliente) y $T_C$ (foco frío), con $T_H > T_C$.
 
-### 2.1 Formulación de Clausius (1850)
+### 2.1. Etapas del Ciclo de Carnot
+El ciclo consta de cuatro transformaciones cuasiestáticas reversibles consecutivas:
+1. **Expansión Isotérmica ($1 \to 2$ a $T_H$):** El gas se expande en contacto con el foco caliente, absorbiendo una cantidad de calor $Q_H > 0$.
+2. **Expansión Adiabática ($2 \to 3$ de $T_H$ a $T_C$):** El gas se aísla térmicamente ($\delta Q = 0$) y se expande realizando trabajo a costa de su energía interna, enfriándose hasta $T_C$.
+3. **Compresión Isotérmica ($3 \to 4$ a $T_C$):** En contacto con el foco frío, el gas se comprime cediendo una cantidad de calor $|Q_C|$ ($Q_C < 0$).
+4. **Compresión Adiabática ($4 \to 1$ de $T_C$ a $T_H$):** Se aísla térmicamente el gas y se comprime, elevando su temperatura hasta regresar exactamente al estado inicial $1$.
 
-> **No existe un proceso cuyo único efecto sea transferir calor de un sistema a temperatura menor hacia un sistema a temperatura mayor.**
+```
+                         DIAGRAMA P - V DEL CICLO DE CARNOT
+             P
+             ▲       1  (T_H)
+             │        ╭──────╮ 2  (Expansión isotérmica Q_H)
+             │       ╭╯      ╰╮
+             │      ╭╯        ╰╮ 3  (Expansión adiabática Q = 0)
+             │   4 ╭╯         ╭╯
+             │      ╰────────╯   (Compresión isotérmica Q_C a T_C)
+             │         (Compresión adiabática Q = 0)
+             └───┴─────────────┴────► V
+```
 
-La palabra clave es **"único efecto"**: si se está dispuesto a introducir algún otro efecto en el proceso (por ejemplo, consumir trabajo eléctrico), entonces sí es posible transferir calor desde el frío hacia el calor —eso es precisamente lo que hace un refrigerador o una bomba de calor.
+### 2.2. Teorema de Carnot y Temperatura Absoluta de Kelvin
+Carnot demostró mediante reducción al absurdo que:
+1. *Ninguna máquina térmica real que opere entre dos focos térmicos fijos puede superar el rendimiento de una máquina reversible de Carnot que opere entre los mismos focos.*
+2. *Todas las máquinas térmicas reversibles que operen entre los mismos dos focos tienen exactamente la misma eficiencia térmica, independientemente de la naturaleza de la sustancia de trabajo.*
 
-**Ejemplos intuitivos:**
-- Al sumergirse en el océano, el cuerpo humano (más caliente, ~37 °C) calienta el agua, no al revés.
-- Un cubo de hielo no puede espontáneamente enfriarse aún más transfiriendo calor al ambiente caliente.
+El rendimiento térmico se define como el trabajo neto obtenido por unidad de calor absorbido:
+$$\eta = \frac{W}{Q_H} = \frac{Q_H - |Q_C|}{Q_H} = 1 - \frac{|Q_C|}{Q_H}$$
 
-### 2.2 Formulación de Kelvin (1851)
+Dado que el rendimiento de cualquier máquina reversible es estrictamente idéntico y depende solo de las temperaturas de los dos focos:
+$$\frac{|Q_C|}{Q_H} = \phi(T_C, T_H)$$
 
-> **No existe un proceso cuyo único efecto sea extraer calor de un reservorio térmico y convertirlo completamente en trabajo.**
+William Thomson (Lord Kelvin, 1848) utilizó esta universalidad absoluta para definir la **escala de temperatura termodinámica absoluta**, postulando que la función de transferencia es simplemente el cociente lineal directo de las temperaturas absolutas:
 
-**Reservorio térmico (baño térmico):** es un sistema con tantos grados de libertad que, aunque se le transfiera o extraiga energía, su temperatura no cambia apreciablemente. Ejemplos: el océano, la atmósfera terrestre, el substrato de una ciudad.
+$$\boxed{\frac{|Q_C|}{Q_H} = \frac{T_C}{T_H}}$$
 
-**Consecuencia:** ninguna máquina térmica puede tener eficiencia del 100%. Parte del calor extraído de la fuente caliente siempre debe cederse a un sumidero frío.
+Respetando la convención de signos ($\delta Q > 0$ si entra al sistema, $\delta Q < 0$ si sale):
+$$\frac{Q_H}{T_H} + \frac{Q_C}{T_C} = 0$$
 
-### 2.3 Equivalencia de ambas formulaciones
-
-Las dos formulaciones son **lógicamente equivalentes**. La demostración formal utiliza la contrapositiva en lógica proposicional:
-- Si se niega la formulación de Kelvin → se puede deducir la negación de Clausius.
-- Si se niega la formulación de Clausius → se puede deducir la negación de Kelvin.
-
-Por tanto, si una es verdadera, la otra también lo es.
-
-**Orden histórico:** Carnot (1824) diseñó el ciclo de máxima eficiencia sin disponer aún de la noción formal de entropía; Clausius (1850) formalizó la segunda ley; Kelvin (1851) dio la segunda formulación; Clausius (1865) acuñó el término "entropía".
-
----
-
-## 3. El teorema de Clausius y la integral de ciclo
-
-*Fuente: Transcripción, minutos 35–65. Fuente complementaria: Callen, sec. 4.1; Zemansky, cap. 7.*
-
-### 3.1 Enunciado del teorema
-
-El **teorema de Clausius** establece la siguiente consecuencia matemática de la segunda ley:
-
-$$\boxed{\oint \frac{\delta Q}{T} \leq 0,}$$
-
-con igualdad cuando el proceso cíclico es **cuasi estático (reversible)**:
-
-$$\oint_\text{reversible} \frac{\delta Q}{T} = 0, \qquad \oint_\text{irreversible} \frac{\delta Q}{T} < 0.$$
-
-### 3.2 Significado de la integral de ciclo
-
-El símbolo $\oint$ denota una **integral sobre un ciclo cerrado**: se sigue un camino termodinámico que comienza y termina en el mismo estado. Para implementarla:
-
-1. Dividir el ciclo en $N$ pasos infinitesimales.
-2. En el paso $j$, el sistema tiene temperatura $T_j$ y absorbe (o cede) una cantidad de calor $\delta Q_j$.
-3. Calcular $\sum_{j=1}^N \delta Q_j / T_j$ y tomar el límite $N \to \infty$.
-
-En la práctica computacional o experimental (con datos discretos), la suma finita es lo que se implementa. En el tratamiento teórico, se usa la integral continua.
-
-**Convención de signos:**
-$$\delta Q > 0: \text{ el sistema absorbe calor.} \qquad \delta Q < 0: \text{ el sistema cede calor.}$$
-
-### 3.3 Consecuencia inmediata del teorema
-
-En un proceso cuasi estático, si $\oint \delta Q/T = 0$, y considerando que para cualquier integral de ciclo de una diferencial exacta se cumple que la integral cerrada es cero, se puede inferir que **$\delta Q/T$ es un diferencial exacto cuando el proceso es reversible**. Esto implica la existencia de una función de estado $S$ tal que:
-
-$$\frac{\delta Q_\text{rev}}{T} = dS.$$
+Y el **rendimiento máximo ideal de Carnot**:
+$$\boxed{\eta_{\text{Carnot}} = 1 - \frac{T_C}{T_H}}$$
 
 ---
 
-## 4. Definición termodinámica de la entropía
+## 3. El Teorema de Clausius y la Definición de Entropía (1865)
 
-*Fuente: Transcripción, minutos 65–90. Fuente complementaria: Callen, cap. 4; Fermi, cap. 4.*
+*Fuente: Notas a mano Clase 5, diaps. 9–13; Transcripción 01:30–02:15; Weinberg, §2.3.*
 
-### 4.1 Argumento de existencia
+### 3.1. Teorema de Clausius
+Cualquier ciclo reversible cerrado general en el plano $(P, V)$ puede discretizarse como una superposición de una red infinita de micro-ciclos elementales de Carnot adyacentes. En el límite continuo, la sumatoria discreta $\sum \frac{Q_i}{T_i} = 0$ se transforma en una integral de línea cerrada:
 
-El teorema de Clausius garantiza que en un proceso cuasi estático (reversible):
+$$\boxed{\oint_{\text{rev}} \frac{\delta Q}{T} = 0}$$
 
-$$\oint_\text{rev} \frac{\delta Q}{T} = 0.$$
+Para un ciclo irreversible general, la disipación interna reduce el trabajo obtenido y aumenta el calor transferido al foco frío, dando lugar a la **Desigualdad de Clausius**:
 
-Esta igualdad implica que la cantidad $\delta Q_\text{rev}/T$ es un **diferencial exacto**, es decir, es el diferencial total de alguna función de estado. La demostración es análoga a la demostración de que la fuerza conservativa en mecánica clásica (cuyo trabajo en ciclo cerrado es cero) puede escribirse como el gradiente de un potencial:
+$$\boxed{\oint \frac{\delta Q}{T} \le 0}$$
 
-$$\oint \mathbf{F}_\text{cons} \cdot d\mathbf{r} = 0 \implies \mathbf{F}_\text{cons} = -\nabla U.$$
+cumpliéndose la igualdad estricta si y solo si el proceso es completamente reversible.
 
-### 4.2 Definición
+### 3.2. La Entropía como Función de Estado
+Dado que la integral de $\frac{\delta Q_{\text{rev}}}{T}$ a lo largo de cualquier camino cerrado cerrado es nula, el valor de la integral entre dos estados de equilibrio $A$ y $B$ es **estrictamente independiente de la trayectoria**:
+$$\int_{A, \text{camino 1}}^B \frac{\delta Q_{\text{rev}}}{T} = \int_{A, \text{camino 2}}^B \frac{\delta Q_{\text{rev}}}{T}$$
 
-La **entropía termodinámica** es la función de estado $S$ tal que, en cualquier proceso infinitesimal cuasi estático:
+Por lo tanto, la cantidad $\frac{\delta Q_{\text{rev}}}{T}$ constituye la diferencial exacta de una nueva propiedad intrínseca del sistema: la **entropía** $S$ (del griego *trope*, transformación):
 
-$$\boxed{dS = \frac{\delta Q_\text{rev}}{T}.}$$
+$$\boxed{dS = \frac{\delta Q_{\text{rev}}}{T} \implies \Delta S = S_B - S_A = \int_A^B \frac{\delta Q_{\text{rev}}}{T}}$$
 
-**Interpretación:** aunque $\delta Q$ es un diferencial inexacto (solo es una cantidad en transferencia), al dividirlo por la temperatura $T$ —que sí es una variable de estado— se obtiene un diferencial exacto. La entropía es la variable de estado cuya variación está ligada a la transferencia de calor en procesos reversibles.
+### 3.3. Principio de Aumento de Entropía
+Para una transformación irreversible real que conecta el estado $A$ con el $B$, acoplada a un retorno reversible $B \to A$:
+$$\oint \frac{\delta Q}{T} = \int_{A, \text{irrev}}^B \frac{\delta Q}{T} + \int_{B, \text{rev}}^A \frac{\delta Q}{T} = \int_{A, \text{irrev}}^B \frac{\delta Q}{T} + (S_A - S_B) \le 0$$
 
-**Nota lingüística.** El Prof. Oliva enfatizó la distinción:
-- $\delta Q$: "cantidad pequeña de calor" — **no** un "cambio en el calor" (el calor no es una propiedad del sistema).
-- $dT$: "cambio pequeño en la temperatura" — sí es el cambio de una variable de estado.
-- $dS$: "cambio pequeño en la entropía" — sí es el cambio de una variable de estado.
+Por consiguiente:
+$$S_B - S_A \ge \int_{A, \text{irrev}}^B \frac{\delta Q}{T} \implies \boxed{dS \ge \frac{\delta Q}{T}}$$
 
-### 4.3 Primera ley con entropía
+Para un **sistema térmicamente aislado** ($\delta Q = 0$):
+$$\boxed{dS_{\text{aislado}} \ge 0}$$
 
-Combinando la primera ley $dU = \delta Q - P\, dV$ con $\delta Q_\text{rev} = T\, dS$:
-
-$$\boxed{dU = T\, dS - P\, dV.}$$
-
-Esta es la **relación fundamental de la termodinámica**, que relaciona tres variables de estado: $U$, $S$, $V$. Se puede reescribir como:
-
-$$T = \left(\frac{\partial U}{\partial S}\right)_V, \qquad P = -\left(\frac{\partial U}{\partial V}\right)_S.$$
-
----
-
-## 5. Desigualdad de Clausius y aumento de entropía
-
-*Fuente: Transcripción, minutos 85–105. Fuente complementaria: Callen, sec. 4.2.*
-
-Para procesos **irreversibles** (no cuasi estáticos), el teorema de Clausius da:
-
-$$\oint \frac{\delta Q}{T} < 0.$$
-
-Para un proceso infinitesimal cualquiera (no necesariamente reversible) entre dos estados:
-
-$$dS \geq \frac{\delta Q}{T},$$
-
-con igualdad para procesos reversibles. En un sistema **aislado** ($\delta Q = 0$):
-
-$$\boxed{dS \geq 0 \quad (\text{sistema aislado}).}$$
-
-**Enunciado del segundo principio en términos de entropía:** la entropía de un sistema aislado nunca disminuye. En un proceso espontáneo (irreversible), la entropía aumenta.
+En cualquier transformación natural de un sistema aislado, la entropía permanece constante si el proceso es reversible, y aumenta estrictamente si el proceso es irreversible. En el universo como un todo (sistema aislado supremo):
+$$\Delta S_{\text{universo}} = \Delta S_{\text{sistema}} + \Delta S_{\text{entorno}} \ge 0$$
+La entropía del universo evoluciona monótonamente hacia un máximo (equilibrio termodinámico o "muerte térmica").
 
 ---
 
-## 6. Definición estadística de la entropía: Boltzmann
+## 4. Ecuación Fundamental y Potenciales Termodinámicos
 
-*Fuente: Transcripción, minutos 110–150. Fuente complementaria: Reif, cap. 6; Weinberg, sec. 3.3.*
+*Fuente: Notas a mano Clase 5, diaps. 14–17; Transcripción 02:15–02:48; Weinberg, §2.3.*
 
-### 6.1 El número de microestados $\Omega$
+Combinando la Primera Ley para procesos cuasiestáticos ($dU = \delta Q - P dV$) con la definición de entropía ($\delta Q_{\text{rev}} = T dS$), obtenemos la **ecuación termodinámica fundamental**:
 
-A nivel microscópico, el sistema macroscópico tiene un número astronómico de configuraciones microscópicas (microestados) compatibles con los valores macroscópicos $(U, V, N)$. Este número se denomina $\Omega(U, V, N)$.
+$$\boxed{dU = T\, dS - P\, dV}$$
 
-**Principio de equiprobabilidad (postulado):** en el equilibrio, todos los microestados compatibles con los valores macroscópicos son igualmente probables.
+Esta ecuación relaciona exclusivamente funciones y variables de estado, por lo que es válida para cualquier cambio infinitesimal entre estados de equilibrio adyacentes, con independencia de que el proceso real sea reversible o no.
 
-### 6.2 Fórmula de Boltzmann
+### 4.1. Transformaciones de Legendre
+A menudo, la entropía $S$ y el volumen $V$ no son las variables experimentales más convenientes para controlar en el laboratorio (donde suele ser mucho más fácil fijar la temperatura $T$ o la presión $P$). Mediante **transformaciones de Legendre**, se derivan los tres potenciales termodinámicos adicionales:
 
-La **entropía estadística** se define como:
+```
+                      POTENCIALES TERMODINÁMICOS Y SUS VARIABLES
+                                           │
+         ┌──────────────────┬──────────────┴─────┬──────────────────┐
+         ▼                  ▼                    ▼                  ▼
+   Energía Interna      Entalpía          Energía de Helmholtz   Energía de Gibbs
+   U(S, V)              H(S, P) = U + PV  F(T, V) = U - TS       G(T, P) = H - TS
+   dU = T dS - P dV     dH = T dS + V dP  dF = -S dT - P dV      dG = -S dT + V dP
+```
 
-$$\boxed{S = k_B \ln \Omega,}$$
+1. **Energía Interna $U(S, V)$:**
+   $$T = \left(\frac{\partial U}{\partial S}\right)_V, \qquad P = -\left(\frac{\partial U}{\partial V}\right)_S$$
+2. **Entalpía $H(S, P) = U + P V$:**
+   $$dH = dU + P dV + V dP = (T dS - P dV) + P dV + V dP \implies \boxed{dH = T\, dS + V\, dP}$$
+   $$T = \left(\frac{\partial H}{\partial S}\right)_P, \qquad V = \left(\frac{\partial H}{\partial P}\right)_S$$
+3. **Energía Libre de Helmholtz $F(T, V) = U - T S$:**
+   $$dF = dU - T dS - S dT = (T dS - P dV) - T dS - S dT \implies \boxed{dF = -S\, dT - P\, dV}$$
+   $$S = -\left(\frac{\partial F}{\partial T}\right)_V, \qquad P = -\left(\frac{\partial F}{\partial V}\right)_T$$
+   El potencial $F$ gobierna los sistemas a temperatura y volumen constantes; en el equilibrio a $(T, V)$ fijos, $F$ alcanza su **mínimo absoluto**.
+4. **Energía Libre de Gibbs $G(T, P) = H - T S = U + P V - T S$:**
+   $$dG = dH - T dS - S dT = (T dS + V dP) - T dS - S dT \implies \boxed{dG = -S\, dT + V\, dP}$$
+   $$S = -\left(\frac{\partial G}{\partial T}\right)_P, \qquad V = \left(\frac{\partial G}{\partial P}\right)_T$$
+   El potencial $G$ gobierna los sistemas a temperatura y presión constantes (las condiciones estándar de la química y la física de materia condensada); en el equilibrio a $(T, P)$ fijos, $G$ alcanza su **mínimo absoluto**.
 
-donde $k_B = 1{,}380\,649 \times 10^{-23}$ J/K es la constante de Boltzmann. Esta ecuación está inscrita en la lápida de Ludwig Boltzmann en el Cementerio Central de Viena.
+### 4.2. Relaciones de Maxwell
+Dado que los cuatro potenciales termodinámicos son funciones de estado con segundas derivadas continuas, el teorema de Schwarz (igualdad de las derivadas cruzadas) impone las cuatro **Relaciones de Maxwell**:
 
-**Equivalencia con la entropía termodinámica:** en el llamado régimen termodinámico (sistemas con muchos constituyentes, $N \gg 1$), las dos definiciones de entropía coinciden:
+1. De $dU = T dS - P dV$:
+   $$\boxed{\left(\frac{\partial T}{\partial V}\right)_S = -\left(\frac{\partial P}{\partial S}\right)_V}$$
+2. De $dH = T dS + V dP$:
+   $$\boxed{\left(\frac{\partial T}{\partial P}\right)_S = \left(\frac{\partial V}{\partial S}\right)_P}$$
+3. De $dF = -S dT - P dV$:
+   $$\boxed{\left(\frac{\partial S}{\partial V}\right)_T = \left(\frac{\partial P}{\partial T}\right)_V}$$
+4. De $dG = -S dT + V dP$:
+   $$\boxed{\left(\frac{\partial S}{\partial P}\right)_T = -\left(\frac{\partial V}{\partial T}\right)_P}$$
 
-$$S_\text{Boltzmann} = S_\text{Clausius}.$$
-
-Esta equivalencia puede demostrarse explícitamente para el gas ideal.
-
-### 6.3 Interpretación: entropía como medida del desorden
-
-Cuanto más grande es $\Omega$, más "desordenado" (o más uniforme microscópicamente) es el estado. Así:
-
-- **Gas expandido:** mayor volumen → más posiciones accesibles → mayor $\Omega$ → mayor $S$.
-- **Gas comprimido:** menor volumen → menos posiciones accesibles → menor $\Omega$ → menor $S$.
-- **Sistema ordenado (cristal a 0 K):** un solo microestado posible → $\Omega = 1$ → $S = 0$.
-
-El Prof. Oliva señaló que esta interpretación de la entropía como "medida del desorden" **solo puede sostenerse responsablemente desde la física estadística microscópica**, no desde la termodinámica macroscópica, donde la entropía es simplemente la función de estado cuyo diferencial es $\delta Q_\text{rev}/T$.
-
----
-
-## 7. Entropía del gas ideal: ecuación de Sackur–Tetrode
-
-*Fuente: Transcripción, minutos 145–175. Fuente complementaria: Reif, sec. 9.2.*
-
-### 7.1 Cálculo de $\Omega$ para el gas ideal
-
-Para $N$ partículas monoatómicas idénticas en un volumen $V$ con energía interna $U = \frac{3}{2}Nk_BT$, el número de microestados accesibles es:
-
-$$\Omega(U, V, N) = \frac{1}{N!} \cdot \frac{V^N}{h^{3N}} \cdot \frac{(2\pi m U)^{3N/2}}{\Gamma(3N/2+1)} \cdot (\text{factores de normalización}).$$
-
-Aplicando la aproximación de Stirling ($\ln N! \approx N\ln N - N$) y tomando el logaritmo:
-
-$$S = k_B \ln \Omega = Nk_B \left[\ln\left(\frac{V}{N}\right) + \frac{3}{2}\ln\left(\frac{4\pi m U}{3Nh^2}\right) + \frac{5}{2}\right].$$
-
-Expresando en términos de $T$ usando $U = \frac{3}{2}Nk_BT$:
-
-$$\boxed{S = Nk_B\left[\ln\left(\frac{V}{N}\left(\frac{2\pi mk_BT}{h^2}\right)^{3/2}\right) + \frac{5}{2}\right].}$$
-
-Esta es la **fórmula de Sackur–Tetrode** (1911–1912). Es notable porque:
-1. Es **extensiva**: $S(2N, 2V, T) = 2S(N, V, T)$, como físicamente se requiere.
-2. Contiene la constante de Planck $h$ — la entropía del gas ideal tiene raíces cuánticas profundas.
-3. Predice $\Delta S_\text{mezcla} = 0$ para gases idénticos (resuelve la paradoja de Gibbs).
-
-### 7.2 División por $N!$: indistinguibilidad cuántica
-
-El factor $1/N!$ en $\Omega$ es crucial: sin él, la fórmula de Sackur–Tetrode no sería extensiva y daría $\Delta S_\text{mezcla} > 0$ para gases idénticos (paradoja de Gibbs).
-
-La corrección de Gibbs —dividir por $N!$— no puede justificarse en términos puramente clásicos. Su justificación profunda es la **indistinguibilidad cuántica**: las partículas idénticas (del mismo tipo, mismo spin, mismo isótopo) son intrínsecamente indistinguibles. Intercambiar la partícula $i$ con la partícula $j$ no produce un nuevo microestado; es el mismo estado.
+Estas relaciones permiten vincular derivadas de la entropía (difíciles de medir directamente) con coeficientes térmicos y mecánicos medibles con precisión en el laboratorio (dilatación volumétrica y compresibilidad).
 
 ---
 
-## 8. La paradoja de Gibbs y su resolución
+## 5. Cálculo de la Entropía del Gas Ideal
 
-*Fuente: Transcripción, minutos 170–185. Fuente complementaria: Weinberg, sec. 3.5.*
+*Fuente: Notas a mano Clase 5, diaps. 17–19; Transcripción 02:48–03:08.*
 
-### 8.1 Enunciado de la paradoja
+Para un gas ideal de $n$ moles con capacidad calorífica $C_V$ constante, la ecuación fundamental $dU = T dS - P dV$ se resuelve para $dS$:
 
-Consideremos dos compartimentos separados por una pared, cada uno con $N$ moléculas del **mismo gas** (idéntico), a la misma temperatura $T$ y presión $P$, con volumen $V/2$ cada uno. Al retirar la pared:
+$$dS = \frac{dU}{T} + \frac{P}{T} dV = n C_V \frac{dT}{T} + n R \frac{dV}{V}$$
 
-- **Macroscópicamente:** no ocurre nada observable: $P$, $T$, $\rho$ son los mismos a ambos lados.
-- **Cálculo clásico ingenuo:** la entropía de mezcla resulta $\Delta S_\text{mezcla} = 2Nk_B\ln 2 > 0$.
+Integrando entre un estado inicial $(T_1, V_1)$ y un estado final $(T_2, V_2)$:
 
-Esta contradicción —la entropía aumentaría al mezclar cosas idénticas— es la **paradoja de Gibbs**.
+$$\boxed{\Delta S = S_2 - S_1 = n C_V \ln\left(\frac{T_2}{T_1}\right) + n R \ln\left(\frac{V_2}{V_1}\right)}$$
 
-### 8.2 Resolución: cuántica
+Expresada en términos de presión y temperatura (utilizando $V = nRT/P$ y $C_P = C_V + R$):
 
-El factor $1/N!$ que aparece en la fórmula de Sackur–Tetrode (por indistinguibilidad cuántica) resuelve la paradoja. Para gases idénticos:
+$$\boxed{\Delta S = n C_P \ln\left(\frac{T_2}{T_1}\right) - n R \ln\left(\frac{P_2}{P_1}\right)}$$
 
-$$\Delta S_\text{mezcla} = S_\text{final} - S_\text{inicial} = 0.$$
-
-Para gases **diferentes**, en cambio, la entropía de mezcla es positiva —consecuencia real y observable. La paradoja de Gibbs fue el primer indicio de que los constituyentes de la materia son intrínsecamente indistinguibles, prefigurando la mecánica cuántica antes de su desarrollo formal.
+La entropía absoluta $S(T, V) = n C_V \ln T + n R \ln V + S_0$ deja indeterminada la constante aditiva $S_0$. La termodinámica clásica no puede deducir el valor de $S_0$; esto requirió el advenimiento de la física estadística de Boltzmann ($S = k_B \ln \Omega$) y la constante cuántica de Planck $h$ en la ecuación de Sackur-Tetrode (1912).
 
 ---
 
-## 9. Sistemas con entropía no nula a temperatura cero: spin glasses
+## 6. Conclusiones de la Clase
 
-*Fuente: Transcripción, minutos 15–25. Fuente complementaria: Parisi (1979); Mézard et al., *Spin Glass Theory and Beyond* (1987).*
-
-La tercera ley de la termodinámica, en su formulación simplificada —"la entropía tiende a cero cuando $T \to 0$"— no es universalmente válida. El Prof. Oliva destacó dos contraejemplos:
-
-### 9.1 Spin glasses (vidrios de spin)
-
-Los **vidrios de spin** son materiales magnéticos (como Fe-Mn o Cu-Mn) donde los espines están distribuidos aleatoriamente en la red cristalina con interacciones ferromagnéticas y antiferromagnéticas en competencia. Esta **frustración** impide que el sistema alcance un estado fundamental único:
-
-- A $T \to 0$: el sistema no sabe cómo ordenarse; queda "atascado" en una configuración aleatoria.
-- Resultado: $\Omega > 1$ incluso a $T = 0$, por lo que $S(T=0) > 0$.
-
-El estudio de los vidrios de spin dio lugar a herramientas matemáticas (el **método de réplicas**, desarrollado por Giorgio Parisi) aplicables a sistemas de optimización combinatoria, redes neuronales y muchos problemas de física estadística compleja. Giorgio Parisi recibió el Premio Nobel de Física en 2021.
-
-### 9.2 Agujeros negros rotantes
-
-Los **agujeros negros de Kerr** (rotantes) tienen entropía incluso a temperatura (de Hawking) tendiendo a cero. El Prof. Oliva adelantó el ejemplo de termodinámica de agujeros negros como ilustración de conceptos.
+1. **Sentido temporal de la termodinámica:** La Segunda Ley prohíbe la conversión íntegra y espontánea de calor en trabajo en ciclos cerrados (Kelvin-Planck) y el flujo espontáneo de calor de frío a caliente (Clausius).
+2. **Escala termodinámica absoluta:** El teorema de Carnot demuestra que la eficiencia reversible $\eta = 1 - T_C/T_H$ es universal e independiente de la sustancia, proporcionando la definición física de la temperatura Kelvin.
+3. **Entropía como función de estado:** El teorema de Clausius $\oint_{\text{rev}} \frac{\delta Q}{T} = 0$ define la entropía $dS = \frac{\delta Q_{\text{rev}}}{T}$, mientras que su desigualdad $\oint \frac{\delta Q}{T} \le 0$ fundamenta el aumento irreversible de la entropía en sistemas aislados ($dS_{\text{aislado}} \ge 0$).
+4. **Potenciales termodinámicos y relaciones de Maxwell:** Mediante transformaciones de Legendre se derivaron las funciones de estado $U, H, F, G$, cuyos mínimos determinan el equilibrio bajo distintas condiciones de contorno y generan las relaciones simétricas de Maxwell.
+5. **Apertura a la mecánica estadística:** La entropía macroscópica de Clausius mide la degradación de la energía; su fundamentación microscópica como conteo de microestados accesibles en el espacio de fases corresponde al aporte fundamental de Ludwig Boltzmann (Clase 06).
 
 ---
 
-## 10. Termodinámica de agujeros negros: el vínculo entre gravitación y termodinámica
+## 7. Referencias Bibliográficas
 
-*Fuente: Transcripción, minutos 0–10 (introducción) y minutos 185–210. Fuente complementaria: Bekenstein (1973); Hawking (1975); Wald, *General Relativity* (1984).*
-
-### 10.1 Las cuatro leyes de la termodinámica de agujeros negros
-
-En la década de 1970, Bekenstein y Hawking establecieron una correspondencia formal entre las leyes de la termodinámica ordinaria y las leyes de la dinámica de agujeros negros (en el marco de la relatividad general):
-
-| Ley Termodinámica | Ley de Agujeros Negros |
-|---|---|
-| Ley 0: en equilibrio, $T$ es uniforme | Ley 0: todos los puntos del horizonte tienen la misma gravedad superficial $\kappa$ |
-| Ley 1: $dU = T\,dS - P\,dV$ | Ley 1: $dM = \frac{\kappa}{8\pi G}\,dA + \Omega_H\,dJ + \Phi_H\,dQ$ |
-| Ley 2: $dS \geq 0$ | Ley 2: el área del horizonte $A$ nunca disminuye |
-| Ley 3: $S \to 0$ cuando $T \to 0$ | Ley 3: es imposible alcanzar $\kappa = 0$ en un número finito de pasos |
-
-donde $M$ es la masa del agujero negro, $A$ el área del horizonte de eventos, $J$ el momento angular, $Q$ la carga eléctrica, $\Omega_H$ la velocidad angular del horizonte y $\Phi_H$ el potencial eléctrico del horizonte.
-
-### 10.2 Entropía de Bekenstein–Hawking
-
-La **entropía de un agujero negro** es proporcional al área de su horizonte de eventos:
-
-$$\boxed{S_\text{BH} = \frac{k_B c^3}{4G\hbar}\, A,}$$
-
-donde $G$ es la constante de gravitación universal, $c$ la velocidad de la luz y $\hbar = h/(2\pi)$ la constante de Planck reducida. La combinación $\ell_P^2 = G\hbar/c^3 \approx 2{,}6\times10^{-70}$ m² es el área de Planck al cuadrado.
-
-Para un agujero negro de Schwarzschild de masa $M$: $A = 16\pi G^2 M^2/c^4$, y:
-
-$$S_\text{Schwarzschild} = \frac{4\pi k_B G M^2}{\hbar c} = \frac{4\pi k_B}{\ell_P^2}\,\left(\frac{GM}{c^2}\right)^2.$$
-
-Para el sol ($M_\odot \approx 2\times10^{30}$ kg): $S_\text{Schwarzschild} \approx 10^{77}\, k_B$.
-
-### 10.3 Temperatura de Hawking
-
-En 1974, Hawking demostró (usando mecánica cuántica de campos en la curvatura del espacio-tiempo) que los agujeros negros **emiten radiación térmica** (radiación de Hawking) a una temperatura:
-
-$$T_H = \frac{\hbar c^3}{8\pi G M k_B}.$$
-
-Para un agujero negro solar: $T_H \approx 6 \times 10^{-8}$ K (completamente inobservable). Para un micro-agujero negro de $10^{12}$ kg (masa de una montaña): $T_H \approx 10^{11}$ K (emite rayos gamma y se evapora en menos de un segundo).
-
-### 10.4 Agujeros negros extremos y tercera ley
-
-Un **agujero negro de Kerr** con momento angular máximo $J = GM^2/c$ es un agujero negro **extremo**, cuya gravedad superficial $\kappa = 0$ (análogo a $T = 0$). En ese límite, la entropía no es nula:
-
-$$S_\text{Kerr extremo} = \frac{2\pi k_B G M^2}{\hbar c} \neq 0.$$
-
-Este es el ejemplo al que el Prof. Oliva se refirió al discutir la tercera ley: hay agujeros negros con "temperatura cero" y entropía no nula, análogos a los spin glasses.
-
----
-
-## 11. Ciclo de Carnot y eficiencia máxima
-
-*Fuente: Transcripción, minutos 20–25. Fuente complementaria: Fermi, cap. 5; Zemansky, cap. 8.*
-
-### 11.1 El ciclo
-
-El **ciclo de Carnot** consta de cuatro procesos cuasi estáticos:
-
-1. **Expansión isotérmica** a temperatura $T_H$: el sistema absorbe calor $Q_H > 0$ de la fuente caliente.
-2. **Expansión adiabática**: el sistema se enfría de $T_H$ a $T_C$ sin intercambio de calor.
-3. **Compresión isotérmica** a temperatura $T_C$: el sistema cede calor $|Q_C|$ al sumidero frío.
-4. **Compresión adiabática**: el sistema se calienta de $T_C$ a $T_H$ sin intercambio de calor.
-
-### 11.2 Eficiencia
-
-El trabajo neto realizado por el ciclo es $W = Q_H - |Q_C|$ (primer principio). La eficiencia es:
-
-$$\eta = \frac{W}{Q_H} = 1 - \frac{|Q_C|}{Q_H}.$$
-
-Aplicando el teorema de Clausius al ciclo de Carnot (proceso reversible):
-
-$$\oint \frac{\delta Q}{T} = \frac{Q_H}{T_H} - \frac{|Q_C|}{T_C} = 0 \implies \frac{|Q_C|}{Q_H} = \frac{T_C}{T_H},$$
-
-por lo que:
-
-$$\boxed{\eta_\text{Carnot} = 1 - \frac{T_C}{T_H}.}$$
-
-**Propiedades clave:**
-- $\eta_\text{Carnot} < 1$ siempre que $T_C > 0$ (segunda ley).
-- Independiente del material de trabajo (gas ideal, vapor, etc.).
-- Es la eficiencia **máxima** de cualquier máquina que opere entre $T_H$ y $T_C$ (teorema de Carnot).
-
----
-
-## Conclusiones de la Clase
-
-1. **Segunda ley — Clausius:** no existe un proceso cuyo único efecto sea transferir calor espontáneamente de un sistema frío a uno caliente.
-
-2. **Segunda ley — Kelvin:** no existe un proceso cuyo único efecto sea extraer calor de un reservorio y convertirlo completamente en trabajo; toda máquina térmica tiene eficiencia menor al 100%.
-
-3. **Equivalencia:** las dos formulaciones son lógicamente equivalentes, demostrable mediante la contrapositiva.
-
-4. **Teorema de Clausius:** $\oint \delta Q/T \leq 0$, con igualdad en procesos reversibles.
-
-5. **Entropía termodinámica:** variable de estado $S$ definida por $dS = \delta Q_\text{rev}/T$. Su existencia se demuestra del teorema de Clausius y la equivalencia entre "integral de ciclo cero" y "diferencial exacto".
-
-6. **Relación fundamental:** $dU = T\,dS - P\,dV$, que sintetiza la primera y segunda leyes.
-
-7. **Entropía estadística:** $S = k_B\ln\Omega$ (Boltzmann, 1877). En el régimen termodinámico, coincide con la entropía de Clausius.
-
-8. **Fórmula de Sackur–Tetrode:** expresión exacta de la entropía del gas ideal monoatómico, que contiene $h$ y requiere $N!$ en el denominador (indistinguibilidad cuántica).
-
-9. **Paradoja de Gibbs:** mezclar gases idénticos no aumenta la entropía; la paradoja clásica se resuelve con la indistinguibilidad cuántica ($1/N!$ en $\Omega$).
-
-10. **Termodinámica de agujeros negros:** $S_\text{BH} = k_Bc^3 A/(4G\hbar)$; los agujeros negros son objetos termales con temperatura de Hawking $T_H \propto 1/M$; los agujeros negros extremos tienen $S \neq 0$ a $T = 0$, análogos a los spin glasses.
-
----
-
-## Referencias Bibliográficas
-
-### 1. Artículos científicos originales (fuentes primarias)
-
-- Clausius, R. (1865). *Über verschiedene für die Anwendung bequeme Formen der Hauptgleichungen der mechanischen Wärmetheorie.* Annalen der Physik, **125**, 353–400. (Primera aparición del término "entropía".)
-- Boltzmann, L. (1877). *Über die Beziehung zwischen dem zweiten Hauptsatze der mechanischen Wärmetheorie und der Wahrscheinlichkeitsrechnung.* Sitzungsberichte der Akademie der Wissenschaften, **76**, 373–435.
-- Bekenstein, J. D. (1973). *Black holes and entropy.* Physical Review D, **7**, 2333–2346.
-- Hawking, S. W. (1975). *Particle creation by black holes.* Communications in Mathematical Physics, **43**, 199–220.
-- Parisi, G. (1979). *Infinite number of order parameters for spin-glasses.* Physical Review Letters, **43**, 1754–1756.
-
-### 2. Textos del curso
-
-- Weinberg, S. (2021). *Foundations of Modern Physics*. Cambridge University Press. Caps. 2–3.
-
-### 3. Textos universitarios estándar
-
-- Callen, H. B. (1985). *Thermodynamics and an Introduction to Thermostatistics* (2ª ed.). John Wiley & Sons. Caps. 4–5.
-- Fermi, E. (1956). *Thermodynamics*. Dover Publications. Caps. 3–5.
-- Reif, F. (1965). *Fundamentals of Statistical and Thermal Physics*. McGraw-Hill. Caps. 6, 9.
-- Zemansky, M. W., & Dittman, R. H. (1997). *Heat and Thermodynamics* (7ª ed.). McGraw-Hill. Caps. 7–8.
-
-### 4. Recursos de libre acceso verificados
-
-- Feynman, R. P. et al. (1963). *The Feynman Lectures on Physics*, Vol. I, cap. 44: *The Laws of Thermodynamics*. [https://www.feynmanlectures.caltech.edu/I_44.html](https://www.feynmanlectures.caltech.edu/I_44.html)
-- Wald, R. M. (1994). *The thermodynamics of black holes.* Living Reviews in Relativity. [https://link.springer.com/article/10.12942/lrr-2001-6](https://link.springer.com/article/10.12942/lrr-2001-6)
-
-### 5. Historia y filosofía de la física
-
-- Klein, M. J. (1967). *Thermodynamics in Einstein's thought.* Science, **157**, 509–516.
-- Mézard, M., Parisi, G., & Virasoro, M. A. (1987). *Spin Glass Theory and Beyond*. World Scientific.
-- Pais, A. (1982). *'Subtle is the Lord…': The Science and the Life of Albert Einstein*. Oxford University Press. Cap. 4 (relación con la termodinámica estadística).
+1. **Fuentes primarias y artículos históricos:**
+   - Carnot, S. (1824). *Réflexions sur la puissance motrice du feu*. París: Bachelier.
+   - Clausius, R. (1865). "Über verschiedene für die Anwendung bequeme Formen der Hauptgleichungen der mechanischen Wärmetheorie". *Annalen der Physik*, 125, 353–400.
+   - Thomson, W. (Lord Kelvin) (1848). "On an Absolute Thermometric Scale founded on Carnot's Theory of the Motive Power of Heat". *Philosophical Magazine*, 33, 313–317.
+   - Gibbs, J. W. (1876). "On the Equilibrium of Heterogeneous Substances". *Transactions of the Connecticut Academy of Arts and Sciences*, 3, 108–248.
+2. **Textos y materiales del diplomado:**
+   - Oliva Zapata, J. E. (2026). *Material pedagógico de Clase 05: Segunda Ley, Ciclo de Carnot, Entropía y Potenciales Termodinámicos*. Universidad de Concepción.
+   - Oliva Zapata, J. E. (2026). *Clase 5 notas a mano.pdf* (Apuntes de cátedra).
+3. **Textos universitarios canónicos:**
+   - Weinberg, S. (2021). *Foundations of Modern Physics*. Cambridge: Cambridge University Press. Cap. 2: §2.2 "Absolute Temperature", pp. 21–27; §2.3 "Entropy", pp. 27–33.
+   - Callen, H. B. (1985). *Thermodynamics and an Introduction to Thermostatistics*. Nueva York: John Wiley & Sons. Caps. 1–6.
+   - Fermi, E. (1937). *Thermodynamics*. Nueva York: Prentice-Hall / Dover.

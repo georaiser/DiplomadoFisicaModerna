@@ -1,399 +1,268 @@
-# Análisis de Clase 03 — Termodinámica y Teoría Atómica Pre-Cuántica
+# Análisis de Clase 03: Fenómenos de Transporte, Colisiones Moleculares y la Dinámica del Movimiento Browniano
+
+**Diplomado en Física Moderna — Módulo 01: Termodinámica y Teoría Atómica Precuántica**  
+**Docente:** Dr. Julio Eduardo Oliva Zapata  
+**Fecha de la sesión:** 29 de mayo de 2026  
+**Duración:** 3 horas 07 minutos  
+**Fuentes trianguladas:**
+- Transcripción oficial de la clase grabada (`Clase_03/grabacion/Reunión en _General_ .docx`).
+- Diapositivas oficiales del módulo (`Clase_03/Clase 3 Final.pdf`).
+- Guía experimental de cátedra: `Clase_03/Lab viscosidad final.pdf`.
+- Cuadernos de cómputo simbólico de cátedra: `Clase_03/Fokker-Planck 1D.nb` / `.pdf` y `Clase_03/EjemplosTaylor.nb` / `.pdf`.
+- Texto guía central: Steven Weinberg, *Foundations of Modern Physics* (Cambridge University Press, 2021), Cap. 1: §1.2 y Cap. 2: §2.5 *Transport Phenomena* (pp. 42–52) y §2.6 *The Atomic Scale* (pp. 53–60).
+- Fuentes primarias históricas: R. Clausius (1858), J. C. Maxwell (1860), G. G. Stokes (1851), A. D. Fokker (1914), M. Planck (1917), A. Einstein (1905).
 
 ---
 
-## Encabezado
+## 1. Motivación Física: Fenómenos Fuera del Equilibrio
 
-| Campo | Detalle |
-|-------|---------|
-| **Módulo** | Termodinámica y Teoría Atómica Pre-Cuántica (Módulo 1) |
-| **Docente** | Prof. Julio Eduardo Oliva Zapata |
-| **Fecha** | 29 de mayo de 2026 |
-| **Duración** | 3 h 7 min |
-| **Resultados de aprendizaje** | Movimiento browniano como evidencia del atomismo; derivación de la ecuación de Fokker–Planck a partir de la caminata aleatoria discreta; difusión y advección; relación de Einstein–Smoluchowski; viscosidad de gases como aplicación de transporte |
+*Fuente: Diapositivas Clase 3, diaps. 1–6; Transcripción 00:04–00:40; Weinberg, §2.5.*
 
----
+En las Clases 01 y 02 se describió el gas ideal en estado de estricto equilibrio térmico homogéneo e isotrópico. En tal condición, no existen flujos netos macroscópicos. Sin embargo, en los sistemas físicos reales surgen perturbaciones e inhomogeneidades espaciales: gradientes de concentración, gradientes de velocidad macroscópica de flujo y gradientes de temperatura.
 
-## Fuentes Utilizadas
+La tendencia natural y espontánea de la materia hacia la homogeneización produce los llamados **fenómenos de transporte**:
+1. **Transporte de Masa (Difusión):** Impulsado por un gradiente de concentración de partículas ($\nabla n$).
+2. **Transporte de Momento Lineal (Viscosidad):** Impulsado por un gradiente transversal de velocidad macroscópica ($\nabla \vec{u}$).
+3. **Transporte de Energía Térmica (Conducción del Calor):** Impulsado por un gradiente de temperatura ($\nabla T$).
 
-- **Transcripción de video:** `Clase_03/grabacion/Reunión en _General_ .docx` (fuente principal, ~147 KB, procesada en su totalidad).  
-- **Recursos adicionales:** `Clase_03/EjemplosTaylor.pdf`, `Clase_03/Fokker-Planck 1D.pdf`, `Clase_03/Lab viscosidad final.pdf`.  
-- **Libro de referencia central:** Steven Weinberg, *Foundations of Modern Physics* (Cambridge University Press, 2021).  
-- **Bibliografía de apoyo:** Einstein (1905); Smoluchowski (1906); Reif, *Fundamentals of Statistical and Thermal Physics* (1965); Risken, *The Fokker–Planck Equation* (Springer, 1989); Feynman Lectures, Vol. I, cap. 41.
-
----
-
-## 1. Recapitulación y motivación de la clase
-
-*Fuente: Transcripción, minutos 0–15. Fuente complementaria: Weinberg, cap. 1.*
-
-El Prof. Oliva inició con un repaso de las dos primeras clases, sintetizando las afirmaciones fundamentales:
-
-1. La ley de los gases ideales $PV = Nk_BT$ es válida en el límite de gases rarificados en que las partículas solo interactúan mediante colisiones elásticas y pueden explorar todo el volumen $V$ (partículas puntuales).
-
-2. Las correcciones a este límite —volumen finito de las partículas e interacciones de largo alcance— dan lugar a la **ecuación de Van der Waals**:
-$$\left(P + \frac{aN^2}{V^2}\right)(V - Nb) = Nk_BT,$$
-donde $a$ cuantifica la atracción intermolecular y $b$ es el covolumen (volumen excluido por partícula).
-
-3. La temperatura es una **variable emergente** que mide el promedio de la energía cinética de traslación: $\langle E_k \rangle = \frac{3}{2}k_BT$.
-
-4. La distribución de Maxwell–Boltzmann describe la distribución de rapideces; sus tres velocidades características escalan como $\sqrt{T/m}$.
-
-**Pregunta de la clase:** ¿Qué evidencia experimental existe de que la materia está efectivamente compuesta de constituyentes discretos (átomos, moléculas)?
+```
+                         FENÓMENOS DE TRANSPORTE EN GASES DILUIDOS
+                                             │
+         ┌───────────────────────────────────┼───────────────────────────────────┐
+         ▼                                   ▼                                   ▼
+   Transporte de Masa (Difusión)       Transporte de Momento (Viscosidad)   Transporte de Energía (Conducción)
+   Ley de Fick:                       Ley de Newton:                       Ley de Fourier:
+   J_x = -D · (∂n / ∂x)               τ_xz = -η · (∂u_x / ∂z)              q_x = -κ · (∂T / ∂x)
+         │                                   │                                   │
+         └───────────────────────────────────┼───────────────────────────────────┘
+                                             ▼
+                        Mecanismo Unificador: Camino Libre Medio (λ)
+                                   λ = 1 / (√2 π d² n)
+                        Las partículas transportan propiedades físicas
+                        a lo largo de distancias promedio de vuelo libre
+```
 
 ---
 
-## 2. El movimiento browniano: fenomenología e historia
+## 2. Sección Eficaz de Colisión y Camino Libre Medio ($\lambda$)
 
-*Fuente: Transcripción, minutos 15–45. Fuente complementaria: Brown (1828); Feynman Lectures, Vol. I, cap. 41.*
+*Fuente: Diapositivas Clase 3, diaps. 7–14; Transcripción 00:40–01:25; Weinberg, §2.5; Clausius (1858).*
 
-### 2.1 Descubrimiento y descripción
+Para cuantificar la frecuencia de colisiones, Rudolf Clausius (1858) introdujo el modelo de **esferas duras impenetrables** de diámetro molecular $d$.
 
-En 1827, el botánico escocés **Robert Brown** observó al microscopio que partículas de polen suspendidas en agua realizaban movimientos erráticos, aparentemente aleatorios. Inicialmente atribuyó el fenómeno a procesos biológicos, pero al repetir el experimento con partículas inorgánicas (polvo de roca, partículas de vidrio molido) obtuvo el mismo resultado. El movimiento browniano es, por tanto, una propiedad universal de la materia particulada suspendida en un fluido, independiente de la naturaleza química.
+### 2.1. Sección Eficaz Geométrica
+Dos moléculas idénticas de diámetro $d$ colisionarán siempre que la distancia entre sus centros sea menor o igual a $d$. Si fijamos imaginariamente una molécula como proyectil y consideramos a las demás como blancos estáticos, la colisión ocurre dentro de un disco perpendicular a la dirección relativa de área:
+$$\sigma = \pi d^2$$
+donde $\sigma$ es la **sección eficaz de dispersión**.
 
-**Características observadas:**
-- La trayectoria es completamente irregular (sin dirección preferencial).
-- La magnitud del movimiento aumenta con la temperatura y con la disminución del tamaño de la partícula.
-- Es independiente de la historia previa de la partícula (sin memoria).
+```
+                   CILINDRO DE COLISIÓN DE RADIO d
+                          ╭──────────────────────────╮
+               ╭──────────┤                          ├──────────╮
+          d    │          │  V_barrido = σ · ⟨v_rel⟩ · Δt       │    d
+               ╰──────────┤                          ├──────────╯
+                          ╰──────────────────────────╯
+                                   ⟨v_rel⟩ · Δt
+```
 
-### 2.2 Analogía mecánica (demostrada en clase)
+### 2.2. Velocidad Relativa y Factor $\sqrt{2}$
+En un intervalo $\Delta t$, una partícula barre un cilindro de colisión de volumen $\Delta V_{\text{barrido}} = \sigma \langle v_{\text{rel}}\rangle \Delta t$, donde $\langle v_{\text{rel}}\rangle$ es la velocidad relativa promedio entre dos moléculas en movimiento térmico:
+$$\vec{v}_{\text{rel}} = \vec{v}_1 - \vec{v}_2 \implies v_{\text{rel}}^2 = v_1^2 + v_2^2 - 2\vec{v}_1\cdot\vec{v}_2$$
 
-El Prof. Oliva mostró videos de la analogía mecánica: un tablero vibrado con "bolitas pequeñas" (que simulan las moléculas invisibles del gas) y una "bolita blanca de pluma vid" visible. Las bolitas pequeñas, agitadas aleatoriamente, bombardean la bolita blanca desde todas las direcciones, produciendo una trayectoria errática. Esta analogía captura el mecanismo microscópico:
+Promediando en el ensamble, dado que las velocidades de dos moléculas no correlacionadas son independientes ($\langle \vec{v}_1\cdot\vec{v}_2\rangle = 0$):
+$$\langle v_{\text{rel}}^2\rangle = \langle v_1^2\rangle + \langle v_2^2\rangle = 2\langle v^2\rangle$$
 
-> Las moléculas del gas, que se mueven con distribución de Maxwell–Boltzmann, bombardean a la partícula browniana desde todas las direcciones con distintos momentos, produciendo un movimiento neto aleatorio.
+Para una distribución maxwelliana, la relación exacta entre rapideces medias es:
+$$\langle v_{\text{rel}}\rangle = \sqrt{2}\,\langle v\rangle$$
 
-### 2.3 Importancia epistemológica
+### 2.3. Frecuencia de Colisiones y Camino Libre Medio
+Si la densidad numérica del gas es $n = \frac{N}{V}$, el número promedio de colisiones que experimenta una molécula por unidad de tiempo (**frecuencia de colisión** $z$) es:
+$$z = n\, \sigma \langle v_{\text{rel}}\rangle = \sqrt{2}\,\pi d^2 n\, \langle v\rangle$$
 
-El movimiento browniano constituyó la primera **evidencia directa observable** de la existencia de átomos y moléculas. Antes de 1905, el atomismo era una hipótesis filosófica, no una realidad física demostrable. La explicación cuantitativa de Einstein (1905) y la verificación experimental de Perrin (1908) transformaron el atomismo en un hecho establecido.
+El tiempo medio entre dos choques sucesivos es $\tau = \frac{1}{z}$. Por consiguiente, la distancia media recorrida por una molécula entre dos colisiones sucesivas —el **camino libre medio** $\lambda$— resulta:
 
----
+$$\boxed{\lambda = \langle v\rangle \tau = \frac{\langle v\rangle}{z} = \frac{1}{\sqrt{2}\,\pi d^2 n}}$$
 
-## 3. Caminata aleatoria discreta en 1D: el modelo microscópico
+Utilizando la ecuación del gas ideal $P = n k_B T \implies n = \frac{P}{k_B T}$:
 
-*Fuente: Transcripción, minutos 50–100. Fuente complementaria: Reif, sec. 1.5; Risken, cap. 3.*
+$$\boxed{\lambda = \frac{k_B T}{\sqrt{2}\,\pi d^2 P}}$$
 
-### 3.1 Configuración del modelo
-
-Se considera una partícula restringida a una red de puntos igualmente espaciados, con separación $\Delta x$:
-
-$$\ldots, x-2\Delta x,\; x-\Delta x,\; x,\; x+\Delta x,\; x+2\Delta x, \ldots$$
-
-En cada intervalo de tiempo $\Delta t$, la partícula **debe** realizar un salto:
-- A la **derecha** con probabilidad $\nu$,
-- A la **izquierda** con probabilidad $1 - \nu$.
-
-El caso simétrico $\nu = 1/2$ corresponde a la difusión pura (sin arrastre). El caso $\nu \neq 1/2$ describe un sistema con **advección** (drift), análogo a una partícula que se mueve en un fluido con flujo neto en una dirección.
-
-Sea $P(t, x)$ la probabilidad de que la partícula esté en el sitio $x$ en el instante $t$.
-
-### 3.2 Ecuación de Chapman–Kolmogorov discreta
-
-La probabilidad $P(t+\Delta t, x)$ se compone de dos contribuciones:
-
-$$\boxed{P(t+\Delta t, x) = \nu\, P(t, x-\Delta x) + (1-\nu)\, P(t, x+\Delta x).}$$
-
-**Interpretación:** para estar en $x$ en el instante $t+\Delta t$, la partícula debía estar en $x-\Delta x$ y saltar a la derecha (con probabilidad $\nu$), **o** en $x+\Delta x$ y saltar a la izquierda (con probabilidad $1-\nu$).
-
-Esta es una **ecuación funcional** para $P$; para convertirla en una ecuación diferencial se realiza una expansión de Taylor.
-
-### 3.3 Expansión de Taylor y límite continuo
-
-Se expande $P(t+\Delta t, x)$ a primer orden en $\Delta t$ y $P(t, x\pm\Delta x)$ a segundo orden en $\Delta x$:
-
-$$P(t+\Delta t, x) \approx P + \Delta t\, \partial_t P + O(\Delta t^2),$$
-
-$$P(t, x \pm \Delta x) \approx P \pm \Delta x\, \partial_x P + \frac{\Delta x^2}{2}\, \partial_{xx} P + O(\Delta x^3).$$
-
-Sustituyendo en la ecuación de Chapman–Kolmogorov:
-
-$$P + \Delta t\, \partial_t P = \nu\left(P - \Delta x\, \partial_x P + \frac{\Delta x^2}{2}\partial_{xx}P\right) + (1-\nu)\left(P + \Delta x\, \partial_x P + \frac{\Delta x^2}{2}\partial_{xx}P\right).$$
-
-Expandiendo y agrupando:
-
-$$\Delta t\, \partial_t P = -(2\nu - 1)\Delta x\, \partial_x P + \frac{\Delta x^2}{2}\, \partial_{xx} P.$$
-
-Dividiendo por $\Delta t$ y definiendo los coeficientes de transporte:
-
-$$\mu_\text{drift} \equiv \frac{(2\nu - 1)\Delta x}{\Delta t}, \qquad D \equiv \frac{\Delta x^2}{2\Delta t},$$
-
-se obtiene la **ecuación de advección–difusión**:
-
-$$\boxed{\partial_t f + \mu_\text{drift}\, \partial_x f = D\, \partial_{xx} f.}$$
-
-donde $f(t,x)$ es la densidad de probabilidad continua (obtenida en el límite $\Delta t, \Delta x \to 0$ con $D$ y $\mu_\text{drift}$ fijos).
-
-**Nota importante sobre la expansión.** Se expande a **primer orden en $\Delta t$** y **segundo orden en $\Delta x$**. Si se expandiera a segundo orden en $\Delta t$ aparecerían términos de onda (ecuación hiperbólica); la elección de primer orden en $t$ selecciona el régimen difusivo (ecuación parabólica), que describe movimiento browniano en el límite en que el tiempo entre colisiones $\Delta t$ es muy pequeño.
-
-### 3.4 Interpretación de los coeficientes
-
-| Coeficiente | Expresión | Significado físico |
-|-------------|-----------|-------------------|
-| $\mu_\text{drift}$ | $\frac{(2\nu-1)\Delta x}{\Delta t}$ | Velocidad promedio de arrastre (cero si $\nu=1/2$) |
-| $D$ | $\frac{\Delta x^2}{2\Delta t}$ | Coeficiente de difusión: determina la tasa de ensanchamiento de la distribución |
-
-Cuando $\nu = 1/2$: $\mu_\text{drift} = 0$ y la ecuación se reduce a la **ecuación de difusión pura** (ecuación de calor):
-
-$$\partial_t f = D\, \partial_{xx} f.$$
+#### Dependencias Físicas Relevantes:
+- A presión constante: $\lambda \propto T$ (al aumentar la temperatura, el gas se dilata y las moléculas se separan más).
+- A temperatura constante: $\lambda \propto \frac{1}{P}$ (al aumentar la presión, la densidad aumenta y las colisiones son más frecuentes).
+- Para el aire a condiciones estándar ($P = 1\text{ atm}$, $T = 300\text{ K}$, $d \approx 3 \times 10^{-10}\text{ m}$):
+  $$\lambda \approx 6.8 \times 10^{-8}\text{ m} \approx 68\text{ nm}$$
+  Una molécula de gas recorre en promedio cientos de veces su propio diámetro atómico antes de sufrir un impacto.
 
 ---
 
-## 4. La ecuación de Fokker–Planck
+## 3. Viscosidad Dinámica y la Paradoja de Maxwell
 
-*Fuente: Transcripción, minutos 95–110. Fuente complementaria: Risken, *The Fokker–Planck Equation*, cap. 4.*
+*Fuente: Diapositivas Clase 3, diaps. 15–21; Transcripción 01:25–02:10; Weinberg, §2.5.*
 
-La ecuación de advección–difusión derivada es un caso particular de la **ecuación de Fokker–Planck**, que en forma general para una partícula unidimensional con fricción y ruido estocástico es:
+Consideremos un gas sometido a un flujo laminar estacionario en dirección $x$, con un gradiente transversal de velocidad macroscópica a lo largo de $z$: $\vec{u}(z) = u_x(z)\,\hat{x}$.
 
-$$\frac{\partial f}{\partial t} = -\frac{\partial}{\partial x}\left[\mu(x,t)\, f\right] + D\, \frac{\partial^2 f}{\partial x^2},$$
+El esfuerzo cortante o tensión tangencial $\tau_{xz}$ (fuerza por unidad de área paralela a la superficie) se define según la ley de Newton de la viscosidad:
+$$\tau_{xz} = \eta \frac{\partial u_x}{\partial z}$$
+donde $\eta$ es el **coeficiente de viscosidad dinámica** (unidades SI: $\text{Pa}\cdot\text{s} = \text{kg}\cdot\text{m}^{-1}\cdot\text{s}^{-1}$).
 
-donde $\mu(x,t)$ es el coeficiente de drift (que puede depender de posición y tiempo) y $D$ el coeficiente de difusión. En el caso lineal con $\mu = \text{cte}$ se recupera la ecuación de advección–difusión anterior.
+### 3.1. Deducción Cinética Elemental de la Viscosidad
+Las moléculas que cruzan un plano de referencia horizontal $z = z_0$ en dirección vertical provienen, en promedio, de una capa situada a una distancia vertical del orden del camino libre medio: $z_0 \pm \frac{2}{3}\lambda$.
 
-**Analogía con la ecuación de Schrödinger.** La ecuación de difusión pura $\partial_t f = D\, \partial_{xx} f$ es formalmente análoga a la ecuación de Schrödinger para una partícula libre:
+Las partículas que ascienden desde $z_0 - \frac{2}{3}\lambda$ transportan un momento lineal en $x$ menor:
+$$p_{x,\text{sube}} = m\, u_x\left(z_0 - \frac{2}{3}\lambda\right) \approx m\left[u_x(z_0) - \frac{2}{3}\lambda \frac{\partial u_x}{\partial z}\right]$$
 
-$$i\hbar\, \partial_t \psi = -\frac{\hbar^2}{2m}\, \partial_{xx} \psi,$$
+Las partículas que descienden desde $z_0 + \frac{2}{3}\lambda$ transportan un momento mayor:
+$$p_{x,\text{baja}} = m\, u_x\left(z_0 + \frac{2}{3}\lambda\right) \approx m\left[u_x(z_0) + \frac{2}{3}\lambda \frac{\partial u_x}{\partial z}\right]$$
 
-mediante la sustitución $i\hbar \to -1/(D\cdot 2m/\hbar)$. Esta analogía —señalada por el Prof. Oliva— es el puente conceptual entre la física estadística clásica y la mecánica cuántica.
+El flujo neto de masa que cruza el plano por unidad de área y tiempo en un sentido es $\frac{1}{6} n m \langle v\rangle$ (un tercio del movimiento en el eje $z$, dividido en dos sentidos). El flujo neto de momento por unidad de área (esfuerzo viscoso) es la diferencia:
 
----
+$$\tau_{xz} = \frac{1}{3} n m \langle v\rangle \lambda \frac{\partial u_x}{\partial z}$$
 
-## 5. Solución gaussiana de la ecuación de difusión
+Comparando con la definición $\tau_{xz} = \eta \frac{\partial u_x}{\partial z}$:
 
-*Fuente: Transcripción, minutos 110–145. Fuente complementaria: Reif, sec. 1.6; Risken, cap. 5.*
+$$\eta = \frac{1}{3} \rho \langle v\rangle \lambda$$
 
-### 5.1 Solución fundamental (condición inicial: delta de Dirac)
+Sustituyendo la densidad $\rho = n m$ y la expresión del camino libre medio $\lambda = \frac{1}{\sqrt{2}\pi d^2 n}$:
 
-Con condición inicial $f(t=0, x) = \delta(x - x_0)$ (partícula localizada inicialmente en $x_0$) y condición de contorno $f \to 0$ cuando $|x| \to \infty$, la solución de la ecuación de advección–difusión es:
+$$\eta = \frac{1}{3} (n m) \langle v\rangle \left(\frac{1}{\sqrt{2}\pi d^2 n}\right) = \frac{m \langle v\rangle}{3\sqrt{2}\pi d^2}$$
 
-$$\boxed{f(t, x) = \frac{1}{\sqrt{4\pi D t}}\, \exp\!\left(-\frac{(x - x_0 - \mu_\text{drift}\, t)^2}{4Dt}\right).}$$
+Reemplazando $\langle v\rangle = \sqrt{\frac{8 k_B T}{\pi m}}$:
 
-Esta es una **gaussiana en $x$** cuyo centro y ancho evolucionan en el tiempo.
+$$\boxed{\eta = \frac{2}{3\pi^{3/2} d^2} \sqrt{m k_B T}}$$
 
-### 5.2 Verificación de la normalización
+### 3.2. La Predicción Extraordinaria de Maxwell
+Esta fórmula teórica predice dos hechos sumamente contraintuitivos:
+1. **Independencia de la Presión y Densidad:**  
+   La densidad numérica $n$ se cancela estrictamente: un gas altamente comprimido y un gas rarificado (siempre que se mantenga el régimen molecular continuo, $\lambda \ll L$) poseen exactamente la misma viscosidad. Al aumentar la densidad, aumenta el número de transportadores pero disminuye en igual proporción el camino libre medio a lo largo del cual transportan momento.
+2. **Dependencia con la Temperatura ($\eta \propto \sqrt{T}$):**  
+   A diferencia de los líquidos (cuya viscosidad disminuye abruptamente con $T$ debido a la ruptura de enlaces intermoleculares), la viscosidad de un gas **aumenta con la temperatura**, ya que el mecanismo dominante es la transferencia de momento por agitación térmica ($\langle v\rangle \propto \sqrt{T}$).
 
-La condición $\int_{-\infty}^{+\infty} f(t,x)\, dx = 1$ se satisface para todo $t > 0$, ya que la integral de una gaussiana normalizada da exactamente 1. Esto garantiza que la partícula siempre se encuentra en algún lugar (no hay fugas del sistema).
-
-### 5.3 Evolución del promedio de la posición
-
-$$\langle x \rangle(t) = \int_{-\infty}^{+\infty} x\, f(t,x)\, dx = x_0 + \mu_\text{drift}\, t.$$
-
-**Interpretación:** en presencia de drift $\mu_\text{drift} \neq 0$, el centro de la distribución se desplaza linealmente en el tiempo —la partícula tiene un movimiento neto en la dirección del drift.
-
-### 5.4 Evolución de la varianza
-
-$$\sigma_x^2(t) = \langle (x - \langle x \rangle)^2 \rangle = \langle x^2 \rangle - \langle x \rangle^2 = 2Dt.$$
-
-**Resultado clave:**
-
-$$\boxed{\sigma_x(t) = \sqrt{2Dt}.}$$
-
-La desviación estándar de la posición crece como $\sqrt{t}$, no como $t$. Esto es la **ley de difusión de Einstein**: la distancia típica explorada por la partícula escala con la raíz cuadrada del tiempo transcurrido.
-
-**Verificación del límite inicial.** En $t = 0$: $\sigma_x(0) = 0$ y el máximo de $f$ diverge, recuperando la delta de Dirac. En $t \to \infty$: $\sigma_x \to \infty$, la partícula explora todo el espacio accesible.
+Los experimentos realizados por el propio Maxwell en 1866 con discos oscilantes confirmaron con precisión asombrosa la independencia de la viscosidad con la presión, constituyendo uno de los triunfos empíricos más contundentes de la teoría cinética.
 
 ---
 
-## 6. Significado físico: difusión vs. advección
+## 4. Ley de Stokes y Medición Experimental de Viscosidad (`Lab viscosidad final.pdf`)
 
-*Fuente: Transcripción, minutos 140–160. Fuente complementaria: Reif, sec. 12.1.*
+*Fuente: `Clase_03/Lab viscosidad final.pdf`; Transcripción 02:10–02:45.*
 
-La ecuación de advección–difusión captura dos mecanismos de transporte:
+Para un cuerpo esférico macroscópico de radio $r$ que se desplaza con velocidad $\vec{v}$ en un fluido viscoso continuo en régimen de bajo número de Reynolds ($Re = \frac{\rho v r}{\eta} \ll 1$), George Gabriel Stokes (1851) dedujo analíticamente a partir de las ecuaciones de Navier-Stokes que la fuerza de resistencia hidrodinámica es:
 
-| Mecanismo | Término | Efecto sobre $f(t,x)$ |
-|-----------|---------|----------------------|
-| **Difusión** | $D\, \partial_{xx} f$ | Ensancha la distribución; $\sigma \propto \sqrt{t}$ |
-| **Advección** | $-\mu_\text{drift}\, \partial_x f$ | Traslada el centro de la distribución; $\langle x \rangle \propto t$ |
+$$\vec{F}_{\text{Stokes}} = -6\pi \eta r\, \vec{v}$$
 
-**Difusión pura ($\mu_\text{drift} = 0$):** la distribución se centra en $x_0$ para siempre (sin movimiento neto), pero se ensancha progresivamente. La probabilidad de encontrar la partícula lejos del origen aumenta con el tiempo.
+### 4.1. Dinámica de Caída Libre con Empuje de Arquímedes
+Consideremos una esfera de masa $M$, radio $r$ y densidad sólida $
+ho_s$, que desciende verticalmente bajo la gravedad $g$ en el seno de un fluido de densidad $
+ho_f$ y viscosidad $\eta$. Sobre la esfera actúan tres fuerzas colineales:
+1. Peso: $P = M g = 
+ho_s V g$.
+2. Empuje hidrostático de Arquímedes: $E = 
+ho_f V g$.
+3. Fuerza de fricción viscosa de Stokes: $F_v = 6\pi \eta r v(t)$.
 
-**Advección pura ($D = 0$):** la distribución se traslada rígidamente a velocidad $\mu_\text{drift}$ sin cambiar de forma.
+donde $V = \frac{4}{3}\pi r^3$.
 
-**Conexión con termodinámica.** La difusión es la consecuencia macroscópica del movimiento aleatorio de las partículas del fluido. A nivel microscópico, hay infinitas trayectorias posibles para la partícula browniana; la probabilidad de que la partícula permanezca siempre en su posición inicial es no nula pero negligiblemente pequeña comparada con las configuraciones en que la partícula se aleja. Esta asimetría estadística es el origen microscópico de la **segunda ley de la termodinámica** (tendencia al desorden).
+La Segunda Ley de Newton adopta la forma:
+$$M \frac{dv}{dt} = M g - 
+ho_f V g - 6\pi \eta r v(t)$$
 
----
+$$M \frac{dv}{dt} = (
+ho_s - 
+ho_f) g \left(\frac{4}{3}\pi r^3\right) - 6\pi \eta r v(t)$$
 
-## 7. Relación de Einstein–Smoluchowski: conexión entre difusión y temperatura
+Dividiendo entre $M = 
+ho_s \left(\frac{4}{3}\pi r^3\right)$:
+$$\frac{dv}{dt} = g\left(1 - \frac{
+ho_f}{
+ho_s}\right) - \frac{9\eta}{2
+ho_s r^2} v(t)$$
 
-*Fuente: Transcripción, minutos 160–185. Fuente complementaria: Einstein (1905); Reif, sec. 15.3.*
+Definiendo la aceleración efectiva $g_{\text{eff}} = g\left(1 - \frac{
+ho_f}{
+ho_s}\right)$ y el tiempo característico de relajación viscosa $\tau_v = \frac{2
+ho_s r^2}{9\eta}$:
+$$\frac{dv}{dt} + \frac{v}{\tau_v} = g_{\text{eff}}$$
 
-### 7.1 El argumento de Einstein (1905)
+Integrando con la condición inicial de reposo $v(0) = 0$:
+$$v(t) = g_{\text{eff}}\,\tau_v \left(1 - e^{-t/\tau_v}\right)$$
 
-En su artículo de 1905, Einstein consideró una partícula esférica de radio $R$ moviéndose en un fluido de viscosidad $\eta$ a temperatura $T$. Utilizando dos ingredientes:
+### 4.2. Velocidad Terminal y Determinación Experimental de $\eta$
+Para tiempos $t \gg \tau_v$, el término transitorio decae y la velocidad alcanza asintóticamente su valor terminal constante $v_t$ ($\frac{dv}{dt} = 0$):
 
-1. **Fricción de Stokes:** la fuerza de arrastre sobre una esfera de radio $R$ moviéndose a velocidad $v$ en un fluido viscoso es $F_\text{drag} = 6\pi\eta R v$ (ley de Stokes, 1851).
+$$(
+ho_s - 
+ho_f) g \left(\frac{4}{3}\pi r^3\right) = 6\pi \eta r v_t$$
 
-2. **Equipartición de energía** y el principio de equilibrio detallado (condición de equilibrio termodinámico).
+Despejando la **velocidad terminal**:
+$$\boxed{v_t = \frac{2 r^2 g (
+ho_s - 
+ho_f)}{9 \eta}}$$
 
-Einstein derivó la **relación de Einstein–Smoluchowski** (también llamada relación de fluctuación–disipación):
+Invertida para el trabajo de laboratorio:
+$$\boxed{\eta = \frac{2 r^2 g (
+ho_s - 
+ho_f)}{9 v_t}}$$
 
-$$\boxed{D = \frac{k_BT}{6\pi\eta R}.}$$
-
-Esta relación es notable porque conecta:
-- $D$: una propiedad del **movimiento aleatorio** (difusión, observable macroscópicamente),
-- $\eta$: una propiedad del fluido (viscosidad, medible macroscópicamente),
-- $R$: el radio de la partícula (medible con microscopio),
-- $k_B$: la constante de Boltzmann,
-- $T$: la temperatura.
-
-### 7.2 Medición experimental de $N_A$ (Perrin, 1908)
-
-La ecuación anterior implica que midiendo $D$, $\eta$, $R$ y $T$, se puede despejar $k_B$:
-
-$$k_B = \frac{6\pi\eta R\, D}{T}.$$
-
-Y dado que $k_B = R_g/N_A$ (con $R_g = 8{,}314$ J/(mol·K) la constante de los gases), se puede determinar:
-
-$$N_A = \frac{R_g\, T}{6\pi\eta R\, D}.$$
-
-Jean Perrin (1908) midió $D$ experimentalmente (rastreando la posición de partículas de resina de mástique en glicerina a temperatura conocida) y obtuvo $N_A \approx 6{,}0 \times 10^{23}$ mol$^{-1}$, en notable acuerdo con los valores obtenidos por métodos independientes (electroquímica, cinética de gases). Este resultado constituyó la confirmación experimental definitiva del atomismo. Perrin recibió el Premio Nobel de Física en 1926.
-
-### 7.3 Ley de difusión en 3 dimensiones
-
-En tres dimensiones, la varianza de la distancia al origen crece como:
-
-$$\langle r^2 \rangle = \langle x^2 + y^2 + z^2 \rangle = 2Dt \cdot 3 = 6Dt,$$
-
-asumiendo independencia estadística de las tres componentes. Por tanto:
-
-$$\sigma_r(t) = \sqrt{6Dt}.$$
-
-El factor de proporcionalidad entre $\sigma^2$ y $t$ varía con la dimensión espacial, pero la dependencia funcional $\sigma \propto \sqrt{t}$ se mantiene en cualquier número de dimensiones.
+Midiendo experimentalmente la velocidad terminal de caída en una probeta vertical graduada, se calcula con alta precisión la viscosidad dinámica del fluido, metodología que Jean Perrin y Robert Millikan adaptaron posteriormente para determinar la escala atómica y la carga del electrón.
 
 ---
 
-## 8. Expansión de Taylor: herramienta matemática central
+## 5. Procesos Difusivos y Ecuación de Fokker-Planck 1D (`Fokker-Planck 1D.nb`)
 
-*Fuente: Transcripción, minutos 63–75; `EjemplosTaylor.pdf`. Fuente complementaria: Arfken & Weber, cap. 5.*
+*Fuente: `Clase_03/Fokker-Planck 1D.nb` y `Fokker-Planck 1D.pdf`; Transcripción 01:12–02:00; `EjemplosTaylor.nb`.*
 
-La derivación de la ecuación de Fokker–Planck requirió la **serie de Taylor** de $P(t, x\pm\Delta x)$ alrededor de $x$. La expansión en una dimensión es:
+### 5.1. Ley de Difusión de Fick
+El transporte de masa molecular debido a un gradiente de densidad $n(x, t)$ está gobernado por la Primera Ley de Fick:
+$$J_x = -D \frac{\partial n}{\partial x}$$
+donde $J_x$ es el flujo de partículas y $D$ es el **coeficiente de difusión** ($[D] = \text{m}^2/\text{s}$).
 
-$$f(x + \epsilon) = \sum_{n=0}^\infty \frac{\epsilon^n}{n!}\, f^{(n)}(x) = f(x) + \epsilon f'(x) + \frac{\epsilon^2}{2!}f''(x) + \frac{\epsilon^3}{3!}f'''(x) + \cdots$$
+Combinando la ley de Fick con la ecuación de continuidad $\frac{\partial n}{\partial t} + \frac{\partial J_x}{\partial x} = 0$, obtenemos la ecuación diferencial de difusión (Segunda Ley de Fick):
+$$\frac{\partial n}{\partial t} = D \frac{\partial^2 n}{\partial x^2}$$
 
-**Interpretación geométrica** (explicada por el Prof. Oliva):
-- **Orden 0:** aproximar $f$ por una constante cerca de $x_0$.
-- **Orden 1:** aproximar $f$ por la recta tangente en $x_0$ (pendiente = $f'(x_0)$).
-- **Orden 2:** aproximar $f$ por la parábola osculatriz en $x_0$.
-- **Orden $n$:** cada término adicional mejora la aproximación en un radio creciente alrededor de $x_0$.
+### 5.2. Ecuación de Fokker-Planck en Una Dimensión
+En presencia de un campo de fuerza externo (que impone una velocidad media de arrastre o deriva $\mu$) superpuesto a las fluctuaciones estocásticas térmicas (difusión $Dif$), la evolución temporal de la función de densidad de probabilidad $f(x, t)$ se describe mediante la **ecuación de Fokker-Planck 1D**:
 
-En la derivación de Fokker–Planck, se toma el **límite continuo** ($\Delta t, \Delta x \to 0$) con $D = \Delta x^2/(2\Delta t)$ finito. Esto equivale a retener los términos de orden $\Delta x^2$ en la expansión espacial, que generan el término de segunda derivada responsable de la difusión.
+$$\boxed{\frac{\partial f(x, t)}{\partial t} = -\mu \frac{\partial f(x, t)}{\partial x} + Dif \frac{\partial^2 f(x, t)}{\partial x^2}}$$
 
----
+Tal como se verificó simbólicamente en el cuaderno Mathematica oficial del curso (`Fokker-Planck 1D.nb`), la solución fundamental para una partícula localizada inicialmente en el origen ($f(x, 0) = \delta(x)$) es un paquete gaussiano que se desplaza y se ensancha temporalmente:
 
-## 9. Viscosidad de gases: aplicación al transporte
+$$\boxed{f(x, t) = \frac{1}{\sqrt{4\pi\, Dif\, t}} \exp\left(-\frac{(x - \mu t)^2}{4\, Dif\, t}\right)}$$
 
-*Fuente: `Lab viscosidad final.pdf`. Fuente complementaria: Reif, sec. 12.4; Feynman Lectures, Vol. I, cap. 43.*
+### 5.3. Propiedades Estadísticas Fundamentales
+1. **Posición media:** $\langle x(t)\rangle = \mu\, t$ (avance lineal debido al arrastre macroscópico).
+2. **Varianza y Desplazamiento Cuadrático Medio:**
+   $$\sigma_x^2(t) = \langle (x - \langle x\rangle)^2\rangle = 2\, Dif\, t$$
+   El ensanchamiento del paquete espacial no crece proporcionalmente al tiempo $t$ (como en el movimiento balístico newtoniano), sino con la **raíz cuadrada del tiempo**:
+   $$\Delta x_{\text{rms}} = \sqrt{\langle (\Delta x)^2\rangle} = \sqrt{2\, Dif\, t}$$
 
-### 9.1 Definición de viscosidad dinámica
-
-La **viscosidad dinámica** $\eta$ de un fluido cuantifica la resistencia al flujo. Para un fluido sometido a un gradiente de velocidad $\partial u/\partial z$ en la dirección $z$ perpendicular al flujo, la fuerza de cizallamiento por unidad de área es:
-
-$$\tau = \eta\, \frac{\partial u}{\partial z}.$$
-
-### 9.2 Derivación cinética de la viscosidad de un gas ideal
-
-En un gas ideal, la viscosidad surge del transporte de momento entre capas de gas que se mueven a velocidades distintas. Sea $\lambda$ el **camino libre medio** (distancia promedio entre colisiones) y $\langle v \rangle = \sqrt{8k_BT/\pi m}$ la velocidad media de las partículas.
-
-Una molécula que viaja desde una capa de velocidad $u(z_0 + \lambda)$ hasta una capa de velocidad $u(z_0)$ transporta un exceso de momento por unidad de masa de $\Delta u \approx \lambda\, \partial u/\partial z$.
-
-El flujo de momento por unidad de área es:
-
-$$\tau = \rho \langle v \rangle \lambda\, \frac{\partial u}{\partial z},$$
-
-donde $\rho = nm$ es la densidad másica. Comparando con la definición de $\tau$:
-
-$$\boxed{\eta = \rho \langle v \rangle \lambda = nm \langle v \rangle \lambda.}$$
-
-### 9.3 Dependencia de $\eta$ con $T$ y consecuencias
-
-Dado que $\lambda = 1/(\sqrt{2}\, n\, \sigma_c)$ (con $\sigma_c = \pi d^2$ la sección eficaz de colisión) y $\langle v \rangle \propto \sqrt{T/m}$:
-
-$$\eta = \frac{m}{\sqrt{2}\, \sigma_c}\, \langle v \rangle \propto \frac{m}{\sigma_c}\sqrt{\frac{k_BT}{m}} = \frac{\sqrt{mk_BT}}{\sigma_c}.$$
-
-**Resultado notable:** $\eta$ es **independiente de la densidad $n$** del gas. Esto fue predicho por Maxwell en 1860 y verificado experimentalmente: duplicar la presión de un gas no cambia su viscosidad, un resultado contraintuitivo que inicialmente Maxwell mismo consideró difícil de creer.
-
-La viscosidad crece como $\eta \propto \sqrt{T}$: un gas caliente es más viscoso que uno frío, al contrario que los líquidos (cuya viscosidad disminuye con $T$). Esto refleja que en un gas la viscosidad proviene del transporte de momento, que aumenta con $T$, mientras que en un líquido proviene de la cohesión intermolecular, que disminuye con $T$.
-
-**Valores típicos a 20 °C:**
-
-| Gas | $\eta$ ($\mu$Pa·s) |
-|-----|-------------------|
-| H₂ | 8,9 |
-| He | 19,7 |
-| N₂ | 17,6 |
-| Ar | 22,7 |
-| CO₂ | 14,9 |
+Esta dependencia sublineal $\sqrt{t}$ es la firma inconfundible del movimiento browniano y de los procesos de caminata aleatoria (*random walk*), conectando directamente con los trabajos de Albert Einstein de 1905.
 
 ---
 
-## 10. Conexión con la condensación de Bose–Einstein y los límites del modelo clásico
+## 6. Conclusiones de la Clase
 
-*Fuente: Transcripción, minutos 10–15. Fuente complementaria: Weinberg, cap. 10; Griffin et al., *Bose–Einstein Condensation* (Cambridge, 1995).*
-
-El Prof. Oliva señaló que la distribución de Maxwell–Boltzmann y la descripción de partículas clásicas falla en el régimen cuántico. Para bosones a muy baja temperatura, las esferas de acción cuántica de De Broglie de radio:
-
-$$\lambda_\text{dB} = \frac{h}{\sqrt{2\pi mk_BT}}$$
-
-se traslapan cuando $n \lambda_\text{dB}^3 \gtrsim 1$, es decir, cuando la temperatura cae por debajo de la **temperatura crítica de condensación de Bose–Einstein**:
-
-$$T_c = \frac{2\pi\hbar^2}{mk_B}\left(\frac{n}{\zeta(3/2)}\right)^{2/3},$$
-
-donde $\zeta(3/2) \approx 2{,}612$ es la función zeta de Riemann. Para el Rb$^{87}$ a densidades de $n \sim 10^{12}$ cm$^{-3}$: $T_c \sim 100$ nK. A esta temperatura, una fracción macroscópica de los átomos cae en el estado fundamental: esto es el **condensado de Bose–Einstein** (BEC).
-
-Cornell, Wieman y Ketterle realizaron la primera observación experimental del BEC en átomos de Rb$^{87}$ (1995), obteniendo el Premio Nobel de Física en 2001. Actualmente el BEC es la base tecnológica de relojes atómicos de ultra-precisión y prototipos de computadores cuánticos.
+1. **Unificación del transporte:** Los fenómenos de transporte macroscópicos (viscosidad, difusión y conducción) son manifestaciones del mismo mecanismo microscópico: moléculas que viajan un camino libre medio $\lambda$ antes de redistribuir momento, masa o energía mediante choques.
+2. **Estructura del camino libre medio:** Se demostró analíticamente que $\lambda = \frac{1}{\sqrt{2}\pi d^2 n} = \frac{k_B T}{\sqrt{2}\pi d^2 P}$, mostrando que las moléculas viajan distancias macroscópicamente apreciables entre colisiones a bajas presiones.
+3. **Paradoja de la viscosidad gaseosa:** Se comprobó la predicción maxwelliana de que la viscosidad $\eta = \frac{1}{3}\rho\langle v\rangle\lambda \propto \sqrt{m k_BT}$ es independiente de la densidad y crece con $\sqrt{T}$, validando el modelo cinético frente a hipótesis de fluidos continuos.
+4. **Resistencia de Stokes y flotabilidad:** La velocidad terminal de sedimentación esférica $v_t = \frac{2 r^2 g(
+ho_s - 
+ho_f)}{9\eta}$ permite calibrar experimentalmente coeficientes de transporte y preparar la base para la estimación de constantes atómicas.
+5. **Difusión y Fokker-Planck:** La ecuación de Fokker-Planck unifica la deriva determinista y la difusión térmica estocástica, prediciendo un desplazamiento cuadrático medio difusivo $\langle (\Delta x)^2\rangle = 2 D t$ que anticipa el análisis del movimiento browniano (Clase 06).
 
 ---
 
-## Conclusiones de la Clase
+## 7. Referencias Bibliográficas
 
-1. **El movimiento browniano** es el movimiento errático de partículas visibles al microscopio, causado por el bombardeo aleatorio de las moléculas invisibles del fluido circundante.
-
-2. **Modelo de caminata aleatoria discreta:** en cada paso de tiempo $\Delta t$, la partícula salta a la derecha con probabilidad $\nu$ o a la izquierda con probabilidad $1-\nu$; la probabilidad de estar en la posición $x$ sigue la ecuación de Chapman–Kolmogorov.
-
-3. **En el límite continuo** ($\Delta t, \Delta x \to 0$ con $D = \Delta x^2/2\Delta t$ finito), la ecuación de Chapman–Kolmogorov se convierte en la **ecuación de advección–difusión** (ecuación de Fokker–Planck lineal): $\partial_t f + \mu_\text{drift}\, \partial_x f = D\, \partial_{xx} f$.
-
-4. **La solución fundamental** con condición inicial en $x_0$ es una gaussiana cuyo centro se mueve linealmente ($\langle x \rangle = x_0 + \mu_\text{drift}\, t$) y cuyo ancho crece como $\sigma_x = \sqrt{2Dt}$.
-
-5. **Ley de difusión de Einstein:** $\langle r^2 \rangle \propto Dt$; la distancia típica explorada escala como $\sqrt{t}$, no linealmente en $t$.
-
-6. **Relación de Einstein–Smoluchowski:** $D = k_BT/(6\pi\eta R)$ conecta la difusión macroscópica con la temperatura y la viscosidad del fluido; permitió la primera medición directa de $N_A$ por Perrin (1908).
-
-7. **Viscosidad de gases ideales:** $\eta \propto \sqrt{mkT}/\sigma_c$, independiente de la densidad del gas —predicción contraintuitiva confirmada experimentalmente por Maxwell.
-
-8. **Límite cuántico:** a temperaturas suficientemente bajas, las esferas de De Broglie de los bosones se traslapan y aparece la condensación de Bose–Einstein, que invalida el modelo clásico de Maxwell–Boltzmann.
-
-9. **La ecuación de difusión** es formalmente análoga a la ecuación de Schrödinger de la mecánica cuántica (mediante sustitución $i\hbar \to -1/(2mD/\hbar)$); la intuición adquirida en este contexto clásico es directamente transferible al cuántico.
-
-10. **Contexto histórico:** el movimiento browniano como fenómeno fue descubierto en 1827; su explicación cuantitativa en 1905 (Einstein) y su verificación experimental en 1908 (Perrin) constituyeron la prueba definitiva de la existencia de átomos y moléculas.
-
----
-
-## Referencias Bibliográficas
-
-### 1. Artículos científicos originales (fuentes primarias)
-
-- Brown, R. (1828). *A Brief Account of Microscopical Observations Made in the Months of June, July and August, 1827, on the Particles Contained in the Pollen of Plants.* Philosophical Magazine, **4**, 161–173.
-- Einstein, A. (1905). *Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden Flüssigkeiten suspendierten Teilchen.* Annalen der Physik, **17**, 549–560.
-- Smoluchowski, M. von (1906). *Zur kinetischen Theorie der Brownschen Molekularbewegung und der Suspensionen.* Annalen der Physik, **21**, 756–780.
-- Perrin, J. (1908). *L'agitation moléculaire et le mouvement brownien.* Comptes Rendus de l'Académie des Sciences, **146**, 967–970.
-- Fokker, A. D. (1914). *Die mittlere Energie rotierender elektrischer Dipole im Strahlungsfeld.* Annalen der Physik, **43**, 810–820.
-- Planck, M. (1917). *Über einen Satz der statistischen Dynamik und seine Erweiterung in der Quantentheorie.* Sitzungsberichte der Preußischen Akademie der Wissenschaften, **24**, 324–341.
-
-### 2. Textos del curso
-
-- Weinberg, S. (2021). *Foundations of Modern Physics*. Cambridge University Press. Caps. 1–2.
-
-### 3. Textos universitarios estándar
-
-- Reif, F. (1965). *Fundamentals of Statistical and Thermal Physics*. McGraw-Hill. Caps. 1, 12, 15.
-- Risken, H. (1989). *The Fokker–Planck Equation: Methods of Solution and Applications* (2ª ed.). Springer-Verlag. Caps. 3–5.
-- Gardiner, C. W. (2009). *Stochastic Methods: A Handbook for the Natural and Social Sciences* (4ª ed.). Springer. Caps. 3–4.
-- van Kampen, N. G. (2007). *Stochastic Processes in Physics and Chemistry* (3ª ed.). Elsevier. Caps. 4, 8.
-
-### 4. Recursos de libre acceso verificados
-
-- Feynman, R. P., Leighton, R. B., & Sands, M. (1963). *The Feynman Lectures on Physics*, Vol. I, caps. 41–43: *The Brownian Movement, Diffusion, Viscosity*. Disponible en: [https://www.feynmanlectures.caltech.edu/I_41.html](https://www.feynmanlectures.caltech.edu/I_41.html)
-- Einstein, A. (1905). Traducción al inglés de los artículos del *annus mirabilis*, incluyendo el de movimiento browniano. Disponible en: [https://www.physics.princeton.edu/~mcdonald/examples/mechanics/einstein_ap_17_549_05.pdf](https://www.physics.princeton.edu/~mcdonald/examples/mechanics/einstein_ap_17_549_05.pdf)
-
-### 5. Historia y filosofía de la física
-
-- Nye, M. J. (1972). *Molecular Reality: A Perspective on the Scientific Work of Jean Perrin*. MacDonald. Historia detallada de la verificación experimental del atomismo.
-- Brush, S. G. (1968). *A History of Random Processes. I. Brownian Movement from Brown to Perrin.* Archive for History of Exact Sciences, **5**, 1–36.
-- Pais, A. (1982). *'Subtle is the Lord…': The Science and the Life of Albert Einstein*. Oxford University Press. Cap. 5 (Movimiento Browniano).
+1. **Fuentes primarias y artículos históricos:**
+   - Clausius, R. (1858). "Über die mittlere Länge der Wege, welche von den Molekülen gasförmiger Körper zurückgelegt werden". *Annalen der Physik*, 105, 239–258.
+   - Stokes, G. G. (1851). "On the effect of the internal friction of fluids on the motion of pendulums". *Transactions of the Cambridge Philosophical Society*, 9, 8–106.
+   - Fokker, A. D. (1914). "Die mittlere Energie rotierender elektrischer Dipole im Strahlungsfeld". *Annalen der Physik*, 43, 810–820.
+   - Planck, M. (1917). "Über einen Satz der statistischen Dynamik und seine Erweiterung in der Quantentheorie". *Sitzungsberichte der Preussischen Akademie der Wissenschaften*, 324–341.
+2. **Textos y materiales del diplomado:**
+   - Oliva Zapata, J. E. (2026). *Material pedagógico de Clase 03: Fenómenos de transporte*. Universidad de Concepción.
+   - Oliva Zapata, J. E. (2026). *Fokker-Planck 1D.nb* y *EjemplosTaylor.nb*. Cuadernos simbólicos en Wolfram Mathematica.
+   - Oliva Zapata, J. E. (2026). *Medición de la viscosidad de un fluido usando la velocidad terminal* (`Lab viscosidad final.pdf`).
+3. **Textos universitarios canónicos:**
+   - Weinberg, S. (2021). *Foundations of Modern Physics*. Cambridge: Cambridge University Press. Cap. 2: §2.5 "Transport Phenomena", pp. 42–52; §2.6 "The Atomic Scale", pp. 53–60.
+   - Reif, F. (1965). *Fundamentals of Statistical and Thermal Physics*. Nueva York: McGraw-Hill. Cap. 12: "Transport Theory".
+   - Landau, L. D., & Lifshitz, E. M. (1987). *Fluid Mechanics* (2ª ed.). Oxford: Pergamon Press.

@@ -1,413 +1,300 @@
-# Análisis de Clase 06 — Termodinámica y Teoría Atómica Pre-Cuántica
+# Análisis de Clase 06: Mecánica Estadística, Entropía de Boltzmann, Colectividades y la Teoría de Einstein del Movimiento Browniano
+
+**Diplomado en Física Moderna — Módulo 01: Termodinámica y Teoría Atómica Precuántica**  
+**Docente:** Dr. Julio Eduardo Oliva Zapata  
+**Fecha de la sesión:** 19 de junio de 2026  
+**Duración:** 3 horas 19 minutos  
+**Fuentes trianguladas:**
+- Transcripción oficial de la clase grabada (`Clase_06/grabacion/Clase del Diplomado de Física Moderna.docx` y `transcripcion_clase06.txt`).
+- Apuntes manuscritos de pizarra digital: `Clase_06/Clase 6 Notas a mano.pdf` (17 págs).
+- Texto guía central: Steven Weinberg, *Foundations of Modern Physics* (Cambridge University Press, 2021), Cap. 2: §2.4 *Kinetic Theory and Statistical Mechanics* (pp. 33–42) y §2.6 *The Atomic Scale* (pp. 53–60).
+- Fuentes primarias históricas: L. Boltzmann, *Über die Beziehung zwischen dem zweiten Hauptsatze der mechanischen Wärmetheorie und der Wahrscheinlichkeitsrechnung respektive den Sätzen über das Wärmegleichgewicht*, Wiener Berichte 76, 373 (1877); J. W. Gibbs, *Elementary Principles in Statistical Mechanics* (Yale University Press, 1902); A. Einstein, *Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden Flüssigkeiten suspendierten Teilchen*, Ann. Phys. 17, 549 (1905); J. Perrin, *Mouvement brownien et réalité moléculaire*, Ann. Chim. Phys. 18, 5 (1909).
 
 ---
 
-## Encabezado
+## 1. La Conexión Microscópica: La Fórmula de Entropía de Boltzmann (1877)
 
-| Campo | Detalle |
-|-------|---------|
-| **Módulo** | Termodinámica y Teoría Atómica Pre-Cuántica (Módulo 1) |
-| **Docente** | Prof. Julio Eduardo Oliva Zapata |
-| **Fecha** | 19 de junio de 2026 |
-| **Duración** | 3 h 19 min |
-| **Resultados de aprendizaje** | Física estadística / mecánica estadística: microestados y macroestados; hipótesis de equiprobabilidad de Boltzmann; derivación de la fórmula de Sackur–Tetrode; entropía de Boltzmann $S = k_B\ln\Omega$; paradoja de Gibbs e indistinguibilidad cuántica; capacidad calorífica de sales paramagnéticas; resolución definitiva de la paradoja de Gibbs |
+*Fuente: Notas a mano Clase 6, diaps. 1–5; Transcripción 00:04–00:55; Weinberg, §2.4.*
 
----
+La termodinámica clásica definió la entropía de forma puramente fenomenológica a través de calor reversible y temperatura: $dS = \frac{\delta Q_{\text{rev}}}{T}$. Sin embargo, dejaba sin respuesta la pregunta fundamental: ¿qué es físicamente la entropía en el ámbito de las partículas materiales?
 
-## Nota sobre las fuentes
-
-> **Nota especial:** La Clase 06 es la última del módulo y no tiene diapositivas formales. El Prof. Oliva escribió directamente en tablet (notas a mano, `Clase 6 Notas a mano.pdf`). La transcripción es la fuente primaria dominante. Se utiliza bibliografía especializada para desarrollar con rigor los temas tratados.
-
----
-
-## Fuentes Utilizadas
-
-- **Transcripción de video:** `Clase_06/grabacion/Clase del Diplomado de Física Moderna.docx` (fuente principal, ~132 KB, procesada en su totalidad).  
-- **Notas a mano:** `Clase_06/Clase 6 Notas a mano.pdf`.  
-- **Libro de referencia central:** Steven Weinberg, *Foundations of Modern Physics* (Cambridge University Press, 2021).  
-- **Bibliografía de apoyo:** Reif, *Fundamentals of Statistical and Thermal Physics* (1965); Kittel & Kroemer, *Thermal Physics* (1980); Huang, *Statistical Mechanics* (Wiley, 1987).
-
----
-
-## 1. Recapitulación y motivación: la paradoja de Gibbs como punto de partida
-
-*Fuente: Transcripción, minutos 0–20. Fuente complementaria: Weinberg, sec. 3.5.*
-
-El Prof. Oliva abrió la última clase del módulo retomando los dos resultados centrales de la Clase 05:
-
-1. **Entropía termodinámica del gas ideal** (desde la primera y segunda leyes):
-
-$$S_\text{TD}(T, V, N) = \frac{3}{2}Nk_B\ln T + Nk_B\ln V + C,$$
-
-donde $C$ es una constante de integración arbitraria.
-
-2. **Paradoja de Gibbs:** al mezclar dos porciones iguales del mismo gas ideal a la misma temperatura y presión, la entropía termodinámica predice un incremento:
-
-$$\Delta S = 2Nk_B\ln 2 > 0,$$
-
-cuando debería ser nulo (no hay ningún efecto físico observable al retirar la pared).
-
-La clase 06 tuvo como objetivo resolver esta paradoja mediante la **mecánica estadística** —el marco microscópico que "explica" las leyes termodinámicas— y derivar explícitamente la fórmula de Sackur–Tetrode, que sí resuelve la paradoja.
-
----
-
-## 2. Entropía termodinámica del gas ideal: derivación y extensividad
-
-*Fuente: Transcripción, minutos 5–40. Fuente complementaria: Callen, cap. 3.*
-
-### 2.1 Derivación desde el primer y segundo principio
-
-La entropía termodinámica se calcula integrando $dS = \delta Q_\text{rev}/T$ a lo largo de un camino cuasi estático. Para el gas ideal monoatómico:
-
-- **A volumen constante:** $\delta Q_V = C_V\, dT = \frac{3}{2}Nk_B\, dT$, por lo que $dS_V = \frac{3}{2}Nk_B\frac{dT}{T}$.
-- **A temperatura constante:** $\delta Q_T = P\, dV = \frac{Nk_BT}{V}\, dV$, por lo que $dS_T = Nk_B\frac{dV}{V}$.
-
-Integrando ambos procesos:
-
-$$S(T, V, N) = \frac{3}{2}Nk_B\ln T + Nk_B\ln V + C(N),$$
-
-donde $C(N)$ es una constante que puede depender de $N$ pero que la termodinámica no puede determinar.
-
-### 2.2 La paradoja de Gibbs en detalle
-
-Consideremos el experimento mental exacto:
-
-**Estado inicial:** dos porciones del mismo gas ideal, cada una con $N$ partículas a temperatura $T$ y volumen $V$, separadas por una pared.
-
-$$S_\text{inicial} = 2\left(\frac{3}{2}Nk_B\ln T + Nk_B\ln V\right) = 3Nk_B\ln T + 2Nk_B\ln V.$$
-
-**Estado final:** se retira la pared. El sistema conjunto tiene $2N$ partículas, volumen $2V$, temperatura $T$ (sin cambio, ya que ambas partes estaban en equilibrio térmico).
-
-$$S_\text{final} = \frac{3}{2}(2N)k_B\ln T + (2N)k_B\ln(2V) = 3Nk_B\ln T + 2Nk_B(\ln V + \ln 2).$$
-
-**Diferencia:**
-
-$$\Delta S = S_\text{final} - S_\text{inicial} = 2Nk_B\ln 2 \approx 1{,}39\, Nk_B.$$
-
-Para $N = N_A = 6{,}022\times10^{23}$ (un mol): $\Delta S \approx 1{,}39\, R \approx 11{,}5$ J/K. Un cambio no nulo y observable en principio.
-
-**La contradicción:** macroscópicamente, al retirar la pared entre dos porciones del mismo gas en equilibrio no ocurre ningún cambio observable —la presión, temperatura y densidad son idénticas a ambos lados. El desorden físico no debería haber aumentado.
-
-### 2.3 Diagnóstico de la paradoja
-
-La raíz del problema está en que la entropía termodinámica $\propto Nk_B\ln V$ **no es extensiva** con el número de partículas: al duplicar $N$ y $V$ simultáneamente, la entropía no se duplica como debería:
-
-$$S(2N, 2V, T) = 3Nk_B\ln T + 2Nk_B\ln(2V) = 2S(N, V, T) + 2Nk_B\ln 2 \neq 2S.$$
-
-La expresión termodinámica falla en garantizar la extensividad de $S$.
-
----
-
-## 3. Fundamentos de mecánica estadística
-
-*Fuente: Transcripción, minutos 40–80. Fuente complementaria: Reif, cap. 6; Kittel & Kroemer, cap. 1.*
-
-### 3.1 Macroestados y microestados
-
-**Macroestado:** especificación de las variables macroscópicas medibles del sistema (por ejemplo, $U$, $V$, $N$ para un sistema aislado). Un macroestado no determina completamente el estado microscópico del sistema.
-
-**Microestado:** especificación completa del estado de cada uno de los constituyentes del sistema (posición y velocidad de cada partícula, o spin de cada sitio). Un microestado es compatible con un macroestado si los valores de las variables macroscópicas calculados a partir de ese microestado coinciden con los del macroestado.
-
-**Ejemplo didáctico (sistema de 3 spines):**
-
-El Prof. Oliva introdujo el ejemplo de tres "flechas" (espines) que pueden apuntar hacia arriba ($\uparrow$) o hacia abajo ($\downarrow$). El número total de microestados es $2^3 = 8$:
-
-| # | Flechas | $s$ |
-|---|---------|-----|
-| 1 | $\uparrow\uparrow\uparrow$ | 3 |
-| 2 | $\uparrow\uparrow\downarrow$ | 1 |
-| 3 | $\uparrow\downarrow\uparrow$ | 1 |
-| 4 | $\downarrow\uparrow\uparrow$ | 1 |
-| 5 | $\uparrow\downarrow\downarrow$ | −1 |
-| 6 | $\downarrow\uparrow\downarrow$ | −1 |
-| 7 | $\downarrow\downarrow\uparrow$ | −1 |
-| 8 | $\downarrow\downarrow\downarrow$ | −3 |
-
-donde $s = N_\uparrow - N_\downarrow$ es el "spin total" (definición del macroestado).
-
-- Si el macroestado se define por $s = 1$: hay **3 microestados compatibles** ($\Omega = 3$).
-- Si el macroestado se define por $s = 3$: hay **1 microestado compatible** ($\Omega = 1$).
-- Si el macroestado se define solo por el número total $N = 3$ (sin especificar $s$): hay **8 microestados compatibles** ($\Omega = 8$).
-
-### 3.2 Hipótesis de Boltzmann (equiprobabilidad)
-
-**Enunciado:** Para un sistema aislado, todos los microestados compatibles con el macroestado tienen la misma probabilidad de ocurrir.
-
-Matemáticamente, si hay $\Omega$ microestados compatibles, la probabilidad de cada uno es:
-
-$$P_i = \frac{1}{\Omega}, \quad i = 1, \ldots, \Omega.$$
-
-**Justificación:** la hipótesis es, en última instancia, empírica. Su validez se establece a posteriori, verificando que las predicciones derivadas de ella concuerdan con los experimentos. Como señaló el Prof. Oliva: "la historia ha mostrado que es una buena hipótesis".
-
-**Implicación filosófica:** la hipótesis de Boltzmann es la "democracia en la ignorancia": ante el desconocimiento del microestado real, asignamos la misma probabilidad a todos los compatibles.
-
-### 3.3 Probabilidad de un macroestado
-
-La probabilidad de que el sistema esté en un macroestado caracterizado por un valor dado de $s$ es:
-
-$$P(s) = \frac{\Omega(s)}{\Omega_\text{total}},$$
-
-donde $\Omega(s)$ es el número de microestados compatibles con ese valor de $s$ y $\Omega_\text{total}$ es el número total de microestados.
-
-**Ejemplo (continuación):** $P(s=1) = 3/8$, $P(s=3) = 1/8$, $P(s=-1) = 3/8$, $P(s=-3) = 1/8$.
-
----
-
-## 4. Entropía de Boltzmann y derivación de la fórmula de Sackur–Tetrode
-
-*Fuente: Transcripción, minutos 80–140. Fuente complementaria: Reif, cap. 9; Huang, cap. 6.*
-
-### 4.1 Fórmula de Boltzmann
-
-La entropía estadística se define como:
-
-$$\boxed{S = k_B\ln\Omega,}$$
-
-donde $\Omega$ es el número de microestados compatibles con el macroestado del sistema.
-
-**Propiedades matemáticas:**
-1. $S \geq 0$ (pues $\Omega \geq 1$).
-2. Si el sistema está compuesto de partes independientes $A$ y $B$: $\Omega_{A+B} = \Omega_A \cdot \Omega_B$, por lo que $S_{A+B} = S_A + S_B$ (extensividad).
-3. $S$ es máxima cuando $\Omega$ es máxima (estado de equilibrio = estado de máxima entropía).
-
-### 4.2 Conteo de microestados del gas ideal
-
-Para un gas ideal de $N$ partículas monoatómicas en un volumen $V$ con energía total $U$, el número de microestados se calcula en el espacio de fases de $6N$ dimensiones (3 coordenadas y 3 momentos por partícula):
-
-$$\Omega(U, V, N) = \frac{1}{h^{3N}} \cdot V^N \cdot \mathcal{A}_{3N}(p_\text{max}),$$
-
-donde $\mathcal{A}_{3N}(r)$ es el "área" de la hiperesfera de radio $r = \sqrt{2mU}$ en $3N$ dimensiones, y $h^{3N}$ aparece como la celda de volumen mínima en el espacio de fases (cuantización de Planck).
-
-La indistinguibilidad de las partículas impone dividir por $N!$ (número de permutaciones de partículas idénticas que no crean nuevos microestados):
-
-$$\Omega_\text{corregido}(U, V, N) = \frac{1}{N!} \cdot \frac{V^N}{h^{3N}} \cdot \frac{(2\pi m U)^{3N/2}}{\left(\frac{3N}{2}\right)!}.$$
-
-### 4.3 La fórmula de Sackur–Tetrode
-
-Aplicando $S = k_B\ln\Omega_\text{corregido}$ y la aproximación de Stirling ($\ln N! \approx N\ln N - N$, $\ln\Gamma(3N/2+1) \approx \frac{3N}{2}\ln\frac{3N}{2} - \frac{3N}{2}$):
-
-$$\boxed{S = Nk_B\left[\ln V - \ln N + \frac{3}{2}\ln T + \frac{3}{2}\ln\left(\frac{2\pi mk_B}{h^2}\right) + \frac{5}{2}\right].}$$
-
-Esta es la **ecuación de Sackur–Tetrode** (1911–1912), que puede reescribirse de manera compacta:
-
-$$S = Nk_B\left[\ln\frac{V}{N}\left(\frac{2\pi mk_BT}{h^2}\right)^{3/2} + \frac{5}{2}\right].$$
-
-### 4.4 Propiedades de la fórmula de Sackur–Tetrode
-
-**1. Extensividad:** $S(\lambda N, \lambda V, T) = \lambda\, S(N, V, T)$ para cualquier $\lambda > 0$.
-
-*Demostración:* el factor $V/N$ bajo el logaritmo garantiza que al escalar simultáneamente $V \to \lambda V$ y $N \to \lambda N$, el argumento del logaritmo queda invariante.
-
-**2. Resolución de la paradoja de Gibbs:** para gases idénticos:
-
-$$\Delta S_\text{mezcla} = S(2N, 2V, T) - 2S(N, V, T) = 0.$$
-
-**3. Dependencia en $h$:** la presencia de la constante de Planck $h$ en la fórmula de Sackur–Tetrode indica que la entropía de un gas clásico tiene raíces cuánticas profundas. **No se puede calcular el valor absoluto de la entropía sin mecánica cuántica**.
-
-**4. Límite de baja temperatura:** cuando $T \to 0$, la fórmula predice $S \to -\infty$, lo que es una señal de que la física cuántica no relativista de partículas idénticas invalida la aproximación clásica a bajas temperaturas.
-
----
-
-## 5. Resolución completa de la paradoja de Gibbs
-
-*Fuente: Transcripción, minutos 140–165. Fuente complementaria: Reif, sec. 9.7.*
-
-### 5.1 La hipótesis de indistinguibilidad
-
-El factor $1/N!$ en el conteo de microestados proviene de la **indistinguibilidad cuántica** de las partículas idénticas:
-
-> Dos configuraciones que difieren solo en qué partícula ocupa qué estado cuántico **no son microestados distintos** si las partículas son idénticas.
-
-Esta propiedad —que no tiene análogo en la física clásica— implica que el número de microestados verdaderamente distinguibles es $N!$ veces menor que el conteo clásico.
-
-### 5.2 Verificación explícita
-
-Con la fórmula de Sackur–Tetrode:
-
-$$S_\text{inicial} = 2 \cdot Nk_B\left[\ln\frac{V}{N}\left(\frac{2\pi mk_BT}{h^2}\right)^{3/2} + \frac{5}{2}\right].$$
-
-$$S_\text{final} = (2N)k_B\left[\ln\frac{2V}{2N}\left(\frac{2\pi mk_BT}{h^2}\right)^{3/2} + \frac{5}{2}\right] = 2Nk_B\left[\ln\frac{V}{N}\left(\frac{2\pi mk_BT}{h^2}\right)^{3/2} + \frac{5}{2}\right].$$
-
-$$\Delta S = S_\text{final} - S_\text{inicial} = 0. \quad \checkmark$$
-
-### 5.3 Para gases diferentes
-
-Si los gases a ambos lados de la pared son de distinto tipo (diferente masa $m_1 \neq m_2$), entonces los microestados con partícula del tipo 1 en la "mitad derecha" y del tipo 2 en la "mitad izquierda" SÍ son distinguibles de las configuraciones con tipos intercambiados. En este caso:
-
-$$\Delta S_\text{mezcla} = Nk_B\ln 2 + Nk_B\ln 2 = 2Nk_B\ln 2 > 0.$$
-
-Este es el resultado correcto: mezclar gases distintos sí aumenta la entropía (el sistema se vuelve más desordenado al mezclarse).
-
----
-
-## 6. Modelo de espines y capacidad calorífica de sales paramagnéticas
-
-*Fuente: Transcripción, minutos 50–90. Fuente complementaria: Kittel & Kroemer, cap. 2; Reif, sec. 7.1.*
-
-### 6.1 El modelo
-
-El sistema de $N$ espines de Boltzmann (sin interacción entre ellos) en un campo magnético externo $B$ es un modelo exactamente soluble que permite calcular la capacidad calorífica desde principios microscópicos.
-
-Cada espín puede estar en dos estados:
-- **Paralelo al campo** ($\uparrow$): energía $\varepsilon_\uparrow = -\mu_B B$ (estado de baja energía).
-- **Antiparalelo al campo** ($\downarrow$): energía $\varepsilon_\downarrow = +\mu_B B$ (estado de alta energía).
-
-donde $\mu_B = e\hbar/(2m_e) = 9{,}274\times10^{-24}$ J/T es el magnetón de Bohr.
-
-### 6.2 Número de microestados compatibles con una energía dada
-
-Si hay $N_\uparrow$ espines paralelos y $N_\downarrow = N - N_\uparrow$ antiparalelos, la energía total es:
-
-$$U = N_\uparrow\varepsilon_\uparrow + N_\downarrow\varepsilon_\downarrow = -(N_\uparrow - N_\downarrow)\mu_BB = -M\mu_BB,$$
-
-donde $M = N_\uparrow - N_\downarrow$ es la magnetización total (análoga a la variable $s$ del ejemplo didáctico).
-
-El número de formas de elegir $N_\uparrow$ espines paralelos de entre $N$ es el coeficiente binomial:
-
-$$\Omega(N, N_\uparrow) = \binom{N}{N_\uparrow} = \frac{N!}{N_\uparrow!\, (N-N_\uparrow)!}.$$
-
-### 6.3 Entropía del sistema de espines
-
-$$S = k_B\ln\Omega = k_B\ln\binom{N}{N_\uparrow} \approx k_B\left[N\ln N - N_\uparrow\ln N_\uparrow - N_\downarrow\ln N_\downarrow\right],$$
-
-(aproximación de Stirling). Introduciendo $f = N_\uparrow/N$ (fracción de espines paralelos):
-
-$$S = -Nk_B\left[f\ln f + (1-f)\ln(1-f)\right].$$
-
-Esta expresión es la **entropía de Shannon** para una variable binaria, que tiene máximo en $f = 1/2$ (igual número de espines hacia arriba y hacia abajo: máximo desorden).
-
-### 6.4 Temperatura y capacidad calorífica
-
-Usando $1/T = (\partial S/\partial U)_{N,B}$ y la relación $U = -N\mu_BB(2f-1)$:
-
-$$f = \frac{1}{1 + e^{-2\mu_BB/k_BT}} = \frac{1}{2}\left(1 + \tanh\frac{\mu_BB}{k_BT}\right).$$
-
-La energía interna queda:
-
-$$U(T) = -N\mu_BB\tanh\frac{\mu_BB}{k_BT}.$$
-
-La capacidad calorífica a campo constante es:
-
-$$C_B = \left(\frac{\partial U}{\partial T}\right)_B = Nk_B\left(\frac{\mu_BB}{k_BT}\right)^2 \frac{1}{\cosh^2(\mu_BB/k_BT)}.$$
-
-**Comportamiento asintótico:**
-- $T \to \infty$ (límite de alta temperatura): $C_B \to Nk_B(\mu_BB/k_BT)^2 \to 0$.
-- $T \to 0$ (límite de baja temperatura): $C_B \to 0$ (exponencialmente).
-- La capacidad calorífica tiene un **máximo** ("pico de Schottky") a $T^* \approx 0{,}83\,\mu_BB/k_B$.
-
-Este comportamiento es radicalmente distinto del de los sólidos armónicos (ley de Dulong-Petit) o los gases ideales, y se ha verificado experimentalmente en sales paramagnéticas como CeSO₄·9H₂O y varios compuestos de iones de tierras raras.
-
----
-
-## 7. La mecánica estadística como base microscópica de la termodinámica
-
-*Fuente: Transcripción, minutos 155–190. Fuente complementaria: Huang, cap. 1.*
-
-### 7.1 La jerarquía conceptual
-
-El Prof. Oliva expuso la estructura conceptual del módulo:
+Ludwig Boltzmann (1877) formuló la respuesta más trascendente de la física térmica del siglo XIX: la entropía es una medida cuantitativa del **número de microestados microscópicos ($\Omega$) compatibles con el mismo macroestado termodinámico observable**.
 
 ```
-Mecánica cuántica + Mecánica clásica
-         ↓
-Mecánica estadística (física microscópica)
-         ↓
-Termodinámica (fenomenología macroscópica)
+                         CONEXIÓN MICRO-MACRO DE BOLTZMANN
+                                         │
+         ┌───────────────────────────────┴───────────────────────────────┐
+         ▼                                                               ▼
+   Macroestado Termodinámico (E, V, N)                             Microestado en el Espacio de Fases
+   - Presión P, Temperatura T, Volumen V                           - 6N coordenadas: (q⃗₁, p⃗₁, ..., q⃗_N, p⃗_N)
+   - Estados globales de equilibrio                                - Configuración instantánea exacta
+         │                                                               │
+         └───────────────────────────────┬───────────────────────────────┘
+                                         ▼
+                             Volumen Accesible en Espacio de Fases
+                                  Ω(E, V, N) = Conteo de microestados
+                                         │
+                                         ▼
+                                 Fórmula de Boltzmann:
+                                    S = k_B · ln Ω
 ```
 
-La termodinámica es un **marco conceptual efectivo**: sus leyes son verdaderas y útiles sin necesidad de conocer la física microscópica. Sin embargo, su significado profundo solo se revela a través de la mecánica estadística.
+### 1.1. Deducción Analítica de la Relación Logarítmica
+Consideremos dos sistemas termodinámicos independientes, $A$ y $B$, con números de microestados accesibles $\Omega_A$ y $\Omega_B$ respectivamente.
 
-### 7.2 La pregunta sobre la jerarquía infinita
+1. **Aditividad Macroscópica de la Entropía:**  
+   Dado que la entropía es una propiedad extensiva (demostrado por Clausius):
+   $$S_{AB} = S_A + S_B$$
+2. **Multiplicatividad Estadística de los Microestados:**  
+   Como los subsistemas $A$ y $B$ son estadísticamente independientes, por cada microestado en el cual se encuentre $A$, el subsistema $B$ puede hallarse en cualquiera de sus $\Omega_B$ estados. El número total de microestados combinados del sistema compuesto $AB$ es el producto de las probabilidades de fase:
+   $$\Omega_{AB} = \Omega_A \cdot \Omega_B$$
 
-El Prof. Oliva planteó la pregunta filosófica: ¿es la mecánica estadística a su vez un marco efectivo de algo más fundamental? No se conoce la respuesta. La existencia de una jerarquía potencialmente infinita de marcos conceptuales es una pregunta abierta en los fundamentos de la física.
+Buscamos una función monótona $S = f(\Omega)$ que cumpla simultáneamente ambas propiedades:
+$$f(\Omega_A \cdot \Omega_B) = f(\Omega_A) + f(\Omega_B)$$
 
-### 7.3 El papel de la constante de Planck
+Diferenciando esta ecuación funcional respecto a $\Omega_A$:
+$$\Omega_B\, f'(\Omega_A \cdot \Omega_B) = f'(\Omega_A)$$
 
-La aparición de $h$ en la fórmula de Sackur–Tetrode demuestra que **la termodinámica estadística no es completamente clásica**: aunque las partículas se traten como clásicas en su dinámica, el conteo de microestados requiere establecer una celda mínima de volumen $h^{3N}$ en el espacio de fases —lo que es esencialmente cuántico. Sin este piso cuántico, la entropía sería divergente y la termodinámica estaría mal definida.
+Multiplicando por $\Omega_A$:
+$$(\Omega_A \Omega_B)\, f'(\Omega_A \Omega_B) = \Omega_A\, f'(\Omega_A)$$
 
----
+Dado que el miembro izquierdo depende exclusivamente del producto $\Omega = \Omega_A \Omega_B$ y el derecho solo de $\Omega_A$, la expresión $\Omega f'(\Omega)$ debe ser idénticamente igual a una constante universal:
+$$\Omega\, f'(\Omega) = k_B \implies \frac{df}{d\Omega} = \frac{k_B}{\Omega}$$
 
-## 8. Síntesis del módulo: recorrido histórico y conceptual
+Integrando directamente:
+$$f(\Omega) = k_B \ln \Omega + C$$
 
-*Fuente: Transcripción, minutos 190–210. Fuente complementaria: Weinberg, prólogo.*
+Eligiendo el estado fundamental cuántico sin degeneración como referencia cero ($\Omega = 1 \implies S = 0$, Tercera Ley de Nernst):
 
-La Clase 06 cerró el primer módulo del Diplomado. El Prof. Oliva propuso a los estudiantes un trabajo final de 5 páginas sobre cualquiera de las seis clases, como síntesis de aprendizaje.
+$$\boxed{S = k_B \ln \Omega}$$
 
-### 8.1 Los seis temas del módulo
-
-| Clase | Tema central | Hito histórico |
-|-------|-------------|----------------|
-| 1 | Gas ideal, teoría cinética, átomo | Boltzmann (1872), Maxwell (1859) |
-| 2 | Distribución de Maxwell–Boltzmann | Maxwell (1860), Boltzmann (1868) |
-| 3 | Movimiento browniano, Fokker–Planck | Einstein (1905), Perrin (1908) |
-| 4 | Termodinámica: ecuación de estado, fases | Van der Waals (1873), Gibbs (1876) |
-| 5 | Segunda ley, entropía termodinámica | Clausius (1865), Kelvin (1851) |
-| 6 | Física estadística, Sackur–Tetrode, indistinguibilidad | Boltzmann (1877), Sackur–Tetrode (1911–12) |
-
-### 8.2 El mensaje central del módulo
-
-La física clásica del siglo XIX (termodinámica y teoría cinética) es extraordinariamente exitosa en predecir propiedades macroscópicas de los gases y de los materiales. Sin embargo, en su propio seno contiene semillas que apuntan inevitablemente hacia la física cuántica:
-- La paradoja de Gibbs requiere la indistinguibilidad cuántica.
-- La constante de Planck es necesaria para calcular la entropía absoluta.
-- El movimiento browniano y su relación con la temperatura anuncian la relación de Einstein–Smoluchowski.
-- Las anomalías de las capacidades caloríficas a bajas temperaturas (sales paramagnéticas, sólidos cuánticos) no se pueden explicar clásicamente.
+donde $k_B \approx 1.380649 \times 10^{-23}\text{ J/K}$ es la constante de Boltzmann, introducida explícitamente en la literatura por Max Planck en 1900.
 
 ---
 
-## Conclusiones de la Clase
+## 2. La Paradoja de Gibbs y la Indistinguibilidad Cuántica
 
-1. **La entropía termodinámica $\propto Nk_B\ln V$ no es extensiva**, lo que da lugar a la paradoja de Gibbs: la entropía predice un aumento de $\Delta S = 2Nk_B\ln 2$ al mezclar gases idénticos, cuando debería ser nulo.
+*Fuente: Notas a mano Clase 6, diaps. 6–8; Transcripción 00:55–01:40; Weinberg, §2.4.*
 
-2. **La mecánica estadística** es el marco microscópico que explica las leyes termodinámicas. Sus ingredientes fundamentales son: la distinción macroestado/microestado, y la hipótesis de equiprobabilidad de Boltzmann.
+En la formulación de la mecánica clásica, el estado microscópico de un gas de $N$ partículas está determinado por un punto en el **espacio de fases** $\Gamma$ de $6N$ dimensiones: $(\vec{q}_1, \dots, \vec{q}_N; \vec{p}_1, \dots, \vec{p}_N)$. El número de microestados se calculaba dividiendo el volumen continuo de la hipersuperficie de energía por una celda de referencia:
 
-3. **Hipótesis de Boltzmann:** para un sistema aislado, todos los microestados compatibles tienen la misma probabilidad. La entropía estadística es $S = k_B\ln\Omega$.
+$$\Omega_{\text{clásica}} = \frac{1}{\Delta \Gamma_0} \int \prod_{i=1}^N d^3q_i\, d^3p_i$$
 
-4. **Fórmula de Sackur–Tetrode:** la entropía del gas ideal monoatómico derivada desde la física microscópica (con indistinguibilidad cuántica, $1/N!$ en $\Omega$) es:
-$$S = Nk_B\left[\ln\frac{V}{N}\left(\frac{2\pi mk_BT}{h^2}\right)^{3/2} + \frac{5}{2}\right].$$
+### 2.1. La Paradoja de la Mezcla de Gases Idénticos
+Si aplicamos esta expresión clásica al cálculo de la entropía de un gas ideal, se obtiene una dependencia con el volumen del tipo $S \propto N k_B \ln V$. 
 
-5. Esta fórmula es **extensiva** y **resuelve la paradoja de Gibbs**: $\Delta S_\text{mezcla} = 0$ para gases idénticos.
+Consideremos un recipiente rígido de volumen total $2V$, dividido por un tabique central en dos compartimentos de volumen $V$, cada uno conteniendo $N$ moléculas del **mismo gas ideal a idéntica temperatura $T$ y presión $P$**.
+- Antes de remover el tabique: $S_{\text{inicial}} = S_1 + S_2 = 2 S(T, V, N)$.
+- Al remover el tabique, las moléculas se difunden libremente en el volumen combinado $2V$. La energía térmica y la masa se conservan, por lo que macroscópicamente el estado final no ha cambiado en absoluto: sigue siendo un gas homogéneo a temperatura $T$ y presión $P$.
+- Sin embargo, la fórmula clásica predice un aumento espurio de entropía (**entropía de mezcla de Gibbs**):
+  $$\Delta S_{\text{mezcla}} = S_{\text{final}} - S_{\text{inicial}} = 2N k_B \ln(2V) - 2N k_B \ln V = 2N k_B \ln 2 > 0$$
 
-6. **La indistinguibilidad cuántica** (dividir $\Omega$ por $N!$) es la hipótesis física clave que resuelve la paradoja y anticipa la mecánica cuántica.
+Esto representaría un proceso macroscópico irreversible espontáneo sin cambio alguno en ninguna variable de estado, violando la extensividad de la entropía ($S(\alpha E, \alpha V, \alpha N) = \alpha S(E, V, N)$).
 
-7. **La constante de Planck $h$ es necesaria** para calcular el valor absoluto de la entropía del gas ideal: la termodinámica no puede ser completamente separada de la física cuántica.
+```
+                        LA PARADOJA DE GIBBS Y SU RESOLUCIÓN
+                                          │
+         ┌────────────────────────────────┴────────────────────────────────┐
+         ▼                                                                 ▼
+   Hipótesis Clásica (Partículas Distinguibles)                    Corrección de Gibbs (Indistinguibilidad)
+   - Cada átomo posee una "etiqueta" imaginaria                   - Las partículas idénticas no son distinguibles
+   - Permutar dos átomos genera un nuevo microestado              - Permutar N átomos no cambia el estado físico
+   - Volumen de fase sobreestimado por N!                         - Hay que dividir el espacio de fases por N!
+                                          │
+                                          ▼
+                         Ecuación de Sackur-Tetrode (1912):
+                           Celda elemental de volumen h³
+               S = N k_B · [ ln( (V/N) · (4π m U / 3 h² N)^(3/2) ) + 5/2 ]
+```
 
-8. **Sistema de espines:** el modelo de $N$ espines sin interacción en campo magnético $B$ permite calcular exactamente $\Omega$, $S$, $T$ y la capacidad calorífica, que presenta un pico de Schottky a $T^* \approx 0{,}83\mu_BB/k_B$.
+### 2.2. La Solución de Gibbs y la Celda Cuántica
+Josiah Willard Gibbs (1902) comprendió que la mecánica clásica contenía un error conceptual: asumir que las partículas atómicas idénticas son individualmente distinguibles mediante etiquetas imaginarias. En la naturaleza:
+> *La permutación de dos partículas idénticas de la misma especie química no genera un nuevo microestado físico; describe exactamente el mismo estado del ensamble.*
 
-9. **Estructura conceptual:** la mecánica estadística es el puente entre la física microscópica (mecánica cuántica y clásica) y la termodinámica macroscópica.
+Existen $N!$ permutaciones posibles de las $N$ partículas. Por lo tanto, el número de microestados físicos accesibles debe ser **dividido estrictamente entre $N!$**:
 
-10. **Mensaje del módulo:** la física clásica del siglo XIX apunta inevitablemente a la mecánica cuántica; la paradoja de Gibbs, la constante de Planck en la entropía y las anomalías de capacidades caloríficas son los primeros indicios.
+$$\Omega_{\text{Gibbs}} = \frac{1}{N!\, h^{3N}} \int \prod_{i=1}^N d^3q_i\, d^3p_i$$
+
+donde la constante $h$ (con dimensiones de acción $[p \cdot q] = \text{J}\cdot\text{s}$) corresponde al cuanto de acción de Planck, el cual define el volumen elemental irreductible de una celda en el espacio de fases bidimensional $(\Delta q_x \Delta p_x \ge h)$.
+
+Aplicando la aproximación asintótica de Stirling $\ln(N!) \approx N \ln N - N$:
+$$\ln\left(\frac{V^N}{N!}\right) = N \ln V - (N \ln N - N) = N \ln\left(\frac{V}{N}\right) + N$$
+
+La dependencia no extensiva $\ln V$ se transforma en la dependencia intensiva canónica $\ln(V/N) = \ln v$, resolviendo de manera exacta la paradoja de Gibbs ($\Delta S_{\text{mezcla}} = 0$ para gases idénticos). Esto condujo en 1912 a la célebre **Ecuación de Sackur-Tetrode** para la entropía absoluta del gas ideal monoatómico:
+
+$$\boxed{S = N k_B \left[\ln\left(\frac{V}{N}\left(\frac{4\pi m U}{3 h^2 N}\right)^{3/2}\right) + \frac{5}{2}\right]}$$
 
 ---
 
-## Referencias Bibliográficas
+## 3. Colectividades Estadísticas de Gibbs
 
-### 1. Artículos científicos originales (fuentes primarias)
+*Fuente: Notas a mano Clase 6, diaps. 9–13; Transcripción 01:40–02:25; Weinberg, §2.4.*
 
-- Sackur, O. (1911). *Die Anwendung der kinetischen Theorie der Gase auf chemische Probleme.* Annalen der Physik, **36**, 958–980.
-- Tetrode, H. (1912). *Die chemische Konstante der Gase und das elementare Wirkungsquantum.* Annalen der Physik, **38**, 434–442; **39**, 255–256.
-- Boltzmann, L. (1877). *Über die Beziehung zwischen dem zweiten Hauptsatze der mechanischen Wärmetheorie und der Wahrscheinlichkeitsrechnung.* Sitzungsberichte der Akademie der Wissenschaften, **76**, 373–435.
-- Einstein, A. (1907). *Die Plancksche Theorie der Strahlung und die Theorie der spezifischen Wärme.* Annalen der Physik, **22**, 180–190.
-- Schottky, W. (1922). *Über die Drehung der Atomachsen in festen Körpern.* Physikalische Zeitschrift, **23**, 448.
+J. Willard Gibbs sistematizó la mecánica estadística mediante el concepto de **colectividad o ensamble** (*ensemble*): un conjunto mental gigantesco de copias virtuales idénticas del sistema macroscópico, caracterizadas por distintas condiciones de contorno con su entorno.
 
-### 2. Textos del curso
+```
+                         LAS TRES COLECTIVIDADES DE GIBBS
+                                         │
+         ┌───────────────────────────────┼───────────────────────────────┐
+         ▼                               ▼                               ▼
+   Colectividad Microcanónica          Colectividad Canónica           Colectividad Gran Canónica
+   - Sistema aislado                   - En contacto térmico           - Contacto térmico y químico
+   - Variables fijas: (E, V, N)        - Variables fijas: (T, V, N)    - Variables fijas: (T, V, μ)
+   - Intercambio: NINGUNO              - Intercambio: ENERGÍA          - Intercambio: ENERGÍA Y MATERIA
+   - P_i = 1 / Ω                       - P_i = e^(-β E_i) / Z          - P_i = e^(-β(E_i - μ N)) / Ξ
+   - Potencial: S = k_B ln Ω           - Potencial: F = -k_B T ln Z    - Potencial: Φ_G = -k_B T ln Ξ
+```
 
-- Weinberg, S. (2021). *Foundations of Modern Physics*. Cambridge University Press. Caps. 3–4.
+### 3.1. Colectividad Canónica y Función de Partición
+Consideremos un sistema cerrado de volumen $V$ y número de partículas $N$ en equilibrio térmico con un reservorio gigante a temperatura $T$.
 
-### 3. Textos universitarios estándar
+La probabilidad $P_i$ de que el sistema se encuentre en un microestado individual específico $i$ con energía $E_i$ está gobernada por el **factor de Boltzmann**:
+$$P_i = \frac{e^{-\beta E_i}}{Z}$$
+donde $\beta = \frac{1}{k_B T}$ y la constante de normalización $Z$ es la **Función de Partición Canónica**:
 
-- Reif, F. (1965). *Fundamentals of Statistical and Thermal Physics*. McGraw-Hill. Caps. 6, 7, 9.
-- Kittel, C., & Kroemer, H. (1980). *Thermal Physics* (2ª ed.). W. H. Freeman. Caps. 1–4.
-- Huang, K. (1987). *Statistical Mechanics* (2ª ed.). John Wiley & Sons. Caps. 1, 6.
-- Pathria, R. K., & Beale, P. D. (2011). *Statistical Mechanics* (3ª ed.). Elsevier. Caps. 1–3.
+$$\boxed{Z(T, V, N) = \sum_i e^{-\beta E_i}}$$
 
-### 4. Recursos de libre acceso verificados
+Para un gas clásico en el continuo del espacio de fases:
+$$Z = \frac{1}{N!\, h^{3N}} \int d^{3N}q\, d^{3N}p\, \exp\left(-\beta H(\vec{q}, \vec{p})\right)$$
 
-- Feynman, R. P. et al. (1963). *The Feynman Lectures on Physics*, Vol. I, cap. 40: *The Principles of Statistical Mechanics*. [https://www.feynmanlectures.caltech.edu/I_40.html](https://www.feynmanlectures.caltech.edu/I_40.html)
-- Feynman, R. P. et al. (1963). *The Feynman Lectures on Physics*, Vol. I, cap. 46: *The Ratchet and the Pawl*. [https://www.feynmanlectures.caltech.edu/I_46.html](https://www.feynmanlectures.caltech.edu/I_46.html)
-- Sethna, J. P. (2021). *Statistical Mechanics: Entropy, Order Parameters, and Complexity* (2ª ed.). Oxford. Disponible en: [https://sethna.lassp.cornell.edu/StatMech/EntropyOrderParametersComplexity20.pdf](https://sethna.lassp.cornell.edu/StatMech/EntropyOrderParametersComplexity20.pdf)
+### 3.2. Conexión Directa con la Termodinámica
+Gibbs demostró que la función de partición canónica $Z$ es el puente maestro hacia toda la termodinámica clásica mediante la **Energía Libre de Helmholtz** $F(T, V, N)$:
 
-### 5. Historia y filosofía de la física
+$$\boxed{F = -k_B T \ln Z = -\frac{1}{\beta} \ln Z}$$
 
-- Brush, S. G. (1983). *Statistical Physics and the Atomic Theory of Matter*. Princeton University Press. Caps. 4–5.
-- Gallavotti, G. (1999). *Statistical Mechanics: A Short Treatise*. Springer. Cap. 1.
-- Cercignani, C. (1998). *Ludwig Boltzmann: The Man Who Trusted Atoms*. Oxford University Press.
+A partir de $F$, todas las magnitudes termodinámicas se obtienen mediante diferenciación analítica directa:
+1. **Energía interna media:**
+   $$U = \langle E\rangle = -\frac{\partial \ln Z}{\partial \beta} = k_B T^2 \frac{\partial \ln Z}{\partial T}$$
+2. **Presión:**
+   $$P = -\left(\frac{\partial F}{\partial V}\right)_T = k_B T \left(\frac{\partial \ln Z}{\partial V}\right)_T$$
+3. **Entropía:**
+   $$S = -\left(\frac{\partial F}{\partial T}\right)_{V, N} = k_B \ln Z + \frac{U}{T}$$
+
+---
+
+## 4. La Teoría de Einstein del Movimiento Browniano (1905)
+
+*Fuente: Notas a mano Clase 6, diaps. 14–17; Transcripción 02:25–03:15; Weinberg, §2.6; Einstein (1905); Perrin (1909).*
+
+A comienzos del siglo XX, a pesar de los éxitos matemáticos de Maxwell y Boltzmann, prominentes físicos y filósofos de la ciencia —liderados por Ernst Mach y el premio Nobel de química Wilhelm Ostwald— rechazaban ferozmente la realidad física del átomo, catalogando a las moléculas como "artificios matemáticos auxiliares sin existencia ontológica real".
+
+En mayo de 1905 (su *Annus Mirabilis*), Albert Einstein publicó su célebre artículo:
+> *"Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden Flüssigkeiten suspendierten Teilchen"*  
+> (*Sobre el movimiento de partículas suspendidas en líquidos en reposo requerido por la teoría molecular-cinética del calor*).
+
+Einstein comprendió que si la teoría cinética era correcta, las partículas mesoscópicas microscópicamente visibles (como granos de polen o esporas de gomaguta suspendidas en agua, observadas por Robert Brown en 1827) debían estar en equilibrio térmico con las moléculas invisibles del líquido, sufriendo fluctuaciones de presión no balanceadas.
+
+```
+                    TEORÍA DE EINSTEIN DEL MOVIMIENTO BROWNIANO (1905)
+                                            │
+         ┌──────────────────────────────────┴──────────────────────────────────┐
+         ▼                                                                     ▼
+   Presión Osmótica Molecular (Van 't Hoff)                      Fuerza Hidrodinámica de Fricción (Stokes)
+   P_osm = n · k_B · T                                           F_arrastre = 6π · η · r · v
+   Fuerza impulsora: -∇ P_osm                                    Movilidad: μ = v / F = 1 / (6π η r)
+         │                                                                     │
+         └──────────────────────────────────┬──────────────────────────────────┘
+                                            ▼
+                       Relación de Einstein-Smoluchowski:
+                               D = μ · k_B · T = k_B · T / (6π η r)
+                                            │
+                                            ▼
+                     Desplazamiento Cuadrático Medio Observable:
+                             ⟨x²(t)⟩ = 2 D t = [ R T / (3π η r N_A) ] · t
+                                            │
+                                            ▼
+                         Experimentos Decisivos de Jean Perrin (1908)
+                             Cálculo experimental directo de N_A
+                             Capitulación definitiva del antiatomismo
+```
+
+### 4.1. Deducción de la Relación de Einstein
+Consideremos partículas coloidales suspendidas de radio $r$ en un líquido de viscosidad $\eta$ a temperatura $T$. Si se establece un gradiente de concentración $\frac{\partial n}{\partial x}$, la presión osmótica $P_{\text{osm}} = n k_B T$ genera una fuerza termodinámica por unidad de volumen:
+$$F_{\text{osm}} = -\frac{\partial P_{\text{osm}}}{\partial x} = -k_B T \frac{\partial n}{\partial x}$$
+
+La fuerza que actúa sobre cada partícula individual suspendida es:
+$$f_{\text{partícula}} = \frac{F_{\text{osm}}}{n} = -\frac{k_B T}{n} \frac{\partial n}{\partial x}$$
+
+Esta fuerza induce una velocidad sistemática de arrastre $v_{\text{arrastre}} = \mu\, f_{\text{partícula}}$, donde $\mu$ es la **movilidad hidrodinámica**, dada por la inversa del coeficiente de fricción de Stokes:
+$$\mu = \frac{1}{6\pi \eta r}$$
+
+El flujo sistemático de partículas resultante es:
+$$J_{\text{arrastre}} = n\, v_{\text{arrastre}} = n \mu\left(-\frac{k_B T}{n}\frac{\partial n}{\partial x}\right) = -\mu\, k_B T \frac{\partial n}{\partial x}$$
+
+Por otro lado, por la Primera Ley de Fick, el flujo difusivo molecular es:
+$$J_{\text{difusión}} = -D \frac{\partial n}{\partial x}$$
+
+En el estado estacionario de equilibrio, ambos flujos deben balancearse idénticamente ($J_{\text{arrastre}} = J_{\text{difusión}}$):
+$$-\mu\, k_B T \frac{\partial n}{\partial x} = -D \frac{\partial n}{\partial x}$$
+
+Igualando los coeficientes, obtenemos la **Relación de Einstein-Smoluchowski**:
+
+$$\boxed{D = \mu\, k_B T = \frac{k_B T}{6\pi \eta r}}$$
+
+Esta fórmula es el prototipo del **Teorema de Fluctuación-Disipación**: relaciona directamente un fenómeno puramente disipativo e irreversible a nivel macroscópico (la viscosidad $\eta$) con la intensidad de las fluctuaciones térmicas aleatorias microscópicas ($k_B T$ y el coeficiente de difusión $D$).
+
+### 4.2. El Desplazamiento Cuadrático Medio Observable
+A partir de la solución de la ecuación de difusión obtenida en la Clase 03, el desplazamiento medio de las partículas en un plano unidimensional $x$ es nulo ($\langle x(t)\rangle = 0$), pero el **desplazamiento cuadrático medio** crece linealmente con el tiempo:
+
+$$\langle x^2(t)\rangle = 2\, D\, t$$
+
+Sustituyendo $D = \frac{k_B T}{6\pi \eta r}$ y $k_B = \frac{R}{N_A}$:
+
+$$\boxed{\langle x^2(t)\rangle = \frac{R T}{3\pi \eta r N_A}\, t \implies \Delta x_{\text{rms}} = \sqrt{\frac{R T}{3\pi \eta r N_A}}\,\sqrt{t}}$$
+
+### 4.3. El Triunfo Definitivo del Átomo: Los Experimentos de Jean Perrin (1908)
+Einstein observó con agudeza que en su fórmula todas las variables son medibles directamente en el laboratorio macroscópico bajo un microscopio óptico ordinario:
+- El desplazamiento cuadrático medio $\langle x^2\rangle$ de una partícula coloidal observada en intervalos regulares de tiempo $t$.
+- La temperatura $T$, la viscosidad del líquido $\eta$, el radio coloidal esférico $r$ y la constante universal de los gases $R$.
+
+Despejando el **número de Avogadro**:
+
+$$\boxed{N_A = \frac{R T}{3\pi \eta r}\left(\frac{t}{\langle x^2\rangle}\right)}$$
+
+El físico francés Jean Perrin, mediante minuciosos experimentos de sedimentación coloidal y seguimiento microscópico de partículas de gomaguta entre 1908 y 1909, midió $\langle x^2(t)\rangle$ para miles de trayectorias, determinando un valor experimental de:
+$$N_A \approx 6.0 \times 10^{23}\text{ mol}^{-1}$$
+idéntico al obtenido por métodos totalmente dispares (electrólisis de Faraday, leyes de radiación de Planck, teoría cinética de gases). 
+
+Ante la consistencia ineludible de estas mediciones, Wilhelm Ostwald capituló públicamente en 1908:
+> *"Me he convencido de que hemos entrado recientemente en posesión de pruebas experimentales de la naturaleza discontinua de la materia, la cual la hipótesis atómica había postulado durante siglos."*
+
+El movimiento browniano transformó la hipótesis atómica en una realidad física incontestable, otorgándole a Jean Perrin el Premio Nobel de Física en 1926.
+
+---
+
+## 5. El Horizonte hacia la Física Cuántica
+
+*Fuente: Transcripción Clase 6, 03:00–03:19; Weinberg, Cap. 3.*
+
+A pesar del colosal triunfo de la física estadística de Boltzmann y Einstein, el cierre del siglo XIX trajo consigo paradojas insolubles para la mecánica clásica continua:
+1. **La Catástrofe de los Calores Específicos:** El teorema de equipartición asigna rígidamente $\frac{1}{2}k_B T$ a cada grado de libertad cuadrático, prediciendo capacidades caloríficas molares independientes de la temperatura. En el laboratorio, $C_V(T) \to 0$ al enfriar los sólidos hacia el cero absoluto, lo que solo pudo explicarse cuando Einstein (1907) introdujo la cuantización de los osciladores armónicos atómicos.
+2. **La Catástrofe Ultravioleta:** La radiación térmica del cuerpo negro en equilibrio estadístico predecía una densidad infinita de energía espectral para longitudes de onda cortas (Rayleigh-Jeans), obligando a Max Planck en 1900 a postular que los intercambios de energía térmica ocurren en paquetes discretos $\varepsilon = h\nu$.
+
+La física estadística clásica culminó triunfalmente demostrando la existencia real de los átomos, pero abrió inevitablemente las compuertas hacia la mayor revolución científica del siglo XX: la **Mecánica Cuántica** (objeto del Módulo 02).
+
+---
+
+## 6. Conclusiones de la Clase
+
+1. **La fórmula de Boltzmann:** La entropía termodinámica macroscópica de Clausius es proporcional al logaritmo del número de microestados accesibles en el espacio de fases: $S = k_B \ln \Omega$.
+2. **Indistinguibilidad elemental:** La paradoja de Gibbs demuestra que las partículas idénticas de la misma especie son cuánticamente indistinguibles, obligando a dividir el volumen de fase entre $N!$ e introduciendo el volumen de celda $h^3$ en la ecuación de Sackur-Tetrode.
+3. **Colectividades de Gibbs:** La función de partición canónica $Z = \sum e^{-\beta E_i}$ permite deducir todos los potenciales termodinámicos a través de la energía libre de Helmholtz: $F = -k_B T \ln Z$.
+4. **Triunfo ontológico del átomo:** La teoría de Einstein del movimiento browniano (1905) estableció la relación de fluctuación-disipación $D = \frac{k_BT}{6\pi\eta r}$ y el desplazamiento cuadrático medio $\langle x^2\rangle = \frac{RT}{3\pi\eta r N_A}t$, permitiendo a Jean Perrin medir $N_A$ y zanjar definitivamente la realidad del átomo.
+5. **Transición al Módulo 02:** El fracaso de la equipartición clásica a bajas temperaturas y la radiación de cavidad revelan que la física estadística pre-cuántica necesita incorporar la discretización cuántica de los niveles de energía.
+
+---
+
+## 7. Referencias Bibliográficas
+
+1. **Fuentes primarias y artículos históricos:**
+   - Boltzmann, L. (1877). "Über die Beziehung zwischen dem zweiten Hauptsatze der mechanischen Wärmetheorie und der Wahrscheinlichkeitsrechnung respektive den Sätzen über das Wärmegleichgewicht". *Wiener Berichte*, 76, 373–435.
+   - Gibbs, J. W. (1902). *Elementary Principles in Statistical Mechanics*. Nueva York: Charles Scribner's Sons.
+   - Einstein, A. (1905). "Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden Flüssigkeiten suspendierten Teilchen". *Annalen der Physik*, 17, 549–560.
+   - Perrin, J. (1909). "Mouvement brownien et réalité moléculaire". *Annales de Chimie et de Physique*, 18, 5–114.
+2. **Textos y materiales del diplomado:**
+   - Oliva Zapata, J. E. (2026). *Material pedagógico de Clase 06: Mecánica estadística, colectividades y movimiento browniano*. Universidad de Concepción.
+   - Oliva Zapata, J. E. (2026). *Clase 6 Notas a mano.pdf* (Apuntes manuscritos de cátedra).
+3. **Textos universitarios canónicos:**
+   - Weinberg, S. (2021). *Foundations of Modern Physics*. Cambridge: Cambridge University Press. Cap. 2: §2.4 "Kinetic Theory and Statistical Mechanics", pp. 33–42; §2.6 "The Atomic Scale", pp. 53–60.
+   - Pathria, R. K., & Beale, P. D. (2011). *Statistical Mechanics* (3ª ed.). Ámsterdam: Elsevier. Caps. 1–3.
+   - Huang, K. (1987). *Statistical Mechanics* (2ª ed.). Nueva York: John Wiley & Sons.

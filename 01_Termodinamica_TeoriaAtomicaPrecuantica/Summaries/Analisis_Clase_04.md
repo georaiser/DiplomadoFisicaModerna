@@ -1,422 +1,245 @@
-# Análisis de Clase 04 — Termodinámica y Teoría Atómica Pre-Cuántica
+# Análisis de Clase 04: Ruptura del Gas Ideal, Ecuación de Estado de Van der Waals y la Primera Ley de la Termodinámica
+
+**Diplomado en Física Moderna — Módulo 01: Termodinámica y Teoría Atómica Precuántica**  
+**Docente:** Dr. Julio Eduardo Oliva Zapata  
+**Fecha de la sesión:** 05 de junio de 2026  
+**Duración:** 3 horas 06 minutos  
+**Fuentes trianguladas:**
+- Transcripción oficial de la clase grabada (`Clase_04/grabacion/Clase del Diplomado de Física Moderna.docx`).
+- Diapositivas y apuntes manuscritos oficiales: `Clase_04/Clase 4 preliminar.pdf` (24 págs) y `Clase_04/Notas tablet clase 4.pdf` (12 págs).
+- Texto guía central: Steven Weinberg, *Foundations of Modern Physics* (Cambridge University Press, 2021), Cap. 2: §2.1 *Heat and Energy* (pp. 16–21) y §2.2 *Absolute Temperature* (pp. 21–27).
+- Fuentes primarias históricas: J. D. van der Waals, *Over de Continuïteit van den Gas- en Vloeistoftoestand* (Tesis doctoral, Leiden, 1873); J. P. Joule, *On the Caloric Effects of Magneto-Electricity, and on the Mechanical Value of Heat*, Phil. Mag. 23, 263 (1843); J. C. Maxwell, *On the Dynamical Evidence of the Molecular Constitution of Bodies*, Nature 11, 357 (1875); S. Carnot, *Réflexions sur la puissance motrice du feu* (1824).
 
 ---
 
-## Encabezado
+## 1. El Límite del Gas Ideal y la Evidencia de las Fuerzas Intermoleculares
 
-| Campo | Detalle |
-|-------|---------|
-| **Módulo** | Termodinámica y Teoría Atómica Pre-Cuántica (Módulo 1) |
-| **Docente** | Prof. Julio Eduardo Oliva Zapata |
-| **Fecha** | 5 de junio de 2026 |
-| **Duración** | 3 h 6 min |
-| **Resultados de aprendizaje** | Variables y ecuaciones de estado; superficie de fase del gas ideal y real (Van der Waals); compresibilidad isotérmica y estabilidad de fases; transiciones de fase líquido–gas; procesos cuasi estáticos vs. repentinos; capacidades caloríficas $C_V$ y $C_P$; primer principio de la termodinámica; paradoja de Gibbs |
+*Fuente: Diapositivas Clase 4, diaps. 1–8; Notas tablet diaps. 1–3; Transcripción 00:03–00:45; Weinberg, §2.1.*
 
----
+El modelo cinético de los gases ideales analizado en las Clases 01 a 03 descansa sobre dos aproximaciones drásticas:
+1. Las partículas son puntos geométricos sin extensión espacial finita ($V_{\text{propio}} = 0$).
+2. No existen fuerzas de interacción atractiva ni repulsiva a distancia entre moléculas ($U_{\text{inter}}(r) = 0$).
 
-## Fuentes Utilizadas
+Aunque este modelo reproduce con gran exactitud el comportamiento de gases diluidos a presiones moderadas ($P \lesssim 1\text{ bar}$) y temperaturas elevadas, **fracasa de manera catastrófica al intentar describir la condensación gaseosa hacia la fase líquida**, así como el comportamiento a altas densidades. 
 
-- **Transcripción de video:** `Clase_04/grabacion/Clase del Diplomado de Física Moderna.docx` (fuente principal, ~136 KB, procesada en su totalidad).  
-- **Diapositivas:** `Clase_04/Clase 4 preliminar.pdf` y `Clase_04/Notas tablet clase 4.pdf`.  
-- **Libro de referencia central:** Steven Weinberg, *Foundations of Modern Physics* (Cambridge University Press, 2021).  
-- **Bibliografía de apoyo:** Callen, *Thermodynamics and an Introduction to Thermostatistics* (Wiley, 1985); Zemansky & Dittman, *Heat and Thermodynamics* (McGraw-Hill, 1997); Fermi, *Thermodynamics* (Dover, 1956).
+Definiendo el **factor de compresibilidad** adimensional:
+$$Z = \frac{P V_m}{R T}$$
+donde $V_m = \frac{V}{n}$ es el volumen molar. Para un gas ideal, $Z = 1$ en todo el espacio de estados $(P, T)$. Los experimentos de Thomas Andrews (1869) con dióxido de carbono ($CO_2$) mostraron que $Z$ desciende marcadamente por debajo de 1 a presiones intermedias (evidenciando fuerzas atractivas cohesivas que facilitan la compresión) y se dispara por encima de 1 a presiones muy elevadas (evidenciando la repulsión estérica debida al volumen impenetrable de los núcleos atómicos).
 
----
-
-## 1. Motivación: ¿qué hemos construido y hacia dónde vamos?
-
-*Fuente: Transcripción, minutos 0–10. Fuente complementaria: Weinberg, cap. 1.*
-
-El Prof. Oliva recapituló los tres pilares construidos en las sesiones anteriores:
-
-1. **Fenomenología del gas ideal:** la ley $PV = Nk_BT$ como síntesis de las leyes de Boyle, Charles y Gay-Lussac.
-2. **Modelo microscópico:** la temperatura como medida de la energía cinética promedio de traslación; distribución de Maxwell–Boltzmann para velocidades.
-3. **Movimiento browniano:** evidencia de la naturaleza discreta de la materia; difusión como consecuencia estadística de los choques moleculares.
-
-En la Clase 04, el enfoque se desplaza hacia la **termodinámica macroscópica**: cómo se relacionan entre sí las variables macroscópicas (presión, volumen, temperatura, entropía) sin necesidad de recurrir al nivel microscópico; qué procesos están permitidos; y cómo predecir el comportamiento de fases (gas, líquido, sólido).
+```
+                      DESVIACIONES DEL GAS IDEAL Y FACTOR Z
+             Z
+             ▲
+             │             / (Repulsión dominante a alta P: Z > 1)
+             │            /
+         1.0 ┼───────────/─────── Gas Ideal (Z = 1)
+             │          / 
+             │   ╭─────╯  (Atracción dominante a P moderada: Z < 1)
+             │  ╭╯
+             └──┴────────────────────────► P
+```
 
 ---
 
-## 2. Variables termodinámicas de estado
+## 2. Deducción Física de la Ecuación de Estado de Van der Waals (1873)
 
-*Fuente: Transcripción, minutos 10–25. Fuente complementaria: Callen, cap. 1; Zemansky, cap. 2.*
+*Fuente: Notas tablet Clase 4, diaps. 3–7; Diapositivas Clase 4, diaps. 9–16; Transcripción 00:45–01:30; Van der Waals (1873).*
 
-El Prof. Oliva clasificó las **variables de estado** de un sistema termodinámico —aquellas que se pueden medir en cualquier punto del sistema en equilibrio— como:
+Johannes Diderik van der Waals propuso en su tesis doctoral de 1873 dos modificaciones microscópicas exactas a la ecuación ideal $P V_m = R T$:
 
-| Variable | Símbolo | Descripción |
-|----------|---------|-------------|
-| Número de partículas | $N$ | Conteo de constituyentes |
-| Volumen | $V$ | Extensión geométrica del sistema |
-| Presión | $P$ | Fuerza por unidad de área |
-| Temperatura | $T$ | Medida de la energía cinética promedio de traslación |
-| Entropía termodinámica | $S$ | Medida del desorden; requiere derivación adicional |
-| Capacidad calorífica a $V$ cte. | $C_V$ | Costo energético de subir la temperatura a $V$ fijo |
-| Capacidad calorífica a $P$ cte. | $C_P$ | Costo energético de subir la temperatura a $P$ fija |
-| Compresibilidad isotérmica | $\kappa_T$ | Respuesta del volumen ante cambios de presión a $T$ fija |
+### 2.1. Corrección por Volumen Excluido (Parámetro $b$)
+Las moléculas son partículas materiales de radio finito $r_0$ (o diámetro de colisión $d = 2r_0$). El centro de masa de una segunda molécula no puede acercarse al centro de la primera a una distancia inferior a $d$. Por tanto, cada par de moléculas excluye una esfera de radio $d$, cuyo volumen impenetrable es:
+$$v_{\text{esfera excl}} = \frac{4}{3}\pi d^3 = \frac{4}{3}\pi (2r_0)^3 = 8\left(\frac{4}{3}\pi r_0^3\right) = 8\, v_{\text{mol}}$$
 
-Las capacidades caloríficas se expresan en J/K antes de dividir por la cantidad de materia, y en J/(mol·K) o J/(kg·K) cuando se dividen por ella (calores específicos).
+Dado que este volumen es excluido conjuntamente para el par, el volumen impenetrable atribuible a cada molécula individual es la mitad:
+$$v_{\text{excl, individual}} = \frac{1}{2}(8 v_{\text{mol}}) = 4\, v_{\text{mol}}$$
 
----
+Para un mol de sustancia ($N_A$ moléculas), el **covolumen** o volumen molar excluido $b$ es:
+$$b = 4\, N_A \left(\frac{4}{3}\pi r_0^3\right)$$
 
-## 3. Equilibrio termodinámico y ecuación de estado
+En consecuencia, el volumen libre real en el cual las moléculas pueden desplazarse no es $V$, sino:
+$$V_{\text{libre}} = V - n b$$
 
-*Fuente: Transcripción, minutos 15–45. Fuente complementaria: Callen, cap. 2; Fermi, cap. 1.*
+### 2.2. Corrección por Cohesión Atractiva Intermolecular (Parámetro $a$)
+A distancias mayores que el diámetro de colisión, las fluctuaciones de densidad electrónica inducen dipolos instantáneos que generan fuerzas de atracción atractivas de corto alcance (fuerzas de dispersión de London / Van der Waals).
 
-### 3.1 Definición de equilibrio
+En el interior del fluido, una molécula está rodeada simétricamente por vecinas en todas direcciones, por lo que la fuerza resultante promedio es cero. Sin embargo, para una molécula que se aproxima a la pared del recipiente, existe una carencia de vecinas en el lado de la pared y una densidad completa de moléculas en el interior que tiran de ella hacia el seno del gas. Esto frena a la molécula justo antes de impactar, reduciendo el momento transferido a la pared y disminuyendo la presión medida experimentalmente frente a la presión cinética teórica ideal:
 
-Un sistema está en **equilibrio termodinámico** si y solo si sus variables macroscópicas son uniformes en todo el sistema:
-- Temperatura uniforme: $T(\mathbf{r}) = \text{cte}$.
-- Presión uniforme: $P(\mathbf{r}) = \text{cte}$.
-- Densidad uniforme: $\rho(\mathbf{r}) = \text{cte}$.
+$$P_{\text{medida}} = P_{\text{cinética}} - P_{\text{cohesión}} \implies P_{\text{cinética}} = P_{\text{medida}} + P_{\text{cohesión}}$$
 
-### 3.2 Teorema de la ecuación de estado
+La presión de cohesión o presión interna depende de dos factores acoplados:
+1. El número de moléculas que impactan la pared por unidad de tiempo, proporcional a la densidad numérica: $\frac{n}{V}$.
+2. El número de moléculas atractivas que tiran hacia atrás desde la capa inmediata interior, también proporcional a $\frac{n}{V}$.
 
-En equilibrio, existe una relación funcional (no arbitraria) entre las variables de estado:
+Por tanto, el efecto colectivo escala con el cuadrado de la densidad molar:
+$$P_{\text{cohesión}} = a\left(\frac{n}{V}\right)^2 = \frac{a n^2}{V^2}$$
+donde $a$ es una constante macroscópica característica que cuantifica la intensidad de las atracciones intermoleculares.
 
-$$\boxed{f(P, V, T, N) = 0.}$$
+Sustituyendo la presión cinética efectiva y el volumen libre en la ecuación de estado:
 
-Esta relación se llama **ecuación de estado** (o **superficie de fase**). Si se fija $N$, la ecuación de estado define una superficie en el espacio tridimensional $(P, V, T)$: cada punto sobre esta superficie es un **estado de equilibrio posible**. Ningún punto fuera de esta superficie corresponde a un estado de equilibrio.
+$$\boxed{\left(P + \frac{a n^2}{V^2}\right)(V - n b) = n R T}$$
 
-**Ejemplo —gas ideal:** la ecuación de estado es
+Para un mol ($n=1$), en términos del volumen molar $V_m = V/n$:
 
-$$PV = Nk_BT \implies T = \frac{PV}{Nk_B}.$$
-
-Con $N$ fijo, $T$ es una función de $P$ y $V$ que define la superficie de Van der Waals del gas ideal —una hoja hiperbólica.
-
-### 3.3 Interpretación geométrica de la superficie de fase
-
-El Prof. Oliva exploró la superficie de fase del gas ideal mediante el sistema de álgebra simbólica Mathematica:
-
-- **Corte a $V = \text{cte}$:** la relación $P \propto T$ es una recta (ley de Charles).
-- **Corte a $T = \text{cte}$ (isoterma):** la relación $P \propto 1/V$ es una hipérbola (ley de Boyle).
-- **Cambiar $N$:** solo reescala el eje de presión, sin alterar la forma de la superficie.
+$$\boxed{\left(P + \frac{a}{V_m^2}\right)(V_m - b) = R T}$$
 
 ---
 
-## 4. La ecuación de Van der Waals y las transiciones de fase
+## 3. Análisis de las Isotermas de Van der Waals y el Punto Crítico
 
-*Fuente: Transcripción, minutos 45–100. Fuente complementaria: Weinberg, sec. 1.5; Zemansky, cap. 15.*
+*Fuente: Notas tablet Clase 4, diaps. 7–10; Transcripción 01:14–02:05; Weinberg, §2.1.*
 
-### 4.1 Ecuación de Van der Waals
+Despejando la presión en función del volumen molar y la temperatura:
+$$P(V_m, T) = \frac{R T}{V_m - b} - \frac{a}{V_m^2}$$
 
-La ley de los gases ideales supone partículas puntuales sin interacciones. Para gases reales se introduce la corrección de Van der Waals (1873):
+Multiplicando por $V_m^2(V_m - b)$, la ecuación se reescribe como una **ecuación cúbica en el volumen molar $V_m$**:
+$$P V_m^3 - (P b + R T) V_m^2 + a V_m - a b = 0$$
 
-$$\boxed{\left(P + \frac{aN^2}{V^2}\right)(V - Nb) = Nk_BT,}$$
+Dividiendo entre $P$:
+$$\boxed{V_m^3 - \left(b + \frac{R T}{P}\right) V_m^2 + \frac{a}{P} V_m - \frac{a b}{P} = 0}$$
+
+Una ecuación algebraica cúbica con coeficientes reales posee, según el teorema fundamental del álgebra, una raíz real y dos complejas conjugadas, o tres raíces reales.
+
+```
+                      ISOTERMAS DE VAN DER WAALS Y PUNTO CRÍTICO
+             P
+             ▲
+             │                  Isoterma T > T_c (Monótona decreciente)
+             │                                  │                      \    Punto Crítico (T_c, P_c)
+         P_c ┼───────────────────────(•)────────────────
+             │                      /                │        ╭───╮        /     \   Isoterma T < T_c
+             │       ╭╯   ╰╮      /       \  (Líquido - Vapor)
+             │   ────╯     ╰──────                        └───┴───────────┴─────────────────┴────────► V_m
+                V_líquido   V_c               V_vapor
+```
+
+### 3.1. Condiciones Analíticas del Punto Crítico
+En el **punto crítico** $(T_c, P_c, V_c)$, las tres raíces reales del polinomio cúbico se fusionan en una única raíz triple real:
+$$(V_m - V_c)^3 = V_m^3 - 3 V_c V_m^2 + 3 V_c^2 V_m - V_c^3 = 0$$
+
+Termodinámicamente, el punto crítico corresponde a un **punto de inflexión con pendiente horizontal** en el plano $(P, V_m)$:
+$$\left(\frac{\partial P}{\partial V_m}\right)_{T_c} = 0 \qquad \text{y} \qquad \left(\frac{\partial^2 P}{\partial V_m^2}\right)_{T_c} = 0$$
+
+Calculamos las derivadas a partir de $P = \frac{R T}{V_m - b} - \frac{a}{V_m^2}$:
+$$\left(\frac{\partial P}{\partial V_m}\right)_T = -\frac{R T}{(V_m - b)^2} + \frac{2a}{V_m^3} = 0 \implies \frac{R T_c}{(V_c - b)^2} = \frac{2a}{V_c^3}$$
+
+$$\left(\frac{\partial^2 P}{\partial V_m^2}\right)_T = \frac{2 R T}{(V_m - b)^3} - \frac{6a}{V_m^4} = 0 \implies \frac{2 R T_c}{(V_c - b)^3} = \frac{6a}{V_c^4}$$
+
+Dividiendo la primera ecuación entre la segunda:
+$$\frac{V_c - b}{2} = \frac{V_c}{3} \implies 3(V_c - b) = 2 V_c \implies \boxed{V_c = 3b}$$
+
+Sustituyendo $V_c = 3b$ en la ecuación de la primera derivada:
+$$\frac{R T_c}{(3b - b)^2} = \frac{2a}{(3b)^3} \implies \frac{R T_c}{4b^2} = \frac{2a}{27 b^3} \implies \boxed{T_c = \frac{8a}{27 R b}}$$
+
+Sustituyendo $V_c$ y $T_c$ en la expresión de la presión:
+$$P_c = \frac{R\left(\frac{8a}{27 R b}\right)}{3b - b} - \frac{a}{(3b)^2} = \frac{8a}{27(2b^2)} - \frac{a}{9b^2} = \frac{4a}{27b^2} - \frac{3a}{27b^2} \implies \boxed{P_c = \frac{a}{27 b^2}}$$
+
+### 3.2. Factor de Compresibilidad Crítico Universal
+Evaluando el factor de compresibilidad en el punto crítico para cualquier gas de Van der Waals:
+
+$$\boxed{Z_c = \frac{P_c V_c}{R T_c} = \frac{\left(\frac{a}{27 b^2}\right)(3b)}{R\left(\frac{8a}{27 R b}\right)} = \frac{3a / 27b}{8a / 27b} = \frac{3}{8} = 0.375}$$
+
+Esta predicción es universal e independiente de los valores particulares de $a$ y $b$, lo que condujo a Van der Waals a postular la **Ley de Estados Correspondientes** en términos de las variables reducidas $P_r = P/P_c$, $T_r = T/T_c$, $V_r = V_m/V_c$. Experimentalmente, la mayoría de los gases reales presentan $Z_c \approx 0.28 - 0.31$, un acuerdo notable para un modelo de dos parámetros.
+
+---
+
+## 4. La Regla de Áreas Iguales de Maxwell
+
+*Fuente: Notas tablet Clase 4, diaps. 9–12; Transcripción 01:15–01:45.*
+
+Para temperaturas subcríticas ($T < T_c$), la isoterma cúbica describe un bucle con una porción intermedia en la cual $\left(\frac{\partial P}{\partial V}\right)_T > 0$. Esto representaría una fase termodinámicamente inestable: al aumentar la presión, el volumen aumentaría, lo que violaría el principio de estabilidad mecánica.
+
+En la naturaleza, el sistema elude esta trayectoria no física mediante una **transición de fase de primer orden**: la condensación de vapor a líquido a una presión de vapor saturado constante $P_{\text{sat}}(T)$.
+
+```
+                     CONSTRUCCIÓN DE ÁREAS IGUALES DE MAXWELL
+             P
+             ▲
+             │         Isoterma cúbica
+             │             ╭─────╮  Área A₁
+         P_sat ┼───────────┼─────┼──────────
+             │             ╰─────╯  Área A₂
+             │
+             └───┴─────────┴─────┴──────────► V_m
+                V_L             V_V
+```
+
+James Clerk Maxwell (1875) demostró que durante la coexistencia de dos fases en equilibrio térmico y mecánico, el potencial químico molar (o energía libre de Gibbs) debe ser idéntico en ambas fases: $\mu_L(T, P_{\text{sat}}) = \mu_V(T, P_{\text{sat}})$. Dado que $d\mu = -s dT + v dP$, a temperatura constante:
+$$\mu_V - \mu_L = \int_L^V V_m\, dP = 0$$
+
+Integrando por partes, esto equivale estrictamente a que la línea horizontal $P = P_{\text{sat}}$ corte la curva de Van der Waals de modo tal que las dos áreas encerradas por encima y por debajo de la meseta horizontal sean exactamente iguales:
+
+$$\boxed{\int_{V_L}^{V_V} \left[P(V_m, T) - P_{\text{sat}}\right] dV_m = 0 \implies \text{Área } A_1 = \text{Área } A_2}$$
+
+---
+
+## 5. Fundamentos de la Termodinámica: El Colapso del Calórico y la Primera Ley
+
+*Fuente: Weinberg, §2.1; Diapositivas Clase 4, diaps. 17–24; Transcripción 01:45–02:55.*
+
+Durante el siglo XVIII y principios del XIX, el calor se interpretaba bajo la **teoría del calórico**: un fluido imponderable, indestructible y auto-repulsivo que impregnaba los cuerpos materiales y fluía desde los cuerpos calientes hacia los fríos conservando su masa total.
+
+### 5.1. Los Experimentos de Joule y el Equivalente Mecánico
+James Prescott Joule (1843–1850) destruyó definitivamente la hipótesis del calórico mediante su célebre experimento de las paletas mecánicas giratorias accionadas por la caída de pesos en un calorímetro aislado con agua. Joule demostró que:
+1. El trabajo mecánico puede transformarse íntegramente en calor.
+2. La cantidad de calor generada es cuantitativamente equivalente al trabajo disipado, estableciendo el **equivalente mecánico del calor**:
+   $$1\text{ cal} \approx 4.184\text{ J}$$
+
+El calor no es un fluido material que se conserve, sino una **forma de transferencia microscópica desordenada de energía**.
+
+### 5.2. Formulación Matemática de la Primera Ley
+La Primera Ley establece el principio universal de conservación de la energía para sistemas termodinámicos. Existe una función de estado extensiva denominada **energía interna** $U$, tal que para cualquier transformación entre dos estados de equilibrio:
+
+$$\boxed{\Delta U = Q - W \implies dU = \delta Q - \delta W}$$
 
 donde:
-- $a > 0$: cuantifica las **interacciones atractivas** entre moléculas (corrección a la presión).
-- $b > 0$: cuantifica el **volumen excluido** por molécula (corrección al volumen accesible).
+- $dU$ es una **diferencial exacta**: su integral depende exclusivamente de los estados inicial y final, no del camino seguido ($\oint dU = 0$).
+- $\delta Q$ y $\delta W$ son **diferenciales inexactas** (notadas con $\delta$): dependen intrínsecamente de la trayectoria y de los detalles del proceso.
 
-Despejando $P$:
+Para un proceso cuasiestático en el que el único trabajo macroscópico es de compresión o expansión volumétrica ($\delta W = P dV$):
 
-$$P = \frac{Nk_BT}{V - Nb} - \frac{aN^2}{V^2}.$$
+$$\boxed{dU = \delta Q - P\, dV}$$
 
-### 4.2 Isotermas de Van der Waals y transición de fases
-
-A temperatura suficientemente alta ($T > T_c$, temperatura crítica), las isotermas de Van der Waals son cualitativamente similares a las del gas ideal (monotónicamente decrecientes). Al bajar $T$ por debajo de $T_c$, las isotermas adquieren una **ondulación** (máximo seguido de un mínimo local), lo que da lugar a tres posibles valores de $V$ para una presión dada.
-
-**Los tres volúmenes:**
-1. $V_1$ (pequeño): fase **líquida** (alta densidad).
-2. $V_2$ (intermedio): fase **inestable** (debe descartarse).
-3. $V_3$ (grande): fase **gaseosa** (baja densidad).
-
-### 4.3 Compresibilidad isotérmica y estabilidad
-
-La **compresibilidad isotérmica** se define como:
-
-$$\kappa_T \equiv -\frac{1}{V}\left(\frac{\partial V}{\partial P}\right)_T.$$
-
-El signo negativo es convencional: en condiciones normales, comprimir ($\Delta V < 0$) aumenta la presión ($\Delta P > 0$), de modo que $(\partial V/\partial P)_T < 0$ y $\kappa_T > 0$.
-
-- **Fase estable:** $\kappa_T > 0$ (al comprimir, la presión sube: el sistema resiste la compresión).
-- **Fase inestable:** $\kappa_T < 0$ (al comprimir, la presión baja: el sistema colapsa por compresión, proceso runaway). La rama intermedia de Van der Waals tiene $\kappa_T < 0$ y debe descartarse.
-
-**Interpretación macroscópica.** En la fase inestable: comprimir un poco → la presión baja → el sistema se sigue comprimiendo → inestabilidad. Análogamente, expandir un poco → la presión sube → el sistema sigue expandiéndose → también inestable.
-
-### 4.4 Regla de las áreas de Maxwell
-
-A una temperatura $T < T_c$ dada, ¿a qué presión exacta ocurre la transición de fase líquido–gas? La respuesta la da la **regla de las áreas de Maxwell**: la transición ocurre a la presión $P^*$ tal que las áreas encerradas por la isoterma por encima y por debajo de $P^*$ son iguales. Geométricamente:
-
-$$\int_{V_1}^{V_3} [P(\text{isoterma}) - P^*]\, dV = 0.$$
-
-**Interpretación termodinámica:** esta condición garantiza que la energía libre de Gibbs del líquido es igual a la del gas en la presión de coexistencia $P^*$, cumpliendo el criterio de equilibrio entre fases.
-
-### 4.5 Temperatura crítica, presión crítica y punto crítico
-
-El punto crítico es aquel en que el máximo y el mínimo de la isoterma de Van der Waals se fusionan: el punto de inflexión en la curva $P(V)$. Se determina mediante:
-
-$$\left(\frac{\partial P}{\partial V}\right)_T = 0, \qquad \left(\frac{\partial^2 P}{\partial V^2}\right)_T = 0.$$
-
-Resolviendo para el gas de Van der Waals:
-
-$$T_c = \frac{8a}{27k_Bb}, \qquad P_c = \frac{a}{27b^2}, \qquad V_c = 3Nb.$$
-
-Para el agua: $T_c = 374$ °C, $P_c = 221$ atm.
+### 5.3. Procesos Particulares en Gases Ideales
+1. **Proceso Isocórico ($dV = 0$):**  
+   $$W = 0 \implies dU = \delta Q_V = n C_V dT$$
+2. **Proceso Isobárico ($P = \text{cte}$):**  
+   $$\delta Q_P = dU + P dV = d(U + PV) = dH = n C_P dT$$
+   donde $H = U + PV$ es la **entalpía**. Para el gas ideal, la relación de Mayer impone:
+   $$C_P - C_V = R$$
+3. **Proceso Isotérmico ($T = \text{cte}$):**  
+   Dado que $U = U(T)$, $\Delta U = 0$:
+   $$Q = W = \int_{V_1}^{V_2} P dV = n R T \int_{V_1}^{V_2} \frac{dV}{V} = n R T \ln\left(\frac{V_2}{V_1}\right)$$
+4. **Proceso Adiabático Reversible ($\delta Q = 0$):**  
+   $$dU = -P dV \implies n C_V dT = -\frac{n R T}{V} dV \implies \frac{dT}{T} + \frac{R}{C_V} \frac{dV}{V} = 0$$
+   Definiendo el coeficiente adiabático $\gamma = \frac{C_P}{C_V} = 1 + \frac{R}{C_V}$:
+   $$\ln T + (\gamma - 1)\ln V = \text{cte} \implies T V^{\gamma - 1} = \text{constante}$$
+   Utilizando $T \propto PV$:
+   $$\boxed{P V^\gamma = \text{constante}}$$
 
 ---
 
-## 5. Diagrama de fase del agua
+## 6. Conclusiones de la Clase
 
-*Fuente: Transcripción, minutos 100–130. Fuente complementaria: Blog de Francis Villatoro.*
-
-El Prof. Oliva presentó el **diagrama de fase del agua** ($P$ vs. $T$), destacando:
-
-### 5.1 Regiones del diagrama
-
-| Región | Fase | Condiciones |
-|--------|------|-------------|
-| Baja $T$, cualquier $P$ razonable | Sólido (hielo) | Átomos en red cristalina |
-| $T$ y $P$ intermedias | Líquido | Moléculas móviles pero cohesionadas |
-| Alta $T$ y baja $P$ | Gas (vapor) | Moléculas en traslación libre |
-| $T > 374$ °C, $P > 221$ atm | Fluido supercrítico | Propiedades intermedias entre líquido y gas |
-
-### 5.2 Punto triple
-
-El **punto triple** del agua es la única combinación $(T, P)$ en la que las tres fases (sólido, líquido, gas) coexisten en equilibrio:
-
-$$T_\text{triple} = 273{,}16 \text{ K} = 0{,}01 \text{ °C}, \qquad P_\text{triple} = 611{,}7 \text{ Pa} \approx 0{,}006 \text{ atm}.$$
-
-Es el punto fundamental en la definición de la escala de temperatura Kelvin y del SI.
-
-### 5.3 Anomalía del agua
-
-La pendiente de la línea de coexistencia sólido–líquido del agua es **negativa** (aumentar la presión disminuye el punto de fusión), al contrario que la mayoría de los líquidos. Esto se debe a que el hielo es menos denso que el agua líquida a la misma temperatura: al comprimir el sólido, es energéticamente favorable convertirlo en líquido.
-
-### 5.4 Fluido supercrítico
-
-Por encima del punto crítico no existe frontera nítida entre líquido y gas: el fluido supercrítico presenta simultáneamente densidades moderadas (típicas de líquidos) y la capacidad de expandirse para llenar su contenedor (típica de gases). Tiene aplicaciones en extracción de cafeína, cromatografía, y procesado de materiales.
-
-### 5.5 Fases sólidas del agua
-
-Se han identificado experimentalmente **20 formas cristalinas del hielo** (hielo I a hielo XX), con distintos arreglos de la red de puentes de hidrógeno. Los cálculos basados en principios de enlace sugieren hasta ~75.000 posibles variantes cristalinas. El agua es un sistema aparentemente simple ($\mathrm{H_2O}$) que exhibe una riqueza fenomenológica extraordinaria.
+1. **Ruptura del gas ideal:** El factor de compresibilidad $Z = \frac{PV_m}{RT}$ evidencia que las moléculas poseen un volumen propio finito ($b$) y fuerzas atractivas de largo alcance ($a$), indispensables para explicar la condensación.
+2. **Ecuación de Van der Waals:** Modifica la presión y el volumen libre: $\left(P + \frac{a}{V_m^2}\right)(V_m - b) = RT$, unificando analíticamente las fases gaseosa y líquida en una única ecuación cúbica.
+3. **Punto crítico analítico:** Las condiciones $\left(\frac{\partial P}{\partial V_m}\right)_{T_c} = \left(\frac{\partial^2 P}{\partial V_m^2}\right)_{T_c} = 0$ determinan de manera única las constantes críticas: $V_c = 3b$, $P_c = \frac{a}{27b^2}$, $T_c = \frac{8a}{27Rb}$ y el factor universal $Z_c = 3/8 = 0.375$.
+4. **Construcción de Maxwell:** Resuelve la inestabilidad termodinámica del bucle cúbico subcrítico imponiendo la igualdad de áreas $\int (P - P_{\text{sat}}) dV = 0$, garantizando el equilibrio de potencial químico entre líquido y vapor saturado.
+5. **Primera Ley de la Termodinámica:** El colapso del calórico (Joule) formaliza el calor como transferencia microscópica de energía. La Primera Ley $dU = \delta Q - P dV$ define la energía interna como función de estado exacta, sentando las bases para el análisis de la Segunda Ley y la entropía (Clase 05).
 
 ---
 
-## 6. Procesos termodinámicos
-
-*Fuente: Transcripción, minutos 130–160. Fuente complementaria: Fermi, cap. 2; Callen, cap. 4.*
-
-### 6.1 Proceso cuasi estático
-
-Un **proceso cuasi estático** es aquel en que el sistema se mueve de un estado de equilibrio a otro de manera lo suficientemente lenta como para que en todo instante intermedio el sistema esté en equilibrio:
-
-$$\text{cuasi estático} \iff \text{en todo instante } (P, V, T) \in \text{superficie de fase.}$$
-
-Matemáticamente: es una curva continua sobre la superficie de fase, parametrizada por el tiempo.
-
-**Condición física:** el tiempo característico del proceso debe ser mucho mayor que el tiempo de termalización del sistema. En un gas, el tiempo de termalización es del orden del tiempo entre colisiones ($\sim 10^{-10}$ s a presión estándar).
-
-**Tipos de procesos cuasi estáticos:**
-
-| Proceso | Condición | Nombre |
-|---------|-----------|--------|
-| $T = \text{cte}$ | Isotérmico | temperatura constante |
-| $P = \text{cte}$ | Isobárico | presión constante |
-| $V = \text{cte}$ | Isocórico | volumen constante |
-| Sin intercambio de calor | Adiabático | $\delta Q = 0$ |
-| $S = \text{cte}$ | Isentrópico | entropía constante |
-
-### 6.2 Proceso no cuasi estático (repentino)
-
-Un **proceso repentino** parte y termina en estados de equilibrio, pero los estados intermedios **no están en equilibrio**: no es posible asignarles valores únicos de $P$, $T$, $\rho$.
-
-**Ejemplo:** expansión de Joule (expansión libre). Un gas confinado en volumen $V_1$ se expande súbitamente al vacío hasta un volumen $V_1 + V_2$. Durante la expansión, el gas no está en equilibrio. En el estado final (largo tiempo después), el gas vuelve al equilibrio.
-
-**Representación gráfica:** los libros de texto representan los procesos no cuasi estáticos con líneas punteadas o rayas (indicando que la curva no pertenece a la superficie de fase); se trata de un abuso pictórico pero convencional.
-
----
-
-## 7. Capacidades caloríficas y primer principio de la termodinámica
-
-*Fuente: Transcripción, minutos 145–200. Fuente complementaria: Zemansky, cap. 4; Callen, cap. 5.*
-
-### 7.1 Historia del calórico y la energía
-
-Históricamente, el calor fue concebido como un fluido (el **calórico**) que se transfería de un cuerpo caliente a uno frío. Este modelo —hoy sabemos que incorrecto en su ontología— fue extraordinariamente exitoso: sustentó la Revolución Industrial y permitió predecir cuantitativamente el funcionamiento de máquinas de vapor. La interpretación moderna es que el **calor es energía transferida por diferencia de temperatura**.
-
-### 7.2 Definición de las capacidades caloríficas
-
-**Capacidad calorífica a volumen constante** $C_V$:
-
-Si se transfiere una cantidad infinitesimal de calor $\delta Q$ al sistema manteniendo $V$ fijo, la temperatura cambia en $dT$:
-
-$$\delta Q_V = C_V\, dT, \implies C_V = \left(\frac{\delta Q}{dT}\right)_V.$$
-
-**Capacidad calorífica a presión constante** $C_P$:
-
-$$\delta Q_P = C_P\, dT, \implies C_P = \left(\frac{\delta Q}{dT}\right)_P.$$
-
-**Unidades:** $[C_V] = [C_P] = $ J/K. Los **calores específicos** $c_V$ y $c_P$ se obtienen dividiendo por la masa o cantidad de materia: unidades J/(kg·K) o J/(mol·K).
-
-### 7.3 El calor NO es una variable de estado
-
-El Prof. Oliva subrayó una distinción conceptual fundamental:
-
-- **$\delta Q$** (con barrita): **cantidad infinitesimal de calor transferida** en un proceso. No es un "cambio en el calor" porque el calor no "pertenece" a un sistema; solo tiene sentido en el contexto de un proceso. Por eso se escribe con la barrita.
-- **$dT$**: **cambio infinitesimal de temperatura**. La temperatura sí es una variable de estado; tiene sentido hablar de temperatura antes y después de un proceso.
-
-**Consecuencia matemática.** En un ciclo cerrado:
-$$\oint dT = 0 \quad \text{(variable de estado)}, \qquad \oint \delta Q \neq 0 \text{ en general (no variable de estado)}.$$
-
-Esta distinción es la que clasifica a $\delta Q$ como un **diferencial inexacto**.
-
-### 7.4 Trabajo y primer principio
-
-Análogamente, el **trabajo** $\delta W$ realizado por el sistema en un proceso cuasi estático de expansión es:
-
-$$\delta W = P\, dV.$$
-
-El trabajo tampoco es una variable de estado; solo tiene sentido en el contexto de un proceso.
-
-El **primer principio de la termodinámica** establece la conservación de energía:
-
-$$\boxed{dU = \delta Q - \delta W = \delta Q - P\, dV,}$$
-
-donde $U$ es la **energía interna** del sistema, que sí es una variable de estado. Aunque $\delta Q$ y $\delta W$ son individualmente diferenciales inexactos, su diferencia $dU$ es un diferencial exacto.
-
-**Interpretación física.** La energía interna del gas aumenta si se le transfiere calor (energía entra), y disminuye si el gas realiza trabajo mecánico sobre el entorno (energía sale como trabajo de expansión).
-
-### 7.5 Predicción microscópica de $C_V$: gas ideal monoatómico
-
-Para un gas ideal monoatómico (partículas con solo 3 grados de libertad traslacionales):
-
-$$U = N \cdot \frac{3}{2}k_BT \implies C_V = \left(\frac{\partial U}{\partial T}\right)_V = \frac{3}{2}Nk_B.$$
-
-En términos molares:
-
-$$C_{V,m} = \frac{3}{2}R = 12{,}47 \text{ J/(mol·K)}.$$
-
-Este resultado puede verificarse experimentalmente con gases nobles (He, Ne, Ar) a temperatura ambiente.
-
----
-
-## 8. Relación entre $C_P$ y $C_V$: diferencia de Mayer
-
-*Fuente: Transcripción, minutos 190–220. Fuente complementaria: Zemansky, cap. 4; Callen, sec. 3.2.*
-
-### 8.1 Derivación de la relación de Mayer
-
-Para un gas ideal, $PV = Nk_BT$. En un proceso isobárico ($P = \text{cte}$), parte del calor absorbido se convierte en trabajo de expansión:
-
-$$\delta Q_P = dU + P\, dV = C_V\, dT + P\, dV.$$
-
-Diferenciando $PV = Nk_BT$ a $P$ constante: $P\, dV = Nk_B\, dT$. Sustituyendo:
-
-$$C_P\, dT = C_V\, dT + Nk_B\, dT,$$
-
-$$\boxed{C_P - C_V = Nk_B = nR,}$$
-
-donde $n$ es el número de moles y $R = 8{,}314$ J/(mol·K). Esta relación se conoce como la **identidad de Mayer** (Julius Robert von Mayer, 1842).
-
-**Interpretación:** $C_P > C_V$ siempre (para gases), porque al calentar a presión constante parte del calor absorbido se invierte en expandir el gas (trabajo $P\, dV$), y el resto en aumentar la temperatura. A volumen constante, **todo** el calor va a aumentar $U$ y por tanto $T$.
-
-### 8.2 El cociente $\gamma = C_P/C_V$ (índice adiabático)
-
-El cociente $\gamma = C_P/C_V$ aparece en la ecuación de la expansión adiabática (proceso cuasi estático sin intercambio de calor):
-
-$$PV^\gamma = \text{cte} \quad (\text{proceso adiabático reversible}).$$
-
-Para un gas ideal monoatómico: $\gamma = 5/3 \approx 1{,}67$.
-
-Para un gas diatómico a temperatura ambiente (con rotación activada): $\gamma = 7/5 = 1{,}40$.
-
-Esto se verificó experimentalmente: la velocidad del sonido en un gas es $c_s = \sqrt{\gamma P/\rho}$, que concuerda con las mediciones experimentales solo si se usa $\gamma$, no 1 (que correspondería a una expansión isotérmica).
-
----
-
-## 9. La paradoja de Gibbs: incógnita pendiente
-
-*Fuente: Transcripción, minutos 230–260. Fuente complementaria: Weinberg, sec. 3.5; Reif, sec. 9.7.*
-
-### 9.1 Enunciado de la paradoja
-
-Consideremos dos gases **idénticos** separados por una pared. Al retirar la pared, los gases se mezclan. Desde el punto de vista macroscópico, **nada cambia**: la presión, la temperatura y la densidad son las mismas antes y después.
-
-Sin embargo, al calcular la entropía termodinámica, un cálculo ingenuo predice un **aumento de entropía** al mezclar los dos gases, incluso si son idénticos:
-
-$$\Delta S_\text{mezcla} = 2Nk_B \ln 2 > 0.$$
-
-Este resultado es **paradójico**: mezclar dos porciones del mismo gas no puede producir un aumento de desorden físico, ya que no hay diferencia observable entre el estado inicial y el final.
-
-### 9.2 Resolución: la indistinguibilidad cuántica
-
-La paradoja de Gibbs revela que la entropía termodinámica, tal como se calcula clásicamente, no puede entenderse sin un modelo microscópico. La resolución correcta requiere la **mecánica cuántica**:
-
-Las partículas idénticas (electrones, protones, átomos del mismo isótopo) son **indistinguibles** a nivel cuántico: no existe etiqueta que permita distinguir la partícula $i$ de la $j$. Esto significa que al contar los estados microscópicos del sistema, hay que dividir por el número de permutaciones de partículas idénticas ($N!$), lo que modifica la entropía y elimina la paradoja:
-
-$$S = Nk_B\left[\ln\frac{V}{N} + \frac{3}{2}\ln\frac{mk_BT}{2\pi\hbar^2} + \frac{5}{2}\right].$$
-
-Esta expresión (ecuación de Sackur–Tetrode) es extensiva: $S(2N, 2V, T) = 2S(N, V, T)$, como debe ser, y predice $\Delta S_\text{mezcla} = 0$ para gases idénticos. La paradoja de Gibbs fue el primer indicio histórico de que los constituyentes de la materia son cuánticamente indistinguibles.
-
----
-
-## 10. Síntesis histórica: de Carnot a Boltzmann
-
-*Fuente: Transcripción, minutos 195–205. Fuente complementaria: Brush, *The Kind of Motion We Call Heat* (1976).*
-
-| Año | Científico | Contribución |
-|-----|-----------|-------------|
-| 1824 | Sadi Carnot | Ciclo de Carnot; primer enunciado del rendimiento máximo de una máquina térmica |
-| 1842 | Julius Mayer | Conservación de la energía (primer principio) |
-| 1848 | William Thomson (Lord Kelvin) | Escala de temperatura absoluta |
-| 1850 | Rudolf Clausius | Primer enunciado preciso del segundo principio |
-| 1873 | Johannes van der Waals | Ecuación de estado para gases reales; predicción de la transición líquido–gas |
-| 1876 | J. Willard Gibbs | Potenciales termodinámicos; paradoja de Gibbs |
-| 1877 | Ludwig Boltzmann | $S = k_B \ln \Omega$; interpretación estadística de la entropía |
-
----
-
-## Conclusiones de la Clase
-
-1. **Variables termodinámicas de estado** son aquellas que caracterizan completamente el sistema en equilibrio (sin necesidad de conocer la historia); incluyen $P$, $V$, $T$, $N$, $U$, $S$.
-
-2. **Ecuación de estado:** en equilibrio, existe una relación $f(P,V,T,N)=0$ que define una superficie en el espacio de variables termodinámicas; cada punto sobre ella es un estado de equilibrio posible.
-
-3. **Gas ideal vs. real (Van der Waals):** el gas real exhibe isotermas con ondulación por debajo de $T_c$, lo que da lugar a coexistencia de fases (líquido–gas). La rama inestable ($\kappa_T < 0$) debe descartarse.
-
-4. **Regla de las áreas de Maxwell:** la presión de transición de fase es aquella que iguala las áreas por encima y por debajo de la isoterma de Van der Waals.
-
-5. **Fluido supercrítico:** por encima del punto crítico ($T_c$, $P_c$) no existe frontera líquido–gas; el fluido tiene propiedades de ambas fases.
-
-6. **Proceso cuasi estático:** el sistema permanece en equilibrio en todo instante; se representa como curva continua sobre la superficie de fase.
-
-7. **Calor y trabajo no son variables de estado**: solo tienen sentido en el contexto de un proceso (diferenciales inexactos $\delta Q$ y $\delta W$). La energía interna $U$ sí lo es (diferencial exacto $dU = \delta Q - \delta W$).
-
-8. **Capacidades caloríficas:** $C_V$ (volumen constante) y $C_P$ (presión constante) cuantifican el costo energético de cambiar la temperatura. Para un gas ideal monoatómico: $C_V = \frac{3}{2}Nk_B$ y $C_P - C_V = Nk_B$ (identidad de Mayer).
-
-9. **Diagrama de fase del agua:** exhibe punto triple ($0{,}01$ °C, $611{,}7$ Pa), punto crítico ($374$ °C, $221$ atm), ~20 fases sólidas distintas y fluido supercrítico.
-
-10. **Paradoja de Gibbs:** mezclar dos gases idénticos no debería aumentar la entropía, pero el cálculo clásico predice $\Delta S > 0$. La resolución requiere la indistinguibilidad cuántica de las partículas idénticas, prefigurando la mecánica cuántica.
-
----
-
-## Referencias Bibliográficas
-
-### 1. Artículos científicos originales (fuentes primarias)
-
-- Van der Waals, J. D. (1873). *Over de Continuïteit van den Gas en Vloeistoftoestand* [Tesis doctoral, Universidad de Leiden]. Disponible en traducción inglesa: Rowlinson, J. S. (Ed., 1988). *J. D. van der Waals: On the Continuity of the Gaseous and Liquid States*. North-Holland.
-- Gibbs, J. W. (1875–1878). *On the Equilibrium of Heterogeneous Substances.* Transactions of the Connecticut Academy of Arts and Sciences, **3**, 108–248, 343–524.
-- Sackur, O. (1911). *Die Anwendung der kinetischen Theorie der Gase auf chemische Probleme.* Annalen der Physik, **36**, 958–980; Tetrode, H. (1912). *Die chemische Konstante der Gase und das elementare Wirkungsquantum.* Annalen der Physik, **38**, 434–442.
-
-### 2. Textos del curso
-
-- Weinberg, S. (2021). *Foundations of Modern Physics*. Cambridge University Press. Caps. 1–3.
-
-### 3. Textos universitarios estándar
-
-- Callen, H. B. (1985). *Thermodynamics and an Introduction to Thermostatistics* (2ª ed.). John Wiley & Sons. Caps. 1–5.
-- Zemansky, M. W., & Dittman, R. H. (1997). *Heat and Thermodynamics* (7ª ed.). McGraw-Hill. Caps. 2, 4, 15.
-- Fermi, E. (1956). *Thermodynamics*. Dover Publications. Caps. 1–2.
-- Reif, F. (1965). *Fundamentals of Statistical and Thermal Physics*. McGraw-Hill. Caps. 2, 9.
-
-### 4. Recursos de libre acceso verificados
-
-- Blog de Francis Villatoro (La Ciencia de la Mula Francis). Entrada sobre las fases del agua: [https://francis.naukas.com/](https://francis.naukas.com/)
-- NIST WebBook — Diagramas de fase del agua: [https://webbook.nist.gov/chemistry/fluid/](https://webbook.nist.gov/chemistry/fluid/)
-- Feynman, R. P. et al. (1963). *The Feynman Lectures on Physics*, Vol. II, cap. 44: *The Laws of Thermodynamics*. [https://www.feynmanlectures.caltech.edu/II_44.html](https://www.feynmanlectures.caltech.edu/II_44.html)
-
-### 5. Historia y filosofía de la física
-
-- Klein, M. J. (1970). *Maxwell, His Demon, and the Second Law of Thermodynamics.* American Scientist, **58**, 84–97.
-- Brush, S. G. (1976). *The Kind of Motion We Call Heat*. North-Holland. Vol. 1, caps. 3–4 (calórico, Joule, Clausius).
-- Pippard, A. B. (1957). *The Elements of Classical Thermodynamics*. Cambridge University Press. Cap. 1 (crítica del concepto de calórico y su superación).
+## 7. Referencias Bibliográficas
+
+1. **Fuentes primarias y artículos históricos:**
+   - Van der Waals, J. D. (1873). *Over de Continuïteit van den Gas- en Vloeistoftoestand*. Leiden: A. W. Sijthoff.
+   - Joule, J. P. (1843). "On the Caloric Effects of Magneto-Electricity, and on the Mechanical Value of Heat". *Philosophical Magazine*, 23, 263–276.
+   - Maxwell, J. C. (1875). "On the Dynamical Evidence of the Molecular Constitution of Bodies". *Nature*, 11, 357–359.
+   - Carnot, S. (1824). *Réflexions sur la puissance motrice du feu et sur les machines propres à développer cette puissance*. París: Bachelier.
+2. **Textos y materiales del diplomado:**
+   - Oliva Zapata, J. E. (2026). *Material pedagógico de Clase 04: Gases reales, ecuación de Van der Waals y Primera Ley*. Universidad de Concepción.
+   - Oliva Zapata, J. E. (2026). *Notas tablet clase 4* (Apuntes manuscritos de pizarra digital).
+3. **Textos universitarios canónicos:**
+   - Weinberg, S. (2021). *Foundations of Modern Physics*. Cambridge: Cambridge University Press. Cap. 2: §2.1 "Heat and Energy", pp. 16–21; §2.2 "Absolute Temperature", pp. 21–27.
+   - Callen, H. B. (1985). *Thermodynamics and an Introduction to Thermostatistics* (2ª ed.). Nueva York: John Wiley & Sons.
+   - Zemansky, M. W., & Dittman, R. H. (1997). *Heat and Thermodynamics* (7ª ed.). Nueva York: McGraw-Hill.
