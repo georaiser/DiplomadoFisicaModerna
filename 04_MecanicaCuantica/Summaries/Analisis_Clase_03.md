@@ -1,10 +1,10 @@
----
+﻿---
 **Diplomado en Física Moderna — Módulo 04: Mecánica Cuántica**
 **Clase 03:** Momentum Angular
-**Docente:** Prof. Paulraj Manidurai
+**Docente:** Prof. Esteban Sepúlveda
 **Fecha:** 12 de septiembre de 2026
 **Fuentes utilizadas:** Transcripción de clase, Diapositivas principales, Notas de pizarra, Bibliografía canónica.
-*Nota sobre disponibilidad:* El estilo pedagógico e intuitivo del Prof. Manidurai con fonética tamil-inglesa en las transcripciones ha sido corregido y trasladado al castellano estándar, preservando el máximo rigor matemático y conceptual de sus exposiciones originales.
+*Nota sobre disponibilidad:* El estilo pedagógico e intuitivo del Prof. Sepúlveda con estilo propio del docente en las transcripciones ha sido corregido y trasladado al castellano estándar, preservando el máximo rigor matemático y conceptual de sus exposiciones originales.
 ---
 
 ## 1. El Momentum Angular y las Rotaciones Clásicas vs. Cuánticas
@@ -55,7 +55,7 @@ $$ \hat{L}_z |\alpha, \beta\rangle = \hbar \beta |\alpha, \beta\rangle $$
 ## 3. Derivación Analítica Completa: Operadores Escalera y Cuantización
 *Fuente: Diapositivas 14-23, Pizarra, Expansión con Bibliografía (Griffiths "Introduction to Quantum Mechanics")*
 
-El Prof. Manidurai construye los conocidos "operadores de creación y aniquilación" rotacionales (escalera):
+el Prof. Sepúlveda construye los conocidos "operadores de creación y aniquilación" rotacionales (escalera):
 $$ \hat{L}_{\pm} = \hat{L}_x \pm i\hat{L}_y $$
 
 ### Acción Escalonada de $\hat{L}_+$ y $\hat{L}_-$

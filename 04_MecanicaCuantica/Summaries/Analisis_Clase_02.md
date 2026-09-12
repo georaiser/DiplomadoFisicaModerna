@@ -1,6 +1,6 @@
-# Diplomado en Física Moderna — Módulo 04: Mecánica Cuántica
+﻿# Diplomado en Física Moderna — Módulo 04: Mecánica Cuántica
 **Clase:** 02 - Herramientas Matemáticas 1  
-**Docente:** Prof. Paulraj Manidurai  
+**Docente:** Prof. Aldo Delgado  
 **Fecha:** 12 de septiembre de 2026  
 **Temas Cubiertos:** Espacios de Hilbert, Formalismo de Dirac, Operadores Hermíticos, Ecuación de Autovalores, Conmutadores.  
 **Fuentes Utilizadas:** Transcripción de clase, Diapositivas (PDF), Textos canónicos (Griffiths, Sakurai).
@@ -72,7 +72,7 @@ Igualando con nuestra primera ecuación:
 $$ a \langle a | a \rangle = a^* \langle a | a \rangle $$
 Dado que $\langle a | a \rangle$ es la norma del vector y no es cero ($>0$), podemos dividir ambos lados:
 $$ a = a^* $$
-Q.E.D. Esta derivación fundamental, enfatizada por el Prof. Manidurai, demuestra matemáticamente por qué la energía o la posición siempre dan valores reales.
+Q.E.D. Esta derivación fundamental, enfatizada por el Prof. Sepúlveda, demuestra matemáticamente por qué la energía o la posición siempre dan valores reales.
 
 ---
 

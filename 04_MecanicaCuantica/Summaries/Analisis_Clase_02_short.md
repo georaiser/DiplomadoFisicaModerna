@@ -1,13 +1,13 @@
 ﻿# Diplomado en Física Moderna — Módulo 04: Mecánica Cuántica
 **Clase:** 02 - Herramientas Matemáticas 1  
-**Docente:** Prof. Paulraj Manidurai  
+**Docente:** Prof. Aldo Delgado  
 **Fecha:** 12 de septiembre de 2026  
 **Temas Cubiertos:** Espacios de Hilbert, Notación de Dirac, Operadores Hermíticos, Valores y Vectores Propios.
 
 ## Síntesis de Conceptos Clave
 
 ### 1. Espacios de Hilbert y Notación de Dirac
-La mecánica cuántica se formula matemáticamente en un Espacio de Hilbert ($\mathcal{H}$), un espacio vectorial complejo con un producto interno definido. El Prof. Manidurai introduce la **Notación de Dirac**, donde los estados cuánticos se representan mediante vectores "ket" $|\psi\rangle$ y sus conjugados duales mediante vectores "bra" $\langle\psi|$. 
+La mecánica cuántica se formula matemáticamente en un Espacio de Hilbert ($\mathcal{H}$), un espacio vectorial complejo con un producto interno definido. el Prof. Sepúlveda introduce la **Notación de Dirac**, donde los estados cuánticos se representan mediante vectores "ket" $|\psi\rangle$ y sus conjugados duales mediante vectores "bra" $\langle\psi|$. 
 
 El producto interno entre dos estados genera la amplitud de probabilidad de transición y se denota como un "bracket": $\langle\phi|\psi\rangle$. La ortonormalidad de una base discreta se expresa como $\langle \phi_i | \phi_j \rangle = \delta_{ij}$.
 

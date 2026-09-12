@@ -1,7 +1,7 @@
-# Diplomado en Física Moderna — Módulo 04: Mecánica Cuántica
+﻿# Diplomado en Física Moderna — Módulo 04: Mecánica Cuántica
 ## Análisis de la Clase 01 (Versión Sintética)
 
-**Docente:** Prof. Paulraj Manidurai (Material base por Esteban Sepúlveda Gómez)
+**Docente:** Prof. Esteban Sepúlveda (Material base por Esteban Sepúlveda Gómez)
 **Módulo:** 04 - Mecánica Cuántica
 **Temas Cubiertos:** Dualidad onda-partícula, Ecuación de Schrödinger, Momento angular, Átomo de Hidrógeno.
 

@@ -1,7 +1,7 @@
 ﻿---
 **Módulo:** 04 — Mecánica Cuántica
 **Clase:** 03
-**Docente:** Prof. Paulraj Manidurai
+**Docente:** Prof. Esteban Sepúlveda
 **Temas Cubiertos:** Momentum Angular, Operadores de Rotación, Conmutadores, Operadores Escalera, Armónicos Esféricos, Orbitales Atómicos.
 ---
 
@@ -17,7 +17,7 @@ Las componentes del operador de momentum angular ($L_x, L_y, L_z$) no conmutan e
 Para encontrar los valores permitidos del momentum angular sin recurrir a ecuaciones diferenciales complejas, se definen los operadores escalera (subida y bajada) $L_+$ y $L_-$. Estos operadores permiten transitar entre diferentes estados, aumentando o disminuyendo la proyección z del momentum angular en pasos de $\hbar$, mientras la magnitud total $L^2$ permanece inalterada. Las cotas impuestas por la positividad de la norma obligan a que la serie se trunque, dando lugar a la cuantización intrínseca del momentum angular en valores enteros o semienteros ($l$ y $m$).
 
 **Armónicos Esféricos y Analogía del Edificio Atómico**
-En coordenadas esféricas, las autofunciones que resuelven simultáneamente $L^2$ y $L_z$ son los armónicos esféricos $Y_{lm}(\theta, \varphi)$. Estas funciones representan las formas geométricas tridimensionales permitidas para los orbitales atómicos. El Prof. Manidurai ilustra esto mediante la intuitiva "analogía del edificio", donde el número cuántico principal $n$ representa el piso, $l$ el tipo de apartamento o suite (s, p, d, f), $m_l$ la orientación de las ventanas y $m_s$ la lateralidad del inquilino (espín del electrón).
+En coordenadas esféricas, las autofunciones que resuelven simultáneamente $L^2$ y $L_z$ son los armónicos esféricos $Y_{lm}(\theta, \varphi)$. Estas funciones representan las formas geométricas tridimensionales permitidas para los orbitales atómicos. el Prof. Sepúlveda ilustra esto mediante la intuitiva "analogía del edificio", donde el número cuántico principal $n$ representa el piso, $l$ el tipo de apartamento o suite (s, p, d, f), $m_l$ la orientación de las ventanas y $m_s$ la lateralidad del inquilino (espín del electrón).
 
 ## Ecuaciones Esenciales
 

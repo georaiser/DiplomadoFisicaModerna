@@ -1,7 +1,7 @@
-# Diplomado en Física Moderna — Módulo 04: Mecánica Cuántica
+﻿# Diplomado en Física Moderna — Módulo 04: Mecánica Cuántica
 ## Análisis Extendido de la Clase 01: De Broglie, Schrödinger y Momento Angular
 
-**Docente:** Prof. Paulraj Manidurai (Adaptado a castellano académico estándar. Material base presentado por Esteban Sepúlveda Gómez)
+**Docente:** Prof. Esteban Sepúlveda (Adaptado a castellano académico estándar. Material base presentado por Esteban Sepúlveda Gómez)
 **Módulo:** 04 - Mecánica Cuántica
 **Temas Cubiertos:** Dualidad onda-partícula, Paquetes de ondas, Ecuación de Schrödinger, Momento Angular, Átomo de Hidrógeno, Efecto de Barrera Centrífuga.
 **Nota de Disponibilidad:** El análisis fue elaborado triangulando las diapositivas oficiales con la bibliografía canónica de la física cuántica (Griffiths, Sakurai) para expandir las derivaciones.

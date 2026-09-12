@@ -25,15 +25,20 @@ Total de clases:         ~8 clases estimadas
 
 | Clase | Docente | Fecha | Transcripción | PDF Diapositivas | Estado |
 |---|---|---|---|---|---|
-| Clase 01 | Paulraj Manidurai | 28 ago 2026 | `Clase_01/Clase del Diplomado de Física Moderna.docx` | `Clase_01/Clase 1_Quantum_Wave_Mechanics_1.pdf` | ✅ Disponible |
-| Clase 02 | Paulraj Manidurai | 04 sep 2026 | `Clase_02/Clase del Diplomado de Física Moderna.docx` | `Clase_02/Clase 2_HERRAMIENTAS MATEMATICAS 1.pdf` | ✅ Disponible |
-| Clase 03 | Paulraj Manidurai | 11 sep 2026 | `Clase_03/Clase del Diplomado de Física Moderna.docx` | `Clase_03/Clase 3.pdf` + `Clase_03/Pizarra Clase 3.pdf` | ✅ Disponible |
-| Clase 04 | Paulraj Manidurai | (pendiente) | — | — | ❌ No iniciado |
-| Clase 05–08 | (pendiente) | (pendiente) | — | — | ❌ No iniciado |
+| Clase 01 | Esteban Sepúlveda | 28 ago 2026 | `Clase_01/Clase del Diplomado de Física Moderna.docx` | `Clase_01/Clase 1_Quantum_Wave_Mechanics_1.pdf` | ✅ Disponible |
+| Clase 02 | Aldo Delgado | 04 sep 2026 | `Clase_02/Clase del Diplomado de Física Moderna.docx` | `Clase_02/Clase 2_HERRAMIENTAS MATEMATICAS 1.pdf` | ✅ Disponible |
+| Clase 03 | Esteban Sepúlveda | 11 sep 2026 | `Clase_03/Clase del Diplomado de Física Moderna.docx` | `Clase_03/Clase 3.pdf` + `Clase_03/Pizarra Clase 3.pdf` | ✅ Disponible |
+| Clase 04 | Aldo Delgado / Esteban Sepúlveda | (pendiente) | — | — | ❌ No iniciado |
+| Clase 05 | Esteban Sepúlveda | (pendiente) | — | — | ❌ No iniciado |
+
+
+> **Alternancia de docentes:** Los docentes se turnan clase por medio.
+> Clases impares (01, 03, 05, 07): **Esteban Sepúlveda**
+> Clases pares (02, 04, 06, 08): **Aldo Delgado**
 
 > **Nota sobre estructura (Módulo 04):** Cada clase tiene su propia carpeta `Clase_XX\` con PDF y `.docx`.  
 > La carpeta `Recursos\` contiene lecturas complementarias del módulo.  
-> El docente es **Paulraj Manidurai** (estilo conceptual/intuitivo, fonética tamil-inglesa en transcripciones).
+> El docente es **Aldo Delgado / Esteban Sepúlveda** (estilo conceptual/intuitivo, estilo propio de cada docente en transcripciones).
 
 ---
 
@@ -45,7 +50,7 @@ Total de clases:         ~8 clases estimadas
 
 Actúa como un asistente académico experto en Mecánica Cuántica y Física Matemática, con habilidades excepcionales para la redacción científica y pedagógica.
 
-Procesarás las transcripciones de video, materiales y recursos de cada clase del **Módulo 04 — Mecánica Cuántica** del **Diplomado en Física Moderna**, impartido por el Prof. **Paulraj Manidurai**.
+Procesarás las transcripciones de video, materiales y recursos de cada clase del **Módulo 04 — Mecánica Cuántica** del **Diplomado en Física Moderna**, impartido por el Prof. **Aldo Delgado / Esteban Sepúlveda**.
 
 **Módulo actual:** `04 — Mecánica Cuántica`  
 **Directorio raíz:** `D:\00_FisicaModerna\04_MecanicaCuantica\`  
@@ -91,7 +96,7 @@ Para cada clase, integra de manera exhaustiva y en este orden de prioridad:
 
 ### NOTAS SOBRE EL DOCENTE
 
-**Prof. Paulraj Manidurai:** Orientación conceptual e intuitiva. Fonética tamil-inglesa en las transcripciones: corregir al castellano estándar sin alterar el contenido. Complementar con bibliografía verificada donde el tratamiento sea introductorio o incompleto, asegurando que ningún tema quede parcialmente desarrollado.
+**Prof. Aldo Delgado / Esteban Sepúlveda:** Orientación conceptual e intuitiva. estilo propio de cada docente en las transcripciones: corregir al castellano estándar sin alterar el contenido. Complementar con bibliografía verificada donde el tratamiento sea introductorio o incompleto, asegurando que ningún tema quede parcialmente desarrollado.
 
 ---
 
@@ -182,10 +187,10 @@ Todos los archivos se guardan en `D:\00_FisicaModerna\04_MecanicaCuantica\Summar
 
 | Clase | Docente | Fecha | Transcripción | PDF clase | Estado extendido | Estado short | Última actualización |
 |---|---|---|---|---|---|---|---|
-| Clase 01 | Paulraj Manidurai | 28 ago 2026 | ✅ | ✅ | ✅ Completo | ✅ Completo | 12 Sep 2026 |
-| Clase 02 | Paulraj Manidurai | 04 sep 2026 | ✅ | ✅ | ✅ Completo | ✅ Completo | 12 Sep 2026 |
-| Clase 03 | Paulraj Manidurai | 11 sep 2026 | ✅ | ✅ | ✅ Completo | ✅ Completo | 12 Sep 2026 |
-| Clase 04 | (pendiente) | (pendiente) | ❌ | ❌ | ❌ No iniciado | ❌ No iniciado | — |
+| Clase 01 | Esteban Sepúlveda | 28 ago 2026 | ✅ | ✅ | ✅ Completo | ✅ Completo | 12 Sep 2026 |
+| Clase 02 | Aldo Delgado | 04 sep 2026 | ✅ | ✅ | ✅ Completo | ✅ Completo | 12 Sep 2026 |
+| Clase 03 | Esteban Sepúlveda | 11 sep 2026 | ✅ | ✅ | ✅ Completo | ✅ Completo | 12 Sep 2026 |
+| Clase 04 | Aldo Delgado | (pendiente) | ❌ | ❌ | ❌ No iniciado | ❌ No iniciado | — |
 | Clase 05 | (pendiente) | (pendiente) | ❌ | ❌ | ❌ No iniciado | ❌ No iniciado | — |
 | Clase 06 | (pendiente) | (pendiente) | ❌ | ❌ | ❌ No iniciado | ❌ No iniciado | — |
 | Clase 07 | (pendiente) | (pendiente) | ❌ | ❌ | ❌ No iniciado | ❌ No iniciado | — |
