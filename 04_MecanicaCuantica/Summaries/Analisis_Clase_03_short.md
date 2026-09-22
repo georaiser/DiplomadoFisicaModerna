@@ -1,9 +1,12 @@
-﻿---
-**Módulo:** 04 — Mecánica Cuántica
-**Clase:** 03
-**Docente:** Prof. Esteban Sepúlveda
-**Temas Cubiertos:** Momentum Angular, Operadores de Rotación, Conmutadores, Operadores Escalera, Armónicos Esféricos, Orbitales Atómicos.
----
+﻿# Módulo 04 — Mecánica Cuántica | Clase 03 (Síntesis)
+
+| Campo | Valor |
+|---|---|
+| **Módulo** | 04 — Mecánica Cuántica |
+| **Clase** | 03 |
+| **Docente** | Prof. Esteban Sepúlveda |
+| **Fecha** | 11 sep 2026 |
+| **Temas** | Momentum Angular · Conmutadores · Operadores Escalera · Armónicos Esféricos · Orbitales Atómicos |
 
 ## Síntesis de Conceptos Clave
 

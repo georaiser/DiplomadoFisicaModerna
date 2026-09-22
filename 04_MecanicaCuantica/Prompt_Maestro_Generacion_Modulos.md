@@ -158,6 +158,46 @@ Todos los archivos se guardan en `D:\00_FisicaModerna\04_MecanicaCuantica\Summar
 
 ---
 
+
+---
+
+#### A2. VERSIÓN "_extendida" — DOCUMENTO DE ESTUDIO PROFUNDO (SIN RESTRICCIÓN DE EXTENSIÓN)
+
+**Nombre de archivo:** `Analisis_Clase_XX_extendida.md`
+
+Esta versión es **independiente** de las versiones `_short` y extendida estándar. Su propósito es servir como **texto de estudio completo y autocontenido** sobre los temas de la clase. No tiene límite de extensión, páginas ni palabras.
+
+**Características obligatorias:**
+
+- **Sin restricción de extensión:** El documento debe ser tan largo como sea necesario para cubrir todos los temas con profundidad académica real. No se acortan secciones por longitud.
+- **Autocontenido:** El lector no debe necesitar consultar otra fuente para entender cualquier concepto tratado.
+- **Desarrollo exhaustivo de TODOS los temas:** Cada concepto mencionado en clase (aunque sea brevemente) se desarrolla en profundidad: motivación física, historia, derivación matemática completa, interpretación, límites, aplicaciones.
+- **Derivaciones matemáticas paso a paso:** Ningún paso algebraico se omite. Cada ecuación importante se deriva desde primeros principios o desde resultados claramente establecidos antes.
+- **Contexto histórico detallado:** Quién propuso el concepto, cuándo, qué problema resolvía, cómo fue recibido por la comunidad científica.
+- **Aplicaciones numéricas:** Ejemplos resueltos con números reales cuando sea posible.
+- **Conexiones entre temas:** Explicitar cómo cada tema se conecta con los anteriores y con los siguientes del módulo.
+- **Fuentes:** Usar el PDF y la transcripción de la clase como punto de partida, y expandir con bibliografía canónica verificada (Griffiths, Sakurai, Cohen-Tannoudji, Shankar, Gasiorowicz, Feynman Lectures, artículos originales, etc.).
+- **Secciones de "Profundización":** Después de cada tema principal, incluir una subsección `### Profundización` que vaya más allá de lo visto en clase.
+- **Preguntas de comprensión:** Al final de cada sección temática principal, incluir 3-5 preguntas de comprensión/reflexión para el estudio.
+- **Sección de Referencias Bibliográficas** completa y organizada al final.
+
+**Estructura de cada sección temática:**
+```
+## N. Título del Tema
+
+*Fuente primaria: [PDF clase / transcripción]*
+*Fuente complementaria: [bibliografía canónica]*
+
+### N.1 Motivación y Contexto Histórico
+### N.2 Desarrollo Conceptual
+### N.3 Derivación Matemática Completa
+### N.4 Interpretación Física del Resultado
+### N.5 Límites y Casos Especiales
+### N.6 Aplicaciones y Ejemplos Numéricos
+### N.7 Profundización
+### Preguntas de Comprensión
+```
+
 #### B. DOCUMENTOS CONSOLIDADOS DEL MÓDULO
 
 *(Generar sólo una vez finalizadas todas las clases del módulo)*
@@ -216,7 +256,9 @@ Todos los archivos se guardan en `D:\00_FisicaModerna\04_MecanicaCuantica\Summar
 ### ORDEN RECOMENDADO DE GENERACIÓN
 
 1. `Analisis_Clase_01_short.md` + `Analisis_Clase_01.md`
+1b. `Analisis_Clase_01_extendida.md`
 2. `Analisis_Clase_02_short.md` + `Analisis_Clase_02.md`
+2b. `Analisis_Clase_02_extendida.md`
 3. `Analisis_Clase_03_short.md` + `Analisis_Clase_03.md`
 4. *(al dictarse)* Clases 04 al 08 en el mismo orden
 5. `Resumen_Modulo04.md` + `Resumen_Modulo04_short.md`
