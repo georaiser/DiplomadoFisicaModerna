@@ -1,134 +1,309 @@
-﻿---
-**Diplomado en Física Moderna — Módulo 04: Mecánica Cuántica**
-**Clase 03:** Momentum Angular
-**Docente:** Prof. Esteban Sepúlveda
-**Fecha:** 12 de septiembre de 2026
-**Fuentes utilizadas:** Transcripción de clase, Diapositivas principales, Notas de pizarra, Bibliografía canónica.
-*Nota sobre disponibilidad:* El estilo pedagógico e intuitivo del Prof. Sepúlveda con estilo propio del docente en las transcripciones ha sido corregido y trasladado al castellano estándar, preservando el máximo rigor matemático y conceptual de sus exposiciones originales.
+﻿# Módulo 04 — Mecánica Cuántica | Clase 03
+
+| Campo | Valor |
+|---|---|
+| **Módulo** | 04 — Mecánica Cuántica |
+| **Clase** | 03 |
+| **Docente** | Prof. Esteban Sepúlveda |
+| **Fecha** | 11 sep 2026 |
+| **Temas** | Momentum Angular Cuántico · Conmutadores · Operadores Escalera · Cuantización algebraica · Armónicos Esféricos · Orbitales Atómicos |
+
+**Fuentes:**
+1. `Clase del Diplomado de Física Moderna.docx` — transcripción grabación 11 sep 2026
+2. `Clase 3.pdf` — diapositivas (45 páginas)
+3. `Pizarra Clase 3.pdf` — pizarra (7 páginas)
+4. Griffiths, *Introduction to Quantum Mechanics*, cap. 4
+5. Sakurai, *Modern Quantum Mechanics*, cap. 3
+6. Cohen-Tannoudji, *Mécanique Quantique*, cap. VI
+7. Gasiorowicz, *Quantum Physics*, cap. 11
+
 ---
 
-## 1. El Momentum Angular y las Rotaciones Clásicas vs. Cuánticas
-*Fuente: Diapositivas 1-8, Pizarra*
+## Introducción
 
-En la mecánica clásica, un trompo, una patinadora sobre hielo y el planeta Tierra comparten una magnitud física fundamental que se conserva bajo ciertas simetrías: el momentum angular $\vec{L}$.
-Clásicamente, se define con respecto a un origen como el producto vectorial:
-$$ \vec{L} = \vec{r} \times \vec{p} $$
+La Clase 03 aborda el **momentum angular cuántico**, uno de los pilares de la física moderna. El Prof. Sepúlveda parte desde la intuición clásica (trompo, patinadora, Tierra) y deriva rigurosamente la estructura algebraica completa: relaciones de conmutación, operadores escalera, cuantización del espectro y representación en coordenadas esféricas. El resultado son los armónicos esféricos $Y_l^m$, que determinan la geometría de los orbitales atómicos.
 
-¿Cuándo se conserva esta cantidad? Matemáticamente, la derivada temporal de $\vec{L}$ es el torque externo neto aplicado:
-$$ \frac{d\vec{L}}{dt} = \vec{\tau}_{ext} = \vec{r} \times \vec{F}_{ext} $$
-Si consideramos un potencial puramente **central**, es decir, que la fuerza $\vec{F}(r) = f(r)\hat{r}$ es paralela al vector de posición $\vec{r}$, el producto cruz es nulo ($\vec{\tau}_{ext} = 0$). Consecuentemente, el vector $\vec{L}$ permanece constante. La Segunda Ley de Kepler es una consecuencia astronómica directa de esta preservación.
+---
 
-### Promoción a Operadores Cuánticos
-En la mecánica cuántica, los electrones u otras partículas microscópicas no poseen trayectorias unívocas $\vec{r}(t)$ que puedan graficarse explícitamente, pero el concepto de momentum angular subsiste y es primordial, promoviéndose a un operador vectorial algebraico:
-$$ \hat{\vec{L}} = \hat{\vec{r}} \times \hat{\vec{p}} $$
-Donde el operador de momentum en el espacio cartesiano de posiciones es $\hat{p} = -i\hbar \nabla$.
-Desarrollando el determinante para la componente espacial de los ejes, obtenemos:
-$$ \hat{L}_x = \hat{Y}\hat{p}_z - \hat{Z}\hat{p}_y = -i\hbar \left( y\frac{\partial}{\partial z} - z\frac{\partial}{\partial y} \right) $$
-$$ \hat{L}_y = \hat{Z}\hat{p}_x - \hat{X}\hat{p}_z = -i\hbar \left( z\frac{\partial}{\partial x} - x\frac{\partial}{\partial z} \right) $$
-$$ \hat{L}_z = \hat{X}\hat{p}_y - \hat{Y}\hat{p}_x = -i\hbar \left( x\frac{\partial}{\partial y} - y\frac{\partial}{\partial x} \right) $$
+## 1. Motivación Clásica y Cuantización del Concepto
 
-Como se detalló extensamente en la pizarra, toda el álgebra del momentum angular emana de la relación de conmutación canónica básica entre coordenada y momento conjugado: $[x_i, p_j] = i\hbar\delta_{ij}$.
+### 1.1 Momentum Angular Clásico
+
+$$\vec{L} = \vec{r} \times \vec{p}$$
+
+El Prof. Sepúlveda usa tres ejemplos concretos de la clase:
+- **Trompo:** gira conservando $\vec{L}$
+- **Patinadora:** al contraerse $I$ disminuye, $\omega$ aumenta ($L = I\omega$ constante)
+- **Rueda de bicicleta:** al invertir la rueda, la plataforma gira para conservar $L_\text{total}$
+
+**Conservación:** En potenciales centrales $\vec{F}(r) = f(r)\hat{r}$, el torque es $\vec{\tau} = \vec{r} \times \vec{F} = 0$ (vectores paralelos), por lo que $d\vec{L}/dt = 0$.
+
+**Conexión con simetría (Teorema de Noether):** La conservación del momentum angular corresponde a la invarianza ante rotaciones (simetría rotacional del espacio).
+
+### 1.2 El Problema de Cuantizar el Momentum Angular
+
+En mecánica cuántica, el electrón no tiene trayectoria definida, por lo que la noción clásica de "orbitar" es incorrecta. Sin embargo, el **operador** momentum angular sí tiene significado: representa el generador de rotaciones del espacio físico.
+
+La cuantización consiste en promover $\vec{r}$ y $\vec{p}$ a operadores hermíticos:
+
+$$\hat{\vec{L}} = \hat{\vec{r}} \times \hat{\vec{p}}, \qquad \hat{\vec{p}} = -i\hbar\nabla$$
+
+Las componentes cartesianas:
+$$\hat{L}_x = \hat{Y}\hat{P}_z - \hat{Z}\hat{P}_y = -i\hbar\left(y\frac{\partial}{\partial z}-z\frac{\partial}{\partial y}\right)$$
+$$\hat{L}_y = \hat{Z}\hat{P}_x - \hat{X}\hat{P}_z = -i\hbar\left(z\frac{\partial}{\partial x}-x\frac{\partial}{\partial z}\right)$$
+$$\hat{L}_z = \hat{X}\hat{P}_y - \hat{Y}\hat{P}_x = -i\hbar\left(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\right)$$
+
+---
 
 ## 2. Álgebra de Conmutadores del Momentum Angular
-*Fuente: Diapositivas 9-11, Pizarra de la clase*
 
-Una característica intrínseca de las rotaciones espaciales en 3D es su naturaleza **no conmutativa**. Rotar un objeto $\pi/2$ respecto a $x$ y luego respecto a $y$ da un resultado rotacional distinto que aplicar las mismas operaciones en orden invertido. Esta no conmutatividad geométrica se traduce al lenguaje de operadores de la siguiente forma:
+### 2.1 Las Rotaciones No Conmutan
 
-$$ [\hat{L}_x, \hat{L}_y] = [\hat{Y}\hat{p}_z - \hat{Z}\hat{p}_y, \hat{Z}\hat{p}_x - \hat{X}\hat{p}_z] $$
-Aprovechando la linealidad del conmutador, la mayoría de los productos se anulan (p.ej., $[Y, p_x] = 0$). El único término donde las variables coinciden y no conmutan es el que engloba a $\hat{Z}$ y $\hat{p}_z$:
-$$ [\hat{L}_x, \hat{L}_y] = \hat{Y}[\hat{p}_z, \hat{Z}]\hat{p}_x - \hat{p}_y[\hat{Z}, \hat{p}_z]\hat{X} $$
-Insertando $[\hat{Z}, \hat{p}_z] = i\hbar$ y su opuesto $[\hat{p}_z, \hat{Z}] = -i\hbar$:
-$$ [\hat{L}_x, \hat{L}_y] = \hat{Y}(-i\hbar)\hat{p}_x - \hat{p}_y(i\hbar)\hat{X} = i\hbar (\hat{X}\hat{p}_y - \hat{Y}\hat{p}_x) = i\hbar \hat{L}_z $$
+El Prof. Sepúlveda demuestra con una tablet: rotar 90° en X luego en Y da resultado diferente que Y luego X. Las rotaciones no conmutan → los operadores de momento angular tampoco.
 
-Análogamente, se generan las relaciones cíclicas:
-$$ [\hat{L}_y, \hat{L}_z] = i\hbar \hat{L}_x, \quad [\hat{L}_z, \hat{L}_x] = i\hbar \hat{L}_y $$
+### 2.2 Derivación de $[\hat{L}_x, \hat{L}_y] = i\hbar\hat{L}_z$
 
-La interpretación física de esto es concluyente: **ninguna componente espacial del momentum angular conmuta con las demás**. Debido a la formulación del Principio de Incertidumbre, **es imposible la existencia de autoestados simultáneos** para más de una componente.
+Usando la relación canónica $[\hat{x}_i, \hat{p}_j] = i\hbar\delta_{ij}$ (derivada en la clase anterior):
 
-### El Operador Cuadrático Escalar $L^2$
-El escalar derivado de la magnitud cuadrada total $\hat{L}^2 = \hat{L}_x^2 + \hat{L}_y^2 + \hat{L}_z^2$ no es un vector, y por lo tanto, **sí conmuta incondicionalmente** con cualquier componente cartesiana aislada:
-$$ [\hat{L}^2, \hat{L}_x] = [\hat{L}^2, \hat{L}_y] = [\hat{L}^2, \hat{L}_z] = 0 $$
-Esto certifica matemáticamente la viabilidad de hallar autoestados que definan de manera exacta y simultánea el valor de $\hat{L}^2$ y el de una proyección espacial (escogiendo habitualmente el eje $z$). Definimos la base temporal $|\alpha, \beta\rangle$:
-$$ \hat{L}^2 |\alpha, \beta\rangle = \hbar^2 \alpha |\alpha, \beta\rangle $$
-$$ \hat{L}_z |\alpha, \beta\rangle = \hbar \beta |\alpha, \beta\rangle $$
+$$[\hat{L}_x, \hat{L}_y] = [\hat{Y}\hat{P}_z - \hat{Z}\hat{P}_y,\; \hat{Z}\hat{P}_x - \hat{X}\hat{P}_z]$$
 
-## 3. Derivación Analítica Completa: Operadores Escalera y Cuantización
-*Fuente: Diapositivas 14-23, Pizarra, Expansión con Bibliografía (Griffiths "Introduction to Quantum Mechanics")*
+Expandiendo (el PDF, pág. 10, muestra los 4 conmutadores; solo sobrevive el que involucra $[\hat{P}_z, \hat{Z}] \neq 0$):
 
-el Prof. Sepúlveda construye los conocidos "operadores de creación y aniquilación" rotacionales (escalera):
-$$ \hat{L}_{\pm} = \hat{L}_x \pm i\hat{L}_y $$
+$$= \hat{Y}[\hat{P}_z, \hat{Z}]\hat{P}_x + \hat{X}[\hat{Z}, \hat{P}_z]\hat{P}_y = \hat{Y}(-i\hbar)\hat{P}_x + \hat{X}(i\hbar)\hat{P}_y = i\hbar(\hat{X}\hat{P}_y - \hat{Y}\hat{P}_x) = i\hbar\hat{L}_z$$
 
-### Acción Escalonada de $\hat{L}_+$ y $\hat{L}_-$
-Para develar su impacto, conmutamos $\hat{L}_z$ con los operadores escalera:
-$$ [\hat{L}_z, \hat{L}_{\pm}] = [\hat{L}_z, \hat{L}_x] \pm i[\hat{L}_z, \hat{L}_y] = i\hbar \hat{L}_y \pm i(-i\hbar \hat{L}_x) = \pm \hbar (\hat{L}_x \pm i\hat{L}_y) = \pm \hbar \hat{L}_{\pm} $$
-Reordenando este conmutador para aislar un factor $\hat{L}_z \hat{L}_{\pm} = \hat{L}_{\pm} \hat{L}_z \pm \hbar \hat{L}_{\pm}$. Evaluamos su efecto sobre el estado base $|\alpha, \beta\rangle$:
-$$ \hat{L}_z (\hat{L}_+ |\alpha, \beta\rangle) = (\hat{L}_+ \hat{L}_z + \hbar \hat{L}_+)|\alpha, \beta\rangle = \hat{L}_+(\hbar\beta)|\alpha, \beta\rangle + \hbar\hat{L}_+|\alpha, \beta\rangle $$
-$$ = \hbar(\beta + 1)(\hat{L}_+ |\alpha, \beta\rangle) $$
-Se verifica que la entidad algebraica $(\hat{L}_+ |\alpha, \beta\rangle)$ es efectivamente un nuevo autoestado formal de $\hat{L}_z$, cuyo autovalor es el previo más el incremento de un cuanto de acción $\hbar$. $\hat{L}_+$ sube la escalera magnética en 1 y $\hat{L}_-$ la desciende en 1. En estos ascensos, la magnitud intrínseca $\alpha$ (propia de $\hat{L}^2$) jamás se altera, pues $[\hat{L}^2, \hat{L}_{\pm}] = 0$.
+Por permutación cíclica $x \to y \to z \to x$:
 
-### El Truncamiento Numérico (Cuantización Discreta)
-El cuadrado del momentum se reescribe elegantemente mediante esta misma escalera:
-$$ \hat{L}_{\mp}\hat{L}_{\pm} = (\hat{L}_x \mp i\hat{L}_y)(\hat{L}_x \pm i\hat{L}_y) = \hat{L}_x^2 + \hat{L}_y^2 \pm i[\hat{L}_x, \hat{L}_y] = \hat{L}^2 - \hat{L}_z^2 \mp \hbar \hat{L}_z $$
-Aislando $\hat{L}^2$:
-$$ \hat{L}^2 = \hat{L}_{\mp}\hat{L}_{\pm} + \hat{L}_z^2 \pm \hbar \hat{L}_z $$
-Ya que $\hat{L}^2 - \hat{L}_z^2 = \hat{L}_x^2 + \hat{L}_y^2$ constituye por definición una adición de operadores hermíticos al cuadrado, su valor esperado invariablemente será positivo o cero. De esta aserción emerge una **cota limitante insalvable**:
-$$ \alpha \geq \beta^2 $$
-Esto señala la futilidad de pretender subir ($\beta \to \beta+1$) ilimitadamente; existe obligadamente un "tope de la escalera" $\beta_{max} \equiv l$ donde el intento de continuar ascensión se interrumpe y disuelve el estado:
-$$ \hat{L}_+ |\alpha, l\rangle = 0 $$
-Multiplicando por la izquierda con el conector $\hat{L}_-$ y aplicando nuestra identidad para $\hat{L}_-\hat{L}_+$:
-$$ (\hat{L}^2 - \hat{L}_z^2 - \hbar\hat{L}_z) |\alpha, l\rangle = 0 $$
-Evaluando en sus respectivos autovalores fijos para este peldaño:
-$$ (\hbar^2\alpha - \hbar^2 l^2 - \hbar^2 l) |\alpha, l\rangle = 0 \implies \alpha = l(l+1) $$
+$$\boxed{[\hat{L}_x, \hat{L}_y] = i\hbar\hat{L}_z, \qquad [\hat{L}_y, \hat{L}_z] = i\hbar\hat{L}_x, \qquad [\hat{L}_z, \hat{L}_x] = i\hbar\hat{L}_y}$$
 
-Se concluye idéntico proceso hacia abajo para atestiguar que el escalón más profundo de decenso se sitúa de forma geométrica y espejada en $\beta_{min} = -l$.
-Partiendo de $-l$, al otorgar imperiosamente una cantidad discreta y entera de pasos ascensionales $n$, habremos de alcanzar la azotea de la escalera $+l$:
-$$ l = -l + n \implies 2l = n \implies l = \frac{n}{2} $$
-**Resolución Definitiva:** El momentum angular exhibe obligatoria y naturalmente un perfil cuantizado; los niveles de magnitud permitidos $l$ ostentarán valores numéricamente enteros o semienteros ($0, 1/2, 1, 3/2, \dots$). Bajo esto, el índice de orientación azimutal magnética fluirá en la banda:
-$$ m \in \{-l, -l+1, \dots, l-1, l\} $$
+**El conmutador $[\hat{L}_y, \hat{L}_x]$:** El alumno Andrés pregunta; el Prof. responde: $[\hat{L}_y, \hat{L}_x] = -i\hbar\hat{L}_z$ (cambio de signo: propiedad antisimétrica del conmutador).
 
-## 4. Representación Vectorial/Matricial y Ecuación de Legendre
-*Fuente: Diapositivas 27-39, Pizarra*
+**Implicación física:** No se pueden medir $L_x$, $L_y$ y $L_z$ simultáneamente.
 
-Un caso específico del modelo desarrollado para $l=1$ dicta la existencia de $2(1)+1 = 3$ estados representables: $|1, 1\rangle, |1, 0\rangle, |1, -1\rangle$.
-Al volcar sobre una base ortonormal estas matrices en un espacio de sub-hilbert ($3\times 3$), $\hat{L}_z$ despliega una matriz diagonal prístina:
-$$ L_z = \hbar \begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & -1 \end{pmatrix} $$
+### 2.3 $\hat{L}^2$ como Operador Escalar
 
-La transición al marco topológico esférico coordinal $(r, \theta, \varphi)$ modela las componentes en un marco funcional de densidades probabilísticas para el espacio real:
-$$ \hat{L}_z = -i\hbar \frac{\partial}{\partial \varphi} $$
-La resolución de autovalores de la función de onda espacial $\langle \theta, \varphi | l, m\rangle$ forja la familia especial de soluciones denominadas **Armónicos Esféricos**, expresables como: $Y_{lm}(\theta, \varphi) = \Theta_{lm}(\theta) \Phi_m(\varphi)$. 
-Estas funciones congregan en sus venas:
-1. Azimutal dependiente de la variable de rotación circular transversal: $\Phi_m(\varphi) = \frac{1}{\sqrt{2\pi}} e^{im\varphi}$.
-2. Polar generada sobre las soluciones asociadas de la **Ecuación Diferencial Clásica de Legendre**: $\Theta_{lm}(\theta) = C_{lm} P_l^m(\cos \theta)$.
+$\hat{L}^2 = \hat{L}_x^2 + \hat{L}_y^2 + \hat{L}_z^2$ es la "magnitud al cuadrado" del vector, análoga al teorema de Pitágoras en 3D (analogía del Prof.). Es un **operador escalar** (sin dirección), invariante ante rotaciones.
 
-Es fundamental y mandatorio advertir que la aplicación a un marco dimensional puramente físico impone un carácter monovalente funcional que **solo admite escalares enteros de $l$**; la aparición de escalares fraccionarios ($1/2, 3/2$) se desvela así como la radiografía matemática ineludible y oculta del "espín".
+Usando la identidad $[A^2, B] = A[A,B] + [A,B]A$:
 
-## 5. El Edificio Atómico: Analogía Arquitectónica Integrativa
-*Fuente: Diapositivas 40-45*
+$$[\hat{L}^2, \hat{L}_z] = [\hat{L}_x^2, \hat{L}_z] + [\hat{L}_y^2, \hat{L}_z] + 0$$
 
-A fin de asimilar estas deducciones, el profesor acudió a una alegoría pedagógica sobre la clasificación jerárquica intra-atómica:
-- **Piso/Elevación Cuántica $n$:** (Número cuántico principal). $n=1, 2, \dots$. Restringe los límites de ocupación.
-- **Formato/Arquitectura del Departamento $l$:** (Momento Angular Orbital). Condicionado a la norma de seguridad $l \le n-1$. Dictamina el mapa y topología lobulada del espacio físico de tránsito probabilístico: esférico ($s, l=0$), en lóbulo bilateral ($p, l=1$), tetralobular cruzado ($d, l=2$).
-- **Orientación de Vistas y Ventanas $m_l$:** Dispone las diferentes proyecciones magnéticas angulares posibilitadas en $2l+1$ posiciones ($p_x, p_y, p_z$).
-- **Lateralidad Dominante del Residente $m_s$:** El perfil de rotación intrínseca propio de su espín de fermión ($\pm 1/2$).
+$$= \hat{L}_x[\hat{L}_x, \hat{L}_z] + [\hat{L}_x, \hat{L}_z]\hat{L}_x + \hat{L}_y[\hat{L}_y, \hat{L}_z] + [\hat{L}_y, \hat{L}_z]\hat{L}_y$$
 
-Esta combinación de límites rige indisolublemente y universalmente el aforo de ocupación. En la analogía evaluada, para el piso de altura $n=3$, el cálculo matricial avala la coexistencia de exactamente un total absoluto de $2n^2 = 18$ "habitantes" o estados de electrones posibles.
+$$= \hat{L}_x(-i\hbar\hat{L}_y) + (-i\hbar\hat{L}_y)\hat{L}_x + \hat{L}_y(i\hbar\hat{L}_x) + (i\hbar\hat{L}_x)\hat{L}_y = 0$$
 
-## 6. Conclusiones Relevantes de la Clase
+Por lo tanto:
+$$[\hat{L}^2, \hat{L}_x] = [\hat{L}^2, \hat{L}_y] = [\hat{L}^2, \hat{L}_z] = 0$$
 
-1. **Giro Conservado y Potenciales Concéntricos:** Se validó fehacientemente que la existencia de fuerzas estrictamente centrales ampara e impone que el vector momentum angular perviva en incondicional perpetuidad sin padecer torque exterior.
-2. **Las Barreras Dimensionales Rotacionales:** Se ha formalizado y comprobado empíricamente a través de su matriz de conmutación no conmutativa el por qué la rotación asume linderos incompatibles al someterse a medidas simultáneas y ortogonales (Principio de Heisenberg).
-3. **Escalera Discretizadora Predictiva:** Queda exhibido cómo los operadores no hermíticos (algebra de peldaños $\hat{L}_{\pm}$) eximen la carga algorítmica de los cálculos diferenciales pesados y proveen una escalera finita y discreta, con el número cuántico de valor entero.
-4. **Armónicos Esféricos Moldeadores:** Los polinomios de Legendre se erigen como los límites fronterizos espaciales de los átomos, cimentando la forma, los bordes geográficos y la dirección explícita tridimensional con la que interaccionan atómicamente los engranes de la naturaleza para forjar los elementos de la tabla química periódica.
+**CCOC elegido:** $\{\hat{L}^2, \hat{L}_z\}$. Sus autoestados simultáneos:
 
-## 7. Referencias Bibliográficas Estándar
+$$\hat{L}^2|\alpha,\beta\rangle = \hbar^2\alpha|\alpha,\beta\rangle, \qquad \hat{L}_z|\alpha,\beta\rangle = \hbar\beta|\alpha,\beta\rangle$$
 
-1. **Artículos Fundacionales:**
-   - Dirac, P. A. M. (1926). *Quantum Mechanics and a Preliminary Investigation of the Hydrogen Atom*. Proceedings of the Royal Society of London. Series A, 110(755), 561-579.
-2. **Textos Core del Curso:**
-   - Griffiths, D. J., & Schroeter, D. F. (2018). *Introduction to Quantum Mechanics* (3rd ed.). Cambridge University Press.
-   - Sakurai, J. J., & Napolitano, J. (2020). *Modern Quantum Mechanics* (3rd ed.). Cambridge University Press.
-   - Cohen-Tannoudji, C., Diu, B., & Laloë, F. (1977). *Quantum Mechanics* (Vol. 1). Wiley-VCH.
-3. **Recursos de Complemento Histórico e Institucional:**
-   - Feynman, R. P., Leighton, R. B., & Sands, M. (1965). *The Feynman Lectures on Physics, Vol. III* (Capítulo 18).
-   - "50 temas fascinantes de la física cuántica" (Material Didáctico Abierto del Módulo 04).
-   - "Mecánica Cuántica para Principiantes" (Material Básico Complementario del Módulo 04).
+---
+
+## 3. Operadores Escalera y Cuantización Algebraica
+
+### 3.1 Definición y Conmutadores
+
+El Prof. Sepúlveda define (pizarra y PDF pág. 15):
+
+$$\hat{L}_+ = \hat{L}_x + i\hat{L}_y \quad (\text{subida}), \qquad \hat{L}_- = \hat{L}_x - i\hat{L}_y \quad (\text{bajada})$$
+
+Conmutadores clave (PDF pág. 16):
+$$[\hat{L}_z, \hat{L}_+] = \hbar\hat{L}_+, \qquad [\hat{L}_z, \hat{L}_-] = -\hbar\hat{L}_-, \qquad [\hat{L}^2, \hat{L}_\pm] = 0$$
+$$[\hat{L}_+, \hat{L}_-] = 2\hbar\hat{L}_z$$
+
+Relaciones útiles para reescribir $\hat{L}^2$:
+$$\hat{L}^2 = \hat{L}_+\hat{L}_- + \hat{L}_z^2 - \hbar\hat{L}_z = \hat{L}_-\hat{L}_+ + \hat{L}_z^2 + \hbar\hat{L}_z$$
+
+### 3.2 Acción sobre los Autoestados (derivación completa de la clase)
+
+El Prof. Sepúlveda demuestra en pizarra (pág. 4 de la pizarra + PDF págs. 17-18):
+
+$$\hat{L}_z\bigl(\hat{L}_+|\alpha,\beta\rangle\bigr) = \bigl(\hat{L}_+\hat{L}_z + [\hat{L}_z,\hat{L}_+]\bigr)|\alpha,\beta\rangle = \hat{L}_+(\hbar\beta|\alpha,\beta\rangle) + \hbar\hat{L}_+|\alpha,\beta\rangle = \hbar(\beta+1)\bigl(\hat{L}_+|\alpha,\beta\rangle\bigr)$$
+
+$\hat{L}_+|\alpha,\beta\rangle$ es **autoestado de $\hat{L}_z$** con autovalor $\hbar(\beta+1)$.
+
+Del mismo modo $\hat{L}_-|\alpha,\beta\rangle$ tiene autovalor $\hbar(\beta-1)$.
+
+Como $[\hat{L}^2, \hat{L}_\pm] = 0$, el valor de $\alpha$ **no cambia**. Toda la "escalera" comparte el mismo $\alpha$.
+
+### 3.3 Truncamiento de la Escalera → Cuantización
+
+**Cota superior** (PDF pág. 20): Como $\hat{L}_x^2 + \hat{L}_y^2 \geq 0$:
+
+$$\langle\alpha,\beta|\hat{L}^2 - \hat{L}_z^2|\alpha,\beta\rangle \geq 0 \implies \hbar^2\alpha - \hbar^2\beta^2 \geq 0 \implies \alpha \geq \beta^2$$
+
+Existe $\beta_\text{max}$ tal que $\hat{L}_+|\alpha,\beta_\text{max}\rangle = 0$. Aplicando $\hat{L}_-$ a ambos lados:
+
+$$\hat{L}_-\hat{L}_+|\alpha,\beta_\text{max}\rangle = (\hat{L}^2 - \hat{L}_z^2 - \hbar\hat{L}_z)|\alpha,\beta_\text{max}\rangle = (\hbar^2\alpha - \hbar^2\beta_\text{max}^2 - \hbar^2\beta_\text{max})|\alpha,\beta_\text{max}\rangle = 0$$
+
+$$\Rightarrow \alpha = \beta_\text{max}(\beta_\text{max}+1)$$
+
+**Cota inferior** (PDF pág. 22): Por simetría, existe $\beta_\text{min}$ con $\hat{L}_-|\alpha,\beta_\text{min}\rangle = 0$, lo que da $\alpha = \beta_\text{min}(\beta_\text{min}-1)$.
+
+Igualando: $\beta_\text{max} = -\beta_\text{min}$.
+
+**Cuantización** (PDF pág. 23): Desde $\beta_\text{min}$ hasta $\beta_\text{max}$ hay $n$ pasos enteros de 1:
+
+$$\beta_\text{max} = \beta_\text{min} + n \implies 2\beta_\text{max} = n \implies \beta_\text{max} = \frac{n}{2},\quad n = 0,1,2,3,\dots$$
+
+Renombrando $\beta_\text{max} \to l$ y $\beta \to m$ (PDF pág. 24):
+
+$$\boxed{\hat{L}^2|l,m\rangle = \hbar^2 l(l+1)|l,m\rangle}, \quad l = 0,\tfrac{1}{2},1,\tfrac{3}{2},\dots$$
+$$\boxed{\hat{L}_z|l,m\rangle = \hbar m|l,m\rangle}, \quad m = -l,-l+1,\dots,l-1,l$$
+
+**Magnitud:** $|\vec{L}| = \sqrt{l(l+1)}\,\hbar$. Hay $2l+1$ orientaciones posibles.
+
+El Prof. destaca: los valores semienteros ($l = 1/2, 3/2, \dots$) no provienen de la cuantización de la coordenada espacial, sino del álgebra de conmutadores → corresponden al **espín**.
+
+### 3.4 Coeficientes Exactos de los Operadores Escalera
+
+Normalizando $\hat{L}_\pm|l,m\rangle = C_\pm|l,m\pm 1\rangle$ y usando $\hat{L}_\mp\hat{L}_\pm = \hat{L}^2 - \hat{L}_z^2 \mp \hbar\hat{L}_z$:
+
+$$|C_\pm|^2 = \hbar^2[l(l+1) - m(m\pm 1)]$$
+
+$$\boxed{\hat{L}_\pm|l,m\rangle = \hbar\sqrt{l(l+1)-m(m\pm 1)}\;|l,m\pm 1\rangle}$$
+
+---
+
+## 4. Representación Matricial para $l=1$
+
+Con $l=1$, la base es $\{|1,1\rangle, |1,0\rangle, |1,-1\rangle\}$ (PDF págs. 28-30):
+
+$$\hat{L}^2 = 2\hbar^2\begin{pmatrix}1&0&0\\0&1&0\\0&0&1\end{pmatrix}, \qquad \hat{L}_z = \hbar\begin{pmatrix}1&0&0\\0&0&0\\0&0&-1\end{pmatrix}$$
+
+$$\hat{L}_+ = \hbar\sqrt{2}\begin{pmatrix}0&1&0\\0&0&1\\0&0&0\end{pmatrix}, \qquad \hat{L}_- = \hbar\sqrt{2}\begin{pmatrix}0&0&0\\1&0&0\\0&1&0\end{pmatrix}$$
+
+$$\hat{L}_x = \frac{\hat{L}_++\hat{L}_-}{2} = \frac{\hbar}{\sqrt{2}}\begin{pmatrix}0&1&0\\1&0&1\\0&1&0\end{pmatrix}, \qquad \hat{L}_y = \frac{\hat{L}_+-\hat{L}_-}{2i} = \frac{\hbar}{\sqrt{2}}\begin{pmatrix}0&-i&0\\i&0&-i\\0&i&0\end{pmatrix}$$
+
+**Verificación (PDF pág. 30):** La multiplicación matricial de $\hat{L}_x \cdot \hat{L}_y - \hat{L}_y \cdot \hat{L}_x = i\hbar\hat{L}_z$ confirma el álgebra de conmutadores.
+
+---
+
+## 5. Armónicos Esféricos como Autofunciones Espaciales
+
+### 5.1 Aparición al Separar Variables (PDF pág. 32)
+
+En coordenadas esféricas, el laplaciano en 3D se escribe:
+
+$$\nabla^2 = \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r}\right) - \frac{\hat{L}^2}{\hbar^2 r^2}$$
+
+La parte angular queda íntegramente contenida en $\hat{L}^2$. Los operadores en coordenadas esféricas son:
+
+$$\hat{L}_z = -i\hbar\frac{\partial}{\partial\phi}, \qquad \hat{L}^2 = -\hbar^2\left[\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)+\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}\right]$$
+
+### 5.2 Separación de Variables: parte $\phi$ (PDF pág. 35)
+
+$$\hat{L}_z Y_l^m = \hbar m Y_l^m \implies -i\hbar\frac{\partial\Phi_m}{\partial\phi} = \hbar m\Phi_m \implies \Phi_m(\phi) = \frac{1}{\sqrt{2\pi}}e^{im\phi}$$
+
+Condición de univaluación: $\Phi_m(\phi+2\pi) = \Phi_m(\phi) \Rightarrow e^{2\pi im} = 1 \Rightarrow$ **$m$ entero** → $l$ entero para momento orbital espacial.
+
+### 5.3 Parte $\theta$: Ecuación de Legendre (PDF pág. 36-37)
+
+Sustituyendo en la ecuación de $\hat{L}^2$, la parte en $\theta$ satisface la **ecuación diferencial asociada de Legendre**:
+
+$$\frac{d}{d(\cos\theta)}\left[(1-\cos^2\theta)\frac{d\Theta}{d(\cos\theta)}\right] + \left[l(l+1) - \frac{m^2}{1-\cos^2\theta}\right]\Theta = 0$$
+
+Soluciones: $\Theta_{lm}(\theta) = C_{lm}P_l^m(\cos\theta)$
+
+Polinomios de Legendre $P_l(x)$ (PDF pág. 37):
+
+| $l$ | $P_l(x)$ |
+|---|---|
+| 0 | $1$ |
+| 1 | $x$ |
+| 2 | $\frac{1}{2}(3x^2-1)$ |
+| 3 | $\frac{1}{2}(5x^3-3x)$ |
+
+Funciones asociadas $P_l^m(x)$: $P_1^1(x) = \sqrt{1-x^2}$, $P_2^1(x) = 3x\sqrt{1-x^2}$, $P_2^2(x) = 3(1-x^2)$
+
+### 5.4 Resultado Final: Armónicos Esféricos (PDF pág. 38)
+
+$$\boxed{Y_l^m(\theta,\phi) = C_{lm}\,P_l^m(\cos\theta)\,e^{im\phi}}$$
+
+Tabla de los primeros armónicos esféricos:
+
+| $l$ | $m$ | $Y_l^m(\theta,\phi)$ |
+|:---:|:---:|:---:|
+| 0 | 0 | $\dfrac{1}{\sqrt{4\pi}}$ |
+| 1 | 0 | $\sqrt{\dfrac{3}{4\pi}}\cos\theta$ |
+| 1 | $\pm 1$ | $\mp\sqrt{\dfrac{3}{8\pi}}\sin\theta\,e^{\pm i\phi}$ |
+| 2 | 0 | $\sqrt{\dfrac{5}{16\pi}}(3\cos^2\theta-1)$ |
+| 2 | $\pm 1$ | $\mp\sqrt{\dfrac{15}{8\pi}}\sin\theta\cos\theta\,e^{\pm i\phi}$ |
+| 2 | $\pm 2$ | $\sqrt{\dfrac{15}{32\pi}}\sin^2\theta\,e^{\pm 2i\phi}$ |
+
+**Conexión con los orbitales (PDF pág. 39):** Con $\cos\theta = z/r$ y $\sin\theta\,e^{\pm i\phi} = (x \pm iy)/r$:
+- $Y_1^0 \propto z/r$ → orbital $2p_z$
+- Combinaciones reales: $Y_1^{+1} + Y_1^{-1} \propto x/r$ → $2p_x$
+- $i(Y_1^{+1} - Y_1^{-1}) \propto y/r$ → $2p_y$
+
+---
+
+## 6. Orbitales Atómicos y Números Cuánticos
+
+### 6.1 La Analogía del Edificio (Prof. Sepúlveda, PDF págs. 40-42)
+
+La función de onda completa del átomo de hidrógeno: $\psi_{nlm}(r,\theta,\phi) = R_{nl}(r)\,Y_l^m(\theta,\phi)$
+
+| N° cuántico | Analogía | Valores | Determina |
+|---|---|---|---|
+| $n$ (principal) | Piso | $1,2,3,\dots$ | Energía: $E_n \propto -1/n^2$ |
+| $l$ (azimutal) | Diseño de suite | $0,1,\dots,n-1$ | Forma: $s,p,d,f$ |
+| $m_l$ (magnético) | Orientación suite | $-l,\dots,l$ | Orientación espacial |
+| $m_s$ (espín) | Lateralidad inquilino | $\pm\tfrac{1}{2}$ | Espín |
+
+**Regla clave (la más olvidada, PDF pág. 42):** $l \leq n-1$
+
+### 6.2 Ejemplos Numéricos del PDF
+
+**Ejemplo 1 (PDF pág. 44):** ¿Cuántos electrones caben en el piso $n=3$?
+1. Para cada $n$, el número de combinaciones $(l,m_l)$ es $n^2$
+2. Cada combinación admite 2 electrones ($m_s = \pm\frac{1}{2}$)
+3. Total: $2n^2 = 2 \times 9 = \mathbf{18}$ electrones
+
+**Ejemplo 2 (PDF pág. 45):** ¿Por qué el estado $(n=2, l=2, m_l=0)$ es imposible?
+- Regla: $l \leq n-1 = 1$
+- $l=2$ viola la restricción → estado prohibido
+
+---
+
+## 7. Relación de Conmutación Canónica (Pizarra)
+
+El Prof. Sepúlveda deriva en pizarra el conmutador $[\hat{x}, \hat{p}_x] = i\hbar$, actuando sobre una función de prueba $\psi(x)$:
+
+$$[\hat{x},\hat{p}_x]\psi = x(-i\hbar\partial_x\psi) - (-i\hbar)\partial_x(x\psi) = -i\hbar x\psi' + i\hbar(\psi + x\psi') = i\hbar\psi$$
+
+$$\boxed{[\hat{x}, \hat{p}_x] = i\hbar} \quad \text{(relación de conmutación canónica)}$$
+
+Esta es la relación fundamental de la que derivan todas las demás en mecánica cuántica.
+
+---
+
+## Conclusiones de la Clase
+
+1. Las rotaciones no conmutan (experimento de la tablet) → el momento angular cuántico tampoco.
+2. La relación de conmutación canónica $[\hat{x},\hat{p}] = i\hbar$ genera toda la álgebra del momento angular.
+3. $\hat{L}^2$ y $\hat{L}_z$ forman el CCOC; sus autoestados $|l,m\rangle$ son los estados del sistema con momento angular definido.
+4. Los operadores escalera $\hat{L}_\pm$ permiten construir todo el espectro **sin resolver ecuaciones diferenciales**: puro álgebra de operadores.
+5. La finitud de la escalera (argumento de positividad de norma) obliga a $l = 0,\frac{1}{2},1,\ldots$ y $m = -l,\ldots,l$ — **la cuantización emerge, no se postula**.
+6. Los valores semienteros corresponden al espín, los enteros al momento orbital espacial.
+7. Los armónicos esféricos $Y_l^m$ dan forma geométrica concreta a los orbitales atómicos.
+8. Cuatro números cuánticos más el Principio de Pauli explican la tabla periódica.
+
+---
+
+## Referencias Bibliográficas
+
+### 1. Fuentes directas de la clase
+- `Clase del Diplomado de Física Moderna.docx` — transcripción 11 sep 2026
+- `Clase 3.pdf` — diapositivas Prof. Esteban Sepúlveda (45 págs.)
+- `Pizarra Clase 3.pdf` — pizarra de la clase (7 págs.)
+
+### 2. Textos universitarios estándar
+- Griffiths, D.J. *Introduction to Quantum Mechanics*, 2ª ed., cap. 4 (§4.3 momentum angular).
+- Sakurai, J.J. *Modern Quantum Mechanics* (Revised Ed.), cap. 3 (§3.1-3.4 teoría del momento angular).
+- Cohen-Tannoudji, C. *Mécanique Quantique*, vol. 1, cap. VI (momento angular orbital).
+- Gasiorowicz, S. *Quantum Physics*, 3ª ed., cap. 11 (orbitales atómicos).
+
+### 3. Recursos verificados de libre acceso
+- Feynman, R.P. *The Feynman Lectures on Physics*, Vol. III, cap. 18-19. (feynmanlectures.caltech.edu)
