@@ -121,7 +121,7 @@
 
   <header>
     <h1>🌋🏠🧠 Carrito — Estación Geofísica + Monitor Ambiental + IA</h1>
-    <p>v2.0 · Actualizado 08-10-2026 · Incluye compras realizadas, kit Afel, alimentación USB, extras para TinyML y lista de descartados</p>
+    <p>v2.1 · Actualizado 10-10-2026 · Conciliado con facturas de Mechatronic y AFEL · Incluye pendientes: TFT ST7789 y 2× MicroSD</p>
   </header>
 
   <div class="legend">
@@ -191,11 +191,11 @@
       <tbody id="budget-body"></tbody>
     </table>
     <div style="margin-top:14px;font-size:13px;background:#F3E5F5;padding:12px;border-radius:8px">
-      <strong>🎉 ¡Compras 100% Realizadas y Consolidadas! — Resumen Oficial:</strong><br>
+      <strong>🧾 Compras conciliadas con las facturas (10-10-2026) — Pendientes: TFT ST7789 y 2× MicroSD:</strong><br>
       <strong>✅ MercadoLibre ($130.039 CLP total):</strong> Cautín LEFAVOR 80W, Multímetro AstroAI 6000 cuentas, Tercera mano con lupa LED, ESP32-S3 N16R8, ESP32 30P, 2× ESP32-C3 Super Mini, 4× PCBs, Cable Xiaomi datos USB-C, MicroSD Maxell 16GB, Maletín organizador y Amplificador MAX98357A I2S.<br>
       <strong>✅ MechatronicStore ($70.760 CLP — Pedido #717057):</strong> XIAO ESP32-S3 Sense, 2× ADXL345, 2× BH1750, Sensor gotas de lluvia, Radar microondas RCWL-0516, Infrarrojo HW-201, Láser VL53L0X, 2× Protoboards 830, Pinzas HARDEN, Pasta ZD-170, Malla desoldadora, Alcohol isopropílico.<br>
-      <strong>✅ AFEL ($92.970 CLP — Pedido Confirmado):</strong> 3× AHT20+BMP280, MPU6050, DS18B20 1m, 2× MQ-135, 2× PIR, 2× OLED 0.96", 2× MicroSD SPI, ADS1115, Micrófono INMP441, Mini Parlante 3W, 2× Servos SG90, 2× Buzzers, 3× Potenciómetros, Ultrasonido HC-SR04, Kit Componentes, 120 Dupont, Mini Protoboard, Alicate cortante.<br>
-      <strong>💰 Inversión Total Real del Laboratorio Completo: $293.769 CLP</strong> (Todo comprado y en camino/entregado).
+      <strong>✅ AFEL ($92.970 CLP = $88.970 productos + $4.000 envío — Pedido Confirmado):</strong> 3× AHT20+BMP280, MPU6050, DS18B20 1m, 2× MQ-135, 2× PIR, 2× OLED 0.96", 2× MicroSD SPI, ADS1115, Micrófono INMP441, Mini Parlante 3W, 2× Servos SG90, 2× Buzzers, 3× Potenciómetros, Ultrasonido HC-SR04, Kit Componentes, 120 Dupont, Mini Protoboard, Alicate cortante.<br>
+      <strong>💰 Inversión total real: $293.769 CLP</strong> (la tabla suma $290.269 en ítems; difiere por el envío de AFEL +$4.000 y el descuento MechaCoins −$500).
     </div>
   </div>
 </div>
@@ -210,8 +210,8 @@ const sections = [
       role:'Hub central — FFT, STA/LTA, MQTT, servidor web, cerebro IA y audio',
       ref:13434, store:'ml',
       url:'https://www.mercadolibre.cl/placa-desarrollo-esp32-s3-n16r8-44-pines-usb-c-wifi-24g-ble/p/MLC2103080789' },
-    { id:'M2', name:'ESP32 DevKit 30P (ESP-WROOM-32) USB-C — Vshop', qty:1, tag:'both', lv:1, st:'bought',
-      role:'Nodo 2 Geofísica / Nodo 1 Salón Ambiental',
+    { id:'M2', name:'ESP32 DevKit 30P (ESP-WROOM-32) USB-C — Vshop', qty:1, tag:'geo', lv:1, st:'bought',
+      role:'Nodo remoto sísmico (ADXL345 #2 por SPI, OLED y MicroSD)',
       ref:7160, store:'ml',
       url:'https://www.mercadolibre.cl/placa-de-desarrollo-esp32-usbc-wifi-bluetooth-30-pin-vshop/up/MLCU3669688534' },
     { id:'M3', name:'ESP32-C3 Super Mini USB-C (Pack 2 uds)', qty:2, tag:'amb', lv:1, st:'bought',
@@ -237,15 +237,15 @@ const sections = [
   ]},
   { key:'ambient', title:'🌡️ Sensores Ambientales y Detección — Ambos Proyectos', cls:'cat-ambient', items:[
     { id:'A1', name:'Sensor Temp, Humedad y Presión AHT20+BMP280', qty:3, tag:'both', lv:1, ia:true, st:'bought',
-      role:'Hub Geo + Remoto Geo + Salón o Exterior (I2C digital)',
-      note:'Nota: Compradas 3 uds (sugerido inicial 4; cubre 3 de los 4 nodos)',
+      role:'Hub (geo + salón), Dormitorio y Exterior (I2C digital)',
+      note:'Nota: Compradas 3 uds; el nodo remoto sísmico no lleva este sensor',
       ref:3000, store:'afel', url:'https://afel.cl/products/sensor-de-temperatura-humedad-y-presion-aht20-bmp280' },
     { id:'A3', name:'Módulo Sensor Intensidad Luminosa BH1750 Gy-302', qty:2, tag:'both', lv:2, ia:true, st:'bought',
-      role:'Ciclo día/noche y radiación solar en lux',
-      note:'Nota: Compradas 2 uds (sugerido inicial 3; suficiente para Hub y Exterior)',
+      role:'Ciclo día/noche y radiación solar en lux — Hub y Exterior',
+      note:'Nota: Compradas 2 uds (Hub y Exterior; el Dormitorio no lleva BH1750)',
       ref:3990, store:'mech', url:'https://www.mechatronicstore.cl/?s=bh1750' },
     { id:'A4', name:'Sensor Calidad Aire MQ-135 (CO₂ / VOC / Humo)', qty:2, tag:'amb', lv:2, ia:true, st:'bought',
-      role:'Salón + Dormitorio — lectura analógica 16-bit vía ADS1115',
+      role:'Salón (Hub) vía ADS1115 16-bit + 2.º opcional en Dormitorio (ADC interno del C3)',
       ref:3400, store:'afel', url:'https://afel.cl/products/sensor-calidad-aire-mq135' },
     { id:'A5', name:'Sensor de Movimiento PIR HC-SR501', qty:2, tag:'amb', lv:2, st:'bought',
       role:'Presencia humana en Salón + Dormitorio',
@@ -271,8 +271,12 @@ const sections = [
       role:'Lectura de alta precisión para sensor MQ-135 y analógicos',
       ref:5000, store:'afel', url:'https://afel.cl/products/modulo-conversor-analogo-digital-ads1115' },
     { id:'D2', name:'Pantalla LCD OLED Azul y Amarillo 0.96" I2C', qty:2, tag:'both', lv:2, st:'bought',
-      role:'Display local: 1 para sismógrafo y 1 para monitor salón / cara de robot',
+      role:'Display local: 1 en el Hub y 1 en el nodo remoto sísmico (o cara de robot)',
       ref:4500, store:'afel', url:'https://afel.cl/products/pantalla-lcd-oled-azul-y-amarillo-0-96' },
+    { id:'D3', name:'Pantalla TFT ST7789 (SPI)', qty:1, tag:'geo', lv:2, st:'pending',
+      role:'Espectrograma FFT waterfall y dashboard del Hub (bus SPI-B dedicado)',
+      note:'⏳ Pendiente de compra — precio estimado',
+      ref:9000, store:'mech', url:'https://www.mechatronicstore.cl/?s=st7789' },
     { id:'D4', name:'Módulo Lector Micro SD SPI', qty:2, tag:'both', lv:1, ia:true, st:'bought',
       role:'Logging CSV local en Hub ESP32-S3 y DevKit (XIAO ya trae ranura)',
       note:'Nota: Compradas 2 uds (sugerido inicial 3; suficiente para los 2 nodos principales)',
@@ -281,6 +285,10 @@ const sections = [
       role:'Almacenamiento de datasets de entrenamiento y logs sísmicos en FAT32',
       note:'Nota: Comprada 1 ud inicial (sugerido 3-4; ideal para arrancar de inmediato)',
       ref:7990, store:'ml', url:'https://myaccount.mercadolibre.cl/my_purchases/2000015443264905/status?packId=2000015443264909' },
+    { id:'D6', name:'Tarjeta MicroSD 16-32GB Clase 10 (adicionales)', qty:2, tag:'both', lv:2, ia:true, st:'pending',
+      role:'Una para el nodo remoto sísmico y otra para el XIAO (la Maxell va en el Hub)',
+      note:'⏳ Pendiente — precio referencial',
+      ref:7990, store:'ml', url:'https://listado.mercadolibre.cl/microsd-16gb-clase-10' },
     { id:'I7', name:'Sensor Micrófono Omnidireccional INMP441 I2S', qty:1, tag:'both', lv:2, ia:true, st:'bought',
       role:'Oído IA: Comandos de voz offline (KWS), detección acústica y streaming a DeepSeek',
       ref:5990, store:'afel', url:'https://afel.cl/products/sensor-microfono-omnidireccional-inmp441' },
@@ -459,7 +467,7 @@ function updateStats() {
     <td class="price" style="color:#2E7D32"><strong>${clp(totB)}</strong></td>
     <td class="price-total" style="color:#C62828">${clp(tot-totB)}</td></tr>`);
   rows.push(`<tr><td colspan="4" style="font-size:12px;color:#888">
-    * Registro consolidado de pedidos oficiales: Mercado Libre ($130.039 CLP), MechatronicStore ($70.760 CLP, pedido #717057 con envío gratis), AFEL ($92.970 CLP, incluye $4.000 de envío). Total real invertido: $293.769 CLP.</td></tr>`);
+    * Registro consolidado de pedidos oficiales: Mercado Libre ($130.039 CLP), MechatronicStore ($70.760 CLP, pedido #717057 con envío gratis y −$500 MechaCoins), AFEL ($92.970 CLP, incluye $4.000 de envío). Total real invertido: $293.769 CLP.</td></tr>`);
   document.getElementById('budget-body').innerHTML = rows.join('');
 }
 

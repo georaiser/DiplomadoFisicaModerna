@@ -1,5 +1,5 @@
 # 🧠 Inteligencia Artificial en el Borde (TinyML) — Estación Geofísica + Monitor Ambiental
-> **v1.0** — Módulo complementario a `proyectos_GeofisicaAmbiental_v1.md`. Usa **solo el hardware ya comprado o planificado**. Toda la inferencia corre **localmente** en los ESP32, sin nube ni suscripciones.
+> **v1.1** (corregido 10-10-2026) — Módulo complementario a `proyectos_GeofisicaAmbiental_v1.md`. Usa **solo el hardware ya comprado o planificado**. Toda la inferencia corre **localmente** en los ESP32, sin nube ni suscripciones.
 
 ---
 
@@ -41,11 +41,11 @@
 | Placa | Estado | CPU | PSRAM | Flash | Aceleración IA | Rol IA |
 |---|:---:|---|:---:|:---:|:---:|---|
 | **ESP32-S3 N16R8** (44 pines) | ✅ Comprada | Xtensa LX7 dual 240 MHz | **8 MB** | 16 MB | ✅ Instrucciones vectoriales (ESP-NN / ESP-DL) | **Cerebro IA principal** (sísmico, anomalías) |
-| **XIAO ESP32-S3 Sense** | 🛒 Por adquirir | Xtensa LX7 dual 240 MHz | 8 MB | 8 MB | ✅ Vectorial | **Visión + audio** (cámara + micrófono PDM integrados) |
+| **XIAO ESP32-S3 Sense** | ✅ Comprada | Xtensa LX7 dual 240 MHz | 8 MB | 8 MB | ✅ Vectorial | **Visión + audio** (cámara + micrófono PDM integrados) |
 | **ESP32 DevKit 30P** (WROOM-32) | ✅ Comprada | Xtensa LX6 dual 240 MHz | — | 4 MB | ❌ | Modelos pequeños (árboles, MLP chica) |
 | **ESP32-C3 Super Mini** | ✅ Comprada | RISC-V single 160 MHz | — | 4 MB | ❌ | Árboles de decisión / umbrales aprendidos |
 
-> ⚠️ Verificar la memoria exacta del XIAO al comprarlo (las versiones actuales traen 8 MB PSRAM + 8 MB Flash).
+> ⚠️ Verificar la memoria exacta del XIAO al recibirlo (las versiones actuales traen 8 MB PSRAM + 8 MB Flash).
 
 ### Sensores útiles para IA
 
@@ -53,7 +53,7 @@
 |---|---|---|
 | **ADXL345** | Aceleración 3 ejes (series temporales) | IA-1 Sísmico |
 | **MPU6050** | Aceleración + giroscopio | IA-1 (canal auxiliar), IA-5 |
-| **AHT20 + BMP280** (o BME280) | Presión, temperatura, humedad | IA-2 Nowcasting, IA-5 |
+| **AHT20 + BMP280** | Presión, temperatura, humedad | IA-2 Nowcasting, IA-5 |
 | **BH1750** | Lux | IA-2, IA-5 |
 | **MQ-135 + ADS1115** | Calidad del aire (señal analógica 16 bit) | IA-5 Anomalías |
 | **PIR HC-SR501** | Presencia | IA-5 (contexto) |
@@ -85,7 +85,7 @@
 | **ESP32-S3 N16R8** | IA-1 (Sismos), IA-5 (Anomalías), Audio | ML | ✅ Comprado | Cerebro principal con 8 MB PSRAM ($13.434) |
 | **XIAO ESP32-S3 Sense** | IA-3 (Visión cielo), IA-4 (Acústica) | Mechatronic | ✅ Comprado | Cámara OV2640, micrófono PDM y ranura SD ($22.990) |
 | **ADXL345 GY-291 (×2)** | IA-1 (Clasificador sísmico vs ruido) | Mechatronic | ✅ Comprado | Acelerómetros a alta velocidad SPI ($6.980 total) |
-| **AHT20 + BMP280 (×3)** | IA-2 (Nowcasting lluvia), IA-5 | AFEL | ✅ Comprado | *Nota: Compradas 3 uds (sugerido inicial 4; cubre 3 nodos)* ($9.000) |
+| **AHT20 + BMP280 (×3)** | IA-2 (Nowcasting lluvia), IA-5 | AFEL | ✅ Comprado | *Nota: Compradas 3 uds (Hub, Dormitorio y Exterior; el nodo remoto sísmico no lleva este sensor)* ($9.000) |
 | **Sensor de Lluvia** | IA-2 (Etiquetador de lluvia real) | Mechatronic | ✅ Comprado | Genera las etiquetas supervisadas del modelo ($1.500) |
 | **Módulos Lector MicroSD SPI (×2)** | Datasets CSV continuos en nodos | AFEL | ✅ Comprado | *Nota: Compradas 2 uds (sugerido inicial 3; XIAO ya trae ranura)* ($5.000) |
 | **Tarjeta MicroSD Maxell 16GB** | Datasets de entrenamiento en FAT32 | ML | ✅ Comprado | *Nota: Comprada 1 ud inicial de 16GB (sugerido 3-4)* ($7.990) |
@@ -106,6 +106,14 @@
 | **Radar Microondas RCWL-0516** | Detección de presencia invisible | Mechatronic | ✅ Comprado | Despierta al robot o nodo al acercarse ($2.290) |
 | **Infrarrojo HW-201 + Ultrasonido HC-SR04** | Detección obstáculos y distancia robot | Mech / AFEL | ✅ Comprado | Navegación y proximidad ($2.990 total) |
 | **Maletín Organizador Plástico** | Almacenamiento seguro de componentes | ML | ✅ Comprado | Caja con compartimientos transparente ($5.661) |
+
+### 🔶 Pendientes de compra (conciliado con facturas, 10-10-2026)
+
+| Ítem | Para qué | Notas |
+|---|---|---|
+| **Pantalla TFT ST7789** | Espectrograma FFT / dashboard del Hub | Requerida por el proyecto geofísico (no por la IA) |
+| **MicroSD 16-32GB ×2** | Datasets del nodo remoto y del XIAO | La Maxell comprada va en el Hub |
+| *(Opcional)* **BH1750 ×1** | Luz en el Dormitorio | Solo hay 2 (Hub y Exterior) |
 
 ### 🟢 Opcional para fases futuras (cuando se expanda la instalación)
 
@@ -131,9 +139,9 @@
 | Tienda | Monto Pagado | Cobertura |
 |---|:---:|---|
 | **Mercado Libre** | **$130.039 CLP** | Microcontroladores, herramientas pro, cable Xiaomi, MicroSD Maxell, maletín y MAX98357A |
-| **MechatronicStore** | **$70.760 CLP** | XIAO ESP32-S3 Sense, sensores sísmicos, radar, lluvia, láser, flux, alcohol, pinzas |
-| **AFEL** | **$92.970 CLP** | Sensores AHT20+BMP280, MQ-135, audio (INMP441 + parlante), servos, kit básico, cables |
-| **TOTAL GENERAL** | **$293.769 CLP** | **100% financiado y comprado. Cero ítems pendientes en carritos.** |
+| **MechatronicStore** | **$70.760 CLP** | XIAO ESP32-S3 Sense, sensores sísmicos, BH1750, lluvia, radar RCWL-0516, HW-201, láser, protoboards, flux, alcohol, pinzas |
+| **AFEL** | **$92.970 CLP** | Sensores AHT20+BMP280, MQ-135, audio (INMP441 + parlante), servos, kit básico, cables ($88.970 productos + $4.000 envío) |
+| **TOTAL GENERAL** | **$293.769 CLP** | **Comprado, salvo los pendientes indicados arriba (TFT, 2× MicroSD).** |
 
 ---
 
@@ -216,9 +224,9 @@ Con el histórico de la MicroSD, entrenar un modelo que estime **probabilidad de
 
 | Entrada (features) | Fuente |
 |---|---|
-| Presión actual (hPa) | BME280 |
-| Tendencia de presión $\Delta P_{1h}$, $\Delta P_{3h}$ | BME280 (calculado) |
-| Humedad relativa y su tendencia | BME280 |
+| Presión actual (hPa) | BMP280 |
+| Tendencia de presión $\Delta P_{1h}$, $\Delta P_{3h}$ | BMP280 (calculado) |
+| Humedad relativa y su tendencia | AHT20 |
 | Punto de rocío y diferencia temp − rocío | Calculado |
 | Lux (nubosidad diurna) | BH1750 |
 | Hora del día, mes (codificados sin/cos) | RTC / NTP |
@@ -260,7 +268,7 @@ Foto horaria (JPG) ──► MicroSD (dataset) ──► Etiquetado en Edge Impu
 ```
 
 ### Valor científico
-- Correlacionar **clase de cielo** con **lux (BH1750)** y **presión (BME280)**.
+- Correlacionar **clase de cielo** con **lux (BH1750)** y **presión (BMP280)**.
 - Alimentar al modelo IA-2 como feature adicional (`cobertura_nubosa`).
 
 > 💡 Proteger la cámara con una cúpula transparente y considerar el sol directo (puede saturar el sensor).
@@ -340,19 +348,25 @@ flowchart LR
 ```cpp
 // Captura ADXL345 a frecuencia fija para edge-impulse-data-forwarder
 // Placa: ESP32-S3 N16R8 | Librerías: Adafruit ADXL345, Adafruit Unified Sensor
-#include <Wire.h>
+// El ADXL345 va por SPI (igual que en el documento principal). Aquí se usa SPI por software,
+// suficiente a 100 Hz; la detección STA/LTA en producción corre a 800 Hz con el bus SPI-A.
+#include <SPI.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_ADXL345_U.h>
 
 #define FREQ_HZ      100                      // 100 Hz cubre la banda sísmica útil (< 50 Hz)
 #define INTERVAL_US  (1000000UL / FREQ_HZ)
 
-Adafruit_ADXL345_Unified accel(12345);
+// Pines del bus SPI-A del Hub (ver sección 0 del documento principal)
+#define PIN_SCK  12
+#define PIN_MISO 13
+#define PIN_MOSI 11
+#define PIN_CS   10
+
+Adafruit_ADXL345_Unified accel(PIN_SCK, PIN_MISO, PIN_MOSI, PIN_CS, 12345);
 
 void setup() {
   Serial.begin(115200);
-  Wire.begin();                 // Ajustar pines SDA/SCL según el cableado del documento principal
-  Wire.setClock(400000);        // I2C rápido
   if (!accel.begin()) {
     Serial.println("ERROR: ADXL345 no detectado");
     while (true) delay(1000);
@@ -382,6 +396,7 @@ timestamp,presion_hPa,temp_C,hum_pct,lux,mq135_raw,pir,lluvia
 ```
 
 > 📌 La columna `lluvia` (sensor del nodo exterior) es la **etiqueta** para el modelo de nowcasting. Sin ella no se puede entrenar IA-2.
+> Los nodos Dormitorio y Exterior (C3) no tienen MicroSD: el **Hub registra** en su tarjeta los datos que recibe por MQTT.
 
 ### 10.3 Esqueleto de inferencia (después de exportar desde Edge Impulse)
 
@@ -474,4 +489,4 @@ FASE IA-4 — Avanzado
 
 ---
 
-> **v1.0** — Documento inicial de IA embebida. Cinco proyectos TinyML (sísmico, nowcasting, visión de cielo, acústica, anomalías) sobre ESP32-S3 N16R8, XIAO ESP32-S3 Sense, ESP32 DevKit y ESP32-C3. Sin hardware adicional requerido.
+> **v1.1** — Documento de IA embebida, corregido el 10-10-2026. Cinco proyectos TinyML (sísmico, nowcasting, visión de cielo, acústica, anomalías) sobre ESP32-S3 N16R8, XIAO ESP32-S3 Sense, ESP32 DevKit y ESP32-C3. Requiere completar los pendientes de compra (2× MicroSD; el TFT es opcional para la IA).
